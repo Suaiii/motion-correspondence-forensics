@@ -1,0 +1,16 @@
+{
+  "n": 60,
+  "duplicate_hashes": {},
+  "historical_hash_matches": [],
+  "cross_role_group_leakage": {},
+  "source_counts": {
+    "cc0_real|0": 10,
+    "vript_real|0": 10,
+    "opensora|1": 10,
+    "t2vz|1": 10,
+    "openai_sora|1": 10,
+    "VEO3|1": 10
+  },
+  "schema_fields_complete": true,
+  "release": "reject"
+}
