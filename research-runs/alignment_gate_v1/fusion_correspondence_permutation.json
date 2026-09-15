@@ -1,0 +1,8 @@
+{
+  "protocol":"C=30 fixed from clean calibration; fit-only standardized LogisticRegression; audit n=117",
+  "audit_auc":{"matched":0.8862573099,"fit_fractional_shuffled":0.8362573099,"fit_and_audit_fractional_shuffled":0.8315789474},
+  "matched_minus_fit_shuffled":0.05,
+  "matched_minus_both_shuffled":0.0546783626,
+  "decision":"supports_pairing_mechanism",
+  "interpretation":"Breaking correct/fractional video correspondence removes nearly all of the fusion gain, while preserving the same feature dimensionality. This is stronger evidence for learned correspondence than a capacity-only explanation; permutation p-values and external replication remain required."
+}

@@ -1,0 +1,28 @@
+{
+  "method": "learned_correct_fractional_fusion_v1",
+  "feature_order": [
+    "correct",
+    "fractional"
+  ],
+  "split_roles": {
+    "fit": 358,
+    "calibration": 120,
+    "audit": 117
+  },
+  "selection": "maximize calibration AUROC over C=[1,3,10,30,100]; selected clean C=30, JPEG70 C=100",
+  "audit_forbidden_during_selection": true,
+  "files": {
+    "research-runtime/tmp/fusion_cal.py": {
+      "bytes": 1193,
+      "sha256": "3ed5bafeb1cfadc9d5308069658576cd4e292635028469a257dd4d1389da26a0"
+    },
+    "research-runtime/tmp/fusion_cal_boot1.py": {
+      "bytes": 1344,
+      "sha256": "313759cdad3ca1d5d8290dd8ecd13050ca94a12a884e47f9f3f33e36c5c73ecd"
+    },
+    "research-runs/alignment_gate_v1/probes.json": {
+      "bytes": 2567215,
+      "sha256": "21e8cc43f67ef9c36b06c0ad69fc300ea9a5d92ff8ce2756027db43bf5123495"
+    }
+  }
+}

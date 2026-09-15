@@ -1,0 +1,15 @@
+{
+  "verdict": "passed",
+  "review_type": "primary_implementer_mechanical_recomputation",
+  "independent_scientific_review": false,
+  "neural_metric_groups": 30,
+  "checkpoint_reload_max_error": 0.0,
+  "probe_probability_max_error": 2.220446049250313e-16,
+  "all_artifact_hashes_checked": 75,
+  "same_manifest_as_prior": true,
+  "all_15_checkpoint_epochs_and_thresholds_reselected_from_calibration_only": true,
+  "pairwise_auc_checked": true,
+  "bootstrap_intervals_recomputed_by_pairwise_auc": 8,
+  "decision_checks_recomputed": true,
+  "verification_code_sha256": "102b956b76f447c7de8b115708c46c08dbb79eace1fc0ac1d8c19643c762162d"
+}

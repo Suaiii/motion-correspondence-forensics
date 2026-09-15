@@ -1,0 +1,1230 @@
+{
+  "results": [
+    {
+      "kind": "frame_mean",
+      "seed": 17,
+      "params": 24641,
+      "best_epoch": 4,
+      "best_calibration_bce": 0.6716511696688724,
+      "first_train_bce": 0.7323497056961059,
+      "last_train_bce": 0.4368386779512678,
+      "seconds": 4.888286400000652,
+      "peak_allocated_mb": 177.365234375,
+      "checkpoint_sha256": "881eaeea5b7a6cad4f2a8501c7eadee9847ba56daf812fa7a8f70a2a00c99464",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.5627533197402954
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.659651517868042
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.8009827136993408
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.3034296929836273
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.7612140774726868
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.46899333596229553
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.3680056929588318
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.4912802278995514
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.5275923013687134
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.37222185730934143
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.5369806289672852
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.18322177231311798
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.5214961171150208
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.5182377099990845
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.4744342565536499
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.7090563774108887
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.8127403855323792
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.7697882652282715
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.5572705864906311
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.6236371397972107
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.4871523678302765
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.4563177525997162
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.45194894075393677
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.5329933166503906
+        }
+      ]
+    },
+    {
+      "kind": "frame_mean",
+      "seed": 29,
+      "params": 24641,
+      "best_epoch": 4,
+      "best_calibration_bce": 0.6666135680526987,
+      "first_train_bce": 0.6925862124988011,
+      "last_train_bce": 0.4983484779085432,
+      "seconds": 4.033458599998994,
+      "peak_allocated_mb": 177.365234375,
+      "checkpoint_sha256": "76c537744bb2273682c253f7475d6e94a5e854802f5b9cc2dbd77c34e79dcbb6",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.485469788312912
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.6616222262382507
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.707317054271698
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.21373824775218964
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.6717644333839417
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.39474397897720337
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.261515736579895
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.37373867630958557
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.35833731293678284
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.287265807390213
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.47920674085617065
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.16740931570529938
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.3738846778869629
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.42569419741630554
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.46243229508399963
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.5439218878746033
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.7195127606391907
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.5005850195884705
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.5735901594161987
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.40451550483703613
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.42445483803749084
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.4111121594905853
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.6249074339866638
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.42308807373046875
+        }
+      ]
+    },
+    {
+      "kind": "frame_mean",
+      "seed": 43,
+      "params": 24641,
+      "best_epoch": 4,
+      "best_calibration_bce": 0.7049320120761765,
+      "first_train_bce": 0.6899577975273132,
+      "last_train_bce": 0.4776007490498679,
+      "seconds": 4.500345100001141,
+      "peak_allocated_mb": 177.365234375,
+      "checkpoint_sha256": "271ecf9df5ef560f1cca51948cb3a211c2cbdfac537ad313cc3c22d097cf6153",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.520470917224884
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.6560826897621155
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.7859001755714417
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.3620671033859253
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.7068667411804199
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.4589582681655884
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.4103516936302185
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.48203349113464355
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.42082124948501587
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.394326388835907
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.5064773559570312
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.2351330667734146
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.4743100702762604
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.53365558385849
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.458861380815506
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.4630398154258728
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.7802023887634277
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.5728984475135803
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.5228588581085205
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.5956302285194397
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.38260769844055176
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.4716953933238983
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.4529764652252197
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.5080313682556152
+        }
+      ]
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "params": 49601,
+      "best_epoch": 1,
+      "best_calibration_bce": 0.6924304328834797,
+      "first_train_bce": 0.7292944703783307,
+      "last_train_bce": 0.5155574628284999,
+      "seconds": 5.495224399997824,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "a9ac7d0c5a2577cfc745ce136f913c370e7a60f3464fc9e302e13286021bbd1d",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.5092034339904785
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.5388486981391907
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.503646194934845
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.5268895030021667
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.4897676408290863
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.4964224398136139
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.4891449511051178
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.5184686779975891
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.49157923460006714
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.49206626415252686
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.4900140166282654
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.49406224489212036
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.5010270476341248
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.4903658330440521
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.4904330372810364
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.4902684986591339
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.489159494638443
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.4903934597969055
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.5342042446136475
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.5037292838096619
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.5235514640808105
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.5213922262191772
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.5226667523384094
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.4979274570941925
+        }
+      ]
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "params": 49601,
+      "best_epoch": 3,
+      "best_calibration_bce": 0.6964579766301385,
+      "first_train_bce": 0.6954382147107806,
+      "last_train_bce": 0.5603686741420201,
+      "seconds": 5.360970699999598,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "1555549d17f1fcab0abf7026de499255cf9b101a68525a425c71828d07d03996",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.5023558735847473
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.7361318469047546
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.4677055776119232
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.6456955671310425
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.4114392101764679
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.4350334703922272
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.41066595911979675
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.596042811870575
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.41756609082221985
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.4194256663322449
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.4122658371925354
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.44127753376960754
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.4549657702445984
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.4127960205078125
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.41915401816368103
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.41899794340133667
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.41068577766418457
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.41232728958129883
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.73725825548172
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.4729316532611847
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.6833897829055786
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.6427905559539795
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.6779470443725586
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.43605509400367737
+        }
+      ]
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "params": 49601,
+      "best_epoch": 3,
+      "best_calibration_bce": 0.6840021592334943,
+      "first_train_bce": 0.7092173320906503,
+      "last_train_bce": 0.5756199070385524,
+      "seconds": 4.818714199998794,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "a8d394acaaff68588d8bae4f9c594043df01df834a2cb961457acdd541667047",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.4711575210094452
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.595992386341095
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.44695204496383667
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.5709142088890076
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.43548160791397095
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.41413113474845886
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.4507191479206085
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.5362192988395691
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.43044567108154297
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.4206256568431854
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.43170297145843506
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.4221480190753937
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.45512592792510986
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.42997732758522034
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.43094560503959656
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.41764920949935913
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.4505600333213806
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.43592655658721924
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.5990956425666809
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.474577933549881
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.5768972635269165
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.5733933448791504
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.5735398530960083
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.4297429323196411
+        }
+      ]
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "params": 49601,
+      "best_epoch": 19,
+      "best_calibration_bce": 0.5696717376358837,
+      "first_train_bce": 0.7290357334273202,
+      "last_train_bce": 0.4207255231482642,
+      "seconds": 4.548183399998379,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "d44fb9967ca2e44cb4699e04abc48af05a846669d600cb6126104ec1513b55e4",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.12767452001571655
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.9266237616539001
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.49592846632003784
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.397981196641922
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.496185302734375
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.5292777419090271
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.4965055286884308
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.15161482989788055
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.4918448030948639
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.49499329924583435
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.49593842029571533
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.1693035513162613
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.49324721097946167
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.4958779215812683
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.4953533709049225
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.4958946704864502
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.49647167325019836
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.49604856967926025
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.9756383895874023
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.9275853633880615
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.9735855460166931
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.8694326877593994
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.9727805852890015
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.4950665235519409
+        }
+      ]
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "params": 49601,
+      "best_epoch": 18,
+      "best_calibration_bce": 0.5929953907565313,
+      "first_train_bce": 0.6839826651981898,
+      "last_train_bce": 0.47276337827954973,
+      "seconds": 4.480346399999689,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "03b522f2f8522ba02cf160c840c2e524dda306cd3708021d09e1e841972d75c8",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.14163024723529816
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.8604122400283813
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.4217030107975006
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.28097182512283325
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.421528697013855
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.38467317819595337
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.42204776406288147
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.14544439315795898
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.3871931731700897
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.405864417552948
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.42111003398895264
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.1748504340648651
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.39029914140701294
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.421383261680603
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.41958072781562805
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.42074593901634216
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.4220021665096283
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.4205796718597412
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.9910737872123718
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.2448190152645111
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.9882523417472839
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.9704262614250183
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.9873122572898865
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.36566486954689026
+        }
+      ]
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "params": 49601,
+      "best_epoch": 20,
+      "best_calibration_bce": 0.6160081294414516,
+      "first_train_bce": 0.7015534571238926,
+      "last_train_bce": 0.5400079727172852,
+      "seconds": 4.462791800000559,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "a680225f79ec93045dc81361f1638d460e246dc816ef03748b39ebdbf8c87bb3",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "S036",
+          "label_fake": 0,
+          "prob_fake": 0.176998570561409
+        },
+        {
+          "sample_id": "S037",
+          "label_fake": 0,
+          "prob_fake": 0.9373504519462585
+        },
+        {
+          "sample_id": "S038",
+          "label_fake": 0,
+          "prob_fake": 0.5523989796638489
+        },
+        {
+          "sample_id": "S039",
+          "label_fake": 0,
+          "prob_fake": 0.4299427568912506
+        },
+        {
+          "sample_id": "S040",
+          "label_fake": 0,
+          "prob_fake": 0.552680253982544
+        },
+        {
+          "sample_id": "S041",
+          "label_fake": 0,
+          "prob_fake": 0.2558487355709076
+        },
+        {
+          "sample_id": "S042",
+          "label_fake": 0,
+          "prob_fake": 0.587468147277832
+        },
+        {
+          "sample_id": "S043",
+          "label_fake": 0,
+          "prob_fake": 0.19118133187294006
+        },
+        {
+          "sample_id": "S044",
+          "label_fake": 0,
+          "prob_fake": 0.4082295596599579
+        },
+        {
+          "sample_id": "S045",
+          "label_fake": 0,
+          "prob_fake": 0.3809759318828583
+        },
+        {
+          "sample_id": "S046",
+          "label_fake": 0,
+          "prob_fake": 0.544313907623291
+        },
+        {
+          "sample_id": "S047",
+          "label_fake": 0,
+          "prob_fake": 0.25339776277542114
+        },
+        {
+          "sample_id": "S078",
+          "label_fake": 1,
+          "prob_fake": 0.3961452543735504
+        },
+        {
+          "sample_id": "S079",
+          "label_fake": 1,
+          "prob_fake": 0.5117321014404297
+        },
+        {
+          "sample_id": "S080",
+          "label_fake": 1,
+          "prob_fake": 0.4895769953727722
+        },
+        {
+          "sample_id": "S081",
+          "label_fake": 1,
+          "prob_fake": 0.5120841860771179
+        },
+        {
+          "sample_id": "S082",
+          "label_fake": 1,
+          "prob_fake": 0.5870309472084045
+        },
+        {
+          "sample_id": "S083",
+          "label_fake": 1,
+          "prob_fake": 0.528700590133667
+        },
+        {
+          "sample_id": "S108",
+          "label_fake": 1,
+          "prob_fake": 0.9836055636405945
+        },
+        {
+          "sample_id": "S109",
+          "label_fake": 1,
+          "prob_fake": 0.5545846223831177
+        },
+        {
+          "sample_id": "S110",
+          "label_fake": 1,
+          "prob_fake": 0.9764971137046814
+        },
+        {
+          "sample_id": "S111",
+          "label_fake": 1,
+          "prob_fake": 0.8194589614868164
+        },
+        {
+          "sample_id": "S112",
+          "label_fake": 1,
+          "prob_fake": 0.9688569903373718
+        },
+        {
+          "sample_id": "S113",
+          "label_fake": 1,
+          "prob_fake": 0.3124617338180542
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 69.48265850000098,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "audit_results_used_for_training": false,
+  "code_hashes": {
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\neural_pilot_v1\\run.py": "edff3d12e04cfc1d37f8ef95a5f02c1d88ee6d51266bbbd3f7ccff9013c8d999",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\neural_pilot_v1\\model.py": "6e5de93758b7e6df98ffaeb696e36dc1a8789f1f029de8d20ed3eb46b15ab3f5",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\neural_pilot_v1\\video_io.py": "b47cd68414ded2a4844aad0aa6766b009dfc7d0aac0d294fc18b49db4985f213",
+    "E:\\aNB\\TECH\\脉冲神经网络\\research-code\\sampling.py": "6b3dc621eeff8af41658e6d0cbb376ee265e041b231eae04c738bb92a8866dfb"
+  },
+  "protocol_sha256": "ac17852d48b3c8279b397df5e1e5091ba161cc1eb484c41f3d8f8497a5054520",
+  "manifest_sha256": "23bba743f0192811ce765bd0b3b1cf3bc8d43f86a0a45fc67024cc7e15098e99"
+}

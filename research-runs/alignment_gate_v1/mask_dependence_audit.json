@@ -1,0 +1,13 @@
+{
+  "condition": "clean",
+  "role": "audit",
+  "n": 117,
+  "method": "Spearman correlation of per-video probe probabilities, paired by sample_id",
+  "mask_vs_raw": 0.6188164067,
+  "mask_vs_correct": 0.6069774761,
+  "mask_vs_wrong_integer": 0.5624016545,
+  "mask_vs_fractional": 0.5722399556,
+  "mask_vs_compensation_gain": 0.3951954922,
+  "interpretation": "The correct-arm score is not identical to the mask probe score, but this correlation is descriptive and does not establish shortcut removal; an explicit nuisance-invariant model and external replication remain required.",
+  "code": "research-runtime/tmp/probe_corr.py"
+}

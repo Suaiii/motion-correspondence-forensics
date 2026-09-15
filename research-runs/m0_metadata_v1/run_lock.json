@@ -1,0 +1,10 @@
+{
+  "time_utc": "2026-09-07T15:08:39.847319+00:00",
+  "protocol_sha256": "5488bae8059f88d2b8b46eab4533ba948b42490c3fa2690d57e9a6d363c70712",
+  "selection_sha256": "e106a73df7fc3a57d2d74ef4c1b4d2e521b083b4451c40818aa17dfef00121a4",
+  "source_manifest_sha256": "96041261748c19501f8319d9d05dfed76fa6049b71db9ebca8504119b6578d5d",
+  "code_sha256": "275d55679260271b6d1d651571f5df12d360852d773fc8035cfc9fa7c8fd2480",
+  "python": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\python.exe",
+  "python_version": "3.11.15",
+  "role": "M0 diagnostic; all historical sources development only"
+}

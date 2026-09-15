@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-14T09:36:24.4236084Z",
+  "repositories": {
+    "STALL": {
+      "license": "Attribution-NonCommercial 4.0 International",
+      "commit": "bfcc603ae83b4e609681277b9b5e80e7a9497e15",
+      "url": "https://github.com/OmerBenHayun/STALL"
+    },
+    "D3": {
+      "license": "MIT License",
+      "commit": "c798fbc57fe0c4198d63a73732c2c0f9e4b4816c",
+      "url": "https://github.com/Zig-HS/D3"
+    }
+  },
+  "status": "source-pinned_native-reproduction-pending",
+  "scope": "provenance only; no metrics claimed",
+  "next": "run native protocol on identical ComGenVid IDs after environment/data acceptance"
+}

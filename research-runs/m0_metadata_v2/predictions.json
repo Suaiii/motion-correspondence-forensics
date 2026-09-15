@@ -1,0 +1,3242 @@
+[
+  {
+    "feature_set": "fps",
+    "sample_id": "S000",
+    "role": "fit",
+    "group_id": "vript:-AawZPTw8pY",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S001",
+    "role": "fit",
+    "group_id": "vript:-P2rqYVqLhM",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S002",
+    "role": "fit",
+    "group_id": "vript:-LX0wj2NAAk",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S003",
+    "role": "fit",
+    "group_id": "vript:-phhN1gWkFk",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S004",
+    "role": "fit",
+    "group_id": "vript:-KqzG0E5C9A",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S005",
+    "role": "fit",
+    "group_id": "vript:1nsYYQI-YWg",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S006",
+    "role": "fit",
+    "group_id": "vript:-W4sCZpO9O0",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S007",
+    "role": "fit",
+    "group_id": "vript:-KaGZhB0WkI",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S008",
+    "role": "fit",
+    "group_id": "vript:-UN7mGQNazo",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S009",
+    "role": "fit",
+    "group_id": "vript:-G1kxJh2Dd0",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S010",
+    "role": "fit",
+    "group_id": "vript:-E2IPygbwJ4",
+    "label_fake": 0,
+    "prob_fake": 0.09751255249222791,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S011",
+    "role": "fit",
+    "group_id": "vript:-2mJuhuaK0g",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S012",
+    "role": "fit",
+    "group_id": "vript:0FlRfp5bFAU",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S013",
+    "role": "fit",
+    "group_id": "vript:-TOg6v3-QuU",
+    "label_fake": 0,
+    "prob_fake": 0.09751255249222791,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S014",
+    "role": "fit",
+    "group_id": "vript:-t2k6v0mwT4",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S015",
+    "role": "fit",
+    "group_id": "vript:-mXxBa64zcs",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S016",
+    "role": "fit",
+    "group_id": "vript:-gPTO0COLL4",
+    "label_fake": 0,
+    "prob_fake": 0.09751255249222791,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S017",
+    "role": "fit",
+    "group_id": "vript:-IGsnqp4YLI",
+    "label_fake": 0,
+    "prob_fake": 0.04141894116493272,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S018",
+    "role": "fit",
+    "group_id": "vript:-V5whSyTstc",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S019",
+    "role": "fit",
+    "group_id": "vript:-YeQAPzH0j4",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S020",
+    "role": "fit",
+    "group_id": "vript:-3PbMDmoOTE",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S021",
+    "role": "fit",
+    "group_id": "vript:-J0ql1yrNO8",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S022",
+    "role": "fit",
+    "group_id": "vript:-3Ln4TFCDHg",
+    "label_fake": 0,
+    "prob_fake": 0.04141894116493272,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S023",
+    "role": "fit",
+    "group_id": "vript:-fm9goXFWuM",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S024",
+    "role": "fit",
+    "group_id": "vript:-W954LYAU1k",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S025",
+    "role": "fit",
+    "group_id": "vript:-6Sfr4FlhJ8",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S026",
+    "role": "fit",
+    "group_id": "vript:-bHE7r5iqXw",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S027",
+    "role": "fit",
+    "group_id": "vript:-JpO7VfMO8U",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S028",
+    "role": "fit",
+    "group_id": "vript:-aid2jMEbXw",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S029",
+    "role": "fit",
+    "group_id": "vript:-6r8ZL3S33s",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S030",
+    "role": "fit",
+    "group_id": "vript:--PTxX38Eac",
+    "label_fake": 0,
+    "prob_fake": 0.04523811805067925,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S031",
+    "role": "fit",
+    "group_id": "vript:-iE2Ml6Fbow",
+    "label_fake": 0,
+    "prob_fake": 0.09715335013658852,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S032",
+    "role": "fit",
+    "group_id": "vript:-6bVizHAAGM",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S033",
+    "role": "fit",
+    "group_id": "vript:-8JCVzvR560",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S034",
+    "role": "fit",
+    "group_id": "vript:-QhLmOh6uAU",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S035",
+    "role": "fit",
+    "group_id": "vript:-5eGMJT3M8M",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S060",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_110701",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S061",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_100568",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S062",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_108722",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S063",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10445",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S064",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_103290",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S065",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_108050",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S066",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10086",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S067",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104870",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S068",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_105628",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S069",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104149",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S070",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10380",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S071",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_106387",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S072",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_100965",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S073",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_110760",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S074",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104400",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S075",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_109022",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S076",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_106229",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S077",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_107214",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S090",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-486310b6-579d-5b08-9962-e6b5bab39996",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S091",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-d9c622df-b331-5f1b-af56-0fe259a46299",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S092",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-fe3f36d3-24b4-5ef0-83c0-c09aad9331fe",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S093",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-0a951c4d-4569-5d26-82fc-49ff0f13e4f2",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S094",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-8ec50181-ce7b-55a9-84fd-79e64959a37b",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S095",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-ffa99482-4be4-5bfa-bf68-f98dc2e7e23c",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S096",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-76c12d58-45eb-5805-a786-9f4c7892749a",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S097",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-b588ad11-7af7-5664-80df-1d1df4601fb5",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S098",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-65c7df81-8eae-58f4-8ff9-f0974cdfe051",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S099",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-8481f84a-416a-5868-bae5-0372ae12e255",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S100",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-686b956f-413d-5d6a-9e7f-988b1112134a",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S101",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-b4d0d6c6-10fd-5a4e-8eae-4cb9e5343fde",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S102",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-11e018ce-dfa5-553b-ae7b-6e6bfe2df87f",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S103",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-9853aae4-851c-5cec-a504-c552cdd2db9b",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S104",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-9d29221d-ead8-585f-85e1-aca7f4cf73ce",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S105",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-831996e2-4123-5b17-8511-cbdb42f185fe",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S106",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-d5fdfb1f-7564-5bab-b250-acf9557a55b7",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S107",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-c5696dbd-9b0b-58cd-beff-8d5dc71be958",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S036",
+    "role": "calibration",
+    "group_id": "vript:-9leP3nbaXc",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S037",
+    "role": "calibration",
+    "group_id": "vript:-iQEpqtfsFA",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S038",
+    "role": "calibration",
+    "group_id": "vript:-Wwe5OW_jPE",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S039",
+    "role": "calibration",
+    "group_id": "vript:0NLPl2Bs26E",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S040",
+    "role": "calibration",
+    "group_id": "vript:-LJ0zl5wh_I",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S041",
+    "role": "calibration",
+    "group_id": "vript:-LP0wu-DBcs",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S042",
+    "role": "calibration",
+    "group_id": "vript:-VdYoNzIFK0",
+    "label_fake": 0,
+    "prob_fake": 0.04141894116493272,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S043",
+    "role": "calibration",
+    "group_id": "vript:-8GDo_MBrz0",
+    "label_fake": 0,
+    "prob_fake": 0.09715335013658852,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S044",
+    "role": "calibration",
+    "group_id": "vript:-SadVBnJyH0",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S045",
+    "role": "calibration",
+    "group_id": "vript:-kRKV9-Qf8s",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S046",
+    "role": "calibration",
+    "group_id": "vript:-DXCtGr0DVI",
+    "label_fake": 0,
+    "prob_fake": 0.04141894116493272,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S047",
+    "role": "calibration",
+    "group_id": "vript:-SkiRHoThA4",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S078",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_106360",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S079",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_100167",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S080",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_100470",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S081",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_103378",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S082",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_10003",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S083",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_038",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S108",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-e25e60e5-84e0-58c6-bc24-e4bd229e96b7",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S109",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-3d340df8-fdb0-5de1-b10d-0df752e80b7e",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S110",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-3fd226e3-475c-50b8-a524-74722cfdd2cf",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S111",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-eac55b11-58ce-53ba-9f8f-6befc381a89d",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S112",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-8485db80-d6b2-5621-a310-6492cbd8257a",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S113",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-d66fd164-61d9-5829-986f-100bf8314f9c",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S048",
+    "role": "audit",
+    "group_id": "vript:-e6lS_AvYO8",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S049",
+    "role": "audit",
+    "group_id": "vript:-XF-d6lLy7U",
+    "label_fake": 0,
+    "prob_fake": 0.09751255249222791,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S050",
+    "role": "audit",
+    "group_id": "vript:-CqCaGqYG2M",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S051",
+    "role": "audit",
+    "group_id": "vript:--xGjsA5tpg",
+    "label_fake": 0,
+    "prob_fake": 0.04141877745334338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S052",
+    "role": "audit",
+    "group_id": "vript:-BLsbul347M",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S053",
+    "role": "audit",
+    "group_id": "vript:022hQ9mesig",
+    "label_fake": 0,
+    "prob_fake": 0.09751255249222791,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S054",
+    "role": "audit",
+    "group_id": "vript:-ShPemppAik",
+    "label_fake": 0,
+    "prob_fake": 0.09751255249222791,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S055",
+    "role": "audit",
+    "group_id": "vript:-SIoAoU96Go",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S056",
+    "role": "audit",
+    "group_id": "vript:-2W6AojRWZg",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S057",
+    "role": "audit",
+    "group_id": "vript:-ZRyNa57YeA",
+    "label_fake": 0,
+    "prob_fake": 0.09751255249222791,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S058",
+    "role": "audit",
+    "group_id": "vript:-4SZvu7e0QE",
+    "label_fake": 0,
+    "prob_fake": 0.08344918433744394,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S059",
+    "role": "audit",
+    "group_id": "vript:-8upat2I7as",
+    "label_fake": 0,
+    "prob_fake": 0.04125545432380218,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S084",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_110280",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S085",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_103609",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S086",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_102242",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S087",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_111012",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S088",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_103941",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S089",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_111413",
+    "label_fake": 1,
+    "prob_fake": 0.8932088085066302,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S114",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-536158d8-c317-582a-bc49-8cff53c08da3",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S115",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-7e007eb1-7e6f-505e-a9ee-12be0b093312",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S116",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-7acf8e65-ae03-5f86-b4f7-dc2dd32670a9",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S117",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-63d4cf0a-3c5c-5b6e-888c-049920d3531d",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S118",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-85ea81b0-f00c-5335-b379-adc98f2f1978",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "fps",
+    "sample_id": "S119",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-f33d6cd7-c847-5f40-88e0-82370f4c5037",
+    "label_fake": 1,
+    "prob_fake": 0.9903248831542484,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S000",
+    "role": "fit",
+    "group_id": "vript:-AawZPTw8pY",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S001",
+    "role": "fit",
+    "group_id": "vript:-P2rqYVqLhM",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S002",
+    "role": "fit",
+    "group_id": "vript:-LX0wj2NAAk",
+    "label_fake": 0,
+    "prob_fake": 0.5193496454543599,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S003",
+    "role": "fit",
+    "group_id": "vript:-phhN1gWkFk",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S004",
+    "role": "fit",
+    "group_id": "vript:-KqzG0E5C9A",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S005",
+    "role": "fit",
+    "group_id": "vript:1nsYYQI-YWg",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S006",
+    "role": "fit",
+    "group_id": "vript:-W4sCZpO9O0",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S007",
+    "role": "fit",
+    "group_id": "vript:-KaGZhB0WkI",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S008",
+    "role": "fit",
+    "group_id": "vript:-UN7mGQNazo",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S009",
+    "role": "fit",
+    "group_id": "vript:-G1kxJh2Dd0",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S010",
+    "role": "fit",
+    "group_id": "vript:-E2IPygbwJ4",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S011",
+    "role": "fit",
+    "group_id": "vript:-2mJuhuaK0g",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S012",
+    "role": "fit",
+    "group_id": "vript:0FlRfp5bFAU",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S013",
+    "role": "fit",
+    "group_id": "vript:-TOg6v3-QuU",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S014",
+    "role": "fit",
+    "group_id": "vript:-t2k6v0mwT4",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S015",
+    "role": "fit",
+    "group_id": "vript:-mXxBa64zcs",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S016",
+    "role": "fit",
+    "group_id": "vript:-gPTO0COLL4",
+    "label_fake": 0,
+    "prob_fake": 0.018659398182026735,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S017",
+    "role": "fit",
+    "group_id": "vript:-IGsnqp4YLI",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S018",
+    "role": "fit",
+    "group_id": "vript:-V5whSyTstc",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S019",
+    "role": "fit",
+    "group_id": "vript:-YeQAPzH0j4",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S020",
+    "role": "fit",
+    "group_id": "vript:-3PbMDmoOTE",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S021",
+    "role": "fit",
+    "group_id": "vript:-J0ql1yrNO8",
+    "label_fake": 0,
+    "prob_fake": 0.017758232217192388,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S022",
+    "role": "fit",
+    "group_id": "vript:-3Ln4TFCDHg",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S023",
+    "role": "fit",
+    "group_id": "vript:-fm9goXFWuM",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S024",
+    "role": "fit",
+    "group_id": "vript:-W954LYAU1k",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S025",
+    "role": "fit",
+    "group_id": "vript:-6Sfr4FlhJ8",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S026",
+    "role": "fit",
+    "group_id": "vript:-bHE7r5iqXw",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S027",
+    "role": "fit",
+    "group_id": "vript:-JpO7VfMO8U",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S028",
+    "role": "fit",
+    "group_id": "vript:-aid2jMEbXw",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S029",
+    "role": "fit",
+    "group_id": "vript:-6r8ZL3S33s",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S030",
+    "role": "fit",
+    "group_id": "vript:--PTxX38Eac",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S031",
+    "role": "fit",
+    "group_id": "vript:-iE2Ml6Fbow",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S032",
+    "role": "fit",
+    "group_id": "vript:-6bVizHAAGM",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S033",
+    "role": "fit",
+    "group_id": "vript:-8JCVzvR560",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S034",
+    "role": "fit",
+    "group_id": "vript:-QhLmOh6uAU",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S035",
+    "role": "fit",
+    "group_id": "vript:-5eGMJT3M8M",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S060",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_110701",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S061",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_100568",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S062",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_108722",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S063",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10445",
+    "label_fake": 1,
+    "prob_fake": 0.9999529622113783,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S064",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_103290",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S065",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_108050",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S066",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10086",
+    "label_fake": 1,
+    "prob_fake": 0.9999529622113783,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S067",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104870",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S068",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_105628",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S069",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104149",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S070",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10380",
+    "label_fake": 1,
+    "prob_fake": 0.9999529622113783,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S071",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_106387",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S072",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_100965",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S073",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_110760",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S074",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104400",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S075",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_109022",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S076",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_106229",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S077",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_107214",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S090",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-486310b6-579d-5b08-9962-e6b5bab39996",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S091",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-d9c622df-b331-5f1b-af56-0fe259a46299",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S092",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-fe3f36d3-24b4-5ef0-83c0-c09aad9331fe",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S093",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-0a951c4d-4569-5d26-82fc-49ff0f13e4f2",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S094",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-8ec50181-ce7b-55a9-84fd-79e64959a37b",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S095",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-ffa99482-4be4-5bfa-bf68-f98dc2e7e23c",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S096",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-76c12d58-45eb-5805-a786-9f4c7892749a",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S097",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-b588ad11-7af7-5664-80df-1d1df4601fb5",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S098",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-65c7df81-8eae-58f4-8ff9-f0974cdfe051",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S099",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-8481f84a-416a-5868-bae5-0372ae12e255",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S100",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-686b956f-413d-5d6a-9e7f-988b1112134a",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S101",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-b4d0d6c6-10fd-5a4e-8eae-4cb9e5343fde",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S102",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-11e018ce-dfa5-553b-ae7b-6e6bfe2df87f",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S103",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-9853aae4-851c-5cec-a504-c552cdd2db9b",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S104",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-9d29221d-ead8-585f-85e1-aca7f4cf73ce",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S105",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-831996e2-4123-5b17-8511-cbdb42f185fe",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S106",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-d5fdfb1f-7564-5bab-b250-acf9557a55b7",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S107",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-c5696dbd-9b0b-58cd-beff-8d5dc71be958",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S036",
+    "role": "calibration",
+    "group_id": "vript:-9leP3nbaXc",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S037",
+    "role": "calibration",
+    "group_id": "vript:-iQEpqtfsFA",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S038",
+    "role": "calibration",
+    "group_id": "vript:-Wwe5OW_jPE",
+    "label_fake": 0,
+    "prob_fake": 0.02137697944437848,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S039",
+    "role": "calibration",
+    "group_id": "vript:0NLPl2Bs26E",
+    "label_fake": 0,
+    "prob_fake": 0.12956918652322047,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S040",
+    "role": "calibration",
+    "group_id": "vript:-LJ0zl5wh_I",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S041",
+    "role": "calibration",
+    "group_id": "vript:-LP0wu-DBcs",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S042",
+    "role": "calibration",
+    "group_id": "vript:-VdYoNzIFK0",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S043",
+    "role": "calibration",
+    "group_id": "vript:-8GDo_MBrz0",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S044",
+    "role": "calibration",
+    "group_id": "vript:-SadVBnJyH0",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S045",
+    "role": "calibration",
+    "group_id": "vript:-kRKV9-Qf8s",
+    "label_fake": 0,
+    "prob_fake": 0.017550192058610716,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S046",
+    "role": "calibration",
+    "group_id": "vript:-DXCtGr0DVI",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S047",
+    "role": "calibration",
+    "group_id": "vript:-SkiRHoThA4",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S078",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_106360",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S079",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_100167",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S080",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_100470",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S081",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_103378",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S082",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_10003",
+    "label_fake": 1,
+    "prob_fake": 0.9999529622113783,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S083",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_038",
+    "label_fake": 1,
+    "prob_fake": 0.9999529622113783,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S108",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-e25e60e5-84e0-58c6-bc24-e4bd229e96b7",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S109",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-3d340df8-fdb0-5de1-b10d-0df752e80b7e",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S110",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-3fd226e3-475c-50b8-a524-74722cfdd2cf",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S111",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-eac55b11-58ce-53ba-9f8f-6befc381a89d",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S112",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-8485db80-d6b2-5621-a310-6492cbd8257a",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S113",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-d66fd164-61d9-5829-986f-100bf8314f9c",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S048",
+    "role": "audit",
+    "group_id": "vript:-e6lS_AvYO8",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S049",
+    "role": "audit",
+    "group_id": "vript:-XF-d6lLy7U",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S050",
+    "role": "audit",
+    "group_id": "vript:-CqCaGqYG2M",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S051",
+    "role": "audit",
+    "group_id": "vript:--xGjsA5tpg",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S052",
+    "role": "audit",
+    "group_id": "vript:-BLsbul347M",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S053",
+    "role": "audit",
+    "group_id": "vript:022hQ9mesig",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S054",
+    "role": "audit",
+    "group_id": "vript:-ShPemppAik",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S055",
+    "role": "audit",
+    "group_id": "vript:-SIoAoU96Go",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S056",
+    "role": "audit",
+    "group_id": "vript:-2W6AojRWZg",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S057",
+    "role": "audit",
+    "group_id": "vript:-ZRyNa57YeA",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S058",
+    "role": "audit",
+    "group_id": "vript:-4SZvu7e0QE",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S059",
+    "role": "audit",
+    "group_id": "vript:-8upat2I7as",
+    "label_fake": 0,
+    "prob_fake": 0.017344794453221256,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S084",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_110280",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S085",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_103609",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S086",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_102242",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S087",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_111012",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S088",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_103941",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S089",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_111413",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S114",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-536158d8-c317-582a-bc49-8cff53c08da3",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S115",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-7e007eb1-7e6f-505e-a9ee-12be0b093312",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S116",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-7acf8e65-ae03-5f86-b4f7-dc2dd32670a9",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S117",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-63d4cf0a-3c5c-5b6e-888c-049920d3531d",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S118",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-85ea81b0-f00c-5335-b379-adc98f2f1978",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "geometry",
+    "sample_id": "S119",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-f33d6cd7-c847-5f40-88e0-82370f4c5037",
+    "label_fake": 1,
+    "prob_fake": 0.9657648889151919,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S000",
+    "role": "fit",
+    "group_id": "vript:-AawZPTw8pY",
+    "label_fake": 0,
+    "prob_fake": 0.003849333961396338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S001",
+    "role": "fit",
+    "group_id": "vript:-P2rqYVqLhM",
+    "label_fake": 0,
+    "prob_fake": 0.0010500965826823368,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S002",
+    "role": "fit",
+    "group_id": "vript:-LX0wj2NAAk",
+    "label_fake": 0,
+    "prob_fake": 0.14696885516049416,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S003",
+    "role": "fit",
+    "group_id": "vript:-phhN1gWkFk",
+    "label_fake": 0,
+    "prob_fake": 0.005966121756622691,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S004",
+    "role": "fit",
+    "group_id": "vript:-KqzG0E5C9A",
+    "label_fake": 0,
+    "prob_fake": 0.0029193930124933624,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S005",
+    "role": "fit",
+    "group_id": "vript:1nsYYQI-YWg",
+    "label_fake": 0,
+    "prob_fake": 0.02309901686513857,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S006",
+    "role": "fit",
+    "group_id": "vript:-W4sCZpO9O0",
+    "label_fake": 0,
+    "prob_fake": 0.020838817934361837,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S007",
+    "role": "fit",
+    "group_id": "vript:-KaGZhB0WkI",
+    "label_fake": 0,
+    "prob_fake": 0.013661769302663922,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S008",
+    "role": "fit",
+    "group_id": "vript:-UN7mGQNazo",
+    "label_fake": 0,
+    "prob_fake": 0.013974931423343606,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S009",
+    "role": "fit",
+    "group_id": "vript:-G1kxJh2Dd0",
+    "label_fake": 0,
+    "prob_fake": 0.008051083411768353,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S010",
+    "role": "fit",
+    "group_id": "vript:-E2IPygbwJ4",
+    "label_fake": 0,
+    "prob_fake": 0.0003100133178639955,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S011",
+    "role": "fit",
+    "group_id": "vript:-2mJuhuaK0g",
+    "label_fake": 0,
+    "prob_fake": 0.013568405220911909,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S012",
+    "role": "fit",
+    "group_id": "vript:0FlRfp5bFAU",
+    "label_fake": 0,
+    "prob_fake": 0.0035392779113999863,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S013",
+    "role": "fit",
+    "group_id": "vript:-TOg6v3-QuU",
+    "label_fake": 0,
+    "prob_fake": 0.008869015624652435,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S014",
+    "role": "fit",
+    "group_id": "vript:-t2k6v0mwT4",
+    "label_fake": 0,
+    "prob_fake": 0.0030954833290043485,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S015",
+    "role": "fit",
+    "group_id": "vript:-mXxBa64zcs",
+    "label_fake": 0,
+    "prob_fake": 0.004430864351473531,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S016",
+    "role": "fit",
+    "group_id": "vript:-gPTO0COLL4",
+    "label_fake": 0,
+    "prob_fake": 0.006499331367258175,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S017",
+    "role": "fit",
+    "group_id": "vript:-IGsnqp4YLI",
+    "label_fake": 0,
+    "prob_fake": 0.013580133877703019,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S018",
+    "role": "fit",
+    "group_id": "vript:-V5whSyTstc",
+    "label_fake": 0,
+    "prob_fake": 0.01707183667050004,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S019",
+    "role": "fit",
+    "group_id": "vript:-YeQAPzH0j4",
+    "label_fake": 0,
+    "prob_fake": 0.08920914876019967,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S020",
+    "role": "fit",
+    "group_id": "vript:-3PbMDmoOTE",
+    "label_fake": 0,
+    "prob_fake": 0.002387162152404246,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S021",
+    "role": "fit",
+    "group_id": "vript:-J0ql1yrNO8",
+    "label_fake": 0,
+    "prob_fake": 0.0114584267881261,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S022",
+    "role": "fit",
+    "group_id": "vript:-3Ln4TFCDHg",
+    "label_fake": 0,
+    "prob_fake": 0.0075143471060537545,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S023",
+    "role": "fit",
+    "group_id": "vript:-fm9goXFWuM",
+    "label_fake": 0,
+    "prob_fake": 0.005126902880893216,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S024",
+    "role": "fit",
+    "group_id": "vript:-W954LYAU1k",
+    "label_fake": 0,
+    "prob_fake": 0.013533424809961402,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S025",
+    "role": "fit",
+    "group_id": "vript:-6Sfr4FlhJ8",
+    "label_fake": 0,
+    "prob_fake": 0.013680764790616369,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S026",
+    "role": "fit",
+    "group_id": "vript:-bHE7r5iqXw",
+    "label_fake": 0,
+    "prob_fake": 0.012215281281784124,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S027",
+    "role": "fit",
+    "group_id": "vript:-JpO7VfMO8U",
+    "label_fake": 0,
+    "prob_fake": 0.00226607681175804,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S028",
+    "role": "fit",
+    "group_id": "vript:-aid2jMEbXw",
+    "label_fake": 0,
+    "prob_fake": 0.015371710462309687,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S029",
+    "role": "fit",
+    "group_id": "vript:-6r8ZL3S33s",
+    "label_fake": 0,
+    "prob_fake": 0.009904307302436993,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S030",
+    "role": "fit",
+    "group_id": "vript:--PTxX38Eac",
+    "label_fake": 0,
+    "prob_fake": 0.006814410495729977,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S031",
+    "role": "fit",
+    "group_id": "vript:-iE2Ml6Fbow",
+    "label_fake": 0,
+    "prob_fake": 0.015333295452647213,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S032",
+    "role": "fit",
+    "group_id": "vript:-6bVizHAAGM",
+    "label_fake": 0,
+    "prob_fake": 0.031232055463625775,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S033",
+    "role": "fit",
+    "group_id": "vript:-8JCVzvR560",
+    "label_fake": 0,
+    "prob_fake": 0.007718113681700693,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S034",
+    "role": "fit",
+    "group_id": "vript:-QhLmOh6uAU",
+    "label_fake": 0,
+    "prob_fake": 0.004817215559342442,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S035",
+    "role": "fit",
+    "group_id": "vript:-5eGMJT3M8M",
+    "label_fake": 0,
+    "prob_fake": 0.004304815376002038,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S060",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_110701",
+    "label_fake": 1,
+    "prob_fake": 0.9741468249425271,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S061",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_100568",
+    "label_fake": 1,
+    "prob_fake": 0.9744093416308279,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S062",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_108722",
+    "label_fake": 1,
+    "prob_fake": 0.972906280042254,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S063",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10445",
+    "label_fake": 1,
+    "prob_fake": 0.9993831675201366,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S064",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_103290",
+    "label_fake": 1,
+    "prob_fake": 0.9761803581512544,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S065",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_108050",
+    "label_fake": 1,
+    "prob_fake": 0.9806301281904527,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S066",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10086",
+    "label_fake": 1,
+    "prob_fake": 0.9991880947332208,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S067",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104870",
+    "label_fake": 1,
+    "prob_fake": 0.9793552069510479,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S068",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_105628",
+    "label_fake": 1,
+    "prob_fake": 0.9726095703981648,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S069",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104149",
+    "label_fake": 1,
+    "prob_fake": 0.9768329306981568,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S070",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_10380",
+    "label_fake": 1,
+    "prob_fake": 0.9993158052739748,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S071",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_106387",
+    "label_fake": 1,
+    "prob_fake": 0.9729703104157451,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S072",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_100965",
+    "label_fake": 1,
+    "prob_fake": 0.9729049580773338,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S073",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_110760",
+    "label_fake": 1,
+    "prob_fake": 0.9737854056015177,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S074",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_104400",
+    "label_fake": 1,
+    "prob_fake": 0.9728227842995021,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S075",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_109022",
+    "label_fake": 1,
+    "prob_fake": 0.9731151007102165,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S076",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_106229",
+    "label_fake": 1,
+    "prob_fake": 0.9728715400323097,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S077",
+    "role": "fit",
+    "group_id": "opensora:OpenSoraL_107214",
+    "label_fake": 1,
+    "prob_fake": 0.9729619737714159,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S090",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-486310b6-579d-5b08-9962-e6b5bab39996",
+    "label_fake": 1,
+    "prob_fake": 0.989303508730366,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S091",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-d9c622df-b331-5f1b-af56-0fe259a46299",
+    "label_fake": 1,
+    "prob_fake": 0.9878425388053482,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S092",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-fe3f36d3-24b4-5ef0-83c0-c09aad9331fe",
+    "label_fake": 1,
+    "prob_fake": 0.9908642330793135,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S093",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-0a951c4d-4569-5d26-82fc-49ff0f13e4f2",
+    "label_fake": 1,
+    "prob_fake": 0.9913195326558634,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S094",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-8ec50181-ce7b-55a9-84fd-79e64959a37b",
+    "label_fake": 1,
+    "prob_fake": 0.992051608080045,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S095",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-ffa99482-4be4-5bfa-bf68-f98dc2e7e23c",
+    "label_fake": 1,
+    "prob_fake": 0.9901014828838046,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S096",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-76c12d58-45eb-5805-a786-9f4c7892749a",
+    "label_fake": 1,
+    "prob_fake": 0.9898596428125319,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S097",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-b588ad11-7af7-5664-80df-1d1df4601fb5",
+    "label_fake": 1,
+    "prob_fake": 0.9912230234278103,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S098",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-65c7df81-8eae-58f4-8ff9-f0974cdfe051",
+    "label_fake": 1,
+    "prob_fake": 0.991600168619801,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S099",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-8481f84a-416a-5868-bae5-0372ae12e255",
+    "label_fake": 1,
+    "prob_fake": 0.9890811037420951,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S100",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-686b956f-413d-5d6a-9e7f-988b1112134a",
+    "label_fake": 1,
+    "prob_fake": 0.9891247827538979,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S101",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-b4d0d6c6-10fd-5a4e-8eae-4cb9e5343fde",
+    "label_fake": 1,
+    "prob_fake": 0.9895714789751002,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S102",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-11e018ce-dfa5-553b-ae7b-6e6bfe2df87f",
+    "label_fake": 1,
+    "prob_fake": 0.9903194908125295,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S103",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-9853aae4-851c-5cec-a504-c552cdd2db9b",
+    "label_fake": 1,
+    "prob_fake": 0.9910803605076104,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S104",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-9d29221d-ead8-585f-85e1-aca7f4cf73ce",
+    "label_fake": 1,
+    "prob_fake": 0.9895536707446939,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S105",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-831996e2-4123-5b17-8511-cbdb42f185fe",
+    "label_fake": 1,
+    "prob_fake": 0.9905946169906844,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S106",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-d5fdfb1f-7564-5bab-b250-acf9557a55b7",
+    "label_fake": 1,
+    "prob_fake": 0.9914606375931582,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S107",
+    "role": "fit",
+    "group_id": "t2vz:t2vz-c5696dbd-9b0b-58cd-beff-8d5dc71be958",
+    "label_fake": 1,
+    "prob_fake": 0.9873915501006528,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S036",
+    "role": "calibration",
+    "group_id": "vript:-9leP3nbaXc",
+    "label_fake": 0,
+    "prob_fake": 0.009987473050838417,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S037",
+    "role": "calibration",
+    "group_id": "vript:-iQEpqtfsFA",
+    "label_fake": 0,
+    "prob_fake": 0.0009596044898562322,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S038",
+    "role": "calibration",
+    "group_id": "vript:-Wwe5OW_jPE",
+    "label_fake": 0,
+    "prob_fake": 0.001167575443093941,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S039",
+    "role": "calibration",
+    "group_id": "vript:0NLPl2Bs26E",
+    "label_fake": 0,
+    "prob_fake": 0.035994975140835134,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S040",
+    "role": "calibration",
+    "group_id": "vript:-LJ0zl5wh_I",
+    "label_fake": 0,
+    "prob_fake": 0.007158709132226816,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S041",
+    "role": "calibration",
+    "group_id": "vript:-LP0wu-DBcs",
+    "label_fake": 0,
+    "prob_fake": 0.005565143067017111,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S042",
+    "role": "calibration",
+    "group_id": "vript:-VdYoNzIFK0",
+    "label_fake": 0,
+    "prob_fake": 0.03857745383277312,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S043",
+    "role": "calibration",
+    "group_id": "vript:-8GDo_MBrz0",
+    "label_fake": 0,
+    "prob_fake": 0.04056294387511832,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S044",
+    "role": "calibration",
+    "group_id": "vript:-SadVBnJyH0",
+    "label_fake": 0,
+    "prob_fake": 0.00066597164460377,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S045",
+    "role": "calibration",
+    "group_id": "vript:-kRKV9-Qf8s",
+    "label_fake": 0,
+    "prob_fake": 0.01791825485426673,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S046",
+    "role": "calibration",
+    "group_id": "vript:-DXCtGr0DVI",
+    "label_fake": 0,
+    "prob_fake": 0.0013879008154296954,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S047",
+    "role": "calibration",
+    "group_id": "vript:-SkiRHoThA4",
+    "label_fake": 0,
+    "prob_fake": 0.011185049808656535,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S078",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_106360",
+    "label_fake": 1,
+    "prob_fake": 0.9730872355989292,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S079",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_100167",
+    "label_fake": 1,
+    "prob_fake": 0.9729261599985456,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S080",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_100470",
+    "label_fake": 1,
+    "prob_fake": 0.972961776558511,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S081",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_103378",
+    "label_fake": 1,
+    "prob_fake": 0.9749194874505076,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S082",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_10003",
+    "label_fake": 1,
+    "prob_fake": 0.9996068107190224,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S083",
+    "role": "calibration",
+    "group_id": "opensora:OpenSoraL_038",
+    "label_fake": 1,
+    "prob_fake": 0.9992666904785833,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S108",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-e25e60e5-84e0-58c6-bc24-e4bd229e96b7",
+    "label_fake": 1,
+    "prob_fake": 0.9886468767058719,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S109",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-3d340df8-fdb0-5de1-b10d-0df752e80b7e",
+    "label_fake": 1,
+    "prob_fake": 0.9901563775230289,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S110",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-3fd226e3-475c-50b8-a524-74722cfdd2cf",
+    "label_fake": 1,
+    "prob_fake": 0.9909693052555966,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S111",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-eac55b11-58ce-53ba-9f8f-6befc381a89d",
+    "label_fake": 1,
+    "prob_fake": 0.9893557146918693,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S112",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-8485db80-d6b2-5621-a310-6492cbd8257a",
+    "label_fake": 1,
+    "prob_fake": 0.9895279624459452,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S113",
+    "role": "calibration",
+    "group_id": "t2vz:t2vz-d66fd164-61d9-5829-986f-100bf8314f9c",
+    "label_fake": 1,
+    "prob_fake": 0.9916942294742421,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S048",
+    "role": "audit",
+    "group_id": "vript:-e6lS_AvYO8",
+    "label_fake": 0,
+    "prob_fake": 0.009766595797328104,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S049",
+    "role": "audit",
+    "group_id": "vript:-XF-d6lLy7U",
+    "label_fake": 0,
+    "prob_fake": 0.006467140392697121,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S050",
+    "role": "audit",
+    "group_id": "vript:-CqCaGqYG2M",
+    "label_fake": 0,
+    "prob_fake": 0.0030872411070732722,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S051",
+    "role": "audit",
+    "group_id": "vript:--xGjsA5tpg",
+    "label_fake": 0,
+    "prob_fake": 0.02137825953657856,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S052",
+    "role": "audit",
+    "group_id": "vript:-BLsbul347M",
+    "label_fake": 0,
+    "prob_fake": 0.006582749356984497,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S053",
+    "role": "audit",
+    "group_id": "vript:022hQ9mesig",
+    "label_fake": 0,
+    "prob_fake": 0.008470120458184339,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S054",
+    "role": "audit",
+    "group_id": "vript:-ShPemppAik",
+    "label_fake": 0,
+    "prob_fake": 0.006572036502319341,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S055",
+    "role": "audit",
+    "group_id": "vript:-SIoAoU96Go",
+    "label_fake": 0,
+    "prob_fake": 0.0008323013092128274,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S056",
+    "role": "audit",
+    "group_id": "vript:-2W6AojRWZg",
+    "label_fake": 0,
+    "prob_fake": 0.0038681266685117867,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S057",
+    "role": "audit",
+    "group_id": "vript:-ZRyNa57YeA",
+    "label_fake": 0,
+    "prob_fake": 0.012704172943881245,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S058",
+    "role": "audit",
+    "group_id": "vript:-4SZvu7e0QE",
+    "label_fake": 0,
+    "prob_fake": 0.0006653543687812145,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S059",
+    "role": "audit",
+    "group_id": "vript:-8upat2I7as",
+    "label_fake": 0,
+    "prob_fake": 0.011111605330906132,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S084",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_110280",
+    "label_fake": 1,
+    "prob_fake": 0.9728689563637205,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S085",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_103609",
+    "label_fake": 1,
+    "prob_fake": 0.9718982680694612,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S086",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_102242",
+    "label_fake": 1,
+    "prob_fake": 0.9731355278222967,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S087",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_111012",
+    "label_fake": 1,
+    "prob_fake": 0.9729740375553326,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S088",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_103941",
+    "label_fake": 1,
+    "prob_fake": 0.9727274107320522,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S089",
+    "role": "audit",
+    "group_id": "opensora:OpenSoraL_111413",
+    "label_fake": 1,
+    "prob_fake": 0.9730416709027505,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S114",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-536158d8-c317-582a-bc49-8cff53c08da3",
+    "label_fake": 1,
+    "prob_fake": 0.9905453307032962,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S115",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-7e007eb1-7e6f-505e-a9ee-12be0b093312",
+    "label_fake": 1,
+    "prob_fake": 0.98985211034873,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S116",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-7acf8e65-ae03-5f86-b4f7-dc2dd32670a9",
+    "label_fake": 1,
+    "prob_fake": 0.9906233790744309,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S117",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-63d4cf0a-3c5c-5b6e-888c-049920d3531d",
+    "label_fake": 1,
+    "prob_fake": 0.9892715622050094,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S118",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-85ea81b0-f00c-5335-b379-adc98f2f1978",
+    "label_fake": 1,
+    "prob_fake": 0.9893773532478288,
+    "threshold": 0.5
+  },
+  {
+    "feature_set": "metadata_all",
+    "sample_id": "S119",
+    "role": "audit",
+    "group_id": "t2vz:t2vz-f33d6cd7-c847-5f40-88e0-82370f4c5037",
+    "label_fake": 1,
+    "prob_fake": 0.9905349757315638,
+    "threshold": 0.5
+  }
+]

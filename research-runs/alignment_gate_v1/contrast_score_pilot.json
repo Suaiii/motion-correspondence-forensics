@@ -1,0 +1,7 @@
+{
+  "protocol":"mean over three frozen seeds; same-sample contrast of arm probabilities",
+  "audit_n":117,
+  "auc":{"correct":0.8929824561,"correct_minus_wrong_integer":0.8643274854,"correct_minus_fractional":0.7076023392,"correct_minus_raw":0.6926900585},
+  "decision":"contrast_score_not_better_than_correct",
+  "interpretation":"A naive cross-arm probability difference discards useful information; a future method should learn correspondence-aware features rather than subtract final scores."
+}

@@ -1,0 +1,962 @@
+[
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-AawZPTw8pY-Scene-018.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-AawZPTw8pY",
+    "role": "fit",
+    "sample_id": "S000"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-P2rqYVqLhM-Scene-037.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-P2rqYVqLhM",
+    "role": "fit",
+    "sample_id": "S001"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-LX0wj2NAAk-Scene-008.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-LX0wj2NAAk",
+    "role": "fit",
+    "sample_id": "S002"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-phhN1gWkFk-Scene-009.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-phhN1gWkFk",
+    "role": "fit",
+    "sample_id": "S003"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-KqzG0E5C9A-Scene-006.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-KqzG0E5C9A",
+    "role": "fit",
+    "sample_id": "S004"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\1nsYYQI-YWg-Scene-073.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:1nsYYQI-YWg",
+    "role": "fit",
+    "sample_id": "S005"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-W4sCZpO9O0-Scene-015.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-W4sCZpO9O0",
+    "role": "fit",
+    "sample_id": "S006"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-KaGZhB0WkI-Scene-021.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-KaGZhB0WkI",
+    "role": "fit",
+    "sample_id": "S007"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-UN7mGQNazo-Scene-032.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-UN7mGQNazo",
+    "role": "fit",
+    "sample_id": "S008"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-G1kxJh2Dd0-Scene-034.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-G1kxJh2Dd0",
+    "role": "fit",
+    "sample_id": "S009"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-E2IPygbwJ4-Scene-038.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-E2IPygbwJ4",
+    "role": "fit",
+    "sample_id": "S010"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-2mJuhuaK0g-Scene-061.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-2mJuhuaK0g",
+    "role": "fit",
+    "sample_id": "S011"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\0FlRfp5bFAU-Scene-011.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:0FlRfp5bFAU",
+    "role": "fit",
+    "sample_id": "S012"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-TOg6v3-QuU-Scene-008.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-TOg6v3-QuU",
+    "role": "fit",
+    "sample_id": "S013"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-t2k6v0mwT4-Scene-008.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-t2k6v0mwT4",
+    "role": "fit",
+    "sample_id": "S014"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-mXxBa64zcs-Scene-010.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-mXxBa64zcs",
+    "role": "fit",
+    "sample_id": "S015"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-gPTO0COLL4-Scene-022.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-gPTO0COLL4",
+    "role": "fit",
+    "sample_id": "S016"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-IGsnqp4YLI-Scene-030.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-IGsnqp4YLI",
+    "role": "fit",
+    "sample_id": "S017"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-V5whSyTstc-Scene-017.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-V5whSyTstc",
+    "role": "fit",
+    "sample_id": "S018"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-YeQAPzH0j4-Scene-036.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-YeQAPzH0j4",
+    "role": "fit",
+    "sample_id": "S019"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-3PbMDmoOTE-Scene-005.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-3PbMDmoOTE",
+    "role": "fit",
+    "sample_id": "S020"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-J0ql1yrNO8-Scene-003.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-J0ql1yrNO8",
+    "role": "fit",
+    "sample_id": "S021"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-3Ln4TFCDHg-Scene-015.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-3Ln4TFCDHg",
+    "role": "fit",
+    "sample_id": "S022"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-fm9goXFWuM-Scene-046.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-fm9goXFWuM",
+    "role": "fit",
+    "sample_id": "S023"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-W954LYAU1k-Scene-051.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-W954LYAU1k",
+    "role": "fit",
+    "sample_id": "S024"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-6Sfr4FlhJ8-Scene-030.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-6Sfr4FlhJ8",
+    "role": "fit",
+    "sample_id": "S025"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-bHE7r5iqXw-Scene-040.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-bHE7r5iqXw",
+    "role": "fit",
+    "sample_id": "S026"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-JpO7VfMO8U-Scene-024.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-JpO7VfMO8U",
+    "role": "fit",
+    "sample_id": "S027"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-aid2jMEbXw-Scene-019.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-aid2jMEbXw",
+    "role": "fit",
+    "sample_id": "S028"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-6r8ZL3S33s-Scene-013.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-6r8ZL3S33s",
+    "role": "fit",
+    "sample_id": "S029"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\--PTxX38Eac-Scene-022.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:--PTxX38Eac",
+    "role": "fit",
+    "sample_id": "S030"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-iE2Ml6Fbow-Scene-022.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-iE2Ml6Fbow",
+    "role": "fit",
+    "sample_id": "S031"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-6bVizHAAGM-Scene-023.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-6bVizHAAGM",
+    "role": "fit",
+    "sample_id": "S032"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-8JCVzvR560-Scene-096.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-8JCVzvR560",
+    "role": "fit",
+    "sample_id": "S033"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-QhLmOh6uAU-Scene-042.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-QhLmOh6uAU",
+    "role": "fit",
+    "sample_id": "S034"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-5eGMJT3M8M-Scene-033.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-5eGMJT3M8M",
+    "role": "fit",
+    "sample_id": "S035"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-9leP3nbaXc-Scene-032.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-9leP3nbaXc",
+    "role": "calibration",
+    "sample_id": "S036"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-iQEpqtfsFA-Scene-002.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-iQEpqtfsFA",
+    "role": "calibration",
+    "sample_id": "S037"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-Wwe5OW_jPE-Scene-001.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-Wwe5OW_jPE",
+    "role": "calibration",
+    "sample_id": "S038"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\0NLPl2Bs26E-Scene-002.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:0NLPl2Bs26E",
+    "role": "calibration",
+    "sample_id": "S039"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-LJ0zl5wh_I-Scene-065.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-LJ0zl5wh_I",
+    "role": "calibration",
+    "sample_id": "S040"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-LP0wu-DBcs-Scene-006.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-LP0wu-DBcs",
+    "role": "calibration",
+    "sample_id": "S041"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-VdYoNzIFK0-Scene-013.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-VdYoNzIFK0",
+    "role": "calibration",
+    "sample_id": "S042"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-8GDo_MBrz0-Scene-016.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-8GDo_MBrz0",
+    "role": "calibration",
+    "sample_id": "S043"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-SadVBnJyH0-Scene-037.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-SadVBnJyH0",
+    "role": "calibration",
+    "sample_id": "S044"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-kRKV9-Qf8s-Scene-026.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-kRKV9-Qf8s",
+    "role": "calibration",
+    "sample_id": "S045"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-DXCtGr0DVI-Scene-028.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-DXCtGr0DVI",
+    "role": "calibration",
+    "sample_id": "S046"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-SkiRHoThA4-Scene-086.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-SkiRHoThA4",
+    "role": "calibration",
+    "sample_id": "S047"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-e6lS_AvYO8-Scene-005.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-e6lS_AvYO8",
+    "role": "audit",
+    "sample_id": "S048"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-XF-d6lLy7U-Scene-001.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-XF-d6lLy7U",
+    "role": "audit",
+    "sample_id": "S049"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-CqCaGqYG2M-Scene-011.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-CqCaGqYG2M",
+    "role": "audit",
+    "sample_id": "S050"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\--xGjsA5tpg-Scene-057.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:--xGjsA5tpg",
+    "role": "audit",
+    "sample_id": "S051"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-BLsbul347M-Scene-022.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-BLsbul347M",
+    "role": "audit",
+    "sample_id": "S052"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\022hQ9mesig-Scene-022.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:022hQ9mesig",
+    "role": "audit",
+    "sample_id": "S053"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-ShPemppAik-Scene-016.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-ShPemppAik",
+    "role": "audit",
+    "sample_id": "S054"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-SIoAoU96Go-Scene-048.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-SIoAoU96Go",
+    "role": "audit",
+    "sample_id": "S055"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-2W6AojRWZg-Scene-078.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-2W6AojRWZg",
+    "role": "audit",
+    "sample_id": "S056"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-ZRyNa57YeA-Scene-019.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-ZRyNa57YeA",
+    "role": "audit",
+    "sample_id": "S057"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-4SZvu7e0QE-Scene-004.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-4SZvu7e0QE",
+    "role": "audit",
+    "sample_id": "S058"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\vript\\-8upat2I7as-Scene-039.mp4",
+    "label_fake": 0,
+    "source": "vript",
+    "group_id": "vript:-8upat2I7as",
+    "role": "audit",
+    "sample_id": "S059"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110701.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_110701",
+    "role": "fit",
+    "sample_id": "S060"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100568.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_100568",
+    "role": "fit",
+    "sample_id": "S061"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108722.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_108722",
+    "role": "fit",
+    "sample_id": "S062"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10445.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_10445",
+    "role": "fit",
+    "sample_id": "S063"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103290.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_103290",
+    "role": "fit",
+    "sample_id": "S064"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108050.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_108050",
+    "role": "fit",
+    "sample_id": "S065"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10086.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_10086",
+    "role": "fit",
+    "sample_id": "S066"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104870.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_104870",
+    "role": "fit",
+    "sample_id": "S067"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105628.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_105628",
+    "role": "fit",
+    "sample_id": "S068"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104149.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_104149",
+    "role": "fit",
+    "sample_id": "S069"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10380.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_10380",
+    "role": "fit",
+    "sample_id": "S070"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106387.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_106387",
+    "role": "fit",
+    "sample_id": "S071"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100965.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_100965",
+    "role": "fit",
+    "sample_id": "S072"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110760.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_110760",
+    "role": "fit",
+    "sample_id": "S073"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104400.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_104400",
+    "role": "fit",
+    "sample_id": "S074"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109022.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_109022",
+    "role": "fit",
+    "sample_id": "S075"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106229.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_106229",
+    "role": "fit",
+    "sample_id": "S076"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107214.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_107214",
+    "role": "fit",
+    "sample_id": "S077"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106360.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_106360",
+    "role": "calibration",
+    "sample_id": "S078"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100167.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_100167",
+    "role": "calibration",
+    "sample_id": "S079"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100470.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_100470",
+    "role": "calibration",
+    "sample_id": "S080"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103378.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_103378",
+    "role": "calibration",
+    "sample_id": "S081"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10003.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_10003",
+    "role": "calibration",
+    "sample_id": "S082"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_038.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_038",
+    "role": "calibration",
+    "sample_id": "S083"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110280.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_110280",
+    "role": "audit",
+    "sample_id": "S084"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103609.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_103609",
+    "role": "audit",
+    "sample_id": "S085"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102242.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_102242",
+    "role": "audit",
+    "sample_id": "S086"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111012.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_111012",
+    "role": "audit",
+    "sample_id": "S087"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103941.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_103941",
+    "role": "audit",
+    "sample_id": "S088"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111413.mp4",
+    "label_fake": 1,
+    "source": "opensora",
+    "group_id": "opensora:OpenSoraL_111413",
+    "role": "audit",
+    "sample_id": "S089"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-486310b6-579d-5b08-9962-e6b5bab39996.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-486310b6-579d-5b08-9962-e6b5bab39996",
+    "role": "fit",
+    "sample_id": "S090"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-d9c622df-b331-5f1b-af56-0fe259a46299.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-d9c622df-b331-5f1b-af56-0fe259a46299",
+    "role": "fit",
+    "sample_id": "S091"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-fe3f36d3-24b4-5ef0-83c0-c09aad9331fe.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-fe3f36d3-24b4-5ef0-83c0-c09aad9331fe",
+    "role": "fit",
+    "sample_id": "S092"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-0a951c4d-4569-5d26-82fc-49ff0f13e4f2.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-0a951c4d-4569-5d26-82fc-49ff0f13e4f2",
+    "role": "fit",
+    "sample_id": "S093"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-8ec50181-ce7b-55a9-84fd-79e64959a37b.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-8ec50181-ce7b-55a9-84fd-79e64959a37b",
+    "role": "fit",
+    "sample_id": "S094"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-ffa99482-4be4-5bfa-bf68-f98dc2e7e23c.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-ffa99482-4be4-5bfa-bf68-f98dc2e7e23c",
+    "role": "fit",
+    "sample_id": "S095"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-76c12d58-45eb-5805-a786-9f4c7892749a.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-76c12d58-45eb-5805-a786-9f4c7892749a",
+    "role": "fit",
+    "sample_id": "S096"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-b588ad11-7af7-5664-80df-1d1df4601fb5.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-b588ad11-7af7-5664-80df-1d1df4601fb5",
+    "role": "fit",
+    "sample_id": "S097"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-65c7df81-8eae-58f4-8ff9-f0974cdfe051.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-65c7df81-8eae-58f4-8ff9-f0974cdfe051",
+    "role": "fit",
+    "sample_id": "S098"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-8481f84a-416a-5868-bae5-0372ae12e255.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-8481f84a-416a-5868-bae5-0372ae12e255",
+    "role": "fit",
+    "sample_id": "S099"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-686b956f-413d-5d6a-9e7f-988b1112134a.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-686b956f-413d-5d6a-9e7f-988b1112134a",
+    "role": "fit",
+    "sample_id": "S100"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-b4d0d6c6-10fd-5a4e-8eae-4cb9e5343fde.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-b4d0d6c6-10fd-5a4e-8eae-4cb9e5343fde",
+    "role": "fit",
+    "sample_id": "S101"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-11e018ce-dfa5-553b-ae7b-6e6bfe2df87f.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-11e018ce-dfa5-553b-ae7b-6e6bfe2df87f",
+    "role": "fit",
+    "sample_id": "S102"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-9853aae4-851c-5cec-a504-c552cdd2db9b.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-9853aae4-851c-5cec-a504-c552cdd2db9b",
+    "role": "fit",
+    "sample_id": "S103"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-9d29221d-ead8-585f-85e1-aca7f4cf73ce.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-9d29221d-ead8-585f-85e1-aca7f4cf73ce",
+    "role": "fit",
+    "sample_id": "S104"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-831996e2-4123-5b17-8511-cbdb42f185fe.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-831996e2-4123-5b17-8511-cbdb42f185fe",
+    "role": "fit",
+    "sample_id": "S105"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-d5fdfb1f-7564-5bab-b250-acf9557a55b7.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-d5fdfb1f-7564-5bab-b250-acf9557a55b7",
+    "role": "fit",
+    "sample_id": "S106"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-c5696dbd-9b0b-58cd-beff-8d5dc71be958.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-c5696dbd-9b0b-58cd-beff-8d5dc71be958",
+    "role": "fit",
+    "sample_id": "S107"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-e25e60e5-84e0-58c6-bc24-e4bd229e96b7.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-e25e60e5-84e0-58c6-bc24-e4bd229e96b7",
+    "role": "calibration",
+    "sample_id": "S108"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-3d340df8-fdb0-5de1-b10d-0df752e80b7e.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-3d340df8-fdb0-5de1-b10d-0df752e80b7e",
+    "role": "calibration",
+    "sample_id": "S109"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-3fd226e3-475c-50b8-a524-74722cfdd2cf.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-3fd226e3-475c-50b8-a524-74722cfdd2cf",
+    "role": "calibration",
+    "sample_id": "S110"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-eac55b11-58ce-53ba-9f8f-6befc381a89d.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-eac55b11-58ce-53ba-9f8f-6befc381a89d",
+    "role": "calibration",
+    "sample_id": "S111"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-8485db80-d6b2-5621-a310-6492cbd8257a.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-8485db80-d6b2-5621-a310-6492cbd8257a",
+    "role": "calibration",
+    "sample_id": "S112"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-d66fd164-61d9-5829-986f-100bf8314f9c.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-d66fd164-61d9-5829-986f-100bf8314f9c",
+    "role": "calibration",
+    "sample_id": "S113"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-536158d8-c317-582a-bc49-8cff53c08da3.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-536158d8-c317-582a-bc49-8cff53c08da3",
+    "role": "audit",
+    "sample_id": "S114"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-7e007eb1-7e6f-505e-a9ee-12be0b093312.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-7e007eb1-7e6f-505e-a9ee-12be0b093312",
+    "role": "audit",
+    "sample_id": "S115"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-7acf8e65-ae03-5f86-b4f7-dc2dd32670a9.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-7acf8e65-ae03-5f86-b4f7-dc2dd32670a9",
+    "role": "audit",
+    "sample_id": "S116"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-63d4cf0a-3c5c-5b6e-888c-049920d3531d.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-63d4cf0a-3c5c-5b6e-888c-049920d3531d",
+    "role": "audit",
+    "sample_id": "S117"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-85ea81b0-f00c-5335-b379-adc98f2f1978.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-85ea81b0-f00c-5335-b379-adc98f2f1978",
+    "role": "audit",
+    "sample_id": "S118"
+  },
+  {
+    "path": "E:\\AAGenvid\\Dataset\\t2vz\\t2vz-f33d6cd7-c847-5f40-88e0-82370f4c5037.mp4",
+    "label_fake": 1,
+    "source": "t2vz",
+    "group_id": "t2vz:t2vz-f33d6cd7-c847-5f40-88e0-82370f4c5037",
+    "role": "audit",
+    "sample_id": "S119"
+  }
+]

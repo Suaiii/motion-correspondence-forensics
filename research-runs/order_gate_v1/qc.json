@@ -1,0 +1,43 @@
+{
+  "kept": 595,
+  "exclusions": [
+    {
+      "sample_id": "X0035",
+      "source": "vript",
+      "role": "fit",
+      "label_fake": 0,
+      "reason": "insufficient_duration"
+    },
+    {
+      "sample_id": "X0050",
+      "source": "vript",
+      "role": "fit",
+      "label_fake": 0,
+      "reason": "insufficient_duration"
+    },
+    {
+      "sample_id": "X0247",
+      "source": "vript",
+      "role": "audit",
+      "label_fake": 0,
+      "reason": "insufficient_duration"
+    },
+    {
+      "sample_id": "X0262",
+      "source": "vript",
+      "role": "audit",
+      "label_fake": 0,
+      "reason": "insufficient_duration"
+    },
+    {
+      "sample_id": "X0277",
+      "source": "vript",
+      "role": "audit",
+      "label_fake": 0,
+      "reason": "insufficient_duration"
+    }
+  ],
+  "failures": [],
+  "wall_seconds": 568.303392400001,
+  "policy": "quality rules frozen before model fitting; no replacements; all conditions share same IDs"
+}

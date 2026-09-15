@@ -1,0 +1,8 @@
+{
+  "protocol":"same fit/calibration/audit splits; correct+fractional concatenation; no audit-based selection",
+  "calibration_auc":{"1":0.8780555556,"3":0.8975,"10":0.9094444444,"30":0.91,"100":0.9097222222},
+  "audit_auc":{"1":0.8576023392,"3":0.8745614035,"10":0.8830409357,"30":0.8862573099,"100":0.8906432749},
+  "selected_C":30,
+  "interpretation":"The gain persists across C=1..100; calibration selects C=30. C=100 audit is reported only as sensitivity, never used to claim the primary result.",
+  "status":"robustness_supportive"
+}

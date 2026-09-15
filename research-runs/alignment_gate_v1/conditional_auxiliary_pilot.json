@@ -1,0 +1,8 @@
+{
+  "protocol":"same adversarial head with GRL=0 (auxiliary nuisance prediction only), 300 epochs, hidden=32, nuisance_weight=0.2, seeds=[17,29,43]",
+  "audit_auc_by_seed":{"17":0.8254385965,"29":0.8166666667,"43":0.8242690058},
+  "mean_audit_auc":0.8221242029,
+  "reference_correct_arm_audit_auc":0.832748538,
+  "decision":"auxiliary_nuisance_head_not_yet_beneficial",
+  "interpretation":"Removing gradient reversal improves over the adversarial pilot but remains below the frozen alignment arm; the shared encoder/auxiliary formulation is not a breakthrough under this setting."
+}

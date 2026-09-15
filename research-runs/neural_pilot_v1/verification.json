@@ -1,0 +1,37 @@
+{
+  "recomputed_groups": 27,
+  "all_passed": true,
+  "paired_diagnostics": [
+    {
+      "condition": "clean",
+      "statistic": "AUC(seed-mean aligned probabilities) minus AUC(seed-mean raw probabilities)",
+      "difference": 0.11805555555555558,
+      "paired_stratified_percentile95": [
+        -0.10416666666666663,
+        0.33350694444444434
+      ],
+      "limitation": "small historical development sample; not correction for model/condition selection or source uncertainty"
+    },
+    {
+      "condition": "gaussian5",
+      "statistic": "AUC(seed-mean aligned probabilities) minus AUC(seed-mean raw probabilities)",
+      "difference": 0.13888888888888884,
+      "paired_stratified_percentile95": [
+        -0.08333333333333337,
+        0.36840277777777747
+      ],
+      "limitation": "small historical development sample; not correction for model/condition selection or source uncertainty"
+    },
+    {
+      "condition": "jpeg70",
+      "statistic": "AUC(seed-mean aligned probabilities) minus AUC(seed-mean raw probabilities)",
+      "difference": 0.125,
+      "paired_stratified_percentile95": [
+        -0.08350694444444458,
+        0.33350694444444434
+      ],
+      "limitation": "small historical development sample; not correction for model/condition selection or source uncertainty"
+    }
+  ],
+  "review_type": "same-implementer numerical verification; not independent scientific reproduction"
+}

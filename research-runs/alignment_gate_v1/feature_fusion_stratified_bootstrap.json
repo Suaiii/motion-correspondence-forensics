@@ -1,0 +1,11 @@
+{
+  "protocol":"source-stratified paired video bootstrap; fit-only C=30; audit n=117",
+  "audit_source_counts":{"vript":57,"opensora":30,"t2vz":30},
+  "delta":0.0529239766,
+  "replicates":1000,
+  "seed":20260914,
+  "ci95":[0.0076023392,0.1056067251],
+  "positive_fraction":0.99,
+  "decision":"confirmed_on_source_stratified_development_audit",
+  "interpretation":"The correct+fractional fusion gain remains positive when bootstrap resampling preserves the observed source composition. This strengthens, but does not replace, independent-source validation."
+}

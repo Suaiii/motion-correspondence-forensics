@@ -1,0 +1,17 @@
+{
+  "created_utc": "2026-09-07T16:50:43.126015+00:00",
+  "code_hashes": {
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\run.py": "54e73c6aca524c6cec3698c83f87df58ae4fa8d05407f96ff87f95659c29dd2f",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\model.py": "6bd4557f4eb075f3a13a888cf8b7efee87de25cc1ba08d4d82f8ef5ec0510825",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\video_io.py": "b47cd68414ded2a4844aad0aa6766b009dfc7d0aac0d294fc18b49db4985f213",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\selection.py": "fc03e80f532d1178fb16ba0c29a5a3901d292136edf5e99b24b9ddc94f3ec52d",
+    "E:\\aNB\\TECH\\脉冲神经网络\\research-code\\sampling.py": "6b3dc621eeff8af41658e6d0cbb376ee265e041b231eae04c738bb92a8866dfb"
+  },
+  "protocol_sha256": "e5ce0ef7427853d30a4479d1a1602bf7483b5306aec08ec29cc54d91c37c6e23",
+  "input_manifest_sha256": "d4121561b0ca7a2b50d5541d0af43c995f7871aca4d220b5e6ba0bff41393220",
+  "torch": "2.5.1",
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "python_executable": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\python.exe",
+  "scope": "bounded local expanded development gate; no confirmatory test",
+  "main_thread": "01a055fc-51ee-7b00-824b-087fc85b70d5"
+}

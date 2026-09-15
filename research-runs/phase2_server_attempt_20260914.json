@@ -1,0 +1,11 @@
+{
+  "timestamp": "2026-09-14T09:26:39.6187373Z",
+  "host": "connect.westb.seetacloud.com",
+  "port": 35529,
+  "tcp_test": true,
+  "ssh_batchmode_result": "connection closed during handshake",
+  "server_started": false,
+  "remote_job_started": false,
+  "reason": "No provider control endpoint or persisted credentials; remote host identity/lifecycle cannot be verified",
+  "next_action": "User/provider must resume instance or supply authenticated control session before remote launch"
+}

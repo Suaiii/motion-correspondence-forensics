@@ -1,0 +1,667 @@
+{
+  "results": [
+    {
+      "kind": "raw",
+      "seed": 17,
+      "condition": "clean",
+      "threshold": 0.44,
+      "n": 117,
+      "auc": 0.8154970760233918,
+      "balanced_accuracy": 0.7179824561403509,
+      "fake_recall": 0.7166666666666667,
+      "real_recall": 0.7192982456140351,
+      "bce": 0.535398455661614,
+      "confusion_matrix_real_fake": [
+        [
+          41,
+          16
+        ],
+        [
+          17,
+          43
+        ]
+      ]
+    },
+    {
+      "kind": "raw",
+      "seed": 17,
+      "condition": "jpeg70",
+      "threshold": 0.44,
+      "n": 117,
+      "auc": 0.8067251461988305,
+      "balanced_accuracy": 0.6929824561403508,
+      "fake_recall": 0.6666666666666666,
+      "real_recall": 0.7192982456140351,
+      "bce": 0.5513115846231441,
+      "confusion_matrix_real_fake": [
+        [
+          41,
+          16
+        ],
+        [
+          20,
+          40
+        ]
+      ]
+    },
+    {
+      "kind": "raw",
+      "seed": 29,
+      "condition": "clean",
+      "threshold": 0.52,
+      "n": 117,
+      "auc": 0.7608187134502924,
+      "balanced_accuracy": 0.725,
+      "fake_recall": 0.7833333333333333,
+      "real_recall": 0.6666666666666666,
+      "bce": 0.6273321786085403,
+      "confusion_matrix_real_fake": [
+        [
+          38,
+          19
+        ],
+        [
+          13,
+          47
+        ]
+      ]
+    },
+    {
+      "kind": "raw",
+      "seed": 29,
+      "condition": "jpeg70",
+      "threshold": 0.52,
+      "n": 117,
+      "auc": 0.7505847953216374,
+      "balanced_accuracy": 0.7083333333333333,
+      "fake_recall": 0.75,
+      "real_recall": 0.6666666666666666,
+      "bce": 0.641258892000723,
+      "confusion_matrix_real_fake": [
+        [
+          38,
+          19
+        ],
+        [
+          15,
+          45
+        ]
+      ]
+    },
+    {
+      "kind": "raw",
+      "seed": 43,
+      "condition": "clean",
+      "threshold": 0.55,
+      "n": 117,
+      "auc": 0.8558479532163743,
+      "balanced_accuracy": 0.7776315789473685,
+      "fake_recall": 0.7833333333333333,
+      "real_recall": 0.7719298245614035,
+      "bce": 0.473935969454406,
+      "confusion_matrix_real_fake": [
+        [
+          44,
+          13
+        ],
+        [
+          13,
+          47
+        ]
+      ]
+    },
+    {
+      "kind": "raw",
+      "seed": 43,
+      "condition": "jpeg70",
+      "threshold": 0.55,
+      "n": 117,
+      "auc": 0.8505847953216374,
+      "balanced_accuracy": 0.7692982456140351,
+      "fake_recall": 0.7666666666666667,
+      "real_recall": 0.7719298245614035,
+      "bce": 0.4815996068516096,
+      "confusion_matrix_real_fake": [
+        [
+          44,
+          13
+        ],
+        [
+          14,
+          46
+        ]
+      ]
+    },
+    {
+      "kind": "correct",
+      "seed": 17,
+      "condition": "clean",
+      "threshold": 0.51,
+      "n": 117,
+      "auc": 0.8669590643274854,
+      "balanced_accuracy": 0.7960526315789473,
+      "fake_recall": 0.75,
+      "real_recall": 0.8421052631578947,
+      "bce": 0.4738446659933174,
+      "confusion_matrix_real_fake": [
+        [
+          48,
+          9
+        ],
+        [
+          15,
+          45
+        ]
+      ]
+    },
+    {
+      "kind": "correct",
+      "seed": 17,
+      "condition": "jpeg70",
+      "threshold": 0.51,
+      "n": 117,
+      "auc": 0.8730994152046785,
+      "balanced_accuracy": 0.8140350877192982,
+      "fake_recall": 0.7333333333333333,
+      "real_recall": 0.8947368421052632,
+      "bce": 0.4620368249583983,
+      "confusion_matrix_real_fake": [
+        [
+          51,
+          6
+        ],
+        [
+          16,
+          44
+        ]
+      ]
+    },
+    {
+      "kind": "correct",
+      "seed": 29,
+      "condition": "clean",
+      "threshold": 0.55,
+      "n": 117,
+      "auc": 0.8713450292397661,
+      "balanced_accuracy": 0.7942982456140351,
+      "fake_recall": 0.8166666666666667,
+      "real_recall": 0.7719298245614035,
+      "bce": 0.4389473803325103,
+      "confusion_matrix_real_fake": [
+        [
+          44,
+          13
+        ],
+        [
+          11,
+          49
+        ]
+      ]
+    },
+    {
+      "kind": "correct",
+      "seed": 29,
+      "condition": "jpeg70",
+      "threshold": 0.55,
+      "n": 117,
+      "auc": 0.8701754385964912,
+      "balanced_accuracy": 0.7942982456140351,
+      "fake_recall": 0.8166666666666667,
+      "real_recall": 0.7719298245614035,
+      "bce": 0.44400921349492595,
+      "confusion_matrix_real_fake": [
+        [
+          44,
+          13
+        ],
+        [
+          11,
+          49
+        ]
+      ]
+    },
+    {
+      "kind": "correct",
+      "seed": 43,
+      "condition": "clean",
+      "threshold": 0.66,
+      "n": 117,
+      "auc": 0.8997076023391812,
+      "balanced_accuracy": 0.8048245614035088,
+      "fake_recall": 0.75,
+      "real_recall": 0.8596491228070176,
+      "bce": 0.40719872396355195,
+      "confusion_matrix_real_fake": [
+        [
+          49,
+          8
+        ],
+        [
+          15,
+          45
+        ]
+      ]
+    },
+    {
+      "kind": "correct",
+      "seed": 43,
+      "condition": "jpeg70",
+      "threshold": 0.66,
+      "n": 117,
+      "auc": 0.8970760233918128,
+      "balanced_accuracy": 0.7890350877192982,
+      "fake_recall": 0.6833333333333333,
+      "real_recall": 0.8947368421052632,
+      "bce": 0.41257134251363287,
+      "confusion_matrix_real_fake": [
+        [
+          51,
+          6
+        ],
+        [
+          19,
+          41
+        ]
+      ]
+    },
+    {
+      "kind": "wrong_integer",
+      "seed": 17,
+      "condition": "clean",
+      "threshold": 0.47000000000000003,
+      "n": 117,
+      "auc": 0.756140350877193,
+      "balanced_accuracy": 0.687280701754386,
+      "fake_recall": 0.55,
+      "real_recall": 0.8245614035087719,
+      "bce": 0.6064263818994112,
+      "confusion_matrix_real_fake": [
+        [
+          47,
+          10
+        ],
+        [
+          27,
+          33
+        ]
+      ]
+    },
+    {
+      "kind": "wrong_integer",
+      "seed": 17,
+      "condition": "jpeg70",
+      "threshold": 0.47000000000000003,
+      "n": 117,
+      "auc": 0.7494152046783626,
+      "balanced_accuracy": 0.6964912280701754,
+      "fake_recall": 0.5333333333333333,
+      "real_recall": 0.8596491228070176,
+      "bce": 0.6100131699228613,
+      "confusion_matrix_real_fake": [
+        [
+          49,
+          8
+        ],
+        [
+          28,
+          32
+        ]
+      ]
+    },
+    {
+      "kind": "wrong_integer",
+      "seed": 29,
+      "condition": "clean",
+      "threshold": 0.4,
+      "n": 117,
+      "auc": 0.7368421052631579,
+      "balanced_accuracy": 0.6934210526315789,
+      "fake_recall": 0.65,
+      "real_recall": 0.7368421052631579,
+      "bce": 0.6426314855816097,
+      "confusion_matrix_real_fake": [
+        [
+          42,
+          15
+        ],
+        [
+          21,
+          39
+        ]
+      ]
+    },
+    {
+      "kind": "wrong_integer",
+      "seed": 29,
+      "condition": "jpeg70",
+      "threshold": 0.4,
+      "n": 117,
+      "auc": 0.7391812865497075,
+      "balanced_accuracy": 0.7109649122807018,
+      "fake_recall": 0.65,
+      "real_recall": 0.7719298245614035,
+      "bce": 0.6452622521639326,
+      "confusion_matrix_real_fake": [
+        [
+          44,
+          13
+        ],
+        [
+          21,
+          39
+        ]
+      ]
+    },
+    {
+      "kind": "wrong_integer",
+      "seed": 43,
+      "condition": "clean",
+      "threshold": 0.5,
+      "n": 117,
+      "auc": 0.7526315789473684,
+      "balanced_accuracy": 0.7364035087719298,
+      "fake_recall": 0.6833333333333333,
+      "real_recall": 0.7894736842105263,
+      "bce": 0.6173674975548074,
+      "confusion_matrix_real_fake": [
+        [
+          45,
+          12
+        ],
+        [
+          19,
+          41
+        ]
+      ]
+    },
+    {
+      "kind": "wrong_integer",
+      "seed": 43,
+      "condition": "jpeg70",
+      "threshold": 0.5,
+      "n": 117,
+      "auc": 0.7473684210526316,
+      "balanced_accuracy": 0.7280701754385965,
+      "fake_recall": 0.6666666666666666,
+      "real_recall": 0.7894736842105263,
+      "bce": 0.6227132704614177,
+      "confusion_matrix_real_fake": [
+        [
+          45,
+          12
+        ],
+        [
+          20,
+          40
+        ]
+      ]
+    },
+    {
+      "kind": "fractional",
+      "seed": 17,
+      "condition": "clean",
+      "threshold": 0.43,
+      "n": 117,
+      "auc": 0.8029239766081872,
+      "balanced_accuracy": 0.7008771929824561,
+      "fake_recall": 0.7,
+      "real_recall": 0.7017543859649122,
+      "bce": 0.5457348768947408,
+      "confusion_matrix_real_fake": [
+        [
+          40,
+          17
+        ],
+        [
+          18,
+          42
+        ]
+      ]
+    },
+    {
+      "kind": "fractional",
+      "seed": 17,
+      "condition": "jpeg70",
+      "threshold": 0.43,
+      "n": 117,
+      "auc": 0.8058479532163743,
+      "balanced_accuracy": 0.7184210526315788,
+      "fake_recall": 0.7,
+      "real_recall": 0.7368421052631579,
+      "bce": 0.5478000193521141,
+      "confusion_matrix_real_fake": [
+        [
+          42,
+          15
+        ],
+        [
+          18,
+          42
+        ]
+      ]
+    },
+    {
+      "kind": "fractional",
+      "seed": 29,
+      "condition": "clean",
+      "threshold": 0.31,
+      "n": 117,
+      "auc": 0.7230994152046784,
+      "balanced_accuracy": 0.6219298245614036,
+      "fake_recall": 0.7,
+      "real_recall": 0.543859649122807,
+      "bce": 0.6656168460194564,
+      "confusion_matrix_real_fake": [
+        [
+          31,
+          26
+        ],
+        [
+          18,
+          42
+        ]
+      ]
+    },
+    {
+      "kind": "fractional",
+      "seed": 29,
+      "condition": "jpeg70",
+      "threshold": 0.31,
+      "n": 117,
+      "auc": 0.7228070175438597,
+      "balanced_accuracy": 0.631578947368421,
+      "fake_recall": 0.6666666666666666,
+      "real_recall": 0.5964912280701754,
+      "bce": 0.6768339001987209,
+      "confusion_matrix_real_fake": [
+        [
+          34,
+          23
+        ],
+        [
+          20,
+          40
+        ]
+      ]
+    },
+    {
+      "kind": "fractional",
+      "seed": 43,
+      "condition": "clean",
+      "threshold": 0.44,
+      "n": 117,
+      "auc": 0.8049707602339181,
+      "balanced_accuracy": 0.7271929824561403,
+      "fake_recall": 0.7,
+      "real_recall": 0.7543859649122807,
+      "bce": 0.5559891625693417,
+      "confusion_matrix_real_fake": [
+        [
+          43,
+          14
+        ],
+        [
+          18,
+          42
+        ]
+      ]
+    },
+    {
+      "kind": "fractional",
+      "seed": 43,
+      "condition": "jpeg70",
+      "threshold": 0.44,
+      "n": 117,
+      "auc": 0.8017543859649122,
+      "balanced_accuracy": 0.7197368421052632,
+      "fake_recall": 0.65,
+      "real_recall": 0.7894736842105263,
+      "bce": 0.5571479226143436,
+      "confusion_matrix_real_fake": [
+        [
+          45,
+          12
+        ],
+        [
+          21,
+          39
+        ]
+      ]
+    },
+    {
+      "kind": "compensation_gain",
+      "seed": 17,
+      "condition": "clean",
+      "threshold": 0.56,
+      "n": 117,
+      "auc": 0.8947368421052632,
+      "balanced_accuracy": 0.7662280701754386,
+      "fake_recall": 0.55,
+      "real_recall": 0.9824561403508771,
+      "bce": 0.4387787071715329,
+      "confusion_matrix_real_fake": [
+        [
+          56,
+          1
+        ],
+        [
+          27,
+          33
+        ]
+      ]
+    },
+    {
+      "kind": "compensation_gain",
+      "seed": 17,
+      "condition": "jpeg70",
+      "threshold": 0.56,
+      "n": 117,
+      "auc": 0.8777777777777778,
+      "balanced_accuracy": 0.7570175438596491,
+      "fake_recall": 0.5666666666666667,
+      "real_recall": 0.9473684210526315,
+      "bce": 0.45420758573984915,
+      "confusion_matrix_real_fake": [
+        [
+          54,
+          3
+        ],
+        [
+          26,
+          34
+        ]
+      ]
+    },
+    {
+      "kind": "compensation_gain",
+      "seed": 29,
+      "condition": "clean",
+      "threshold": 0.36000000000000004,
+      "n": 117,
+      "auc": 0.8488304093567252,
+      "balanced_accuracy": 0.7614035087719297,
+      "fake_recall": 0.7333333333333333,
+      "real_recall": 0.7894736842105263,
+      "bce": 0.4903121773312788,
+      "confusion_matrix_real_fake": [
+        [
+          45,
+          12
+        ],
+        [
+          16,
+          44
+        ]
+      ]
+    },
+    {
+      "kind": "compensation_gain",
+      "seed": 29,
+      "condition": "jpeg70",
+      "threshold": 0.36000000000000004,
+      "n": 117,
+      "auc": 0.8105263157894738,
+      "balanced_accuracy": 0.7263157894736842,
+      "fake_recall": 0.7333333333333333,
+      "real_recall": 0.7192982456140351,
+      "bce": 0.5301911469160797,
+      "confusion_matrix_real_fake": [
+        [
+          41,
+          16
+        ],
+        [
+          16,
+          44
+        ]
+      ]
+    },
+    {
+      "kind": "compensation_gain",
+      "seed": 43,
+      "condition": "clean",
+      "threshold": 0.39,
+      "n": 117,
+      "auc": 0.9222222222222223,
+      "balanced_accuracy": 0.8390350877192982,
+      "fake_recall": 0.7833333333333333,
+      "real_recall": 0.8947368421052632,
+      "bce": 0.4428840143769602,
+      "confusion_matrix_real_fake": [
+        [
+          51,
+          6
+        ],
+        [
+          13,
+          47
+        ]
+      ]
+    },
+    {
+      "kind": "compensation_gain",
+      "seed": 43,
+      "condition": "jpeg70",
+      "threshold": 0.39,
+      "n": 117,
+      "auc": 0.8885964912280702,
+      "balanced_accuracy": 0.8131578947368421,
+      "fake_recall": 0.7666666666666667,
+      "real_recall": 0.8596491228070176,
+      "bce": 0.4755761046971622,
+      "confusion_matrix_real_fake": [
+        [
+          49,
+          8
+        ],
+        [
+          14,
+          46
+        ]
+      ]
+    }
+  ],
+  "predictions_sha256": "674f899c6a7e073ee2acfd57eedb29ec6bd85bac6fdc6cf8795b5426e8851c89",
+  "manifest_sha256": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+  "protocol_sha256": "2412849bbf0a32643cbc28555b694927e9287eb27a7ae96b8537069e01bf0b8d"
+}

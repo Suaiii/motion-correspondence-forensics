@@ -1,0 +1,17 @@
+{
+  "candidate_decisions.json": "b8e03bf7864ccd70ba193be79d7a73a015238f604dfcd4973d287b2f5c711a3d",
+  "environment.json": "448be6e2e31b7cab6357f88778e297502df3eb690415bf6d30765c09a9292ed3",
+  "metrics.json": "ed73ea4f97bdb19098ee637abbe933f058c52fe8765593367101070babd05948",
+  "observations.jsonl": "be2ba0eb420546390a1a130fef4e20e5ccb0f257192c8a1905fcf253b3cd4fa1",
+  "predictions.json": "96551f8f4d7bb2bc31876289427cc859b60123631513306786176cb472bfb2b6",
+  "probe_receipt.json": "bbd1401ed6236605cadfa27d9c9ab7cffcd8df014bdace1a05aafe72efe97eae",
+  "protocol.json": "1006e8b36d1f1170cc93dab1c2226cc2dbec8016d274ecec907a4df3ad522fe0",
+  "report.md": "a32f9c0ee6b9babaa271377b4fc49f0b24ab0a6619721242b3e899af1da8fac7",
+  "research_checkpoint.md": "302925767a3a373eb791fc9b9261f90739c45103cc53fdde3dab509199876d9e",
+  "run_lock.json": "869e27bc39b09d813ee48cf83b757e38a3db4e2f064068f5b89b13abf53fa183",
+  "runner_snapshot.py": "55ca1fb090027e7c864ef6713b96bbc020e94673f1f8d6f412393552547dc79a",
+  "sampling_control.json": "2ed8d56d977a546278820783873b4820355696479d72261465198717ddeeb83e",
+  "sampling_probe.json": "6618dbc3c3f3dfc28e52efd136ae2565025e0f823e3b0cb1e82e7d5ab00ccaf4",
+  "selection.json": "e106a73df7fc3a57d2d74ef4c1b4d2e521b083b4451c40818aa17dfef00121a4",
+  "verification.json": "d7abd9ee571c8258cb1e1b4bd3160f34d82ec461a5656e8f97d1077138b615fe"
+}

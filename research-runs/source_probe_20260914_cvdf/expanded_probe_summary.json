@@ -1,0 +1,9 @@
+{
+  "archive_prefix_bytes":134217728,
+  "candidate_count":64,
+  "strict_2s_8fps_16frame_eligibility":64,
+  "fps_range":[11.98801199,30.0],
+  "full_archive_verified":false,
+  "formal_training":false,
+  "interpretation":"Expanded bounded probe confirms 64 usable native-rate external real clips from the same ETag-bound Kinetics shard; this strengthens acquisition feasibility but remains insufficient for independent-source training or licensing acceptance."
+}

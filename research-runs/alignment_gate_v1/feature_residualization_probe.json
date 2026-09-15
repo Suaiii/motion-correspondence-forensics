@@ -1,0 +1,10 @@
+{
+  "condition": "clean",
+  "fit_only_nuisance_model": "Each arm feature regressed on the 8 mask features using fit split; residuals standardized and LogisticRegression(C=1) fit on fit labels.",
+  "audit_n": 117,
+  "correct_residualized_auc": 0.6608187135,
+  "raw_residualized_auc": 0.6365497076,
+  "delta_correct_minus_raw": 0.0242698599,
+  "interpretation": "Alignment retains a measurable advantage after linear mask-feature residualization. This is a prototype diagnostic, not a complete method or confidence interval; bootstrap and external-source validation are required.",
+  "status": "prototype_supports_alignment_nuisance_invariance"
+}

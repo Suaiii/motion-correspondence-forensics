@@ -1,0 +1,11 @@
+{
+  "url": "https://s3.amazonaws.com/kinetics/400/train/k400_train_path.txt",
+  "sha256": "dd851d1d3a536129e61bb5617db2150309a858f5e3b34c5f2c70d86935714f0a",
+  "bytes": 14410,
+  "headers": {
+    "Last-Modified": "Thu, 15 Apr 2021 09:38:45 GMT",
+    "ETag": "\"b292e616da5b6bb1d75c6bdb05e79eb1\"",
+    "Content-Length": "14410"
+  },
+  "utc": "2026-09-13T16:07:14.543130+00:00"
+}

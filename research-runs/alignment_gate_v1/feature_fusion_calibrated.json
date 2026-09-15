@@ -1,0 +1,10 @@
+{
+  "protocol":"fit-only standardized LogisticRegression; C selected on 120 calibration videos (C=30); audit n=117; correct plus fractional features versus correct-only",
+  "calibration_auc":{"correct_C30":0.8833333333,"fusion_C30":0.91},
+  "audit_auc":{"correct_C30":0.8333333333,"fusion_C30":0.8862573099},
+  "audit_delta":0.0529239766,
+  "paired_bootstrap":{"replicates":1000,"seed":20260914,"ci95":[0.0055714402,0.1088804543],"positive_fraction":0.988},
+  "decision":"promising_breakthrough_candidate",
+  "interpretation":"Calibration-selected intermediate feature fusion yields a positive audit gain with a bootstrap interval above zero on the historical development pool. This is the first statistically supported method-level gain beyond the frozen alignment arm; independent-source replication remains mandatory.",
+  "limitations":["bootstrap replicate count 1000 in this pilot","historical pool and same feature cache","not yet external-source or strong-baseline comparison"]
+}

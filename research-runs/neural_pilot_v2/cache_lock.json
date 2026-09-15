@@ -1,0 +1,26 @@
+{
+  "manifest_sha256": "23bba743f0192811ce765bd0b3b1cf3bc8d43f86a0a45fc67024cc7e15098e99",
+  "files": {
+    "clean__frame_mean.npy": "af17c10fb89dbdb078d521c1740496d977c1647daaa43392109aa3899520de13",
+    "clean__raw_temporal.npy": "50247e162ba7d0b34be816c225b1711b1e21f3988a18cace9ceea70c6b4c9a17",
+    "clean__aligned_temporal.npy": "ad77cf588839a56a4d82a03953869ed6bf0ba499d6278f98b837f22371f57311",
+    "jpeg70__frame_mean.npy": "5a32388823c47db6d783433d726c020953257cf88d96256fe20587b3621e5a28",
+    "jpeg70__raw_temporal.npy": "1091763fbcb2c29bbecd00927760c54233e2c6f5c4760f7c77ce8706a5c2f925",
+    "jpeg70__aligned_temporal.npy": "f109d3471ea6e491c3a9e5b381f2009d83a28eca3c7cd4100fa8466519699b1a",
+    "gaussian5__frame_mean.npy": "67172222070d783bc44184f2bd58a8c49052aaa850a71a363e94027412ef3fb4",
+    "gaussian5__raw_temporal.npy": "9d472b45e9e3c60a7469add15cd8cec333916def8cc8655e1a8dee4e39b036fa",
+    "gaussian5__aligned_temporal.npy": "6a8b45a78ddbf8e7f0f0e38cedc1f60581b1ab1799e8cb24fccbb216d290524b"
+  },
+  "rows": 118,
+  "counts": {
+    "fit/vript": 34,
+    "calibration/vript": 12,
+    "audit/vript": 12,
+    "fit/opensora": 18,
+    "calibration/opensora": 6,
+    "audit/opensora": 6,
+    "fit/t2vz": 18,
+    "calibration/t2vz": 6,
+    "audit/t2vz": 6
+  }
+}

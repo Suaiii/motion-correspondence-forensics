@@ -1,0 +1,77 @@
+{
+  "gate": "deprioritize_order_specific_memory",
+  "meaning": "Passing supports another independent mechanism experiment, not publication readiness; failure means insufficient support in this bounded design, not proof that temporal methods cannot work.",
+  "checks": {
+    "minimum_effect": false,
+    "lower95_above_zero": false,
+    "at_least_two_positive_seeds": false
+  },
+  "primary": {
+    "a": "aligned_temporal",
+    "b": "aligned_bag",
+    "condition": "clean",
+    "n": 117,
+    "auc_seed_mean_prob_a": 0.8830409356725146,
+    "auc_seed_mean_prob_b": 0.9152046783625731,
+    "delta": -0.032163742690058506,
+    "paired_stratified_percentile95": [
+      -0.06784356725146205,
+      0.0011695906432749315
+    ],
+    "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty"
+  },
+  "seed_deltas": [
+    -0.05175438596491222,
+    -0.033333333333333326,
+    -0.0011695906432749315
+  ],
+  "secondary_comparisons": [
+    {
+      "a": "raw_temporal",
+      "b": "raw_bag",
+      "condition": "clean",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8450292397660819,
+      "auc_seed_mean_prob_b": 0.8318713450292399,
+      "delta": 0.013157894736842035,
+      "paired_stratified_percentile95": [
+        -0.03392543859649126,
+        0.06054093567251462
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty"
+    },
+    {
+      "a": "aligned_bag",
+      "b": "raw_bag",
+      "condition": "clean",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.9152046783625731,
+      "auc_seed_mean_prob_b": 0.8318713450292399,
+      "delta": 0.08333333333333326,
+      "paired_stratified_percentile95": [
+        0.030109649122807072,
+        0.14415935672514613
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty"
+    },
+    {
+      "a": "aligned_temporal",
+      "b": "raw_temporal",
+      "condition": "clean",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8830409356725146,
+      "auc_seed_mean_prob_b": 0.8450292397660819,
+      "delta": 0.03801169590643272,
+      "paired_stratified_percentile95": [
+        -0.0032236842105263616,
+        0.08510233918128651
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty"
+    }
+  ],
+  "fixed_residual_statistics_clean_auc": 0.8540935672514621,
+  "criteria_sha256": "e5ce0ef7427853d30a4479d1a1602bf7483b5306aec08ec29cc54d91c37c6e23",
+  "verifier_sha256": "39f95c92af388fe663b884f537cd99a45d3c4ad87eb3e4d49d8b688590626a4e",
+  "verified_metric_groups": 36,
+  "scope": "Primary criterion frozen before preprocessing/training; secondary analyses do not override primary gate."
+}

@@ -1,0 +1,9 @@
+{
+  "protocol":"fit-only standardized LogisticRegression; concatenate frozen arm feature vectors; audit n=117",
+  "audit_auc":{"correct":0.8327485380,"correct_plus_wrong_integer":0.8432748538,"correct_plus_fractional":0.8576023392,"correct_plus_both":0.8514619883},
+  "best":"correct_plus_fractional",
+  "point_delta_vs_correct":0.0248538012,
+  "paired_bootstrap":{"replicates":5000,"seed":20260914,"ci95":[-0.0079039813,0.0605280876],"positive_fraction":0.9238},
+  "decision":"promising_but_not_confirmed",
+  "interpretation":"Learning a joint intermediate-feature fusion is substantially better than naive probability subtraction, with a positive point estimate and 92.38% positive bootstrap replicates; the confidence interval narrowly crosses zero. Prioritize this low-capacity correspondence-fusion method for preregistered multi-seed and external-source evaluation."
+}

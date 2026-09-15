@@ -1,0 +1,11 @@
+{
+  "protocol":"JPEG70, source-stratified paired video bootstrap; fit-only C=100; audit n=117",
+  "audit_source_counts":{"vript":57,"opensora":30,"t2vz":30},
+  "delta":0.0576023392,
+  "replicates":1000,
+  "seed":20260914,
+  "ci95":[0.0046710526,0.1181505848],
+  "positive_fraction":0.984,
+  "decision":"confirmed_on_source_stratified_jpeg_audit",
+  "interpretation":"The fusion gain remains positive after preserving source composition under JPEG70 perturbation. Independent real-source validation remains mandatory."
+}

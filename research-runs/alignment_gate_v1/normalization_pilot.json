@@ -1,0 +1,7 @@
+{
+  "protocol":"fit-only LogisticRegression on correct-arm features; featurewise standardization or rank transform",
+  "audit_auc":{"standard":0.8327485380,"rank":0.7859649123},
+  "reference_raw_alignment_auc":0.8327485380,
+  "decision":"standardization_neutral_rank_transform_harmful",
+  "interpretation":"Simple scale normalization does not improve the alignment detector; rank normalization removes useful information. No method promotion."
+}

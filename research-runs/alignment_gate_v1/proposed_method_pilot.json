@@ -1,0 +1,10 @@
+{
+  "method": "AlignmentNuisanceAdversarial on existing correct-arm summary features",
+  "protocol": "358 fit, 120 calibration unused for this pilot, 117 audit; 80 epochs; hidden=32; GRL=0.5; nuisance_weight=0.2; seeds=[17,29,43]",
+  "audit_auc_by_seed": {"17":0.8084795322,"29":0.8035087719,"43":0.7976608187},
+  "mean_audit_auc":0.8032163743,
+  "reference_correct_arm_audit_auc":0.8327485380,
+  "decision":"reject_current_hyperparameters",
+  "interpretation":"The executable adversarial prototype is stable but loses accuracy relative to the frozen correct arm; no breakthrough claim. Keep implementation as a starting point and tune only under a new preregistered gate.",
+  "tests":"shape and gradient tests passed"
+}

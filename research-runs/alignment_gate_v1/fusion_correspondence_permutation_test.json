@@ -1,0 +1,12 @@
+{
+  "protocol":"200 random fit-set fractional permutations; C=30 fixed from calibration; audit evaluation uses matched fractional features; same standardized LR and split",
+  "matched_auc":0.8862573099,
+  "correct_only_auc":0.8333333333,
+  "shuffled_auc_mean":0.8356140351,
+  "shuffled_auc_sd":0.0069995827,
+  "shuffled_auc_max":0.8538011696,
+  "upper_tail_permutation_p":0.0049751244,
+  "n_permutations":200,
+  "decision":"correspondence_signal_supported",
+  "interpretation":"The matched fusion score exceeds the empirical shuffled-correspondence distribution; this supports a genuine paired correspondence signal beyond feature-count increase. It remains a development-pool result and requires independent-source replication."
+}

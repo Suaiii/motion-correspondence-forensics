@@ -1,0 +1,22 @@
+{
+  "code_hashes": {
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\alignment_gate_v1\\run_alignment.py": "0e5fc6723467f9234fd3fab51b1659bbda53f1295b3ead036dec4bfe47fe55eb",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\run.py": "54e73c6aca524c6cec3698c83f87df58ae4fa8d05407f96ff87f95659c29dd2f",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\model.py": "6bd4557f4eb075f3a13a888cf8b7efee87de25cc1ba08d4d82f8ef5ec0510825",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\video_io.py": "b47cd68414ded2a4844aad0aa6766b009dfc7d0aac0d294fc18b49db4985f213",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\selection.py": "fc03e80f532d1178fb16ba0c29a5a3901d292136edf5e99b24b9ddc94f3ec52d",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\decide.py": "39f95c92af388fe663b884f537cd99a45d3c4ad87eb3e4d49d8b688590626a4e",
+    "E:\\aNB\\TECH\\脉冲神经网络\\research-code\\sampling.py": "6b3dc621eeff8af41658e6d0cbb376ee265e041b231eae04c738bb92a8866dfb"
+  },
+  "protocol_sha256": "2412849bbf0a32643cbc28555b694927e9287eb27a7ae96b8537069e01bf0b8d",
+  "manifest_sha256": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+  "prior_manifest_sha256": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+  "frozen_before_cache_and_training": true,
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "executable": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\python.exe",
+  "torch": "2.5.1",
+  "opencv": "4.12.0",
+  "numpy": "2.2.6",
+  "cuda": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "created_utc": "2026-09-09T05:54:14.251042+00:00"
+}

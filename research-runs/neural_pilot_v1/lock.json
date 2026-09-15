@@ -1,0 +1,16 @@
+{
+  "created_utc": "2026-09-07T16:29:30.759664+00:00",
+  "code_hashes": {
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\neural_pilot_v1\\run.py": "edff3d12e04cfc1d37f8ef95a5f02c1d88ee6d51266bbbd3f7ccff9013c8d999",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\neural_pilot_v1\\model.py": "6e5de93758b7e6df98ffaeb696e36dc1a8789f1f029de8d20ed3eb46b15ab3f5",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\neural_pilot_v1\\video_io.py": "b47cd68414ded2a4844aad0aa6766b009dfc7d0aac0d294fc18b49db4985f213",
+    "E:\\aNB\\TECH\\脉冲神经网络\\research-code\\sampling.py": "6b3dc621eeff8af41658e6d0cbb376ee265e041b231eae04c738bb92a8866dfb"
+  },
+  "protocol_sha256": "ac17852d48b3c8279b397df5e1e5091ba161cc1eb484c41f3d8f8497a5054520",
+  "input_manifest_sha256": "31104561a0784ef1ff971100b2598159226148fecf3e0cb937cad3d3ee35ce3c",
+  "torch": "2.5.1",
+  "python": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "python_executable": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\python.exe",
+  "scope": "explicit local development training; no confirmatory test",
+  "main_thread": "01a055fc-51ee-7b00-824b-087fc85b70d5"
+}

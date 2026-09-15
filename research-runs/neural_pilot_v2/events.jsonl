@@ -1,0 +1,12 @@
+{"time_utc": "2026-09-07T16:35:31.814607+00:00", "stage": "prepare", "samples": 120}
+{"time_utc": "2026-09-07T16:35:38.317879+00:00", "stage": "cache_reused", "source": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\neural_pilot_v1"}
+{"time_utc": "2026-09-07T16:36:12.546961+00:00", "stage": "model_trained", "kind": "frame_mean", "seed": 17, "best_epoch": 4}
+{"time_utc": "2026-09-07T16:36:16.508037+00:00", "stage": "model_trained", "kind": "frame_mean", "seed": 29, "best_epoch": 4}
+{"time_utc": "2026-09-07T16:36:20.540436+00:00", "stage": "model_trained", "kind": "frame_mean", "seed": 43, "best_epoch": 1}
+{"time_utc": "2026-09-07T16:36:25.762736+00:00", "stage": "model_trained", "kind": "raw_temporal", "seed": 17, "best_epoch": 4}
+{"time_utc": "2026-09-07T16:36:30.375844+00:00", "stage": "model_trained", "kind": "raw_temporal", "seed": 29, "best_epoch": 1}
+{"time_utc": "2026-09-07T16:36:35.384199+00:00", "stage": "model_trained", "kind": "raw_temporal", "seed": 43, "best_epoch": 3}
+{"time_utc": "2026-09-07T16:36:40.096511+00:00", "stage": "model_trained", "kind": "aligned_temporal", "seed": 17, "best_epoch": 20}
+{"time_utc": "2026-09-07T16:36:44.440286+00:00", "stage": "model_trained", "kind": "aligned_temporal", "seed": 29, "best_epoch": 10}
+{"time_utc": "2026-09-07T16:36:48.835197+00:00", "stage": "model_trained", "kind": "aligned_temporal", "seed": 43, "best_epoch": 13}
+{"time_utc": "2026-09-07T16:37:39.170892+00:00", "stage": "evaluation_complete", "fits": 9, "prediction_rows": 648}

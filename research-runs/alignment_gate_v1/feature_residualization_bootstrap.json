@@ -1,0 +1,11 @@
+{
+  "n_audit": 117,
+  "replicates": 5000,
+  "seed": 20260914,
+  "delta_correct_residualized_minus_raw_residualized": 0.0242690058,
+  "paired_video_bootstrap_ci95": [-0.0508530586, 0.0978959673],
+  "positive_fraction": 0.736,
+  "decision": "not_confirmed",
+  "interpretation": "The point estimate is positive but its interval crosses zero; this prototype does not yet provide a statistically confirmed nuisance-invariant gain.",
+  "next_action": "Do not promote residualized LR as the method. Design a cross-arm nuisance-adversarial representation and test it on an independent source."
+}

@@ -1,0 +1,18 @@
+{"time_utc": "2026-09-09T05:54:14.258058+00:00", "stage": "freeze", "samples": 595}
+{"time_utc": "2026-09-09T06:11:43.401516+00:00", "stage": "cache_complete", "samples": 595}
+{"time_utc": "2026-09-09T06:13:40.205608+00:00", "stage": "model_trained", "kind": "raw", "seed": 17, "best_epoch": 20}
+{"time_utc": "2026-09-09T06:14:28.117632+00:00", "stage": "model_trained", "kind": "raw", "seed": 29, "best_epoch": 20}
+{"time_utc": "2026-09-09T06:15:18.367513+00:00", "stage": "model_trained", "kind": "raw", "seed": 43, "best_epoch": 20}
+{"time_utc": "2026-09-09T06:16:08.522264+00:00", "stage": "model_trained", "kind": "correct", "seed": 17, "best_epoch": 14}
+{"time_utc": "2026-09-09T06:16:59.380482+00:00", "stage": "model_trained", "kind": "correct", "seed": 29, "best_epoch": 20}
+{"time_utc": "2026-09-09T06:17:49.593660+00:00", "stage": "model_trained", "kind": "correct", "seed": 43, "best_epoch": 17}
+{"time_utc": "2026-09-09T06:18:40.449580+00:00", "stage": "model_trained", "kind": "wrong_integer", "seed": 17, "best_epoch": 18}
+{"time_utc": "2026-09-09T06:19:29.920195+00:00", "stage": "model_trained", "kind": "wrong_integer", "seed": 29, "best_epoch": 14}
+{"time_utc": "2026-09-09T06:20:17.408111+00:00", "stage": "model_trained", "kind": "wrong_integer", "seed": 43, "best_epoch": 20}
+{"time_utc": "2026-09-09T06:21:06.384428+00:00", "stage": "model_trained", "kind": "fractional", "seed": 17, "best_epoch": 19}
+{"time_utc": "2026-09-09T06:21:56.010379+00:00", "stage": "model_trained", "kind": "fractional", "seed": 29, "best_epoch": 20}
+{"time_utc": "2026-09-09T06:22:46.000548+00:00", "stage": "model_trained", "kind": "fractional", "seed": 43, "best_epoch": 13}
+{"time_utc": "2026-09-09T06:23:36.280381+00:00", "stage": "model_trained", "kind": "compensation_gain", "seed": 17, "best_epoch": 15}
+{"time_utc": "2026-09-09T06:24:25.723185+00:00", "stage": "model_trained", "kind": "compensation_gain", "seed": 29, "best_epoch": 18}
+{"time_utc": "2026-09-09T06:25:14.540358+00:00", "stage": "model_trained", "kind": "compensation_gain", "seed": 43, "best_epoch": 18}
+{"time_utc": "2026-09-09T06:26:03.533059+00:00", "stage": "evaluation_complete", "fits": 15, "predictions": 3510}

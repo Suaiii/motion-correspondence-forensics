@@ -1,0 +1,165 @@
+{
+  "scope": "server_profile",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-5.15.0-60-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "numpy": "2.2.6",
+    "opencv": "4.12.0",
+    "cpu_count": 16.0,
+    "cuda": true,
+    "host_cpu_count": 192,
+    "cpu_quota_cores": 16.0,
+    "memory_limit_bytes": 85899345920,
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "vram_bytes": 25262096384
+  },
+  "attempted": 20,
+  "completed": 20,
+  "wall_seconds": 102.15452813357115,
+  "peak_allocated_bytes": 41904128,
+  "records": [
+    {
+      "sample_id": "E018",
+      "decode_seconds": 4.0041673630476,
+      "flow_and_controls_seconds": 0.5853390991687775,
+      "inference_seconds": 0.2733786702156067,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E005",
+      "decode_seconds": 2.9196968749165535,
+      "flow_and_controls_seconds": 0.596976213157177,
+      "inference_seconds": 0.0040816739201545715,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E011",
+      "decode_seconds": 1.5021058693528175,
+      "flow_and_controls_seconds": 0.5490700826048851,
+      "inference_seconds": 0.0030720457434654236,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E016",
+      "decode_seconds": 7.195531949400902,
+      "flow_and_controls_seconds": 0.5726824849843979,
+      "inference_seconds": 0.00342414528131485,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E000",
+      "decode_seconds": 3.345619313418865,
+      "flow_and_controls_seconds": 0.5340048298239708,
+      "inference_seconds": 0.002742081880569458,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E010",
+      "decode_seconds": 1.926567368209362,
+      "flow_and_controls_seconds": 0.5658004209399223,
+      "inference_seconds": 0.0036522075533866882,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E020",
+      "decode_seconds": 11.108917608857155,
+      "flow_and_controls_seconds": 0.4035932421684265,
+      "inference_seconds": 0.0030911266803741455,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E001",
+      "decode_seconds": 4.629469320178032,
+      "flow_and_controls_seconds": 0.5632057785987854,
+      "inference_seconds": 0.0036350563168525696,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E007",
+      "decode_seconds": 1.8073711022734642,
+      "flow_and_controls_seconds": 0.5647167786955833,
+      "inference_seconds": 0.0031067058444023132,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E017",
+      "decode_seconds": 5.015276245772839,
+      "flow_and_controls_seconds": 0.5757290795445442,
+      "inference_seconds": 0.003621622920036316,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E002",
+      "decode_seconds": 3.6563342064619064,
+      "flow_and_controls_seconds": 0.5867097079753876,
+      "inference_seconds": 0.003443516790866852,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E013",
+      "decode_seconds": 1.1760800555348396,
+      "flow_and_controls_seconds": 0.4186994358897209,
+      "inference_seconds": 0.002139955759048462,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E014",
+      "decode_seconds": 8.490663021802902,
+      "flow_and_controls_seconds": 0.3692503720521927,
+      "inference_seconds": 0.002599455416202545,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E003",
+      "decode_seconds": 2.010608844459057,
+      "flow_and_controls_seconds": 0.5606390535831451,
+      "inference_seconds": 0.0035482197999954224,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E012",
+      "decode_seconds": 1.7972213700413704,
+      "flow_and_controls_seconds": 0.5540644899010658,
+      "inference_seconds": 0.0035491958260536194,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E015",
+      "decode_seconds": 6.317532010376453,
+      "flow_and_controls_seconds": 0.4089530184864998,
+      "inference_seconds": 0.002934090793132782,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E004",
+      "decode_seconds": 2.9458139836788177,
+      "flow_and_controls_seconds": 0.40493546426296234,
+      "inference_seconds": 0.0025717690587043762,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E008",
+      "decode_seconds": 1.2614081352949142,
+      "flow_and_controls_seconds": 0.3671179860830307,
+      "inference_seconds": 0.0023870468139648438,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E019",
+      "decode_seconds": 16.666174456477165,
+      "flow_and_controls_seconds": 0.3907240107655525,
+      "inference_seconds": 0.0056089237332344055,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "E006",
+      "decode_seconds": 4.071389198303223,
+      "flow_and_controls_seconds": 0.3990802839398384,
+      "inference_seconds": 0.0021714940667152405,
+      "cache_uncompressed_bytes": 8429568
+    }
+  ],
+  "actual_provider_cost_cny": null,
+  "note": "Inference profile includes decode, flow and all controls. Not a training throughput or cloud billing receipt."
+}

@@ -1,0 +1,394 @@
+{
+  "selection_sha256": "6a15bb240f26353a451a792230f6696cac21913c77d5213a390face94280e192",
+  "results": [
+    {
+      "video_id": "video2335",
+      "status": "downloaded",
+      "bytes": 198451,
+      "transferred_bytes": 197866
+    },
+    {
+      "video_id": "video4340",
+      "status": "downloaded",
+      "bytes": 159455,
+      "transferred_bytes": 158999
+    },
+    {
+      "video_id": "video5757",
+      "status": "downloaded",
+      "bytes": 275702,
+      "transferred_bytes": 275178
+    },
+    {
+      "video_id": "video6708",
+      "status": "downloaded",
+      "bytes": 368652,
+      "transferred_bytes": 368174
+    },
+    {
+      "video_id": "video5667",
+      "status": "downloaded",
+      "bytes": 266441,
+      "transferred_bytes": 265920
+    },
+    {
+      "video_id": "video5128",
+      "status": "downloaded",
+      "bytes": 36564,
+      "transferred_bytes": 35889
+    },
+    {
+      "video_id": "video4893",
+      "status": "downloaded",
+      "bytes": 366968,
+      "transferred_bytes": 366306
+    },
+    {
+      "video_id": "video4645",
+      "status": "downloaded",
+      "bytes": 446784,
+      "transferred_bytes": 446177
+    },
+    {
+      "video_id": "video3892",
+      "status": "downloaded",
+      "bytes": 207555,
+      "transferred_bytes": 207017
+    },
+    {
+      "video_id": "video164",
+      "status": "downloaded",
+      "bytes": 693161,
+      "transferred_bytes": 692522
+    },
+    {
+      "video_id": "video4907",
+      "status": "downloaded",
+      "bytes": 367244,
+      "transferred_bytes": 366698
+    },
+    {
+      "video_id": "video4972",
+      "status": "downloaded",
+      "bytes": 193047,
+      "transferred_bytes": 192544
+    },
+    {
+      "video_id": "video2661",
+      "status": "downloaded",
+      "bytes": 79220,
+      "transferred_bytes": 78662
+    },
+    {
+      "video_id": "video1944",
+      "status": "downloaded",
+      "bytes": 200607,
+      "transferred_bytes": 199997
+    },
+    {
+      "video_id": "video1019",
+      "status": "downloaded",
+      "bytes": 159626,
+      "transferred_bytes": 159105
+    },
+    {
+      "video_id": "video113",
+      "status": "downloaded",
+      "bytes": 142422,
+      "transferred_bytes": 141664
+    },
+    {
+      "video_id": "video6496",
+      "status": "downloaded",
+      "bytes": 233784,
+      "transferred_bytes": 232937
+    },
+    {
+      "video_id": "video6763",
+      "status": "downloaded",
+      "bytes": 94044,
+      "transferred_bytes": 93514
+    },
+    {
+      "video_id": "video3996",
+      "status": "downloaded",
+      "bytes": 183298,
+      "transferred_bytes": 182580
+    },
+    {
+      "video_id": "video6141",
+      "status": "downloaded",
+      "bytes": 251337,
+      "transferred_bytes": 250842
+    },
+    {
+      "video_id": "video3708",
+      "status": "downloaded",
+      "bytes": 217083,
+      "transferred_bytes": 216523
+    },
+    {
+      "video_id": "video3870",
+      "status": "downloaded",
+      "bytes": 129936,
+      "transferred_bytes": 129317
+    },
+    {
+      "video_id": "video4069",
+      "status": "downloaded",
+      "bytes": 211754,
+      "transferred_bytes": 211226
+    },
+    {
+      "video_id": "video1938",
+      "status": "downloaded",
+      "bytes": 362633,
+      "transferred_bytes": 361743
+    },
+    {
+      "video_id": "video3799",
+      "status": "downloaded",
+      "bytes": 220123,
+      "transferred_bytes": 219591
+    },
+    {
+      "video_id": "video332",
+      "status": "downloaded",
+      "bytes": 124944,
+      "transferred_bytes": 124531
+    },
+    {
+      "video_id": "video839",
+      "status": "downloaded",
+      "bytes": 135079,
+      "transferred_bytes": 134475
+    },
+    {
+      "video_id": "video1320",
+      "status": "downloaded",
+      "bytes": 110280,
+      "transferred_bytes": 109743
+    },
+    {
+      "video_id": "video6783",
+      "status": "downloaded",
+      "bytes": 235763,
+      "transferred_bytes": 235188
+    },
+    {
+      "video_id": "video4765",
+      "status": "downloaded",
+      "bytes": 239940,
+      "transferred_bytes": 239115
+    },
+    {
+      "video_id": "video2680",
+      "status": "downloaded",
+      "bytes": 274041,
+      "transferred_bytes": 273144
+    },
+    {
+      "video_id": "video3928",
+      "status": "downloaded",
+      "bytes": 138119,
+      "transferred_bytes": 137520
+    },
+    {
+      "video_id": "video6115",
+      "status": "downloaded",
+      "bytes": 171424,
+      "transferred_bytes": 170951
+    },
+    {
+      "video_id": "video112",
+      "status": "downloaded",
+      "bytes": 222057,
+      "transferred_bytes": 221553
+    },
+    {
+      "video_id": "video1952",
+      "status": "downloaded",
+      "bytes": 257491,
+      "transferred_bytes": 257061
+    },
+    {
+      "video_id": "video6670",
+      "status": "downloaded",
+      "bytes": 277140,
+      "transferred_bytes": 276616
+    },
+    {
+      "video_id": "video2411",
+      "status": "downloaded",
+      "bytes": 175530,
+      "transferred_bytes": 175057
+    },
+    {
+      "video_id": "video477",
+      "status": "downloaded",
+      "bytes": 280314,
+      "transferred_bytes": 279749
+    },
+    {
+      "video_id": "video310",
+      "status": "downloaded",
+      "bytes": 402667,
+      "transferred_bytes": 402108
+    },
+    {
+      "video_id": "video1810",
+      "status": "downloaded",
+      "bytes": 172097,
+      "transferred_bytes": 171482
+    },
+    {
+      "video_id": "video6856",
+      "status": "downloaded",
+      "bytes": 275505,
+      "transferred_bytes": 274786
+    },
+    {
+      "video_id": "video2223",
+      "status": "downloaded",
+      "bytes": 183170,
+      "transferred_bytes": 182698
+    },
+    {
+      "video_id": "video6426",
+      "status": "downloaded",
+      "bytes": 123528,
+      "transferred_bytes": 122844
+    },
+    {
+      "video_id": "video2294",
+      "status": "downloaded",
+      "bytes": 401823,
+      "transferred_bytes": 401314
+    },
+    {
+      "video_id": "video5443",
+      "status": "downloaded",
+      "bytes": 114661,
+      "transferred_bytes": 114048
+    },
+    {
+      "video_id": "video2785",
+      "status": "downloaded",
+      "bytes": 461533,
+      "transferred_bytes": 460743
+    },
+    {
+      "video_id": "video4249",
+      "status": "downloaded",
+      "bytes": 136649,
+      "transferred_bytes": 136133
+    },
+    {
+      "video_id": "video5037",
+      "status": "downloaded",
+      "bytes": 298216,
+      "transferred_bytes": 297747
+    },
+    {
+      "video_id": "video4836",
+      "status": "downloaded",
+      "bytes": 41470,
+      "transferred_bytes": 40851
+    },
+    {
+      "video_id": "video1999",
+      "status": "downloaded",
+      "bytes": 325391,
+      "transferred_bytes": 324957
+    },
+    {
+      "video_id": "video2387",
+      "status": "downloaded",
+      "bytes": 94307,
+      "transferred_bytes": 93934
+    },
+    {
+      "video_id": "video6428",
+      "status": "downloaded",
+      "bytes": 282778,
+      "transferred_bytes": 282300
+    },
+    {
+      "video_id": "video4970",
+      "status": "downloaded",
+      "bytes": 398512,
+      "transferred_bytes": 397891
+    },
+    {
+      "video_id": "video495",
+      "status": "downloaded",
+      "bytes": 191515,
+      "transferred_bytes": 190901
+    },
+    {
+      "video_id": "video5626",
+      "status": "downloaded",
+      "bytes": 129995,
+      "transferred_bytes": 129488
+    },
+    {
+      "video_id": "video5643",
+      "status": "downloaded",
+      "bytes": 70221,
+      "transferred_bytes": 69673
+    },
+    {
+      "video_id": "video6823",
+      "status": "downloaded",
+      "bytes": 210644,
+      "transferred_bytes": 210002
+    },
+    {
+      "video_id": "video4599",
+      "status": "downloaded",
+      "bytes": 207057,
+      "transferred_bytes": 206686
+    },
+    {
+      "video_id": "video20",
+      "status": "downloaded",
+      "bytes": 137653,
+      "transferred_bytes": 137028
+    },
+    {
+      "video_id": "video3968",
+      "status": "downloaded",
+      "bytes": 137770,
+      "transferred_bytes": 137289
+    },
+    {
+      "video_id": "video1096",
+      "status": "downloaded",
+      "bytes": 256196,
+      "transferred_bytes": 255461
+    },
+    {
+      "video_id": "video930",
+      "status": "downloaded",
+      "bytes": 151805,
+      "transferred_bytes": 151239
+    },
+    {
+      "video_id": "video6578",
+      "status": "downloaded",
+      "bytes": 95895,
+      "transferred_bytes": 95316
+    },
+    {
+      "video_id": "video4439",
+      "status": "downloaded",
+      "bytes": 361963,
+      "transferred_bytes": 361198
+    }
+  ],
+  "seconds": 65.79579240000021,
+  "count_ok": 64,
+  "bytes_downloaded": 14371034,
+  "no_replacements": true,
+  "accepted_for_training": false
+}

@@ -1,0 +1,7 @@
+{
+  "protocol":"80 epochs, hidden=32, nuisance_weight=0.05, seeds=[17,29,43], audit=117",
+  "mean_audit_auc":{"grl_0":0.8072124756,"grl_0.02":0.8071150097,"grl_0.05":0.8071150097,"grl_0.1":0.8072124756,"grl_0.2":0.8071150097},
+  "reference_correct_arm_audit_auc":0.832748538,
+  "decision":"no_promising_grl_signal_in_pilot",
+  "caveat":"short local pilot; not a final hyperparameter search"
+}

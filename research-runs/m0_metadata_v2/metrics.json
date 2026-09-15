@@ -1,0 +1,261 @@
+{
+  "experiment_id": "m0_metadata_audit_v2",
+  "kind": "metadata shortcut diagnostic only",
+  "sklearn_version": "1.7.2",
+  "feature_sets": {
+    "fps": {
+      "fields": [
+        "fps"
+      ],
+      "threshold": 0.5,
+      "roles": {
+        "fit": {
+          "n": 72,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              36,
+              0
+            ],
+            [
+              0,
+              36
+            ]
+          ]
+        },
+        "calibration": {
+          "n": 24,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              12,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        "audit": {
+          "n": 24,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              12,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        }
+      },
+      "audit_auc_percentile95": [
+        0.9999999999999999,
+        1.0
+      ],
+      "scaler_mean": [
+        2.6341399160481864
+      ],
+      "scaler_scale": [
+        0.762461315824482
+      ],
+      "coef": [
+        [
+          -3.2488111173566026
+        ]
+      ],
+      "intercept": [
+        0.26226962092384115
+      ]
+    },
+    "geometry": {
+      "fields": [
+        "width",
+        "height",
+        "aspect_ratio"
+      ],
+      "threshold": 0.5,
+      "roles": {
+        "fit": {
+          "n": 72,
+          "auc": 1.0,
+          "balanced_accuracy": 0.9861111111111112,
+          "confusion_matrix_real_fake": [
+            [
+              35,
+              1
+            ],
+            [
+              0,
+              36
+            ]
+          ]
+        },
+        "calibration": {
+          "n": 24,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              12,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        "audit": {
+          "n": 24,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              12,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        }
+      },
+      "audit_auc_percentile95": [
+        1.0,
+        1.0
+      ],
+      "scaler_mean": [
+        6.661009908376757,
+        6.381107374298379,
+        0.8531639399122174
+      ],
+      "scaler_scale": [
+        0.5015082822970964,
+        0.2400914741096448,
+        0.1645522424767676
+      ],
+      "coef": [
+        [
+          -1.4656786488426101,
+          -1.5994932015099952,
+          -1.2195507456842298
+        ]
+      ],
+      "intercept": [
+        -0.014102665883679756
+      ]
+    },
+    "metadata_all": {
+      "fields": [
+        "fps",
+        "frame_count",
+        "duration_sec",
+        "width",
+        "height",
+        "aspect_ratio",
+        "file_bytes",
+        "bytes_per_second"
+      ],
+      "threshold": 0.5,
+      "roles": {
+        "fit": {
+          "n": 72,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              36,
+              0
+            ],
+            [
+              0,
+              36
+            ]
+          ]
+        },
+        "calibration": {
+          "n": 24,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              12,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        },
+        "audit": {
+          "n": 24,
+          "auc": 1.0,
+          "balanced_accuracy": 1.0,
+          "confusion_matrix_real_fake": [
+            [
+              12,
+              0
+            ],
+            [
+              0,
+              12
+            ]
+          ]
+        }
+      },
+      "audit_auc_percentile95": [
+        0.9999999999999999,
+        1.0
+      ],
+      "scaler_mean": [
+        2.6341399160481838,
+        3.953775974320692,
+        1.6515040240101864,
+        6.661009908376757,
+        6.381107374298379,
+        0.8531639399122174,
+        13.221014463256445,
+        11.845974167146942
+      ],
+      "scaler_scale": [
+        0.7624613158244818,
+        1.540716899749819,
+        0.7212824899080738,
+        0.5015082822970964,
+        0.2400914741096448,
+        0.1645522424767676,
+        1.1879777051216913,
+        0.7352507247941152
+      ],
+      "coef": [
+        [
+          -1.0258053843102128,
+          -0.8074307446939055,
+          -0.4728368969819414,
+          -0.8619805074079234,
+          -0.8057362897302236,
+          -0.8296822189171831,
+          -0.342935729963953,
+          0.0371895755143743
+        ]
+      ],
+      "intercept": [
+        -0.1761581895013175
+      ]
+    }
+  },
+  "bootstrap_caveat": "Small development audit set; interval does not represent generator or dataset uncertainty.",
+  "protocol_sha256": "1006e8b36d1f1170cc93dab1c2226cc2dbec8016d274ecec907a4df3ad522fe0",
+  "selection_sha256": "e106a73df7fc3a57d2d74ef4c1b4d2e521b083b4451c40818aa17dfef00121a4",
+  "observations_sha256": "be2ba0eb420546390a1a130fef4e20e5ccb0f257192c8a1905fcf253b3cd4fa1",
+  "predictions_sha256": "96551f8f4d7bb2bc31876289427cc859b60123631513306786176cb472bfb2b6"
+}

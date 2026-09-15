@@ -1,0 +1,9 @@
+{
+  "protocol":"JPEG70; C selected on calibration (C=100); fit-only standardized LogisticRegression; audit n=117",
+  "fusion_auc":0.8795321637,
+  "correct_reference_auc":0.8219298246,
+  "delta":0.0576023392,
+  "paired_bootstrap":{"replicates":1000,"seed":20260914,"ci95":[0.0032275873,0.1169598379],"positive_fraction":0.982},
+  "decision":"cross_perturbation_supportive",
+  "interpretation":"The learned correct+fractional intermediate fusion retains a statistically positive gain under JPEG70, independently of the clean-condition result. External-source replication remains required."
+}

@@ -1,0 +1,22 @@
+{
+  "experiment_id": "m0_metadata_audit_v1",
+  "stage": "M0_asset_diagnostic",
+  "hypothesis": "Observed metadata may carry source-label shortcuts even after original-video-prefix grouping.",
+  "source_manifest": "E:/AAGenvid/Dataset/RoboVid-SM/manifests/real_manifest_v02_random.jsonl",
+  "seed": 20260907,
+  "sampling": {"real_unique_source_prefixes": 60, "opensora": 30, "t2vz": 30},
+  "roles_per_class": {"fit": 36, "calibration": 12, "audit": 12},
+  "feature_sets": {
+    "fps": ["fps"],
+    "geometry": ["width", "height", "aspect_ratio"],
+    "metadata_all": ["fps", "frame_count", "duration_sec", "width", "height", "aspect_ratio", "file_bytes", "bytes_per_second"]
+  },
+  "fit": {"model": "logistic_regression", "C": 1.0, "max_iter": 1000, "scale_fit_only": true, "input_transform": "log1p"},
+  "threshold": {"source": "calibration", "criterion": "balanced_accuracy", "grid": [0.01, 0.99, 99], "tie_break": "closest_to_0.5_then_lower"},
+  "grouping": "One real clip per inferred original-video prefix; fake groups provisional by source path; SHA256 cross-role duplicate check.",
+  "decode": {"probe_frames": "first and approximately one second", "threads": 1, "retain_pixels": false},
+  "bootstrap": {"replicates": 1000, "stratified_by_label": true, "seed": 20260908},
+  "failure_policy": "No silent dropping or replacement; report error and refuse fitting if any sampled file cannot be hashed/probed.",
+  "budget": {"sample_count": 120, "cpu_threads": 4, "gpu_training": false, "network_downloads": false, "remote_jobs": false, "max_decode_seconds": 600},
+  "limitations": ["Historical data already examined; all roles are development only, not confirmatory test.", "Prefix grouping does not prove content or prompt independence.", "Metadata classifier diagnoses shortcuts; it is not a video forgery detector.", "No model selection using audit results; all listed feature sets will be reported."]
+}

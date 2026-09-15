@@ -1,0 +1,13 @@
+{
+  "archive_url": "https://s3.amazonaws.com/kinetics/400/train/part_0.tar.gz",
+  "content_length": 1631315939,
+  "etag": "\"ed777d39d85cd74c92523a9d7c4396aa-195\"",
+  "last_modified": "Thu, 15 Apr 2021 06:27:46 GMT",
+  "version_id": null,
+  "source": "cvdfoundation/kinetics-dataset published K400 train URL list",
+  "probe_rule": "first published train shard, first up to 16 complete MP4 members in first 32MiB; availability probe only",
+  "max_prefix_bytes": 33554432,
+  "max_videos": 16,
+  "formal_training": false,
+  "full_archive_hash_verified": false
+}

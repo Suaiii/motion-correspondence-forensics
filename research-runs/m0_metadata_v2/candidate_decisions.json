@@ -1,0 +1,33 @@
+[
+  {
+    "sample_ids": [
+      "S019",
+      "S038"
+    ],
+    "verdict": "not_duplicate",
+    "reviewer": "primary-research-agent; visual diagnostic review, not independent scientific review",
+    "reason": "Inspected first frames and mid-clip frame: S019 sampled frames are nearly black (max gray <=2), S038 begins with red animation and later shows an electronics workbench. Coarse grayscale average hashes matched low-complexity layouts. These are not the same two probe-frame contents. No samples removed; S019/S038 remain quality flags. This verdict is limited to the flagged pair, not full content deduplication.",
+    "video_sha256": {
+      "S019": "e019f0d6ec5c33a52d357c509e957f252a4933c2c65240766d50afac638c13f6",
+      "S038": "00ca57656404b8a9a0dd2a0b4fc02b108f32f02590b58e98c3f8140ec8c4de99"
+    },
+    "evidence": [
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\m0_metadata_v1\\candidate_review\\S019_frame0.png",
+        "sha256": "fe0220c2ed705d52d8f72ce1eb7c216af29bd31c22750ffc812e1e73ffb214b1"
+      },
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\m0_metadata_v1\\candidate_review\\S038_frame0.png",
+        "sha256": "0cdfa197e8c8692241866dc7e5431215ff3b334f4eecce6696b5e2b090afdbf4"
+      },
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\m0_metadata_v1\\candidate_review\\S038_frame449.png",
+        "sha256": "3516c286daaf3c7d4af3f43010f0d70a45a62424bb6b5ecb0dfe183b13c94239"
+      },
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\m0_metadata_v1\\candidate_review\\frame_stats.json",
+        "sha256": "446faf4780324d17c2c9b5359a9be9d39e77d0423981362637289a8d9226ff46"
+      }
+    ]
+  }
+]

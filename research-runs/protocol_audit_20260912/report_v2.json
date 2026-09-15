@@ -1,0 +1,84 @@
+{
+  "summary": {
+    "ms": {
+      "count": 13499,
+      "sampled_native_span_seconds": {
+        "min": 1.875,
+        "median": 1.875,
+        "max": 1.875
+      },
+      "effective_sampled_fps": {
+        "min": 8.0,
+        "median": 8.0,
+        "max": 8.0
+      },
+      "duration_at_least_2": 13499,
+      "duration_at_least_1_5": 13499,
+      "filename_example": "ms-0015c714-5c20-5766-8944-540102ec090f.mp4"
+    },
+    "vc2": {
+      "count": 13501,
+      "sampled_native_span_seconds": {
+        "min": 1.5,
+        "median": 1.5,
+        "max": 1.5
+      },
+      "effective_sampled_fps": {
+        "min": 10.0,
+        "median": 10.0,
+        "max": 10.0
+      },
+      "duration_at_least_2": 0,
+      "duration_at_least_1_5": 13501,
+      "filename_example": "vc-0015c714-5c20-5766-8944-540102ec090f.mp4"
+    },
+    "vript": {
+      "count": 1727,
+      "sampled_native_span_seconds": {
+        "min": 0.25,
+        "median": 0.5005000000000002,
+        "max": 1.1325889999999994
+      },
+      "effective_sampled_fps": {
+        "min": 13.243992304357546,
+        "median": 29.970029970029962,
+        "max": 60.0
+      },
+      "duration_at_least_2": 1703,
+      "duration_at_least_1_5": 1723,
+      "filename_example": "-O6k_vrDeUk-Scene-015.mp4"
+    }
+  },
+  "cross_generator_identifier_candidates": [
+    {
+      "a": "ms",
+      "b": "vc2",
+      "normalized_filename_token_overlap_count": 13499,
+      "examples": [
+        "0015c714-5c20-5766-8944-540102ec090f",
+        "001c5b92-f5c3-577d-a80f-cde08a9ef1af",
+        "002a629a-e7db-51c0-8613-cb5ab2cbf771",
+        "002a6bed-74b8-547b-bf58-f7abd5fd6727",
+        "002acde4-7101-5176-b1e1-fb9ba768b702",
+        "002b155c-6f4f-5e42-8749-70038ad3f796",
+        "002c9a6b-d19d-54b1-be3f-ee8e724aebe2",
+        "003edb33-47dd-51b2-b94e-c62f12721f0d",
+        "004454b5-3826-5b6f-8d90-d2b7cf077819",
+        "0045e1da-e668-5762-ad13-a3192d418ac9"
+      ],
+      "interpretation": "filename token overlap is only an ancestry candidate, not verified prompt/reference equivalence"
+    }
+  ],
+  "input_bundle_sha256": {
+    "dino_checkpoint_v1.zip": "408872b494f19ebe79656f836f23c3795d91247f801db511fb9b2199b4b2d0d2",
+    "real_and_closeout_checkpoint_v1.zip": "3cbbc87ff5bccba1368170b06e7adaa2ffa2aa341f94f8514d6b1cd72bfa9bf2"
+  },
+  "bundle_verification": {
+    "dino_checkpoint_v1.zip": "Legacy ZIP has no embedded SHA index; record ZIP CRC checked by zipfile; whole bundle SHA recorded, not independently authenticated",
+    "real_and_closeout_checkpoint_v1.zip": "Record SHA256 checked against embedded transfer index; whole bundle SHA recorded"
+  },
+  "script_sha256": "52c72c0385c7f74f1e5bbe03ec2eeff26a2990735a2947f1fb4829ffa77d724e",
+  "finding_scope": "Native frame count equality does not match physical observation time. Eligibility counts here use recorded duration only, not fresh decoded PTS checks.",
+  "candidate_protocol": "Evaluate fixed 1.5sec x 8fps (12 samples) coverage prospectively; not silently replace the locked 2sec primary protocol.",
+  "formal_training_runs": 0
+}

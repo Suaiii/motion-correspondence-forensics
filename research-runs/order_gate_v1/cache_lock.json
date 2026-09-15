@@ -1,0 +1,23 @@
+{
+  "manifest_sha256": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+  "files": {
+    "clean__raw_temporal.npy": "02a3cf0ffe1764f6511e91cc6b5757b66ae113dcb4f16a3ab7c0c32c8953c682",
+    "clean__aligned_temporal.npy": "1b936117a0e049f1e4cdd97e86428406870d8414b0675b0c285dd35b9383b526",
+    "jpeg70__raw_temporal.npy": "01689c673c84924f7a7b19394607917a298cd5a5ec654828d35fe17f02442d22",
+    "jpeg70__aligned_temporal.npy": "c7e2d18932645eeabdd9948d4061e1d2228918a765d8c2fb1d6514588bac1109",
+    "gaussian5__raw_temporal.npy": "4d08e5887947ae89b04e192625c51e9eeb516511fedd1b1bb43f86625066a647",
+    "gaussian5__aligned_temporal.npy": "96746d91478f9c276d6605eb7e6e021f3e8a785ffa18d1b5336029f53e58b065"
+  },
+  "rows": 595,
+  "counts": {
+    "fit/vript": 178,
+    "calibration/vript": 60,
+    "audit/vript": 57,
+    "fit/opensora": 90,
+    "calibration/opensora": 30,
+    "audit/opensora": 30,
+    "fit/t2vz": 90,
+    "calibration/t2vz": 30,
+    "audit/t2vz": 30
+  }
+}

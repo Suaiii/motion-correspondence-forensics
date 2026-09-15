@@ -1,0 +1,20 @@
+{
+  "server": "connect.westb.seetacloud.com:35529",
+  "archive_integrity": {
+    "ms.rar": "PASS",
+    "vc2.rar": "PASS"
+  },
+  "selection": {
+    "ms": 100,
+    "vc2": 100
+  },
+  "extraction": "PASS",
+  "candidate_video_files": 200,
+  "candidate_bytes": "~81MB",
+  "role": "profile/historical candidate only",
+  "ancestry_status": "unverified",
+  "real_source_present": false,
+  "training_released": false,
+  "reason": "Pair1 candidate contains two generated sources and has no independently accepted real source; pipeline must not promote it to development training",
+  "next": "add accepted real source and complete ancestry/licence audit before prepare/extract/train"
+}

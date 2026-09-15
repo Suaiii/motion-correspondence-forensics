@@ -1,0 +1,141 @@
+{
+  "experiment_id": "order_gate_v1",
+  "scope": "Bounded expanded development gate: representation x readout factorial, no SNN or final-benchmark claims",
+  "input_run": "E:/aNB/TECH/脉冲神经网络/research-runs/m0_metadata_v2",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "models": [
+    "raw_temporal",
+    "aligned_temporal",
+    "raw_bag",
+    "aligned_bag"
+  ],
+  "sampling": {
+    "target_fps": 4,
+    "window_sec": 2,
+    "frames": 8,
+    "size": 128,
+    "spatial": "center_square_crop_then_area_resize",
+    "no_repeat_last": true
+  },
+  "quality": {
+    "minimum_duration": 2,
+    "reject_if_black_frame_fraction_at_least": 0.5,
+    "black_gray_mean_below": 5,
+    "black_gray_std_below": 5,
+    "unexpected_decode_error": "fail_cache_stage",
+    "replace_excluded_samples": false,
+    "duplicate_sha_policy": "remove all colliding selected files, and exclude any hash matching prior pilot; no replacements",
+    "minimum_per_role_class": 20
+  },
+  "flow": {
+    "algorithm": "Farneback",
+    "direction": "current_to_previous_backward_sampling",
+    "pyr_scale": 0.5,
+    "levels": 3,
+    "winsize": 15,
+    "iterations": 3,
+    "poly_n": 5,
+    "poly_sigma": 1.2,
+    "flags": 0,
+    "mask": "same valid backward-warp mask applied to both raw and aligned residuals"
+  },
+  "training": {
+    "epochs": 20,
+    "batch_size": 8,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "optimizer": "AdamW",
+    "gradient_clip": 1,
+    "loss": "BCEWithLogitsLoss",
+    "checkpoint_selection": "minimum calibration clean BCE; tie earliest",
+    "mixed_precision": false,
+    "train_conditions": [
+      "clean"
+    ],
+    "augmentation": "none for first common-protocol control"
+  },
+  "conditions": {
+    "clean": {},
+    "jpeg70": {
+      "quality": 70
+    },
+    "gaussian5": {
+      "sigma_255": 5,
+      "seed": 20260908
+    }
+  },
+  "threshold": {
+    "source": "calibration_clean",
+    "metric": "balanced_accuracy",
+    "grid_count": 99,
+    "tie_break": "closest_to_0.5_then_lower",
+    "fixed_across_conditions": true
+  },
+  "evaluation": {
+    "role": "audit_development_only",
+    "all_seeds_and_models_reported": true,
+    "save_per_video_predictions": true,
+    "checkpoint_reload_check": true
+  },
+  "budget": {
+    "max_training_seconds": 1800,
+    "max_cache_seconds": 1800,
+    "cpu_threads": 4,
+    "gpu": "local_cuda_0",
+    "max_source_videos": 600,
+    "network_download": false,
+    "paid_jobs": false
+  },
+  "limitations": [
+    "Single real source and two legacy fake generators; not cross-generator generalization.",
+    "Historical audit data already used for metadata diagnostics; no confirmatory test claims.",
+    "Nominal-CFR index plan with recorded decoded timestamps; comprehensive source timing still not certified.",
+    "Resizing/cropping removes metadata fields but cannot guarantee removal of resampling or codec fingerprints.",
+    "Corruptions are applied after spatial preprocessing; they do not simulate full platform transmission.",
+    "Small random-initialized CNN/GRU baselines; not reproductions of MAST or other published detectors.",
+    "All four neural models have exactly 49,601 parameters; compute cost and optimization are not guaranteed equal.",
+    "Old pilot real prefixes and fake paths/hashes excluded; fake prompt ancestry and semantic content independence remain unresolved.",
+    "All data are still from the historical v02 pool, not an external confirmatory cohort.",
+    "No full-file content deduplication or real-source/generator label authentication beyond available records."
+  ],
+  "source_manifest": "E:/AAGenvid/Dataset/RoboVid-SM/manifests/real_manifest_v02_random.jsonl",
+  "selection_seed": 20260909,
+  "selection": {
+    "real_prefixes": 300,
+    "opensora": 150,
+    "t2vz": 150,
+    "roles": "60/20/20 within real and each fake source",
+    "exclude_prior120": true
+  },
+  "cache_representations": [
+    "raw_temporal",
+    "aligned_temporal"
+  ],
+  "representation_map": {
+    "raw_temporal": "raw_temporal",
+    "aligned_temporal": "aligned_temporal",
+    "raw_bag": "raw_temporal",
+    "aligned_bag": "aligned_temporal"
+  },
+  "decision_gate": {
+    "primary": "AUC(mean-seed aligned_temporal probabilities) minus AUC(mean-seed aligned_bag probabilities), clean development audit",
+    "practical_minimum_auc_delta": 0.02,
+    "support_required": [
+      "primary delta >=0.02",
+      "paired stratified bootstrap lower95 >0",
+      "per-seed clean delta >0 in at least 2 of 3 seeds"
+    ],
+    "if_not_supported": "Do not scale SNN/transport memory. Deprioritize ordering-specific architecture; examine representation, residual statistics and codec/resampling confounds. Inconclusive is not proof of no temporal benefit.",
+    "secondary": "Aligned vs raw within each readout; simple residual-statistics logistic probe; all conditions reported",
+    "bootstrap": {
+      "replicates": 2000,
+      "seed": 20260910,
+      "stratify": "real/opensora/t2vz"
+    },
+    "no_more_recipe_search_on_this_audit": true
+  }
+}

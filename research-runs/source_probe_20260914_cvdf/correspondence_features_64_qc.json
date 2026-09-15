@@ -1,0 +1,17 @@
+{
+  "records": 64,
+  "arms": [
+    "raw",
+    "correct",
+    "wrong_integer",
+    "fractional",
+    "compensation_gain"
+  ],
+  "finite_feature_values": true,
+  "nonfinite_values": 0,
+  "dtype_for_statistics": "float32",
+  "protocol_source": "research-runs/alignment_gate_v1/protocol.json",
+  "formal_training": false,
+  "interpretation": "All 64 external Kinetics clips now have finite correspondence features after fixing the float16 overflow; no labels or performance claim are inferred from this probe.",
+  "feature_file_sha256": "9e34c4b0b0229a05bd2726e71cbe81ee26bb116744ccdf18155e105dee2d1a6d"
+}

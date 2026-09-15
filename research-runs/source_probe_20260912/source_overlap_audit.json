@@ -1,0 +1,37 @@
+{
+  "msrvtt_rows": 10000,
+  "msrvtt_unique_origin_candidates": 7180,
+  "vript_overlap_count": 0,
+  "hdvg_overlap_count": 1,
+  "vript_overlap_ids": [],
+  "hdvg_overlap_ids": [
+    "0dL9et91nJA"
+  ],
+  "eligible_original_train_clips": 7010,
+  "selected": 64,
+  "selected_unique_origins": 64,
+  "category_counts": {
+    "0": 3,
+    "1": 3,
+    "2": 3,
+    "3": 3,
+    "4": 3,
+    "5": 3,
+    "6": 3,
+    "7": 3,
+    "8": 3,
+    "9": 3,
+    "10": 3,
+    "11": 3,
+    "12": 3,
+    "13": 3,
+    "14": 3,
+    "15": 3,
+    "16": 3,
+    "17": 3,
+    "18": 3,
+    "19": 3
+  },
+  "metadata_sha256": "3540d91f9fd5f9a56d75b00c6576f30814fd19395d027791a6d438e9dc297014",
+  "scope": "Public URL and filename origin candidates, not decoded-content identity proof"
+}

@@ -1,0 +1,16 @@
+{
+  "manifest_sha256": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+  "files": {
+    "clean__compensation_gain.npy": "f6f02d639b494caf5cfff0e1d8be2e03d434dedc779559a4b96c6c4deb29f6e8",
+    "clean__correct.npy": "7b94c878a1da133adce7a717b26981d3a70c00b32461e66a997250c059a98633",
+    "clean__fractional.npy": "aded66e95d0950854694e246391badd1f1454d125ef2f6cf542561a55da81fa7",
+    "clean__raw.npy": "417ee1e1efec7d9f7c21def72b36885e525beb1ac9a7db1517cf8b3d22995486",
+    "clean__wrong_integer.npy": "f3492730c47bb062145fab0175ec7d700a2101e8fbb37290b6087c8aceb42047",
+    "jpeg70__compensation_gain.npy": "bf4105bd225fa9a27d33cf05ac2069b52434c47d8086ef980e1137743a6c0b3a",
+    "jpeg70__correct.npy": "e2ed37f321428f9d3d250ddadfaa3b476744bd1833ba5a2db7bf8ec64a6e6336",
+    "jpeg70__fractional.npy": "e8245c2dcb36b457bf45199eeb2b86c0628b52890030a812297d630b81dba04f",
+    "jpeg70__raw.npy": "72d9337fbcc9a661a0fc2ac219b7b98cdccf18bd4d6aa93437c6445d7557b229",
+    "jpeg70__wrong_integer.npy": "d334ecf6e82abd5a6015424b810a4de7f193d76f1c9f496cdc76902ec2ad00f5"
+  },
+  "mask_features_sha256": "8f6ae68e781f295f382e36141e6d7bff8cf396d9b22a2caf28a853e4bc98429f"
+}

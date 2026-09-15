@@ -1,0 +1,12 @@
+{"time_utc": "2026-09-07T16:29:30.792682+00:00", "stage": "prepare", "samples": 120}
+{"time_utc": "2026-09-07T16:31:55.564975+00:00", "stage": "cache_complete", "kept": 118, "excluded": 2}
+{"time_utc": "2026-09-07T16:33:05.954523+00:00", "stage": "model_trained", "kind": "frame_mean", "seed": 17, "best_epoch": 4}
+{"time_utc": "2026-09-07T16:33:09.998995+00:00", "stage": "model_trained", "kind": "frame_mean", "seed": 29, "best_epoch": 4}
+{"time_utc": "2026-09-07T16:33:14.508873+00:00", "stage": "model_trained", "kind": "frame_mean", "seed": 43, "best_epoch": 4}
+{"time_utc": "2026-09-07T16:33:20.093591+00:00", "stage": "model_trained", "kind": "raw_temporal", "seed": 17, "best_epoch": 1}
+{"time_utc": "2026-09-07T16:33:25.465190+00:00", "stage": "model_trained", "kind": "raw_temporal", "seed": 29, "best_epoch": 3}
+{"time_utc": "2026-09-07T16:33:30.296907+00:00", "stage": "model_trained", "kind": "raw_temporal", "seed": 43, "best_epoch": 3}
+{"time_utc": "2026-09-07T16:33:34.866281+00:00", "stage": "model_trained", "kind": "aligned_temporal", "seed": 17, "best_epoch": 19}
+{"time_utc": "2026-09-07T16:33:39.358409+00:00", "stage": "model_trained", "kind": "aligned_temporal", "seed": 29, "best_epoch": 18}
+{"time_utc": "2026-09-07T16:33:43.831678+00:00", "stage": "model_trained", "kind": "aligned_temporal", "seed": 43, "best_epoch": 20}
+{"time_utc": "2026-09-07T16:37:30.659604+00:00", "stage": "evaluation_complete", "fits": 9, "prediction_rows": 648}

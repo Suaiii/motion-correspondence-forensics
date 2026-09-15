@@ -1,0 +1,55 @@
+{
+  "kept": 118,
+  "exclusions": [
+    {
+      "sample_id": "S019",
+      "source": "vript",
+      "role": "fit",
+      "label_fake": 0,
+      "reason": "insufficient_duration"
+    },
+    {
+      "sample_id": "S021",
+      "source": "vript",
+      "role": "fit",
+      "label_fake": 0,
+      "reason": "black_frames",
+      "quality": {
+        "indices": [
+          75,
+          83,
+          90,
+          98,
+          105,
+          112,
+          120,
+          127
+        ],
+        "pts": [
+          2.5025,
+          2.7694333333333336,
+          3.003,
+          3.2699333333333334,
+          3.5035000000000003,
+          3.7370666666666668,
+          4.0040000000000004,
+          4.237566666666667
+        ],
+        "dt": [
+          0.2669333333333337,
+          0.23356666666666648,
+          0.26693333333333324,
+          0.23356666666666692,
+          0.23356666666666648,
+          0.2669333333333337,
+          0.23356666666666648
+        ],
+        "black_frame_fraction": 1.0,
+        "duplicate_resized_frames": 0
+      }
+    }
+  ],
+  "failures": [],
+  "wall_seconds": 122.25921459999881,
+  "policy": "quality rules frozen before model fitting; no replacements; all conditions share same IDs"
+}

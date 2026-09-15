@@ -1,0 +1,7 @@
+{
+  "sha256": "819093b166e81e7f38541a7334eeead197dfcb5b31c60a9ac58e53ba510f300d",
+  "bytes": 33554432,
+  "etag": "\"ed777d39d85cd74c92523a9d7c4396aa-195\"",
+  "source": "https://s3.amazonaws.com/kinetics/400/train/part_0.tar.gz",
+  "full_gzip_crc_verified": false
+}

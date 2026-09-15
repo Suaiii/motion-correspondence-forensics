@@ -1,0 +1,21 @@
+{
+  "checks": {
+    "fps": {
+      "max_probability_error": 0.0,
+      "pairwise_auc": 1.0,
+      "passed": true
+    },
+    "geometry": {
+      "max_probability_error": 3.469446951953614e-18,
+      "pairwise_auc": 1.0,
+      "passed": true
+    },
+    "metadata_all": {
+      "max_probability_error": 3.469446951953614e-18,
+      "pairwise_auc": 1.0,
+      "passed": true
+    }
+  },
+  "verifier_sha256": "c88040c64c7b5463798615a83c4f3da9f1c0f549d4ae1863e03bde39516541e0",
+  "kind": "numerical verification by same implementer, not independent scientific review"
+}

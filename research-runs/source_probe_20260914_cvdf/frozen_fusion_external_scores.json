@@ -1,0 +1,12 @@
+{
+  "n":64,
+  "score_min":0.0000058717,
+  "score_median":0.3110633060,
+  "score_mean":0.3275825677,
+  "score_max":0.9814435283,
+  "q05":0.0005074911,
+  "q95":0.8420139039,
+  "model":"clean fit C=30 frozen correct+fractional fusion",
+  "labels_used_for_external":false,
+  "interpretation":"Unlabelled external directionality scores only; no AUROC, accuracy, or generalization claim is made. This artifact establishes the inference path for the eventual accepted external protocol."
+}

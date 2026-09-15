@@ -1,0 +1,164 @@
+{
+  "primary_checks": [
+    true,
+    true
+  ],
+  "local_gate_pass": true,
+  "independent_replication_complete": false,
+  "comparisons": [
+    {
+      "a": "correct",
+      "b": "wrong_integer",
+      "condition": "clean",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8929824561403509,
+      "auc_seed_mean_prob_b": 0.7514619883040936,
+      "delta": 0.14152046783625727,
+      "paired_stratified_percentile95": [
+        0.07484649122807026,
+        0.216081871345029
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.11081871345029237,
+        0.13450292397660824,
+        0.1470760233918128
+      ]
+    },
+    {
+      "a": "correct",
+      "b": "fractional",
+      "condition": "clean",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8929824561403509,
+      "auc_seed_mean_prob_b": 0.7900584795321637,
+      "delta": 0.1029239766081872,
+      "paired_stratified_percentile95": [
+        0.030402046783625753,
+        0.18187865497076006
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.06403508771929822,
+        0.14824561403508774,
+        0.09473684210526312
+      ]
+    },
+    {
+      "a": "correct",
+      "b": "raw",
+      "condition": "clean",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8929824561403509,
+      "auc_seed_mean_prob_b": 0.8239766081871345,
+      "delta": 0.0690058479532164,
+      "paired_stratified_percentile95": [
+        0.017836257309941535,
+        0.1286549707602339
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.05146198830409354,
+        0.1105263157894737,
+        0.04385964912280693
+      ]
+    },
+    {
+      "a": "compensation_gain",
+      "b": "correct",
+      "condition": "clean",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.912280701754386,
+      "auc_seed_mean_prob_b": 0.8929824561403509,
+      "delta": 0.019298245614035148,
+      "paired_stratified_percentile95": [
+        -0.03977339181286558,
+        0.07894736842105254
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.02777777777777779,
+        -0.02251461988304093,
+        0.022514619883041043
+      ]
+    },
+    {
+      "a": "correct",
+      "b": "wrong_integer",
+      "condition": "jpeg70",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8970760233918128,
+      "auc_seed_mean_prob_b": 0.741812865497076,
+      "delta": 0.15526315789473677,
+      "paired_stratified_percentile95": [
+        0.08742690058479541,
+        0.23043128654970757
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.12368421052631584,
+        0.13099415204678366,
+        0.14970760233918123
+      ]
+    },
+    {
+      "a": "correct",
+      "b": "fractional",
+      "condition": "jpeg70",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8970760233918128,
+      "auc_seed_mean_prob_b": 0.7906432748538011,
+      "delta": 0.10643274853801166,
+      "paired_stratified_percentile95": [
+        0.034788011695906465,
+        0.18656432748538
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.06725146198830423,
+        0.14736842105263148,
+        0.09532163742690059
+      ]
+    },
+    {
+      "a": "correct",
+      "b": "raw",
+      "condition": "jpeg70",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8970760233918128,
+      "auc_seed_mean_prob_b": 0.815204678362573,
+      "delta": 0.08187134502923976,
+      "paired_stratified_percentile95": [
+        0.027470760233918177,
+        0.14737573099415202
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.06637426900584797,
+        0.1195906432748538,
+        0.04649122807017536
+      ]
+    },
+    {
+      "a": "compensation_gain",
+      "b": "correct",
+      "condition": "jpeg70",
+      "n": 117,
+      "auc_seed_mean_prob_a": 0.8818713450292397,
+      "auc_seed_mean_prob_b": 0.8970760233918128,
+      "delta": -0.01520467836257311,
+      "paired_stratified_percentile95": [
+        -0.07748538011695905,
+        0.04738304093567247
+      ],
+      "caveat": "development historical pool; bootstrap conditions on fitted seeds and does not represent new-generator/real-source uncertainty",
+      "seed_deltas": [
+        0.004678362573099282,
+        -0.059649122807017396,
+        -0.008479532163742642
+      ]
+    }
+  ],
+  "next": "Independent-source replication required before any motion-mechanism claim",
+  "audit_reused": true
+}

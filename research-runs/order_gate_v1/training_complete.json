@@ -1,0 +1,7396 @@
+{
+  "results": [
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "params": 49601,
+      "best_epoch": 20,
+      "best_calibration_bce": 0.3614020384900792,
+      "first_train_bce": 0.7005816082048683,
+      "last_train_bce": 0.3660301160712482,
+      "seconds": 23.829632499997388,
+      "peak_allocated_mb": 164.3662109375,
+      "checkpoint_sha256": "8d20e5f5aa06c57eef0254121912359e38ad7b287b697c7b2d4b7ba5d7b1ab1d",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.8681547045707703
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.022380759939551353
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.02385423332452774
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.052456196397542953
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.02575322426855564
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.17637567222118378
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.015238328836858273
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.052301857620477676
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.6412179470062256
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.05145629495382309
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.4364778697490692
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.48131063580513
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.5175256729125977
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.0274216178804636
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.05738932639360428
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.8172731995582581
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.607521653175354
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.02582969330251217
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.011794165708124638
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.04910682514309883
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.07259608060121536
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.13853900134563446
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.021840689703822136
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5131428241729736
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.10472796857357025
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.021047096699476242
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.08796527981758118
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.08956322073936462
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.9642622470855713
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.047895461320877075
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.3861471116542816
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.013318303041160107
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.1451556533575058
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.5368538498878479
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.5454621315002441
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.5871422290802002
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.02889704890549183
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.12089566886425018
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.9906875491142273
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.06607536971569061
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.1648651510477066
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.009928020648658276
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.04328847676515579
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.009416970424354076
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.3627066910266876
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.5794558525085449
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.008929003961384296
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.036800723522901535
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.018255744129419327
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.010888216085731983
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.03915400430560112
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.09417379647493362
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.03274448588490486
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.04229163005948067
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.2697375416755676
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.39138925075531006
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.05354124307632446
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.040812455117702484
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.06445969641208649
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.8672183156013489
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.6549254059791565
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.7166064977645874
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.9615194201469421
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.421266108751297
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.6798655390739441
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.566798746585846
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.5509395599365234
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.6590894460678101
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.38664427399635315
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.5068116188049316
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.5178383588790894
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.6348254084587097
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.6062919497489929
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.5360427498817444
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.6277872920036316
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.4240001440048218
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.6068198680877686
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.4318965673446655
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.7091858983039856
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.4784078598022461
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.6488864421844482
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.6912009716033936
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.5780632495880127
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.6261046528816223
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.6467743515968323
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5637102127075195
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.6967960596084595
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.7312030792236328
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.5380963683128357
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.7466614246368408
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.9719304442405701
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.9864892959594727
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9931753277778625
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9914631247520447
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9898011088371277
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.9842519164085388
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9899588227272034
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.9810174703598022
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.9850141406059265
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.9927682876586914
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9952025413513184
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9931100606918335
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9893344044685364
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.8260135650634766
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.9874486327171326
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9900346398353577
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9963125586509705
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9935925602912903
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9821817278862
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9950060248374939
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9943692088127136
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9945387244224548
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9950714111328125
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.24086818099021912
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.9837093353271484
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.9567583799362183
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9937115907669067
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.9883893728256226
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.991813063621521
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.989721953868866
+        }
+      ]
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "params": 49601,
+      "best_epoch": 20,
+      "best_calibration_bce": 0.475509768838323,
+      "first_train_bce": 0.694867322564791,
+      "last_train_bce": 0.5705305561007068,
+      "seconds": 23.194413500001247,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "309053e1053466b4ed9ccd7ba0dee6e818dc897164e4bda296a20083f4e04027",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9526979923248291
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.13848534226417542
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.15818169713020325
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.0415969155728817
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.05389656499028206
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.424836128950119
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.04258422553539276
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.06858222186565399
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.8209885954856873
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.23516614735126495
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.7127482295036316
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.5161197185516357
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.5952827334403992
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.3494667410850525
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.45014750957489014
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.8172391653060913
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.5515136122703552
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.053271085023880005
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.012673628516495228
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.023727569729089737
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.10127557069063187
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.7185951471328735
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.07468616217374802
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5418712496757507
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.14411205053329468
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.01872645877301693
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.6070567965507507
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.47031527757644653
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.46362417936325073
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.294289767742157
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5353565216064453
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.01633462682366371
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.476310670375824
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.4165775179862976
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.5427395105361938
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.5413913726806641
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.03174937888979912
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.5198674201965332
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.21409812569618225
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.04270591959357262
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.2464250922203064
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.007922200486063957
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.15087562799453735
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.01811976172029972
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.8085311055183411
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.5898380875587463
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.01120561920106411
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.07999662309885025
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.022299302741885185
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.015124761499464512
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.08021556586027145
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.6764806509017944
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.6671992540359497
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.32146570086479187
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.5317932367324829
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5353724360466003
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.4300675094127655
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.08337990939617157
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.5925859212875366
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.8813983798027039
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.5909098386764526
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.7327743172645569
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.8588275909423828
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.47420400381088257
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.8721888661384583
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.5388399362564087
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.5807344913482666
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.6127793192863464
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.8298704028129578
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.20795445144176483
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.542393147945404
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.5919777750968933
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5887789726257324
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.5998939275741577
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.5445780754089355
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.5348894000053406
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.7059657573699951
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.701026976108551
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.7486286759376526
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.5362173914909363
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.577796995639801
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.5995556712150574
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.5944364666938782
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.608851432800293
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.6358278393745422
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5905091166496277
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.633212685585022
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.6957144737243652
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.5412036776542664
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.7188299298286438
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.8491537570953369
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.6606751084327698
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9569542407989502
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9493687748908997
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9176212549209595
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.8782408833503723
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.8885806202888489
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.9237932562828064
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.8567878007888794
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.8731434941291809
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9237757325172424
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.91715008020401
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.8428037166595459
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.11497054994106293
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.9192174077033997
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9367775917053223
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9630535840988159
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.8974605798721313
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9282851219177246
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9172987341880798
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9455893635749817
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.8473745584487915
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9560076594352722
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.033472467213869095
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.8231906294822693
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.8178714513778687
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9289583563804626
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.8397491574287415
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9692586660385132
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9482755661010742
+        }
+      ]
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "params": 49601,
+      "best_epoch": 19,
+      "best_calibration_bce": 0.4132428704653337,
+      "first_train_bce": 0.6925877132895273,
+      "last_train_bce": 0.40778393485692627,
+      "seconds": 23.218374399999448,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "bdf23ad521a275678bf353f3213a636de5ade430dc2396f420ae55360468a8b3",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9073560237884521
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.012934218160808086
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.03032010607421398
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.016371281817555428
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.031512897461652756
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.24070611596107483
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.011063111014664173
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.016710923984646797
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.6510629653930664
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.03876513987779617
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.49252742528915405
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.4341241717338562
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.20043903589248657
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.027289584279060364
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.06238916888833046
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.36976081132888794
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.5654380321502686
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.025876794010400772
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.0071371435187757015
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.009667172096669674
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.029976265504956245
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.16553141176700592
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.017164284363389015
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5639673471450806
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.05563505366444588
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.02588893473148346
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.04331213980913162
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.13127946853637695
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.0950808897614479
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.02091856114566326
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5635444521903992
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.011150110512971878
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.09615523368120193
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.3799235224723816
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.5591253638267517
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.5700380206108093
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.008386153727769852
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.26972001791000366
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.28993362188339233
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.029218396171927452
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.02067253366112709
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.004892499651759863
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.06272102147340775
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.006926544476300478
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.09366286545991898
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.5539018511772156
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.007400386966764927
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.03118225745856762
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.009319521486759186
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.00992798712104559
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.02019740454852581
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.08523565530776978
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.03024372272193432
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.05969156697392464
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.49083271622657776
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5635675191879272
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.019776172935962677
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.015167693607509136
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.05150556191802025
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.25633761286735535
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.5663570165634155
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.6005067825317383
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.8655309081077576
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.11243119090795517
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.6731002926826477
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.5624277591705322
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.5640800595283508
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.5311537981033325
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.2488241046667099
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.03930124640464783
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.5621334910392761
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.5656870007514954
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5663102865219116
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.5083433389663696
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.5663557052612305
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.5639868974685669
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.5292592644691467
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.46416935324668884
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.5836116671562195
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.5632192492485046
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.5513736605644226
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.5703277587890625
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.536765456199646
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.5635042190551758
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.5677344799041748
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5343554615974426
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.554441511631012
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.585371196269989
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.5617724657058716
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.6061127781867981
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.6180030703544617
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.29540884494781494
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9768468737602234
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9751092195510864
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9629429578781128
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.8853040337562561
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9370836615562439
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.6377625465393066
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.8302763104438782
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.8549590110778809
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9688887596130371
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9563154578208923
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.5919264554977417
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.05921901762485504
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.9169697761535645
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.961725652217865
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9814324975013733
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.931453287601471
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.7678803205490112
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9880359768867493
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9780817627906799
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9233106970787048
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.977209210395813
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.04297487810254097
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.7201288342475891
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.7527619004249573
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9640481472015381
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.16884095966815948
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9810312390327454
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9704359173774719
+        }
+      ]
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "params": 49601,
+      "best_epoch": 13,
+      "best_calibration_bce": 0.4740962123362465,
+      "first_train_bce": 0.6853889340128978,
+      "last_train_bce": 0.41342237075613864,
+      "seconds": 21.586925399999018,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "b5a97f9dc8c69094f5e00e122c8f86c06d57f5c79453ec6bd65c193e81617e17",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9498414993286133
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.11589924991130829
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.014748438261449337
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.028147738426923752
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.8301114439964294
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.20577485859394073
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.03750467672944069
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.10563662648200989
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.5243431329727173
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.2791110575199127
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.23335479199886322
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.4137865900993347
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.5592080950737
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.025927741080522537
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.24384121596813202
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.05310427397489548
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.5690608620643616
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.15661829710006714
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.011419398710131645
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.014101006090641022
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.18520934879779816
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.14472408592700958
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.20778603851795197
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5697387456893921
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.13811145722866058
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.02397523820400238
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.07234004139900208
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.014975876547396183
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.9014859199523926
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.11526250839233398
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5698886513710022
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.19890519976615906
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.0908144935965538
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.2873521149158478
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.5398684144020081
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.5697001814842224
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.01487669162452221
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.404744952917099
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.9656586647033691
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.9324969053268433
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.021432429552078247
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.008010932244360447
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.07758654654026031
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.009853181429207325
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.4510806202888489
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.5653948783874512
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.010426807217299938
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.893498957157135
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.253519743680954
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.04903780296444893
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.17351600527763367
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.07504653185606003
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.01539346482604742
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.2523379623889923
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.2102719396352768
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5698960423469543
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.10904541611671448
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.02323184534907341
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.013635795563459396
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.022964777424931526
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.5641757845878601
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.5494385361671448
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.9371157884597778
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.4357830584049225
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.309457927942276
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.5692594051361084
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.5498265027999878
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.5680744647979736
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.18943104147911072
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.3458021283149719
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.5695186853408813
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.5642712116241455
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5666769742965698
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.5665948390960693
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.5703367590904236
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.5699943900108337
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.28389260172843933
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.38941216468811035
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.24201877415180206
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.5695536732673645
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.550192654132843
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.5647439360618591
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.5612443089485168
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.5618067383766174
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.27435392141342163
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5498495101928711
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.5648372173309326
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.5541990995407104
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.5698096752166748
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.5064206123352051
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.8432764410972595
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.950617253780365
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9368489980697632
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.8991698026657104
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9275570511817932
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.904213547706604
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.8953399062156677
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.8924589157104492
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.906814455986023
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.957643449306488
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9696875810623169
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9423025250434875
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9662055373191833
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.14828646183013916
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.8555843830108643
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.8956837058067322
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9712878465652466
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9596042633056641
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9319994449615479
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9704275727272034
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9598928093910217
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9664307236671448
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.958377480506897
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.15286137163639069
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.9358587265014648
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.9397737979888916
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9629530906677246
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.959961473941803
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9333397746086121
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9148927927017212
+        }
+      ]
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "params": 49601,
+      "best_epoch": 13,
+      "best_calibration_bce": 0.41603142594599946,
+      "first_train_bce": 0.6828711500713945,
+      "last_train_bce": 0.4239610526814807,
+      "seconds": 21.146054600001662,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "fa70eed0827462a7d2dc753b1c0b4a9ece82f9e34a21bb0dcf39c7f3204081b6",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9667233824729919
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.0356932058930397
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.02536308765411377
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.03715241327881813
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.03010828047990799
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.33279699087142944
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.01169821247458458
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.18555274605751038
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.5904634594917297
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.16819725930690765
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.3091152012348175
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.5331465601921082
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.60704106092453
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.038562338799238205
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.12507739663124084
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.029420319944620132
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.6290532350540161
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.041332416236400604
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.011019410565495491
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.011317556723952293
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.04920268431305885
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.16034801304340363
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.028123535215854645
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.6290357112884521
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.14706951379776
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.013353320769965649
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.04839323088526726
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.021044880151748657
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.1473853588104248
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.13696259260177612
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.6297920346260071
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.2645619511604309
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.12271329015493393
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.43725502490997314
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.5643646717071533
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.6120659708976746
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.011508713476359844
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.4691101908683777
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.6598941683769226
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.08860524743795395
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.018496103584766388
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.00723487650975585
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.023211633786559105
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.009375679306685925
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.4432859718799591
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.6307830214500427
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.010355678386986256
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.09331292659044266
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.3203733265399933
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.039633460342884064
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.08877221494913101
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.1207175999879837
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.014992437325417995
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.06439577043056488
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.3599044382572174
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.6297932267189026
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.03567616641521454
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.01756720244884491
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.030844613909721375
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.017487775534391403
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.633540689945221
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.6231662631034851
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.9288181662559509
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.48294273018836975
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.3516485393047333
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.6308527588844299
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.5789168477058411
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.631462037563324
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.12193018943071365
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.19927136600017548
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.6299496293067932
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.6330810189247131
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.6328030228614807
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.6282759308815002
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.6296480298042297
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.628775954246521
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.3765353858470917
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.2952862083911896
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.2641364634037018
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.6296125054359436
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.61204993724823
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.6290005445480347
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.6144848465919495
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.6121149659156799
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.5321884751319885
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.6117544174194336
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.6332851648330688
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.6362958550453186
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.6300530433654785
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.6302506923675537
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.7778478264808655
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.6341859102249146
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9589964151382446
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.959933340549469
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9244396090507507
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.8958428502082825
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9098023772239685
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.9189492464065552
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.5099968910217285
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.8485612273216248
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.92645263671875
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9461137652397156
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9108570218086243
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.042192962020635605
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.5875353813171387
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.8561913967132568
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.973895251750946
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.7080682516098022
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9560151100158691
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9572062492370605
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9652028679847717
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.8581072688102722
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9713548421859741
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.08653312921524048
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.42641955614089966
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.9351395964622498
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9370911717414856
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.9237388968467712
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.970436692237854
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9500471949577332
+        }
+      ]
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "params": 49601,
+      "best_epoch": 15,
+      "best_calibration_bce": 0.4299676337256238,
+      "first_train_bce": 0.6835268149828778,
+      "last_train_bce": 0.371685619127817,
+      "seconds": 21.008253699998022,
+      "peak_allocated_mb": 164.36669921875,
+      "checkpoint_sha256": "8d0debc84c2f84d62087ee54871ddfefdc09a02067b0dbc8f5252b5703dbd1f8",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9921228289604187
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.046453312039375305
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.02325993962585926
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.11157805472612381
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.05300166457891464
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.24189725518226624
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.013976184651255608
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.19319182634353638
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.5213860273361206
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.2136048972606659
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.5316895842552185
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.2753340005874634
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.5330289006233215
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.10557634383440018
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.4347526431083679
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.1896742433309555
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.5264589786529541
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.03268752992153168
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.010130450129508972
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.01055014505982399
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.12954607605934143
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.2951498031616211
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.06339336186647415
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5222836136817932
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.0661427304148674
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.018026340752840042
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.05481996387243271
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.0443585142493248
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.205063134431839
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.31049656867980957
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5210043787956238
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.22031942009925842
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.3050541281700134
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.2771405279636383
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.4926128685474396
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.5364254117012024
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.01323654130101204
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.1548028141260147
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.993067741394043
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.5257512331008911
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.01951148360967636
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.00573590025305748
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.026407932862639427
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.011354346759617329
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.9480363726615906
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.5564377307891846
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.00838171411305666
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.10656993091106415
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.2952004373073578
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.03581435978412628
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.1866914927959442
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.18156379461288452
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.011796317063272
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.3787469267845154
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.24690976738929749
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5204586386680603
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.041392963379621506
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.0157606303691864
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.04296194389462471
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.018023043870925903
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.5657036900520325
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.6052308082580566
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.988338053226471
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.636531412601471
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.6438102722167969
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.5310799479484558
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.498492032289505
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.556695818901062
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.20954152941703796
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.26726657152175903
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.5337743163108826
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.5639796257019043
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5544670820236206
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.5287253260612488
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.5433176159858704
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.5286768674850464
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.4378718435764313
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.45220622420310974
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.40896594524383545
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.521286129951477
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.531702995300293
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.566215991973877
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.5320670008659363
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.55218505859375
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.4949888586997986
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5020285248756409
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.6209317445755005
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.614036500453949
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.5367071032524109
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.6756197214126587
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.9827107787132263
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.9824163913726807
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9937953948974609
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9918608069419861
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9925141930580139
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.9872012138366699
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9902846217155457
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.9915865659713745
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.9902862906455994
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.9934019446372986
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9942237734794617
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9922915101051331
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9936618804931641
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.08659138530492783
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.9709279537200928
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9899740219116211
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9951785802841187
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9926795959472656
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.990736186504364
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9949416518211365
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9941229224205017
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9929961562156677
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9944562315940857
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.14938044548034668
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.9857078194618225
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.9931777715682983
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9940915703773499
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.993509829044342
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9944400787353516
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9926437735557556
+        }
+      ]
+    },
+    {
+      "kind": "raw_bag",
+      "seed": 17,
+      "params": 49601,
+      "best_epoch": 20,
+      "best_calibration_bce": 0.4906082090184404,
+      "first_train_bce": 0.708969780519688,
+      "last_train_bce": 0.4442064808733636,
+      "seconds": 22.850680100000318,
+      "peak_allocated_mb": 164.36865234375,
+      "checkpoint_sha256": "fb3582b8b1eb829b34c32cef2f8329dba4cb2824731422a4647b8e96a35f0d86",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9281470775604248
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.04815991595387459
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.035060249269008636
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.05604594200849533
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.029796933755278587
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.2168383151292801
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.07927612960338593
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.23549561202526093
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.6079997420310974
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.12011705338954926
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.4420524835586548
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.35888978838920593
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.5390172600746155
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.2210509330034256
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.06056630611419678
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.6317014694213867
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.22941875457763672
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.030757345259189606
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.044820625334978104
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.13890326023101807
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.5900304913520813
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.12150833755731583
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.04311978071928024
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.15822336077690125
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.2106890082359314
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.235772967338562
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.08268464356660843
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.2543095052242279
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.05582854524254799
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.0703197494149208
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.12867261469364166
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.039925962686538696
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.29588791728019714
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.3631514012813568
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.14755530655384064
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.157687246799469
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.11330263316631317
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.13915765285491943
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.9573020339012146
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.03044661320745945
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.40221819281578064
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.037422701716423035
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.03175536170601845
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.15725183486938477
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.08841462433338165
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.5033139586448669
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.12164457887411118
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.03518739342689514
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.05285800248384476
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.03962436318397522
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.10471463203430176
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.09928750991821289
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.30476146936416626
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.045817844569683075
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.14740903675556183
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.1294281780719757
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.036693256348371506
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.05607541650533676
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.08275888860225677
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.9439780116081238
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.4485013484954834
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.6474961638450623
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.6310499906539917
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.48668310046195984
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.5673021078109741
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.1611478477716446
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.4524894952774048
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.5343291163444519
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.2989296019077301
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.5290565490722656
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.1667814701795578
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.39222395420074463
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5172826051712036
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.46764037013053894
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.31691527366638184
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.13143488764762878
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.5687044858932495
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.5756118297576904
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.6274443864822388
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.14121460914611816
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.4622568190097809
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.4662940800189972
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.4522201716899872
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.4577862024307251
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.5054158568382263
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.565569281578064
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.5971034169197083
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.6117346286773682
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.17733581364154816
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.5958338975906372
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.9634648561477661
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.04654764384031296
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9795111417770386
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9789450764656067
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9809631109237671
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.9466855525970459
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9805450439453125
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.9283794164657593
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.9813570976257324
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.9788925647735596
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9801950454711914
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9780457019805908
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9598603248596191
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.0615745410323143
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.983071506023407
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9826220273971558
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9747841954231262
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9815893769264221
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9014204740524292
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9756242036819458
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9763404726982117
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9813993573188782
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9755609631538391
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.05622106418013573
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.6608145833015442
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.21594490110874176
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9744964838027954
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.958406925201416
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9796265959739685
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9783864617347717
+        }
+      ]
+    },
+    {
+      "kind": "raw_bag",
+      "seed": 29,
+      "params": 49601,
+      "best_epoch": 20,
+      "best_calibration_bce": 0.5361146455836714,
+      "first_train_bce": 0.7151482404943285,
+      "last_train_bce": 0.6280368464952074,
+      "seconds": 22.545850999998947,
+      "peak_allocated_mb": 164.36865234375,
+      "checkpoint_sha256": "1607460cd5bf26bbf28113dbb81b5bbe697d53dd7bed727aa1de4cc50128102e",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9322938919067383
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.10742968320846558
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.11194248497486115
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.17335133254528046
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.07219527661800385
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.22705338895320892
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.2616652548313141
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.2408437728881836
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.7810764312744141
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.13477522134780884
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.5715646743774414
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.3092586398124695
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.37947583198547363
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.44310253858566284
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.10520368814468384
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.8219239711761475
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.3463309407234192
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.07773159444332123
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.19899438321590424
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.3268245756626129
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.6012344360351562
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.5163375735282898
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.10978285223245621
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.3872695863246918
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.09354798495769501
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.7096337676048279
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.3593866527080536
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.4446912705898285
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.10548555850982666
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.6404460072517395
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.24627763032913208
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.06967728585004807
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.19028951227664948
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.30987587571144104
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.33590537309646606
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.1328403353691101
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.4837891757488251
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.20665232837200165
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.10603654384613037
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.07269424945116043
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.4519801139831543
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.09535450488328934
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.09162075072526932
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.5223729610443115
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.7187989950180054
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.3762035667896271
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.4343376159667969
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.07743124663829803
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.20671844482421875
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.07138318568468094
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.0916062593460083
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.4728532135486603
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.6567801237106323
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.10399223119020462
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.3187509775161743
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.2476079910993576
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.10309608280658722
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.1742067188024521
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.14741121232509613
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.8978618383407593
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.5926681160926819
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.7480486035346985
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.7218266725540161
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.3918061852455139
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.8578857779502869
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.5353512763977051
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.4197899401187897
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.4119662046432495
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.6611056327819824
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.37427768111228943
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.4108600914478302
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.5079507827758789
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5595706701278687
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.28884685039520264
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.4878652095794678
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.24785764515399933
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.6895162463188171
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.3038937449455261
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.6018353700637817
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.3939950168132782
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.30087798833847046
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.5858364701271057
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.4069589078426361
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.43056824803352356
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.3566245436668396
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5015102028846741
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.581484854221344
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.6407886743545532
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.47868457436561584
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.6194841265678406
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.707831859588623
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.1768224835395813
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9266746044158936
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9278108477592468
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.8965053558349609
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.8584423661231995
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.8542683720588684
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.8940722942352295
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.7044400572776794
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.6004511117935181
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.8842998147010803
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.8871241807937622
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.5264359712600708
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.09372612833976746
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.8970062732696533
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9032263159751892
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9322405457496643
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.743156373500824
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9171590209007263
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.8168430924415588
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9147399663925171
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.6015259027481079
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.926745593547821
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.07269192487001419
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.25278380513191223
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.8630489706993103
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.8639520406723022
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.47119444608688354
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9330371618270874
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9187023639678955
+        }
+      ]
+    },
+    {
+      "kind": "raw_bag",
+      "seed": 43,
+      "params": 49601,
+      "best_epoch": 20,
+      "best_calibration_bce": 0.5031075049465812,
+      "first_train_bce": 0.6783654703108292,
+      "last_train_bce": 0.4437835274794914,
+      "seconds": 22.57278959999894,
+      "peak_allocated_mb": 164.36865234375,
+      "checkpoint_sha256": "60070e6a23aaff90ca23c7994b3d152021aa5b54343f76f4834b86ea972d807f",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.8967947363853455
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.04023401066660881
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.03698413446545601
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.0728691816329956
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.04771706089377403
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.3324147164821625
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.5629300475120544
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.33372005820274353
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.6373767256736755
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.1379159688949585
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.5018187761306763
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.5481874942779541
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.5616896748542786
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.4292597472667694
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.06254640966653824
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.899336040019989
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.5764842629432678
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.03674432635307312
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.15651439130306244
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.3227846026420593
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.32245200872421265
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.29069632291793823
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.03730524703860283
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5701443552970886
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.8221057653427124
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.8625853657722473
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.034759316593408585
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.2937128245830536
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.08139252662658691
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.05107313394546509
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5887436866760254
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.02823280543088913
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.3930600881576538
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.5204271674156189
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.4755195379257202
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.11873262375593185
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.30571553111076355
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.17633847892284393
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.9822147488594055
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.03556196764111519
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.7124273180961609
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.03132566064596176
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.04320300742983818
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.5129150748252869
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.1571812629699707
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.6111404299736023
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.38471630215644836
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.07306383550167084
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.22261011600494385
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.030013328418135643
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.0888657495379448
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.20372645556926727
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.10516995191574097
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.0387236513197422
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.5581858158111572
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5901283025741577
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.03288305550813675
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.04635193571448326
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.06699438393115997
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.9411345720291138
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.6676627397537231
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.6552368998527527
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.153216153383255
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.47488832473754883
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.6862154603004456
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.651301383972168
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.5636225342750549
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.6598955392837524
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.43566378951072693
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.3656187355518341
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.6088111400604248
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.6400455832481384
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.661060631275177
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.583894670009613
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.6560662984848022
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.5941171050071716
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.5642251372337341
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.5756595134735107
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.5946284532546997
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.6225121021270752
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.5711139440536499
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.6646436452865601
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.5659012794494629
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.6059660315513611
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.5737653970718384
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.6379156112670898
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.6725832223892212
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.6844630837440491
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.641501784324646
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.674293577671051
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.9739654660224915
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.13835535943508148
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9871413707733154
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.984764814376831
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9871594905853271
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.9796944260597229
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9861154556274414
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.981280505657196
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.9870823621749878
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.9843007922172546
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.981063187122345
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9503050446510315
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9860391616821289
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.048542361706495285
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.977508544921875
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9856923818588257
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9813517928123474
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9856797456741333
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.982626736164093
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9832248687744141
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9856751561164856
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9872052669525146
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9817687273025513
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.938407838344574
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.10710321366786957
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.35445892810821533
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9847506284713745
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.679441511631012
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9865517616271973
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9839227795600891
+        }
+      ]
+    },
+    {
+      "kind": "aligned_bag",
+      "seed": 17,
+      "params": 49601,
+      "best_epoch": 20,
+      "best_calibration_bce": 0.33920080365029615,
+      "first_train_bce": 0.6868841731348517,
+      "last_train_bce": 0.4324463727212818,
+      "seconds": 20.744561600000452,
+      "peak_allocated_mb": 164.36865234375,
+      "checkpoint_sha256": "16f19219c0e4d4a248d2314eebf5b71129c99a51bff211d4772c7c4bf3fab19c",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.7647333741188049
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.02686743438243866
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.020055977627635002
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.041924796998500824
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.017644034698605537
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.26758208870887756
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.02012096531689167
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.137797012925148
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.4855559170246124
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.25127533078193665
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.3085377812385559
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.4101409912109375
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.5428134202957153
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.16829563677310944
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.14435343444347382
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.01953810080885887
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.5937287211418152
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.025102639570832253
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.027351563796401024
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.0772150531411171
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.05852318927645683
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.3125530779361725
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.03401406109333038
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5973644256591797
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.017825139686465263
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.07112184911966324
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.06996960937976837
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.09282135218381882
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.070279560983181
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.11340673267841339
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5957162976264954
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.24024677276611328
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.3544779121875763
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.44619181752204895
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.4708653688430786
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.44603732228279114
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.07633153349161148
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.11106367409229279
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.024611542001366615
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.07346058636903763
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.050934791564941406
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.01750834286212921
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.0174066461622715
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.09616532176733017
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.29463815689086914
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.593155026435852
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.09662241488695145
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.015901556238532066
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.4281514286994934
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.035433556884527206
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.2231367826461792
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.20381836593151093
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.024647802114486694
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.903120219707489
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.48935666680336
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5956904888153076
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.019420206546783447
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.03161655738949776
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.087508425116539
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.1381414532661438
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.5886059403419495
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.4509115219116211
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.9467741250991821
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.38243913650512695
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.4207153618335724
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.5968787670135498
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.49855390191078186
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.596109926700592
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.21116438508033752
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.2934771478176117
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.5966048836708069
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.5929306149482727
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5939001441001892
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.5950878262519836
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.5928692817687988
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.5945902466773987
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.3363647758960724
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.4174779951572418
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.3471975028514862
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.5960908532142639
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.586453378200531
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.5769321322441101
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.5692829489707947
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.5557810664176941
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.26511916518211365
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5218586325645447
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.5460986495018005
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.5902156829833984
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.5967847108840942
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.578987181186676
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.9926526546478271
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.9896830320358276
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.9929070472717285
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9920050501823425
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9933016300201416
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.9750370979309082
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9931308627128601
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.992979109287262
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.9930086135864258
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.9932816028594971
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9935676455497742
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.992289125919342
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9933810234069824
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.37526339292526245
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.9666047692298889
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.992489755153656
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9911705255508423
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9928677082061768
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9863378405570984
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9924389123916626
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9907586574554443
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9935480952262878
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9905533194541931
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.9922078251838684
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.835867166519165
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.9932857155799866
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9927445650100708
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.9873197078704834
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9928297400474548
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9915100336074829
+        }
+      ]
+    },
+    {
+      "kind": "aligned_bag",
+      "seed": 29,
+      "params": 49601,
+      "best_epoch": 18,
+      "best_calibration_bce": 0.4034236642596839,
+      "first_train_bce": 0.7080995217381909,
+      "last_train_bce": 0.5302995601512867,
+      "seconds": 20.712173300002178,
+      "peak_allocated_mb": 164.36865234375,
+      "checkpoint_sha256": "6aad8919230f060b7f0c41f2563fcad8e55111d2e9964ab8c964aed4bb9e7858",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.855467677116394
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.04950934648513794
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.040923237800598145
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.07387954741716385
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.030860809609293938
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.29990842938423157
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.042019013315439224
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.2549181878566742
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.6783917546272278
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.11620873212814331
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.44574737548828125
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.44253507256507874
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.6701954007148743
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.21364502608776093
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.08757521212100983
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.035054828971624374
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.6584964990615845
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.04143550992012024
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.05551118776202202
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.24215909838676453
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.212215393781662
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.32549431920051575
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.049100857228040695
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.6208929419517517
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.03525755926966667
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.14923922717571259
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.09533025324344635
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.2320116013288498
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.046280138194561005
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.11540212482213974
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5847516655921936
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.1409672200679779
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.33173590898513794
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.5306336283683777
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.4480878710746765
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.45415687561035156
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.2384510338306427
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.17590497434139252
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.9541299939155579
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.05029520392417908
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.08659271895885468
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.04033200815320015
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.0308656245470047
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.4492814838886261
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.5046254396438599
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.7285401225090027
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.3813554048538208
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.10014861822128296
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.5177977681159973
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.04654630273580551
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.1466156393289566
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.17787261307239532
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.0448392853140831
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.10010312497615814
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.46276772022247314
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5857158303260803
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.03275285288691521
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.04313415288925171
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.11627290397882462
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.14898830652236938
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.7305583357810974
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.6902804374694824
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.9865380525588989
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.5840530395507812
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.5728859901428223
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.6520019769668579
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.6349815726280212
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.7309097051620483
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.11961286514997482
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.20923751592636108
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.6303843855857849
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.7143338322639465
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.7282034754753113
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.6892462968826294
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.6816254258155823
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.5859774351119995
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.5272705554962158
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.47191232442855835
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.29404139518737793
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.6074057817459106
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.7131375074386597
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.700411319732666
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.6957423090934753
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.6701425313949585
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.4588448107242584
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.6964622139930725
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.7266618609428406
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.73265540599823
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.6286949515342712
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.7279934883117676
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.9877341389656067
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.048134997487068176
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.987295925617218
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9855791330337524
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9895340800285339
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.9524713158607483
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9891307353973389
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.9896188378334045
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.9895690083503723
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.9798690676689148
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9860925078392029
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9868780970573425
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.989509105682373
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.03095705807209015
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.9138909578323364
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9881290793418884
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.986422061920166
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9880252480506897
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9756568670272827
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9887171983718872
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9860942363739014
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9869802594184875
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9863632321357727
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.6848008036613464
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.4498695731163025
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.9893462061882019
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9887073040008545
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.9829960465431213
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9876225590705872
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9874572157859802
+        }
+      ]
+    },
+    {
+      "kind": "aligned_bag",
+      "seed": 43,
+      "params": 49601,
+      "best_epoch": 18,
+      "best_calibration_bce": 0.4007463016137771,
+      "first_train_bce": 0.6657350471232857,
+      "last_train_bce": 0.42670650921720366,
+      "seconds": 20.581971600000543,
+      "peak_allocated_mb": 164.36865234375,
+      "checkpoint_sha256": "4fe23a8d1377e91d2cd20d58fdfaa5888e378c46d5218a8984e56f2f4723983d",
+      "checkpoint_reload_max_probability_error": 0.0,
+      "calibration_predictions": [
+        {
+          "sample_id": "X0180",
+          "label_fake": 0,
+          "prob_fake": 0.9606019258499146
+        },
+        {
+          "sample_id": "X0181",
+          "label_fake": 0,
+          "prob_fake": 0.07516012340784073
+        },
+        {
+          "sample_id": "X0182",
+          "label_fake": 0,
+          "prob_fake": 0.054820384830236435
+        },
+        {
+          "sample_id": "X0183",
+          "label_fake": 0,
+          "prob_fake": 0.12138218432664871
+        },
+        {
+          "sample_id": "X0184",
+          "label_fake": 0,
+          "prob_fake": 0.039208561182022095
+        },
+        {
+          "sample_id": "X0185",
+          "label_fake": 0,
+          "prob_fake": 0.2621007561683655
+        },
+        {
+          "sample_id": "X0186",
+          "label_fake": 0,
+          "prob_fake": 0.08130424469709396
+        },
+        {
+          "sample_id": "X0187",
+          "label_fake": 0,
+          "prob_fake": 0.16969218850135803
+        },
+        {
+          "sample_id": "X0188",
+          "label_fake": 0,
+          "prob_fake": 0.4728642404079437
+        },
+        {
+          "sample_id": "X0189",
+          "label_fake": 0,
+          "prob_fake": 0.2011539340019226
+        },
+        {
+          "sample_id": "X0190",
+          "label_fake": 0,
+          "prob_fake": 0.2612331509590149
+        },
+        {
+          "sample_id": "X0191",
+          "label_fake": 0,
+          "prob_fake": 0.36449098587036133
+        },
+        {
+          "sample_id": "X0192",
+          "label_fake": 0,
+          "prob_fake": 0.521460235118866
+        },
+        {
+          "sample_id": "X0193",
+          "label_fake": 0,
+          "prob_fake": 0.18554240465164185
+        },
+        {
+          "sample_id": "X0194",
+          "label_fake": 0,
+          "prob_fake": 0.14583055675029755
+        },
+        {
+          "sample_id": "X0195",
+          "label_fake": 0,
+          "prob_fake": 0.049289196729660034
+        },
+        {
+          "sample_id": "X0196",
+          "label_fake": 0,
+          "prob_fake": 0.5500916838645935
+        },
+        {
+          "sample_id": "X0197",
+          "label_fake": 0,
+          "prob_fake": 0.04141434282064438
+        },
+        {
+          "sample_id": "X0198",
+          "label_fake": 0,
+          "prob_fake": 0.13111235201358795
+        },
+        {
+          "sample_id": "X0199",
+          "label_fake": 0,
+          "prob_fake": 0.24770772457122803
+        },
+        {
+          "sample_id": "X0200",
+          "label_fake": 0,
+          "prob_fake": 0.110862597823143
+        },
+        {
+          "sample_id": "X0201",
+          "label_fake": 0,
+          "prob_fake": 0.2398572713136673
+        },
+        {
+          "sample_id": "X0202",
+          "label_fake": 0,
+          "prob_fake": 0.10170269757509232
+        },
+        {
+          "sample_id": "X0203",
+          "label_fake": 0,
+          "prob_fake": 0.5519973635673523
+        },
+        {
+          "sample_id": "X0204",
+          "label_fake": 0,
+          "prob_fake": 0.05071999877691269
+        },
+        {
+          "sample_id": "X0205",
+          "label_fake": 0,
+          "prob_fake": 0.15814898908138275
+        },
+        {
+          "sample_id": "X0206",
+          "label_fake": 0,
+          "prob_fake": 0.11172598600387573
+        },
+        {
+          "sample_id": "X0207",
+          "label_fake": 0,
+          "prob_fake": 0.15152087807655334
+        },
+        {
+          "sample_id": "X0208",
+          "label_fake": 0,
+          "prob_fake": 0.11063539981842041
+        },
+        {
+          "sample_id": "X0209",
+          "label_fake": 0,
+          "prob_fake": 0.16684243083000183
+        },
+        {
+          "sample_id": "X0210",
+          "label_fake": 0,
+          "prob_fake": 0.5522961020469666
+        },
+        {
+          "sample_id": "X0211",
+          "label_fake": 0,
+          "prob_fake": 0.3052016496658325
+        },
+        {
+          "sample_id": "X0212",
+          "label_fake": 0,
+          "prob_fake": 0.33933624625205994
+        },
+        {
+          "sample_id": "X0213",
+          "label_fake": 0,
+          "prob_fake": 0.4483947157859802
+        },
+        {
+          "sample_id": "X0214",
+          "label_fake": 0,
+          "prob_fake": 0.4819736182689667
+        },
+        {
+          "sample_id": "X0215",
+          "label_fake": 0,
+          "prob_fake": 0.5064755082130432
+        },
+        {
+          "sample_id": "X0216",
+          "label_fake": 0,
+          "prob_fake": 0.22111013531684875
+        },
+        {
+          "sample_id": "X0217",
+          "label_fake": 0,
+          "prob_fake": 0.1695241630077362
+        },
+        {
+          "sample_id": "X0218",
+          "label_fake": 0,
+          "prob_fake": 0.051879771053791046
+        },
+        {
+          "sample_id": "X0219",
+          "label_fake": 0,
+          "prob_fake": 0.4365016222000122
+        },
+        {
+          "sample_id": "X0220",
+          "label_fake": 0,
+          "prob_fake": 0.122405506670475
+        },
+        {
+          "sample_id": "X0221",
+          "label_fake": 0,
+          "prob_fake": 0.08046913892030716
+        },
+        {
+          "sample_id": "X0222",
+          "label_fake": 0,
+          "prob_fake": 0.045070867985486984
+        },
+        {
+          "sample_id": "X0223",
+          "label_fake": 0,
+          "prob_fake": 0.27638208866119385
+        },
+        {
+          "sample_id": "X0224",
+          "label_fake": 0,
+          "prob_fake": 0.46063846349716187
+        },
+        {
+          "sample_id": "X0225",
+          "label_fake": 0,
+          "prob_fake": 0.5481946468353271
+        },
+        {
+          "sample_id": "X0226",
+          "label_fake": 0,
+          "prob_fake": 0.2882786691188812
+        },
+        {
+          "sample_id": "X0227",
+          "label_fake": 0,
+          "prob_fake": 0.04121319577097893
+        },
+        {
+          "sample_id": "X0228",
+          "label_fake": 0,
+          "prob_fake": 0.41375166177749634
+        },
+        {
+          "sample_id": "X0229",
+          "label_fake": 0,
+          "prob_fake": 0.0986589565873146
+        },
+        {
+          "sample_id": "X0230",
+          "label_fake": 0,
+          "prob_fake": 0.15264703333377838
+        },
+        {
+          "sample_id": "X0231",
+          "label_fake": 0,
+          "prob_fake": 0.21150533854961395
+        },
+        {
+          "sample_id": "X0232",
+          "label_fake": 0,
+          "prob_fake": 0.07069177180528641
+        },
+        {
+          "sample_id": "X0233",
+          "label_fake": 0,
+          "prob_fake": 0.12103775888681412
+        },
+        {
+          "sample_id": "X0234",
+          "label_fake": 0,
+          "prob_fake": 0.47391489148139954
+        },
+        {
+          "sample_id": "X0235",
+          "label_fake": 0,
+          "prob_fake": 0.5522661209106445
+        },
+        {
+          "sample_id": "X0236",
+          "label_fake": 0,
+          "prob_fake": 0.042598944157361984
+        },
+        {
+          "sample_id": "X0237",
+          "label_fake": 0,
+          "prob_fake": 0.10283474624156952
+        },
+        {
+          "sample_id": "X0238",
+          "label_fake": 0,
+          "prob_fake": 0.20759473741054535
+        },
+        {
+          "sample_id": "X0239",
+          "label_fake": 0,
+          "prob_fake": 0.1609288901090622
+        },
+        {
+          "sample_id": "X0390",
+          "label_fake": 1,
+          "prob_fake": 0.5416979789733887
+        },
+        {
+          "sample_id": "X0391",
+          "label_fake": 1,
+          "prob_fake": 0.457375705242157
+        },
+        {
+          "sample_id": "X0392",
+          "label_fake": 1,
+          "prob_fake": 0.9727914333343506
+        },
+        {
+          "sample_id": "X0393",
+          "label_fake": 1,
+          "prob_fake": 0.3066457509994507
+        },
+        {
+          "sample_id": "X0394",
+          "label_fake": 1,
+          "prob_fake": 0.3760853707790375
+        },
+        {
+          "sample_id": "X0395",
+          "label_fake": 1,
+          "prob_fake": 0.5516108274459839
+        },
+        {
+          "sample_id": "X0396",
+          "label_fake": 1,
+          "prob_fake": 0.4804360866546631
+        },
+        {
+          "sample_id": "X0397",
+          "label_fake": 1,
+          "prob_fake": 0.54952472448349
+        },
+        {
+          "sample_id": "X0398",
+          "label_fake": 1,
+          "prob_fake": 0.1664438545703888
+        },
+        {
+          "sample_id": "X0399",
+          "label_fake": 1,
+          "prob_fake": 0.19494393467903137
+        },
+        {
+          "sample_id": "X0400",
+          "label_fake": 1,
+          "prob_fake": 0.551457405090332
+        },
+        {
+          "sample_id": "X0401",
+          "label_fake": 1,
+          "prob_fake": 0.5463864803314209
+        },
+        {
+          "sample_id": "X0402",
+          "label_fake": 1,
+          "prob_fake": 0.5482311844825745
+        },
+        {
+          "sample_id": "X0403",
+          "label_fake": 1,
+          "prob_fake": 0.5507343411445618
+        },
+        {
+          "sample_id": "X0404",
+          "label_fake": 1,
+          "prob_fake": 0.5444995760917664
+        },
+        {
+          "sample_id": "X0405",
+          "label_fake": 1,
+          "prob_fake": 0.55195152759552
+        },
+        {
+          "sample_id": "X0406",
+          "label_fake": 1,
+          "prob_fake": 0.25850149989128113
+        },
+        {
+          "sample_id": "X0407",
+          "label_fake": 1,
+          "prob_fake": 0.38063251972198486
+        },
+        {
+          "sample_id": "X0408",
+          "label_fake": 1,
+          "prob_fake": 0.23811763525009155
+        },
+        {
+          "sample_id": "X0409",
+          "label_fake": 1,
+          "prob_fake": 0.5520828366279602
+        },
+        {
+          "sample_id": "X0410",
+          "label_fake": 1,
+          "prob_fake": 0.5439666509628296
+        },
+        {
+          "sample_id": "X0411",
+          "label_fake": 1,
+          "prob_fake": 0.5345974564552307
+        },
+        {
+          "sample_id": "X0412",
+          "label_fake": 1,
+          "prob_fake": 0.5343316197395325
+        },
+        {
+          "sample_id": "X0413",
+          "label_fake": 1,
+          "prob_fake": 0.52813720703125
+        },
+        {
+          "sample_id": "X0414",
+          "label_fake": 1,
+          "prob_fake": 0.34454742074012756
+        },
+        {
+          "sample_id": "X0415",
+          "label_fake": 1,
+          "prob_fake": 0.5106416940689087
+        },
+        {
+          "sample_id": "X0416",
+          "label_fake": 1,
+          "prob_fake": 0.5231704711914062
+        },
+        {
+          "sample_id": "X0417",
+          "label_fake": 1,
+          "prob_fake": 0.5409720540046692
+        },
+        {
+          "sample_id": "X0418",
+          "label_fake": 1,
+          "prob_fake": 0.5518596172332764
+        },
+        {
+          "sample_id": "X0419",
+          "label_fake": 1,
+          "prob_fake": 0.5232742428779602
+        },
+        {
+          "sample_id": "X0540",
+          "label_fake": 1,
+          "prob_fake": 0.9671428203582764
+        },
+        {
+          "sample_id": "X0541",
+          "label_fake": 1,
+          "prob_fake": 0.9762569665908813
+        },
+        {
+          "sample_id": "X0542",
+          "label_fake": 1,
+          "prob_fake": 0.982794463634491
+        },
+        {
+          "sample_id": "X0543",
+          "label_fake": 1,
+          "prob_fake": 0.9834893941879272
+        },
+        {
+          "sample_id": "X0544",
+          "label_fake": 1,
+          "prob_fake": 0.9840109944343567
+        },
+        {
+          "sample_id": "X0545",
+          "label_fake": 1,
+          "prob_fake": 0.9825725555419922
+        },
+        {
+          "sample_id": "X0546",
+          "label_fake": 1,
+          "prob_fake": 0.9843631386756897
+        },
+        {
+          "sample_id": "X0547",
+          "label_fake": 1,
+          "prob_fake": 0.9835825562477112
+        },
+        {
+          "sample_id": "X0548",
+          "label_fake": 1,
+          "prob_fake": 0.9828028082847595
+        },
+        {
+          "sample_id": "X0549",
+          "label_fake": 1,
+          "prob_fake": 0.9827502965927124
+        },
+        {
+          "sample_id": "X0550",
+          "label_fake": 1,
+          "prob_fake": 0.9807997941970825
+        },
+        {
+          "sample_id": "X0551",
+          "label_fake": 1,
+          "prob_fake": 0.9842118620872498
+        },
+        {
+          "sample_id": "X0552",
+          "label_fake": 1,
+          "prob_fake": 0.9842043519020081
+        },
+        {
+          "sample_id": "X0553",
+          "label_fake": 1,
+          "prob_fake": 0.043710507452487946
+        },
+        {
+          "sample_id": "X0554",
+          "label_fake": 1,
+          "prob_fake": 0.9194393754005432
+        },
+        {
+          "sample_id": "X0555",
+          "label_fake": 1,
+          "prob_fake": 0.9777293801307678
+        },
+        {
+          "sample_id": "X0556",
+          "label_fake": 1,
+          "prob_fake": 0.9817923903465271
+        },
+        {
+          "sample_id": "X0557",
+          "label_fake": 1,
+          "prob_fake": 0.9830491542816162
+        },
+        {
+          "sample_id": "X0558",
+          "label_fake": 1,
+          "prob_fake": 0.9813408851623535
+        },
+        {
+          "sample_id": "X0559",
+          "label_fake": 1,
+          "prob_fake": 0.9819728136062622
+        },
+        {
+          "sample_id": "X0560",
+          "label_fake": 1,
+          "prob_fake": 0.9827102422714233
+        },
+        {
+          "sample_id": "X0561",
+          "label_fake": 1,
+          "prob_fake": 0.9834375381469727
+        },
+        {
+          "sample_id": "X0562",
+          "label_fake": 1,
+          "prob_fake": 0.9835237860679626
+        },
+        {
+          "sample_id": "X0563",
+          "label_fake": 1,
+          "prob_fake": 0.8735504746437073
+        },
+        {
+          "sample_id": "X0564",
+          "label_fake": 1,
+          "prob_fake": 0.868726909160614
+        },
+        {
+          "sample_id": "X0565",
+          "label_fake": 1,
+          "prob_fake": 0.9835368990898132
+        },
+        {
+          "sample_id": "X0566",
+          "label_fake": 1,
+          "prob_fake": 0.9838136434555054
+        },
+        {
+          "sample_id": "X0567",
+          "label_fake": 1,
+          "prob_fake": 0.973795473575592
+        },
+        {
+          "sample_id": "X0568",
+          "label_fake": 1,
+          "prob_fake": 0.9829004406929016
+        },
+        {
+          "sample_id": "X0569",
+          "label_fake": 1,
+          "prob_fake": 0.9838681221008301
+        }
+      ]
+    }
+  ],
+  "wall_seconds": 266.60655250000127,
+  "device": "NVIDIA GeForce RTX 4060 Laptop GPU",
+  "audit_results_used_for_training": false,
+  "code_hashes": {
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\run.py": "54e73c6aca524c6cec3698c83f87df58ae4fa8d05407f96ff87f95659c29dd2f",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\model.py": "6bd4557f4eb075f3a13a888cf8b7efee87de25cc1ba08d4d82f8ef5ec0510825",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\video_io.py": "b47cd68414ded2a4844aad0aa6766b009dfc7d0aac0d294fc18b49db4985f213",
+    "E:\\aNB\\TECH\\脉冲神经网络\\experiments\\order_gate_v1\\selection.py": "fc03e80f532d1178fb16ba0c29a5a3901d292136edf5e99b24b9ddc94f3ec52d",
+    "E:\\aNB\\TECH\\脉冲神经网络\\research-code\\sampling.py": "6b3dc621eeff8af41658e6d0cbb376ee265e041b231eae04c738bb92a8866dfb"
+  },
+  "protocol_sha256": "e5ce0ef7427853d30a4479d1a1602bf7483b5306aec08ec29cc54d91c37c6e23",
+  "manifest_sha256": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f"
+}

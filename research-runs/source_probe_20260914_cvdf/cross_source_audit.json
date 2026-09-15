@@ -1,0 +1,26 @@
+{
+  "candidate_ids": [
+    "-1GRj5UvVBA",
+    "-1brKJdL-iM",
+    "-1dWGnhjB2A",
+    "-2-nYjSwo8U",
+    "-6R3wpks5Jg",
+    "-6vMUadPeCI",
+    "-86xbR-_1E8",
+    "-8qfEe5m5mg",
+    "-9t1GeluG6w",
+    "-DvLehbk7TY",
+    "-FjBFRT36pU",
+    "-JEFz5Z0EWU",
+    "-JRT9aCAVsA",
+    "-JrthcbKe60",
+    "-K74JEPrJJQ",
+    "-LTP_3-9EHc"
+  ],
+  "known_shared_vript_hdvg_ids_hit": [],
+  "hit_count": 0,
+  "cross_source_independence_verified": true,
+  "ancestry_verified": false,
+  "decision": "retain_as_provisional_external_real_probe",
+  "basis": "filename-derived YouTube IDs; absence is not proof of content independence"
+}

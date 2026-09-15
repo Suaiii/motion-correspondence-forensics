@@ -1,0 +1,10 @@
+{
+  "condition": "clean",
+  "fit_rule": "linear regression correct_prob ~ mask_prob fitted on 358 fit videos only",
+  "coefficient": 0.7921104367,
+  "intercept": 0.1045472257,
+  "fit": {"n": 358, "correct_auc": 0.8299625468, "residual_auc": 0.7032147316},
+  "audit": {"n": 117, "correct_auc": 0.8327485380, "residual_auc": 0.7198830409},
+  "interpretation": "After removing the linear component explained by the mask probe, the alignment score retains above-chance audit discrimination. This is a diagnostic, not a causal proof; nonlinear nuisance and source confounding remain open.",
+  "status": "supports_nuisance_invariant_method_design"
+}

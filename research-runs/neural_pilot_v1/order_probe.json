@@ -1,0 +1,1209 @@
+{
+  "results": [
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "original_auc": 0.7013888888888888,
+      "permuted_residual_auc": 0.7152777777777778,
+      "mean_absolute_score_change": 0.004257251974195242,
+      "checkpoint_sha256": "a9ac7d0c5a2577cfc745ce136f913c370e7a60f3464fc9e302e13286021bbd1d"
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "original_auc": 0.6805555555555556,
+      "permuted_residual_auc": 0.7083333333333334,
+      "mean_absolute_score_change": 0.018945014104247093,
+      "checkpoint_sha256": "1555549d17f1fcab0abf7026de499255cf9b101a68525a425c71828d07d03996"
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "original_auc": 0.6597222222222222,
+      "permuted_residual_auc": 0.6597222222222223,
+      "mean_absolute_score_change": 0.009110688231885433,
+      "checkpoint_sha256": "a8d394acaaff68588d8bae4f9c594043df01df834a2cb961457acdd541667047"
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "original_auc": 0.7916666666666667,
+      "permuted_residual_auc": 0.7222222222222222,
+      "mean_absolute_score_change": 0.05029144883155823,
+      "checkpoint_sha256": "d44fb9967ca2e44cb4699e04abc48af05a846669d600cb6126104ec1513b55e4"
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "original_auc": 0.826388888888889,
+      "permuted_residual_auc": 0.7916666666666666,
+      "mean_absolute_score_change": 0.025900939479470253,
+      "checkpoint_sha256": "03b522f2f8522ba02cf160c840c2e524dda306cd3708021d09e1e841972d75c8"
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "original_auc": 0.7986111111111112,
+      "permuted_residual_auc": 0.8194444444444444,
+      "mean_absolute_score_change": 0.0350240133702755,
+      "checkpoint_sha256": "a680225f79ec93045dc81361f1638d460e246dc816ef03748b39ebdbf8c87bb3"
+    }
+  ],
+  "predictions": [
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S048",
+      "label_fake": 0,
+      "original_prob_fake": 0.5111935138702393,
+      "permuted_prob_fake": 0.518366813659668
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S049",
+      "label_fake": 0,
+      "original_prob_fake": 0.5166763067245483,
+      "permuted_prob_fake": 0.5184541940689087
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S050",
+      "label_fake": 0,
+      "original_prob_fake": 0.4904666543006897,
+      "permuted_prob_fake": 0.4904330372810364
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S051",
+      "label_fake": 0,
+      "original_prob_fake": 0.48914530873298645,
+      "permuted_prob_fake": 0.4891452491283417
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S052",
+      "label_fake": 0,
+      "original_prob_fake": 0.507500171661377,
+      "permuted_prob_fake": 0.4984104037284851
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S053",
+      "label_fake": 0,
+      "original_prob_fake": 0.5079312324523926,
+      "permuted_prob_fake": 0.5061030983924866
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S054",
+      "label_fake": 0,
+      "original_prob_fake": 0.5224911570549011,
+      "permuted_prob_fake": 0.5080918669700623
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S055",
+      "label_fake": 0,
+      "original_prob_fake": 0.48916342854499817,
+      "permuted_prob_fake": 0.4891851842403412
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S056",
+      "label_fake": 0,
+      "original_prob_fake": 0.48978978395462036,
+      "permuted_prob_fake": 0.49025705456733704
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S057",
+      "label_fake": 0,
+      "original_prob_fake": 0.5046762824058533,
+      "permuted_prob_fake": 0.49883636832237244
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S058",
+      "label_fake": 0,
+      "original_prob_fake": 0.49498289823532104,
+      "permuted_prob_fake": 0.4902038872241974
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S059",
+      "label_fake": 0,
+      "original_prob_fake": 0.4891657829284668,
+      "permuted_prob_fake": 0.49305424094200134
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S084",
+      "label_fake": 1,
+      "original_prob_fake": 0.5058639049530029,
+      "permuted_prob_fake": 0.5075109004974365
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S085",
+      "label_fake": 1,
+      "original_prob_fake": 0.4895821213722229,
+      "permuted_prob_fake": 0.48968982696533203
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S086",
+      "label_fake": 1,
+      "original_prob_fake": 0.49133437871932983,
+      "permuted_prob_fake": 0.48924097418785095
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S087",
+      "label_fake": 1,
+      "original_prob_fake": 0.5049703121185303,
+      "permuted_prob_fake": 0.49522918462753296
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S088",
+      "label_fake": 1,
+      "original_prob_fake": 0.49633902311325073,
+      "permuted_prob_fake": 0.4968250095844269
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S089",
+      "label_fake": 1,
+      "original_prob_fake": 0.4891788363456726,
+      "permuted_prob_fake": 0.4948280453681946
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S114",
+      "label_fake": 1,
+      "original_prob_fake": 0.5170148015022278,
+      "permuted_prob_fake": 0.5200667381286621
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S115",
+      "label_fake": 1,
+      "original_prob_fake": 0.5323941707611084,
+      "permuted_prob_fake": 0.5344486832618713
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S116",
+      "label_fake": 1,
+      "original_prob_fake": 0.5190184712409973,
+      "permuted_prob_fake": 0.5341396927833557
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S117",
+      "label_fake": 1,
+      "original_prob_fake": 0.5389543175697327,
+      "permuted_prob_fake": 0.5316319465637207
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S118",
+      "label_fake": 1,
+      "original_prob_fake": 0.5482417345046997,
+      "permuted_prob_fake": 0.5496000647544861
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 17,
+      "sample_id": "S119",
+      "label_fake": 1,
+      "original_prob_fake": 0.5294097661972046,
+      "permuted_prob_fake": 0.5336525440216064
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S048",
+      "label_fake": 0,
+      "original_prob_fake": 0.483842670917511,
+      "permuted_prob_fake": 0.5458782911300659
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S049",
+      "label_fake": 0,
+      "original_prob_fake": 0.6027480959892273,
+      "permuted_prob_fake": 0.5960038900375366
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S050",
+      "label_fake": 0,
+      "original_prob_fake": 0.41189858317375183,
+      "permuted_prob_fake": 0.4118853211402893
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S051",
+      "label_fake": 0,
+      "original_prob_fake": 0.41066330671310425,
+      "permuted_prob_fake": 0.41066330671310425
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S052",
+      "label_fake": 0,
+      "original_prob_fake": 0.4767782390117645,
+      "permuted_prob_fake": 0.45517411828041077
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S053",
+      "label_fake": 0,
+      "original_prob_fake": 0.4683743417263031,
+      "permuted_prob_fake": 0.46870508790016174
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S054",
+      "label_fake": 0,
+      "original_prob_fake": 0.5722395777702332,
+      "permuted_prob_fake": 0.4908694922924042
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S055",
+      "label_fake": 0,
+      "original_prob_fake": 0.4106879234313965,
+      "permuted_prob_fake": 0.41068631410598755
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S056",
+      "label_fake": 0,
+      "original_prob_fake": 0.422750860452652,
+      "permuted_prob_fake": 0.42404675483703613
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S057",
+      "label_fake": 0,
+      "original_prob_fake": 0.47973358631134033,
+      "permuted_prob_fake": 0.44944554567337036
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S058",
+      "label_fake": 0,
+      "original_prob_fake": 0.42061156034469604,
+      "permuted_prob_fake": 0.41385844349861145
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S059",
+      "label_fake": 0,
+      "original_prob_fake": 0.412833034992218,
+      "permuted_prob_fake": 0.4189433753490448
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S084",
+      "label_fake": 1,
+      "original_prob_fake": 0.468353271484375,
+      "permuted_prob_fake": 0.48321524262428284
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S085",
+      "label_fake": 1,
+      "original_prob_fake": 0.4111059904098511,
+      "permuted_prob_fake": 0.41116663813591003
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S086",
+      "label_fake": 1,
+      "original_prob_fake": 0.4156171977519989,
+      "permuted_prob_fake": 0.4123724400997162
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S087",
+      "label_fake": 1,
+      "original_prob_fake": 0.4511784613132477,
+      "permuted_prob_fake": 0.42366039752960205
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S088",
+      "label_fake": 1,
+      "original_prob_fake": 0.43790870904922485,
+      "permuted_prob_fake": 0.44006919860839844
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S089",
+      "label_fake": 1,
+      "original_prob_fake": 0.4144721031188965,
+      "permuted_prob_fake": 0.42275673151016235
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S114",
+      "label_fake": 1,
+      "original_prob_fake": 0.5972200632095337,
+      "permuted_prob_fake": 0.6397541761398315
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S115",
+      "label_fake": 1,
+      "original_prob_fake": 0.7299688458442688,
+      "permuted_prob_fake": 0.7231343984603882
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S116",
+      "label_fake": 1,
+      "original_prob_fake": 0.5749408602714539,
+      "permuted_prob_fake": 0.6553522944450378
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S117",
+      "label_fake": 1,
+      "original_prob_fake": 0.7543414235115051,
+      "permuted_prob_fake": 0.7236406803131104
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S118",
+      "label_fake": 1,
+      "original_prob_fake": 0.7702130675315857,
+      "permuted_prob_fake": 0.776449978351593
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 29,
+      "sample_id": "S119",
+      "label_fake": 1,
+      "original_prob_fake": 0.6797576546669006,
+      "permuted_prob_fake": 0.6950427293777466
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S048",
+      "label_fake": 0,
+      "original_prob_fake": 0.4458829462528229,
+      "permuted_prob_fake": 0.46616700291633606
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S049",
+      "label_fake": 0,
+      "original_prob_fake": 0.5417497158050537,
+      "permuted_prob_fake": 0.5456943511962891
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S050",
+      "label_fake": 0,
+      "original_prob_fake": 0.4388447701931,
+      "permuted_prob_fake": 0.43886440992355347
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S051",
+      "label_fake": 0,
+      "original_prob_fake": 0.4507578909397125,
+      "permuted_prob_fake": 0.45075783133506775
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S052",
+      "label_fake": 0,
+      "original_prob_fake": 0.44495072960853577,
+      "permuted_prob_fake": 0.45319467782974243
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S053",
+      "label_fake": 0,
+      "original_prob_fake": 0.46136292815208435,
+      "permuted_prob_fake": 0.464930921792984
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S054",
+      "label_fake": 0,
+      "original_prob_fake": 0.528053879737854,
+      "permuted_prob_fake": 0.48354053497314453
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S055",
+      "label_fake": 0,
+      "original_prob_fake": 0.45006927847862244,
+      "permuted_prob_fake": 0.44980356097221375
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S056",
+      "label_fake": 0,
+      "original_prob_fake": 0.43042421340942383,
+      "permuted_prob_fake": 0.43156445026397705
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S057",
+      "label_fake": 0,
+      "original_prob_fake": 0.4854568541049957,
+      "permuted_prob_fake": 0.4556911587715149
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S058",
+      "label_fake": 0,
+      "original_prob_fake": 0.42495197057724,
+      "permuted_prob_fake": 0.42536312341690063
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S059",
+      "label_fake": 0,
+      "original_prob_fake": 0.42398837208747864,
+      "permuted_prob_fake": 0.4122506380081177
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S084",
+      "label_fake": 1,
+      "original_prob_fake": 0.4627273380756378,
+      "permuted_prob_fake": 0.4799060523509979
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S085",
+      "label_fake": 1,
+      "original_prob_fake": 0.4447009861469269,
+      "permuted_prob_fake": 0.4446070194244385
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S086",
+      "label_fake": 1,
+      "original_prob_fake": 0.41910403966903687,
+      "permuted_prob_fake": 0.4290314316749573
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S087",
+      "label_fake": 1,
+      "original_prob_fake": 0.4494304060935974,
+      "permuted_prob_fake": 0.4423588216304779
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S088",
+      "label_fake": 1,
+      "original_prob_fake": 0.43064242601394653,
+      "permuted_prob_fake": 0.43039122223854065
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S089",
+      "label_fake": 1,
+      "original_prob_fake": 0.4407501816749573,
+      "permuted_prob_fake": 0.4300820827484131
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S114",
+      "label_fake": 1,
+      "original_prob_fake": 0.515267014503479,
+      "permuted_prob_fake": 0.5298373103141785
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S115",
+      "label_fake": 1,
+      "original_prob_fake": 0.5867040157318115,
+      "permuted_prob_fake": 0.5786768794059753
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S116",
+      "label_fake": 1,
+      "original_prob_fake": 0.5344236493110657,
+      "permuted_prob_fake": 0.5469337701797485
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S117",
+      "label_fake": 1,
+      "original_prob_fake": 0.6387723088264465,
+      "permuted_prob_fake": 0.6382066011428833
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S118",
+      "label_fake": 1,
+      "original_prob_fake": 0.6734194159507751,
+      "permuted_prob_fake": 0.6778082251548767
+    },
+    {
+      "kind": "raw_temporal",
+      "seed": 43,
+      "sample_id": "S119",
+      "label_fake": 1,
+      "original_prob_fake": 0.5769561529159546,
+      "permuted_prob_fake": 0.5674468874931335
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S048",
+      "label_fake": 0,
+      "original_prob_fake": 0.13401581346988678,
+      "permuted_prob_fake": 0.6380153298377991
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S049",
+      "label_fake": 0,
+      "original_prob_fake": 0.9696236848831177,
+      "permuted_prob_fake": 0.9687435626983643
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S050",
+      "label_fake": 0,
+      "original_prob_fake": 0.4960957467556,
+      "permuted_prob_fake": 0.49613213539123535
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S051",
+      "label_fake": 0,
+      "original_prob_fake": 0.4964938461780548,
+      "permuted_prob_fake": 0.4964938461780548
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S052",
+      "label_fake": 0,
+      "original_prob_fake": 0.2386910319328308,
+      "permuted_prob_fake": 0.10107002407312393
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S053",
+      "label_fake": 0,
+      "original_prob_fake": 0.40604668855667114,
+      "permuted_prob_fake": 0.4183282256126404
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S054",
+      "label_fake": 0,
+      "original_prob_fake": 0.23621013760566711,
+      "permuted_prob_fake": 0.23158834874629974
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S055",
+      "label_fake": 0,
+      "original_prob_fake": 0.49648943543434143,
+      "permuted_prob_fake": 0.4964722692966461
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S056",
+      "label_fake": 0,
+      "original_prob_fake": 0.10717198997735977,
+      "permuted_prob_fake": 0.11129144579172134
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S057",
+      "label_fake": 0,
+      "original_prob_fake": 0.0726378932595253,
+      "permuted_prob_fake": 0.11041469126939774
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S058",
+      "label_fake": 0,
+      "original_prob_fake": 0.49632951617240906,
+      "permuted_prob_fake": 0.496358186006546
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S059",
+      "label_fake": 0,
+      "original_prob_fake": 0.4954381287097931,
+      "permuted_prob_fake": 0.5094406008720398
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S084",
+      "label_fake": 1,
+      "original_prob_fake": 0.4967309236526489,
+      "permuted_prob_fake": 0.5269516110420227
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S085",
+      "label_fake": 1,
+      "original_prob_fake": 0.4960516393184662,
+      "permuted_prob_fake": 0.4960256814956665
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S086",
+      "label_fake": 1,
+      "original_prob_fake": 0.49568289518356323,
+      "permuted_prob_fake": 0.49612894654273987
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S087",
+      "label_fake": 1,
+      "original_prob_fake": 0.5041829943656921,
+      "permuted_prob_fake": 0.4952884912490845
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S088",
+      "label_fake": 1,
+      "original_prob_fake": 0.4952758550643921,
+      "permuted_prob_fake": 0.49569764733314514
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S089",
+      "label_fake": 1,
+      "original_prob_fake": 0.4959234595298767,
+      "permuted_prob_fake": 0.4958292543888092
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S114",
+      "label_fake": 1,
+      "original_prob_fake": 0.9402526617050171,
+      "permuted_prob_fake": 0.9741883277893066
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S115",
+      "label_fake": 1,
+      "original_prob_fake": 0.9736658930778503,
+      "permuted_prob_fake": 0.9620718955993652
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S116",
+      "label_fake": 1,
+      "original_prob_fake": 0.48129743337631226,
+      "permuted_prob_fake": 0.8759586811065674
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S117",
+      "label_fake": 1,
+      "original_prob_fake": 0.9752954840660095,
+      "permuted_prob_fake": 0.9641975164413452
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S118",
+      "label_fake": 1,
+      "original_prob_fake": 0.9744150042533875,
+      "permuted_prob_fake": 0.9744068384170532
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 17,
+      "sample_id": "S119",
+      "label_fake": 1,
+      "original_prob_fake": 0.9727939963340759,
+      "permuted_prob_fake": 0.9730036854743958
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S048",
+      "label_fake": 0,
+      "original_prob_fake": 0.06963243335485458,
+      "permuted_prob_fake": 0.05921006202697754
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S049",
+      "label_fake": 0,
+      "original_prob_fake": 0.6924819350242615,
+      "permuted_prob_fake": 0.499172568321228
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S050",
+      "label_fake": 0,
+      "original_prob_fake": 0.4219331443309784,
+      "permuted_prob_fake": 0.4216729402542114
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S051",
+      "label_fake": 0,
+      "original_prob_fake": 0.4220021665096283,
+      "permuted_prob_fake": 0.4220019578933716
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S052",
+      "label_fake": 0,
+      "original_prob_fake": 0.25211262702941895,
+      "permuted_prob_fake": 0.12613141536712646
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S053",
+      "label_fake": 0,
+      "original_prob_fake": 0.1667579710483551,
+      "permuted_prob_fake": 0.12108264863491058
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S054",
+      "label_fake": 0,
+      "original_prob_fake": 0.21081118285655975,
+      "permuted_prob_fake": 0.2601196765899658
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S055",
+      "label_fake": 0,
+      "original_prob_fake": 0.42203477025032043,
+      "permuted_prob_fake": 0.42199188470840454
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S056",
+      "label_fake": 0,
+      "original_prob_fake": 0.1628943532705307,
+      "permuted_prob_fake": 0.16606248915195465
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S057",
+      "label_fake": 0,
+      "original_prob_fake": 0.08775083720684052,
+      "permuted_prob_fake": 0.1386268585920334
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S058",
+      "label_fake": 0,
+      "original_prob_fake": 0.42025384306907654,
+      "permuted_prob_fake": 0.42149072885513306
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S059",
+      "label_fake": 0,
+      "original_prob_fake": 0.4147677421569824,
+      "permuted_prob_fake": 0.417761892080307
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S084",
+      "label_fake": 1,
+      "original_prob_fake": 0.3906361162662506,
+      "permuted_prob_fake": 0.4034235179424286
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S085",
+      "label_fake": 1,
+      "original_prob_fake": 0.42170774936676025,
+      "permuted_prob_fake": 0.42151522636413574
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S086",
+      "label_fake": 1,
+      "original_prob_fake": 0.4151531457901001,
+      "permuted_prob_fake": 0.4179714322090149
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S087",
+      "label_fake": 1,
+      "original_prob_fake": 0.42582187056541443,
+      "permuted_prob_fake": 0.42080047726631165
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S088",
+      "label_fake": 1,
+      "original_prob_fake": 0.41863155364990234,
+      "permuted_prob_fake": 0.4182882308959961
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S089",
+      "label_fake": 1,
+      "original_prob_fake": 0.42035073041915894,
+      "permuted_prob_fake": 0.41963502764701843
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S114",
+      "label_fake": 1,
+      "original_prob_fake": 0.9874563813209534,
+      "permuted_prob_fake": 0.9888373613357544
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S115",
+      "label_fake": 1,
+      "original_prob_fake": 0.9894114136695862,
+      "permuted_prob_fake": 0.9893112182617188
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S116",
+      "label_fake": 1,
+      "original_prob_fake": 0.8422337770462036,
+      "permuted_prob_fake": 0.9568243026733398
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S117",
+      "label_fake": 1,
+      "original_prob_fake": 0.9884302616119385,
+      "permuted_prob_fake": 0.9884337782859802
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S118",
+      "label_fake": 1,
+      "original_prob_fake": 0.9899123311042786,
+      "permuted_prob_fake": 0.9898282289505005
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 29,
+      "sample_id": "S119",
+      "label_fake": 1,
+      "original_prob_fake": 0.9900446534156799,
+      "permuted_prob_fake": 0.9903539419174194
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S048",
+      "label_fake": 0,
+      "original_prob_fake": 0.11988033354282379,
+      "permuted_prob_fake": 0.25143343210220337
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S049",
+      "label_fake": 0,
+      "original_prob_fake": 0.8731104731559753,
+      "permuted_prob_fake": 0.8263204097747803
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S050",
+      "label_fake": 0,
+      "original_prob_fake": 0.5608887076377869,
+      "permuted_prob_fake": 0.5610474348068237
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S051",
+      "label_fake": 0,
+      "original_prob_fake": 0.587467610836029,
+      "permuted_prob_fake": 0.587467610836029
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S052",
+      "label_fake": 0,
+      "original_prob_fake": 0.23844541609287262,
+      "permuted_prob_fake": 0.21557606756687164
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S053",
+      "label_fake": 0,
+      "original_prob_fake": 0.16393961012363434,
+      "permuted_prob_fake": 0.1670638769865036
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S054",
+      "label_fake": 0,
+      "original_prob_fake": 0.24209843575954437,
+      "permuted_prob_fake": 0.21704848110675812
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S055",
+      "label_fake": 0,
+      "original_prob_fake": 0.5848138332366943,
+      "permuted_prob_fake": 0.5840141177177429
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S056",
+      "label_fake": 0,
+      "original_prob_fake": 0.28536802530288696,
+      "permuted_prob_fake": 0.3027196526527405
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S057",
+      "label_fake": 0,
+      "original_prob_fake": 0.13977240025997162,
+      "permuted_prob_fake": 0.2422744333744049
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S058",
+      "label_fake": 0,
+      "original_prob_fake": 0.4572807252407074,
+      "permuted_prob_fake": 0.4339497983455658
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S059",
+      "label_fake": 0,
+      "original_prob_fake": 0.5080488324165344,
+      "permuted_prob_fake": 0.35227420926094055
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S084",
+      "label_fake": 1,
+      "original_prob_fake": 0.25189054012298584,
+      "permuted_prob_fake": 0.27622509002685547
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S085",
+      "label_fake": 1,
+      "original_prob_fake": 0.5680330991744995,
+      "permuted_prob_fake": 0.5635441541671753
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S086",
+      "label_fake": 1,
+      "original_prob_fake": 0.5383604168891907,
+      "permuted_prob_fake": 0.5528867840766907
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S087",
+      "label_fake": 1,
+      "original_prob_fake": 0.4280872344970703,
+      "permuted_prob_fake": 0.4453006386756897
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S088",
+      "label_fake": 1,
+      "original_prob_fake": 0.4583919644355774,
+      "permuted_prob_fake": 0.4561850428581238
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S089",
+      "label_fake": 1,
+      "original_prob_fake": 0.5733552575111389,
+      "permuted_prob_fake": 0.5535373091697693
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S114",
+      "label_fake": 1,
+      "original_prob_fake": 0.9324856400489807,
+      "permuted_prob_fake": 0.9697427153587341
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S115",
+      "label_fake": 1,
+      "original_prob_fake": 0.9791035652160645,
+      "permuted_prob_fake": 0.9725297689437866
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S116",
+      "label_fake": 1,
+      "original_prob_fake": 0.7379112243652344,
+      "permuted_prob_fake": 0.9167594909667969
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S117",
+      "label_fake": 1,
+      "original_prob_fake": 0.9816288948059082,
+      "permuted_prob_fake": 0.979414165019989
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S118",
+      "label_fake": 1,
+      "original_prob_fake": 0.9819568395614624,
+      "permuted_prob_fake": 0.9831227660179138
+    },
+    {
+      "kind": "aligned_temporal",
+      "seed": 43,
+      "sample_id": "S119",
+      "label_fake": 1,
+      "original_prob_fake": 0.975640058517456,
+      "permuted_prob_fake": 0.9782640933990479
+    }
+  ],
+  "scope": "post-hoc development diagnostic after primary evaluation; no checkpoint, threshold, or recipe changes",
+  "interpretation": "Only cached residual order is permuted. Frame-pair temporal evidence remains in residuals. This is not a test of all temporal information or raw-video permutation.",
+  "code_sha256": "19df8e698095cb44a28650c2cd9966b744a20b39c2e8584fe48ee44ee2ec4282"
+}

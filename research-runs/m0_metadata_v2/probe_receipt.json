@@ -1,0 +1,19 @@
+{
+  "count": 120,
+  "failures": [],
+  "near_duplicate_candidates": [
+    {
+      "a": "S019",
+      "b": "S038",
+      "hamming": [
+        3,
+        4
+      ],
+      "status": "candidate only; not verified duplicate"
+    }
+  ],
+  "wall_seconds": 8.694,
+  "observations_sha256": "be2ba0eb420546390a1a130fef4e20e5ccb0f257192c8a1905fcf253b3cd4fa1",
+  "no_pixels_saved": true,
+  "decode_scope": "two probe frames, not full-stream validation"
+}

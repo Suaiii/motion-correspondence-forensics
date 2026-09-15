@@ -1,0 +1,9 @@
+{
+  "baseline": "STALL",
+  "repository_commit": "bfcc603ae83b4e609681277b9b5e80e7a9497e15",
+  "attempt": "official HF ComGenVid mode, debug-n 20",
+  "status": "blocked_before_metric",
+  "error": "isolated research Python lacks tabulate dependency; dependency installation/evaluation process did not produce a result artifact",
+  "metric_claimed": false,
+  "next": "install pinned dependencies in server environment, then run native protocol on full official ComGenVid split"
+}

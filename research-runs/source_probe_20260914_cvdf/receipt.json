@@ -1,0 +1,136 @@
+{
+  "records": [
+    {
+      "archive_member": "./-JEFz5Z0EWU_000010_000020.mp4",
+      "bytes": 2225171,
+      "sha256": "cbcd12c23d26b7b3ae00b8cdc81f75e96d10c94b3fced24421a727d84155022d",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\cbcd12c23d26b7b3ae00b8cdc81f75e96d10c94b3fced24421a727d84155022d.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-FjBFRT36pU_000100_000110.mp4",
+      "bytes": 306716,
+      "sha256": "84a452bde9907459292fc43e769f3d059b7459deb15a89337030fc02fa1cce69",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\84a452bde9907459292fc43e769f3d059b7459deb15a89337030fc02fa1cce69.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-2-nYjSwo8U_000042_000052.mp4",
+      "bytes": 875476,
+      "sha256": "6522839387038ed36993d3f3eb6fd74f767a81e557e89181ec1084419fc5cd80",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\6522839387038ed36993d3f3eb6fd74f767a81e557e89181ec1084419fc5cd80.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-JrthcbKe60_000132_000142.mp4",
+      "bytes": 956205,
+      "sha256": "57013aaa311b5136dafe3a3a839452013b7356880e79fe09a5c1793f944a2843",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\57013aaa311b5136dafe3a3a839452013b7356880e79fe09a5c1793f944a2843.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-K74JEPrJJQ_000043_000053.mp4",
+      "bytes": 3218572,
+      "sha256": "7217c271e683e485d62c95946b5c10e444e971e6a44b6155f217dc4e31a6f445",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\7217c271e683e485d62c95946b5c10e444e971e6a44b6155f217dc4e31a6f445.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-9t1GeluG6w_000010_000020.mp4",
+      "bytes": 964508,
+      "sha256": "918698d05ca4137f919c5fe5848d7b0547bda8bd0f04c208b42e88e6a3872632",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\918698d05ca4137f919c5fe5848d7b0547bda8bd0f04c208b42e88e6a3872632.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-8qfEe5m5mg_000009_000019.mp4",
+      "bytes": 1264615,
+      "sha256": "a4e9e22dad34c8b7b4a14371c75c7225af5edb1fce0664f4175c6f8975d5308c",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\a4e9e22dad34c8b7b4a14371c75c7225af5edb1fce0664f4175c6f8975d5308c.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-DvLehbk7TY_000078_000088.mp4",
+      "bytes": 402604,
+      "sha256": "9867b5fe1646bda977137c7e6f84bbedb2c3093f91254c0e7ee581537d33a20f",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\9867b5fe1646bda977137c7e6f84bbedb2c3093f91254c0e7ee581537d33a20f.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-6R3wpks5Jg_000319_000329.mp4",
+      "bytes": 3096643,
+      "sha256": "2be7129e7d2a13176fb0b02d895b0270428365a97de72116d7a10dcf774231e8",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\2be7129e7d2a13176fb0b02d895b0270428365a97de72116d7a10dcf774231e8.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-1dWGnhjB2A_000049_000059.mp4",
+      "bytes": 396704,
+      "sha256": "1e28d3201ae02fa76949eb5d39e2f6af0979052fa5a1d53a4717fb3ac83a27a3",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\1e28d3201ae02fa76949eb5d39e2f6af0979052fa5a1d53a4717fb3ac83a27a3.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-86xbR-_1E8_000335_000345.mp4",
+      "bytes": 762442,
+      "sha256": "8d6b23544918ee031ffe6acf63ceb3e34831fec0c2635e1d8adc981ad2391e7f",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\8d6b23544918ee031ffe6acf63ceb3e34831fec0c2635e1d8adc981ad2391e7f.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-6vMUadPeCI_000000_000010.mp4",
+      "bytes": 805690,
+      "sha256": "cb1968f3012531d1ede7ecd1f8d46214c1bb53c14baada5931b9ba07fba26ce4",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\cb1968f3012531d1ede7ecd1f8d46214c1bb53c14baada5931b9ba07fba26ce4.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-JRT9aCAVsA_000032_000042.mp4",
+      "bytes": 2016278,
+      "sha256": "33d39e738a64da283eff2ac2b40607a35aec969b1b5b1d649b4042e4774d8ada",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\33d39e738a64da283eff2ac2b40607a35aec969b1b5b1d649b4042e4774d8ada.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-LTP_3-9EHc_000315_000325.mp4",
+      "bytes": 3241859,
+      "sha256": "a9ed75584d099abc16c09ce9b340d2015a1a096843c97dcc556da68b88a80a9e",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\a9ed75584d099abc16c09ce9b340d2015a1a096843c97dcc556da68b88a80a9e.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-1brKJdL-iM_000093_000103.mp4",
+      "bytes": 427868,
+      "sha256": "ccaedd7221f3eb906fe1ec76e3c25e8a6cb99bc7bfa9b46cd6ee6bcf46d54232",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\ccaedd7221f3eb906fe1ec76e3c25e8a6cb99bc7bfa9b46cd6ee6bcf46d54232.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    },
+    {
+      "archive_member": "./-1GRj5UvVBA_000025_000035.mp4",
+      "bytes": 256087,
+      "sha256": "b9c1addbf643fca1cffbf074900b5ca3e93591ca7c7f5016211fcbbe953e7fa8",
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\source_probe_20260914_cvdf\\videos\\b9c1addbf643fca1cffbf074900b5ca3e93591ca7c7f5016211fcbbe953e7fa8.mp4",
+      "status": "candidate_not_admitted",
+      "verification": "complete tar member from ETag-bound HTTPS prefix; no full archive checksum"
+    }
+  ],
+  "count": 16,
+  "error": null,
+  "full_archive_verified": false,
+  "formal_training": false
+}

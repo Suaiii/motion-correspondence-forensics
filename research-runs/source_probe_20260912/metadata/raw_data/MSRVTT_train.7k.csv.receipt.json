@@ -1,0 +1,8 @@
+{
+  "repo": "friedrichor/MSR-VTT",
+  "revision": "c1af215a96934854f42683c19c51391aaee6f962",
+  "path": "raw_data/MSRVTT_train.7k.csv",
+  "bytes": 68999,
+  "sha256": "ca0d04c34310168b620c90c67eaec702b37398943965f5e1f9f44af8f193da7d",
+  "upstream_object_verified": true
+}
