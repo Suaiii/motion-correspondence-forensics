@@ -1,0 +1,14 @@
+{
+  "time_utc": "2026-09-15T13:23:42.279662+00:00",
+  "manifest": "combined_candidate130/manifest_valid.jsonl",
+  "manifest_audit": "PASS",
+  "n": 130,
+  "source_counts": {
+    "cc0_real": 30,
+    "ms": 100
+  },
+  "prepare_status": "REJECTED_BY_POLICY",
+  "error": "Cannot promote synthetic/historical data",
+  "meaning": "Profile-only candidate; no training or confirmation result",
+  "next": "retain profile evidence; create a new development manifest only after source/ancestry/license acceptance"
+}
