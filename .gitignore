@@ -27,6 +27,7 @@ research-runs/server_runtime_validation_v*/
 research-runs/overnight_*/
 research-runs/*/profile_legacy_*.jsonl
 research-runs/*/full_qc_selection_*.json
+research-runs/source_probe_20260914_cvdf/*.bin
 
 # Local credentials, environments, and IDE files
 *.pem
