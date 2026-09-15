@@ -1,5 +1,6 @@
 import torch
 from torch import nn
+from .operator_response import OperatorResponseEncoder
 
 
 class Bag(nn.Module):
@@ -13,6 +14,25 @@ class Bag(nn.Module):
     def forward(self,x):
         b,t,c,h,w=x.shape
         return self.readout(self.encoder(x.reshape(b*t,c,h,w)).reshape(b,t,64).mean(1)).squeeze(-1)
+
+
+class ResponseBag(nn.Module):
+    """Optional response branch with the legacy bag as an explicit comparator.
+
+    ``correct`` is ``[B,T,3,H,W]`` and ``controls`` is ``[B,K,T,3,H,W]``.
+    The additive logit keeps the baseline path visible for a direct ablation;
+    it is not enabled by the legacy pipeline until a development gate passes.
+    """
+
+    def __init__(self, channels=3, hidden=32, tau=1e-3):
+        super().__init__()
+        self.base = Bag(channels)
+        self.response = OperatorResponseEncoder(channels, hidden, tau)
+
+    def forward(self, correct, controls=None):
+        if controls is None:
+            return self.base(correct)
+        return self.base(correct) + self.response(correct, controls)[0]
 
 
 def selective_consistency(clean,degraded):
