@@ -1,0 +1,21 @@
+{
+  "status": "acquisition_gate_pending",
+  "evidence": {
+    "catalog_revision": "701cafb6f999d7ea0cbf3c354df6177311a4d824",
+    "repository": "jian-0/GenVidBench",
+    "pair1_generators_present": ["ms", "vc2"],
+    "pair2_generators_listed": ["cogvideo", "mora", "musev", "svd", "hd_vg"],
+    "pair2_video_bytes_acquired": false,
+    "pair2_license_accepted": false,
+    "pair2_ancestry_accepted": false
+  },
+  "decision": "Do not promote Pair2 metadata to a training manifest. Acquire one bounded Pair2 generator subset with exact archive member names, hashes, source/ancestry fields, licence terms, and native timestamps.",
+  "minimum_next_release": {
+    "new_generator": "cogvideo",
+    "target_videos": 100,
+    "real_source": "reuse only after accepted ancestry separation; otherwise acquire a new real pool",
+    "protocol": "mechanism_4fps for native low-FPS sources; mechanism_8fps when native FPS permits"
+  },
+  "formal_training": false,
+  "final_confirmation": false
+}
