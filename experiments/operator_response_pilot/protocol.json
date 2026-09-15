@@ -1,0 +1,12 @@
+{
+  "id":"operator_response_pilot_v1",
+  "scope":"historical development exploratory only",
+  "source":"research-runs/alignment_gate_v1/cache/clean__*.npy",
+  "arms":["correct_only","response_bag"],
+  "seeds":[17,29,43],
+  "epochs":10,
+  "batch_size":16,
+  "sampling":"legacy 4fps/8frames/128px",
+  "selection":"minimum calibration BCE; no audit selection",
+  "final_claim":false
+}
