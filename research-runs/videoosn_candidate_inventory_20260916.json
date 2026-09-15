@@ -1,0 +1,1201 @@
+{
+  "rows": [
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\fake\\Aquarium NYC.mp4",
+      "sha256": "ac9a7c089edf4332c1eea135c08dae6db0f58fd3aea734f68552d00be0527abc",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\fake\\Cat on the bed.mp4",
+      "sha256": "422968c8cbe7c136f7b47ab622f8593d2aa1c4cc65d759968884a41b37846dd9",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\fake\\Dogs downtown.mp4",
+      "sha256": "9aae96d2da4c880fb741bf240643550b4120654669f06707d0e7ac11cc0f7ba1",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\fake\\Gold Rush.mp4",
+      "sha256": "ab07e3b7001ee58baa49237472444f3572f019b4952110e615b7fde9387510a4",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\fake\\Wolves.mp4",
+      "sha256": "98b6b4b8da00d4a17f0ad4727b42271ce81ef61a55775d3b62aa28779ec88187",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\real\\real_Aquarium NYC.mp4",
+      "sha256": "e8f12b9666796227ed2bbab19f6ccf8c83d23017eeed65effbb1f8b535f8f100",
+      "label_fake": 0,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\real\\real_Cat on the bed.mp4",
+      "sha256": "0ce65b49b2d9ceb4714ea4373eaa73446e2d62bdb2977a9d92dc69bbfee688e2",
+      "label_fake": 0,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\real\\real_Dogs downtown.mp4",
+      "sha256": "3bb99b205fdcb9ba685a3b4c95a189a7ad2b83bd47aab5d32a3cda1976b97ae2",
+      "label_fake": 0,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\real\\real_Gold Rush.mp4",
+      "sha256": "4bfbeda54ee4cd474a53e6c5916cc7bc7d6f186d9744fb93902b7312e77435a0",
+      "label_fake": 0,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg\\real\\real_Wolves.mp4",
+      "sha256": "36c41b74799b0a721025c364063747cf161b261d6526b09b296a89c7050f0a2d",
+      "label_fake": 0,
+      "source": "videoOSN_FFmpeg",
+      "variant": "FFmpeg",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Amalfi Coast.mp4",
+      "sha256": "d12653f3b9eee7e1857418eda69e3c9c082b4233f691c7c1e69e9ba3a91ba794",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Art museum.mp4",
+      "sha256": "c41061f58ce8b403b52e948e4224e84e1412c895124b3cf27ba18c5b43f4c4c6",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Backward jogger.mp4",
+      "sha256": "5d65e004a43946cd70d4b024d6a7eb19142514d924c31d062a36a64e51050cf2",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Basketball explosion.mp4",
+      "sha256": "e758c06088e9f6a6105570ce7fec1474075bc2465f800790d1642a1bd919b221",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Chinese New Year Dragon.mp4",
+      "sha256": "5541659488febbae0a81176965b38a780d8d32681e0a5d7e8ecdbd918423ff1f",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Close up of woman_s eye.mp4",
+      "sha256": "8b45d816e9d17819f8ff2ca4830adf467d3d855fbcaae73773c5db9c3037d191",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\CloseUp Man in Glasses.mp4",
+      "sha256": "31b6e368ddcea41f936968d13478746364f11c7d2bf68e805661a8ac910450f2",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Cloud man.mp4",
+      "sha256": "5c35b843fe943e9c5d25f7d625749f6bfcde05e3ddf4eceb72f3e006b881d2c4",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Flower blooming.mp4",
+      "sha256": "ce837ed44320e0f90cda82c0906f89a7617c0e3d88c0110d6c6ce62c50ce9793",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\FFmpeg_aligned\\fake\\Grandma birthday.mp4",
+      "sha256": "5c0710ce5ab2f62d311c400a6446634bc8beeba79a201ffad77842d397891f29",
+      "label_fake": 1,
+      "source": "videoOSN_FFmpeg_aligned",
+      "variant": "FFmpeg_aligned",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Amalfi Coast.mp4",
+      "sha256": "d1761496f11fbaa58891a063d60f6ccecca7ac93c7ca820999975dc7e5de11cc",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Art museum.mp4",
+      "sha256": "6d8247b9ba84e40dc601f00a05c10cd25da934c2c555119812ea7f5057abe323",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Backward jogger.mp4",
+      "sha256": "fa326886e55eb2443057ea5b0c169f12ff42f93fcdd38a3e3fd07e3ca3867cce",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Basketball explosion.mp4",
+      "sha256": "e75ebd856e006c04c7e7ca494dd14b8997319876a147c62d437e9386872a2535",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Chair archaeology.mp4",
+      "sha256": "665a6da3b2d0b65726a4a566e4a3cdbf0977a8669d733874da9edc77f57db15f",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Chinese New Year Dragon.mp4",
+      "sha256": "42e34dcb3f1e0c40051daccc48ef48a9d982869aec79ff74bc6b1d6d2c54ade9",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Close up of woman_s eye.mp4",
+      "sha256": "6d71ba216f554124eba245fda0492b72aaf68bed6f721a651ad799abe0a7361f",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\CloseUp Man in Glasses.mp4",
+      "sha256": "2d4d48acecba0e5f70230129640c97715f78eb4cba13c817eb4b894d26110a02",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Dogs downtown.mp4",
+      "sha256": "2e8f1f5cf6b666793c150b18c21bad5340a634055ec72e7aaceed612035ed565",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\fake\\Flower blooming.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Amalfi Coast.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Art museum.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Backward jogger.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Basketball explosion.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Chair archaeology.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Chameleon.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Chinese New Year Dragon.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Close up of woman_s eye.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_CloseUp Man in Glasses.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_wechat\\real\\real_Dogs downtown.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_wechat",
+      "variant": "OSN_wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Amalfi Coast.mp4",
+      "sha256": "d1761496f11fbaa58891a063d60f6ccecca7ac93c7ca820999975dc7e5de11cc",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Art museum.mp4",
+      "sha256": "6d8247b9ba84e40dc601f00a05c10cd25da934c2c555119812ea7f5057abe323",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Backward jogger.mp4",
+      "sha256": "fa326886e55eb2443057ea5b0c169f12ff42f93fcdd38a3e3fd07e3ca3867cce",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Basketball explosion.mp4",
+      "sha256": "e75ebd856e006c04c7e7ca494dd14b8997319876a147c62d437e9386872a2535",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Chair archaeology.mp4",
+      "sha256": "665a6da3b2d0b65726a4a566e4a3cdbf0977a8669d733874da9edc77f57db15f",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Chinese New Year Dragon.mp4",
+      "sha256": "42e34dcb3f1e0c40051daccc48ef48a9d982869aec79ff74bc6b1d6d2c54ade9",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Close up of woman_s eye.mp4",
+      "sha256": "6d71ba216f554124eba245fda0492b72aaf68bed6f721a651ad799abe0a7361f",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\CloseUp Man in Glasses.mp4",
+      "sha256": "2d4d48acecba0e5f70230129640c97715f78eb4cba13c817eb4b894d26110a02",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Dogs downtown.mp4",
+      "sha256": "2e8f1f5cf6b666793c150b18c21bad5340a634055ec72e7aaceed612035ed565",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\fake\\Flower blooming.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 1,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Amalfi Coast.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Art museum.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Backward jogger.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Basketball explosion.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Chair archaeology.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Chameleon.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Chinese New Year Dragon.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Close up of woman_s eye.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_CloseUp Man in Glasses.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\OSN_whatsapp\\real\\real_Dogs downtown.mp4",
+      "sha256": "7817119d388f19407bdacbd714686f779bc1cf19bf9fb8e7438fde492f502be2",
+      "label_fake": 0,
+      "source": "videoOSN_OSN_whatsapp",
+      "variant": "OSN_whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Amalfi Coast.mp4",
+      "sha256": "378ec96fd688a9b75cd6968615d71db3e19a066389f583f97e42f3da5110c85d",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Art museum.mp4",
+      "sha256": "07a78db6d753dc9e19d16ec542861ca75af3b709580c524573f37ffc2fd44721",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Backward jogger.mp4",
+      "sha256": "7c003dfd32ccf99c6b31e1e4a9f0717978e7c6b126d3efa0811b27f701248634",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Basketball explosion.mp4",
+      "sha256": "593f5f9f4ddf481cd0fafff5074bbb74a607d5fe2924b45356e08679fa091043",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Chinese New Year Dragon.mp4",
+      "sha256": "c062fa3dcc3955f727c5d36155f7d8e90dcde3f612a06707a8672f45a2d65ae2",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Close up of woman_s eye.mp4",
+      "sha256": "b32ea3066e3ae862878b30130ec591660d4526fcf78402dd26780306583e6845",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\CloseUp Man in Glasses.mp4",
+      "sha256": "9b9beaf718cef9afdb5cf8b32dd004cd47699c03ec37c443677ee86cfc18153b",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Cloud man.mp4",
+      "sha256": "b87209979b538092794ca83a384a4e004ac407f99049b0d3c80b452af2ac8ec7",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Flower blooming.mp4",
+      "sha256": "b42740a495d4ed353944a62507075b5b5316201dbc6a8ad53cc7fa8c7deb9d22",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\fake\\Grandma birthday.mp4",
+      "sha256": "13f0fd14ebd462c12267c0889b30708150e73fb0ba0e4b3f521fcd355d9fd3c2",
+      "label_fake": 1,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Amalfi Coast.mp4",
+      "sha256": "136e76e4c8545693c45b67ae30a604e1811bb9d83e2fe6d4997076bcc872b5aa",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Art museum.mp4",
+      "sha256": "a7deee2e38d1fb4984c96e5f2b07d8e2a4d5e615fa9ee32b94b44192d3c579e4",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Backward jogger.mp4",
+      "sha256": "53b111c812a62e1d0dda25ad1099e930e719cc870d098dbc68ffcfb97ad48c0e",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Basketball explosion.mp4",
+      "sha256": "6edb37b640576e375fede67b4a47ff2c391d8f7d89c49d12538ab03a3b1b57a7",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Chameleon.mp4",
+      "sha256": "af94608f76c19b727625f7d6980ebf876bd9888f80e94b0d2e3d4cdd8d46c189",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Chinese New Year Dragon.mp4",
+      "sha256": "56c6ef7d690752acdabb46ce6411cde7cdb95bb79b307d53e0f221142bcfd8e9",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Close up of woman_s eye.mp4",
+      "sha256": "9fbddeb6e3382c943b4119672ec1c77a194666864be98775eb9440ee6db8af70",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_CloseUp Man in Glasses.mp4",
+      "sha256": "44226d4dd132c3d491a9bc4dbee34b3e043ac74365e75afc9e3c2d85436bff21",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Cloud man.mp4",
+      "sha256": "4adf11ac6b15c679dbe843008b17f2aebf4a6814ab9d60cb1122398276c6a7c4",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\raw\\real\\real_Flower blooming.mp4",
+      "sha256": "83cc5f93d3d1362359acb5fec76c314266c73ce3af4d2d715c9866d3151bee60",
+      "label_fake": 0,
+      "source": "videoOSN_raw",
+      "variant": "raw",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\08f9e63841848293af84d6f64c380ab6.mp4",
+      "sha256": "b25972bfe7cc57b68c4bff53af7ba019ae50c848fab04ceddac2f5e3eb95a1a4",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\197b6c9718b1a6115eecc7111176b6ae.mp4",
+      "sha256": "e6a0a902d2ce17e023c47676456bccdd5aaf4145c54c2eb36bf8eb5d460e51f4",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\259f4a6a96f8d12637728bd1f4cbba7f.mp4",
+      "sha256": "1a11f52903cc49b58ef5ac02d72ad50093b64c769ce7423b7b2d8f5071018b55",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\4eefb938669273efde47370d06169ef3.mp4",
+      "sha256": "b42740a495d4ed353944a62507075b5b5316201dbc6a8ad53cc7fa8c7deb9d22",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\58a95ce59d8e27f7ac78ac1efdd7bd0b.mp4",
+      "sha256": "b19317becd48bddae963fde3ddf1a7842cdcb48e610261cf8274ba310c035f0c",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\5c12e550ea6f7917aaedf2859850602b.mp4",
+      "sha256": "898c9f2eca49144fed619e371221b77ea220e6104f6eab229d25fadf24d9cfdb",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\aafdb349ef69344856d0695c2edf31be.mp4",
+      "sha256": "9d8c2b733fa9bd53d6e1428f770fe7b28bc31c4d282b46b0d7f6cc101e64432c",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\ef44ab9b793e6cd5445b07297a659fbe.mp4",
+      "sha256": "3058f52258ba52cab4a69096af8f1f4ef40847ab22e3b267b4dcb8a8e3df65d9",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\fake\\f6d425381ea8df25c852b2628568318b.mp4",
+      "sha256": "4eecd845ca925a78ff0f9956548e35c289dc605a93b39dca9cd21b43bb50f5c9",
+      "label_fake": 1,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\19ff7931ff164f929c356517c89cc2c6.mp4",
+      "sha256": "4adf11ac6b15c679dbe843008b17f2aebf4a6814ab9d60cb1122398276c6a7c4",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\1d0d45215d1cc7a4aff2fc544aea1c30.mp4",
+      "sha256": "9fbddeb6e3382c943b4119672ec1c77a194666864be98775eb9440ee6db8af70",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\30f0136edaa19f38ba409bd311e7df26.mp4",
+      "sha256": "71c34bf0f21a17eb180f91c9ba9ca4a80c5fb7e445f2855494f099460cee4bbe",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\32e99a97f9e1657696b030fdd076fe8b.mp4",
+      "sha256": "53b111c812a62e1d0dda25ad1099e930e719cc870d098dbc68ffcfb97ad48c0e",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\43bcf8ea985c8ef61902e155367f5899.mp4",
+      "sha256": "648b97c8da566a6822250f23d9190e2c86c5dd205bd0512229d6c7dbf1f8ca2c",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\5728fbb0cb7d64173d6a22c1e772b8cf.mp4",
+      "sha256": "56c6ef7d690752acdabb46ce6411cde7cdb95bb79b307d53e0f221142bcfd8e9",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\5f95b2e4bbb11ebad9d6d4be914ad295.mp4",
+      "sha256": "0330ee63ecd044e5f1b0b11bc198ebf61920ebae6499e0cc83ae19a847f7b0b2",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\6a678d1f01ffdb7775f164c20ebb155d.mp4",
+      "sha256": "44226d4dd132c3d491a9bc4dbee34b3e043ac74365e75afc9e3c2d85436bff21",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\89bb2310d5b93562563f26f0cc4cdb11.mp4",
+      "sha256": "83cc5f93d3d1362359acb5fec76c314266c73ce3af4d2d715c9866d3151bee60",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\wechat\\real\\d309fb5c261398c997d962264112bdae.mp4",
+      "sha256": "a7deee2e38d1fb4984c96e5f2b07d8e2a4d5e615fa9ee32b94b44192d3c579e4",
+      "label_fake": 0,
+      "source": "videoOSN_wechat",
+      "variant": "wechat",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (1).mp4",
+      "sha256": "ff46434796fdee1fcc23054fccb2bb1f011b077440851f380127f4a198de059a",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (2).mp4",
+      "sha256": "a51f555c462bd4b65a6f986fcb01b289e879a522f8b6f44542f6ba64a0d72933",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (3).mp4",
+      "sha256": "5758294f69f255cb9ec9158d2da5d431a88c96fe2999e05af7ecf613b89a3c56",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (4).mp4",
+      "sha256": "19d68076aa00c2c26e2aa57e7c16345e714d5fefde0be53bfda111ca064b6836",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (5).mp4",
+      "sha256": "d00588666070e4a7268f0a70229ef5f4f43eb28b1b9214636fd93bb4ae4108e7",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (6).mp4",
+      "sha256": "5f01d80fdf39dc64418a1cf0de3ece04b2edaf504545aa15cf27b7d0ceb214b7",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (7).mp4",
+      "sha256": "4af0f6d894998b4bbbad34485afeb20fc1cb78fbba5b9e4087648663636d2697",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02 (8).mp4",
+      "sha256": "9d515faaefa25f7dc59986d9173cc0dc4185158b5f50a56b8e498fb52dfa2db6",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\fake\\WhatsApp Video 2026-03-26 at 12.37.02.mp4",
+      "sha256": "dac4219d794b5b487adf3b3724fa92ef37e6f84d80b47b37124c5f79a37070fd",
+      "label_fake": 1,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (1).mp4",
+      "sha256": "a30600e6a9d7eba6d94b99ad8f2505e5aeb97eb689f1f00f076c324a3e1eceed",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (2).mp4",
+      "sha256": "b139437bb052a23fbc659fd0d1d21e7e4beb0ff3da8e169bb5c1611ac306a3ef",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (3).mp4",
+      "sha256": "4793e20d3574ff68cef9523209d89404d18cf089d5039b91d51eab248aa47ab1",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (4).mp4",
+      "sha256": "5bb63db7a2e3bc0779e7e6e2431c038198b93d476e7044cc5bdbefb6f9d09ea6",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (5).mp4",
+      "sha256": "623197e9144bacea1b23f012136ef35bc6092944afde30c6e75ba3dd62e90fd3",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (6).mp4",
+      "sha256": "ead3a70ae38ad682f18b09a3d2da3e27de83e8fbbc79ab54a3404b9a4d1e76b6",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (7).mp4",
+      "sha256": "0b4ff1685818700058863730bdf5550cd19becf909aa85f2aa539d768e138a11",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (8).mp4",
+      "sha256": "8dfd2687b12cbea57ab16beb35140951d6d006bcc83ab610720a5da7b6500963",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20 (9).mp4",
+      "sha256": "c0b69b0a808279045c12ae58cb1efdcc292ddd95541f113806ee291abcd55d6d",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\videoOSN\\whatsapp\\real\\WhatsApp Video 2026-03-26 at 12.35.20.mp4",
+      "sha256": "82ce84979591e8c539c43a937f27beeacd977bba3d41c2d110bafe7fa0320659",
+      "label_fake": 0,
+      "source": "videoOSN_whatsapp",
+      "variant": "whatsapp",
+      "scope": "candidate_only",
+      "license": "upstream_terms_pending",
+      "ancestry_status": "unknown"
+    }
+  ],
+  "counts": {
+    "videoOSN_FFmpeg|1": 5,
+    "videoOSN_FFmpeg|0": 5,
+    "videoOSN_FFmpeg_aligned|1": 10,
+    "videoOSN_OSN_wechat|1": 10,
+    "videoOSN_OSN_wechat|0": 10,
+    "videoOSN_OSN_whatsapp|1": 10,
+    "videoOSN_OSN_whatsapp|0": 10,
+    "videoOSN_raw|1": 10,
+    "videoOSN_raw|0": 10,
+    "videoOSN_wechat|1": 9,
+    "videoOSN_wechat|0": 10,
+    "videoOSN_whatsapp|1": 9,
+    "videoOSN_whatsapp|0": 10
+  },
+  "decision": "candidate_only",
+  "reason": "Historical project asset; no license/ancestry acceptance yet"
+}
