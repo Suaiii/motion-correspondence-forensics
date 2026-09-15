@@ -1,0 +1,4510 @@
+{
+  "status": "candidate_only",
+  "rows": [
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107746.mp4",
+      "sha256": "02019451d54540954c88b240955c8080812afe610ba5495ee59c6ae77b62526b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107746",
+      "vript_clip_id": "-KOiDt2AOBU-Scene-059",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105492.mp4",
+      "sha256": "899d81148413100252c93c00d3a21c8dcc04fadf97c6783ff4ed7a26b086b83a",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105492",
+      "vript_clip_id": "-LmxPPktL7g-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100218.mp4",
+      "sha256": "271e69de61f718a1dab575095717cf9c85cae936229c6e4f9ccba8d9493c1fc1",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100218",
+      "vript_clip_id": "-Y6qudOekbc-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108564.mp4",
+      "sha256": "fdafc15a9038ecf0cf151a98eb566f108d5fcb87782136da4ce1bd94bf8b6f50",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108564",
+      "vript_clip_id": "--OvdeGNnHU-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108154.mp4",
+      "sha256": "e139e18e90e6dba41f54b378fb651b1b04875140b1ce7bf1c9a37bf6a436a338",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108154",
+      "vript_clip_id": "-Tznlx878UU-Scene-151",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111011.mp4",
+      "sha256": "822e54fa64c66e885bdfbfcf5a0affc66f6a2edb78d89f298330cc90e8233943",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111011",
+      "vript_clip_id": "-x_AkXpqlwE-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104860.mp4",
+      "sha256": "853fa83f624f38edcacea01ef8c2924e284b31eb6f063f85cc2e44d6504c1f81",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104860",
+      "vript_clip_id": "-UN7mGQNazo-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101852.mp4",
+      "sha256": "86b3219c8279b03ad4653ffc44762ddbf1623122a3c0cac2605de63fdcd720e6",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101852",
+      "vript_clip_id": "-JpO7VfMO8U-Scene-071",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106011.mp4",
+      "sha256": "2c345402a5f6a3a2bc28fbaa17d04b0e3e6227bf6f631571458e633bf51cd540",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106011",
+      "vript_clip_id": "-10AyOGp5Zg-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\2UrB8TI5El4-Scene-002.mp4",
+      "sha256": "4ddec89dcf694f6cf1d85871bedd78e149a42cfd30470844ef85fdd6a1ab1248",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-526429a7-bbb1-5118-81d3-b5994fe949a9",
+      "vript_clip_id": "2UrB8TI5El4-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100631.mp4",
+      "sha256": "fd897b10c20db1b89639ef357fc2360ec67000bf368cde988374676b766bb8ba",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100631",
+      "vript_clip_id": "-8vE8JrxABo-Scene-072",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-8vE8JrxABo-Scene-072.mp4",
+      "sha256": "939ac972026fa2152a64e4a69bf519d4e953f4b385066a605668a151820829cf",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100631",
+      "vript_clip_id": "-8vE8JrxABo-Scene-072",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-ZTYnOHBZxo-Scene-026.mp4",
+      "sha256": "bc4cc5ba2e954accb1ab0cb4bd1da58570b81f1df72b47f996cb51772266233f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-dd6d9097-ae33-5356-a648-289b85e7dcd6",
+      "vript_clip_id": "-ZTYnOHBZxo-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110622.mp4",
+      "sha256": "c0a2b4edf939279a06aac5829fe8834865e4ae00a7e21784ec568974cfadeb34",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110622",
+      "vript_clip_id": "-CTyTPlMLb4-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CTyTPlMLb4-Scene-008.mp4",
+      "sha256": "eaa3608f09b7a8ec2b01036e5f34c62175685c75e914ea6a621d7c0cbc2a26b2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110622",
+      "vript_clip_id": "-CTyTPlMLb4-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_11081.mp4",
+      "sha256": "1202272a453433ffd86d4d8a0f47feb9d79bc9430d91241785c3f65a4f57db68",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_11081",
+      "vript_clip_id": "-HFo_GBrXX8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-HFo_GBrXX8-Scene-008.mp4",
+      "sha256": "1af158853ab1e402e088fc614e33aa70dfa3097f0fa9f1833caa2822306b35f9",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_11081",
+      "vript_clip_id": "-HFo_GBrXX8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100003.mp4",
+      "sha256": "fc5631ad5cd5c3bcc1ce932b51b65fb82327df9597dc4131080e531d969bf496",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100003",
+      "vript_clip_id": "-A3BQgeLWS4-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-A3BQgeLWS4-Scene-009.mp4",
+      "sha256": "03ab1c139230b4020434dc1b8d86613150d3dab3dbbb9e8e6138ff2284192a1f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100003",
+      "vript_clip_id": "-A3BQgeLWS4-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-9Ykp-dH4Uc-Scene-058.mp4",
+      "sha256": "12ee99b925d552aa6b0a68cfc62b7302ca90d293095169552cd460267e8097e8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10777",
+      "vript_clip_id": "-9Ykp-dH4Uc-Scene-058",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101760.mp4",
+      "sha256": "f2411b4ea1ff92ded64dc5a83bafe55923da603e8409aecb0c1ced5c3ecc0fae",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101760",
+      "vript_clip_id": "04dXPkQov_k-Scene-037",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\04dXPkQov_k-Scene-037.mp4",
+      "sha256": "748b9f0836659c94f7dc8be2d37dc624b3dff32a3d0c93988862b95b8b184932",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101760",
+      "vript_clip_id": "04dXPkQov_k-Scene-037",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Cf-sry5VTo-Scene-002.mp4",
+      "sha256": "ad192ac2d27fcf397ecb18568a84a23fca1f52da2371ac950923951dc0429a96",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-96bec3b2-8cfa-585e-84f2-b61507caf087",
+      "vript_clip_id": "-Cf-sry5VTo-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-6EmIAvkQQQ-Scene-012.mp4",
+      "sha256": "961f09a64868354339f42200b34cb14a2c1b6620456e2bae025182d987692b1a",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-8c6b127f-c1a0-57d8-b790-86b30dd16573",
+      "vript_clip_id": "-6EmIAvkQQQ-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111751.mp4",
+      "sha256": "1c83d40af5564050d9f92939851121c40b2582fde85b5e05098ce5a1d8bbccca",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111751",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-057",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4TL1ECxSOI-Scene-057.mp4",
+      "sha256": "09790f3694139dabfc3a1cf513835f1972bdd5ac80e180fccf181c0d8931c237",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111751",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-057",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\4H8NUlg4B8k-Scene-038.mp4",
+      "sha256": "03ace4a966cc1f759d67722d2383e91b04b19baa77690c68dbd12b541fc73e09",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-4aaeb105-9a33-5ceb-9da7-487055c39cb5",
+      "vript_clip_id": "4H8NUlg4B8k-Scene-038",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-AEboTH-SR0-Scene-006.mp4",
+      "sha256": "40c60921d1260afb2f1f6aa3e170d72de4b51bf3f9c2a48c998a49143f3c4191",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-3733e4ff-2fa7-5652-bb39-3ff4ae35613c",
+      "vript_clip_id": "-AEboTH-SR0-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KWuh6hzi8E-Scene-284.mp4",
+      "sha256": "5984e3b5599ddd54f78ba499e191f561cda281a87d764e612f24052db0910acc",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-aad2a5f1-e858-5fd0-90df-3715c5f047e9",
+      "vript_clip_id": "-KWuh6hzi8E-Scene-284",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Uf7l2FlNg8-Scene-012.mp4",
+      "sha256": "950bb0c131aec5c9dbb460c6d7bf7d49454a2d813b0009b9affec33815b90575",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-9e88378e-d5a4-55bf-b8d0-bf44a20e1b4c",
+      "vript_clip_id": "-Uf7l2FlNg8-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104294.mp4",
+      "sha256": "5edd4da7f28a5826e2dd4b33e0e935ae960d9888b8eacb68f46431e109e4f5e5",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104294",
+      "vript_clip_id": "4hRJpjq7BZ8-Scene-065",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\4hRJpjq7BZ8-Scene-065.mp4",
+      "sha256": "a9a7aa6f1820072f4d2e046f98172bb3a8905776d31d876d4d3253ce29c165d3",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104294",
+      "vript_clip_id": "4hRJpjq7BZ8-Scene-065",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Fi56RPKZ9s-Scene-044.mp4",
+      "sha256": "2583107df4b4e9f1abe8e14d0bdb10b61f8d9dbdc056bc14b2ddacdd22c4175d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-ba5890ff-5985-5304-a553-5879c2e2c0c4",
+      "vript_clip_id": "-Fi56RPKZ9s-Scene-044",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-F3M2EGP_C4-Scene-071.mp4",
+      "sha256": "e26b0adb0025f35f8f1c052b6f532fc715a7037c843ee37ef14687434997a57f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-2c837715-8ddb-5915-8d1d-19246b51a06c",
+      "vript_clip_id": "-F3M2EGP_C4-Scene-071",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-eIdjS6PfH0-Scene-053.mp4",
+      "sha256": "ba6b909a3dea63d356372575d168dd285414ae7ce9b4c491f06c19882e1dfcbe",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103614",
+      "vript_clip_id": "-eIdjS6PfH0-Scene-053",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107908.mp4",
+      "sha256": "63f3db766e1ef41ff6780c0464606f0ed4352a5e7b12105e3a5d7b658fd2fbdf",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107908",
+      "vript_clip_id": "-eIdjS6PfH0-Scene-049",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-eIdjS6PfH0-Scene-049.mp4",
+      "sha256": "db10ef96479a58634ec96f4b987466fc79140257ac7b7febc4d40140c34a1ef6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107908",
+      "vript_clip_id": "-eIdjS6PfH0-Scene-049",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-6FvAU9H98w-Scene-014.mp4",
+      "sha256": "26074845c800ea9faf4f233b7e13f0d3cb8f00aef718937a91cfcb35772f3e22",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108429",
+      "vript_clip_id": "-6FvAU9H98w-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106228.mp4",
+      "sha256": "087d0cac85bccf6bf988ded8e8da6c27a8050e66c0cc43c0c1b9149e2cfb3836",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106228",
+      "vript_clip_id": "-GOxO3d3IAk-Scene-033",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-GOxO3d3IAk-Scene-033.mp4",
+      "sha256": "15cc4983d971c1622f0ea6dfec81399c2ad2f77c6bd964f9405a70bbb28294e9",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106228",
+      "vript_clip_id": "-GOxO3d3IAk-Scene-033",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111306.mp4",
+      "sha256": "2e2dac429a07512b6da7ef5e11ccd9a0a95d0693e5bacd6f3640e336b0938f38",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111306",
+      "vript_clip_id": "4hRJpjq7BZ8-Scene-057",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100090.mp4",
+      "sha256": "0db3984758a764d3314c9d3f0d80477abebc8bf8876f3096de36007cad92d7e9",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100090",
+      "vript_clip_id": "3SSnfUMxhw8-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3SSnfUMxhw8-Scene-023.mp4",
+      "sha256": "c2d1c0d7d9eb1b5f494d4d52ea30ec454cb76702a04f6babe207dc32f4a628f3",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100090",
+      "vript_clip_id": "3SSnfUMxhw8-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101521.mp4",
+      "sha256": "f37eda1615f72bd76cdf87cf90457c170e935f4b4c95b5d96485d8f6ef301a09",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101521",
+      "vript_clip_id": "-5WRcWRQQkU-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5WRcWRQQkU-Scene-028.mp4",
+      "sha256": "d62dea331998fce4f68e3f04b68dfaab69ce96438b2638163eb7d634045b61fe",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101521",
+      "vript_clip_id": "-5WRcWRQQkU-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-N-x7FHBgB0-Scene-031.mp4",
+      "sha256": "f94ef2621a3362c6b808f426184019a92cc8d0bb833d9a6907ec7be7c7916a2b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-ada2999e-b161-5f71-a054-c7e90dfbd417",
+      "vript_clip_id": "-N-x7FHBgB0-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Bm7Ny7vrYc-Scene-035.mp4",
+      "sha256": "0a6b031b8e1f53ec9a4a5e13c4d200ba5ad364cbf463ff1e2907c43b15b21e77",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-d3dd4cac-1438-5d8e-b56f-9dea86430de6",
+      "vript_clip_id": "-Bm7Ny7vrYc-Scene-035",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102872.mp4",
+      "sha256": "40e622c50b84eabf95f69080b7dba35d693109e5bb78a14b856ca90e584cae16",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_102872",
+      "vript_clip_id": "-TiMuV_xAM8-Scene-037",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-TiMuV_xAM8-Scene-037.mp4",
+      "sha256": "1844570c2f911f74157038f2e46dbbae5baa8681615641e32755c10ee873cf20",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_102872",
+      "vript_clip_id": "-TiMuV_xAM8-Scene-037",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10847.mp4",
+      "sha256": "b90b9eba6dabaf3bcd9b845935807fd25036a9fdd34959eae29d1d7b864c7e32",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10847",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4TL1ECxSOI-Scene-013.mp4",
+      "sha256": "42e334faaabfab37b4fde8ff57340345d37e3ddd5a3f78482f6358d96980e917",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10847",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-ess9yiXH1g-Scene-049.mp4",
+      "sha256": "1b8888c89a5204f97a6ed060d6d7160d2d5f8f42294ac1914610ac5412251eea",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f150a7ef-8987-5610-8ba7-69ea3bde15ac",
+      "vript_clip_id": "-ess9yiXH1g-Scene-049",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-10AyOGp5Zg-Scene-071.mp4",
+      "sha256": "c0ed4f306d595e2c0fcac3c5fd5d32a9cfb6b11e5069a4d2a679d7a5b9d3c627",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-d878522c-5d22-5769-a99d-8a03bdecf654",
+      "vript_clip_id": "-10AyOGp5Zg-Scene-071",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10742.mp4",
+      "sha256": "c35757971a45e09d00c7b49d64362c8b2905bb092cd4192c28526619481b8328",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10742",
+      "vript_clip_id": "0aWdFNNNrmU-Scene-080",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0aWdFNNNrmU-Scene-080.mp4",
+      "sha256": "7618bacb7125d7db7a31af92e1644219694c9b1fee61d7cdbf0938bba9a0b225",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10742",
+      "vript_clip_id": "0aWdFNNNrmU-Scene-080",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tznlx878UU-Scene-010.mp4",
+      "sha256": "f1bc1aad4c61b1a5bb4af8c264ad78138d4cf2b00f509f5cbdbb8a1760d88879",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-16bdd50f-54fc-5241-b5dc-db59eb8d7117",
+      "vript_clip_id": "-Tznlx878UU-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100066.mp4",
+      "sha256": "ced636782fab93889461481f091e629bd13316248d0c6e10c799e697500c4b06",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100066",
+      "vript_clip_id": "-Hm8VhNinkE-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Hm8VhNinkE-Scene-006.mp4",
+      "sha256": "db4a06f4eedda465be24535be422003d28afaeefa5dcc9f4a2324a8dd2ffd26d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100066",
+      "vript_clip_id": "-Hm8VhNinkE-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10699.mp4",
+      "sha256": "02451dee21a536b9cefa769d07cb75485e7fd1fb4b525c0a2178f216f4ebcd6a",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10699",
+      "vript_clip_id": "-Tznlx878UU-Scene-089",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tznlx878UU-Scene-089.mp4",
+      "sha256": "0288abffdfc17b9f9fd61879e710f8c1883f64c0d789373552b9cd0f9621c591",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10699",
+      "vript_clip_id": "-Tznlx878UU-Scene-089",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104023.mp4",
+      "sha256": "34f5192810e21c88013d01f51f2145ed2616afff9af036730396e019e369b103",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104023",
+      "vript_clip_id": "-6AcmVWuiWQ-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-6AcmVWuiWQ-Scene-028.mp4",
+      "sha256": "c837a72cec46df08417a825141b39b3cc0c40bb14532febf50ac27f699d756b9",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104023",
+      "vript_clip_id": "-6AcmVWuiWQ-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-dmGMYehUXo-Scene-053.mp4",
+      "sha256": "bf53c34c530235e3a3a4dd9e451d208bba01b22111bd09d25236b4466dfda1c9",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103660",
+      "vript_clip_id": "-dmGMYehUXo-Scene-053",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111589.mp4",
+      "sha256": "e0ba8bef5459ac61b36f27e88cfbcde4496cae99ffda9679e030b37d32346e30",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111589",
+      "vript_clip_id": "-AZJlsx67aQ-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-AZJlsx67aQ-Scene-018.mp4",
+      "sha256": "7726d8fe3ec6d536d0a890a1a12188e83523a899c575e2a329e629030960032c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111589",
+      "vript_clip_id": "-AZJlsx67aQ-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100391.mp4",
+      "sha256": "b39d9803c79ae76afb4ac146873d9788b3f07ba69b9f60db4819a8eb543f37e7",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100391",
+      "vript_clip_id": "-6_SVE43AL4-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tznlx878UU-Scene-038.mp4",
+      "sha256": "70f3db28603d657b7522486a81dbeecb52cab8bfe9e90576c539dab4707e89ed",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104436",
+      "vript_clip_id": "-Tznlx878UU-Scene-038",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-W6t2puO30Y-Scene-018.mp4",
+      "sha256": "9f1df1cfd897d231a87d2f34f7ecc3e8bd89afdf708bc80e8a53a53d6fdc3391",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-57379abc-4f4c-50e5-ae22-5da52d7049ca",
+      "vript_clip_id": "-W6t2puO30Y-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-GwYVin5bb4-Scene-062.mp4",
+      "sha256": "ba0d1d20050f2a2cbf39bedfbcb309337d003adb6d541b7a61b385ea8694ed3e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-b17af501-02c1-577e-8b5c-d4ce66b42c00",
+      "vript_clip_id": "-GwYVin5bb4-Scene-062",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107618.mp4",
+      "sha256": "adc37e94b647a2d8ecdc9f1cc55ba2e481348204d9106536871069e29ef10b94",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107618",
+      "vript_clip_id": "-N6RDYsxgVg-Scene-019",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-OmQkHMRnyM-Scene-113.mp4",
+      "sha256": "d637c534e34784f0189dc318cf58213a8d706027822d5e1b5ab9801a5dc19522",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-934433c3-2ffa-507f-acf3-0f953506d9bc",
+      "vript_clip_id": "-OmQkHMRnyM-Scene-113",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111197.mp4",
+      "sha256": "25385133ce5fdbf217b54258b479a456302e1284ffe174c95a9fe70ec13f33e3",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111197",
+      "vript_clip_id": "-1xu0IP35FI-Scene-004",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-YvNbtrqZD8-Scene-010.mp4",
+      "sha256": "5fe6de242d30eab354c713da9943a90797de58241ddf261f6a7d66375074aeb7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-76cd9548-f4a0-57f2-867e-4f770248b301",
+      "vript_clip_id": "-YvNbtrqZD8-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5SwT0AvKYg-Scene-003.mp4",
+      "sha256": "46b2ff02c3c220f9f845a2d9aca83cfc0f80b697da129c77d193e911bf543f10",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-60527b47-6e47-5e33-af50-7e2fcd4a49fb",
+      "vript_clip_id": "-5SwT0AvKYg-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\4H8NUlg4B8k-Scene-052.mp4",
+      "sha256": "69b84e2dda1eb4ff028501c8ed4c1065236de446f1a5a2e77f94930fc9d18790",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-8f3430b2-bb2b-5b4f-8d4b-436427912825",
+      "vript_clip_id": "4H8NUlg4B8k-Scene-052",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3UHTQdotAzk-Scene-021.mp4",
+      "sha256": "943f20dc2e07b4f9cfdcabb020b9ca82144d396b770ba8fe5d99a36f9defb0c7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-3c943fdb-f87d-5cd1-8a69-bc81a732fe2e",
+      "vript_clip_id": "3UHTQdotAzk-Scene-021",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10955.mp4",
+      "sha256": "c226f84aa2e411d7b24df905b6e600f4f8aebc806944e63a7f7566b190cdfb2b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10955",
+      "vript_clip_id": "-X961YvOPDc-Scene-040",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-X961YvOPDc-Scene-040.mp4",
+      "sha256": "c52d5a1f9acc51e3a73d258049737a6eb09b0af9b343de893f8e523a3a437714",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10955",
+      "vript_clip_id": "-X961YvOPDc-Scene-040",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5KkcZCSAFE-Scene-020.mp4",
+      "sha256": "3089621212d97b03e9c11315b43c2b4fa5c653d923a26fa7a2612ce525e85a57",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-01102077-8cc7-5bdd-a948-e135498c9a6f",
+      "vript_clip_id": "-5KkcZCSAFE-Scene-020",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-7BKjOyJrk8-Scene-049.mp4",
+      "sha256": "0e9a628a92767ca2758e92adbe1beeaefbf8d82e7ac92f2198ce1fb3a533645f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101755",
+      "vript_clip_id": "-7BKjOyJrk8-Scene-049",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-AxBXLwxZNU-Scene-041.mp4",
+      "sha256": "8f833e3c6bac658253f0172fa7d56dccab9f7a5da6731b6f6d8e12f4b27f1cf6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1bed5736-1f49-5b78-9ecb-201ebc1457c7",
+      "vript_clip_id": "-AxBXLwxZNU-Scene-041",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3Ln4TFCDHg-Scene-015.mp4",
+      "sha256": "90a64c66eff96d682fa532d88e3e4dc620ae3e308ff2c24d1114747c6bf8d843",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-686b956f-413d-5d6a-9e7f-988b1112134a",
+      "vript_clip_id": "-3Ln4TFCDHg-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Xe9ATwapx8-Scene-012.mp4",
+      "sha256": "f8ab753284cacc2870a00732b5b188ce0765f00960fcad2926e19423c094098d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110711",
+      "vript_clip_id": "-Xe9ATwapx8-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-BTZgCL0Xgs-Scene-006.mp4",
+      "sha256": "0a3a661abab79ad41957c216caa289140bb197b04eaa288abb1c1b1883d0f072",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-8c905257-a60d-57bb-97fd-ddb863aaf095",
+      "vript_clip_id": "-BTZgCL0Xgs-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100195.mp4",
+      "sha256": "3370ed268da89f03d930a6a9d6458ca967f62a1869c3ff95b31c1e6aa3a83b8b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100195",
+      "vript_clip_id": "-asXqS-DUnM-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-asXqS-DUnM-Scene-002.mp4",
+      "sha256": "eabb92bc7024d137d67ca6e67c31695710b3c77007f93f473c12f169bacf62b2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100195",
+      "vript_clip_id": "-asXqS-DUnM-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108198.mp4",
+      "sha256": "3b3316fad14f4e82167a58230b7943c2084f0a6871cf428c87251f1bbed28245",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108198",
+      "vript_clip_id": "-W954LYAU1k-Scene-041",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-W954LYAU1k-Scene-041.mp4",
+      "sha256": "f80ee5d58406bc0641ba01b27e80c46db30c77423e68eae4f4b42559625cba4e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108198",
+      "vript_clip_id": "-W954LYAU1k-Scene-041",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Yj7NpQBBvE-Scene-008.mp4",
+      "sha256": "e37cfecdd46e0c5dae2a5f74c043d40402f7569e4510095f8a8058ef33b0b3a4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1483e094-4b30-5957-9876-8272851f9741",
+      "vript_clip_id": "-Yj7NpQBBvE-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106979.mp4",
+      "sha256": "0220bc19362467e7f97232f3f8311abb9e3d972f5492f35cb905fbb157f0d145",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106979",
+      "vript_clip_id": "-0fnGi9g4ho-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-0fnGi9g4ho-Scene-007.mp4",
+      "sha256": "349286ecf192448e777a32a03ae5df374098547a6fc320c4fb6ec2b7a1fe476e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106979",
+      "vript_clip_id": "-0fnGi9g4ho-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-vFBdDlA0Mw-Scene-008.mp4",
+      "sha256": "d84c5e241e3657d0bc36f31dfa8fc2c0dfaa8616aff72b9d521b27a0185a4289",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-2df908e6-1234-5cbe-9624-a633ec47faa3",
+      "vript_clip_id": "-vFBdDlA0Mw-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-BDQmaMlb2g-Scene-089.mp4",
+      "sha256": "83989e8e15f47b30728912f493e5ba11c770bf9c14356ec5382d98603465d2d9",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-da1655b2-7531-5a50-b5c1-67f19b16ed16",
+      "vript_clip_id": "-BDQmaMlb2g-Scene-089",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100441.mp4",
+      "sha256": "14801d59771b903fd2389ceaadeaaa9788bc3969f7bc7f40fabf037e518c2c17",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100441",
+      "vript_clip_id": "-Iq8pl1Bq3Q-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Iq8pl1Bq3Q-Scene-012.mp4",
+      "sha256": "77b0f725f452b6901598326e80203772f757151df9155d04cf9e4374b4c91a56",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100441",
+      "vript_clip_id": "-Iq8pl1Bq3Q-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100381.mp4",
+      "sha256": "088bf00cea6ce6601fb75df2c36a71f54f0ab3b59976d1fd7aff65617d1ff01c",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100381",
+      "vript_clip_id": "-WNejC-cC6E-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-WNejC-cC6E-Scene-017.mp4",
+      "sha256": "53731544b1cff93495f0e558c65be775fef88e5fe8191bc13fb3e998113045d2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100381",
+      "vript_clip_id": "-WNejC-cC6E-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5ReoIc3C_o-Scene-009.mp4",
+      "sha256": "acdd6651d9fe710027dc9989921521fb5ac592c028f220a33ce8f0da69028076",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-88088860-1e9a-590d-8b33-230a027bada6",
+      "vript_clip_id": "-5ReoIc3C_o-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-QzavgI58HM-Scene-015.mp4",
+      "sha256": "eac4367f530c97072bf1525876c937d5150f75da6f8a80d84dad72692242ca76",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-988c2f0e-80df-5902-87e8-b167af64ea61",
+      "vript_clip_id": "-QzavgI58HM-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101406.mp4",
+      "sha256": "250b323560f8d8d70ca7c329706583828818f7e74744250ebb7020f567ba29c5",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101406",
+      "vript_clip_id": "-THy8MfI-aM-Scene-061",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-THy8MfI-aM-Scene-061.mp4",
+      "sha256": "0638d2e3c988195ed098372277f417d168793e69f00456200d34cb6e83688beb",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101406",
+      "vript_clip_id": "-THy8MfI-aM-Scene-061",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-7ZsH3f29GM-Scene-035.mp4",
+      "sha256": "77d3a4f208f277055f5e1920f90e397b5e14156088dbf90d97466926fbcb8d3e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-7d3e4a29-cbd0-548c-b6b5-dd3612a88995",
+      "vript_clip_id": "-7ZsH3f29GM-Scene-035",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CEda3luJyk-Scene-037.mp4",
+      "sha256": "c722ba4b63e1f5f4660a90132ca06354e670edac9f0fecc79d3f03a3cd809678",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111928",
+      "vript_clip_id": "-CEda3luJyk-Scene-037",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-AEboTH-SR0-Scene-008.mp4",
+      "sha256": "fa793a690ffc3017fca573dcc8ca825936e70bec47142271517e07dd4651ce7f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106149",
+      "vript_clip_id": "-AEboTH-SR0-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5zwc5pE4AY-Scene-138.mp4",
+      "sha256": "f4485a8a7c19aca3bc7d5462b4529b60f73590468604580dc9e273c44e832d96",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-8c5cde05-0e76-59dd-a11e-656015e63d42",
+      "vript_clip_id": "-5zwc5pE4AY-Scene-138",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-YrzhjsISkE-Scene-003.mp4",
+      "sha256": "c985c94582627e4b2df15bb059dd5dee019fe8c100e94729d4ac6a77e0f55f91",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-96393906-0386-5229-9134-34b457dc36ca",
+      "vript_clip_id": "-YrzhjsISkE-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-RXlZ5yFVsc-Scene-024.mp4",
+      "sha256": "94db31e8393a42f39f8d76c0718e1ded18fea200bda7224479f5215cd3ee8df1",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-359015ee-a779-5990-9dab-8271f4cb6d5f",
+      "vript_clip_id": "-RXlZ5yFVsc-Scene-024",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108804.mp4",
+      "sha256": "be0983ed3069eac8dd88d51d39782f1f37c645892788a27ba0df5abcc9cc6a46",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108804",
+      "vript_clip_id": "-Jw-v1jFuH8-Scene-117",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Jw-v1jFuH8-Scene-117.mp4",
+      "sha256": "1f54b9ee94b0fc066aeb670657e362ccff2fd497b14ae8c0a7875ec6dc419aa4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108804",
+      "vript_clip_id": "-Jw-v1jFuH8-Scene-117",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107214.mp4",
+      "sha256": "b463faecabb2d8676867cee3d3433342bd125cd5aca17ae3c7eb7d34f495207c",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107214",
+      "vript_clip_id": "-PFYthpdEIU-Scene-047",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-amGWduQWe4-Scene-037.mp4",
+      "sha256": "7dcccf9e3757eb922cfa0fe0f904953bedbfdf88cd2a6a49fcbb7edb9d7c64e6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-88ed6271-e725-5610-840d-27fd93c936be",
+      "vript_clip_id": "-amGWduQWe4-Scene-037",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-UtgWpEDYjU-Scene-015.mp4",
+      "sha256": "ab2d2b07788987f566ce1ba51509ea673f7c584115fcaba049fb9cc95d03bfea",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-c2cb4e6b-91f2-556c-8b16-1b732b6ccc07",
+      "vript_clip_id": "-UtgWpEDYjU-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103210.mp4",
+      "sha256": "b756b1cee42b2253682efc3101b204f6444223e84cbd74f74382ab07d5f6f5ef",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103210",
+      "vript_clip_id": "-N0a_nBRfcM-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-N0a_nBRfcM-Scene-025.mp4",
+      "sha256": "9882f50066569b427598d2b0d4396cb4f1b5e0a28edf254ff28165a96f1ec31f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103210",
+      "vript_clip_id": "-N0a_nBRfcM-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5zwc5pE4AY-Scene-130.mp4",
+      "sha256": "2692ee55c300829925ac09c25d04e3e396f47ba9d1239533a071e98b8bc2922d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-2ce5ccf4-508f-5a20-be91-fe7db8650a9f",
+      "vript_clip_id": "-5zwc5pE4AY-Scene-130",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4TL1ECxSOI-Scene-204.mp4",
+      "sha256": "54eae1e56d331105a86ef149fb8182ca69ebf373cd0a5b67f720e57a7e2129f0",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-dfb47f8a-6105-54bb-b2d7-09f9b2ff1f6d",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-204",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-7BKjOyJrk8-Scene-035.mp4",
+      "sha256": "e555fc662d3b392da873ecd3dc8633842d9c1e7bc712a76cbafaeb593375a8c6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-72a0a41a-8c2c-5ed2-b0f0-cc94d27db409",
+      "vript_clip_id": "-7BKjOyJrk8-Scene-035",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109938.mp4",
+      "sha256": "f57bed9ad89c7a175221ca972aaf38f7a7a77d01b8e40176cf7796e33947249f",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109938",
+      "vript_clip_id": "-c88ZCPF10M-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-c88ZCPF10M-Scene-031.mp4",
+      "sha256": "32ab7f1233d31c7daead1d57b79d4752348d0909203a1d19cce1e4507598aa3d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109938",
+      "vript_clip_id": "-c88ZCPF10M-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110387.mp4",
+      "sha256": "de82ec35bb61439118a99a7f38c74cc9ead7dcf4c456f683a970ef771831cf72",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110387",
+      "vript_clip_id": "07imzl22ANE-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10719.mp4",
+      "sha256": "19ba4227592a9fe6c27b3aa87fd433502e800b4ec5c1fc51c98c8d090a3c8b2b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10719",
+      "vript_clip_id": "-DZAKPtxf-Y-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-DZAKPtxf-Y-Scene-031.mp4",
+      "sha256": "a924ac9096699656cf197adb52437c08fdb34457fe576764d2d494a1fd315f45",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10719",
+      "vript_clip_id": "-DZAKPtxf-Y-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tznlx878UU-Scene-516.mp4",
+      "sha256": "796008e0e75425c1c46ba1a18dd70aa5832d723083616133522a91e645022d81",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f57d8de9-7012-51a5-828d-913cc1a2e51f",
+      "vript_clip_id": "-Tznlx878UU-Scene-516",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-ScL5hfjSZ8-Scene-002.mp4",
+      "sha256": "78d54f17760435df2994fc294ed166694aab9a471773e1e194ab30ad7e23ad9c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-6e10d97a-9b4b-5a90-ad21-12c985ea7770",
+      "vript_clip_id": "-ScL5hfjSZ8-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-E2IPygbwJ4-Scene-038.mp4",
+      "sha256": "48c7be9839bbbd760a071a2d000d865330d95caa9ad903c7c96449c1e8e9cca1",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101254",
+      "vript_clip_id": "-E2IPygbwJ4-Scene-038",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107523.mp4",
+      "sha256": "b492466df622d4720963101e25476849149ec2fdd509a8c0e62a3bd9f4bd168c",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107523",
+      "vript_clip_id": "-Sp9YDoNCII-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Sp9YDoNCII-Scene-008.mp4",
+      "sha256": "f33b415d2953a4c5c70874ddcc778b6c5b2f71cebbda93cf27f2ba2453d008e7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107523",
+      "vript_clip_id": "-Sp9YDoNCII-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109774.mp4",
+      "sha256": "507804d0b637372b9e3799cb16c67f39a348ea2cf597dd5a1e2e105387cf63f3",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109774",
+      "vript_clip_id": "-MvwZfAiaiY-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-MvwZfAiaiY-Scene-015.mp4",
+      "sha256": "389aa5502a3e72daa1ab76602c3409c210316985c8f531ec0561103639aab436",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109774",
+      "vript_clip_id": "-MvwZfAiaiY-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107342.mp4",
+      "sha256": "89f94ede49e9149bb28f0f7b5f16f577aebdadacfaa75c2b9cacec5032cb0611",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107342",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-040",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5kkT_RBHk8-Scene-040.mp4",
+      "sha256": "c2e39f85b80533f9e8ef00da623c45c0541a10e23a1408f5ef3b63d2a627c685",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107342",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-040",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-7ZsH3f29GM-Scene-006.mp4",
+      "sha256": "358bb80b506799256c1c423c06ce03f55555eaa277af81bb19609ba46d682614",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-3c98d84c-7372-54cb-9a35-e87562863e6a",
+      "vript_clip_id": "-7ZsH3f29GM-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102418.mp4",
+      "sha256": "f240867aea006df6feeead74c58c6496af59069214852eac13a10c69c79d303b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_102418",
+      "vript_clip_id": "-5H0fVLKk6Q-Scene-033",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5H0fVLKk6Q-Scene-033.mp4",
+      "sha256": "11c1596c3663b2b9fdbb22fe5fa4ddf9dbbc3dc90869690b84f0a9bd073864ae",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_102418",
+      "vript_clip_id": "-5H0fVLKk6Q-Scene-033",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110126.mp4",
+      "sha256": "2ba810c4fb3a89a7931562ff2d2fadd135408a65e08a6e96072849611b567494",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110126",
+      "vript_clip_id": "-8ON1ubutq4-Scene-169",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-8ON1ubutq4-Scene-169.mp4",
+      "sha256": "cccb5a51e9207c20ef5d699db38dcc5dddcb82067a580d91b463d87dc646139c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110126",
+      "vript_clip_id": "-8ON1ubutq4-Scene-169",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5svSJkTUw8-Scene-008.mp4",
+      "sha256": "c1c122a0bfdb7d1ef785c4620a2202b721628f2b146326771a96c93bc958fa72",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f3eaf435-c324-5b87-acba-0710b56bcdea",
+      "vript_clip_id": "-5svSJkTUw8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-XF-d6lLy7U-Scene-001.mp4",
+      "sha256": "2ade30cd7367256c94115846801cfb4939fbf5ddea9cce98daf16be09f4f8912",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-01ff5e14-5b68-537c-a41f-802c53591220",
+      "vript_clip_id": "-XF-d6lLy7U-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-8ON1ubutq4-Scene-003.mp4",
+      "sha256": "3ce5c353e28442d3c12c9fb24bf36261effa3767860e16d213cc80e29e3572e2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-2304e47b-7c2e-5015-870a-0aa18914a9b9",
+      "vript_clip_id": "-8ON1ubutq4-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10853.mp4",
+      "sha256": "046abd45568c336a344314766fa21ddbd8f4592a5fde7822adeacd1b2d3d4a29",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10853",
+      "vript_clip_id": "--FQi0TgjRU-Scene-048",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--FQi0TgjRU-Scene-048.mp4",
+      "sha256": "ede90944cc3f90d03df3b0206025beb04ca5a5575af850e5a1f26cfbaa0b45f7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10853",
+      "vript_clip_id": "--FQi0TgjRU-Scene-048",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-c88ZCPF10M-Scene-126.mp4",
+      "sha256": "c6a8350c5ea049aa3dc281c41ab215cefcfd6f2af3ecd6d85522406ec47fb2f7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-d0217564-76d0-58ed-a1e8-f1448babdecf",
+      "vript_clip_id": "-c88ZCPF10M-Scene-126",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100933.mp4",
+      "sha256": "9b55e39dfedf9a07bdaa8039af69af82c4fe9e9e4b093683abcdf7f2a591b15f",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100933",
+      "vript_clip_id": "-d_eU-eho9I-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-d_eU-eho9I-Scene-007.mp4",
+      "sha256": "dca2738795225a225c5fc12da23a4858f20cb51da42357827aa406341a8ea873",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100933",
+      "vript_clip_id": "-d_eU-eho9I-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-pKXgxlRQ5g-Scene-036.mp4",
+      "sha256": "e2f7e5aa4a1908d394b2b8391acaa1fbe76fc4fad6660859d85c8e6a144c1bc8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105829",
+      "vript_clip_id": "-pKXgxlRQ5g-Scene-036",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-_CVb4eBYyc-Scene-043.mp4",
+      "sha256": "b5f18485b3df9c26382fb27f90f6cee767f0fdcd210f66a24747034d9cb7ebdf",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103363",
+      "vript_clip_id": "-_CVb4eBYyc-Scene-043",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-8ON1ubutq4-Scene-022.mp4",
+      "sha256": "7760f1ba491d761583aa406423ec04965711f08db12a1cd8b5ba5a163e959d94",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-747c6d45-1b97-502e-81d9-6012c8e7563e",
+      "vript_clip_id": "-8ON1ubutq4-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-n3CDfw5J4k-Scene-032.mp4",
+      "sha256": "9c235cd83db154d4f513c1d02574baca04e3ad9290477c5a0fe10b270cc38e58",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-ec9c38f5-889c-58e6-80f8-1db0541e82dc",
+      "vript_clip_id": "-n3CDfw5J4k-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106455.mp4",
+      "sha256": "c326fffe5f944d6f6da18e67a46f16e2ab7bd07055cd027ebb32676e94e0bc49",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106455",
+      "vript_clip_id": "-JYL0hw19dA-Scene-019",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-JYL0hw19dA-Scene-019.mp4",
+      "sha256": "9b75b095bff84f0b1830c0239c64c866f2995b7adc6afb1003f702fbaa6a636c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106455",
+      "vript_clip_id": "-JYL0hw19dA-Scene-019",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-o1zLdPEkBU-Scene-030.mp4",
+      "sha256": "11129a3d62e3ae7bc63472e339121c8ebd6c9f4a786d6060160d35029e4f743a",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-9269c869-3185-5022-a217-23faa06676a5",
+      "vript_clip_id": "-o1zLdPEkBU-Scene-030",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-HsVkwyi-mk-Scene-033.mp4",
+      "sha256": "9d65f4e6ad388e3bfb56ee9fc85097f33717d792fbe1a70a04c40efeef1373be",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-621dcc36-87cd-5231-960f-079a26a632c5",
+      "vript_clip_id": "-HsVkwyi-mk-Scene-033",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-FBtcql5EI0-Scene-009.mp4",
+      "sha256": "09d0798a5c7a2980802befbf64345cc01b5222d18666e91260baa36c1d73a77e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-ef632e77-c36b-5956-b1c0-9e28192242f0",
+      "vript_clip_id": "-FBtcql5EI0-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-ARKuckdQt0-Scene-012.mp4",
+      "sha256": "8c56ba0de82e97e1b0c0708c106859cacd28a676e91193d414f3654624e998ad",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-da5dbce1-2007-5e7c-ad01-bd171ffe7eaf",
+      "vript_clip_id": "-ARKuckdQt0-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--r2SGSVdQs-Scene-006.mp4",
+      "sha256": "e7cb2d4e1ad42e6cbdba7341368a54474d9c5b2f7368408586447b567a098c46",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-edadccff-7a93-5464-8b81-7b0ba934d63c",
+      "vript_clip_id": "--r2SGSVdQs-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-YrzhjsISkE-Scene-046.mp4",
+      "sha256": "6032a52baa1572eae8992226294fabe3e3a52297f801b65544250bef2874071c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-dd905778-2122-5698-8e5b-6ee507bb553f",
+      "vript_clip_id": "-YrzhjsISkE-Scene-046",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KBhyFrYpx8-Scene-016.mp4",
+      "sha256": "6c1c4ba9d6c6614550b8305ea38d0e8ceea51475daf115fb41e91b2b6e3b6c07",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-6a2743be-f13b-51a9-85c0-1427cf12acf7",
+      "vript_clip_id": "-KBhyFrYpx8-Scene-016",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Z3priQFMeE-Scene-057.mp4",
+      "sha256": "49928ef2f819c1971b7a7a5507826a85db7df7032e740108fa44345d89180f08",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-9a33d871-22bf-5137-af23-55a2b8eb18a6",
+      "vript_clip_id": "-Z3priQFMeE-Scene-057",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105845.mp4",
+      "sha256": "aaf530b0d1ce986eb43df3a39e822e97574f28fe4bdfb969b7b8bff78e0cd57b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105845",
+      "vript_clip_id": "-BDQmaMlb2g-Scene-084",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-BDQmaMlb2g-Scene-084.mp4",
+      "sha256": "8c2cf0ecfa6a9f755d47cffecaade6f848dc79b962612e554d118e41b5a1473f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105845",
+      "vript_clip_id": "-BDQmaMlb2g-Scene-084",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-O6k_vrDeUk-Scene-015.mp4",
+      "sha256": "272fa2f4cdb1699a86ba06e1e814f996b7a14829433119498e08aa6152b22cce",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-c19d3686-1573-5011-a35f-65d9fda88b14",
+      "vript_clip_id": "-O6k_vrDeUk-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103022.mp4",
+      "sha256": "da997dadd19efb814b86ef25d5c23d0d42c9fd1377144ef6e8a04bd1d2afcd71",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103022",
+      "vript_clip_id": "-eVz_57V3Ho-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-c88ZCPF10M-Scene-175.mp4",
+      "sha256": "20b3b473511726246b666d6640469247ba405007fd2e9e3ca60de0ba10b7dec6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_094",
+      "vript_clip_id": "-c88ZCPF10M-Scene-175",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110701.mp4",
+      "sha256": "b65143df2680902a8eb82fa0c3b697e4ec1fd6659e0911098857188dcaf2dca6",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110701",
+      "vript_clip_id": "-IGfBGHDHRc-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-IGfBGHDHRc-Scene-007.mp4",
+      "sha256": "5c30e66b62ee972087aa8e75dba8babc73c418fc40d561e327ce19c687f06fa0",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110701",
+      "vript_clip_id": "-IGfBGHDHRc-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KwyjL2Sbro-Scene-003.mp4",
+      "sha256": "89449fe32887e6d63549880daf7e10f1c82d2c32bb882fab50a7eb5a22e7695c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-7ebe4584-17fd-5806-be44-49bc4a407c78",
+      "vript_clip_id": "-KwyjL2Sbro-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KBhyFrYpx8-Scene-036.mp4",
+      "sha256": "5a06206da7d25714647953ad89af963b921b5b9b0627955d72a06d12b1c404f5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-55fb6861-2b30-5ce2-b06c-974c41348025",
+      "vript_clip_id": "-KBhyFrYpx8-Scene-036",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108107.mp4",
+      "sha256": "f0376319439178ea5772175f1923dd8dbb796f3cddd2d528d44ce521106b82b0",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108107",
+      "vript_clip_id": "04dXPkQov_k-Scene-075",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\04dXPkQov_k-Scene-075.mp4",
+      "sha256": "29521ed4ea99e92df59b64ce69e9abccc400e602aa74055de8a3c9b8916e3f44",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108107",
+      "vript_clip_id": "04dXPkQov_k-Scene-075",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111869.mp4",
+      "sha256": "a3f9ba74132befd49389515a9c3ef7a5c971d007813aa7ffde667ef659fa787e",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111869",
+      "vript_clip_id": "018Uo2HNTQk-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\018Uo2HNTQk-Scene-028.mp4",
+      "sha256": "098479a5ba5858596028c792cf5f2dfd715aeebfad31125c223357f6f4ad6453",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111869",
+      "vript_clip_id": "018Uo2HNTQk-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4exm90cQrw-Scene-005.mp4",
+      "sha256": "0185452a7cdefb7940797e904a778678a71641d3af9296a79fb7d8fee8187d0b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-934effb5-5a20-5012-89f4-af243ca88e59",
+      "vript_clip_id": "-4exm90cQrw-Scene-005",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109907.mp4",
+      "sha256": "23641dd807c47978a998ae5d747b5ee097bec977325a213a1c40fe4a7fa7859f",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109907",
+      "vript_clip_id": "-Z7nGlLEe8M-Scene-027",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Z7nGlLEe8M-Scene-027.mp4",
+      "sha256": "dff4152943c9c3126be6f38ff1e15ec4e6b92381b3f233b0478ab34c646222b5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109907",
+      "vript_clip_id": "-Z7nGlLEe8M-Scene-027",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109311.mp4",
+      "sha256": "9175286c61af915a798aedc06b9ec943927a498d376560dbe9a754a1de84dd20",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109311",
+      "vript_clip_id": "-4ukRF34UFk-Scene-035",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4ukRF34UFk-Scene-035.mp4",
+      "sha256": "c7102a236375b642c1d976270ea379424951ce202555cd9ea89e289758791c14",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109311",
+      "vript_clip_id": "-4ukRF34UFk-Scene-035",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-1o0lgzDaig-Scene-053.mp4",
+      "sha256": "9d6b8c96003dac119580014dca05277472f88df92e3d26282cbfdff836a2caf5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-908e7183-5ae9-581a-9dd8-a6bb7483acfc",
+      "vript_clip_id": "-1o0lgzDaig-Scene-053",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108444.mp4",
+      "sha256": "4f1badf493698b1d9fb5b570d8331c571ef132e7bd235c14509c3ba28c4242a1",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108444",
+      "vript_clip_id": "-BKnE-pCsRk-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-BKnE-pCsRk-Scene-032.mp4",
+      "sha256": "8439866403c44da705527ab8ec5d1d82e8d17d880ceb0285d0f1fb7b27bedda8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108444",
+      "vript_clip_id": "-BKnE-pCsRk-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110440.mp4",
+      "sha256": "2f114644671dd56311974180bb39210ac54dc95cf90203f93d94e40d810e2572",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110440",
+      "vript_clip_id": "-OdWi5yyDRg-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-OdWi5yyDRg-Scene-010.mp4",
+      "sha256": "db0499699fe834ecc665ceefea904fb987ab30fff60692ce89b1f799a0c8467e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110440",
+      "vript_clip_id": "-OdWi5yyDRg-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_11143.mp4",
+      "sha256": "d42dbf3a648b034507b33ff10815ae2aa4c6c0298e4b4daa1264d774d21714cf",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_11143",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-076",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4TL1ECxSOI-Scene-076.mp4",
+      "sha256": "416ef26c8daf11fadc1092e1982affa069246c66f1b36e41b9db3132769e3b83",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_11143",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-076",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-8D05dM6q7U-Scene-027.mp4",
+      "sha256": "610990a2f89f17964d1cd726beb23737ee5047fe2c0ed40bd4d613cd89463f53",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-9633024b-1ec3-594e-8001-ed5a6897742c",
+      "vript_clip_id": "-8D05dM6q7U-Scene-027",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5ReoIc3C_o-Scene-266.mp4",
+      "sha256": "85481c3370e0825b9b725a3debc3cfb5a637cf345238d4e0454ac6c72d9264ad",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-2c10c836-46b4-5326-b746-d1bb787e721d",
+      "vript_clip_id": "-5ReoIc3C_o-Scene-266",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-H44h9bnySg-Scene-068.mp4",
+      "sha256": "088af0870e7f6c922a1f91a50f5a3eb97a6a5aa587a8ec249131a0605d7d0d90",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-3acfd5ba-7bde-5f4f-ad60-0b8641b67227",
+      "vript_clip_id": "-H44h9bnySg-Scene-068",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111402.mp4",
+      "sha256": "d603e3d270c1ff64e5752250a47fbe4d99cba6e07e6b47fe3c16212cdd5c89be",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111402",
+      "vript_clip_id": "-48qmeLbPcw-Scene-059",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-48qmeLbPcw-Scene-059.mp4",
+      "sha256": "cc3b7760696229ae212c833783b9ec540a077e479c39f5e1807de924179df722",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111402",
+      "vript_clip_id": "-48qmeLbPcw-Scene-059",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CMizfNmOkU-Scene-021.mp4",
+      "sha256": "768411ac4eac9a4f5e4cd5dd4c160b0db260e25f4fb20a329c26fb96896c42d2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104634",
+      "vript_clip_id": "-CMizfNmOkU-Scene-021",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100730.mp4",
+      "sha256": "9be45c9e7b4f3bd25e8375b45092e4e3e3e60d7a8b13abb2af9ef12fb11ea88f",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100730",
+      "vript_clip_id": "-By0QtiVqcw-Scene-020",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-By0QtiVqcw-Scene-020.mp4",
+      "sha256": "7b5cb0fd8e384acd09f9a702ec226fa5ab4cffc2958c85a390947b2fb45724ed",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100730",
+      "vript_clip_id": "-By0QtiVqcw-Scene-020",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Xl33P57QOs-Scene-085.mp4",
+      "sha256": "4fb5cb2172e35306271e3cb2786dd432d60061f7d33045b38f28b2fff31000ee",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-841ce014-cab8-5dcc-ab09-fb8f44392419",
+      "vript_clip_id": "-Xl33P57QOs-Scene-085",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-79b2SUgROQ-Scene-026.mp4",
+      "sha256": "01fb10c3149b4c8654142c4c7814f49f311d8ba5d5a422064dafe27c0316a456",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-131096d4-4438-5a3c-91d6-380095579ab4",
+      "vript_clip_id": "-79b2SUgROQ-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110351.mp4",
+      "sha256": "e29032db8839c102bb02a7e4f8e1d0c34877efb86ce4012aef473601798a1ac2",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110351",
+      "vript_clip_id": "-FoQF2DlrQ8-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-FoQF2DlrQ8-Scene-002.mp4",
+      "sha256": "bca17c108086a60b2539ef9a48248f64824d3aaa118cb941b6ffea86f2de3a2f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110351",
+      "vript_clip_id": "-FoQF2DlrQ8-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KWuh6hzi8E-Scene-026.mp4",
+      "sha256": "bba1fc8f7745de72a083155a8bddcbb492031d896cf9eda40c8bf0243ff12002",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-c016c0e4-9cb3-5897-9426-4a7b72acfc88",
+      "vript_clip_id": "-KWuh6hzi8E-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\2p5im2EuFAs-Scene-009.mp4",
+      "sha256": "ba7159f975545fdf6d8badca46ac244c6dba6f4f30c16fed1f348282ae7bf9e0",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f26aa014-898a-539a-b4f0-0a8372de57fe",
+      "vript_clip_id": "2p5im2EuFAs-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5ajPCpJl-c-Scene-023.mp4",
+      "sha256": "ff7308403514a1ac32ec83cdaa8ade63edcb96a9324dfb9527b73b6d61385abe",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f042574a-beb6-5f79-9a87-9d778d861490",
+      "vript_clip_id": "-5ajPCpJl-c-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3UrpyzrrB8-Scene-012.mp4",
+      "sha256": "c015e387bba99e5a0a79de5dd6c597119bcd648f760eef0134d2d84b3d49130d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-38f6f986-c2b4-55cd-9db5-8f54c1ae112d",
+      "vript_clip_id": "-3UrpyzrrB8-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10530.mp4",
+      "sha256": "bde5c03ec909289709d563ab81e2a94245aa99908971d1fb93621603b0dcb253",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10530",
+      "vript_clip_id": "-kCIAWaqThs-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_049.mp4",
+      "sha256": "01a7a2b8607a31578867573102efc873a05dfca21b04bcd20d38e6ba09d10e2b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_049",
+      "vript_clip_id": "-A8LKuncijo-Scene-203",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-A8LKuncijo-Scene-203.mp4",
+      "sha256": "c69f4b6bc2b83ef390d0eb38571d871ec9fc06e2f1aec748f1b535f00cf73548",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_049",
+      "vript_clip_id": "-A8LKuncijo-Scene-203",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103351.mp4",
+      "sha256": "b78ec7d1f4e43c9627cf7cf4cbffff880eb485414076b904674cf5cf50765b2e",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103351",
+      "vript_clip_id": "-HFo_GBrXX8-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103141.mp4",
+      "sha256": "ff1716ee7ad01b06e832246ad9a332d2392ba366938535a4a572a1e236692f5a",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103141",
+      "vript_clip_id": "-Vw1HVO3T20-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Vw1HVO3T20-Scene-014.mp4",
+      "sha256": "e53322a251ca7d361e30b63a85da8b082c612e8df6bfd049f7f8f7010d1924b2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103141",
+      "vript_clip_id": "-Vw1HVO3T20-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101301.mp4",
+      "sha256": "9128954a7972465b74e0748ad65fe8d59ef68094e299503bdd8dd22e5dd29dfc",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101301",
+      "vript_clip_id": "-48qmeLbPcw-Scene-079",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-48qmeLbPcw-Scene-079.mp4",
+      "sha256": "a0bf1e2e192e8213610ba66e1d65959346e5fffb6a245c18d554f0691378bd95",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101301",
+      "vript_clip_id": "-48qmeLbPcw-Scene-079",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101387.mp4",
+      "sha256": "64b201205932b89bb5d8f88853723b24c561171ccd3d681ea4b038e4f4c6f109",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101387",
+      "vript_clip_id": "-H22U5yUnqM-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-H22U5yUnqM-Scene-017.mp4",
+      "sha256": "0334ff79d2aecb062e687aaa03db4cd113638c240930aa273e65a4c4661ca701",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101387",
+      "vript_clip_id": "-H22U5yUnqM-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111124.mp4",
+      "sha256": "a6f95fb8d99df92b0a14c77584f04dac5cf7e63825fd0e7ee48f2b1788a2cf91",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111124",
+      "vript_clip_id": "-Ad_Ly5mvVA-Scene-036",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-8JCVzvR560-Scene-013.mp4",
+      "sha256": "190dc9edad49528d57bf2f2d7fc6994eadf9d075fdea5355d76098bf90c702d2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-e2b5b858-e1e3-5698-963e-b0a4f11e2a46",
+      "vript_clip_id": "-8JCVzvR560-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-bkZ0CITAX0-Scene-070.mp4",
+      "sha256": "aae335ca14a1f02ffb3bcc07575dcace46799eab68001137deb4ec8f8b875017",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-ee00374b-947b-5a42-8b5a-a35a40fcd3b9",
+      "vript_clip_id": "-bkZ0CITAX0-Scene-070",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-JYuGS4buzs-Scene-023.mp4",
+      "sha256": "048500bd0e3faa1e3796646c019dd5c9a746cb70ec36555afddad583b75375c5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-2f80d589-4270-58d8-a858-4d8f56bc908e",
+      "vript_clip_id": "-JYuGS4buzs-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--cowpkViOk-Scene-133.mp4",
+      "sha256": "0c157cbd8a1dfbf17789cb407ab43913e2377f941b996de6e994aa17dffb4487",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-258c540d-c199-52f4-9c73-29d43971063f",
+      "vript_clip_id": "--cowpkViOk-Scene-133",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105493.mp4",
+      "sha256": "d854934906a0b59d0bca062a28a1ab6089c861cf732bef29876e7b78ef94efee",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105493",
+      "vript_clip_id": "-e4q_QI8SnU-Scene-020",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-e4q_QI8SnU-Scene-020.mp4",
+      "sha256": "eb274ac2996b8a1bfa5fe4a07b83a5431d717697337bd23e57454be89082a598",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105493",
+      "vript_clip_id": "-e4q_QI8SnU-Scene-020",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-9h6DfWz8vI-Scene-028.mp4",
+      "sha256": "dc2c08d094b17f2cfd98029811ba549db3542f4987b068d520089005a911e43b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1fd843b1-4668-5ee8-8c92-7fe135317408",
+      "vript_clip_id": "-9h6DfWz8vI-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107831.mp4",
+      "sha256": "0cf1a6214799932b59700bff779732ce88969723c26ab54662d2ea183a51e588",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107831",
+      "vript_clip_id": "-inPRBhonfY-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-inPRBhonfY-Scene-032.mp4",
+      "sha256": "872bfed1e46c0f687aebd8bbc3f6ed1299dabbe07fd1e48ae7c8c5047e8f8647",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107831",
+      "vript_clip_id": "-inPRBhonfY-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4exm90cQrw-Scene-008.mp4",
+      "sha256": "b9732f8a0a3bf1ff2e6b59a0bde2d8cfc2d2e0b955192db99ea56ef4034f3d61",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-7a122a3d-85b4-5118-b51e-44b1848c00d3",
+      "vript_clip_id": "-4exm90cQrw-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Ar6C7HpQHk-Scene-030.mp4",
+      "sha256": "b976e46295bf59c562727f9fb7f4e749695bfc11169228ee0076fd0da4f42470",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-27f12df1-21e2-5c55-a287-e41075e09702",
+      "vript_clip_id": "-Ar6C7HpQHk-Scene-030",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110477.mp4",
+      "sha256": "2c0ea95a0c2bb174588a42c270d26f6a75c8b6d571cb535ecde00afd8520e655",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110477",
+      "vript_clip_id": "-YOVXDkYATA-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-YOVXDkYATA-Scene-022.mp4",
+      "sha256": "df231efcd57854f9de8f8b9210f86b58ae847e7342eaf9921bd65cadd1496e17",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110477",
+      "vript_clip_id": "-YOVXDkYATA-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0KWRTaWpFdk-Scene-014.mp4",
+      "sha256": "04d3c39c100c501ad1edd19717bdc6ce0cc83aee2ee57ea9d30b92463244c46b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-c2d99b1e-f08d-5672-a318-cb2f1dc9cca5",
+      "vript_clip_id": "0KWRTaWpFdk-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108798.mp4",
+      "sha256": "02311dcd1a90adab2ac87507576c0be945df82fa55822df8896746bc5aa65505",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108798",
+      "vript_clip_id": "-CM1R8vvOwI-Scene-070",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CM1R8vvOwI-Scene-070.mp4",
+      "sha256": "f47be9d24fd226d937cef224a0674fa88dd60c5092f5c1363e5f069f77e75dd4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108798",
+      "vript_clip_id": "-CM1R8vvOwI-Scene-070",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5kkT_RBHk8-Scene-087.mp4",
+      "sha256": "3a2df026ef9bc02456c7f78ee81e3615837ab24da822190697daf3616280e0a0",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111460",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-087",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-1LVfA0Ph8s-Scene-008.mp4",
+      "sha256": "7a354d865cf0d5561b3738abc4ebf8928c235008e442ef49bea538c58d6646de",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108515",
+      "vript_clip_id": "-1LVfA0Ph8s-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104665.mp4",
+      "sha256": "13467d5ecf487daa5d127d37c6a65eac5265e574a43f622dd655c1440bbcc8fa",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104665",
+      "vript_clip_id": "-FjYy8xXm3w-Scene-039",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-FjYy8xXm3w-Scene-039.mp4",
+      "sha256": "7ff288462b52fc191445b2f977264d8cb23f4845aadb25745fe92695b8f203d2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104665",
+      "vript_clip_id": "-FjYy8xXm3w-Scene-039",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105267.mp4",
+      "sha256": "6135364162690f137e12956558508fa9937c44a52569183f448eced94e5a5aa8",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105267",
+      "vript_clip_id": "-mG9bKwKB4A-Scene-096",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-mG9bKwKB4A-Scene-096.mp4",
+      "sha256": "1db88078edb08394f0db69695f0b64b8d380f8fa76d383c520faa7c284d099e7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105267",
+      "vript_clip_id": "-mG9bKwKB4A-Scene-096",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CZl3cK3TW8-Scene-006.mp4",
+      "sha256": "35a95a53cfbc43c1bf8c84978d691c0fc5bb3ea2e3abf11e2d8d0d760c88f24e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a3f55c77-1056-58f4-a234-618affd05081",
+      "vript_clip_id": "-CZl3cK3TW8-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100608.mp4",
+      "sha256": "344cc1ceb8798391f747766e5060656d2048faaa4c754e019b6ad6b18f2e630c",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100608",
+      "vript_clip_id": "-frRYAmBOjM-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-F3M2EGP_C4-Scene-077.mp4",
+      "sha256": "ecec7736cbebf8f343db8480333376cd3ff9f318a74f9b9448aa299bcdb1786f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107647",
+      "vript_clip_id": "-F3M2EGP_C4-Scene-077",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3PO8PGx25Sw-Scene-010.mp4",
+      "sha256": "fc1824837078cb54dab7ada3d23e7c848472c27800eb66bb452089c521240301",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-42b0b272-1ef9-54f9-9897-c10e269b3a9f",
+      "vript_clip_id": "3PO8PGx25Sw-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111302.mp4",
+      "sha256": "c3a1495cf89c31db8a39ccb726bbfa06a802246081f1c1ceaecdd20e748dd561",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111302",
+      "vript_clip_id": "-XWWSFAc-Z8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-XWWSFAc-Z8-Scene-008.mp4",
+      "sha256": "ac6a5f8d6478c42bd983950ad7e0d9bda7a5b0786877798eaa130f29fdbec327",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111302",
+      "vript_clip_id": "-XWWSFAc-Z8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-2EEPW7g8fc-Scene-071.mp4",
+      "sha256": "3e11aa30b8d318842b58b219799773246cb556d1fb7780ac970efd4dc5f52cee",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-957dced4-e563-5fd1-ba01-b6c96547b809",
+      "vript_clip_id": "-2EEPW7g8fc-Scene-071",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107415.mp4",
+      "sha256": "70fca7f83a20e267909d93fe1e3028bc5454101bea3d676fc899a862d7c9c40b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107415",
+      "vript_clip_id": "-Tznlx878UU-Scene-480",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tznlx878UU-Scene-480.mp4",
+      "sha256": "4c8f63f153a485bcfba2737dfad8188b2b92defd854276e813b7f822bfa90d66",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107415",
+      "vript_clip_id": "-Tznlx878UU-Scene-480",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-P5vDum85xY-Scene-082.mp4",
+      "sha256": "94f460f66211b890642b791c6d266e8f636f90f4a27390df538accf250b855b5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106527",
+      "vript_clip_id": "-P5vDum85xY-Scene-082",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-dPloZL2_zE-Scene-031.mp4",
+      "sha256": "5d1b79610d67fcb6d06fde02124613d19a782c25b8cfee70e1e94cd1411dd2ca",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-984bdf40-bd8a-5a0a-8154-51c710802d7c",
+      "vript_clip_id": "-dPloZL2_zE-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109534.mp4",
+      "sha256": "ff765557ec097ba00c1367ab29d3a99e678a4da7d6ff8a307d148b4c05dce8f4",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109534",
+      "vript_clip_id": "3-74LjvynIg-Scene-055",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3-74LjvynIg-Scene-055.mp4",
+      "sha256": "da44d8b03e9bfdcf5d3acc75b5bcd2d1d5c8750d9861a942a862434ac5e09800",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109534",
+      "vript_clip_id": "3-74LjvynIg-Scene-055",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-1ZVsEJ2uVY-Scene-003.mp4",
+      "sha256": "1bec3821b7ef0409b8b681626dbb9639026ae24d24b9e4eeb98adc8f7d6501a3",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-96497f95-e69b-5601-8939-91e864d9f256",
+      "vript_clip_id": "-1ZVsEJ2uVY-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108152.mp4",
+      "sha256": "9f636576742b350f1d357412265ca95ad0e9eba8689db2d83264d0d4be4bbedf",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108152",
+      "vript_clip_id": "-FjYy8xXm3w-Scene-077",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-FjYy8xXm3w-Scene-077.mp4",
+      "sha256": "80a7245486a9912a6ce1795f91d5670298b75eed55e37b3ea4708ab5bcfbedc1",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108152",
+      "vript_clip_id": "-FjYy8xXm3w-Scene-077",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-l6ZOvAJNZY-Scene-007.mp4",
+      "sha256": "8875a718807940c897d3b3519a063331da4e6b3d05d51694c17b7c674a4f3401",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-e0e31ce6-62ff-5a88-9f0e-a9ecfc00546e",
+      "vript_clip_id": "-l6ZOvAJNZY-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3VObZy8n0u8-Scene-003.mp4",
+      "sha256": "ab36ff71dafbc3fd72975d724219906359174e945f84439fbe7c68e0639011e6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-252cd2f0-975a-569e-b18f-745f5e8c3d2e",
+      "vript_clip_id": "3VObZy8n0u8-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103378.mp4",
+      "sha256": "0c4dda71407c2a9febfe6ef20be20cef34c74bd5fe308d00093d036b33a2dcaf",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103378",
+      "vript_clip_id": "-KP4yxou2N8-Scene-059",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\05fFX_LuDuY-Scene-011.mp4",
+      "sha256": "6a54856d3a5688c76f97260bcfe22ec5be4dae4c0b710e99b3f698f54882e765",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105370",
+      "vript_clip_id": "05fFX_LuDuY-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-48qmeLbPcw-Scene-029.mp4",
+      "sha256": "d0b9691b53fe20e6673742e7a71f37bed8ff6ac75fe822a3fca717fcaf40617b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-c31a346d-f863-56b0-83a7-0b736cb58401",
+      "vript_clip_id": "-48qmeLbPcw-Scene-029",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-1RsCsSKt7A-Scene-022.mp4",
+      "sha256": "c0d6df6bf96520180aff4638985f2146478bdf2b278d38bf6d94525c78950c42",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f8947ddb-7e02-5bfd-83cc-ec04677718c4",
+      "vript_clip_id": "-1RsCsSKt7A-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-L_VVyillvU-Scene-001.mp4",
+      "sha256": "686b902133368d22e488ad4dbb11680055d93498765ba430bfd60d8299ef239e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107853",
+      "vript_clip_id": "-L_VVyillvU-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10187.mp4",
+      "sha256": "db00abe1c8bb9577d8a42cde6b952d9f51b73fb3bcf8b304d7a9d10da7deb216",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10187",
+      "vript_clip_id": "-ZTYnOHBZxo-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-ZTYnOHBZxo-Scene-017.mp4",
+      "sha256": "b1d954fe6805946775878cfacadbd3498f02cf163e69da41d78a4fe254a7a325",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10187",
+      "vript_clip_id": "-ZTYnOHBZxo-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_11062.mp4",
+      "sha256": "e7e0e46506824c0cc74c8446e3ca7943de07bf78c1bc01d4f3184ca54ed8ff4d",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_11062",
+      "vript_clip_id": "047cdginMOo-Scene-064",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\047cdginMOo-Scene-064.mp4",
+      "sha256": "415c68d36b1b11eb826f22cf64e744c28a94ee95b76c14e7a1912bf5bc66dccc",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_11062",
+      "vript_clip_id": "047cdginMOo-Scene-064",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-H22U5yUnqM-Scene-025.mp4",
+      "sha256": "344ea0b4d5388a40f8c559c4539af0cf74207f493818d51b6ab934080feac081",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-42fdbf5f-e50d-55f0-94b1-dba91286e288",
+      "vript_clip_id": "-H22U5yUnqM-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106970.mp4",
+      "sha256": "6aa1f6b90e0348de79f427a29d43923ff226b5c2443c1b1806a99b397eebabdc",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106970",
+      "vript_clip_id": "-RH4sogAXdY-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-RH4sogAXdY-Scene-011.mp4",
+      "sha256": "a68733a7c988555769bc983772e1669f5555f0a323d75247fe4b328a02f4bfe1",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106970",
+      "vript_clip_id": "-RH4sogAXdY-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3z8zuwgpbcc-Scene-015.mp4",
+      "sha256": "425eef8e11f6b837fa7e4f3af18bc070d92177781f3816651fc30d31691cb05e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a2dced83-97ee-5658-b452-69376881c192",
+      "vript_clip_id": "3z8zuwgpbcc-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-A8LKuncijo-Scene-076.mp4",
+      "sha256": "7bb54b015517f0e6d3ba01ef3f8c0cdcfc2c1770e6167a5ef45c32157401098c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-04048bab-de2b-5bcf-904f-6696ee30c06f",
+      "vript_clip_id": "-A8LKuncijo-Scene-076",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5zwc5pE4AY-Scene-209.mp4",
+      "sha256": "a7a848318c10a9f6584cd7a01730c9b1400414f010708dbe5cd529ed7a752e8a",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-14028a0f-f027-56d5-ac2e-3c370fe47fe6",
+      "vript_clip_id": "-5zwc5pE4AY-Scene-209",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101373.mp4",
+      "sha256": "6da36d87c1f3b9723947f84172b26f92d1ab258f4ea20641d243369249e293f8",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101373",
+      "vript_clip_id": "-4HZultsPIA-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4HZultsPIA-Scene-011.mp4",
+      "sha256": "68c0c211923d77c338ffd6810073aa62769caf25774ebee4bba3b790adf96b81",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101373",
+      "vript_clip_id": "-4HZultsPIA-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-FioietmGSQ-Scene-014.mp4",
+      "sha256": "c3b82c991a9d9225747c7e7ac2d59251e766bb813243aaf374bd32d6e54d6135",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-dc7089f5-9709-5576-bfb0-782b8d1948c2",
+      "vript_clip_id": "-FioietmGSQ-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102874.mp4",
+      "sha256": "b59023438f30243db78a8171e22af52daa5080b66a85481182f57157c4a61195",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_102874",
+      "vript_clip_id": "-AdvLLJg0PY-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-AdvLLJg0PY-Scene-006.mp4",
+      "sha256": "965e227bb4e99ba87d5a09358e8e04c18d52cb4b4f5829efd685893bfad4ed46",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_102874",
+      "vript_clip_id": "-AdvLLJg0PY-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-OmQkHMRnyM-Scene-195.mp4",
+      "sha256": "8b0156b39f9fd28fed37296e27324e90bddfa19cda3c8123e34012480dee1d83",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-9934606d-26ef-5d7c-94c4-381b61e6fe2e",
+      "vript_clip_id": "-OmQkHMRnyM-Scene-195",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-lZ6QfXZoAY-Scene-016.mp4",
+      "sha256": "18dadeb76f0b94f8e2b20699c42954865e9bb52bb8e3a62263856f59debb9829",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-df24bacf-0fba-5460-a8ee-1bf26bfcc4ed",
+      "vript_clip_id": "-lZ6QfXZoAY-Scene-016",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-PFYthpdEIU-Scene-058.mp4",
+      "sha256": "3e416eedbeef4a5d75fc6cbf6d57483f8254a7fba033827ad759739cc530561e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-5050d19e-8b45-5ff9-8b08-7bb10f72b7cf",
+      "vript_clip_id": "-PFYthpdEIU-Scene-058",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CLU35KDfkI-Scene-065.mp4",
+      "sha256": "cd3f71b0e676d892d3d922758bc41b03915b6b5e8d95864eee00b149cea8583d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-ef0e2786-39fe-5b0f-9407-0ddc77fd1504",
+      "vript_clip_id": "-CLU35KDfkI-Scene-065",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106040.mp4",
+      "sha256": "3a21c6c468f5e4a2b2a172889b3a2ba8677e2755cbedcbfa28d5576ae42656c0",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106040",
+      "vript_clip_id": "-L_VVyillvU-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-L_VVyillvU-Scene-023.mp4",
+      "sha256": "36c7c6db0a58ff47c787ace146fcf2f72cdf004c3c3bc653e17033de21e55a63",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106040",
+      "vript_clip_id": "-L_VVyillvU-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5kkT_RBHk8-Scene-111.mp4",
+      "sha256": "40aee45a06a7b25e0c2aa6ba7d956432500086efbe9a9d410ccf85fe25e2b15b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-bf0f14fd-7b0e-5b76-bdeb-4f7fa91b07b9",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-111",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-_vWld8L_9w-Scene-094.mp4",
+      "sha256": "217c84608c564477a5ec1d4e1ddf05717dc4a29eea5adf0bfa04b2a04678f8b4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-de8fb1bc-6de4-56b8-8d01-22a0ea7921dd",
+      "vript_clip_id": "-_vWld8L_9w-Scene-094",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111570.mp4",
+      "sha256": "36e6bbf45bc01e1037ee62572627bbd10b2186fa87393aabe97714b15dc28baa",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111570",
+      "vript_clip_id": "-UN7mGQNazo-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-UN7mGQNazo-Scene-032.mp4",
+      "sha256": "43c91571ece21643632eb2baf79e00185a456b8f9a03619fffaafa2b6ea68a80",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111570",
+      "vript_clip_id": "-UN7mGQNazo-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111480.mp4",
+      "sha256": "b3520732591c3f9ae99fad3f0da3eff735a9440d7d465103d1493c6bda3b972a",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111480",
+      "vript_clip_id": "-1ZhPALDrG8-Scene-005",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-1ZhPALDrG8-Scene-005.mp4",
+      "sha256": "ae802fd4719830c40de75e92543e6118f0ce61c33c4dc99ea60784939afc4b3f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111480",
+      "vript_clip_id": "-1ZhPALDrG8-Scene-005",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109476.mp4",
+      "sha256": "c6f9e5cf396b97b655605077c25ba5518850e7df3dca8aa8061cc86d728d80ba",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109476",
+      "vript_clip_id": "-HvyPRm9soA-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-HvyPRm9soA-Scene-022.mp4",
+      "sha256": "fb270d9dc42ea7b30c940a82744faf11c90ab7b0f4184efd65ddfb6e6789a6c7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109476",
+      "vript_clip_id": "-HvyPRm9soA-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102981.mp4",
+      "sha256": "06b51d573d1184c7a4984df62d968cde94536672a3e0d11049cf2c12289d2414",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_102981",
+      "vript_clip_id": "-7yQXwG3cIk-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3GdSd6q2h8-Scene-001.mp4",
+      "sha256": "39df67d56d86c5536aaf53b3987677b821c7e1f8767602d03a852dbcccaa0afb",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-5663ba51-4a85-5b45-a8ce-20f8f11a3506",
+      "vript_clip_id": "-3GdSd6q2h8-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10590.mp4",
+      "sha256": "b30f56e6d92f7988bb59d158cb6b2fe205fc29e27fd9ad8e93231bff22e752da",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10590",
+      "vript_clip_id": "-CVqAVX5aAc-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-D2obMHziNQ-Scene-025.mp4",
+      "sha256": "6e2520ef17805ccb5d0bae130a1475987e03dcbef2d04d133c7ac05ca773f851",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-b919c061-3eac-5405-8557-e0e52de12259",
+      "vript_clip_id": "-D2obMHziNQ-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3x4bPqkfUU-Scene-066.mp4",
+      "sha256": "cb2317cea8b554913b05e8e2cd6f111cd8ad62769f100b7580229bc14f6de818",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1563e740-14f6-50cd-8a31-adad45387129",
+      "vript_clip_id": "-3x4bPqkfUU-Scene-066",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101370.mp4",
+      "sha256": "bc714345ecd2748729efd541e6bc7d9cf8720ea380ec199e48c84e07177f0fe2",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101370",
+      "vript_clip_id": "-3GdSd6q2h8-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3GdSd6q2h8-Scene-026.mp4",
+      "sha256": "42c37e18034f08fd586350a493426242b77b1f1bf77b6da4cfa82d12dca0c382",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101370",
+      "vript_clip_id": "-3GdSd6q2h8-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-1ZVsEJ2uVY-Scene-016.mp4",
+      "sha256": "7441689bbaba0d5491fedff28e2642e9615e0acf64c11bd3df1d66290987911f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-02207634-4e3d-56e7-bb16-3706453bfc41",
+      "vript_clip_id": "-1ZVsEJ2uVY-Scene-016",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111716.mp4",
+      "sha256": "b306a45e43f8c4e197a894ec04a2be79c54cce3d82887c9e4da6383911bad325",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111716",
+      "vript_clip_id": "-4lk7d71JV8-Scene-044",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110411.mp4",
+      "sha256": "596ebfcef244a03e19660a50f94689134659f1fa4ceee93489c51f1d3fa7f2d5",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110411",
+      "vript_clip_id": "-f36JGmgiiw-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-f36JGmgiiw-Scene-001.mp4",
+      "sha256": "85a2ce5540746d87bfc12462842ecd44d98e531ba366cc75dee4c5d0e501a665",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110411",
+      "vript_clip_id": "-f36JGmgiiw-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\073BMGVWan0-Scene-062.mp4",
+      "sha256": "e1035531afca0cea0676f7dff8aa9b6c45a0852ffafcb461c0c9bcd54aa9d636",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-77bc7374-1460-5828-b4a4-66689e9aa572",
+      "vript_clip_id": "073BMGVWan0-Scene-062",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100548.mp4",
+      "sha256": "eb160c115a057130022b16c924b8b747288599f6d783e7b813abb5d73a825bb7",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100548",
+      "vript_clip_id": "-Je5_YZjQbI-Scene-029",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Je5_YZjQbI-Scene-029.mp4",
+      "sha256": "5fe826c011e12f8a8928e442cd8a138d1bd240767777c42f94a959f1f400d673",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100548",
+      "vript_clip_id": "-Je5_YZjQbI-Scene-029",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4TL1ECxSOI-Scene-162.mp4",
+      "sha256": "c0e230d7b6d3c732e4c80fd1146a9ffbd8d01efc3c529e9d33e43c7e410d116f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1fbc0e8e-c75b-511b-8006-fc0868222b21",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-162",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101700.mp4",
+      "sha256": "5958385b8b57b0f6890736cb274f93e7132533d123664b7405b032e896096dec",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101700",
+      "vript_clip_id": "-AxBXLwxZNU-Scene-005",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-AxBXLwxZNU-Scene-005.mp4",
+      "sha256": "75f4cffe4aa23201a3a19cd4e1b8300c16454bb3473124bd57b9bb3dad73397f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101700",
+      "vript_clip_id": "-AxBXLwxZNU-Scene-005",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Z7nGlLEe8M-Scene-023.mp4",
+      "sha256": "534a2b3f735e4b4dea0d2014fc19147aa58ce3cac262be6744eb9208ccd1e5ea",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a612a6d0-79be-5702-870d-f3533f80a102",
+      "vript_clip_id": "-Z7nGlLEe8M-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110894.mp4",
+      "sha256": "b6d46fbc47f92b96694e3a96134055bef0e127f0c4594ea2222fe13d7ca794d3",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110894",
+      "vript_clip_id": "-Jw-v1jFuH8-Scene-129",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Jw-v1jFuH8-Scene-129.mp4",
+      "sha256": "a62e97ace87168f92d0fdb9eeecce67d11e7d5c59fe3d01fcfd0cee0efc199e3",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110894",
+      "vript_clip_id": "-Jw-v1jFuH8-Scene-129",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-cICTQX-wc8-Scene-006.mp4",
+      "sha256": "d7089af5cd272366a8991ef918b5757fed48c74f360a2c685d52ba5722d43257",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-dcfd012c-e2d0-5fdf-871b-d27739c82d7d",
+      "vript_clip_id": "-cICTQX-wc8-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4TL1ECxSOI-Scene-121.mp4",
+      "sha256": "2718e62783906c3e989f366c0c95269e0392f757f48c24319ab02194d0e2704a",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-07e8e7a1-e433-59f0-abbe-b0dfd3c7b900",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-121",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CLU35KDfkI-Scene-061.mp4",
+      "sha256": "acbfcc3b1292018dd1265559c973dff747df48d91def34657f50ebda80b28b41",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-d659deb8-0327-5505-8a21-ed02f75992d5",
+      "vript_clip_id": "-CLU35KDfkI-Scene-061",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-D2obMHziNQ-Scene-035.mp4",
+      "sha256": "34de1cd8db50b84e4c81fe2887a87a0fe0239126b3801d17b957c97a15b592f1",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-c1abfc6c-8b0e-5090-af26-f9f72edcd89c",
+      "vript_clip_id": "-D2obMHziNQ-Scene-035",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Sze5w3SmDY-Scene-005.mp4",
+      "sha256": "9d2c18ba8c21eeca84bc1be8488c511cbc9defbbe8990f446a0c71ae43563f27",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f28fdd0c-46a9-5588-bb39-ae6288d74cec",
+      "vript_clip_id": "-Sze5w3SmDY-Scene-005",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3u2xpZF2h4-Scene-057.mp4",
+      "sha256": "69eed26bd7c235ce6716fa6ba5e8b23b6c4e8451537057dfbba963fd40f3ccf4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-fc2a3152-ced4-523d-89f6-007758ed7873",
+      "vript_clip_id": "-3u2xpZF2h4-Scene-057",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101911.mp4",
+      "sha256": "f38f48456d3a12d533f428eff84fe4fb33bb4a6ea5caeab8ac9156d5b069bc7b",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101911",
+      "vript_clip_id": "-2NL1IFwtS8-Scene-062",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-2NL1IFwtS8-Scene-062.mp4",
+      "sha256": "5e1c1c031896ca221dbabc8308a93ac81a11a7f88c5fc9b0ce3caae9a6fe0d16",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101911",
+      "vript_clip_id": "-2NL1IFwtS8-Scene-062",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103544.mp4",
+      "sha256": "406c2e925aabaeb15c45c292d51b017a4350a4118b1745db47d102c79e904d93",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103544",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-095",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4TL1ECxSOI-Scene-095.mp4",
+      "sha256": "150fc44aec296d3d761792ccfcc61285f06eae5ecb293d682c295d4a4365de7e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103544",
+      "vript_clip_id": "-4TL1ECxSOI-Scene-095",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-g_YYmxr6Hk-Scene-019.mp4",
+      "sha256": "229f4fdb0ce76d998b3d1f3a9d648c4cde9ae926efdac3d0deee0dd7cfa99379",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-75b089cb-e0da-58a5-ac95-bd03f3482e53",
+      "vript_clip_id": "-g_YYmxr6Hk-Scene-019",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_023.mp4",
+      "sha256": "18cc6920334bd6fa2458d675c460df468303024762eb0f608e15dc4cfa815fb3",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_023",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5kkT_RBHk8-Scene-002.mp4",
+      "sha256": "77d6089c91530098c91a123eb0b8fafe3d5f80d1051f0dae136fc35b90b54553",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_023",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\2We4rb6K5JA-Scene-018.mp4",
+      "sha256": "a1bcf5b3f13e1b2592096a4856b8f100e8ec0c168da181899ee1833c098f1428",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-002a6bed-74b8-547b-bf58-f7abd5fd6727",
+      "vript_clip_id": "2We4rb6K5JA-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107701.mp4",
+      "sha256": "d5377b6fac561b5ca2c0e34b328b5b062f8fd699da84262ce4e8351b51c35a34",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107701",
+      "vript_clip_id": "-KOiDt2AOBU-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KOiDt2AOBU-Scene-026.mp4",
+      "sha256": "49373190fdb98a3138fb187c3226b258a6059a6e200bfcf4b1bfa85c7836a356",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107701",
+      "vript_clip_id": "-KOiDt2AOBU-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--OvdeGNnHU-Scene-004.mp4",
+      "sha256": "4a03a9eae3c152130445dbbff7cdaba787fa037333c2bd7359e187a53eb06cb7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_015",
+      "vript_clip_id": "--OvdeGNnHU-Scene-004",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3UHTQdotAzk-Scene-032.mp4",
+      "sha256": "05331dc574ecfcb7ffe94ee2031589ef2830ac4cc34860df4793b84516ddc67b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-eedd80c5-0951-5283-9e87-85c4cca04b3c",
+      "vript_clip_id": "3UHTQdotAzk-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-D2obMHziNQ-Scene-040.mp4",
+      "sha256": "25628c21e0ae4fe58b354f9a0cd5e45f1af0c10b50ac95abc1b420c0f46e90e7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1a3b2e62-d5d2-5ea7-9c7e-157799164163",
+      "vript_clip_id": "-D2obMHziNQ-Scene-040",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105041.mp4",
+      "sha256": "dcc7f27c1be936f584eab557cfc81cf808ac9335dccf3a37f531d4146cd6833c",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105041",
+      "vript_clip_id": "-P7U_09EU_E-Scene-069",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-P7U_09EU_E-Scene-069.mp4",
+      "sha256": "b7f8ed30f2a6e1fde6842a57362dae0fdba7181c99f675740941709af914711d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105041",
+      "vript_clip_id": "-P7U_09EU_E-Scene-069",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100996.mp4",
+      "sha256": "d41edb1b30fa5d64b881cf9612d55c35bb5e5bae526a332641b598ae3d49c4e1",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100996",
+      "vript_clip_id": "-7Sow81yi24-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-7Sow81yi24-Scene-010.mp4",
+      "sha256": "65c4fc4f8482e001f33bb79223215b0dbb295ef4e82ccc4ee1454ac43083e3c2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100996",
+      "vript_clip_id": "-7Sow81yi24-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-On8a0PsDyY-Scene-006.mp4",
+      "sha256": "e635783deff749746b5a385ca08ae2129bb258009218b11cb0c51376b0b83223",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-813266bf-11ec-5691-96f5-b7f8f8fd8625",
+      "vript_clip_id": "-On8a0PsDyY-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-jBlU5EnFIA-Scene-004.mp4",
+      "sha256": "58185694426050a6723493b90313482c37ee7673c56710f6dc728ee2b2444c06",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-aae35db8-8a7c-574e-b63a-969f4e2d0ec4",
+      "vript_clip_id": "-jBlU5EnFIA-Scene-004",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0-4pQZlXBMQ-Scene-034.mp4",
+      "sha256": "706ad167139c05302a284a3d16a5df3cc47d3bd8b12551628f177c24b132cf7f",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a4fdd7b0-d321-5202-bf21-ff7d606bdc78",
+      "vript_clip_id": "0-4pQZlXBMQ-Scene-034",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0JMLUdQG9FQ-Scene-041.mp4",
+      "sha256": "02b5ff0fe984a563115e577bfe4d87f1fa2f5da48b1ebcf687d0792d34252c8b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-34d72ccb-3c9a-539c-81cc-ac4b03e0c972",
+      "vript_clip_id": "0JMLUdQG9FQ-Scene-041",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109519.mp4",
+      "sha256": "586cbe317b1f15d053af98bfd5bf82336c2c0ff36e9a68a23374bc77c5feaa71",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109519",
+      "vript_clip_id": "--VdMbGUkno-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--VdMbGUkno-Scene-009.mp4",
+      "sha256": "90a17458a8608100e91c1743b4dbe783850463501b50b56ae03387daa9f2facc",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109519",
+      "vript_clip_id": "--VdMbGUkno-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10580.mp4",
+      "sha256": "04e108f5996f964caf8cbb17ec67bc614ebb28ee751e880e83d39fbfc5de305f",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10580",
+      "vript_clip_id": "-OgDFzqzjpE-Scene-053",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-OgDFzqzjpE-Scene-053.mp4",
+      "sha256": "f78fdf0474f736bee8c28d17262a2c63e6f98a60f268b8a011c1f75a46911aa9",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10580",
+      "vript_clip_id": "-OgDFzqzjpE-Scene-053",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106069.mp4",
+      "sha256": "f0bdacb5f01859220e353314126cf0c1d4e62857f29c22a511ce86be07b3af88",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106069",
+      "vript_clip_id": "-g_YYmxr6Hk-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-g_YYmxr6Hk-Scene-028.mp4",
+      "sha256": "9f4e225cf82512e42926ba3c9a3b56d8616fdfeeea28b3c87405280a9eb1a912",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106069",
+      "vript_clip_id": "-g_YYmxr6Hk-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Nzbwerwks8-Scene-014.mp4",
+      "sha256": "1695984ed5c45caabbdc7905d6e392df4474d6bb1083a53f1789898b04a70e91",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107355",
+      "vript_clip_id": "-Nzbwerwks8-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105076.mp4",
+      "sha256": "b4f6cf7bd29226d1dba75d28da1f31bbc3b900fb366f01c22d896cf3f48086bd",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105076",
+      "vript_clip_id": "-lAM81w4OSM-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-lAM81w4OSM-Scene-026.mp4",
+      "sha256": "a12db4b8215f5650418aa689fcc94c85eff8f2f02934461a8402241442ec066c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105076",
+      "vript_clip_id": "-lAM81w4OSM-Scene-026",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-GjfYhMc7BM-Scene-038.mp4",
+      "sha256": "a65bf7bc4e3f5e6b0561a2d8021d82e163bfc49c59ce9a3ddfb7dce47475367e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-5c5335c0-c40e-5c5b-a9d6-46cb08d6369b",
+      "vript_clip_id": "-GjfYhMc7BM-Scene-038",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100360.mp4",
+      "sha256": "8b5872b5ac72c5906f49613c3fb2dd43cd1e1dce63c93f8cdc5f74ee86a053aa",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100360",
+      "vript_clip_id": "-6rTkOEJNzU-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-6rTkOEJNzU-Scene-023.mp4",
+      "sha256": "5c8ff57377e72048fcadb04e4a6547565e62eab0c3e03351542e49f31acf78b8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100360",
+      "vript_clip_id": "-6rTkOEJNzU-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Sze5w3SmDY-Scene-012.mp4",
+      "sha256": "c5f290aa1df8ce6ecb14be3e230559834fcb1771d3a3b20749a46d435f4049f4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f3419c0f-c233-56d0-acb7-89a3a74e2e1d",
+      "vript_clip_id": "-Sze5w3SmDY-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5KkcZCSAFE-Scene-024.mp4",
+      "sha256": "3ca091a20c9c17602e178ba1a74d810ed545f657a34e42987020c465debe4cc1",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-14f0b31d-0407-56c7-92e9-d007ee47ab6e",
+      "vript_clip_id": "-5KkcZCSAFE-Scene-024",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\5DqLEsXFy4s-Scene-030.mp4",
+      "sha256": "82778639542a97e2de41798fe2bb9dea135aaa0aea28e5c1024fab94f394d03c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_102233",
+      "vript_clip_id": "5DqLEsXFy4s-Scene-030",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-GwYVin5bb4-Scene-013.mp4",
+      "sha256": "8b3b55adb6d4ea5add8da8a8dee22dfd436af39a988b8e84211d508a4098c5a4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-e61298ad-5dab-5dc9-b5e4-3e4b8eb10b6d",
+      "vript_clip_id": "-GwYVin5bb4-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110269.mp4",
+      "sha256": "4e74f27f16ee85680d24a60150e11064ffc462b877382b948bbe6a6d9973359c",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110269",
+      "vript_clip_id": "-KS-yI8VTf0-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KS-yI8VTf0-Scene-007.mp4",
+      "sha256": "878770335ddeedc80e354f45dfd59d241c0b79417c00cf85a917ad5257afae4a",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110269",
+      "vript_clip_id": "-KS-yI8VTf0-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110760.mp4",
+      "sha256": "b5fd913b06f78c382d86c12ff3e35edddce490f15cdc1ff97e0d2e7261b52ebd",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110760",
+      "vript_clip_id": "-Zz6xrmw5Jg-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Zz6xrmw5Jg-Scene-022.mp4",
+      "sha256": "4519f2ed325dc63284fb8c8adcbf7dcfb8981f14ad185bdc9c74802a0b03a9b8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110760",
+      "vript_clip_id": "-Zz6xrmw5Jg-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111142.mp4",
+      "sha256": "9c9a80e1161853c89f95de923fbe2b321b11dd69eb9db1e6dba886af99bd42fe",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111142",
+      "vript_clip_id": "-6f3HZJ0Y44-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-6f3HZJ0Y44-Scene-007.mp4",
+      "sha256": "72923bb6df9957d7ad5de7d0ac5165ae51ea771a158b200010dbfaafbfdc2781",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111142",
+      "vript_clip_id": "-6f3HZJ0Y44-Scene-007",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--XjtHv9tM4-Scene-029.mp4",
+      "sha256": "2dc144f055db423c1482cc95276965d7b79fb71278709aab5b88889b90f72b46",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-63a6c83d-f195-5133-8397-32bf84499299",
+      "vript_clip_id": "--XjtHv9tM4-Scene-029",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104651.mp4",
+      "sha256": "a20e0fa526ea207609f21cbec11d1a2312b5af0025f0f7afd08160e4e7f49886",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104651",
+      "vript_clip_id": "-P5vDum85xY-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-P5vDum85xY-Scene-025.mp4",
+      "sha256": "f0962ec9eb3386f9f0df2d21c63704e7f956d8e1e822c4cc1824c5427a0a84ae",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104651",
+      "vript_clip_id": "-P5vDum85xY-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107816.mp4",
+      "sha256": "af61dc9ad5715ea1e8146ea4d2ab0580f0c075d31904ebb98a3e83fda541d698",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107816",
+      "vript_clip_id": "-0fnGi9g4ho-Scene-084",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-0fnGi9g4ho-Scene-084.mp4",
+      "sha256": "6d7b86d0b47540cddbe8b46b5cd79a2e3b4d9d40eeba2b03a451b6d490cfecbd",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107816",
+      "vript_clip_id": "-0fnGi9g4ho-Scene-084",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3VObZy8n0u8-Scene-008.mp4",
+      "sha256": "65d4de905426fa409e47382bd677618db9cfb4a36217e4e41cb736cb04c92673",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-7fe61210-f2d3-55bd-97ba-e8a1db8c75d3",
+      "vript_clip_id": "3VObZy8n0u8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100.mp4",
+      "sha256": "7e4334798a2c91f138e1fdb16fb00885e11f2f4413a2c31c855e0e752028e197",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100",
+      "vript_clip_id": "-MyRjBSFZPg-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-MyRjBSFZPg-Scene-001.mp4",
+      "sha256": "6eda3d98f6bb58539f2b1e4f46b98a982cea3c39ccbc7bfe071435ee2dc8c849",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100",
+      "vript_clip_id": "-MyRjBSFZPg-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-8QN_w1MhmM-Scene-034.mp4",
+      "sha256": "14bb885b03973cf040e310cf8aa0ae1863e271ed17f18bc45606508fdd32dd62",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-8e4db1d1-f530-5e0b-bdda-07d3ede51e40",
+      "vript_clip_id": "-8QN_w1MhmM-Scene-034",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-RKTSg7B3tY-Scene-012.mp4",
+      "sha256": "63e97878ae1ae978dd33e5778bcc5f681ccb834080c3610d3c436610452131ec",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1e7dac29-df94-5f28-b155-0241a6cc1ea0",
+      "vript_clip_id": "-RKTSg7B3tY-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100908.mp4",
+      "sha256": "2fe7c1f3256eeaa9d926dfbc62860f3241e3f0dbea990c21bf98ac7a853a30f7",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100908",
+      "vript_clip_id": "-HsVkwyi-mk-Scene-027",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-HsVkwyi-mk-Scene-027.mp4",
+      "sha256": "fcf24814666ffceb9f93487604d75525a9de5ed1ebaa9550a23d397bf320c5d5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100908",
+      "vript_clip_id": "-HsVkwyi-mk-Scene-027",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3u2xpZF2h4-Scene-004.mp4",
+      "sha256": "5958d097cd0e41e4554e6eb075bf2fc1674c777aa5083b73db8614f4fda1c425",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-3cd4be59-bd63-560b-8575-f68c3bcd7b65",
+      "vript_clip_id": "-3u2xpZF2h4-Scene-004",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103277.mp4",
+      "sha256": "bb9bef872f4c3bfbf1ef2c59583a60feb7c148ca72aca2f2f02006289a7e2e21",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103277",
+      "vript_clip_id": "-N4-AjbiukE-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_112055.mp4",
+      "sha256": "a81af559f249286b93e8b2b7e54918b40c2c4dfd820fcd3d59930c88fe5f2c86",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_112055",
+      "vript_clip_id": "-uTEEIN-T8U-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-uTEEIN-T8U-Scene-018.mp4",
+      "sha256": "2e39cf5acea2d418e8fa3e43290c89e2b90fb45d5036d565241f9e691b5b24f7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_112055",
+      "vript_clip_id": "-uTEEIN-T8U-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103546.mp4",
+      "sha256": "c704f8f424452090690e9cfe1afcf70af5c0eb81c2a097ccd2726ca91d76c585",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103546",
+      "vript_clip_id": "0NLPl2Bs26E-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0NLPl2Bs26E-Scene-002.mp4",
+      "sha256": "46addfdc5845c6ba5e5aa0d1d24dcff699fa95abd32fb7ccc310cae9ee531c63",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103546",
+      "vript_clip_id": "0NLPl2Bs26E-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-V5whSyTstc-Scene-019.mp4",
+      "sha256": "d546fe39f1a3cb3eb7f2943ac7026d7c462838b2cc51438d78637b5447d1bcd6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-12cd706e-32c8-5502-8c6a-ab5582e9a2e0",
+      "vript_clip_id": "-V5whSyTstc-Scene-019",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-FxT3pAL9w0-Scene-010.mp4",
+      "sha256": "fe465a82d2d1ce94aefbb2405feed524d2e2b3f84744588ccbcd23cc84ed2c13",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106453",
+      "vript_clip_id": "-FxT3pAL9w0-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108020.mp4",
+      "sha256": "840a1d1ec75115ab2fad81a65fe2b86ac13d175f8a4cdea54c04fa5203682b85",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108020",
+      "vript_clip_id": "0Jr3IYhTLDw-Scene-134",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0Jr3IYhTLDw-Scene-134.mp4",
+      "sha256": "c4e3aa4ee924f376c9208c5436a3496399caf8fdaa7ab95b2d8a4916ac1e549a",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108020",
+      "vript_clip_id": "0Jr3IYhTLDw-Scene-134",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-AawZPTw8pY-Scene-013.mp4",
+      "sha256": "19782f0a7c90186eb5c6620e98225a05b6052cbf5339acf3acee50337d2f33c8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-3b74c9af-c410-5c45-afa7-25447d3c06a7",
+      "vript_clip_id": "-AawZPTw8pY-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-agdK2N5wX4-Scene-014.mp4",
+      "sha256": "22f0895d1f344db5d81c8dfff080b61a7d282e7b72417a029a59a295d5c9b01b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-d04466b0-e57a-5ea4-8688-1988e50e4643",
+      "vript_clip_id": "-agdK2N5wX4-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0H2k6ZgUNgg-Scene-025.mp4",
+      "sha256": "d034f9eb0af1cf8bda37ef73c48d802f88081066f0b8db4746659788773aaebd",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-172255e2-14eb-58dc-8638-b017067f6fdb",
+      "vript_clip_id": "0H2k6ZgUNgg-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102886.mp4",
+      "sha256": "9487278a04d10e8f3e56515eeca759b11f10e8603ae3d6d6265a8d80f5e8e426",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_102886",
+      "vript_clip_id": "-BDQmaMlb2g-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-BDQmaMlb2g-Scene-023.mp4",
+      "sha256": "f13397195652560f1a664373f0448accd38ea62d7f73cd377ee356a0c2cd75aa",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_102886",
+      "vript_clip_id": "-BDQmaMlb2g-Scene-023",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-ess9yiXH1g-Scene-048.mp4",
+      "sha256": "b45df515c9f06be98bd86313a2b1f32c2b082de6ec8ca9d1e716d62c400f572c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-cebdadd4-348a-505b-b6ff-6af5f69f26b9",
+      "vript_clip_id": "-ess9yiXH1g-Scene-048",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--5Uy5YZMjA-Scene-048.mp4",
+      "sha256": "0d77fdfc8be9ac579aaa5ce89f6a453e472ee5c32af907567c4ddf0c8ec8d1d2",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a6157bf2-20e6-5a88-89ee-029ae777e10f",
+      "vript_clip_id": "--5Uy5YZMjA-Scene-048",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109922.mp4",
+      "sha256": "a0949a04c26a522f4ba6276bfd1fbc5f76c294e8a90316365c0a496406f58f06",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109922",
+      "vript_clip_id": "-QRAClx_f9A-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-QRAClx_f9A-Scene-012.mp4",
+      "sha256": "551ddf66c1bd76cb67eae9ecf0a7affc7b64419cd601890c15daed0edb024b62",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109922",
+      "vript_clip_id": "-QRAClx_f9A-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111316.mp4",
+      "sha256": "81e40bfd2d9c340b66c0855a1f01ae0eab9bf0bb65535f1009f91043dbce2e04",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111316",
+      "vript_clip_id": "04dXPkQov_k-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\04dXPkQov_k-Scene-014.mp4",
+      "sha256": "5344d85935bbf3319adadbea2d4fddba03150d4f6f6cb83f1722fcb00a35a2c3",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111316",
+      "vript_clip_id": "04dXPkQov_k-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-_XYW2fTvmo-Scene-030.mp4",
+      "sha256": "27d430c0549167d2f8162dafff0957645380970364faa01054b322579d02b583",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-16af1df5-12c7-5556-8eba-cb6732fd17e6",
+      "vript_clip_id": "-_XYW2fTvmo-Scene-030",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105861.mp4",
+      "sha256": "6a43eff486dfe93f534e527808e4ee28646e00e2c9b35db6905ab76693baf63d",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105861",
+      "vript_clip_id": "-qmzXflXB4A-Scene-132",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-qmzXflXB4A-Scene-132.mp4",
+      "sha256": "0e911740bc257f9c5a77f47f79154a92e055c9f8353c7d6cd4a8041f47fead04",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105861",
+      "vript_clip_id": "-qmzXflXB4A-Scene-132",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tznlx878UU-Scene-555.mp4",
+      "sha256": "c6db8a4147722e859e7f5aa35d35e67b69d41a521f6943024febc44eb11c34c8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-536158d8-c317-582a-bc49-8cff53c08da3",
+      "vript_clip_id": "-Tznlx878UU-Scene-555",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-WlKxQ_WTLc-Scene-001.mp4",
+      "sha256": "ed9e0be6453b183682af771b6f9db4d10647c1b5dc922ae81c34aeb644ebb694",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-483af581-636c-506e-b5fd-bb5d867f8ec7",
+      "vript_clip_id": "-WlKxQ_WTLc-Scene-001",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-aAZ2Fd5_sc-Scene-002.mp4",
+      "sha256": "d8c690d515617b8f1bd74e8089c48f72555b576e7d44f3f705e7348710844902",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-384348c0-8fc9-5bea-bd5d-8a22a599cd75",
+      "vript_clip_id": "-aAZ2Fd5_sc-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100649.mp4",
+      "sha256": "e6fe47e2fc9ce6e04b54e273fbd8c6ad0ce4984000a1d55a874ad49a28284299",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100649",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-127",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5kkT_RBHk8-Scene-127.mp4",
+      "sha256": "1ade974843a8ae9cc5be6e5f0eddbe94ea4265f882ee4d03898b1a6326c3cf9d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100649",
+      "vript_clip_id": "-5kkT_RBHk8-Scene-127",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-uw5iPRcyZ0-Scene-015.mp4",
+      "sha256": "41351b4f63daba8eef9a3d7580020e6a11d23988944e6a891ebf90b4b12fe244",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-d4a860af-84e0-5e4f-8b53-14fbda8f2a1b",
+      "vript_clip_id": "-uw5iPRcyZ0-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3BVEMmZaqPo-Scene-014.mp4",
+      "sha256": "96da34a3f746eab861f05f8b9c3433af0ae68aa983261047a25b8c43083c75b0",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105858",
+      "vript_clip_id": "3BVEMmZaqPo-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100434.mp4",
+      "sha256": "edcd2d386774f0f94a2a8083757f6d80b18d312ed7cd8d6a02cc3e58061830a3",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100434",
+      "vript_clip_id": "-qGozrMz4DM-Scene-069",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-qGozrMz4DM-Scene-069.mp4",
+      "sha256": "620c0027e2bdb5d7f30c327b68660a5d7fdf8835c4b6c3220c4c8d221a977959",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100434",
+      "vript_clip_id": "-qGozrMz4DM-Scene-069",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-rcdpcTh0g0-Scene-011.mp4",
+      "sha256": "f35e60578eb89b7fb7470240bfb903d81dea8888b0a8fd80e123bdc9d0db42ea",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-65c7df81-8eae-58f4-8ff9-f0974cdfe051",
+      "vript_clip_id": "-rcdpcTh0g0-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-1o0lgzDaig-Scene-037.mp4",
+      "sha256": "f7020ae0ca2690bf49147c3ec40f5ab5bf60db484092465efe5449742a0419d0",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a81c9d2e-d501-56b9-bb2d-249563b92403",
+      "vript_clip_id": "-1o0lgzDaig-Scene-037",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107428.mp4",
+      "sha256": "d2a6d1d8feae957f4a5f957875c7f098fe84732ed6cf54aee124e0d7ffd785d0",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107428",
+      "vript_clip_id": "-pbPgOKDy-Y-Scene-206",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-pbPgOKDy-Y-Scene-206.mp4",
+      "sha256": "a64ce099f820254ab1bae5f802d6f7c411ff56a0bba12d60d1fa482e9eecebb7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107428",
+      "vript_clip_id": "-pbPgOKDy-Y-Scene-206",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-4kSEJnWCXo-Scene-003.mp4",
+      "sha256": "9f3e0361552c8aaa7279d04cf6289ef264724d2b825f7e9b5175a5af16deaf48",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-690142c4-17ea-5d46-a810-39bc6de05406",
+      "vript_clip_id": "-4kSEJnWCXo-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-0dlpsUEEmI-Scene-035.mp4",
+      "sha256": "2be7a4a11bc8fd42e654e8dd55a84c0486f6ba587d26d790e3659beca4626ad5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103757",
+      "vript_clip_id": "-0dlpsUEEmI-Scene-035",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109650.mp4",
+      "sha256": "a13b2e5a613e12cbfad5ea7c205c834a05cdd9c794a13e7e7a54b71d84a51c54",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109650",
+      "vript_clip_id": "--4M68p_Loc-Scene-038",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--4M68p_Loc-Scene-038.mp4",
+      "sha256": "683cce1baa1f7e1c3eb6351ba8b5ae2dcb16fadfea86fa5ea3d93fc449e149ef",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109650",
+      "vript_clip_id": "--4M68p_Loc-Scene-038",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101268.mp4",
+      "sha256": "dc4c5f950e2faffea83e8cdf35788d0190f103f6c0b2d7639e23ed19d4b1c576",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101268",
+      "vript_clip_id": "--OvdeGNnHU-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--OvdeGNnHU-Scene-028.mp4",
+      "sha256": "e449dc863a627d46a53fc1b3f22b291800474b588a7bcd69ed2febfc00b1a859",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101268",
+      "vript_clip_id": "--OvdeGNnHU-Scene-028",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Rg54pQB5nI-Scene-004.mp4",
+      "sha256": "2c380fb1b30e8a7b1c2049b362344d28e02fb6253982d327290c14bb6e2b289b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-de2044a2-a264-5450-b786-e668c81155fc",
+      "vript_clip_id": "-Rg54pQB5nI-Scene-004",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Au4DkverC4-Scene-014.mp4",
+      "sha256": "bc956dd01820043f143592e281cc2430b983fde45a20db5d87a7b3490de5dfd8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-11e018ce-dfa5-553b-ae7b-6e6bfe2df87f",
+      "vript_clip_id": "-Au4DkverC4-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108379.mp4",
+      "sha256": "e91781caf4453505b40b875ef5a21d82a845823251f7f743502fc355dbcf6cef",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108379",
+      "vript_clip_id": "0CnsW0ZK2Uo-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\0CnsW0ZK2Uo-Scene-018.mp4",
+      "sha256": "7a1898c1a59db7f0dfb7db85a40406f7160ba88190e1de0184b4165e19069334",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108379",
+      "vript_clip_id": "0CnsW0ZK2Uo-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100568.mp4",
+      "sha256": "5fdf7e5fc18948dadd7b315adbde7bcd0a3e85126e2098a56cbc5984b976512e",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100568",
+      "vript_clip_id": "-5eGMJT3M8M-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5eGMJT3M8M-Scene-012.mp4",
+      "sha256": "15076f4cf24830b6dd2bf40b3095649ae58aaff5c9b2202ba5acee103f2413c5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100568",
+      "vript_clip_id": "-5eGMJT3M8M-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10797.mp4",
+      "sha256": "7e05538ea43764644a04bf6b8c0e4cb0eae8be0649acbd5bb9809a7616c06610",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10797",
+      "vript_clip_id": "-bHE7r5iqXw-Scene-065",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-bHE7r5iqXw-Scene-065.mp4",
+      "sha256": "089f6150c0331edab10d03d152658108e35b6f556ac527501d0625834d346728",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10797",
+      "vript_clip_id": "-bHE7r5iqXw-Scene-065",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105218.mp4",
+      "sha256": "5b7b844a156dbc633554900eeb01fac73c99a1e12508b05af792a096bc6101ba",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105218",
+      "vript_clip_id": "-820sRZ6HXs-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-820sRZ6HXs-Scene-018.mp4",
+      "sha256": "55e1e5daa825ce8bee8d7321a19c692b9f1424aedc203e13694b74a76d60ff19",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105218",
+      "vript_clip_id": "-820sRZ6HXs-Scene-018",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3UHTQdotAzk-Scene-063.mp4",
+      "sha256": "f7d0a460bf51642566b6e377f82fe36ce16f6512051ffa8afce0d6967a436cd5",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-5296f684-9e82-57fa-b54d-86ccba402042",
+      "vript_clip_id": "3UHTQdotAzk-Scene-063",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103732.mp4",
+      "sha256": "00284581b30e7cc8948b1052805701193a48d26c18abe9de1e8905f2d094fcfc",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103732",
+      "vript_clip_id": "-S5_MQH9jDA-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-S5_MQH9jDA-Scene-032.mp4",
+      "sha256": "685b48b0810c7891f5d1ad961592f24cdac8cca54bf13914ab7e71362c23f5fb",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103732",
+      "vript_clip_id": "-S5_MQH9jDA-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-7BKjOyJrk8-Scene-032.mp4",
+      "sha256": "8a35d71020b44a0c6797ee7fb66e0b1fc1c16a6c9f409578e7af90c89ccb1d69",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-1fb1bd52-d062-51b9-8e97-51b2b36421fe",
+      "vript_clip_id": "-7BKjOyJrk8-Scene-032",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10939.mp4",
+      "sha256": "e99b1629502902b71c2d32918ba7562e63e79defda203ae563264f79140fd2e7",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10939",
+      "vript_clip_id": "-LD6VJlMyN8-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-LD6VJlMyN8-Scene-006.mp4",
+      "sha256": "743e7b4e41671007158d03eb7bbafdaecbe8d9e6c089f70bbe1e0b65df1b2f63",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10939",
+      "vript_clip_id": "-LD6VJlMyN8-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10208.mp4",
+      "sha256": "5274d6cbdddab5427a885d011a79889f1ee617766f663c3524daddaad2649ab5",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10208",
+      "vript_clip_id": "-3u2xpZF2h4-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-DF-MgSuhQ0-Scene-002.mp4",
+      "sha256": "f7735fa1e4c12fecbaa7d773073f414a37530bff16f0239e2f6018d843bc6e18",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a9c74c1c-b11d-5b8b-bda7-6346d1127e71",
+      "vript_clip_id": "-DF-MgSuhQ0-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\--2IG_rxfUM-Scene-013.mp4",
+      "sha256": "545527637013dbf4df6ebf4a047d1f868fa9ed037ad3107c40e5c1daed240a61",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-6e571f1c-f7a7-59f0-8353-e4adefb0e693",
+      "vript_clip_id": "--2IG_rxfUM-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5zwc5pE4AY-Scene-165.mp4",
+      "sha256": "ff0164a625d74fce09afcef9195fbf221df2f5a88fa1528112fe7426f0fcfd7c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-09f9e79c-fd8f-5274-ba61-e442675c6b17",
+      "vript_clip_id": "-5zwc5pE4AY-Scene-165",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106560.mp4",
+      "sha256": "8dbe6a86b824e1aba8cf88351c9eb767b1d72dfd6507edbb4951970dd3ca1693",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106560",
+      "vript_clip_id": "-XQ_CuIwDlc-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-XQ_CuIwDlc-Scene-011.mp4",
+      "sha256": "929e434fd14171a4d513e593ffcb73b219b8858b1541c7843c7809b2719ad935",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106560",
+      "vript_clip_id": "-XQ_CuIwDlc-Scene-011",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10931.mp4",
+      "sha256": "37e8dbdddf2d8b30b76c093f8d66e942b3ccbd6c5bfe5f1d4b75e05898e51c73",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10931",
+      "vript_clip_id": "-GBJZsLjYBU-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-GBJZsLjYBU-Scene-002.mp4",
+      "sha256": "0e0956c77235803ca4e83508b9f30e22293b2962863c026a65eb0212bc60d3cd",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10931",
+      "vript_clip_id": "-GBJZsLjYBU-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104438.mp4",
+      "sha256": "b1c62d593043f26a08c89e97bc3d6202c534d92ca00faf0e84ceb348246c6247",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104438",
+      "vript_clip_id": "-NtmQFX7rN8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-NtmQFX7rN8-Scene-008.mp4",
+      "sha256": "faf778a0226139e34e9ddcb61e738faf7a83fa7c70334a1bd6ffc941c61d6593",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104438",
+      "vript_clip_id": "-NtmQFX7rN8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-0dlpsUEEmI-Scene-009.mp4",
+      "sha256": "f892d7522ccfb303e3e2b54398e6ea344ee62c3d9bec8921b726984142bffdd9",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-3ef00453-c27e-50cc-b173-6644cbaf3f26",
+      "vript_clip_id": "-0dlpsUEEmI-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101430.mp4",
+      "sha256": "54d60f4efe685005c4a6977896817ada87c3a8d7601023ff5b9f8a727f47eeb2",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101430",
+      "vript_clip_id": "-iQEpqtfsFA-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-iQEpqtfsFA-Scene-006.mp4",
+      "sha256": "13e0be53d88b7ede62feb546546850224a2d18fd2532b6a9026065b5a9bbdc7e",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101430",
+      "vript_clip_id": "-iQEpqtfsFA-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-c4cJhTi0rw-Scene-017.mp4",
+      "sha256": "25815c0cbe61666d51bd29db5cc138b7895ebc97674aa9ee7c9467f3c614dd83",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-6f1697c8-8fc6-5acb-919d-a0c4ef7db385",
+      "vript_clip_id": "-c4cJhTi0rw-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102946.mp4",
+      "sha256": "c12447a2aa294869e8326b2c67c965ca8fc7077a7186fcbb3709e7241065fded",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_102946",
+      "vript_clip_id": "-Tf_rzkC7a8-Scene-021",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tf_rzkC7a8-Scene-021.mp4",
+      "sha256": "286cd7db8de46f1e7aa33aff22351fac463ec9b327ac1a093becc715367e8fe4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_102946",
+      "vript_clip_id": "-Tf_rzkC7a8-Scene-021",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_103899.mp4",
+      "sha256": "9548a34ca6cf12f92ebd44f614cbbd32d1016f5e9987c15dfd2eb63a8ff94519",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_103899",
+      "vript_clip_id": "-hhSlkXnaQ8-Scene-034",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-hhSlkXnaQ8-Scene-034.mp4",
+      "sha256": "616e5cda35ea1fd59b4b4a236fd288c7453b8971fae0f2538c298aa2e18cb831",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103899",
+      "vript_clip_id": "-hhSlkXnaQ8-Scene-034",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110920.mp4",
+      "sha256": "e4d2800d92692a8a742a8b420ea8a189b58d5fb917a504b562558657466a89af",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110920",
+      "vript_clip_id": "0LoFaa_yNOo-Scene-042",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-kxW8aheJhU-Scene-022.mp4",
+      "sha256": "d62a82e82ae96eb9292bdca43a7d35234edf2d691dd08ad7941ba813ded482ff",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-f0c7705c-0d9c-5797-bc8d-c48faf28f4cd",
+      "vript_clip_id": "-kxW8aheJhU-Scene-022",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105038.mp4",
+      "sha256": "c514a111d014a30b7e6af8aab3a7e337ff197c16cdc4d0e9ba54f3df9a39c7e7",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105038",
+      "vript_clip_id": "-CTyTPlMLb4-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CTyTPlMLb4-Scene-009.mp4",
+      "sha256": "45fd969b3999288242f2cf5e270521e2a0bfbd51bbbedde4c62d881625ffc4ae",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105038",
+      "vript_clip_id": "-CTyTPlMLb4-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Tznlx878UU-Scene-547.mp4",
+      "sha256": "c32cd92610a15ec65260325d7b8859478b2eda93556fd82b960f2595a4612247",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a25ac72c-ca46-5bef-b232-97c114206c64",
+      "vript_clip_id": "-Tznlx878UU-Scene-547",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-By0QtiVqcw-Scene-012.mp4",
+      "sha256": "f42d2d35530bf9b6bc01075e90768888db117500eb44b0842898f462e5ae2e76",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-453f6392-41fb-5d0c-aaaf-ec799b4d7bb9",
+      "vript_clip_id": "-By0QtiVqcw-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_108100.mp4",
+      "sha256": "a2afec93b3b554c7cb9efd04660c833229f8d7d8565d607b9b7eed63d6e814e8",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_108100",
+      "vript_clip_id": "-M_CDe6fvRU-Scene-076",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-M_CDe6fvRU-Scene-076.mp4",
+      "sha256": "84dc9793a3aacf66174d14f0f2d61134def301235999829891b1c20e6c7b693b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_108100",
+      "vript_clip_id": "-M_CDe6fvRU-Scene-076",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-6Sfr4FlhJ8-Scene-008.mp4",
+      "sha256": "8360a203c136c4475be73fe8abbfd70270a330ac796fe9ff10d4e910a99b353b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-dd6622ad-4b95-53fb-a3ee-4565f80fb98a",
+      "vript_clip_id": "-6Sfr4FlhJ8-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-C09dP2d2mo-Scene-017.mp4",
+      "sha256": "cfdf655f1785f9b07a7d2f2bc67129d03b05945558253eee8d299266d850182b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-7d0e1f18-b490-5f76-a68b-6b904b39096d",
+      "vript_clip_id": "-C09dP2d2mo-Scene-017",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\073BMGVWan0-Scene-415.mp4",
+      "sha256": "81067d86d3667f938441ab77e54386005124277b8e939121456ce01c09bf0287",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-a936971e-f642-5054-9b3a-b482da3cd821",
+      "vript_clip_id": "073BMGVWan0-Scene-415",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104403.mp4",
+      "sha256": "d5e9fe2fafc08a3ce7e288ac2bc198c86392bc70fe4943eb46bf1ff335a5a097",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104403",
+      "vript_clip_id": "-CEda3luJyk-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CEda3luJyk-Scene-025.mp4",
+      "sha256": "02203409b384a4c2728708f3dd825d34cb804116c9366cf23b6262406b9f5246",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104403",
+      "vript_clip_id": "-CEda3luJyk-Scene-025",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-bHE7r5iqXw-Scene-040.mp4",
+      "sha256": "0bb2a8585cf49b5536ffea3b6d1fecb554999bd82c0a8b22d6b812eba3919203",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-890a26b3-26c9-5b9f-871d-e8ba3edbc3b8",
+      "vript_clip_id": "-bHE7r5iqXw-Scene-040",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5zwc5pE4AY-Scene-308.mp4",
+      "sha256": "3523e8a7a37c3c87f3ce0b87287304d2628486cb713924a7bff66b30c0601446",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-cf2a5bd2-2ac0-5ef8-a33b-411e662c3237",
+      "vript_clip_id": "-5zwc5pE4AY-Scene-308",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-pbPgOKDy-Y-Scene-079.mp4",
+      "sha256": "2fd86391333501ece732bfe0ccfa006cc40b664ae3dfcc3b40cff5eeaf9e81b7",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-230b379e-194d-5349-b22b-4445e06684f0",
+      "vript_clip_id": "-pbPgOKDy-Y-Scene-079",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104250.mp4",
+      "sha256": "e19b8f55cd4b6fd3de6526c1ce6aa109caef37fc3ec05e7fb098a847259707aa",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104250",
+      "vript_clip_id": "-CqxAb76gz8-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-CqxAb76gz8-Scene-013.mp4",
+      "sha256": "70f22a11176a64fa2045a52099ce4dac16b365d2702bf4734ad280815d98c977",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104250",
+      "vript_clip_id": "-CqxAb76gz8-Scene-013",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_101994.mp4",
+      "sha256": "99ea9f89317ac263c25d6b77cfd7e15144751011dcee5c78e902fc3d547e84c5",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_101994",
+      "vript_clip_id": "-t2k6v0mwT4-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-t2k6v0mwT4-Scene-008.mp4",
+      "sha256": "02a925cef684feaade14545ef39da9c91c65b3fe6871bb61388128f9ae34e308",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_101994",
+      "vript_clip_id": "-t2k6v0mwT4-Scene-008",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-7rMo-TJCbI-Scene-093.mp4",
+      "sha256": "c4fe89259c50aab5a62bfcc92f421c5de303436adbb796898603bf78da07321b",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_103623",
+      "vript_clip_id": "-7rMo-TJCbI-Scene-093",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_022.mp4",
+      "sha256": "aff1a13e5ec4a2d00521ee1967cc56993538df962bc7ddb6b6d336f4df26b0ba",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_022",
+      "vript_clip_id": "-n0lKyrSJB4-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-n0lKyrSJB4-Scene-031.mp4",
+      "sha256": "cc57f07f9baf777876b47fd09419d4023f5a48c33e28101e33440567f9ae5413",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_022",
+      "vript_clip_id": "-n0lKyrSJB4-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-H44h9bnySg-Scene-050.mp4",
+      "sha256": "332945e65c1fc5f877ca4b2e41a34ba1a441fc36f3a6b185926e9d7eb0793868",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-2300965b-0307-591e-8390-e2c7ccd45fac",
+      "vript_clip_id": "-H44h9bnySg-Scene-050",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_109376.mp4",
+      "sha256": "ab6b16650927404d3fbdf7f074f4fdd56660d1f45461c016490af26bf5529f56",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_109376",
+      "vript_clip_id": "-5zwc5pE4AY-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5zwc5pE4AY-Scene-002.mp4",
+      "sha256": "58eab4fbc8010a2cf5c6970ec83efbc4f817a0e07cf2f8953c7e27e183cbbd67",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_109376",
+      "vript_clip_id": "-5zwc5pE4AY-Scene-002",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111825.mp4",
+      "sha256": "00bed96a886a39dbc8f517f36793750f2d6e9cdd10f85a605ad3c16d09eae717",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111825",
+      "vript_clip_id": "1BIFDIdgRFo-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\1BIFDIdgRFo-Scene-014.mp4",
+      "sha256": "32711cd4421d04ec53e3261cfb5c4b64cec5ff6b5cd482d710d1aab21791df9d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111825",
+      "vript_clip_id": "1BIFDIdgRFo-Scene-014",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-gwzJWXvJuo-Scene-072.mp4",
+      "sha256": "341254e2c3634ac881172b8e7a016c6b6f58a4f8c20166c40b5bc32c0019d96c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-83312432-fee2-5c3d-99e4-a2cc9f17345c",
+      "vript_clip_id": "-gwzJWXvJuo-Scene-072",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_107061.mp4",
+      "sha256": "d7185192aa1b7c18ced67b446bb47b487c0ee5a64a5d3daded37ac5a135ac1f4",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_107061",
+      "vript_clip_id": "-3RVvCTsULs-Scene-030",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-3RVvCTsULs-Scene-030.mp4",
+      "sha256": "19e99574bb581fdae74a892e2867a536854ca4eec4b2972af3f361bc88c55b0a",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_107061",
+      "vript_clip_id": "-3RVvCTsULs-Scene-030",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105246.mp4",
+      "sha256": "63def5ded19831db03e0e50615e55ea92cb1a75f594209ffdeee4849f8e3b118",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105246",
+      "vript_clip_id": "-bnSUJBzVvU-Scene-004",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-bnSUJBzVvU-Scene-004.mp4",
+      "sha256": "cbb215d2cad37c5a2bbdf17ef8d081c1e5f5be142b0b351761fea9d44da0760c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105246",
+      "vript_clip_id": "-bnSUJBzVvU-Scene-004",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_110612.mp4",
+      "sha256": "1615de39f6c0d3d8fad98357d613af56b06ae48a2d0187b98f250b34872d5589",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_110612",
+      "vript_clip_id": "-KB3YUUz38c-Scene-044",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KB3YUUz38c-Scene-044.mp4",
+      "sha256": "0cea379311eee75eca56f053194f366b7176a2fc55de895ff78aaba9530a616d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_110612",
+      "vript_clip_id": "-KB3YUUz38c-Scene-044",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_105334.mp4",
+      "sha256": "e801fc3d3867fdba0c8083e44a97300a3576540a997a8238accf0abe7e2974e0",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_105334",
+      "vript_clip_id": "-aid2jMEbXw-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-aid2jMEbXw-Scene-009.mp4",
+      "sha256": "a6fb6346d7b5edd707198c9f93c4b1c268879627f34105531b2f25ace689993c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_105334",
+      "vript_clip_id": "-aid2jMEbXw-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10380.mp4",
+      "sha256": "48fbebc6b8f0d060d6b92d16f0ed4d7c472ffa783fe5e622a10fb15a03aca2c3",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10380",
+      "vript_clip_id": "-0h_cKneHvg-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-0h_cKneHvg-Scene-031.mp4",
+      "sha256": "9f5e865c2f541664fdc85fff2f343656ec79d9ec7b84cd8413c84678c177f936",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10380",
+      "vript_clip_id": "-0h_cKneHvg-Scene-031",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-KWuh6hzi8E-Scene-329.mp4",
+      "sha256": "654830f76ed8ed42414562ec40262c40266c15eaa099ebcec7101e23baaa0ca6",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-142fd17c-4dc9-536d-bd21-d645efe399d3",
+      "vript_clip_id": "-KWuh6hzi8E-Scene-329",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111524.mp4",
+      "sha256": "03e805749030fde3201219359edfd749a03052a71b802f522bfcaca462725462",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111524",
+      "vript_clip_id": "-OzX7ZOntIY-Scene-006",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_111196.mp4",
+      "sha256": "5e845ec16abb3576c29f34e6aefcb4e9432ea8fb8d47862b54b9172029ac012c",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_111196",
+      "vript_clip_id": "-9kPfCf21Oc-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-9kPfCf21Oc-Scene-015.mp4",
+      "sha256": "b30aa826053f8b749f80d68eb037c6942ec6e6e8ab31f4cf0f97b10e3aa708cc",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_111196",
+      "vript_clip_id": "-9kPfCf21Oc-Scene-015",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_102416.mp4",
+      "sha256": "257d2be4248b888b69e87881735ca51a8a33b2c9767e10c893ba9aa5c054a0c5",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_102416",
+      "vript_clip_id": "-5aHZ6l-pJ8-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-5aHZ6l-pJ8-Scene-003.mp4",
+      "sha256": "62c5d43763efc1dfdfd575cb183e25949b978b6e0db02bba2c0fdd5490028281",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_102416",
+      "vript_clip_id": "-5aHZ6l-pJ8-Scene-003",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-LX0wj2NAAk-Scene-009.mp4",
+      "sha256": "0b055573838e49d2eb72abf0058a13e4d39e7b2ab6083cfa0855e38c0424047c",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-8a50e6f0-92c3-5384-8899-213e3d701097",
+      "vript_clip_id": "-LX0wj2NAAk-Scene-009",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_104103.mp4",
+      "sha256": "2e83779d87ec339e02ba293ae009f369afea01cd85737b867d84d7e30571e168",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_104103",
+      "vript_clip_id": "-pjF0HRM3PI-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-pjF0HRM3PI-Scene-012.mp4",
+      "sha256": "d822287625dc4da83cfaa0ad86eff3143f1d89bba3c1a306c4df7405a3ee99a0",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_104103",
+      "vript_clip_id": "-pjF0HRM3PI-Scene-012",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-N2I2fVFNno-Scene-021.mp4",
+      "sha256": "70516ef1789c686680690aed826f7e6412e8138bdf39593fc1ac0a3f27fb5d9d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "t2vz-6da38759-b4e7-59b5-9788-d0d8c3f64631",
+      "vript_clip_id": "-N2I2fVFNno-Scene-021",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_112213.mp4",
+      "sha256": "ee2aa4642f277071078942fbdec3b880e93a09dcefc011b0a7ca4d49aa0d7df5",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_112213",
+      "vript_clip_id": "2We4rb6K5JA-Scene-107",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\2We4rb6K5JA-Scene-107.mp4",
+      "sha256": "899467ba77c3654758a7a1d5e379531e69b97da4121c619ab0996f37aa10cef4",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_112213",
+      "vript_clip_id": "2We4rb6K5JA-Scene-107",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_106282.mp4",
+      "sha256": "121a4a6641db417e7e9cdea8d46b5479e9210d974dc37fa2f38f7439c1ff4564",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_106282",
+      "vript_clip_id": "-Xe9ATwapx8-Scene-111",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Xe9ATwapx8-Scene-111.mp4",
+      "sha256": "759b9b70968f031c5c92cd98b33c6447e27fa23bf07ce8765e165840cbe24f0d",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_106282",
+      "vript_clip_id": "-Xe9ATwapx8-Scene-111",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_10487.mp4",
+      "sha256": "4a9ed26ee8eaf9747bbe478aaf25269644938406b2325a8b2e3f6c184dc720ac",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_10487",
+      "vript_clip_id": "3-74LjvynIg-Scene-071",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\3-74LjvynIg-Scene-071.mp4",
+      "sha256": "6b51c09bf63a811f45fcc01c739c2d1a6381c6aed4bf9b4cb138b84d28368253",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10487",
+      "vript_clip_id": "3-74LjvynIg-Scene-071",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-cB-rujmAqQ-Scene-016.mp4",
+      "sha256": "2e34a703f8a5fa23b4b69dec736972125c0f92c40bab5ceb9a6ee9e03d81daf8",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_10614",
+      "vript_clip_id": "-cB-rujmAqQ-Scene-016",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\opensora\\train_OpenSora_13800\\OpenSoraL_100872.mp4",
+      "sha256": "81b54ab9d340e7041ff0c4d04e76cacdaa91b86233d3825ad2275990a56a8ba3",
+      "source": "opensora",
+      "fake": true,
+      "query": "OpenSoraL_100872",
+      "vript_clip_id": "-Jw-v1jFuH8-Scene-010",
+      "semantic_score": 1.0
+    },
+    {
+      "path": "E:\\AAGenvid\\Dataset\\vript\\-Jw-v1jFuH8-Scene-010.mp4",
+      "sha256": "c7c910005910c477916b850f90b35174cc2accb01f031fb990d9483952b38a44",
+      "source": "vript_real",
+      "fake": false,
+      "query": "OpenSoraL_100872",
+      "vript_clip_id": "-Jw-v1jFuH8-Scene-010",
+      "semantic_score": 1.0
+    }
+  ],
+  "counts": {
+    "opensora": 167,
+    "vript_real": 333
+  },
+  "source_groups": "path-derived; requires ancestry and licence review"
+}
