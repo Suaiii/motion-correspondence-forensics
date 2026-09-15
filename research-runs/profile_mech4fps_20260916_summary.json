@@ -1,0 +1,9 @@
+{
+  "scope": "server_profile",
+  "attempted": 263,
+  "completed": 263,
+  "wall_seconds": 457.73754455149174,
+  "peak_allocated_bytes": 24208384,
+  "profile_sha256": "0f9db61ef953502a501df8d183795b9731eb1324c7fffe29184430caa33241b9",
+  "note": "4fps provisional profile; not formal training; server scheduled for shutdown after artifact sync"
+}
