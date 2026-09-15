@@ -1,0 +1,25 @@
+{
+  "recorded_at": "2026-09-14T00:13:45+08:00",
+  "user_instruction": "到你没额度就关闭服务器",
+  "scope": "Project paid compute instances; preserve checkpoints and data disks; do not terminate or delete instances",
+  "quota_readout_available_in_current_session": false,
+  "quota_exhaustion_callback_verified": false,
+  "live_connection_check": {
+    "host": "connect.westb.seetacloud.com",
+    "ports": {"35529": "connection_refused", "23129": "connection_refused"},
+    "provider_console_checked": false,
+    "billing_stop_currently_verified": false,
+    "shutdown_issued_this_check": false
+  },
+  "historical_shutdown_receipt": "research-runs/overnight_20260911/shutdown_verification.json",
+  "new_paid_jobs_started": false,
+  "before_next_paid_run": [
+    "Require authorized startup and working authenticated instance access",
+    "Deploy the tested shutdown guard repair before starting any workload",
+    "Verify an instance-local or provider-side shutdown deadline independent of this conversation",
+    "Do not rely on quota exhaustion triggering another assistant tool call",
+    "When an approaching quota limit is observed, stop new jobs, save checkpoints and request instance shutdown before losing control",
+    "Verify provider stopped status separately from SSH disconnection; report storage billing separately"
+  ],
+  "current_enforcement": "No new paid workload admitted; automatic quota-triggered shutdown is not installed or verified"
+}

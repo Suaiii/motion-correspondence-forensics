@@ -1,0 +1,19 @@
+{
+  "purpose": "Public video metadata availability only; no video download, no cookies, no login",
+  "rule": "First three lexicographic IDs from complete 1MiB metadata prefix records; not a random or training sample",
+  "rows": [
+    {
+      "url": "https://www.youtube.com/watch?v=----meyKR48",
+      "video_id": "----meyKR48"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=---bHKUOn90",
+      "video_id": "---bHKUOn90"
+    },
+    {
+      "url": "https://www.youtube.com/watch?v=---kG6vmG_g",
+      "video_id": "---kG6vmG_g"
+    }
+  ],
+  "metadata_prefix_sha256": "7196ed9aab2c9cce7bee280a3dde5cda1aa555e8699a6c7479e34e239d612c31"
+}

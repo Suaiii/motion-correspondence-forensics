@@ -1,0 +1,81 @@
+{
+  "protocol": {
+    "id": "operator_response_v1",
+    "cache": "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\alignment_gate_v1\\cache",
+    "tau": 0.001,
+    "arms": [
+      "correct",
+      "wrong_integer",
+      "fractional"
+    ],
+    "legacy_sampling": "4fps/8frames/128px",
+    "scope": "legacy development diagnostic; no external selection",
+    "selection": "fit-only LR, C chosen on calibration AUROC",
+    "source_hashes": {
+      "research-runs\\alignment_gate_v1\\manifest.json": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+      "research-runs\\alignment_gate_v1\\protocol.json": "2412849bbf0a32643cbc28555b694927e9287eb27a7ae96b8537069e01bf0b8d"
+    }
+  },
+  "selection": {
+    "trials": [
+      {
+        "C": 0.001,
+        "calibration_auc": 0.5647222222222222
+      },
+      {
+        "C": 0.003,
+        "calibration_auc": 0.5808333333333333
+      },
+      {
+        "C": 0.01,
+        "calibration_auc": 0.6063888888888888
+      },
+      {
+        "C": 0.03,
+        "calibration_auc": 0.6383333333333333
+      },
+      {
+        "C": 0.1,
+        "calibration_auc": 0.6763888888888888
+      },
+      {
+        "C": 0.3,
+        "calibration_auc": 0.7125
+      },
+      {
+        "C": 1,
+        "calibration_auc": 0.7436111111111112
+      },
+      {
+        "C": 3,
+        "calibration_auc": 0.7608333333333333
+      },
+      {
+        "C": 10,
+        "calibration_auc": 0.765
+      },
+      {
+        "C": 30,
+        "calibration_auc": 0.7652777777777777
+      },
+      {
+        "C": 100,
+        "calibration_auc": 0.7666666666666666
+      }
+    ],
+    "selected": {
+      "C": 100,
+      "calibration_auc": 0.7666666666666666
+    }
+  },
+  "results": {
+    "overall": {
+      "fit": 0.764856429463171,
+      "calibration": 0.7666666666666666,
+      "audit": 0.6789473684210526
+    },
+    "by_source": {}
+  },
+  "n": 595,
+  "wall_seconds": 32.55538511276245
+}

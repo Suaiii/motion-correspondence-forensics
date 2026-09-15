@@ -1,0 +1,80 @@
+{
+  "schema_version": "0.2",
+  "project": "trajectory-transport-spiking-forensics",
+  "goal": "证明局部尺度归一化事件与轨迹输运膜状态能否在未知生成器和未见传播路径下保存视频生成异常。",
+  "status_values": ["todo", "ready", "running", "review", "done", "blocked"],
+  "tasks": [
+    {
+      "id": "G0",
+      "milestone": "G0",
+      "title": "旧资产清算与主协议冻结",
+      "assignee": "data-auditor",
+      "parents": [],
+      "status": "ready",
+      "hypothesis": "RoboVid v02 可用于 pilot，但需消除 test 身份训练与产物覆盖问题。",
+      "work": ["依据 ROBOVID_AUDIT.md 重建 train/val/test", "冻结标签方向、阈值来源与产物 hash", "将 v02 定位为机制 pilot"],
+      "acceptance": ["训练仅访问 train", "阈值仅由 val 确定", "test 一次评测且所有产物绑定 hash"],
+      "artifacts": ["artifacts/G0/frozen_pilot_protocol.json", "artifacts/G0/asset_manifest.json"]
+    },
+    {
+      "id": "G1",
+      "milestone": "G1",
+      "title": "运动对齐与尺度归一化事件机制",
+      "assignee": "mechanism-researcher",
+      "parents": ["G0"],
+      "status": "todo",
+      "hypothesis": "运动对齐和局部尺度归一化可减少传播退化产生的 nuisance spike，同时保留生成器间共享异常。",
+      "work": ["实现 motion/feature warp", "实现 signed normalized event", "扫描噪声、编码、几何与真实平台子集"],
+      "acceptance": ["至少两个生成器支持机制", "报告伪脉冲率、真假间距和置信区间", "机制无效时触发 No-Go"],
+      "artifacts": ["artifacts/G1/mechanism_predictions.parquet", "artifacts/G1/mechanism_report.md"]
+    },
+    {
+      "id": "G2",
+      "milestone": "G2",
+      "title": "轨迹输运 LIF 与 Tube 证据",
+      "assignee": "model-researcher",
+      "parents": ["G1"],
+      "status": "todo",
+      "hypothesis": "沿运动轨迹输运膜状态优于固定像素 LIF，并提供结构化视频证据。",
+      "work": ["实现 transported membrane update", "建立 tube/固定外圈/随机区域对照", "比较固定 LIF、可学习 LIF 与参数匹配 ANN"],
+      "acceptance": ["增益不能由参数量解释", "Tube 优于等面积随机区域", "ANN 更强时转向通用轨迹输运"],
+      "artifacts": ["artifacts/G2/model_card.md", "artifacts/G2/ablation_predictions.parquet"]
+    },
+    {
+      "id": "G3",
+      "milestone": "G3",
+      "title": "取证与退化表征解耦",
+      "assignee": "model-researcher",
+      "parents": ["G2"],
+      "status": "todo",
+      "hypothesis": "同源跨退化一致性和 nuisance 分离可改善未见传播路径。",
+      "work": ["建立 clean/degraded counterfactual views", "实现 nuisance encoder 与正交或 GRL 约束", "对比普通增强和 WaveRep"],
+      "acceptance": ["未见路径提升", "clean 性能损失在冻结边界内", "各损失项独立消融"],
+      "artifacts": ["artifacts/G3/disentanglement_report.md", "artifacts/G3/predictions.parquet"]
+    },
+    {
+      "id": "G4",
+      "milestone": "G4",
+      "title": "v03 与公共基准双重泛化",
+      "assignee": "experiment-runner",
+      "parents": ["G3"],
+      "status": "todo",
+      "hypothesis": "方法可同时迁移到未知生成器和未见传播路径。",
+      "work": ["构建按生成器整体留出的 v03", "运行 GenVideo/GenVidBench 与外部 benchmark", "真实平台校验、3–5 seeds、grouped bootstrap"],
+      "acceptance": ["测试前冻结门槛", "worst-generator 与 worst-path 均报告", "仅 RoboVid 有效时触发 No-Go"],
+      "artifacts": ["artifacts/G4/frozen_protocol.json", "artifacts/G4/final_predictions.parquet", "artifacts/G4/statistical_report.md"]
+    },
+    {
+      "id": "G5",
+      "milestone": "G5",
+      "title": "独立复核与 CCF-A 论文证据包",
+      "assignee": "independent-reviewer",
+      "parents": ["G4"],
+      "status": "todo",
+      "hypothesis": "论文所有主张均可由锁定代码、配置和预测独立重算。",
+      "work": ["重算主表与关键图", "检查理论假设适用边界", "测量含解码、warp、骨干与 SNN 的全链路开销"],
+      "acceptance": ["独立复核结论一致", "代码、数据卡、模型卡与失败案例齐全", "主张—证据逐项映射"],
+      "artifacts": ["artifacts/G5/review.json", "artifacts/G5/claim_evidence_matrix.csv"]
+    }
+  ]
+}

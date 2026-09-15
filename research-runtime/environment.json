@@ -1,0 +1,47 @@
+{
+  "time_utc": "2026-09-07T15:03:45.315444+00:00",
+  "python": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\python.exe",
+  "python_version": "3.11.15 | packaged by Anaconda, Inc. | (main, Mar 11 2026, 17:12:15) [MSC v.1942 64 bit (AMD64)]",
+  "platform": "Windows-10-10.0.26200-SP0",
+  "disk_free_gb": 93.28,
+  "caches": {
+    "TEMP": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\tmp",
+    "TMP": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\tmp",
+    "XDG_CACHE_HOME": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache",
+    "TORCH_HOME": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\torch",
+    "HF_HOME": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\huggingface",
+    "HF_HUB_CACHE": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\huggingface\\hub",
+    "MPLCONFIGDIR": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\matplotlib",
+    "PIP_CACHE_DIR": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\pip",
+    "CUDA_CACHE_PATH": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\cuda",
+    "TRITON_CACHE_DIR": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\triton",
+    "TORCH_EXTENSIONS_DIR": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\torch_extensions",
+    "NUMBA_CACHE_DIR": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\numba",
+    "PYTHONPYCACHEPREFIX": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\pycache",
+    "UV_CACHE_DIR": "E:\\aNB\\TECH\\脉冲神经网络\\research-runtime\\cache\\uv"
+  },
+  "packages": {
+    "numpy": {
+      "version": "2.2.6",
+      "path": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\Lib\\site-packages\\numpy\\__init__.py"
+    },
+    "cv2": {
+      "version": "4.12.0",
+      "path": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\Lib\\site-packages\\cv2\\__init__.py"
+    },
+    "sklearn": {
+      "version": "1.7.2",
+      "path": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\Lib\\site-packages\\sklearn\\__init__.py"
+    },
+    "torch": {
+      "version": "2.5.1",
+      "path": "E:\\AAGenvid\\.conda_envs\\d3_cuda\\Lib\\site-packages\\torch\\__init__.py"
+    }
+  },
+  "cuda": {
+    "available": true,
+    "build": "12.1",
+    "name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "vram_bytes": 8585216000
+  }
+}

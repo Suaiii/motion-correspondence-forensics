@@ -1,0 +1,27 @@
+{
+  "repo": "AIGVDBench/AIGVDBench",
+  "revision": "bf48acaa4920990af3dd2a511ea88e63354df305",
+  "files": [
+    {
+      "type": "file",
+      "oid": "4836f05ec306c96d36e4cc8ccf11602c9ceae276",
+      "size": 1860924,
+      "path": "Split/test.jsonl"
+    },
+    {
+      "type": "file",
+      "oid": "3bcec39aab3cc9270e0bb3709c12444c7fed30d5",
+      "size": 8610190,
+      "path": "Split/train.jsonl"
+    },
+    {
+      "type": "file",
+      "oid": "fc6c09df6893504cdd8758789e431dd3be2f420b",
+      "size": 1846793,
+      "path": "Split/val.jsonl"
+    }
+  ],
+  "total_bytes": 12317907,
+  "catalog_sha256": "ab67059b781a9a73f7186b32afd3f8da0e2c1d0096f3b992b5c827f69712fd5e",
+  "warning": "Archive-level downloads only; member selection and provenance audit still required"
+}

@@ -1,0 +1,102 @@
+{
+  "scope": "public metadata only; video bytes not acquired",
+  "repositories": [
+    {
+      "repo": "jian-0/GenVidBench",
+      "revision": "701cafb6f999d7ea0cbf3c354df6177311a4d824",
+      "files": 42,
+      "total_bytes": 215813877777
+    },
+    {
+      "repo": "AIGVDBench/AIGVDBench",
+      "revision": "bf48acaa4920990af3dd2a511ea88e63354df305",
+      "files": 38,
+      "total_bytes": 378392961213
+    }
+  ],
+  "genvidbench": {
+    "counts": {
+      "Pair1_labels/ms/1": 13501,
+      "Pair1_labels/pika/1": 13501,
+      "Pair1_labels/t2vz/1": 13501,
+      "Pair1_labels/vc2/1": 13501,
+      "Pair1_labels/vript/0": 20131,
+      "Pair2_labels/cogvideo/1": 13853,
+      "Pair2_labels/hd_vg_130m/0": 13416,
+      "Pair2_labels/mora/1": 13853,
+      "Pair2_labels/musev/1": 13369,
+      "Pair2_labels/svd/1": 13369
+    },
+    "duplicate_paths": 0,
+    "ancestry_status": "not established by binary path-label lists; source and prompt mapping still required"
+  },
+  "aigvdbench": {
+    "split_rows": {
+      "test": 3000,
+      "train": 14000,
+      "val": 3000
+    },
+    "inferred_original_ids": 17936,
+    "original_id_cross_split_candidates": 880,
+    "overlap_examples": {
+      "F9qIZYJ-5ow": [
+        "test",
+        "train"
+      ],
+      "BFzwNCGj-MM": [
+        "test",
+        "train"
+      ],
+      "8Qsq3qtpBZk": [
+        "test",
+        "train"
+      ],
+      "6pf8QNpbI0w": [
+        "test",
+        "train"
+      ],
+      "0K-NUNgaM6Y": [
+        "test",
+        "train"
+      ],
+      "7HNvMM5aqpo": [
+        "test",
+        "train"
+      ],
+      "0jOj0uUpRHI": [
+        "test",
+        "train"
+      ],
+      "5IkmcayzrjU": [
+        "test",
+        "train"
+      ],
+      "BMRN_2mdsEI": [
+        "test",
+        "val"
+      ],
+      "5gTR_WPTxpg": [
+        "test",
+        "train"
+      ]
+    },
+    "unparsed_ids": {
+      "train": 3,
+      "val": 1
+    },
+    "identical_prompt_cross_split_candidates": 37,
+    "interpretation": "Filename-prefix and exact-text candidates, not completed semantic deduplication. Split lists contain Video_id/prompts, not verified fake ancestry."
+  },
+  "input_hashes": {
+    "metadata\\AIGVDBench\\AIGVDBench\\Split\\test.jsonl": "bab0fbe4e482b92d841ade12e3b45c81843a84bcd8d8716e0ca8e8ddcfac95a7",
+    "metadata\\AIGVDBench\\AIGVDBench\\Split\\test.jsonl.receipt.json": "aae82d0e159bcb5e5fa31d7ff4cf48882037d400ba67d9637dddc15af0d56005",
+    "metadata\\AIGVDBench\\AIGVDBench\\Split\\train.jsonl": "46fcf59f24b742af7c6c3e9d4907b9c9dba451c6c8ca1dcd7016949202d07012",
+    "metadata\\AIGVDBench\\AIGVDBench\\Split\\train.jsonl.receipt.json": "3f393db5eef63d196b2e1bcb9ebe4cedc75c62c0b63e0e25c6234704700a6c3b",
+    "metadata\\AIGVDBench\\AIGVDBench\\Split\\val.jsonl": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+    "metadata\\AIGVDBench\\AIGVDBench\\Split\\val.jsonl.receipt.json": "6f3942dcb36b1148abc6a1be0fe8d60061c671224095622d96e11c1c753a2cb4",
+    "metadata\\jian-0\\GenVidBench\\GenVidBench\\Pair1_labels.txt": "311cc87114d1cdd0f38db0dbb1ab7d795a2d9813fc1ad3b86ec96dc772b85ff3",
+    "metadata\\jian-0\\GenVidBench\\GenVidBench\\Pair1_labels.txt.receipt.json": "0da394ae5553e7e79aff9a8e870cfbcd02ad816c06b3d01261f1f48ba2e309ad",
+    "metadata\\jian-0\\GenVidBench\\GenVidBench\\Pair2_labels.txt": "50ef619afacc6dabad628237d04e496dc71ec6b166d7b1ab3037e25c935d1782",
+    "metadata\\jian-0\\GenVidBench\\GenVidBench\\Pair2_labels.txt.receipt.json": "97481efe441406434a656e0c3cc8bd798fa2cf690aac17f82b8e82449f262a09"
+  }
+}

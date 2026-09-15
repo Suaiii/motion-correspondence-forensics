@@ -1,0 +1,166 @@
+[
+  {
+    "local_id": "Q00",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M0] E盘运行环境与元信息捷径诊断",
+      "assignee": "research-engineer",
+      "parents": [],
+      "body": "{\"local_id\": \"Q00\", \"hypothesis\": \"仅使用元信息即可在按原视频前缀分组的开发样本上预测来源相关真假标签。\", \"work\": [\"E盘缓存/临时环境验证\", \"预先固定120条样本与72/24/24角色划分\", \"记录解码、字节哈希、近重复候选复核\", \"拟合并复核三组预设元信息分类器\", \"保留v1拟合前阻断与v2修订记录\"], \"acceptance\": [\"所有研究输出位于E盘\", \"数据选择/配置先于拟合固定，校准阈值不使用audit\", \"逐样本输出、参数、哈希和代码快照完整\", \"概率重算与pairwise AUROC一致，研究意义不外推\"], \"artifacts\": [\"../../research-runtime/environment.json\", \"../../research-runs/m0_metadata_v2/run_lock.json\", \"../../research-runs/m0_metadata_v2/metrics.json\", \"../../research-runs/m0_metadata_v2/verification.json\", \"../../research-runs/m0_metadata_v2/artifact_hashes.json\", \"../../research-runs/m0_metadata_v2/research_checkpoint.md\"], \"research_metadata\": {\"dataset_version\": \"v02 historical development subset120; not finaltest\", \"seed\": 20260907, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_training\": false, \"sample_count\": 120, \"max_decode_seconds\": 600}}, \"local_status\": \"done\"}"
+    }
+  },
+  {
+    "local_id": "Q01",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M1-development-pilot] 本地神经基线训练与一次过拟合配方调整",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_Q00>"
+      ],
+      "body": "{\"local_id\": \"Q01\", \"hypothesis\": \"统一采样和尺寸后，小型残差时序网络能否学习超过简单逐帧均值的开发判别信息，且配方调整能否缓解过拟合。\", \"work\": [\"120条固定开发输入按预先质量规则保留118条，70/24/24角色不变\", \"三个模型×三个种子×20轮；v1/v2合计18个fit\", \"仅由calibration选择checkpoint与阈值；v2调整先于所有audit结果\", \"保留过拟合、v2未改善及残差顺序诊断\", \"数值复算54组结果并保留逐视频预测\"], \"acceptance\": [\"本地E盘运行、无网络下载\", \"损失和梯度有限，checkpoint加载可复现\", \"所有版本、种子、条件结果齐备\", \"配对区间和小样本限制报告，不通过该pilot宣称E1/E2完成\"], \"artifacts\": [\"../../research-runs/neural_pilot_summary_2026-09-08.md\", \"../../research-runs/neural_pilot_v1/training_complete.json\", \"../../research-runs/neural_pilot_v1/evaluation.json\", \"../../research-runs/neural_pilot_v1/verification.json\", \"../../research-runs/neural_pilot_v2/training_complete.json\", \"../../research-runs/neural_pilot_v2/evaluation.json\", \"../../research-runs/neural_pilot_v2/verification.json\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-historical120-QC118-development-only\", \"seed\": [17, 29, 43], \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu\": \"local RTX4060Laptop\", \"max_training_seconds_per_version\": 1800, \"actual_training_seconds_v1\": 69.48265850000098, \"actual_training_seconds_v2\": 63.8293715999971}}, \"local_status\": \"done\"}"
+    }
+  },
+  {
+    "local_id": "Q02",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M1-development-gate] 扩大样本与等参数无序池化对照",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_Q01>"
+      ],
+      "body": "{\"local_id\": \"Q02\", \"hypothesis\": \"对齐残差中的顺序记忆能否在扩大开发样本后提供超过等参数无序池化的稳定增益。\", \"work\": [\"固定600条新抽开发视频，排除首轮源前缀/文件及字节哈希\", \"未对齐/对齐×GRU/无序MLP共四模型，精确同参数49601\", \"3seeds×20epochs并报告clean/JPEG70/gaussian5\", \"固定8维残差统计副检查\", \"按预注册门槛决定继续或降低SNN/状态输运优先级\"], \"acceptance\": [\"不改变audit分数方向/规则或重复搜索配方\", \"保留质量排除、哈希、逐视频概率和种子差异\", \"主判定使用≥0.02增益、下置信界>0、2/3同方向\", \"未通过时保留负结果并写出转向决定\"], \"artifacts\": [\"../../research-runs/order_gate_v1/protocol.json\", \"../../research-runs/order_gate_v1/manifest.json\", \"../../research-runs/order_gate_v1/training_complete.json\", \"../../research-runs/order_gate_v1/decision.json\", \"../../research-runs/order_gate_v1/gate_report.md\", \"../PIVOT_DECISION_2026-09-08.md\"], \"research_metadata\": {\"dataset_version\": \"v02 historical pool;600 presampled excluding initial120 source-prefix/file IDs;development only\", \"seed\": [17, 29, 43], \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"max_cache_seconds\": 1800, \"max_training_seconds\": 1800}}, \"local_status\": \"done\"}"
+    }
+  },
+  {
+    "local_id": "P01",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M2-development-diagnostic] 对齐表示收益的排假验证",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_Q02>"
+      ],
+      "body": "{\"local_id\": \"P01\", \"hypothesis\": \"正确运动对应提供超出同次数插值、有效区域mask和源分布差异的判别信息。\", \"work\": [\"冻结正确/错误对应和等插值对照\", \"各对照共享有效区域并记录mask统计\", \"匹配无序池化读出、数据与预算\", \"预先给出否定条件，不在旧audit调参\"], \"acceptance\": [\"正确对应需超过等插值和mask对照\", \"负结果删除对应机制主张\", \"现有历史audit仅诊断，新增结果需独立来源确认\"], \"artifacts\": [\"artifacts/P01/protocol.json\", \"artifacts/P01/report.md\", \"artifacts/P01/predictions.json\"], \"research_metadata\": {\"dataset_version\": \"pending; historical development diagnostic and independent cohort separately identified\", \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"training_budget_pending\": true}}, \"local_status\": \"ready\"}"
+    }
+  },
+  {
+    "local_id": "R00",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M0] 反方审查与先例差距复核",
+      "assignee": "research-lead",
+      "parents": [],
+      "body": "{\"local_id\": \"R00\", \"hypothesis\": \"现有先例仍未充分解释和解决对齐造成的视频取证证据损失。\", \"work\": [\"核验光流取证、warped hidden state、阈值归一化和不变性先例\", \"记录 C1/C2 与最近邻的准确差异\"], \"acceptance\": [\"以机制差异而非任务改名说明新颖性\", \"全文不足的条目标记证据缺口\", \"完成复核后才将该任务设为 done\"], \"artifacts\": [\"../ADVERSARIAL_REVIEW_2026-09-07.md\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"review\"}"
+    }
+  },
+  {
+    "local_id": "R01",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M0] 原视频分组与开发资产核验",
+      "assignee": "research-lead",
+      "parents": [],
+      "body": "{\"local_id\": \"R01\", \"hypothesis\": \"同源片段和派生视图的交叉能在训练前通过来源分组审计消除。\", \"work\": [\"已运行只读原视频前缀交叉检查\", \"继续核对原元数据、内容重复、许可和可用硬件\", \"界定历史测试为开发诊断\", \"已完成120条源分组开发样本的元信息捷径检查：三组预设特征的24条audit AUROC均为1.0，仅作为小样本数据诊断\", \"已核查旧抽帧重复索引及直轨迹公式伪曲率；实现拒绝重复补帧的名义CFR采样计划\"], \"acceptance\": [\"前缀审计不冒充内容去重\", \"分组单元与证据路径可重算\", \"输入数据与协议约束记录\"], \"artifacts\": [\"../artifacts/source_group_audit.json\", \"artifacts/R01/asset_review.md\", \"../../research-runs/m0_metadata_v2/research_checkpoint.md\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"running\"}"
+    }
+  },
+  {
+    "local_id": "R02",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M1] 冻结开发与最终验证协议",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_R00>",
+        "<HERMES_ID_FOR_R01>"
+      ],
+      "body": "{\"local_id\": \"R02\", \"hypothesis\": \"按原视频和生成器分组后可以评估真实时序增益。\", \"work\": [\"开发集选择与最终未打开测试隔离\", \"冻结错误对应、遮挡、padding、时间乱序和单帧对照\", \"对真假施加相同干预分布\"], \"acceptance\": [\"无源组跨 split\", \"不按最终测试调阈值或分数方向\", \"split/config hash 和运行预算已确定\"], \"artifacts\": [\"artifacts/R02/protocol.json\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  },
+  {
+    "local_id": "R03",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M1] 最小共同基线与运算测量",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_R02>"
+      ],
+      "body": "{\"local_id\": \"R03\", \"hypothesis\": \"固定预处理和预算能比较图像聚合、普通时间模型与 SNN。\", \"work\": [\"固定语义骨干和对应估计\", \"运行单帧聚合、残差 ANN、固定 LIF 及强增强基线\", \"对可用 MAST 代码确认版本，不可用则标明重实现\"], \"acceptance\": [\"逐视频输出及采样、checkpoint、代码版本齐备\", \"可重算结果\", \"资源需求经小样本 profile 确定\"], \"artifacts\": [\"artifacts/R03/baseline_report.md\", \"artifacts/R03/predictions.parquet\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  },
+  {
+    "local_id": "E1",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M2] 对齐收益与证据损失实验",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_R03>"
+      ],
+      "body": "{\"local_id\": \"E1\", \"hypothesis\": \"固定画面与运动参照中的取证证据在不可靠对应下存在稳定互补。\", \"work\": [\"未对齐、仅对齐、concat、可信度路由，保持总容量\", \"按遮挡、运动、退化分层；加入错误对应\", \"先轻量读出验证，不叠加大型结构\"], \"acceptance\": [\"报告配对区间和等参数双路对照\", \"没有互补时删除双参照主张\", \"每次拒绝与负结果留档\"], \"artifacts\": [\"artifacts/E1/report.md\", \"artifacts/E1/predictions.parquet\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  },
+  {
+    "local_id": "E2",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M2] 脉冲机制必要性实验",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_E1>"
+      ],
+      "body": "{\"local_id\": \"E2\", \"hypothesis\": \"相同参照与增强下 SNN 具有可测的性能或开销优势。\", \"work\": [\"固定 LIF、输运 LIF、可信度双参照 LIF 与 GRU/ANN\", \"探索 3 seeds；分开同参数与同延迟比较\"], \"acceptance\": [\"计入解码、骨干和 Warp\", \"报告准确率—延迟前沿\", \"被 ANN 全面支配时不保留 SNN 作为主贡献\"], \"artifacts\": [\"artifacts/E2/pareto_report.md\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  },
+  {
+    "local_id": "E3",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M2] 选择性配对监督验证",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_E1>"
+      ],
+      "body": "{\"local_id\": \"E3\", \"hypothesis\": \"选择性约束优于全局不变性且不会以丢弃困难样本换取稳定性。\", \"work\": [\"普通增强、全局一致性和选择性配对三组\", \"固定/stop-gradient 权重；记录有效覆盖率和判别间距\"], \"acceptance\": [\"排除零权重和常量特征坍缩\", \"teacher 不访问最终测试\", \"没有优势时保留普通增强\"], \"artifacts\": [\"artifacts/E3/report.md\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  },
+  {
+    "local_id": "R04",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M3] 最小方法定型",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_E2>",
+        "<HERMES_ID_FOR_E3>"
+      ],
+      "body": "{\"local_id\": \"R04\", \"hypothesis\": \"由机制实验支持的最小结构提供超出容量和数据增强的增益。\", \"work\": [\"仅采用被支持的 C1/C2 组件\", \"将 Tube、GRL、EvAF 和多尺度设为可选消融\", \"锁定实际最终方法\"], \"acceptance\": [\"保留/删除清单均有机制证据\", \"无预设强制 SNN\", \"输入输出和训练推理契约冻结\"], \"artifacts\": [\"artifacts/R04/method_card.md\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  },
+  {
+    "local_id": "R05",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M4] 外部泛化与规避压力评测",
+      "assignee": "research-engineer",
+      "parents": [
+        "<HERMES_ID_FOR_R04>"
+      ],
+      "body": "{\"local_id\": \"R05\", \"hypothesis\": \"开发阶段结论可迁移到未知生成器、来源和路径。\", \"work\": [\"冻结最终协议再打开测试\", \"自然退化与有界恶意后处理分表\", \"SNN 替代梯度/迁移对照，排除梯度遮蔽\"], \"acceptance\": [\"各组区间、误报和漏检齐备\", \"拒识报告 coverage 与 risk\", \"不改变最终测试规则\"], \"artifacts\": [\"artifacts/R05/final_report.md\", \"artifacts/R05/predictions.parquet\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  },
+  {
+    "local_id": "R06",
+    "tool": "kanban_create",
+    "arguments": {
+      "title": "[M5] 独立复核与论文证据包",
+      "assignee": "independent-reviewer",
+      "parents": [
+        "<HERMES_ID_FOR_R05>"
+      ],
+      "body": "{\"local_id\": \"R06\", \"hypothesis\": \"每项研究主张均能被实现者以外的复核者重算。\", \"work\": [\"独立重算主表与图\", \"复核理论假设和新颖性\", \"汇集锁定产物与失败案例\"], \"acceptance\": [\"不同复核者出具 verdict\", \"主张—证据矩阵与哈希齐备\", \"仅引用实际测量\"], \"artifacts\": [\"artifacts/R06/review.json\", \"artifacts/R06/claim_evidence_matrix.csv\"], \"research_metadata\": {\"dataset_version\": \"RoboVid-v02-development-only; confirmatory set pending\", \"split_hash\": null, \"seed\": null, \"budget\": {\"paid_jobs\": false, \"remote_jobs\": false, \"gpu_hours\": null}, \"config_hash\": null, \"checkpoint_hash\": null, \"code_revision\": null}, \"local_status\": \"todo\"}"
+    }
+  }
+]

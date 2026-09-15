@@ -1,0 +1,802 @@
+{
+  "created": "2026-09-09T16:56:55.055989+00:00",
+  "repositories": [
+    {
+      "repo": "jian-0/GenVidBench",
+      "revision": "701cafb6f999d7ea0cbf3c354df6177311a4d824",
+      "card_data": {},
+      "files": [
+        {
+          "type": "file",
+          "oid": "de9e98e005d33b2dcf682f2ac21b16e9aaadbbdd",
+          "size": 3239,
+          "path": ".gitattributes"
+        },
+        {
+          "type": "file",
+          "oid": "4285de53ebf497d3887bf049507c2a817dcd87ff",
+          "size": 490403474,
+          "lfs": {
+            "oid": "fe7f41af1d1354ecb9d35f78081d896d12980a153a98570709800f2d4a29d739",
+            "size": 490403474,
+            "pointerSize": 134
+          },
+          "xetHash": "75272e5e036df594c60719cf7e751851359add071367af785f978ac706a74495",
+          "path": "GenVidBench/6.7m/OpenAI_Sora.zip"
+        },
+        {
+          "type": "file",
+          "oid": "ce7988df4e3723ac3c8cb01956658a15a076615d",
+          "size": 3133786450,
+          "lfs": {
+            "oid": "f895a99f46b5550155dc827849d81a6ad504f0a50fcd66a55a4af774fefb3fa6",
+            "size": 3133786450,
+            "pointerSize": 135
+          },
+          "xetHash": "b4deb33ec26c9bed3a0bec0cc91dc7126ae6e2b92378c776e1b24609b8559549",
+          "path": "GenVidBench/6.7m/OpenSora_13800.tar.gz"
+        },
+        {
+          "type": "file",
+          "oid": "788277803f7870a81a65a5900006da71f439cfae",
+          "size": 1378908258,
+          "lfs": {
+            "oid": "c596cc8f65752cb63a58b9cadaaf2395a8f73a547f6c99d1a2dbb89f6d2b1145",
+            "size": 1378908258,
+            "pointerSize": 135
+          },
+          "xetHash": "ee68113811e6720026455895a075ce8dd29f08ac5d36067876ae462ab4a21bdc",
+          "path": "GenVidBench/6.7m/keling.zip"
+        },
+        {
+          "type": "file",
+          "oid": "e1db4069639b35bdc3e6e97ec0ce9f06a56622b7",
+          "size": 2750170191,
+          "lfs": {
+            "oid": "27359fa0ff7aa94802bcbed73701fcfedeb0b49a4e8767e0480d67f639d1e70d",
+            "size": 2750170191,
+            "pointerSize": 135
+          },
+          "xetHash": "118888d4218e0ae6fa8920f75b35f3bceea6d63299275feade5b3b2c1d943560",
+          "path": "GenVidBench/Pair1/ms.rar"
+        },
+        {
+          "type": "file",
+          "oid": "fd8d0ccc7567c9efa3499e4d2085906684e3b240",
+          "size": 8376651610,
+          "lfs": {
+            "oid": "1e870f50a27f3e9000895f84988fafb25293ec99c0f5ae6d939da7275bf09a6e",
+            "size": 8376651610,
+            "pointerSize": 135
+          },
+          "xetHash": "8f4dea0008fef654cc079adb82ad16dcbc9cdc709802d3a33c19922bb2b7bc26",
+          "path": "GenVidBench/Pair1/pika.rar"
+        },
+        {
+          "type": "file",
+          "oid": "e4bfc0c73d3851fc49e43999fdbefe51f0f17d00",
+          "size": 5269180979,
+          "lfs": {
+            "oid": "75f69fc11dbc14ed4292cbbb0954c4919c3204f252e92ad7b992998d65d94306",
+            "size": 5269180979,
+            "pointerSize": 135
+          },
+          "xetHash": "e824615bd0d09013eb4f1461e2818c2e0f1eb7736a14ed017a3800e0cd42c5b1",
+          "path": "GenVidBench/Pair1/t2vz.rar"
+        },
+        {
+          "type": "file",
+          "oid": "09d2a51cacc995ac50d9abfba769ab9d470313da",
+          "size": 8441750517,
+          "lfs": {
+            "oid": "e9d68507e10c882e834146451e2d0ede5befaebfa8e7d36a977d3fe672531589",
+            "size": 8441750517,
+            "pointerSize": 135
+          },
+          "xetHash": "95a3257bb090ca88e26f5b1b93917cdafbd436492030cc446cc31a14e5713d1e",
+          "path": "GenVidBench/Pair1/vc2.rar"
+        },
+        {
+          "type": "file",
+          "oid": "12b4b78ba4980369b6dbe54b4ed5356e434d4f30",
+          "size": 49190751379,
+          "lfs": {
+            "oid": "ccb448ddcbbf14dc2a702d0b380b6e9cb1e18c9fbd5302fd6ca4d48bd91235d9",
+            "size": 49190751379,
+            "pointerSize": 136
+          },
+          "xetHash": "c4db786a5abeaa0bc1c9fe6e7d4ae3b831f65453f59783fdc511932eebc6c9a7",
+          "path": "GenVidBench/Pair1/vript.rar"
+        },
+        {
+          "type": "file",
+          "oid": "c08420200e9adf66ee9ba17b61f8998efb7cd69d",
+          "size": 3896972,
+          "path": "GenVidBench/Pair1_labels.txt"
+        },
+        {
+          "type": "file",
+          "oid": "132531cee30bc4791fd2ae02cd2e1bb64fd89960",
+          "size": 3943010817,
+          "lfs": {
+            "oid": "9722942b72ebe99f4a8e5a080bba779bcc00aa2d2298667639a5fab356bf5a3d",
+            "size": 3943010817,
+            "pointerSize": 135
+          },
+          "xetHash": "b25606b98378f8f3a904b73ef25213b5d0f1db234b09a3d96c0a3dc37e708d76",
+          "path": "GenVidBench/Pair2/cogvideo.rar"
+        },
+        {
+          "type": "file",
+          "oid": "9f04d3ba2a2fa967a39358da957657697213240b",
+          "size": 21474836480,
+          "lfs": {
+            "oid": "fdbbb77a0d0146f65bc614de5f76b87f1a1bbf6a0e07d8f503fa0dda7614a126",
+            "size": 21474836480,
+            "pointerSize": 136
+          },
+          "xetHash": "bd09cac0373cdbf5d84fcae18c9834b378c61b8c65702cd98369d7f400f9d6ce",
+          "path": "GenVidBench/Pair2/hd_vg_130m.7z.001"
+        },
+        {
+          "type": "file",
+          "oid": "880171c40f1159e394fcf0a8d6c821b3f90768d2",
+          "size": 21474836480,
+          "lfs": {
+            "oid": "4cadb0dfde03b3965de70ebcfe5dc8f175d61ebd468893d4655c34e08656f521",
+            "size": 21474836480,
+            "pointerSize": 136
+          },
+          "xetHash": "2733cac612b47185376d9f1c4449f350b53657acc88c48f9dc7600571de2afd8",
+          "path": "GenVidBench/Pair2/hd_vg_130m.7z.002"
+        },
+        {
+          "type": "file",
+          "oid": "ba4766ef1c361904e1984aad1c170346ac00f9ab",
+          "size": 21474836480,
+          "lfs": {
+            "oid": "57392f14607cdee0a188be46370488865ceef94c91b56f276c9226a19cce8ec0",
+            "size": 21474836480,
+            "pointerSize": 136
+          },
+          "xetHash": "ab2f17c8542b361d9ee2554f76851d4518a96b5b2f9054a7857e2c0a0b0c131e",
+          "path": "GenVidBench/Pair2/hd_vg_130m.7z.003"
+        },
+        {
+          "type": "file",
+          "oid": "a59ae37a1892c995db6d46feabe67826635521f1",
+          "size": 15594648596,
+          "lfs": {
+            "oid": "6ab46bfb6d56f1ba09dee215cb756487e053a13ba2d1a2110fe7101a8cb8e35c",
+            "size": 15594648596,
+            "pointerSize": 136
+          },
+          "xetHash": "3ff484a26ed52ef339c73236251be0b1fca3bad0957a47abfd3e990a07e3ff13",
+          "path": "GenVidBench/Pair2/hd_vg_130m.7z.004"
+        },
+        {
+          "type": "file",
+          "oid": "3c75b0536787e6acc81cfb6a14518cc07f7d8b0a",
+          "size": 5592101933,
+          "lfs": {
+            "oid": "0a569053c13c4c971c656eb2c350b9e835b480ea4b4ebbffee68c50ddbda8f2b",
+            "size": 5592101933,
+            "pointerSize": 135
+          },
+          "xetHash": "32f7f36e3088eca811b991674731fb8af4fa95800b5f4385a3e6aa5a35a7c8a0",
+          "path": "GenVidBench/Pair2/mora.rar"
+        },
+        {
+          "type": "file",
+          "oid": "3d25aaf91c7e0f7c47003909d5b3ae4ec4a352e7",
+          "size": 25986946384,
+          "lfs": {
+            "oid": "ecae4ede3d8ed1888a804456c7c8c0bf57f4f5e565bf7013b00343309d9603b4",
+            "size": 25986946384,
+            "pointerSize": 136
+          },
+          "xetHash": "140964f79f7376d56e38154b3d54ab0d7e2db0cf1eb08c5f3596647f338aa66c",
+          "path": "GenVidBench/Pair2/musev.rar"
+        },
+        {
+          "type": "file",
+          "oid": "5528b3be9a7290fd45a79f414dc6576f79ed052e",
+          "size": 4464368372,
+          "lfs": {
+            "oid": "eb39d83c3cc291b127ec46b3d2cdeea0a13f2c6eb63bc95d93b4d1fc94ad6e49",
+            "size": 4464368372,
+            "pointerSize": 135
+          },
+          "xetHash": "4b9e53b4001dcbdafe74d29ea7c79bf10f483a27fe8f2453856b7dd050766aaa",
+          "path": "GenVidBench/Pair2/svd.rar"
+        },
+        {
+          "type": "file",
+          "oid": "2f26a94e2e92b83aaee474596596c0758197cd0b",
+          "size": 4543661,
+          "path": "GenVidBench/Pair2_labels.txt"
+        },
+        {
+          "type": "file",
+          "oid": "c9d22a61e484be57a91a2699a2fc6704305a4ce1",
+          "size": 16749660160,
+          "lfs": {
+            "oid": "896a40711ddd93aabecc70f6c340a8054997ba47b3ddd07ab4629790f7c28313",
+            "size": 16749660160,
+            "pointerSize": 136
+          },
+          "xetHash": "caa2e820109a8016ca9eebc45da3106743871b103c23267a1d7989aa4c2dcae5",
+          "path": "GenVidBench/cogvideo_mora_svd_ms_fix.tar"
+        },
+        {
+          "type": "file",
+          "oid": "1c9b4815b3e5c2de2d1ff6ac7e56b67c0bc8814a",
+          "size": 623384,
+          "path": "GenVidBench/dataset_verify/HD_VG_130M(1).txt"
+        },
+        {
+          "type": "file",
+          "oid": "1c9b4815b3e5c2de2d1ff6ac7e56b67c0bc8814a",
+          "size": 623384,
+          "path": "GenVidBench/dataset_verify/HD_VG_130M.txt"
+        },
+        {
+          "type": "file",
+          "oid": "84db20d98d2c8f0ea16bec9655b4dd04ceda5d0c",
+          "size": 5428314,
+          "path": "GenVidBench/dataset_verify/Pair1(1).txt"
+        },
+        {
+          "type": "file",
+          "oid": "84db20d98d2c8f0ea16bec9655b4dd04ceda5d0c",
+          "size": 5428314,
+          "path": "GenVidBench/dataset_verify/Pair1.txt"
+        },
+        {
+          "type": "file",
+          "oid": "136a1d8090d2f35b58a0dd3ac675778158fdd43d",
+          "size": 199,
+          "path": "GenVidBench/dataset_verify/Pair1_mismatched_files(1).txt"
+        },
+        {
+          "type": "file",
+          "oid": "136a1d8090d2f35b58a0dd3ac675778158fdd43d",
+          "size": 199,
+          "path": "GenVidBench/dataset_verify/Pair1_mismatched_files.txt"
+        },
+        {
+          "type": "file",
+          "oid": "c33a300ea6ec8f0cf4deaef73fc63fd5c61c2dd9",
+          "size": 3786,
+          "path": "GenVidBench/dataset_verify/check_hd_vg(1).py"
+        },
+        {
+          "type": "file",
+          "oid": "c33a300ea6ec8f0cf4deaef73fc63fd5c61c2dd9",
+          "size": 3786,
+          "path": "GenVidBench/dataset_verify/check_hd_vg.py"
+        },
+        {
+          "type": "file",
+          "oid": "94212f6a7bab523595aadab258dd60246ba117b0",
+          "size": 3635,
+          "path": "GenVidBench/dataset_verify/check_pair1(1).py"
+        },
+        {
+          "type": "file",
+          "oid": "94212f6a7bab523595aadab258dd60246ba117b0",
+          "size": 3635,
+          "path": "GenVidBench/dataset_verify/check_pair1.py"
+        },
+        {
+          "type": "file",
+          "oid": "f576147b4d70abad0c20e1ed3466b84996471952",
+          "size": 3486,
+          "path": "GenVidBench/dataset_verify/generate_labels(1).py"
+        },
+        {
+          "type": "file",
+          "oid": "f576147b4d70abad0c20e1ed3466b84996471952",
+          "size": 3486,
+          "path": "GenVidBench/dataset_verify/generate_labels.py"
+        },
+        {
+          "type": "file",
+          "oid": "c4bed67b9612cdeaa0b54171f95b139f4399b9b3",
+          "size": 9826,
+          "path": "GenVidBench/dataset_verify/hd_vg_mismatched_files(1).txt"
+        },
+        {
+          "type": "file",
+          "oid": "c4bed67b9612cdeaa0b54171f95b139f4399b9b3",
+          "size": 9826,
+          "path": "GenVidBench/dataset_verify/hd_vg_mismatched_files.txt"
+        },
+        {
+          "type": "file",
+          "oid": "4bcdedd360c011ac7732d931ae1c3937b7bceed7",
+          "size": 1767,
+          "path": "GenVidBench/dataset_verify/video_check_results(1).txt"
+        },
+        {
+          "type": "file",
+          "oid": "4bcdedd360c011ac7732d931ae1c3937b7bceed7",
+          "size": 1767,
+          "path": "GenVidBench/dataset_verify/video_check_results.txt"
+        },
+        {
+          "type": "file",
+          "oid": "f74384dee92cb1d41873e93266c61cc0914b0227",
+          "size": 4263,
+          "path": "GenVidBench/dataset_verify/video_integrity_check(1).py"
+        },
+        {
+          "type": "file",
+          "oid": "f74384dee92cb1d41873e93266c61cc0914b0227",
+          "size": 4263,
+          "path": "GenVidBench/dataset_verify/video_integrity_check.py"
+        },
+        {
+          "type": "file",
+          "oid": "9ebfc67dbe27d2827a0b8cf37029e4a66708736c",
+          "size": 1049876,
+          "path": "GenVidBench/prompt_and_semantic_label/HDVG_14k_classes.txt"
+        },
+        {
+          "type": "file",
+          "oid": "b8835ad21fbe9aed8c292daf65289c85de3c195a",
+          "size": 2099751,
+          "path": "GenVidBench/prompt_and_semantic_label/VidProM_13k_classes.txt"
+        },
+        {
+          "type": "file",
+          "oid": "ac437e1a3c9e490d7cbbaf8bdb46e685af11af0c",
+          "size": 3277711,
+          "path": "GenVidBench/prompt_and_semantic_label/Vript_20k_classes.txt"
+        },
+        {
+          "type": "file",
+          "oid": "21b147beddfc3e14ad30cf3b693d48f87ef44652",
+          "size": 687,
+          "path": "GenVidBench/prompt_and_semantic_label/classes_list.txt"
+        }
+      ]
+    },
+    {
+      "repo": "AIGVDBench/AIGVDBench",
+      "revision": "bf48acaa4920990af3dd2a511ea88e63354df305",
+      "card_data": {
+        "license": "cc-by-4.0"
+      },
+      "files": [
+        {
+          "type": "file",
+          "oid": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+          "size": 2461,
+          "path": ".gitattributes"
+        },
+        {
+          "type": "file",
+          "oid": "380f6d8a55260049cef62ba7fa8a1fd65000d1ad",
+          "size": 5901347143,
+          "lfs": {
+            "oid": "99ee7178df422d072b6ef0aacf4db315a7ed91656b54c3f16e87e537be0e2561",
+            "size": 5901347143,
+            "pointerSize": 135
+          },
+          "xetHash": "89a22ab00200164f053d38508491a49d4d266f0c17006ae6eefdf9053dcf253c",
+          "path": "AIGVDBench/ClosedSource/Gen2.zip"
+        },
+        {
+          "type": "file",
+          "oid": "fddbef02d1882a2770c598237149ce471c96fe0b",
+          "size": 19704410166,
+          "lfs": {
+            "oid": "88e53a4d8acb9c5fdd806a393c3767ca71389f7802422621c831f72076183dd5",
+            "size": 19704410166,
+            "pointerSize": 136
+          },
+          "xetHash": "b30eed6c39cc0c9b0d2803c9be5e4c12323b7b873d42abded6a6210def73f3f2",
+          "path": "AIGVDBench/ClosedSource/Gen3.zip"
+        },
+        {
+          "type": "file",
+          "oid": "1d208bcd7ce4c7a8557e8bad741e8a2d5ff91fd4",
+          "size": 15715797205,
+          "lfs": {
+            "oid": "763683828e3c07a0d325b33c80f10493011f3530c12e9b08341b7936f424f2d3",
+            "size": 15715797205,
+            "pointerSize": 136
+          },
+          "xetHash": "753ce5ce0a39705851a2368d410102923cb28e248cd9d7695bbac14f9c91470a",
+          "path": "AIGVDBench/ClosedSource/Jimeng.zip"
+        },
+        {
+          "type": "file",
+          "oid": "156ef8eb8fdc929baf7b71c21644f57c0735afa1",
+          "size": 3947127621,
+          "lfs": {
+            "oid": "71c1503932a214a9e429d7698309be72b7660ae363f047ac8f6e8c3550817e9e",
+            "size": 3947127621,
+            "pointerSize": 135
+          },
+          "xetHash": "d6db83451aa8b35f7c5d0d0387791182920435b6cf1b7c3fcae2e698c61ac3f5",
+          "path": "AIGVDBench/ClosedSource/Luma.zip"
+        },
+        {
+          "type": "file",
+          "oid": "150bedfb61d09df7b918410c5334c7971b27a291",
+          "size": 2051690737,
+          "lfs": {
+            "oid": "cbf498aa3a830ffa24ca3903f43f70a34750e67b8156166612b3c7c77c03b56e",
+            "size": 2051690737,
+            "pointerSize": 135
+          },
+          "xetHash": "3a069c2048c03c9e2c1e0cce175a384f11a5572bd8d759cd11880260da256c1f",
+          "path": "AIGVDBench/ClosedSource/Opensora.zip"
+        },
+        {
+          "type": "file",
+          "oid": "3431e248460e386cbc0217d408454c0d7d084e98",
+          "size": 10214807516,
+          "lfs": {
+            "oid": "34e63424d45211569af7a28055a167638cad736fb5f8230c5a8bdf8a5acc3463",
+            "size": 10214807516,
+            "pointerSize": 136
+          },
+          "xetHash": "68dd8619b3e476b7092d657c237420e16f9d4803537f2407dd8dc9a3bec8421b",
+          "path": "AIGVDBench/ClosedSource/Sora.zip"
+        },
+        {
+          "type": "file",
+          "oid": "6b1ca20ddd40fd9d8af75684d598424a7bcee1a2",
+          "size": 10483844167,
+          "lfs": {
+            "oid": "117e119d2bfc3eebaa0343a4183ed61d770e096f7747977011d18440c8bfe5a3",
+            "size": 10483844167,
+            "pointerSize": 136
+          },
+          "xetHash": "43a71cf6882aa7bca054fbdf17e28a5a23164178bf0091e0bc6769ae071c56fc",
+          "path": "AIGVDBench/ClosedSource/causvid_24fps.zip"
+        },
+        {
+          "type": "file",
+          "oid": "0bcb957b7306186ed38ded8a65e59c80e8dce4a4",
+          "size": 11564889490,
+          "lfs": {
+            "oid": "1e8cfcf9d09a2cf19f7dee927fbc23e15ccef5e74bb590919d9b07783b9fb519",
+            "size": 11564889490,
+            "pointerSize": 136
+          },
+          "xetHash": "ec7079ad14aea3b2efadf7e922f7bdbc35f54a8068760528f8241c2e161fef69",
+          "path": "AIGVDBench/ClosedSource/kling.zip"
+        },
+        {
+          "type": "file",
+          "oid": "4755347c43ade30aea79abc0626c98d7c571ccbf",
+          "size": 1211174730,
+          "lfs": {
+            "oid": "c6933154de37555447123772ade8d7ebd4f9768ab22a730814a6eee50936d285",
+            "size": 1211174730,
+            "pointerSize": 135
+          },
+          "xetHash": "d0a0a0d87b4e88168c46aa4bc10918247ab2c01fcc2f3a5e0b9aed68892a5ae7",
+          "path": "AIGVDBench/ClosedSource/pika.zip"
+        },
+        {
+          "type": "file",
+          "oid": "f5c90f667843ad1d897a19e57e94b5190ccaf739",
+          "size": 2315906178,
+          "lfs": {
+            "oid": "e0dea4a8edc14ee8dfb4ef2b5a79675e92a9192694c7aec85497743916ce3369",
+            "size": 2315906178,
+            "pointerSize": 135
+          },
+          "xetHash": "fb9f28a6896bb274fbc28f54c0074323725d2f349c709608502814835da532be",
+          "path": "AIGVDBench/ClosedSource/vidu.zip"
+        },
+        {
+          "type": "file",
+          "oid": "fc2c811c520057640291ecfab5596d2d8196d9a2",
+          "size": 11386193473,
+          "lfs": {
+            "oid": "ca0aef8d82f94c2efbd0bd358e7c32e45eb131f003b6694574dfb112aa049799",
+            "size": 11386193473,
+            "pointerSize": 136
+          },
+          "xetHash": "63d25f99e50ab8ef04cc53ece16a689d1f70e0214bdf461f0082a490dab3a62d",
+          "path": "AIGVDBench/ClosedSource/wan.zip"
+        },
+        {
+          "type": "file",
+          "oid": "d28cf13a31c6b5cec7acfae28458ecd26fc54257",
+          "size": 11120548085,
+          "lfs": {
+            "oid": "6d91b386d8f4f0291f576e6860579ec7a541ebf4028064094cd84db7c416f731",
+            "size": 11120548085,
+            "pointerSize": 136
+          },
+          "xetHash": "e83943fdb41646e160aee771af80ee78283a95f31641d71dde7bc7f4d9251a7e",
+          "path": "AIGVDBench/OpenSource/I2V/EasyAnimate.zip"
+        },
+        {
+          "type": "file",
+          "oid": "9efdbde39dbaff799be866796829c79244fb88fd",
+          "size": 3928004019,
+          "lfs": {
+            "oid": "1cb952ff474ef7b9860f877cd482a1f3b87bfec59cbe430956bf12783065bbe8",
+            "size": 3928004019,
+            "pointerSize": 135
+          },
+          "xetHash": "09d939b7f14bbeacf704a9017d5d8959404a0ab52725d61f8afb2233475e652a",
+          "path": "AIGVDBench/OpenSource/I2V/LTX.zip"
+        },
+        {
+          "type": "file",
+          "oid": "c3c6d698fdddd125339104f7512c28013e402a97",
+          "size": 4202779218,
+          "lfs": {
+            "oid": "1f19faecd6facf5fbf5a84b217844d682de6891648f5e3387f7f6fed9d85ae10",
+            "size": 4202779218,
+            "pointerSize": 135
+          },
+          "xetHash": "9b42e2bac4b7f29d20ce158b969bffff0af7923830a75e996d2d079ea61fcd9e",
+          "path": "AIGVDBench/OpenSource/I2V/Pyramid-Flow.zip"
+        },
+        {
+          "type": "file",
+          "oid": "3497cf7a19dab54109ec89c3505be914c3285959",
+          "size": 4437024215,
+          "lfs": {
+            "oid": "5a83f44f167258bca54b6c4855e90b5d5c7398a8528f46726f1da236939209eb",
+            "size": 4437024215,
+            "pointerSize": 135
+          },
+          "xetHash": "aa54d69dba383f781c90b4fc3fe5776fd4b146639f0efa64af47811171881f77",
+          "path": "AIGVDBench/OpenSource/I2V/SEINE.zip"
+        },
+        {
+          "type": "file",
+          "oid": "7c61e49ccba16ffe2af23139169f0621add004d3",
+          "size": 2947917819,
+          "lfs": {
+            "oid": "ad3bb643e5c6097ce3969f9f76ecceec9c0f86ccc407768e1aeacd815b1f097a",
+            "size": 2947917819,
+            "pointerSize": 135
+          },
+          "xetHash": "89c028ce71699c7306b587951c725a3478cfad1712ff07f8a0e6af0ba2657f89",
+          "path": "AIGVDBench/OpenSource/I2V/SVD.zip"
+        },
+        {
+          "type": "file",
+          "oid": "23aa37abf328be376e746f2985da8fc446ffa1a9",
+          "size": 11376418023,
+          "lfs": {
+            "oid": "14af60763a05d3b5073023841475fdd7d23a9deeecfa9f2a7fec89e954092a5c",
+            "size": 11376418023,
+            "pointerSize": 136
+          },
+          "xetHash": "130cf20f2efc641f3f6859746f0516b85702bd46c649ce80ecf5b4c79bde8bfc",
+          "path": "AIGVDBench/OpenSource/I2V/VideoCrafter.zip"
+        },
+        {
+          "type": "file",
+          "oid": "5f1b5c4edd329195aaeb558f38b49a598d1b8418",
+          "size": 4035317523,
+          "lfs": {
+            "oid": "e3d70f0ca0ea8739103d7891b2da0320851e81d216b52043d643e47e4b332624",
+            "size": 4035317523,
+            "pointerSize": 135
+          },
+          "xetHash": "541d2acfb8920299ce341f29026d4badeb23e7036ae6417092df03f512e15ef1",
+          "path": "AIGVDBench/OpenSource/T2V/AccVideo.zip"
+        },
+        {
+          "type": "file",
+          "oid": "084c398c27b00ab0c99b4d2658d4bec97be6f890",
+          "size": 3252308937,
+          "lfs": {
+            "oid": "4609e78a8899bf72c0624e312ab785a48a4beb10a48e2d30de292f3ceae91b3c",
+            "size": 3252308937,
+            "pointerSize": 135
+          },
+          "xetHash": "5310c7512d7622d71edd56cb3def020adbd20a39c461a41e96d44e1d24988020",
+          "path": "AIGVDBench/OpenSource/T2V/AnimateDiff.zip"
+        },
+        {
+          "type": "file",
+          "oid": "e88bcd6538acb89944479b02a5109aec2226deaa",
+          "size": 2863215670,
+          "lfs": {
+            "oid": "dd17188ac6e737aebd7c69b5244d23a8dd38275dea7570dc3e472765fc28d39d",
+            "size": 2863215670,
+            "pointerSize": 135
+          },
+          "xetHash": "1fcbd19bdc4ebb3f2e03d5cd6813cad3cd24e745da58163ac20fcd9db7abace0",
+          "path": "AIGVDBench/OpenSource/T2V/Cogvideox1.5.zip"
+        },
+        {
+          "type": "file",
+          "oid": "8fc04df85f15ea58dbcde2cfe8008c41af4de25b",
+          "size": 8872085379,
+          "lfs": {
+            "oid": "7fc8a9c58566f1594940e62568c49c5a1a934da5d4043b19b1cfc14538fd015b",
+            "size": 8872085379,
+            "pointerSize": 135
+          },
+          "xetHash": "0e800ee29a897d7a6934cb8be19a7c2c14858bf2d2800b6e999e2f1ecde67b3b",
+          "path": "AIGVDBench/OpenSource/T2V/EasyAnimate.zip"
+        },
+        {
+          "type": "file",
+          "oid": "7a756e4e7c58060b8c0ed69a8d692971277058ee",
+          "size": 4044024724,
+          "lfs": {
+            "oid": "c031c925b9c3520687c87800e33b088e6430d1c8db379fe6f359a847c82f2d6d",
+            "size": 4044024724,
+            "pointerSize": 135
+          },
+          "xetHash": "cee07f93b95c58295a34efd084ba8b3af8a64cf0f2e59fc285570812fc8130e1",
+          "path": "AIGVDBench/OpenSource/T2V/HunyuanVideo.zip"
+        },
+        {
+          "type": "file",
+          "oid": "02d1f116bbaad31770cddd1482b2113ead190561",
+          "size": 5582081254,
+          "lfs": {
+            "oid": "a5052e68c65ad00914af300d16b0cc8bbaa98526111691d867e3280249afdefd",
+            "size": 5582081254,
+            "pointerSize": 135
+          },
+          "xetHash": "e210244c1a9333e7398e3b993628628b20d4a4fc876fa73308afdfb480248848",
+          "path": "AIGVDBench/OpenSource/T2V/IPOC.zip"
+        },
+        {
+          "type": "file",
+          "oid": "2ffff8a474fcec84e1b1f247029c4ffcac253461",
+          "size": 5937421401,
+          "lfs": {
+            "oid": "60873e0b8cb8e524f8b225e042fbe24189127047df89bc3a39027ab5bf69cbef",
+            "size": 5937421401,
+            "pointerSize": 135
+          },
+          "xetHash": "77848c877cac5890d3cc73613ddffa22c548f37411accdb54b373025864ca625",
+          "path": "AIGVDBench/OpenSource/T2V/LTX.zip"
+        },
+        {
+          "type": "file",
+          "oid": "0b4aa5d15927c32dcd5a05ae4fa9beea8d6730e7",
+          "size": 1083099489,
+          "lfs": {
+            "oid": "b77a4a6e84039e4bf95de59d3283d6c11005191836c6bddd592e4068b0d8a5bd",
+            "size": 1083099489,
+            "pointerSize": 135
+          },
+          "xetHash": "7ebddf2e86afa519f675e7e2c0c3085c0a36c8f9cd01e6f10e29f6e43bd24052",
+          "path": "AIGVDBench/OpenSource/T2V/Open-Sora.zip"
+        },
+        {
+          "type": "file",
+          "oid": "ba4c88c7c8c86b69cbb15a774a425f5c342083ce",
+          "size": 4144057847,
+          "lfs": {
+            "oid": "d2c30e9c994793adf5c330b0a7e69dd64a27161a3a4a1dddca031ad358c4fbed",
+            "size": 4144057847,
+            "pointerSize": 135
+          },
+          "xetHash": "20413e63761b00dd14b90749451273c4e3d3489e6f2500918764f2528755b7a5",
+          "path": "AIGVDBench/OpenSource/T2V/Pyramid-Flow.zip"
+        },
+        {
+          "type": "file",
+          "oid": "5191e4284daa7a9fc0354e5034f2f2c2c4c2bb47",
+          "size": 7829234809,
+          "lfs": {
+            "oid": "43937f97c0bd0813a84ff28ab8810030292e2661b9779809ea05f5c503b5c7c8",
+            "size": 7829234809,
+            "pointerSize": 135
+          },
+          "xetHash": "6e8074481500e227aff013e9e56d26f551b212fe694536308642108bb1b4eeed",
+          "path": "AIGVDBench/OpenSource/T2V/RepVideo.zip"
+        },
+        {
+          "type": "file",
+          "oid": "f2997e860f9dd957ffbee2a02e8515a8bf318efa",
+          "size": 10812740482,
+          "lfs": {
+            "oid": "6a79f54fe0d8a839817de1c695a91a2a8d26daacfe9bc1d55e9413269a4c14d5",
+            "size": 10812740482,
+            "pointerSize": 136
+          },
+          "xetHash": "821011314639e723abae7a6ea01cb96c2907a78e9fecb2bb8d07a2fea61fb759",
+          "path": "AIGVDBench/OpenSource/T2V/VideoCrafter.zip"
+        },
+        {
+          "type": "file",
+          "oid": "372ba0aabfd2acd874070faa637e8daf37015bec",
+          "size": 86046628245,
+          "lfs": {
+            "oid": "440a589c4304b3a8d4b30a522a77a5e5ef2f562c7123d6ab68db5308961f04ad",
+            "size": 86046628245,
+            "pointerSize": 136
+          },
+          "xetHash": "76fdb5c73d8da2bb76765aa47f448090fefaa0e807e70ebe7563de871bb73d64",
+          "path": "AIGVDBench/OpenSource/T2V/Wan2.1.zip"
+        },
+        {
+          "type": "file",
+          "oid": "f652397af3137894043121f3ece6dff3626cced3",
+          "size": 3075689074,
+          "lfs": {
+            "oid": "ff0a26b67148e50bb78ae0fb9cf50b0207b39fce1cd35e86919f72cb00e8b238",
+            "size": 3075689074,
+            "pointerSize": 135
+          },
+          "xetHash": "ebbc35b4a6c6d76c474284bfbce35c16afcb984b0c0638ad7973239dafc119da",
+          "path": "AIGVDBench/OpenSource/V2V/Cogvideox1.5.zip"
+        },
+        {
+          "type": "file",
+          "oid": "a987f9c05208a8a96502efcb709a7e639c607092",
+          "size": 3996115206,
+          "lfs": {
+            "oid": "4563bec06307667fa1364a605231cc3dd8a585f8e373773031b65c10ea4065e3",
+            "size": 3996115206,
+            "pointerSize": 135
+          },
+          "xetHash": "2847b11d18577a37e93eed4db32b06d2a210df3f52554d51632a74625af6517c",
+          "path": "AIGVDBench/OpenSource/V2V/LTX.zip"
+        },
+        {
+          "type": "file",
+          "oid": "7adcda6f645b3ce875cf82079f0c71976a822bb2",
+          "size": 94239925520,
+          "lfs": {
+            "oid": "2b60d8c3b31477e90669098d846df3832906b8f0276c746a32572833401d71ab",
+            "size": 94239925520,
+            "pointerSize": 136
+          },
+          "xetHash": "3f5b0b062803cc38aa416e2461ed96a59de5db76062a5ab618cc65e6503b59b4",
+          "path": "AIGVDBench/Real/Real.zip"
+        },
+        {
+          "type": "file",
+          "oid": "7da79263d0e701a53a0d662d245c4fc3db39b287",
+          "size": 30,
+          "path": "README.md"
+        },
+        {
+          "type": "file",
+          "oid": "4836f05ec306c96d36e4cc8ccf11602c9ceae276",
+          "size": 1860924,
+          "path": "Split/test.jsonl"
+        },
+        {
+          "type": "file",
+          "oid": "3bcec39aab3cc9270e0bb3709c12444c7fed30d5",
+          "size": 8610190,
+          "path": "Split/train.jsonl"
+        },
+        {
+          "type": "file",
+          "oid": "fc6c09df6893504cdd8758789e431dd3be2f420b",
+          "size": 1846793,
+          "path": "Split/val.jsonl"
+        },
+        {
+          "type": "file",
+          "oid": "9d895c81de0a2b6689e51d273a71e38121492085",
+          "size": 56815450,
+          "lfs": {
+            "oid": "4edb7b310cc729771e74b93f658c7fdc4f2e31fdfa617a88372a540d4f9e7b4a",
+            "size": 56815450,
+            "pointerSize": 133
+          },
+          "xetHash": "a91b83c37fcf8bde579424a7bfb9791a9566f6adc738ebcdd3795e8988e82b0e",
+          "path": "Weights/DeCoF.tar"
+        }
+      ]
+    }
+  ],
+  "contains_downloaded_videos": false
+}

@@ -1,0 +1,19 @@
+{
+  "method": "fixed-rank STALL + signed correspondence bridge",
+  "n": 150,
+  "weights_tested": [
+    0.25,
+    0.5,
+    0.75
+  ],
+  "auc_fake_direction": {
+    "stall": 0.8228,
+    "signed_correspondence": 0.5968,
+    "w_stall_0.75": 0.8211,
+    "w_stall_0.5": 0.7807,
+    "w_stall_0.25": 0.6853
+  },
+  "decision": "reject_as_incremental_candidate",
+  "reason": "no fixed combination exceeds STALL native reference; exposed external development only",
+  "next": "common-protocol DINO/native representation and source-balanced training"
+}

@@ -1,0 +1,7 @@
+{
+  "n": 100,
+  "selection": "hash-ranked 50 Vript and 50 OpenSora; original fps>=8; legacy T2VZ has no eligible fps>=8 videos; profiling only, no research training",
+  "zip_bytes": 214244544,
+  "zip_sha256": "92cf3cbda8b0a2e68fbe3af483e232a5f4d0a2c1cdf328be91a7af881b9c6eee",
+  "manifest_sha256": "0337edea10f4d1321d1a827afa6714e818cc75e6e2ee97777a1bfa9a3eabb5e9"
+}

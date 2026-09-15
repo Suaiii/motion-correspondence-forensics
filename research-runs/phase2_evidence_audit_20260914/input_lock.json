@@ -1,0 +1,8 @@
+{
+  "experiments\\phase2_audit\\protocol.json": "eb658c8be6b6c92999efaa9a6002033d4af5f9dc1ca583bf6443cf76df109ebe",
+  "experiments\\phase2_audit\\run.py": "e63c72741e23e3d7d11bea4c1ea26fb7dbd308a773d21db4408e524dd98a2879",
+  "research-runs\\alignment_gate_v1\\probes.json": "21e8cc43f67ef9c36b06c0ad69fc300ea9a5d92ff8ce2756027db43bf5123495",
+  "research-runs\\alignment_gate_v1\\manifest.json": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+  "research-runs\\alignment_gate_v1\\protocol.json": "2412849bbf0a32643cbc28555b694927e9287eb27a7ae96b8537069e01bf0b8d",
+  "research-runs\\comgenvid_videos_20260914\\correspondence_features_150.jsonl": "8e38a95c9825c127f1b1ceb8c2feaa341b4cdbaa1a1d52a522435e1f1064e0cc"
+}

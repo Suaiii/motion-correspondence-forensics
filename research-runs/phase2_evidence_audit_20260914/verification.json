@@ -1,0 +1,13 @@
+{
+  "status": "pass",
+  "reviewer": "primary agent, mechanical replay",
+  "independent_scientific_review": false,
+  "checks": [
+    "input and output hashes unchanged",
+    "all 20 AUROCs independently recomputed with sklearn",
+    "750 external probabilities replayed from saved scaler and coefficients",
+    "historical point estimates reproduced",
+    "MSVD parent clustering yields 147 total clusters"
+  ],
+  "verifier_sha256": "e30672719eb1143a7efdbc3bb21f3d50f9a24c106bae64d801db90a757b09bfe"
+}

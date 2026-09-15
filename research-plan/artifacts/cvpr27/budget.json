@@ -1,0 +1,47 @@
+{
+  "cap_cny": 3000,
+  "gpu_hour_cap": 180,
+  "category_caps": {
+    "storage": 500,
+    "profile": 200,
+    "mechanism": 1000,
+    "method": 1000,
+    "recovery": 300
+  },
+  "entries": [
+    {
+      "id": "server-profile-20260910",
+      "category": "profile",
+      "reserved_cny": 7.52,
+      "reserved_gpu_hours": 4.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-confirmed-instance-price-20260910",
+      "status": "reserved",
+      "created": "2026-09-10T02:38:37.379474+08:00",
+      "run_id": "profile100_v1",
+      "started_utc": "2026-09-10T02:43:50.806986+08:00"
+    },
+    {
+      "id": "data-acquisition-20260910",
+      "category": "mechanism",
+      "reserved_cny": 22.56,
+      "reserved_gpu_hours": 12.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-confirmed-instance-price-20260910",
+      "status": "reserved",
+      "created": "2026-09-10T03:20:29.640564+08:00"
+    },
+    {
+      "id": "overnight-qc-20260911",
+      "category": "mechanism",
+      "reserved_cny": 22.56,
+      "reserved_gpu_hours": 12.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "last-user-price-estimate-clone-price-pending",
+      "status": "reserved",
+      "created": "2026-09-10T23:58:50.526214+08:00",
+      "execution_closed_utc": "2026-09-10T19:56:07.430819+00:00",
+      "invoice_reconciliation_pending": true
+    }
+  ]
+}

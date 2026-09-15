@@ -1,0 +1,64 @@
+{
+  "run_time_utc": "2026-09-07T14:33:06.196708+00:00",
+  "input_path": "E:\\AAGenvid\\Dataset\\RoboVid-SM\\v02\\splits\\split_manifest.csv",
+  "input_sha256": "6185cf8e238db567e5c7b4048f1f58820c8333ee7121a6fc3c9acf77bbef0ed3",
+  "script_sha256": "b35f249cb62858d749d9740bf2330a032b0308fb59bb1b92cc16ef43f3fb980f",
+  "method": "Remove trailing -Scene-[digits] from vript_clip_id; compare sets across splits",
+  "limitation": "Filename-prefix proxy, not verified original metadata or content deduplication",
+  "random_seed": null,
+  "network_calls": 0,
+  "model_runs": 0,
+  "splits": {
+    "train": {
+      "real_clips": 1600,
+      "source_prefixes": 723
+    },
+    "val": {
+      "real_clips": 200,
+      "source_prefixes": 170
+    },
+    "test": {
+      "real_clips": 200,
+      "source_prefixes": 172
+    }
+  },
+  "intersections": [
+    {
+      "a": "train",
+      "b": "val",
+      "shared_prefix_count": 116,
+      "a_affected_clips": 469,
+      "b_affected_clips": 140
+    },
+    {
+      "a": "train",
+      "b": "test",
+      "shared_prefix_count": 113,
+      "a_affected_clips": 459,
+      "b_affected_clips": 140
+    },
+    {
+      "a": "val",
+      "b": "test",
+      "shared_prefix_count": 40,
+      "a_affected_clips": 56,
+      "b_affected_clips": 55
+    }
+  ],
+  "fake_generator_counts": {
+    "train": {
+      "t2vz": 800,
+      "opensora": 794,
+      "openai_sora": 6
+    },
+    "val": {
+      "t2vz": 104,
+      "opensora": 95,
+      "openai_sora": 1
+    },
+    "test": {
+      "t2vz": 99,
+      "opensora": 101
+    }
+  }
+}

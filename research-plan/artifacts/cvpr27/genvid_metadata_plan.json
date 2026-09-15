@@ -1,0 +1,21 @@
+{
+  "repo": "jian-0/GenVidBench",
+  "revision": "701cafb6f999d7ea0cbf3c354df6177311a4d824",
+  "files": [
+    {
+      "type": "file",
+      "oid": "c08420200e9adf66ee9ba17b61f8998efb7cd69d",
+      "size": 3896972,
+      "path": "GenVidBench/Pair1_labels.txt"
+    },
+    {
+      "type": "file",
+      "oid": "2f26a94e2e92b83aaee474596596c0758197cd0b",
+      "size": 4543661,
+      "path": "GenVidBench/Pair2_labels.txt"
+    }
+  ],
+  "total_bytes": 8440633,
+  "catalog_sha256": "ab67059b781a9a73f7186b32afd3f8da0e2c1d0096f3b992b5c827f69712fd5e",
+  "warning": "Archive-level downloads only; member selection and provenance audit still required"
+}

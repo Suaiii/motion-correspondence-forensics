@@ -1,0 +1,128 @@
+{
+  "schema_version": "0.1",
+  "project": "robust-spiking-aigv-forensics",
+  "goal": "在排除数据捷径后，验证证据可靠性建模是否改善未知生成器与未见传播路径下的检测，并测量 SNN 的准确率—开销权衡。",
+  "status_values": ["todo", "ready", "running", "review", "done", "blocked"],
+  "tasks": [
+    {
+      "id": "T00",
+      "milestone": "M0",
+      "title": "资产与口径审计",
+      "assignee": "data-auditor",
+      "parents": [],
+      "status": "ready",
+      "hypothesis": "现有结果可由逐视频预测与固定协议重算并解释。",
+      "work": [
+        "定位 RoboVid-SM V02、split、checkpoint、逐视频预测与真实平台传输 ID",
+        "重算 OSN-Proxy 指标，核对正文 0.965 与表格 0.843/0.876 的差异",
+        "核查标签、分数方向、样本顺序、视频时长、帧率和来源混杂"
+      ],
+      "acceptance": [
+        "输出带 SHA256 的资产清单",
+        "每个已报告数值能追溯到预测文件和配置",
+        "无法定位的资产明确标记 blocked"
+      ],
+      "artifacts": ["artifacts/M0/asset_manifest.json", "artifacts/M0/result_reconciliation.md"]
+    },
+    {
+      "id": "T10",
+      "milestone": "M1",
+      "title": "统一输入与审计协议",
+      "assignee": "benchmark-engineer",
+      "parents": ["T00"],
+      "status": "todo",
+      "hypothesis": "统一协议能排除时长、格式、来源和处理链捷径。",
+      "work": [
+        "建立 manifest.jsonl 与 parent_video_id 分组",
+        "实现原始轨道和 canonical re-encode 审计轨道",
+        "冻结 P0/P1/P2 split 与 transform chain"
+      ],
+      "acceptance": ["无 parent_video_id 跨 split", "trivial baseline 与 real-vs-real probe 已报告", "split_hash 已冻结"],
+      "artifacts": ["artifacts/M1/data_card.md", "artifacts/M1/splits.sha256"]
+    },
+    {
+      "id": "T11",
+      "milestone": "M1",
+      "title": "复现四类核心基线",
+      "assignee": "reproduction-engineer",
+      "parents": ["T10"],
+      "status": "todo",
+      "hypothesis": "旧失效趋势可在共同 harness 下复现。",
+      "work": ["运行 ReStraV、D3、MAST 和 WaveRep", "保存逐视频分数、日志、环境与 checkpoint hash", "若 MAST 无官方代码，单列重实现偏差"],
+      "acceptance": ["全部模型使用相同样本与指标实现", "逐视频输出齐全", "至少 3 个探索种子或明确说明免训练方法"],
+      "artifacts": ["artifacts/M1/baseline_predictions.parquet", "artifacts/M1/reproduction_report.md"]
+    },
+    {
+      "id": "T20",
+      "milestone": "M2",
+      "title": "退化—证据响应诊断",
+      "assignee": "mechanism-analyst",
+      "parents": ["T11"],
+      "status": "todo",
+      "hypothesis": "G/C/N 会以不同方式改变六通道证据的可靠性和脉冲状态。",
+      "work": ["逐级噪声与顺序实验", "统计通道间距、Hoyer 稀疏度、频率质心、脉冲率、tau 与阈值", "按生成器和来源分层"],
+      "acceptance": ["同视频配对效应和区间已报告", "至少一个外部生成器复现", "AUC 反转原因已核查"],
+      "artifacts": ["artifacts/M2/channel_diagnostics.parquet", "artifacts/M2/mechanism_report.md"]
+    },
+    {
+      "id": "T21",
+      "milestone": "M2",
+      "title": "三类边界假设检验",
+      "assignee": "mechanism-analyst",
+      "parents": ["T11"],
+      "status": "todo",
+      "hypothesis": "物体/运动边缘的时序证据优于固定画面外圈与等面积随机区域。",
+      "work": ["区分 Sobel 边缘、固定外圈、内部与随机区域", "屏蔽 portrait padding", "检验时间连续性与运动对齐"],
+      "acceptance": ["报告预注册主要对比", "控制区域面积与 padding", "若无支持则记录 drop-BA 决策"],
+      "artifacts": ["artifacts/M2/boundary_test.parquet", "artifacts/M2/boundary_decision.md"]
+    },
+    {
+      "id": "T30",
+      "milestone": "M3",
+      "title": "最小可靠性门控与条件化 LIF",
+      "assignee": "model-engineer",
+      "parents": ["T20"],
+      "status": "todo",
+      "hypothesis": "样本条件化的通道门控与 LIF 能改善未见退化，而非仅仅拟合已知噪声。",
+      "work": ["实现 quality estimator、channel gate、bounded conditional LIF", "实现 raw/degraded 配对损失", "与 fixed LIF、learnable LIF、参数匹配 ANN 比较"],
+      "acceptance": ["接口与单 clip 状态重置正确", "普通增强与 WaveRep 对照齐备", "各损失项独立消融"],
+      "artifacts": ["artifacts/M3/model_card.md", "artifacts/M3/ablation_predictions.parquet"]
+    },
+    {
+      "id": "T31",
+      "milestone": "M3",
+      "title": "条件化结构分支",
+      "assignee": "model-engineer",
+      "parents": ["T21", "T30"],
+      "status": "todo",
+      "hypothesis": "仅当三类边界试验支持 H2 时，结构分支才提供独立增益。",
+      "work": ["读取 boundary_decision", "支持时实现高分辨率结构分支和多尺度聚合", "不支持时完成 drop-BA 记录并关闭任务"],
+      "acceptance": ["决策与 T21 证据一致", "结构图不能被称为像素级真值定位", "随机区域和无 BA 对照齐备"],
+      "artifacts": ["artifacts/M3/structure_branch_decision.md"]
+    },
+    {
+      "id": "T40",
+      "milestone": "M4",
+      "title": "双重泛化与外部评测",
+      "assignee": "experiment-runner",
+      "parents": ["T30", "T31"],
+      "status": "todo",
+      "hypothesis": "最小方法能同时迁移到未见生成器和未见传播路径。",
+      "work": ["执行 P2 生成器×路径联合留出", "执行跨数据集与真实平台 P3", "5 seeds 与 grouped paired bootstrap"],
+      "acceptance": ["测试前冻结门槛和 config hash", "候选门槛：最差组 AUROC +3pp 且 clean AUROC 损失不超过 1pp", "失败结果完整保留"],
+      "artifacts": ["artifacts/M4/frozen_protocol.json", "artifacts/M4/final_predictions.parquet", "artifacts/M4/statistical_report.md"]
+    },
+    {
+      "id": "T50",
+      "milestone": "M5",
+      "title": "独立复核与论文证据包",
+      "assignee": "reviewer",
+      "parents": ["T40"],
+      "status": "todo",
+      "hypothesis": "所有结论均能从配置、代码和预测独立重算。",
+      "work": ["独立重跑主表和关键图", "检查主张—证据映射", "报告端到端延迟、显存和 SOP 估计边界"],
+      "acceptance": ["复核者与实现者不同", "主结果重算一致", "残余风险和否证结果写入报告"],
+      "artifacts": ["artifacts/M5/review.json", "artifacts/M5/claim_evidence_matrix.csv"]
+    }
+  ]
+}

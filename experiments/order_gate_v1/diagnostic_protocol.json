@@ -1,0 +1,11 @@
+{
+  "scope": "Secondary predeclared low-complexity diagnostic; not a replacement for the primary GRU-versus-bag gate.",
+  "representations": ["raw_temporal", "aligned_temporal"],
+  "statistics_per_representation": ["mean_absolute_residual", "std_of_frame_mean_absolute_residual", "root_mean_square_residual", "95th_percentile_absolute_residual"],
+  "preprocess": "log1p, StandardScaler fit only on fit role",
+  "model": "LogisticRegression C=1 max_iter=1000 random_state=20260911",
+  "threshold": "clean calibration BAcc over 0.01:0.99, closest to 0.5 then lower tie rule",
+  "selection": "No feature selection; all eight fixed statistics used",
+  "interpretation": "Strong performance would motivate studying representation/distribution effects before increasing temporal memory complexity. It would not establish a new method or explain a specific neural detector.",
+  "all_outputs_reported": true
+}

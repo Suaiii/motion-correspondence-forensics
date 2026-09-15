@@ -1,0 +1,17 @@
+{
+  "id": "operator_response_v1",
+  "cache": "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\alignment_gate_v1\\cache",
+  "tau": 0.001,
+  "arms": [
+    "correct",
+    "wrong_integer",
+    "fractional"
+  ],
+  "legacy_sampling": "4fps/8frames/128px",
+  "scope": "legacy development diagnostic; no external selection",
+  "selection": "fit-only LR, C chosen on calibration AUROC",
+  "source_hashes": {
+    "research-runs\\alignment_gate_v1\\manifest.json": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+    "research-runs\\alignment_gate_v1\\protocol.json": "2412849bbf0a32643cbc28555b694927e9287eb27a7ae96b8537069e01bf0b8d"
+  }
+}

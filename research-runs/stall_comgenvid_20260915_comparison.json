@@ -1,0 +1,16 @@
+{
+  "baseline": "STALL",
+  "repository_commit": "bfcc603ae83b4e609681277b9b5e80e7a9497e15",
+  "full_comgenvid_n": 5098,
+  "matched_external_ids": 150,
+  "auc_full": 0.8524546178895587,
+  "auc_matched_150": 0.8228000000000001,
+  "our_frozen_fusion_auc_matched_150": 0.6056,
+  "protocol_warning": "STALL uses official DINOv3 precomputed embeddings and our method uses native-video Farneback features; native reference, not a fair same-backbone ranking",
+  "source_counts": {
+    "MSVD": 1698,
+    "Sora": 1700,
+    "VEO3": 1700
+  },
+  "csv_sha256": "0803b30a52e2c8fdf88ed9f9567b1a6c40dcef6d24ed24ddf937e2d6697763ce"
+}

@@ -1,0 +1,19 @@
+{
+  "method": "real-anchor residual calibration screen",
+  "n_external": 150,
+  "real_anchor_n": 50,
+  "features": "correct+fractional 8 dimensions",
+  "results": {
+    "diag_abs_z_q4_auc": 0.5038,
+    "diag_norm_l2_8_auc": 0.4972,
+    "internal_fit_plus_anchor_augmented_auc": 0.6298
+  },
+  "decision": "not_a_candidate_yet",
+  "limitations": [
+    "real-anchor estimate uses exposed external development pool",
+    "no source-stratified interval",
+    "legacy 4fps/8frame/128px feature cache",
+    "not a fair comparison with STALL"
+  ],
+  "next": "do not spend GPU on anchor-only method; prioritize common DINO/native protocol and source-balanced training"
+}

@@ -1,0 +1,15 @@
+{
+  "updated": "2026-09-14",
+  "status": "preliminary_not_a_literature_review",
+  "rows": [
+    {"family":"raw frame/video classifier","relation":"baseline","reproduced":true,"gap":"temporal correspondence not controlled"},
+    {"family":"optical-flow alignment controls","relation":"mechanism antecedent","reproduced":true,"gap":"current controls are diagnostic, not a complete method"},
+    {"family":"DINOv2 feature probing","relation":"strong representation baseline","reproduced":"partial","gap":"external source and matched training pending"},
+    {"family":"D3/ReStraV/WaveRep/RIFT","relation":"candidate baselines","reproduced":false,"gap":"native code/protocol reproduction pending"},
+    {"family":"G2VD/DCPT","relation":"candidate related work","reproduced":false,"gap":"paper-level implementation and data comparison pending"},
+    {"family":"alignment + nuisance-invariant temporal consistency","relation":"historical hypothesis","reproduced":false,"gap":"source and class are confounded; unconditional adversarial removal is not required and may remove label information"},
+    {"family":"controlled relative operator responses","relation":"phase2 proposed direction","reproduced":false,"gap":"must exceed ordinary difference, concatenation, strong representations and interpolation/source controls on new OOD development data"},
+    {"family":"STALL","relation":"native-protocol baseline candidate","reproduced":false,"gap":"official implementation checked; same-ID scoring and protocol-matched comparison pending"}
+  ],
+  "rule":"A URL or adapter is not counted as reproduction; all negative and incomplete replications remain explicit."
+}

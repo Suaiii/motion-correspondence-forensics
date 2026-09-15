@@ -1,0 +1,46 @@
+# Research data and generated media
+*.mp4
+*.avi
+*.mov
+*.mkv
+*.wav
+*.zip
+*.tar
+*.tar.gz
+*.rar
+*.7z
+*.npy
+*.npz
+*.pt
+*.pth
+*.ckpt
+research-runtime/cache/
+research-runtime/tmp/
+research-runtime/vendor/
+research-runs/*/cache/
+research-runs/*/training/
+research-runs/*/data/
+research-runs/comgenvid_videos_20260914/
+research-runs/cvpr27_deployment/
+research-runs/server_evidence_20260910/
+research-runs/server_runtime_validation_v*/
+research-runs/overnight_*/
+research-runs/*/profile_legacy_*.jsonl
+research-runs/*/full_qc_selection_*.json
+
+# Local credentials, environments, and IDE files
+*.pem
+*.key
+.env
+.env.*
+*.token
+.venv/
+venv/
+__pycache__/
+*.pyc
+.idea/
+.vscode/
+
+# Temporary logs and generated lock internals
+*.log
+*.partial
