@@ -1,0 +1,12 @@
+{
+  "dataset": "GenVidBench Pair1 QC selection",
+  "rows": 27002,
+  "source_counts": {"ms": 13501, "vc2": 13501},
+  "real_sources": 0,
+  "fake_generators": 2,
+  "ancestry_status": "unverified",
+  "formal_mechanism_gate": "not eligible",
+  "reason": "The server mechanism pipeline requires at least two accepted real sources and four generators; Pair1 alone cannot satisfy this by resampling.",
+  "decision": "stop repeated Pair1-only preparation attempts",
+  "next": "acquire and accept an independent real source plus two additional generators before releasing GPU training"
+}
