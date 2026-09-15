@@ -1,0 +1,22 @@
+{
+  "server": "connect.westb.seetacloud.com:35529",
+  "inventory": {
+    "pair1_ms": 13501,
+    "pair1_vc2": 13501,
+    "cc0_real30": 30,
+    "historical_profile_vript": 50,
+    "historical_profile_opensora": 50,
+    "additional_pair2_or_generators": 0,
+    "additional_real_sources": 0
+  },
+  "formal_gate": {
+    "minimum_real_sources": 2,
+    "minimum_generators": 4,
+    "current_accepted_real_sources": 0,
+    "current_accepted_generators": 0,
+    "status": "blocked_by_data_acceptance",
+    "reason": "Pair1 ancestry is unverified; historical Vript/OpenSora profile is explicitly profiling-only; CC0 pool is a 30-video candidate only."
+  },
+  "decision": "Do not start full training from current server inventory",
+  "next": "Acquire and accept a second real source plus two additional generators, then create a fresh development manifest."
+}
