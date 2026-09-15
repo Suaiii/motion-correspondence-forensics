@@ -1,0 +1,17 @@
+{
+  "stage": "mechanism",
+  "seeds": [17, 29, 43],
+  "arms": ["raw", "correct", "wrong", "fractional", "self_warp"],
+  "sampling": {"frames": 8, "fps": 4, "window_sec": 2, "size": 224},
+  "controls": {"support": "interior", "margin": 16, "flow_bound": 12, "kernel": "linear"},
+  "conditions": ["clean", "h264_23"],
+  "training": {"epochs": 20, "batch_size": 16, "lr": 0.001, "weight_decay": 0.0001, "conditions": ["clean"]},
+  "minimum_per_class": 30,
+  "minimum_retained_total": 5400,
+  "cpu_threads": 4,
+  "workers": 4,
+  "max_cache_gib": 80,
+  "max_fit_seconds": 14400,
+  "bootstrap_replicates": 2000,
+  "protocol_note": "Separate 4 fps development protocol for native low-frame-rate sources such as T2VZ. It never upsamples or repeats frames and does not replace the 8 fps primary protocol. Source and generator gates remain unchanged."
+}
