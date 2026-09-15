@@ -1,0 +1,9 @@
+{
+  "selection": "cogvideo_pair2_selection_20260916.json",
+  "requested": 100,
+  "local_attempt_status": "failed_before_unpack",
+  "download_statuses": {"error": 100},
+  "error": "Windows extraction environment has no unrar executable; Range metadata and member index were valid.",
+  "archive_corruption_evidence": false,
+  "next": "start server with /usr/bin/unrar and run the frozen selection; preserve member SHA/CRC and strict 2s/4fps eligibility"
+}

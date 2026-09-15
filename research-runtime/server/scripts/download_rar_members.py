@@ -58,7 +58,8 @@ def worker(row, entry, index, root, deadline):
         if datetime.now(timezone.utc)>=deadline or (root.parent/'STOP_NEW_JOBS').exists():raise RuntimeError('Acquisition cutoff reached')
         if entry is None:raise ValueError('Member not present in audited quick-open index; no replacement')
         name=PurePosixPath(entry['name'])
-        if name.is_absolute() or '..' in name.parts or len(name.parts)!=2 or name.parts[0]!='vript':raise ValueError('Unsafe member path')
+        if name.is_absolute() or '..' in name.parts or len(name.parts)!=2 or name.parts[0] not in ('vript','cogvideo'):
+            raise ValueError('Unsafe member path')
         if entry['solid'] or entry['flags']&0x38 or entry['file_flags']&9 or any(e['type'] in (1,5) for e in entry['extras']):raise ValueError('Unsupported dependent/encrypted/redirected member')
         if entry['crc32'] is None or entry['size']>64*2**20:raise ValueError('Unbounded or unchecked member')
         if shutil.disk_usage(root).free<3*2**30:raise RuntimeError('Preserve 3GiB disk reserve')
