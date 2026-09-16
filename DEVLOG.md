@@ -1,5 +1,21 @@
 # Research handoff
 
+## Full-cache experiment completed on server
+
+`cached_dino_baseline_v1` used all 28,674 retained DINO-feature records and
+completed 18 LR fits (six arms across two generator holdouts). New code and
+compact results live under the corresponding server scripts / research-runs
+directory. Full predictions and features remain server-side.
+Frame-delta features improve held-generator AUROC by +0.08251 (ModelScope)
+and +0.04974 (VideoCrafter2), but the timing-only negative control scores 1.0
+on both. This prevents a forensic mechanism claim. See the run's report.
+Next action: matched physical-time sampling with fixed frame count, then
+repeat the same group allocation and timing probe. All 28,727 originally
+cached raw videos are still present server-side; do not redownload them.
+Do not call this a passed formal gate or an innovative algorithm. This
+completed server CPU experiment reused GPU features; it did not train a GPU
+backbone. Source independence and rights qualification remain separately open.
+
 ## Latest provenance checkpoint
 
 See `research-plan/PROVENANCE_DECISION_2026-09-16.md` and

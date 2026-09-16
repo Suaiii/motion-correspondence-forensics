@@ -1,0 +1,41 @@
+{
+  "scope": "exposed native16 cache exploratory baseline; not confirmatory",
+  "C_grid": [
+    0.1,
+    1.0,
+    10.0
+  ],
+  "selection": "calibration BCE only; smallest C wins ties",
+  "holdouts": [
+    "ms",
+    "vc2"
+  ],
+  "split_seed": "dino-cached-baseline-v1",
+  "arms": [
+    "semantic",
+    "semantic_delta",
+    "semantic_velocity"
+  ],
+  "split": "sha256(group) 60/20/20; shared fake UUID and real original prefix grouped",
+  "weights": "balanced class and, within class, inverse ancestor multiplicity",
+  "limits": {
+    "seconds": 900,
+    "cpu_threads": 4
+  },
+  "final_access": false,
+  "input_lock_hashes": {
+    "/root/autodl-tmp/cvpr27/runs/overnight_20260911/gpu_dino_v1": "182631cca4dd90a78cc83dadb6a6a81dbcef33a52a99dfda1dcb492afdc36de8",
+    "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1": "da6ccf0aab4f15e9e3430fcc49056958ee2d5e6809d70e2b686ea5407f87bd2f"
+  },
+  "historical_exclusion_sha256": "a5e2216926891b553cd2d129f96e2f7b7f35149428368c5ae0d05cac55e765ad",
+  "script_sha256": "f7f5d9215b6bd11e1df84e73579fad465fa676c6701e43139fc2c835723888af",
+  "limitations": [
+    "one real source only",
+    "native16 physical time varies by source",
+    "ancestor IDs inferred from filenames, not fully verified",
+    "earlier exposed assets; no new final confirmation",
+    "no claim that derivative scaling proves invariance or novelty"
+  ],
+  "sklearn": "1.7.2",
+  "numpy": "2.2.6"
+}
