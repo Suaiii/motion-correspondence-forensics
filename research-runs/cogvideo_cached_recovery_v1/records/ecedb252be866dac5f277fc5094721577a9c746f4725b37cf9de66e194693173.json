@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0051",
+  "archive_member": "cogvideo/00052___a screen shot of a message in spanish.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "0623c037ee1472345beee7b815000fe04eb203ad688eb82082555c1e56e8eee7",
+  "mini_archive_sha256": "c71057603c356123b8c8ebd03c1632509571f9af98cd96e22e004508ee07a2a8",
+  "raw_file": "raw/ecedb252be866dac5f277fc5094721577a9c746f4725b37cf9de66e194693173.mp4",
+  "sha256": "1ce3a9335fa34c9d506524793edeb4cbbc00c0ecdc25dfa85767f5a79cd6b6d2",
+  "bytes": 546068,
+  "crc32": 2453337843,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "51301af9cff97cb50c4cdf20ec0298a864495fcc9fec2a580f80c1756ee343da",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "2bfb64fab0808510cd04d56c97dbbdc94ce1cd3ba74761368160cd7e3f2ba768",
+      "frames": 16
+    }
+  },
+  "seconds": 1.5470000000000255
+}

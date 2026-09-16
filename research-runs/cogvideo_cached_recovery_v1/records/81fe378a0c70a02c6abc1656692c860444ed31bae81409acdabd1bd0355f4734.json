@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0005",
+  "archive_member": "cogvideo/00006___a logo for brs tv on a white background.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "a5b0e850b4170938fcd11bca788d9d83f9e98771691c94211630d6cf39d18329",
+  "mini_archive_sha256": "5d06d7b338df1929106cd1399161e74479ac9cb4eecc3182b99ac1f7ee862b23",
+  "raw_file": "raw/81fe378a0c70a02c6abc1656692c860444ed31bae81409acdabd1bd0355f4734.mp4",
+  "sha256": "dd552524374e8a350fef9537489da474ffe8d586f85b881ba025c740da6d03ce",
+  "bytes": 106294,
+  "crc32": 2725247924,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "83e5c02a45136a0ac6d0f23172acd2707d1a5a5d0c95f9b3490bb774fe2f79f2",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "48b99d93910c82586388923b92bb8cb02b4dd990c6aa68e1fad4c5847b7c3457",
+      "frames": 16
+    }
+  },
+  "seconds": 0.6399999999998727
+}

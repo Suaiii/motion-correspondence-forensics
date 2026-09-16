@@ -1,0 +1,21 @@
+{
+  "requested": 100,
+  "processed": 100,
+  "recovered": 100,
+  "recovery_errors": [],
+  "unique_sha256": 100,
+  "raw_bytes": 27655068,
+  "sampling": {
+    "4": {
+      "ok": 100
+    },
+    "8": {
+      "ok": 100
+    }
+  },
+  "wall_seconds": 28.811999999999898,
+  "full_archive_hash_verified": false,
+  "ancestry_verified": false,
+  "licence_accepted": false,
+  "formal_training_released": false
+}

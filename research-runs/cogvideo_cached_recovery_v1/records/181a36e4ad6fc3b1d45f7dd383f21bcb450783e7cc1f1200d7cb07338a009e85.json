@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0054",
+  "archive_member": "cogvideo/00055___a computer screen displaying a color palette.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "dab373ad330e27aacaa462b572d92d2dc1319dd711fb31e8a1f1e25291755343",
+  "mini_archive_sha256": "9fb49e30834f5a02c16e213ff1567fbbd66befcddc57a55a74faa779c48b82d0",
+  "raw_file": "raw/181a36e4ad6fc3b1d45f7dd383f21bcb450783e7cc1f1200d7cb07338a009e85.mp4",
+  "sha256": "535f2de7fc151776eaab7365354ebd6e8659b352af6f3029600351025ec87a64",
+  "bytes": 204448,
+  "crc32": 1437208073,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "79cdf38e09ec35149a792414f613dc20075ad9774519103eab17eb677ac0c53c",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "5358263287078bb1e311ba89e55e6d19df8ad1debad80c0ce5cea214764aa639",
+      "frames": 16
+    }
+  },
+  "seconds": 0.9679999999998472
+}

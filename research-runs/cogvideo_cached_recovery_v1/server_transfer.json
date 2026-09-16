@@ -1,0 +1,14 @@
+{
+  "server_root": "/root/autodl-tmp/cvpr27/data/cogvideo_cached_recovery_v1",
+  "transfer_status": "verified",
+  "verification_exit_code": 0,
+  "manifest_sha256": "73be4e6a7e3d2d5ef7468bd8bf6cd984586260d1872748d3c40184a1d72d8c0e",
+  "verified_files": 202,
+  "verified_bytes": 27889494,
+  "video_count": 100,
+  "video_bytes": 27655068,
+  "local_video_copies_removed_after_remote_and_local_hash_verification": true,
+  "local_retained": "code, index, selection, receipts and results",
+  "server_training_started": false,
+  "user_storage_policy": "Server is the primary location for downloads, extraction, feature caches and training. Local storage only for necessary code and compact evidence."
+}

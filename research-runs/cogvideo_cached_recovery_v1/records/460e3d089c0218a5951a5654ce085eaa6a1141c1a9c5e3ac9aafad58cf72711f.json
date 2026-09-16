@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0010",
+  "archive_member": "cogvideo/00011___a close up of a bunch of red bacteria.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "a09849eddcf7352ffd9bb0744e66e3b4a1d60093cedad8411e1fce17c3eebe4c",
+  "mini_archive_sha256": "e8064555cbaf4299f1455aead655f9689da06352c1f7e9007a9fd13f756d17d3",
+  "raw_file": "raw/460e3d089c0218a5951a5654ce085eaa6a1141c1a9c5e3ac9aafad58cf72711f.mp4",
+  "sha256": "885eac9ccbb9cba0bb864563a9e2ad38c074f74fb0d1e3e539bab6475f8b2fd2",
+  "bytes": 364014,
+  "crc32": 3696709702,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "4691b97341f22bdd58a5354877c885e5ac1c56ed14fa9bbff1971cb401041fe6",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "1017f171118fc5615ed82e7fe06375f836445ef7b4f6f5ec4a5e1d6338d1ebd8",
+      "frames": 16
+    }
+  },
+  "seconds": 1.3589999999999236
+}

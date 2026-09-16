@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0098",
+  "archive_member": "cogvideo/00099___a young girl sitting in front of a painting.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "052ddbee901dd335e3d931c6eb628b473767fe264fb03391a1e87ea5b2570c19",
+  "mini_archive_sha256": "44e7db07bddcb128d16ea94438352fdb449029347d060c4502fa7e60e0f19cf1",
+  "raw_file": "raw/5f5296f63f923bab7ad6129548f458f80139ca7892b045d95c169b3b47196291.mp4",
+  "sha256": "f78b175d38284308476474a719ad59d94852f8920989ac574bfba7796cf27468",
+  "bytes": 243378,
+  "crc32": 637971114,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "db093624145ce7009dace053cbcc747cfa72bbe25c47d37d43c29de6951ab821",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "aa5989121a7fa9d08eb6b2c0ca780f0e432163232cf0119968ca20c431c19892",
+      "frames": 16
+    }
+  },
+  "seconds": 0.9369999999998981
+}

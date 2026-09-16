@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0097",
+  "archive_member": "cogvideo/00098___a screen shot of a car driving through a tunnel.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "62b340306796209f21ad0369dfb34bd55f514eb155cfb8b90b1db3866c14fbde",
+  "mini_archive_sha256": "7ca12d8b0d8a8c2d994e20c984129e5c6701bfbcd1a6ea31a612e6a378c90627",
+  "raw_file": "raw/55c952d24f8223ec3d3197eaadbe05bc6586b5dea437da6a03c9a92e1f17bf6a.mp4",
+  "sha256": "31508b368f052af7ce19d7fcff057e3b0b0bc16386853d0dd1cce49ccaf488e4",
+  "bytes": 175728,
+  "crc32": 3899673758,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "4337c647128dd20a89109a319f8cc370d45fe0298616b1783a9c2ea463f38d0a",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "c7caeb4afa240fed062684d08ea97b14387e30fb5db0e078cbb424604b0c4063",
+      "frames": 16
+    }
+  },
+  "seconds": 0.9850000000001273
+}

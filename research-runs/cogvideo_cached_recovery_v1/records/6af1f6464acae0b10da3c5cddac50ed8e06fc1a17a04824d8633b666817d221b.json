@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0079",
+  "archive_member": "cogvideo/00080___a plane flying in the dark with the moon in the background.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "e9711c5867774b5a21ddb5494176bed5f679fdb58bf9cb1c2a2107fed1f95be2",
+  "mini_archive_sha256": "54c6dccf4c99c25aab19b02001b812c7b1d5b6914e651da640839435139dba97",
+  "raw_file": "raw/6af1f6464acae0b10da3c5cddac50ed8e06fc1a17a04824d8633b666817d221b.mp4",
+  "sha256": "3d4c633fe900c194e6432cec211a66646f15751a86af62c9cd5def6d9cc8a059",
+  "bytes": 176979,
+  "crc32": 2373318402,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "542427b51f74dca213fadc32d38de11d3395d58efef8034b7c093888e7b37b79",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "2506d8a05bc0b0f9805bc2356eeb839ab26b88f884847f52740f3a990f092002",
+      "frames": 16
+    }
+  },
+  "seconds": 1.030999999999949
+}

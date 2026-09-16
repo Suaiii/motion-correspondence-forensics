@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0035",
+  "archive_member": "cogvideo/00036___a red truck is parked in a garage.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "ffd66595766f922cc56190b337175f508fc7f9d1db34cd2239112ea5a8bb5cf3",
+  "mini_archive_sha256": "b361535fdadfdc858356c0bfae7f6906598a51d1f194913b64f01ca8956f043b",
+  "raw_file": "raw/1c21727f93ad63864a94dab71c432e79381c35a3143056ed99c27264d20c1464.mp4",
+  "sha256": "847a87623fa3edb6841a72d9f26d73e515cb85615bd62d4a3bf38a6a98a92a39",
+  "bytes": 331137,
+  "crc32": 4243537448,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "97f956e4a67b2513e1bc478c142c797243a6d08894b94804c692de78a7cabb4e",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "bafd3a268ddf3b86a340e6ec84383fe4fdc384ef6ab55d8a1d22ef0e3981034d",
+      "frames": 16
+    }
+  },
+  "seconds": 1.219000000000051
+}

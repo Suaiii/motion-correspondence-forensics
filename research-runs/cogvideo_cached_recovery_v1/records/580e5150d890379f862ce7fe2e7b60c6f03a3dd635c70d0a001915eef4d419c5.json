@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0039",
+  "archive_member": "cogvideo/00040___a group of children sitting on the floor playing with toys.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "e383f38740503acbc96b810a59df784dd6e31952aa5d5a24ee5c7904901b1182",
+  "mini_archive_sha256": "e0f8971356f0919e83f6fdcc1ab17111cbfd62704befd1b7a7c40d42ab2db473",
+  "raw_file": "raw/580e5150d890379f862ce7fe2e7b60c6f03a3dd635c70d0a001915eef4d419c5.mp4",
+  "sha256": "746e34200b01b9b1c0b384cc5370b4187628559f66a09b29aceb4808edfb4924",
+  "bytes": 475325,
+  "crc32": 1707914340,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "964eec12d8472f7a16b0e135457f41bf8bafae63cb8b14249358f0f0aef2ed20",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "93151f27c62447769b26d6a5523dfc55802b1bf591ea8be4dcaa83d97efc6d83",
+      "frames": 16
+    }
+  },
+  "seconds": 1.5470000000000255
+}

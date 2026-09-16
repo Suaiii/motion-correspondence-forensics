@@ -1,0 +1,23 @@
+{
+  "status": "pass",
+  "reviewer": "primary implementer mechanical verification",
+  "independent_scientific_review": false,
+  "records": 100,
+  "labels_matched": 100,
+  "all_member_crc_and_sha_recomputed": true,
+  "sampling_first_interval_counts": {
+    "4:0.25": 100,
+    "8:0.125": 100
+  },
+  "historical_exact_hash_matches": [],
+  "ancestry_status_counts": {
+    "unknown": 100
+  },
+  "label_file_sha256": "50ef619afacc6dabad628237d04e496dc71ec6b166d7b1ab3037e25c935d1782",
+  "verifier_sha256": "49140b21e391a8499269a6ae7628502a511475bd40e5f20e89301e9125d0da41",
+  "qualifications": [
+    "Exact hash exclusion does not establish ancestor independence.",
+    "Author binary labels do not establish T2V versus I2V task.",
+    "No new classifier results; licensing and upstream mapping remain open."
+  ]
+}

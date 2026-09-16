@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0032",
+  "archive_member": "cogvideo/00033___a car with a number on the side of it.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "6c4bc225911fd1d030abc4c7d4073587ce6b7286a787e223c42cb80475176e0a",
+  "mini_archive_sha256": "21a289fd3ae9f04ce76c8248a0e9cfde70822a9441008f224ff771d8442c8e7a",
+  "raw_file": "raw/b8cacd7c7f8d30643e29e2973c6f05a1898e9f9e2f56b11f953b554286dde139.mp4",
+  "sha256": "62fc46703d00e07e851219d945f63b3d2e7800d9dca2bd9aa5c619e58323cf30",
+  "bytes": 180863,
+  "crc32": 2611083467,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "d019c41863f4eed7f3fa9d4f8b9e023941395d94e0b0f2d806808b9409fc07fb",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "ddbf74ac76276a2bb5d72a537f799a45b1cca1af38aa4405b163f2244bd111a3",
+      "frames": 16
+    }
+  },
+  "seconds": 0.875
+}

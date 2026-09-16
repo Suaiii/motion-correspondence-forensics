@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0056",
+  "archive_member": "cogvideo/00057___a close up of a skateboard in the air.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "b8709103a219c3174ef8d2104b95c73914cf7830cd1396fb6a0616d4cbe96bb0",
+  "mini_archive_sha256": "8bde171d96437897b976e8e253da105a102cba95c361ada8c27cac2e7201c179",
+  "raw_file": "raw/3b38f93ee2e900359836ebf90f40bd2e491f1171d61c71da102ee0211fb282ad.mp4",
+  "sha256": "6d46987ad3ff660e1225c3b61d23e31442543f4d44fc87cb566f0331bc66c6aa",
+  "bytes": 179820,
+  "crc32": 3391525782,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "932a2c80728cf1661f6a7592ce36a4dbe15dbfe2ef47b8ececd9c5904ad91c4c",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "3e46e10b15fbebf2ce0570e7c020b187d74ef6ab7691e7a6765d52dd1d64f82c",
+      "frames": 16
+    }
+  },
+  "seconds": 0.8589999999999236
+}

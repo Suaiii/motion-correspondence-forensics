@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0076",
+  "archive_member": "cogvideo/00077___a pot filled with meat cooking on the stove.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "c3e3edc6fdff92cc8334ced74c854c49127e5f38fa567dffe77082ce2652effd",
+  "mini_archive_sha256": "f9eadbc494023cafe6184743b697f5a81f314d7669f19e1b3111cea86c6a2ec2",
+  "raw_file": "raw/5cac1ec6c2255965241c8a913bc8ee0ded0303c47c7a2ec2980b95f394da531a.mp4",
+  "sha256": "c919af2cc30eefeed227fed468a658a897d3ee5b718723b92aeabc429d356402",
+  "bytes": 236612,
+  "crc32": 2222539381,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "143f204fed8350375bbd25bd06543a3eabf62cdfbbe52f9c8ef7f67c1240a9d7",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "dd881aa37cf7061dbec41dc1213191a9d94c0718645f5f524ca38856ab474be2",
+      "frames": 16
+    }
+  },
+  "seconds": 1.2350000000001273
+}

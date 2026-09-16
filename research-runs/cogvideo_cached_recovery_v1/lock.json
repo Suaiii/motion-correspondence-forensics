@@ -1,0 +1,13 @@
+{
+  "created_utc": "2026-09-16T11:44:53.953886+00:00",
+  "selection_sha256": "08d956eeecf3dde64bf4a5cca2e4b7c8df358cb7a6566e51ce36742847a3e026",
+  "index_sha256": "1c9a94ec363d160f00e11e3b0cffe7729f8fe6788f9934a8032dda2851ed6d9b",
+  "script_sha256": "0495787ef37c804fca5e156a9490a65c21b927d221503a3d844b42cdde11ac85",
+  "decoder_sha256": "0d8f226027dd8bb22bed8b2fbeb295fca02648a163b336440c68cb6e6c0f3409",
+  "tar_version": "bsdtar 3.8.4 - libarchive 3.8.4 zlib/1.2.13.1-motley liblzma/5.8.1 bz2lib/1.0.8 libzstd/1.5.7 cng/2.0 libb2/bundled",
+  "tar_sha256": "9b77d4c912f2edae8c241d0ece1094d2ac068b084269ceaf85d7c7b085d2ae86",
+  "network": false,
+  "gpu": false,
+  "scope": "acquisition and decoded-PTS QC only; no model selection",
+  "requested": 100
+}

@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0026",
+  "archive_member": "cogvideo/00027___a fire is burning in a portable stove.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "70c9fe70f71907dcb3040a85000ba8ebdc22e448fd265bc48e3f0f5b201d3e6d",
+  "mini_archive_sha256": "e1bbafc7e34c2e1bdbe918f4c3e0dec9eb1299fac9a168ce39093d7439b95b6f",
+  "raw_file": "raw/d9b2e1927049721c8e9eec8b02fe4f8535f1ed608ca1673cbb55ce021075d35a.mp4",
+  "sha256": "86422bd2ae530bb00518e7c2dcf99ad30d5b78acc830b772f2b6da863b3c929c",
+  "bytes": 249817,
+  "crc32": 2814854378,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "41006a69c36e8b523e81ed26e3b62cc2f12ddd28b0c2e834e891a10600429f9f",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "d1308ac8e1efc9f28038d71acf6426823f14d5f1cf69170e39d7831264d83948",
+      "frames": 16
+    }
+  },
+  "seconds": 0.9839999999999236
+}

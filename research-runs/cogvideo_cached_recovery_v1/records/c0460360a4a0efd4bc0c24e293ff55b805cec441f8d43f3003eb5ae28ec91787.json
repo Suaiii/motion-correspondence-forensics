@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0017",
+  "archive_member": "cogvideo/00018___a close up of the front end of a mercedes suv.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "5bf99a54f7b0c7ad3b2fbc9af11b5801056ef8ae45309ad9a6d588e7691e3f52",
+  "mini_archive_sha256": "422691783f403c07e99558bd57aaea6dcb0b01657b4c4437fcaab7dbd3d0ad11",
+  "raw_file": "raw/c0460360a4a0efd4bc0c24e293ff55b805cec441f8d43f3003eb5ae28ec91787.mp4",
+  "sha256": "1c702933230e45bd199ca5b9e220e2daf94e6c03728129386a1a1faeb960638b",
+  "bytes": 315740,
+  "crc32": 2409031983,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "baf1db7638c2cf15559a9cdbcf2f5f53506a7ef5b4c969acd096e36e49ec294a",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "f965cbf030370187759e8b859783fdeab30be0f1c9cbeeaf4b3cc16c4d2170f3",
+      "frames": 16
+    }
+  },
+  "seconds": 1.1399999999998727
+}

@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0006",
+  "archive_member": "cogvideo/00007___a stuffed cat with a pumpkin face sitting on top of a magazine rack.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "349fa6a19cdf1bae0a703f2256ec7f96c6ffb5aca6dfd3c9abad73c690514936",
+  "mini_archive_sha256": "83c0401cec7e288a38d9203f79b6b5aee5dc79670d5b19a3e5548c7aa9b4210c",
+  "raw_file": "raw/11c70c9aae4aea6185f236604eb384b5987e7e245c241ae01d5d4b636d1bfd86.mp4",
+  "sha256": "06b5178c0cf0656ab80b4bc44a597f26942a71b527d2f78cc20006d4ec8f9d70",
+  "bytes": 432476,
+  "crc32": 1812146140,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "656dd1b6acd1187cd35b5023a92761a7c868173520cb5068a280c536e9f6e4ab",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "aa4e716eb22cf558862b531e36d7d639f77b6cb0cdefe18fa23c6effe22a09be",
+      "frames": 16
+    }
+  },
+  "seconds": 1.375
+}

@@ -1,0 +1,99 @@
+{
+  "sample_id": "PAIR2_COG_0022",
+  "archive_member": "cogvideo/00023___a close up of a street sign with trees in the background.mp4",
+  "label_fake": 1,
+  "source": "cogvideo",
+  "generator": "cogvideo",
+  "task": "T2V",
+  "ancestry_status": "unknown",
+  "license": "upstream_terms_pending",
+  "scope": "candidate_only",
+  "recovery_status": "ok",
+  "full_archive_hash_verified": false,
+  "training_released": false,
+  "packed_span_sha256": "ee90374175f450b6612b27a1024746f671ee8b15800f7b14b94375ac51b5a24a",
+  "mini_archive_sha256": "444b503674969dc2c39113b329fd59533219cd09d74561e3abf7005a9a5df59a",
+  "raw_file": "raw/14b574e52ef15f1b8750518e260cc25e7dbdcd45719780fddecd380abf8798e9.mp4",
+  "sha256": "51d443f4a712b8644259ac299f37b3d90cce5bc671da812d548381847f33f664",
+  "bytes": 448681,
+  "crc32": 135503261,
+  "crc_verified": true,
+  "header_matches_index": true,
+  "sampling": {
+    "4": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          10,
+          12,
+          14,
+          16,
+          18,
+          20,
+          22
+        ],
+        "pts": [
+          1.0,
+          1.25,
+          1.5,
+          1.75,
+          2.0,
+          2.25,
+          2.5,
+          2.75
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "a9f60d1eda11dfca4cad98b107ad2ee6edfde4ebf5695eb2345276b7d1287f41",
+      "frames": 8
+    },
+    "8": {
+      "status": "ok",
+      "metadata": {
+        "indices": [
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23
+        ],
+        "pts": [
+          1.0,
+          1.125,
+          1.25,
+          1.375,
+          1.5,
+          1.625,
+          1.75,
+          1.875,
+          2.0,
+          2.125,
+          2.25,
+          2.375,
+          2.5,
+          2.625,
+          2.75,
+          2.875
+        ],
+        "duration": 4.125,
+        "black_fraction": 0.0
+      },
+      "decoded_tensor_sha256": "904b559f1cf2e6ebf2fc70b48ad09a986b9e5782338d3858a9700c0a2d6269ec",
+      "frames": 16
+    }
+  },
+  "seconds": 1.2970000000000255
+}
