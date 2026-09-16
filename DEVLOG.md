@@ -18,6 +18,19 @@ backbone. Source independence and rights qualification remain separately open.
 
 ## Latest provenance checkpoint
 
+## Paired physical-time baseline checkpoint
+
+The server completed 28,674 matched-time DINO extractions (28,672 successful,
+2 excluded) and the paired baseline before the requested shutdown. Observed
+AUROCs: ModelScope native semantic 0.8397, native delta 0.9183, time-grid
+semantic 0.8441, time-grid delta 0.8445; VideoCrafter2 native semantic 0.8478,
+native delta 0.8992, time-grid semantic 0.8556, time-grid delta 0.8628.
+This is an exposed one-real-source diagnostic. The timing-only confound was
+identified at AUROC 1.0 in the preceding run; the time-grid delta remains a
+candidate but not a method claim. Compact JSON was not retrieved before the
+server shutdown; preserve the server path and the local report
+`research-runs/paired_dino_time_v1_report.md`.
+
 See `research-plan/PROVENANCE_DECISION_2026-09-16.md` and
 `research-runs/source_lineage_correction_v1.json`.
 The server audit rehashed 263 files: videoOSN maps back to Vript/Sora by the
