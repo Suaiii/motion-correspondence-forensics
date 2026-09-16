@@ -1,5 +1,16 @@
 # Research handoff
 
+## 2026-09-17 physical-time decision
+
+The full cached DINO comparison completed with 28,672 successful time-grid
+records out of 28,674. Native delta AUROC was 0.9183/0.8992 on the two held
+generator audits; physical-time delta was 0.8445/0.8628, with semantic-only
+time-grid scores 0.8441/0.8556. Retain time-delta as a mechanism candidate,
+reject native-frame delta as a standalone claim. Formal release still needs
+two accepted real families, four generators including CogVideo, timing and
+estimator controls, five seeds, and a fresh group-disjoint cohort. See
+`research-plan/TIME_MATCHED_DECISION_2026-09-17.md`.
+
 ## Full-cache experiment completed on server
 
 `cached_dino_baseline_v1` used all 28,674 retained DINO-feature records and
