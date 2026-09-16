@@ -1,5 +1,20 @@
 # Research handoff
 
+## Latest provenance checkpoint
+
+See `research-plan/PROVENANCE_DECISION_2026-09-16.md` and
+`research-runs/source_lineage_correction_v1.json`.
+The server audit rehashed 263 files: videoOSN maps back to Vript/Sora by the
+original source metadata; corrected candidate counts are 90 Vript real,
+80 OpenSora, 80 T2VZ and 13 Sora, with seven shared ancestor candidate groups.
+Do not count videoOSN as an independent real source or generator.
+The author paper supports CogVideo T2V identity and shared HD-VG ancestry;
+sample-level ancestor mapping remains open. Official GenVidBench declares
+CC BY-NC 4.0, with upstream rights qualifications recorded in the decision.
+Server DINOv2 ViT-B weights and early feature caches were found live and can be
+reused after their configuration/hash audit; do not redownload them blindly.
+No training was launched by this provenance audit.
+
 ## Current storage policy and transfer
 
 User requested server-first processing because local disk is limited. Downloads,
