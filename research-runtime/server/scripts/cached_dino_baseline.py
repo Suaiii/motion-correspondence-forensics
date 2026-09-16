@@ -37,6 +37,7 @@ def main():
     parser=argparse.ArgumentParser()
     parser.add_argument('--base',type=Path,required=True)
     parser.add_argument('--output',type=Path,required=True)
+    parser.add_argument('--time-cache',type=Path,help='Completed time-grid extraction; paired native8/time8 comparison')
     a=parser.parse_args(); start=time.monotonic()
     root=a.output; root.mkdir(parents=True,exist_ok=False)
     dirs=[a.base/'runs/overnight_20260911'/s for s in ['gpu_dino_v1','vript_dino_group1746_v1']]
@@ -61,6 +62,16 @@ def main():
                              'no claim that derivative scaling proves invariance or novelty'],
               'sklearn':sklearn.__version__,'numpy':np.__version__}
     save(root/'protocol.json',protocol)
+    time_records=None
+    if a.time_cache:
+        summary=read(a.time_cache/'summary.json')
+        if not summary.get('complete'):raise ValueError('Do not evaluate an incomplete time cache')
+        time_records={r['sample_id']:r for r in [read(p) for p in (a.time_cache/'records').glob('*.json')]}
+        protocol.update(scope='paired native8/time8 exploratory comparison; not confirmatory',
+            time_cache_lock_sha256=sha(a.time_cache/'lock.json'),
+            arms=['native_semantic','native_delta','native_velocity','time_semantic','time_delta','time_velocity'],
+            comparison='same retained IDs, 8 frames per arm; old native16 middle8 versus nearest-time8')
+        save(root/'protocol.json',protocol)
     def deadline():
         if time.monotonic()-start>900: raise TimeoutError('Bounded baseline time exhausted')
     rows=[]; vectors=[]; rejected=[]; hashes={}
@@ -79,6 +90,23 @@ def main():
             pts=np.asarray(r['sampling']['pts']); dt=np.diff(pts)
             assert z.shape==(16,768) and pts.shape==(16,)
             assert np.isfinite(z).all() and np.isfinite(dt).all() and (dt>0).all()
+            time_vector=None; actual_dt=None
+            if time_records is not None:
+                timed=time_records.get(r['sample_id'])
+                if timed is None:raise ValueError('Missing timed record')
+                if timed['status']!='ok':
+                    rejected.append({'record':str(p),'reason':'time_cache_excluded','detail':timed.get('reason')});continue
+                assert timed['sha256']==r['sha256']
+                time_path=a.time_cache/timed['time_feature_file']
+                if sha(time_path)!=timed['time_feature_sha256']:raise ValueError('Time feature changed')
+                zt=np.load(time_path,allow_pickle=False).astype(np.float64)
+                dt_t=np.diff(timed['sampling']['pts'])
+                assert zt.shape==(8,768) and np.isfinite(zt).all() and (dt_t>0).all()
+                zt/=np.maximum(np.linalg.norm(zt,axis=1,keepdims=True),1e-12)
+                delta_t=np.abs(np.diff(zt,axis=0))
+                time_vector=np.r_[zt.mean(0),delta_t.mean(0),(delta_t/dt_t[:,None]).mean(0)]
+                actual_dt=float(np.median(dt_t))
+                z=z[4:12];pts=pts[4:12];dt=np.diff(pts)
             sid=r['sample_id']; name=Path(sid).stem
             if source=='vript':
                 group='real:'+re.sub(r'-Scene-\d+$','',name)
@@ -95,6 +123,10 @@ def main():
                          'sha256':r['sha256'],'feature_sha256':r['feature_sha256'],'record_sha256':sha(p),
                          'feature_file':str(feature),'median_dt':float(np.median(dt))})
             vectors.append(np.r_[semantic,delta.mean(0),(delta/dt[:,None]).mean(0)])
+            if time_vector is not None:
+                vectors[-1]=np.r_[vectors[-1],time_vector]
+                rows[-1].update(time_median_dt=actual_dt,time_feature_sha256=timed['time_feature_sha256'],
+                    time_dt_std=float(np.std(dt_t)),time_max_timing_error=float(np.max(np.abs(timed['sampling']['timing_error']))))
             hashes[r['sha256']]=hashes.get(r['sha256'],0)+1
             if len(rows)%2000==0:print('validated features',len(rows),flush=True)
     keep=[i for i,r in enumerate(rows) if hashes[r['sha256']]==1]
@@ -106,6 +138,10 @@ def main():
     y=np.array([r['label_fake'] for r in rows]); source=np.array([r['source'] for r in rows]); role=np.array([r['role'] for r in rows])
     cols={'semantic':np.arange(768),'semantic_delta':np.arange(1536),
           'semantic_velocity':np.r_[np.arange(768),np.arange(1536,2304)]}
+    if time_records is not None:
+        cols={prefix+name:columns+offset for prefix,offset in [('native_',0),('time_',2304)]
+              for name,columns in [('semantic',np.arange(768)),('delta',np.arange(1536)),
+                                    ('velocity',np.r_[np.arange(768),np.arange(1536,2304)])]}
     results=[]; predictions=[]; models={}
     for held in protocol['holdouts']:
         train_source='vc2' if held=='ms' else 'ms'
@@ -142,7 +178,7 @@ def main():
             results.append(record)
             models[held+'/'+arm]={'mean':scaler.mean_.tolist(),'scale':scaler.scale_.tolist(),
                                  'coef':model.coef_.tolist(),'intercept':model.intercept_.tolist()}
-            save(root/'progress.json',{'completed_arms':len(results),'total_arms':6,'seconds':time.monotonic()-start})
+            save(root/'progress.json',{'completed_arms':len(results),'total_arms':len(cols)*2,'seconds':time.monotonic()-start})
             save(root/'results_partial.json',results)
             print(held,arm,record['metrics']['held_generator_audit'],flush=True)
     save(root/'predictions.json',predictions);save(root/'models.json',models)
