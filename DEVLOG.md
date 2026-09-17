@@ -336,3 +336,20 @@ translation_null_diagnostic.json under shared_plan_20260917.
 
 Ran 6.69 seconds on local CPU only, no training, backbone, raw media or server
 access. No protocol or planner state changed. Formal innovation remains unproven.
+
+## 2026-09-18 original-PTS collector preparation
+
+Implemented a stdlib server collector with metadata-only planning by default,
+explicit adopted-contract/code/manifest bindings for execution, native integer
+PTS preservation without best-effort substitution, original-file checks,
+hash-verified resume and separate acquisition/resource failure receipts.
+Fee/hour exposure continues from a fixed contract billing start; unknown actual
+payments remain unknown. No startup, SSH, training or shutdown is built into it.
+
+Sixteen mocked local tests pass (final run 0.341 s), including unauthorized
+execution refusal, missing/duplicate/nonmonotone PTS, >2^53 precision, corrupted
+resume artifacts, source changes, subprocess resource interruption and fast
+over-cap output. No real ffprobe process or media was run. The future Linux
+ffprobe integration still needs the authorized server pilot. Current PTS contract
+remains disabled; WORK_PLAN/project and existing scientific gates are unchanged.
+Details: shared_plan_20260917/native_pts_collector_preparation.md.

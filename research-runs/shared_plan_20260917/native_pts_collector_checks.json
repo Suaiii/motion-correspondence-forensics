@@ -1,0 +1,18 @@
+{
+  "observed_utc": "2026-09-17T16:33:03.0614916Z",
+  "scope": "mocked_local_collector_preparation",
+  "status": "pass",
+  "tests_run": 16,
+  "test_runtime_seconds": 0.341,
+  "command": "python -m unittest discover -s research-runtime/server/tests -p test_native_pts_acquisition.py -v",
+  "ffprobe_executed": false,
+  "original_media_read": false,
+  "server_accessed": false,
+  "gpu_used": false,
+  "scientific_gate_passed": false,
+  "source_sha256": {
+    "research-runtime/server/tests/test_native_pts_acquisition.py": "8d4664706766e6801f2861a58b8840f912477d32cb3a7c87b231e6db446648bf",
+    "research-runs/shared_plan_20260917/native_pts_collector_preparation.md": "3393c39a1abb95bda8d30c424ccdea404e29ca036e40a65d84e976d502e15e8e",
+    "research-runtime/server/scripts/acquire_native_pts.py": "3f154ec71885fc98f60e052819493d1cf406506a0343c6d33f713c6fa7d47bc6"
+  }
+}
