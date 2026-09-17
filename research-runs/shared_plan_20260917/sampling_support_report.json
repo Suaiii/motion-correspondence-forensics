@@ -1,0 +1,24 @@
+{
+  "task_id": "RS03",
+  "plan_version": "cvpr27-20260917-v1",
+  "execution_status": "partial",
+  "suggested_gate_result": "not_evaluated",
+  "old_eight_frame_census_complete": true,
+  "old_census_rows": 28868,
+  "old_census_report": "../actual_lag_support_v1_report.json",
+  "old_census_report_sha256": "b50e090b7bf7efc9d5bc10e9ff9c593f9dc2b0e4da0fe94d64cf2aae27113c2a",
+  "quantum_seconds_for_counts_below": 0.002,
+  "old_adjacent_interval_all_source_support": 0,
+  "old_half_second_pair_all_source_supported_counts": {
+    "vript": 998,
+    "hd_vg_130m": 83,
+    "ms": 13499,
+    "vc2": 13501,
+    "cogvideo": 98
+  },
+  "continuous_within_bin_timing_differences_remain": true,
+  "new_six_frame_protocol_validated_on_real_data": false,
+  "new_joint_triplet_support_measured": false,
+  "new_protocol_source_probes_complete": false,
+  "scope": "Old-cache descriptive support is useful input; it does not release the new mechanism sampling gate."
+}

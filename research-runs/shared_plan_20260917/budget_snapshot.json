@@ -1,0 +1,29 @@
+{
+  "unique_reservations": 8,
+  "reserved_cny": 43.239999999999995,
+  "reserved_gpu_hours": 23.0,
+  "statuses": [
+    "reserved"
+  ],
+  "receipts": [
+    {
+      "path": "incoming/budget.json",
+      "sha256": "a7ac0803e4f7d7742aa6593b812ff0dfb805a1637644458f134ca0b018305d2f",
+      "entries": 1
+    },
+    {
+      "path": "metadata/budget.json",
+      "sha256": "8027968096d295de059f78ba41ab38834abad68e7ec8da496de6bdf7915b6035",
+      "entries": 2
+    },
+    {
+      "path": "runs/budget_20260914.json",
+      "sha256": "5a747090ce4f2dcf9509f699b9c4c4da0cc5af5cb970f9320c9a5176b8d72b5a",
+      "entries": 6
+    }
+  ],
+  "actual_provider_spend": null,
+  "actual_paid_gpu_hours": null,
+  "current_provider_rate": null,
+  "interpretation": "Partial historical admission reservations, not provider billing and not remaining budget"
+}

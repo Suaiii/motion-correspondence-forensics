@@ -200,3 +200,48 @@ The next-step plan records rank/census and DINO-trajectory prior art. These
 components are unvalidated research primitives, not a novel detector result.
 Real-data support census and any mechanism evaluation remain pending server
 access. See `research-plan/ACTUAL_LAG_AND_LOCAL_RANK_2026-09-17.md`.
+
+## 2026-09-17 shared researchagent plan accepted; live SSH and canonical prototype
+
+Read the actual root/role files, shared WORK_PLAN cvpr27-20260917-v1 and the
+updated 25-task/11-milestone DAG. Main work now follows the matched-perturbation
+local composability candidate; local-rank stays a diagnostic. Researchagent
+does not edit the plan, task states or reminders. Written acknowledgement and
+asset/accounting review are under `research-runs/shared_plan_20260917/`.
+
+The latest user-provided SSH command authenticated. RTX 4090 D, retained
+manifests and about 14 GiB free data space were checked live. The old access
+block is resolved. Ran the old eight-frame actual-lag census on 28,868 records:
+at 2 ms bins no adjacent-gap signature supports all five sources, while one
+half-second pair supports 998 Vript, 83 HD-VG, 13,499 MS, 13,501 VC2 and 98
+CogVideo. Continuous timing differences remain. This is partial input to RS03,
+not validation of the new six-frame or joint-triplet protocol.
+
+Implemented canonical NumPy/CUDA composability, the six-frame sampler and a
+217,057-parameter response/semantic head. Eleven numerical tests and CUDA
+reference replay pass; response discrepancies are below 1e-7. The head checks
+verify frozen inputs, finite gradients, unordered triplet pooling, diagnostic
+absolute JS and explicit semantic fallback. No real-data classifier was fitted.
+GPU/software evidence and current source hashes are verified in
+`shared_plan_20260917/composability_invariants.json`.
+
+Two interpretation safeguards are now explicit. Anchor-only cropping cannot
+remove wrapping through middle nodes, so the interior control conditions all
+paths on a common non-wrapping middle support. Also, a six-identical-frame toy
+sequence gives nonzero JS and perturbation response because soft P need not
+obey P squared = P. Recommend a static/repeated-frame control before attributing
+a future gain to temporal structure; the toy result does not reject the method.
+
+Historical ledger inspection found eight unique reservations totaling 43.24
+CNY/23 GPU hours, all still marked reserved. These are not actual payments or
+remaining budget. Current provider rate and cumulative spending/hours remain
+unverified against the shared 6000 CNY/180-hour ceiling. Larger stages and the
+100-video end-to-end profile remain subject to the shared task gates.
+
+The patch/global adapter was integrated with the existing pinned DINOv2
+checkpoint on six static synthetic images. Shapes and the new head pass,
+with zero backbone gradients/optimizer steps; runtime 3.96 s and peak tensor
+allocation 0.366 GiB. Frozen DINO's static synthetic response is also nonzero
+(mean absolute response 0.09492, mean JS 0.03408), reinforcing the need for a
+repeated-frame control. This is not a real-video detection result or the
+100-video profile. See shared-plan `backbone_integration.json`.

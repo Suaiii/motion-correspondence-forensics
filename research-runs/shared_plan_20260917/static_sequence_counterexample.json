@@ -1,0 +1,22 @@
+{
+  "plan_version": "cvpr27-20260917-v1",
+  "status": "counterexample_confirmed",
+  "input": "six identical frames; 4x4 grid of unit circle feature vectors; not a real video",
+  "temperature": 0.1,
+  "scales": [
+    1
+  ],
+  "max_soft_correspondence_idempotence_defect": 0.14420290171191574,
+  "direct_js_mean": 0.026690596230043273,
+  "response_mean": 0.382574569094379,
+  "response_absolute_max": 0.4210410364304227,
+  "source_sha256": "ce848d386fe803e3e73c20ce14292b3067d1a43b475799832cb19da4ecfe70e0",
+  "core_sha256": "3434dbd24440fbb4d5723880e5b216e5b1b7aec50804b87df18f6e4561b252c5",
+  "interpretation": "Nonzero composition error and calibrated spatial response can occur without any temporal change.",
+  "recommendation": "Add a repeated-frame/static-patch control before attributing detection gains to a temporal mechanism.",
+  "limitations": [
+    "Toy feature algebra, not an efficacy experiment or a rejection of the candidate.",
+    "Do not claim that nonzero JS alone establishes temporal inconsistency or forgery."
+  ],
+  "formal_gate_passed": false
+}

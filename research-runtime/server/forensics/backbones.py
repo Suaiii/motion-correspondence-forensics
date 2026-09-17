@@ -38,3 +38,25 @@ def dino_features(model,bgr,device,batch_size=4):
     tokens=[]
     for batch in x.split(batch_size):tokens.append(model(batch.to(device)).float().cpu().numpy())
     return np.concatenate(tokens)
+
+
+@torch.inference_mode()
+def dino_patch_features(model,bgr,device,batch_size=6,autocast_bfloat16=True):
+    """Return planned 16x16 patch and global features from existing local weights."""
+    if bgr.ndim!=4 or bgr.shape[1:]!=(224,224,3) or bgr.dtype!=np.uint8 or len(bgr)<1:
+        raise ValueError('Expected nonempty uint8 BGR frames [T,224,224,3]')
+    if batch_size<1 or model.training:raise ValueError('Positive batch size and evaluation-mode backbone required')
+    dev=torch.device(device);patches=[];globals_=[]
+    mean=torch.tensor([.485,.456,.406],device=dev)[None,:,None,None]
+    std=torch.tensor([.229,.224,.225],device=dev)[None,:,None,None]
+    for start in range(0,len(bgr),batch_size):
+        x=torch.from_numpy(bgr[start:start+batch_size,...,::-1].copy()).permute(0,3,1,2).to(dev).float()/255
+        with torch.autocast(device_type=dev.type,dtype=torch.bfloat16,enabled=autocast_bfloat16 and dev.type=='cuda'):
+            output=model.forward_features((x-mean)/std)
+        patch=output['x_norm_patchtokens'].float();global_=output['x_norm_clstoken'].float()
+        if patch.ndim!=3 or patch.shape[1]!=256 or global_.shape!=(len(patch),patch.shape[-1]):
+            raise ValueError('Unexpected patch/global feature contract')
+        if not torch.isfinite(patch).all() or not torch.isfinite(global_).all():raise ValueError('Nonfinite DINO features')
+        patches.append(patch.cpu().numpy());globals_.append(global_.cpu().numpy())
+    return {'patch_tokens':np.concatenate(patches),'global_tokens':np.concatenate(globals_),'grid':[16,16],
+            'precision':'bfloat16_autocast_saved_float32' if autocast_bfloat16 and dev.type=='cuda' else 'float32'}

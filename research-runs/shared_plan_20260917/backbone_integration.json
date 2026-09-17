@@ -1,0 +1,46 @@
+{
+  "status": "pass",
+  "plan_version": "cvpr27-20260917-v1",
+  "seconds": 3.958412416279316,
+  "model_revision": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "precision": "bfloat16_autocast_saved_float32",
+  "input": "six identical synthetic 224x224 BGR frames, no real research video",
+  "patch_shape": [
+    6,
+    256,
+    768
+  ],
+  "global_shape": [
+    6,
+    768
+  ],
+  "response_shape": [
+    1,
+    6,
+    3,
+    16,
+    16
+  ],
+  "finite_logit": true,
+  "trainable_backbone_parameters": 0,
+  "trainable_head_parameters": 217057,
+  "peak_gpu_allocated_gib": 0.3656167984008789,
+  "static_synthetic_direct_js_mean": 0.0340762734413147,
+  "static_synthetic_response_absolute_mean": 0.09492215514183044,
+  "source_sha256": {
+    "forensics/backbones.py": "228e49722471807113ae6654e3880931c7805cf50f152f229e773079cd0f2202",
+    "forensics/common.py": "b4f31c1e4f4f6c96b16092657f7a187def0d6851a9754aa1906eb956e27ee82f",
+    "forensics/local_composability.py": "43b2cbbd54d419551d7b7a896719e99bbb8b3e63b07d43a4c63b33572f9562f3",
+    "forensics/composability.py": "3434dbd24440fbb4d5723880e5b216e5b1b7aec50804b87df18f6e4561b252c5",
+    "forensics/composability_torch.py": "9f76cbb03bcd1c5b21a2d2a7a62cc4fd6fca638db2391dda8a03298cd7d68376",
+    "scripts/check_backbone_composability.py": "177e6c2b19f734ab34c412054f69a81b91e654cb4b05ae903d2e77f33688bb1f"
+  },
+  "optimizer_steps": 0,
+  "real_data_efficacy_measured": false,
+  "formal_gate_passed": false,
+  "limits": [
+    "Untrained head: a finite score is only an interface check.",
+    "No video decoder or actual-PTS census in this check; not the required 100-video profile."
+  ]
+}
