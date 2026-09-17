@@ -1,0 +1,101 @@
+{
+  "dispatch_id": "cc-round-2-offline-20260917",
+  "task_id": "DX02",
+  "plan_version": "cvpr27-20260917-v1.1",
+  "document_date": "2026-09-18",
+  "status": "draft_not_adopted",
+  "execution_authorized": false,
+  "approved_by": null,
+  "approval_receipt": null,
+  "executed_this_round": false,
+  "purpose": "Complete original presentation timestamp metadata for sampling feasibility, not feature extraction or scientific gate acceptance",
+  "activation_requires": [
+    "Recorded authorization for this exact batch and adopted contract version",
+    "Reconciled remaining cumulative budget and actual current rate, or explicit batch allowance resolving RS00 for this scope",
+    "Frozen source manifest, origin identities, source hashes, sampling order and acquisition code hash",
+    "No conflicting running job; use only the existing authorized instance",
+    "Review parent task evidence and required pass gates; no automatic formal-training release"
+  ],
+  "budget": {
+    "cumulative_cap_cny": 6000,
+    "initial_cumulative_gpu_hours_cap": 180,
+    "actual_paid_cny": null,
+    "actual_billed_gpu_hours": null,
+    "current_hourly_rate_cny": null,
+    "remaining_cny": null,
+    "proposed_batch_max_cny": 5,
+    "approved_batch_max_cny": null,
+    "cpu_only_instance_uptime_may_be_billable": true,
+    "reserved_amounts_are_not_paid_or_remaining_budget": true
+  },
+  "inputs": {
+    "sources": ["vript", "hd_vg_130m"],
+    "storage": "existing server-side original media only",
+    "source_manifest_sha256": null,
+    "selection": "One representative per known origin group, sorted by frozen SHA256 identifier; first five per source, selected before observing timing or detection scores",
+    "unknown_ancestry": "Keep explicit flag; do not call candidate origins independent or accepted",
+    "initial_max_files": 10,
+    "initial_per_source": 5,
+    "optional_reviewed_expansion_total_max": 100,
+    "expansion_requires_separate_review": true,
+    "expansion_reuses_initial_files": true,
+    "additional_downloads_allowed": false,
+    "final_confirmation_set_allowed": false
+  },
+  "operations": {
+    "server_start_now": false,
+    "ssh_now": false,
+    "new_instances_or_purchases_allowed": false,
+    "future_probe_workers": 2,
+    "future_ffprobe_threads_each": 1,
+    "future_cuda_visible_devices": "",
+    "gpu_kernels_allowed": false,
+    "feature_extraction_allowed": false,
+    "transcoding_or_frame_image_outputs_allowed": false,
+    "full_original_stream_to_eof": true,
+    "truncating_read_intervals_allowed": false,
+    "note": "Future ffprobe may decode internally; CPU-only does not mean zero provider charges. No probe command was run in this work package."
+  },
+  "metadata": {
+    "required": [
+      "source_id and original relative path",
+      "origin_group and ancestry_status",
+      "source_sha256 with pre/post size and mtime consistency",
+      "ffprobe version and argv hash",
+      "stream time_base and presentation start/end",
+      "all frame integer pts and pts_time when available",
+      "best_effort_timestamp separately with timestamp_kind",
+      "all frame duration fields when available",
+      "frame count, missing/duplicate/nonmonotone flags",
+      "exit_code, EOF completeness, stdout/stderr hashes",
+      "source processing provenance and acquisition timestamps"
+    ],
+    "synthesize_pts_from_fps_allowed": false,
+    "sorting_or_dropping_pts_silently_allowed": false,
+    "probe_completeness_separate_from_sampling_eligibility": true,
+    "normalized_pts_lossless_rational_ticks": true,
+    "serialization": "JSON or compressed JSON; never pickle"
+  },
+  "outputs": {
+    "server_metadata_max_bytes_proposed": 268435456,
+    "local_compact_metadata_max_bytes_proposed": 8388608,
+    "local_raw_video_or_frame_pixels_allowed": false,
+    "local_lossless_pts_pack_optional": true,
+    "hash_raw_and_normalized_outputs": true,
+    "resume_by_source_hash_and_completed_receipt": true,
+    "probe_failure_not_video_quality_failure": true
+  },
+  "stopping": {
+    "arbitrary_30_minute_limit": false,
+    "normal": "Finish the approved finite batch, hash and synchronize compact receipts, verify no active jobs, then apply the authorized shutdown arrangement and verify shutdown",
+    "budget": "Before each next file reserve a conservative completion allowance; stop admission if insufficient. Unexpected resource exhaustion records a resumable partial acquisition, not invalid video",
+    "storage_or_stall": "Stop admission and preserve partial outputs; classify as acquisition/resource failure, never silently exclude or claim complete EOF"
+  },
+  "acceptance_scope": {
+    "sampling_proposal_comparison_only": true,
+    "real_fake_joint_support_established": false,
+    "formal_gate_released": false,
+    "training_authorized": false,
+    "required_report": "Per-source completeness and coverage, continuous joint lags, errors/phase/span, unresolved provenance, actual elapsed billing exposure and costs if verified"
+  }
+}

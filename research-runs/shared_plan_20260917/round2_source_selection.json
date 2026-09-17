@@ -1,0 +1,9 @@
+{
+  "ajabri/videowalk": ["code/model.py", "code/train.py", "code/data/kinetics.py", "code/data/video.py", "code/utils/arguments.py"],
+  "xiaolonw/TimeCycle": ["models/videos/model_simple.py", "models/dataset/vlog_train.py", "train_video_cycle_simple.py", "geotnf/cnn_geometric_model.py", "geotnf/loss.py", "DATASET.md"],
+  "Litsay/RIFT": ["configs/default.yaml", "data/dataset.py", "data/transforms.py", "models/conditional/conditional_dependency.py", "models/decoupling/orthogonal_decomp.py", "training/trainer.py", "scripts/train.py", "checkpoints/README.md"],
+  "DMOSCAR-98/G2VD": ["modules/counterfactual_intervention_pipeline.py", "loss_functions/independence_loss.py", "configs/templates/train_g2vd_clip.yaml", "data/dataloader.py", "DATA.md"],
+  "grip-unina/WaveRep-SyntheticVideoDetection": ["augmentation/pytorch_wt.py", "demo/utils.py", "demo/main_avideo.py", "dataset/README.md"],
+  "OmerBenHayun/STALL": ["src/stall.py", "src/whitening_transform.py", "src/create_params.py", "src/dataset_utils.py", "src/eval.py"],
+  "KurbanIntelligenceLab/vidaudit": ["vidaudit/audit/protocol.py", "vidaudit/data/canonical.py", "vidaudit/data/filters.py", "vidaudit/data/cells.py", "vidaudit/train/data.py"]
+}

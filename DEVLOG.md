@@ -288,3 +288,31 @@ the provider shutdown command was executed under the earlier user instruction.
 SSH disconnected and the TCP port was unreachable at 2026-09-17T12:07:50Z.
 No arbitrary time cap or active-job interruption was involved. Billing status
 is unverified; the overall innovation objective and formal gates are incomplete.
+
+## 2026-09-18 cc-round-2: offline sampling proposals and pinned prior-art review
+
+Continued cc-round-2-offline-20260917 under plan v1.1 after reading the research
+role and shared dispatch. Delivered A/B/C sampling comparison, graph-derived
+static readout weights, a disabled future PTS acquisition contract, and expanded
+CRW/TimeCycle/RIFT plus five-neighbor formula/code/protocol review. No runtime
+algorithm, WORK_PLAN, project task table or reminder state was edited.
+
+Only two long triples still leave a source-dependent phase offset. Proposed one
+centered .5+.5-second triple for review, retaining the 1.5-second eligibility
+window initially. The proposed static weights [2,3,4,4,3,2]/18 address total role
+exposure only; keep uniform-static and independent training if adopted. Neither
+proposal replaces v1.1 or establishes real-source timing support.
+
+Pinned seven public author repositories and verified 38 source/config files
+(277,174 bytes). Downloaded text was never imported or executed. Found direct
+CRW inheritance, RIFT paper/entrypoint split discrepancy and whole-batch NLL
+scaling despite real-only intent, plus protocol distinctions in other neighbors.
+These are static review findings, not reproduced detector performance. No source
+leaderboard is presented as our result and no novelty clearance is claimed.
+
+Offline arithmetic, permission fields and evidence hashes passed validation.
+See research-runs/shared_plan_20260917/collaboration_round_2.md and
+round2_validation.json for scope and artifact hashes. No SSH, server probe,
+ffprobe, media read, feature extraction, training or new GPU job occurred.
+The previous shutdown observation is historical; billing remains unverified.
+DX02/RS01 are submitted for scoped review, without releasing formal gates.

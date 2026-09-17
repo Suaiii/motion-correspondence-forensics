@@ -1,0 +1,161 @@
+{
+  "dispatch_id": "cc-round-2-offline-20260917",
+  "checked_utc": "2026-09-17T16:12:44.282800+00:00",
+  "scope": "offline_arithmetic_contract_and_digest_validation_not_scientific_review",
+  "passed": true,
+  "design_counts": {
+    "A": {
+      "frame_roles": [
+        2,
+        3,
+        4,
+        4,
+        3,
+        2
+      ],
+      "role_specific": [
+        [
+          2,
+          2,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          2,
+          2,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          2,
+          2
+        ]
+      ],
+      "static_weights": [
+        "1/9",
+        "1/6",
+        "2/9",
+        "2/9",
+        "1/6",
+        "1/9"
+      ],
+      "temporal_affinities": 11,
+      "static_affinities": 6,
+      "temporal_compositions": 78,
+      "static_compositions": 78
+    },
+    "B": {
+      "frame_roles": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "role_specific": [
+        [
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1
+        ]
+      ],
+      "static_weights": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "temporal_affinities": 6,
+      "static_affinities": 6,
+      "temporal_compositions": 26,
+      "static_compositions": 78
+    },
+    "C": {
+      "frame_roles": [
+        1,
+        1,
+        1
+      ],
+      "role_specific": [
+        [
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "static_weights": [
+        "1/3",
+        "1/3",
+        "1/3"
+      ],
+      "temporal_affinities": 3,
+      "static_affinities": 3,
+      "temporal_compositions": 13,
+      "static_compositions": 39
+    }
+  },
+  "centered_targets_equal_A_135_algebraically": true,
+  "author_files_verified": 38,
+  "author_source_bytes": 277174,
+  "author_code_executed": false,
+  "real_video_sampled": false,
+  "server_accessed": false,
+  "models_or_datasets_downloaded": false,
+  "new_gpu_job": false,
+  "scientific_gate_passed": false,
+  "pts_contract_execution_authorized": false,
+  "artifacts": {
+    "research-plan/SAMPLING_REVISION_PROPOSAL_20260917.md": "f3fc1bdee80de19ce4dc1e47568580d34fab9eae0fb792fc3fe6f8bc2cb708bc",
+    "research-plan/STATIC_CONTROL_FAIRNESS_20260917.md": "85d50da02bdcdba86d48c74aef5dfc8db80bb4302a5ec0798563b9bf868f1abf",
+    "research-plan/LOCAL_COMPOSABILITY_PRIOR_ART.md": "2b4b20fd2de47f67c090f5aa1b1eed3580a2e7877851a0050ec56dd493b51930",
+    "research-runs/shared_plan_20260917/pts_acquisition_contract_draft.json": "3cfc4ba577d894f325a506f77cf8dbadc9fdff57d6fbc6da3bcd45f554405f8c",
+    "research-runs/shared_plan_20260917/round2_author_sources.json": "4567de2e92dfb7eb65269af53845cdb1c98edaf6d480120e6b7726684f1e93c3",
+    "research-runs/shared_plan_20260917/round2_source_selection.json": "b5b4c27d52716c38550502da99aedc47b9f180d543792b9e5e11ea8f8a2d55d9",
+    "research-runtime/verify_round2_proposals.py": "1de7b0b9d737b8681ae42b0e55134292ce8ba9b03d0af149ff2349b69ee39163",
+    "research-runtime/review_author_sources.py": "ca30aae809ca2c8cabd4a821d01a790e66f8d39594944cf1ee71929b1ce9cbfa"
+  },
+  "shared_state_read_only_hashes": {
+    "research-plan/WORK_PLAN.md": "8badafa25b5fa509557907f810a9d7c1c9d7054f186ad9bacb154042b82ae732",
+    "research-plan/task-hermes/project.json": "fb0c566d73f68ca74d77ec5d0a0561072914a3fbfa02815d1fbece2ef36c3314"
+  }
+}
