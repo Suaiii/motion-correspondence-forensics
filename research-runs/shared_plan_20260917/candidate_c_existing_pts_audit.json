@@ -1,0 +1,695 @@
+{
+  "dispatch_id": "cc-round-4-c-metadata-20260918",
+  "task_id": "DX04",
+  "plan_version": "cvpr27-20260918-v1.2",
+  "observed_utc": "2026-09-17T17:03:26.715296+00:00",
+  "status": "descriptive_audit_completed",
+  "gate_scope": "existing_metadata_diagnostic_only",
+  "scientific_gate_result": "not_evaluated",
+  "counts": {
+    "ms": {
+      "total": 50,
+      "eligible": 50,
+      "excluded": 0,
+      "exclusion_rate": 0.0
+    },
+    "vc2": {
+      "total": 50,
+      "eligible": 50,
+      "excluded": 0,
+      "exclusion_rate": 0.0
+    }
+  },
+  "continuous_by_source": {
+    "ms": {
+      "joint_lags": {
+        "n": 50,
+        "minimum": [
+          0.5,
+          0.5
+        ],
+        "maximum": [
+          0.5,
+          0.5
+        ],
+        "mean": [
+          0.5,
+          0.5
+        ],
+        "std": [
+          0.0,
+          0.0
+        ],
+        "std_ddof": 0,
+        "target": [
+          0.5,
+          0.5
+        ],
+        "maximum_absolute_deviation_from_target": [
+          0.0,
+          0.0
+        ]
+      },
+      "span": {
+        "n": 50,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "std_ddof": 0,
+        "target": 1.0,
+        "maximum_absolute_deviation_from_target": 0.0
+      },
+      "signed_sampling_errors": {
+        "n": 50,
+        "minimum": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "mean": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "std": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "std_ddof": 0,
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_absolute_deviation_from_target": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "signed_center_error": {
+        "n": 50,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "std_ddof": 0,
+        "target": 0.0,
+        "maximum_absolute_deviation_from_target": 0.0
+      },
+      "native_duration_estimate": {
+        "n": 50,
+        "minimum": 2.0,
+        "maximum": 2.0,
+        "mean": 2.0,
+        "std": 0.0,
+        "std_ddof": 0,
+        "target": null,
+        "maximum_absolute_deviation_from_target": null
+      }
+    },
+    "vc2": {
+      "joint_lags": {
+        "n": 50,
+        "minimum": [
+          0.5,
+          0.5
+        ],
+        "maximum": [
+          0.5,
+          0.5
+        ],
+        "mean": [
+          0.5,
+          0.5
+        ],
+        "std": [
+          0.0,
+          0.0
+        ],
+        "std_ddof": 0,
+        "target": [
+          0.5,
+          0.5
+        ],
+        "maximum_absolute_deviation_from_target": [
+          0.0,
+          0.0
+        ]
+      },
+      "span": {
+        "n": 50,
+        "minimum": 1.0,
+        "maximum": 1.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "std_ddof": 0,
+        "target": 1.0,
+        "maximum_absolute_deviation_from_target": 0.0
+      },
+      "signed_sampling_errors": {
+        "n": 50,
+        "minimum": [
+          -5.551115123125783e-17,
+          0.0,
+          0.0
+        ],
+        "maximum": [
+          -5.551115123125783e-17,
+          0.0,
+          0.0
+        ],
+        "mean": [
+          -5.551115123125783e-17,
+          0.0,
+          0.0
+        ],
+        "std": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "std_ddof": 0,
+        "target": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "maximum_absolute_deviation_from_target": [
+          5.551115123125783e-17,
+          0.0,
+          0.0
+        ]
+      },
+      "signed_center_error": {
+        "n": 50,
+        "minimum": 0.0,
+        "maximum": 0.0,
+        "mean": 0.0,
+        "std": 0.0,
+        "std_ddof": 0,
+        "target": 0.0,
+        "maximum_absolute_deviation_from_target": 0.0
+      },
+      "native_duration_estimate": {
+        "n": 50,
+        "minimum": 1.6,
+        "maximum": 1.6,
+        "mean": 1.5999999999999996,
+        "std": 4.440892098500626e-16,
+        "std_ddof": 0,
+        "target": null,
+        "maximum_absolute_deviation_from_target": null
+      }
+    }
+  },
+  "joint_support": {
+    "joint_lags": [
+      {
+        "quantum_seconds": 0.001,
+        "rounding": "floor(x/q+0.5), including signed center errors; ties toward positive infinity",
+        "vector": [
+          "lag_ab",
+          "lag_bc"
+        ],
+        "histograms": {
+          "ms": [
+            {
+              "bin_indices": [
+                500,
+                500
+              ],
+              "count": 50
+            }
+          ],
+          "vc2": [
+            {
+              "bin_indices": [
+                500,
+                500
+              ],
+              "count": 50
+            }
+          ]
+        },
+        "common_bins": [
+          [
+            500,
+            500
+          ]
+        ],
+        "common_bin_count": 1,
+        "common_support_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "means_exact_continuous_equality": false
+      },
+      {
+        "quantum_seconds": 0.002,
+        "rounding": "floor(x/q+0.5), including signed center errors; ties toward positive infinity",
+        "vector": [
+          "lag_ab",
+          "lag_bc"
+        ],
+        "histograms": {
+          "ms": [
+            {
+              "bin_indices": [
+                250,
+                250
+              ],
+              "count": 50
+            }
+          ],
+          "vc2": [
+            {
+              "bin_indices": [
+                250,
+                250
+              ],
+              "count": 50
+            }
+          ]
+        },
+        "common_bins": [
+          [
+            250,
+            250
+          ]
+        ],
+        "common_bin_count": 1,
+        "common_support_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "means_exact_continuous_equality": false
+      },
+      {
+        "quantum_seconds": 0.005,
+        "rounding": "floor(x/q+0.5), including signed center errors; ties toward positive infinity",
+        "vector": [
+          "lag_ab",
+          "lag_bc"
+        ],
+        "histograms": {
+          "ms": [
+            {
+              "bin_indices": [
+                100,
+                100
+              ],
+              "count": 50
+            }
+          ],
+          "vc2": [
+            {
+              "bin_indices": [
+                100,
+                100
+              ],
+              "count": 50
+            }
+          ]
+        },
+        "common_bins": [
+          [
+            100,
+            100
+          ]
+        ],
+        "common_bin_count": 1,
+        "common_support_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "means_exact_continuous_equality": false
+      }
+    ],
+    "joint_lags_and_center_error": [
+      {
+        "quantum_seconds": 0.001,
+        "rounding": "floor(x/q+0.5), including signed center errors; ties toward positive infinity",
+        "vector": [
+          "lag_ab",
+          "lag_bc",
+          "signed_center_error"
+        ],
+        "histograms": {
+          "ms": [
+            {
+              "bin_indices": [
+                500,
+                500,
+                0
+              ],
+              "count": 50
+            }
+          ],
+          "vc2": [
+            {
+              "bin_indices": [
+                500,
+                500,
+                0
+              ],
+              "count": 50
+            }
+          ]
+        },
+        "common_bins": [
+          [
+            500,
+            500,
+            0
+          ]
+        ],
+        "common_bin_count": 1,
+        "common_support_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "means_exact_continuous_equality": false
+      },
+      {
+        "quantum_seconds": 0.002,
+        "rounding": "floor(x/q+0.5), including signed center errors; ties toward positive infinity",
+        "vector": [
+          "lag_ab",
+          "lag_bc",
+          "signed_center_error"
+        ],
+        "histograms": {
+          "ms": [
+            {
+              "bin_indices": [
+                250,
+                250,
+                0
+              ],
+              "count": 50
+            }
+          ],
+          "vc2": [
+            {
+              "bin_indices": [
+                250,
+                250,
+                0
+              ],
+              "count": 50
+            }
+          ]
+        },
+        "common_bins": [
+          [
+            250,
+            250,
+            0
+          ]
+        ],
+        "common_bin_count": 1,
+        "common_support_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "means_exact_continuous_equality": false
+      },
+      {
+        "quantum_seconds": 0.005,
+        "rounding": "floor(x/q+0.5), including signed center errors; ties toward positive infinity",
+        "vector": [
+          "lag_ab",
+          "lag_bc",
+          "signed_center_error"
+        ],
+        "histograms": {
+          "ms": [
+            {
+              "bin_indices": [
+                100,
+                100,
+                0
+              ],
+              "count": 50
+            }
+          ],
+          "vc2": [
+            {
+              "bin_indices": [
+                100,
+                100,
+                0
+              ],
+              "count": 50
+            }
+          ]
+        },
+        "common_bins": [
+          [
+            100,
+            100,
+            0
+          ]
+        ],
+        "common_bin_count": 1,
+        "common_support_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "means_exact_continuous_equality": false
+      }
+    ]
+  },
+  "C_sampler_calls": 100,
+  "A_comparisons": {
+    "C_eligible": 100,
+    "A_eligible": 100,
+    "indices_match": 100,
+    "target_max_abs_difference": 0.0
+  },
+  "timestamp_provenance": {
+    "archived_field": "before.pts",
+    "writer_source": "ffprobe best_effort_timestamp_time",
+    "completeness_basis": "archived timestamp count equals ordered decoded-frame hash count",
+    "native_integer_pts_verified": false,
+    "raw_media_or_pixels_reverified": false,
+    "after_pts_used": false
+  },
+  "missing_complete_original_pts": [
+    "vript",
+    "hd_vg_130m",
+    "cogvideo"
+  ],
+  "native_duration_target": null,
+  "native_duration_target_note": "No equality target; 1.5 s is eligibility minimum, not target duration",
+  "configuration": {
+    "candidate_id": "candidate_c_centered3_v1",
+    "plan_version": "cvpr27-20260918-v1.2",
+    "scope": "offline_software_only",
+    "frame_count": 3,
+    "eligibility_window_seconds": 1.5,
+    "duration_estimator": "last_minus_first_pts_plus_median_native_gap",
+    "target_offsets_from_center_seconds": [
+      -0.5,
+      0.0,
+      0.5
+    ],
+    "target_span_seconds": 1.0,
+    "maximum_selection_error_seconds": 0.125,
+    "numerical_tolerance_seconds": 1e-06,
+    "tie_tolerance_seconds": 1e-09,
+    "tie_break": "earlier_original_frame",
+    "duplicate_or_interpolated_frames_allowed": false,
+    "grid": [
+      16,
+      16
+    ],
+    "temperature": 0.1,
+    "scales": [
+      1,
+      2,
+      4
+    ],
+    "temporal_triplets": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "static_triplets": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "anchor_static_triplets": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "aggregation": "uniform_group_mean",
+    "semantic_frames_all_branches": [
+      0,
+      1,
+      2
+    ],
+    "static_scope": "all_observed_frames_static_baseline",
+    "anchor_scope": "anchor_only_local_diagnostic",
+    "formal_training_authorized": false,
+    "real_source_joint_support_established": false
+  },
+  "input_sha256": {
+    "research-plan\\reviews\\dx04_input_freeze_20260918.json": "7a841af5377f1f457396ae7bdc652809eddffff9c2ac431fca54fc549c9bde93",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/protocol.json": "eec11e4127cb026391cbc583ab37915499b4ba53d437e71ecfe35dcf09ef3432",
+    "research-runs/overnight_20260911/checkpoint_v1/code/retime_qc.py": "513212507a60ebef5b77e7f1babc0585817f9e2b295d3ce27f4efeca6da4c782",
+    "research-runtime/server/forensics/mechanism_sampling.py": "16cecce9006711106d374301e049203c3ce1878894285c144a992fc406819860",
+    "research-runtime/server/configs/candidate_c_centered3_v1.json": "8f598b5cf1090db67bb1236ac2ba81e129347983970d185341033f3dc2df5683",
+    "research-plan/CANDIDATE_C_METADATA_AUDIT_20260918.md": "b1ce5f723b02cd1e4a0d9b8ef64e2773d9aeeedebb2bb562fdfd854e0f56116b",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/23bcd0ec6fefbd3f72f0e57de555d6221a6647f709e4727f0eaaacc032b09b9b.json": "2e669da8b24c9925dd9e2cda8f78b92b9ddf0c3b2b321ba9178ae0dfc9c2beaf",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/94a1dba2252e40bf130b8fc013b51ae935938025593528419c408e37367a4ab5.json": "45ffdf4198e0ae9766a734c4803915ddeb53c28a14a9d95a2cde7dbeacd6479e",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/b7404ac19009c4604ffeb86dd7cc96c677f0b0c5997c54120c3f41328edac81d.json": "c68124027510b2efa532437ba783ac320aeeb72bdb61b700dfa6ac22637f98f9",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/c58de68cef60702384d680fde6fdbaa4ce96d496ea57309004a22407c28cb55b.json": "9f9689be8c14d2464e290f05b2a10cb3f0da3326cb44b83468b7c9c2087b3375",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/fcd3b6d85423a4fdd4109c77886280da098344fbf9f8ce1110152c5522d898f2.json": "f450ce1fea6aed924bae27f779c1024838f2c42d54de4ee055c896043e8f306d",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/45f657ad549ebbfd58ae1b7902517d772cb3fb4d90fe2c9d4e7b9fc3ccfc968f.json": "975d39ddc2f278f261147e726be4ad380667bd677974fc463fb6163de4d645a8",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/2dd5fe080f16aacbd2aa28e2054ea4673271fab860b06247c57842cd9c587e9b.json": "6236633e78258d07a3d3d8d0f5711633ea366ce517e1c234d3db6f0f771e451f",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/529ab7c419b603ee9802b5b839168cc2762d5ac2571b2d590e399374ac01f8e5.json": "32b643fb5b092da2fb4f0a548cd93dd4fc6c0bca7e0809cceb38640875930964",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/26ea75c497621b86dab37a486ad683124a55e3a7be3afb2ec4f9fd807a466028.json": "63eea69325f4716f531bc85d6e7018261c24cce2f3978f1d3a4054a10ad9f54a",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/3970bdc16d2d0a312a154b06ef479569d516b45733ccc1f82fd9f1bcf938aa10.json": "c0901979b73b4acfe3771a4015cf4248bfc0d1686912a86d69c83d0a0484d9f6",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/1f06c805b13db956411ff4f14efa0ee2e1fd2bcb85e8d6265982709639160ee5.json": "cc7e152c40a13c318b7643f30dd829b34878b1917224a6c39932ec2b7d2f5a23",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/04ce0d94de04f70c439e56ca72e8bb8ddcf6abed4e96097fa9466667b32e7700.json": "d2fa0bd312493972ccab8101735775adf1f63786e8dfbdcb0296d62b96ec9c7f",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/d7a6e623f80d740596727882cf38c0d2ef56b6f8db3f50a2c92d48139dca8177.json": "eb067822b00b8328748e03b5ae872401d838a05b5defa8db36bc3e46d1bb24c7",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/9ce9fc789a2b74bf418aeb9855fab32cc0922c6c3271504c105a2e5070e84bb8.json": "29532cf21912b28ac7a32e49f39f9f2d0ca056fe9920603281d7ba51b3869a3c",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/ee622e5a39cc93cd3bf5977ad838f8f2fa292a8d90f74649bf3f858b607707a2.json": "c4374345aec8cb146bd94ed5e881a1b562cd78996901acb9f9acd0f0d8cee65c",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/a540e56dffa82e2b33101eb1a8cf986718c9aba5a650f77119b4fd0277986843.json": "3f2442e5829984bbb474e5e5ee339386ff80224d5fbe4b5bf11dd8e05307d77e",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/7ea5d078b911892a7068c502dc7ba1684ebbd06618822b987500dc779c5f4a85.json": "51951a3a5312f625d43862ec8d7ca3f0314c08949996ca58b0043a9b5308c1f2",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/ee7ecaabedfbf0f3bad60f61006634c59efcab41d8981cb75fe52e85572ed066.json": "2fe99ef792d6c7d07f1d8669dcaafd572af8211d30ad8cd3dcb82657ebe55650",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/e15865685264ffb57f05318dfab2833bdc1653cdf5ef42b6023a921724bd19c7.json": "5450d4865435265cba24c86c5de61fb3e6970106fb4c1351bebe0c7f9fe72772",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/5736b2a21e929e7b0d1e8907d565b8d424a7bec13a303a9c610db046201a93e1.json": "9bbaa791a13da5f049f3a2e1e6c381423e35fdfd71b170cd687c57b1c57ece6c",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/4e1e4b85e613cace72791bc7efa09fcd206da3fbc720e458b58c1efa1d0d2167.json": "161130fc138b71b1b29e44252c6dee46277b1cc782f391154c7b008f7e5c538a",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/11f3e3c1f3221030a5469ead9484308dcd4f79b18c4d7f7a01c2e9c407d53767.json": "fb6f4adee9f91aed7073ed8eb98ea8a48b8db73d1999677bb8872b52b08bd5de",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/59bd25bc768dceec821c5ef3a97320640b5563a55ddead543f88d9da6cfef948.json": "664cf1bf7b5b2b23a8983d2d5af47602b864cbdef12f4b1924c9242dbe3b602b",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/fb92509248a6073f6b1528170d3c1542aed665dc815dc2dff87a01f2c1662677.json": "883394eb60f037d1bac036518428dca82f215452dc2b459ae93b7e51baeef249",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/2607d30fd37fca32b25292c2962ba7be7e12e7014f6322faccdaefdbab7294ee.json": "86612aa5dfa8fbfb8cf55a04f98ea768ff6410fcd9a2d98948a18aea05404217",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/da7018d3dba94dd879e487944e39e9cc6483b2e524a3b929c6a9b0fd7a907221.json": "8428cc76c8fad83f4d00e93f41b73ea9b08d7fd0c95ecfe7db74e8a09e7e97f7",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/bdca080e73ff6482f88a620fb6e1bfb7df89002f869be28f14f8816be5c080c2.json": "549a4eac3b37212521d2f547d5ab0b45bfd712c5e7d7001f052a8bcac89bb1ea",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/d39776f14aa4d770aa3bfcbf5b4cb78e1c9bd0104daedf391177e74c33d8429d.json": "a7185cfd5ce88e58b4970c230136e5e73e0c01976659c013c8d89c42eb5c385e",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/64b582707d28540c330c75b5edb8b41f29bc36b5a7adfd97f36a6a20d6f26f78.json": "196ab1d746352711bf7a8dc3605f983237eb23f888d96dab1d9ac3f77a2c5d84",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/04deda4f9ad5c07fb39fbe86312aa0552df69b3582d3a39ef272c09a35d59bdc.json": "abbba5d80e2c8d25dcb986959bf04d9eb0e6f07bb75713e57da0304ec3ee6a7e",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/51343d64d7c24ec2a4119aec2a935952091eb10238cf5e054767b552a9ef101b.json": "e729cbeda81e5fd68f374a668f7d61da46ea8ff6894f661b050ac0b4bb207731",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/f97d7e5537364b87c74edbb7e0ba421ea7010900987588b923299b4f3080e3e0.json": "35b306350a1651dd49dce605693639427f077b4990576d7b8d1d163e03ecefc9",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/646439d24ad7f699debd7232d1a79c3078a052100c38c24e3149cc069316f62b.json": "efdd95c83628804552963a3f33bee76c6e507f7138a6c95872cd9b552f4315cb",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/bd4a9caf70b54e80a0901e114fd7b2f9ff864158a7d5e8240756070ae8252c38.json": "0157b9d28468c0471bb55a9c169168ac9da699528861c7bfb9e0a54270e87ee5",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/e7492cbbe91f63562e35bc6c8f5a28ed7acb7b431ae2a127c1bc5c0db389aebf.json": "f30be61af89179d8db597c3d338d2297a3928703a2c6bd07929d162c9b93cea2",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/afe0c6f71bcf43a67e51ec3a4c268e2d5492de5291183058b4703a17f644f9c5.json": "0426e5fcbb445d1458af7be443b329fc15d47a9b69fb68312805de39dc7faf7f",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/757e4430fda2ad6ef5802b7c0d822b5e7d8f37d0e57f4baafdab75194ac17a48.json": "ad2bc8a0915bbec2d7b9240eaddb9e7aa9921bb9390d464609f278946f3b4aaf",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/458deea6e1ca3080d808af20528f0c19f8f35edd78194ecba7bbbf295ddd243a.json": "a0222bbea4d4297898840d9da845f8f8fb18ddd77337c7d4ea3711b85f083760",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/03ed818ff5910581e7624bf80a147b5bd98f4d4d26d292db5e5c0505da61fdc7.json": "df55d263b080d04cd959f8e4020e66e001904020975a175d688771df2a184740",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/24f9c064f23e33e25ba0e74900c4378368448099c2e15fada40095e9d1afa5dd.json": "b7595e765ae84ba7b72a96abf683f5d41c86a23b3ee55b8dd3e9cbf6a03b9497",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/dca7155e9469c5910399030f77f925801ed8218b26c9a01b47a0023141db6316.json": "b7abd89a962d4d74a8de031bb8c23609a35eccd23c0ffe2771a14740f186a6d6",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/96c4ce05fb9504e9e378f54138508a16ed7d99375c982d89c8458c64d70d5681.json": "3fbba2f77973ff7a8ab6ec2f5e663bb0911720e67b373341fd88ae5d84532fb4",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/e69fab51fd8c628136cac23a30005450c6d2220286357689c9b9cf6290463382.json": "6bd1c43448076d50a1a97909228a15f3f309b882c3cb55545c417a4588dc3ea1",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/7cbbb419e36d2c4e7345f016784923a00c877b885882be3488ac778545dc9014.json": "4a28bbd2a468ccb0399313102ac42ffc17f66d8f9d48296011edad73bdc17699",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/c480b8c1c52ccade3fd61ed63ca3e9d6e1c5dce208b146c768374efed65accd7.json": "d2fcec9921669bf20548d0af8a70087b5203292f7b3f65e448d2c385f872a1e1",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/cba5d07bd57489c62ef72f546be514d42c0ea3f6b8fb85cb4fa9ddb2333d2bb9.json": "feebbec2b5d5ced4a17752e865daa3cf2ad922614bb0c3adee43f296062e51e9",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/64b914cec92f7f630f316fe9cf79c94855fc570534cba41b2791a4150e2b118c.json": "c869eb7e51a01dfff0b2dd596678dd828db3c752addb370bdc80887f922cb8a8",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/ce484abec898008b69834809808e8469ad7f1a3c34744d12cf9fb5d1a5b68341.json": "880876cb3cc13682c699460ada7c55425c4e7d2350e1f23cf0bca825fdb2d89d",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/7c0c070e471fa87058d91514313e460c1bc27586f5e9436afac88a53dea4a600.json": "8ea01a436f946215cf5463caeaed16424f379fe404005b85ab84bc8748fd2f8b",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/c69792b7ba8e6672db46c035a4190993c678bdf4d3cda7ab61366163de087fc0.json": "ed3c997a8570f7af364db313720f086038be2706bf09720f73e7d8fd78c46038",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/a9bb34cdb965f91e326c03f041a15b82839b9af9a3b8c90d58f81c8eebd6bd28.json": "8f1686b1fd273ffe4d5776904617d897f5011ef6e43e1583c44001c66a2b687d",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/5dade7d353907160dd407cf4f32d7bcedf9ba18c7748a888ccba9e1f318f6abe.json": "c0c8c8d8bb7058aee4973f4629c6d5c02929e628ef2f342188096d8d809fb853",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/607cb11c70a70bcd608d04e7edfd629712ae79244f274b814247e16be268ac1b.json": "e93ccf0a8696a9f54ec00fbd982768bc3ae7e47286ad6a1e31b863e9da5190a2",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/122a2b929af7468c905ac4cdca8d8adf8a4829c88b9d8fa8e80a3051e79dcd95.json": "1100a36f98e6fd175064365ce7be955277fac7c153d24584805073fff151c453",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/810d92592fc5bf46ebd5c7ff3f5762fedc6361471019188929c6e0041af75bdd.json": "d1f75e02014d3347c55b6b238cbe224db8e800adadd105245c421b26da1f2b41",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/a8907e0f3024259c803fd929c83c39b06c5abfdcb0ac37636c85ef24329e24ea.json": "3ee193152f5ad2eb46216374eb9bf03d37bbf6e88fd207621b3621fd3f1c5b1b",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/a0d7772bc2dcaef471c724c3ec01544f6366f4cbd6f8f0e84ece25b3115fb858.json": "c62228f85701a5592fbd12db93bd1754955b1e46b00a6f976790fce214d7c349",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/d4087d1194e943cf1c4c7d63fb29ddb099444fb3b6671eb022dba061fcbf1857.json": "6ec0085355716dea2da54d25c87e62d0efbb19e29815ef0299af01b85ab44adc",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/17f21530bd9d24dfdc456243aab3e213108f970b2dbb6c2d6bb785a20c9ad0a4.json": "31616ccd687dde1645ed99280429e5327d2adb3d74381536f2ffc27a28559fb3",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/87b3cfbc4f2483888008e1233cbb7012b9116e28859b6c0d01ef3ff189ede58e.json": "107225c9d72bdd488ad7097d1f32fb54c956c0001fdd7fa69e4336782dc72b70",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/527013c405ff5fb9b80fa7952e5472bc06467bc02729bc35e85fabd56088789b.json": "840db999fca5a2df13cd113ea715f1f19e85b322b32b79bd209906611f9415da",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/dc656eae579882eb639a29ea7930aa6d67f16e7f9cb9fadcaac7da711dd3eb26.json": "d86ce3ab2a5e027f0bfece5f9cb65ff3b983e4c1091ed84aa2078e3db3282866",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/4bd06673f201621c653a3fc04c363fb6212fa33def9f80ece70fdfdd416fb579.json": "cb2e1820a29009a44b022016eb791abc97be5ca1a89e63e47228c69ae2d13dc1",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/1f8211c759144b084472860be04c628b8e8e5204e5fd63a6f450bc66434460cd.json": "978090df62fd6452ad74ea74a41fe3338501f50c19f7df486ef2c602ce62c711",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/dc60266add13c262a9967d4666f905f88c236a3b8c4b16d92e6b6c67240f1a87.json": "fa6bcf497df199a3e1299f78b793bcf4b637c95abdec2e631a7e3aec18388b0d",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/f1c1a684f7db34ba374c5333aa0e9810428e417c9a4d6b68370100dd80561470.json": "2d99bacc9fe1419f697f88e743054a527fc948ddadd2b151b36421220bd20623",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/f1f1ce8adadfc134dbd3ebe3c4d9e81a825f1c8f4e55da4284182dbefab939af.json": "7f93e9a3760da5641871616467fa616f5eac85465a62c7d6814b38e74a7c3639",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/e431af63a4ef197c8e593a2f26aa3f17f85ab6fd0f2b842a436f2410e3499807.json": "93488d6bbeb33b089e8865408500103f4bbe6caf216280753c41b7a017281c5e",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/29c9584ca8c490b41eb2beeebd8b7767c188990afe3d8754cb91a5e4ad37f3ac.json": "02fdec43ea5cd0daf2f44fccf8e157f55b23cbb2c67d214b0feb966fb1e17072",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/45afcd98a810a1ec8f71bfbbf732d726302c7a9a2d2041b6869f746772ccefc3.json": "81747cc3c633f3987f79a035041144677eea1b338bcee2c4d069a918d44d13f8",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/b91c27ce254414a71354b08146e0e4a6c759df8605e1db0d6ad6a493e36db3b4.json": "0a802cea9792e5ea1eacb189699d51e36bc38e43e9a64c0f8e060e39b643477c",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/c4cba282205dffd76b3e0b29ecb25aca12543ee213a6886731a3930ed64e3298.json": "dc0179bebabfca4af5a5a3792e3bc54cb44fd0669f29148432cd45b701bdc243",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/6fcf5b82b81cfdc2e9e24ca57090d4e1b4b61eb483e3a5bd03214932ce047363.json": "f6f9d4440ea9f36a24f61564f75c93d53b08831bc067ed46af785e65c0480d27",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/a21a9c3664d34b6161e9d2440bf95a4ee9410400508d8ca0fdd5165497aa61c3.json": "bd15ba43427501936f31709ca3fdf9ee227af2b8903be9719f76c8c082ed2538",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/bdec70937b0139c4adab913b6299df6ea7899e9700b2e2874db503f7f024b25e.json": "2bb1ad8ed918b61634ee60c863238674f9fb0d1deec4850e7a751cfe048549e7",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/29c6d42ac9cd356d94468ccd88bcbdfc73c76f4a2d91648cbfed6f0389a6f6cf.json": "e2d0a003674ed0343a4764053b0c0fc59c6be9a429e05627c18459244493e61f",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/bc9846f32f73631e6e7278baae7b322aecc9ebf4b26ae5d05a4a539887f19004.json": "8d63090dc55a55f220b57b9acf53b997fa4c638fdefea2c29e70f93798619476",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/ed8b706010ee065f1ae9b5763a1daed6faac3fc85d4d701a7cccc4b13d851f2b.json": "8ef2068e4d17affffa9b693a6fca8386fe65d458b1162b0aa827633d4273596f",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/928e90ddc488530f4a91ae127d8ae9aad1fb273273da4c6678a426886273edba.json": "3cb0b74affd2cb7a758302667529dac0618e3d3cccdfda5fe099a2679da520ca",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/cbffa3bb9298b45bf22263828cb5ed2f5b2861fe14997cc66d9df294073e651d.json": "55af7ef16a95e6deec0cabfb76d1333070bbb0fabaf2f54cc719ccd1794d23eb",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/fa5542a67ed234b7d9acf7646c088b11ee45ba6a47b0046cb9365604921c0bef.json": "9c9eeea83f464316367c5a132b64ad79ea0aeefdb6ca70c1b591958302354d19",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/3743fb79491401439e6b9ed5a59afbd0b5f112cfa6046a2ca7ba758d54013094.json": "138c3e86279297e1c487a95ef48a469f7276bd751d41ec9a13b959a54f012d78",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/a5f8308131fd95daf4a3858b093b77c6b207a6a7801dfcf42c796b1ce1cab95d.json": "6d6f2345068e4f9d9434b098d01ae95ef54840e13ac1aec8cc7bcea1365fac32",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/e47d628a101a71391d8010d46dec926e8c608e6241026127732a9ee9032d5dfb.json": "498c024950f42fca2fc2a14d7403a99cf3f5676e27c43f92bb18805f90e5a72b",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/d818bbd44fc37d296133b060d265e5ab9e63b5288bf5c55831f93852fe0178a9.json": "878257d3e1fbf0811272e60aec495dd6aaa06e1f608912be2ffd47b56569c32f",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/cddb8f3612283eeac34bae051b38759e999a692ee83ed126ca164cf3d1351a4a.json": "a3bc2687531bef6552846231cf3102788c0612ba26ff282188f283adf7a35e4e",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/e2498c359de7f3badfaad817096a18e6674d017aaab40083c63dbee48879aa66.json": "d93506bdd5641df7ab750d87a66040d1173ad94b75335250f4cfcdc4caa11aa5",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/7870fed9501f371ce5b3400940e7b1cb8ea92f7ee6c639619b097f89e87c6783.json": "3c1e18ec21fe8603755f1bb63d679248977a17a0bfe85f8a9449fe65f64e1e34",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/d114f8f3639ee33504d48ca5438e5d81423905133be718cdc039a53ff257000b.json": "52b66a45a19b9797484a937bf0461a1e68614b2073a0bb09793ccfbe47c85bf9",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/cc6760bc1a4b593e122a01be0824bea49a10e6e0775bd2427c6ff7ad37c0101f.json": "55e4a5e5a369464c0f722e3891a97eb95086f8bcbc15f5af730a5d8f611852bc",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/c76e3a4bd5d89828f6e92ed9d86acda31c4cd6a45375d879946253e899bd2e8e.json": "5cf131479702ecb94d675900dd00950834e305ae8ad174a10a2a83e1bfedce61",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/35f9b20b67d3097c471549027db3333814f44fd5d836060422968baf16201fe6.json": "2a732c8d947788b5f93231684051f0f149cad429e1a25e49835548f6247748e2",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/f8d1255f606588015e61274e1f18e2a4502e367c4254f68a3fc4d665c23d66b0.json": "e16027d1d83a2db166d74ee90bc98187b708bf6187e8c595c65649c86742c496",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/303982dfaeb08d66420e6797e437cc324eb262c47596b68c94f32c9918d989dd.json": "695e2409fe9f0560709c362cd24186c74e6f9f8b270f76b74b9a02f650cab0cc",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/1a35e594ef169fdf49939c08ddfa15ecf31a1966d740c69e3ed20d062409ad7d.json": "a37e5348d6e81df7c9190880d85f66eaa6dc1ac2f2ef493569cc362f13bb9963",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/542b414803e8f9a89144cf7c35f983eeaf1ec9fc6300541b8b10d46cb63d5d36.json": "43fa3c7f7f8ace848705187aec2235297061596becee6d43428f3eab05f01018",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/21d97132a9b58da00462ba9921ea9976b2192866e454be689a19b07469c6ba5e.json": "65c2c6df75a96d2ad47510ad6bcd09587d52fffb76578cca5fcd79edd4c3d956",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/31951ca19b9383c27afe48ce6e54b299ec2c4ef1e670529da046f47fce517904.json": "f3d827d27160b58ab80dbd06bb99027c2de25090a2dc7073d60c2c1a35194ad5",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/146f7c3f89371534d9550a5414632267238fb219b7610a4ffc5f436e1dfd57f3.json": "bb482bf6485e09c759bef9b9aacb304f7917ffa5231c123dac4ed625e8f532bc",
+    "research-runs/overnight_20260911/checkpoint_v1/retiming_diagnostic/c466d4000d6e99922cb6f98af720b2935f10bbf97160f2e58f97718b6ee62401.json": "34708cbe44f1d84d76a2dcd970a2ee3bd66767702206b3dff9f24e7278955d3f"
+  },
+  "freeze_sha256": "7a841af5377f1f457396ae7bdc652809eddffff9c2ac431fca54fc549c9bde93",
+  "round1_input_hash_index_sha256": "ee18291d3ac722d8e86e059ecaefcab8c6a726ec07deac7b202a9242b60f2329",
+  "records_sha256": "6e738435aa8c2053cf553be3923e657f1c64380b5dbeaa5d724add9f2a6623d8",
+  "script_sha256": "5698da273b7a31c36925f4bfca62c433f4fd81beee4a2b13cffdaa38c33b1c2e",
+  "work_plan_sha256": "dc44831b23d637ae5516c76e1da58d6c22cf7b5667548233483f706520eecbca",
+  "elapsed_local_seconds": 0.12084700000013981,
+  "numpy_version": "2.2.6",
+  "python_version": "3.11.15",
+  "server_accessed": false,
+  "ffprobe_executed": false,
+  "media_read": false,
+  "backbone_executed": false,
+  "gpu_used": false,
+  "classifier_fitted": false,
+  "optimizer_steps": 0,
+  "detection_metrics_computed": false,
+  "real_fake_joint_support_established": false,
+  "formal_gate_passed": false,
+  "limitations": [
+    "Retrospective already exposed two-fake-source metadata only; ancestry unverified",
+    "Equal bins are not continuous equality or scientific exchangeability",
+    "Historical best-effort presentation estimates are not newly verified integer native PTS",
+    "No real-source support, classification evidence or C parameter selection"
+  ]
+}

@@ -379,3 +379,29 @@ Evidence and source hashes: shared_plan_20260917/candidate_c_cpu_validation.json
 scope/limitations: candidate_c_software_report.md and collaboration_round_3.md.
 No server, ffprobe, media, GPU, model download or actual training this package.
 Shared planner files and historical scientific receipts were not changed.
+
+## 2026-09-18 DX04: one-pass C audit on existing original-time metadata
+
+Executed cc-round-4-c-metadata-20260918 against the frozen original 50 MS/50 VC2
+selection. Verified all record/protocol/writer/sampler/config/analysis-plan
+digests before sampling, reconstructed the matching DX01 input-index digest,
+and rechecked input bytes after analysis. C was called exactly 100 times;
+all 100 were eligible and matched A positions 1/3/5 in indices and targets.
+
+Both recorded gaps are .5 s, spans 1 s and center errors zero for both sources.
+All predetermined 1/2/5 ms joint-gap and gap-plus-center views have one common
+bin containing all 50 records from each source. Original durations still differ
+(2.0 vs 1.6 s), as do absolute selection times and indices. No detection metric,
+classifier, parameter change or source-exchangeability conclusion was produced.
+
+The archived writer obtains best_effort_timestamp_time, not independently saved
+native integer PTS. before.pts counts match complete decoded-frame hash counts;
+that historical provenance is explicitly retained, with no fresh media/hash
+verification and no after.pts analysis. Real-source original timestamps and
+verified ancestry remain missing. This is retrospective exposed-development
+metadata evidence, not real/fake support acceptance or a mechanism result.
+
+Local CPU analysis took 0.121 s. No server, probe, media, backbone, GPU, training
+or additional batch. Four requested artifacts are in shared_plan_20260917 with
+candidate_c_existing_pts prefixes and collaboration_round_4.md; the new audit
+script preserves old inputs and refuses to overwrite its outputs.
