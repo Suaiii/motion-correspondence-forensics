@@ -1,0 +1,38 @@
+{
+  "observed_utc": "2026-09-17T09:46:30Z",
+  "research_commit": "991bd083359b9040092e0d3b549893e83175eec8",
+  "github_head_matched_before_shutdown": true,
+  "completed": {
+    "gpu_training_fits": 60,
+    "training_checkpoint_replays": 60,
+    "new_hdvg_candidates": 100,
+    "author_metadata_joins": 200,
+    "origin_overlap_exclusions": 4,
+    "complete_external_development_clips": 196,
+    "complete_external_frozen_head_replays": 60,
+    "compact_evidence_transfer_and_code_hashes_verified": true
+  },
+  "storage": {
+    "videos_and_features": "server only",
+    "local_and_github": "code, reports and compact evidence",
+    "server_free_space_before_shutdown": "14 GiB reported by df -h"
+  },
+  "shutdown": {
+    "authorization": "user requested shutdown after work",
+    "research_process_check_utc": "2026-09-17T09:45:57Z",
+    "research_processes_found": 0,
+    "gpu_compute_processes_found": 0,
+    "temporary_proxy_tunnel_closed": true,
+    "provider_shutdown_command_executed": true,
+    "ssh_closed_by_remote_host": true,
+    "post_command_tcp_35529_reachable": false,
+    "provider_control_plane_power_state_verified": false,
+    "billing_status_verified": false
+  },
+  "research_conclusion": {
+    "paired_sampling_consistency_candidate": "rejected",
+    "sampling_timing_shortcuts_resolved": false,
+    "formal_source_acceptance_complete": false,
+    "algorithm_innovation_goal_achieved": false
+  }
+}
