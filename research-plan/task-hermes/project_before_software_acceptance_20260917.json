@@ -2,7 +2,7 @@
   "schema_version": "0.5",
   "project": "cvpr2027-operator-controlled-video-forensics",
   "main_thread": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-  "updated": "2026-09-18",
+  "updated": "2026-09-17",
   "goal": "在项目累计6000元和初始累计180 GPU小时约束内，由用户主导、双角色协作验证未知生成器与传播退化下的视频取证算法；证据满足门槛后冲刺CVPR 2027一作投稿，证据不足允许延期。",
   "canonical_plan": "WORK_PLAN.md",
   "status_values": [
@@ -57,7 +57,7 @@
         "PL00"
       ],
       "requires_pass": [],
-      "status": "blocked",
+      "status": "running",
       "gate_result": "not_evaluated",
       "hypothesis": "交付当前资产、访问与实际预算核对可形成可核验的决策输入，而非仅有完成声明。",
       "work": [
@@ -74,14 +74,12 @@
         "../../research-runs/shared_plan_20260917/asset_and_budget_review.md"
       ],
       "due_at": "2026-09-18T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
-      "next_action": "从供应商账单核清已用与余额，或记录用户明确批准的本批次额度后再申请付费放行。",
-      "blocker": "访问与资产材料已交付；实际支付、累计计费GPU小时、当前报价和剩余额度未核清。reserved不是实付。",
+      "plan_version": "cvpr27-20260917-v1",
+      "next_action": "完成asset_and_budget_review.md；未知额度不释放新的付费批次。",
+      "blocker": "科研任务报告访问已恢复，但累计实付、已用GPU小时与当前报价未完成对账。",
       "partial_evidence": [
         "../../research-runs/shared_plan_20260917/handoff_ack.md"
-      ],
-      "gate_scope": "assets_and_budget",
-      "review_note": "asset_and_budget_review.md已核验；访问/资产部分通过材料审查，整体预算门槛未通过。"
+      ]
     },
     {
       "id": "RS01",
@@ -92,41 +90,23 @@
         "PL00"
       ],
       "requires_pass": [],
-      "status": "done",
-      "gate_result": "pass",
+      "status": "ready",
+      "gate_result": "not_evaluated",
       "hypothesis": "交付视频近邻精读与新颖性比较可形成可核验的决策输入，而非仅有完成声明。",
       "work": [
         "比较TimeCycle、RIFT、MAST、WaveRep、G2VD和VidAudit",
-        "记录方法公式、数据协议、代码可用性与重叠风险",
-        "补充CRW NeurIPS2020式(1)/(2)的直接继承对比；图转移和路径乘法不作为本项目新颖性。"
+        "记录方法公式、数据协议、代码可用性与重叠风险"
       ],
       "acceptance": [
         "差异落到具体机制",
         "不把名称、距离公式或循环一致性单独当创新"
       ],
       "artifacts": [
-        "../LOCAL_COMPOSABILITY_PRIOR_ART.md",
-        "../reviews/DX02_RS01_20260918.md"
+        "../LOCAL_COMPOSABILITY_PRIOR_ART.md"
       ],
       "due_at": "2026-09-19T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.2",
-      "next_action": "比较TimeCycle、RIFT、MAST、WaveRep、G2VD和VidAudit",
-      "partial_evidence": [
-        "../reviews/COMPOSABILITY_PRIOR_REVIEW_20260917.md",
-        "../reviews/DX01_20260917.md"
-      ],
-      "review_note": "Artifact/source digests and scoped claims checked; no novel-method, replication, data or training gate is implied.",
-      "gate_scope": "bounded_prior_art_review",
-      "completed_at": "2026-09-18T00:34:19+08:00",
-      "reviewed_by": "planagent",
-      "executed_under_plan_version": "cvpr27-20260917-v1.1",
-      "accepted_under_plan_version": "cvpr27-20260918-v1.2",
-      "remaining_replication_dependencies": [
-        "MAST author code/version",
-        "Exact G2VD paper split manifests",
-        "Author checkpoint identities",
-        "Native/matched protocol executions; RIFT recipe differences explicitly labelled"
-      ]
+      "plan_version": "cvpr27-20260917-v1",
+      "next_action": "比较TimeCycle、RIFT、MAST、WaveRep、G2VD和VidAudit"
     },
     {
       "id": "RS02",
@@ -156,7 +136,7 @@
         "../../research-runs/shared_plan_20260917/accepted_manifest_audit.json"
       ],
       "due_at": "2026-09-21T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "复用已恢复HD-VG/CogVideo与Vript，核对祖先连通组"
     },
     {
@@ -170,7 +150,7 @@
       "requires_pass": [
         "RS00"
       ],
-      "status": "blocked",
+      "status": "todo",
       "gate_result": "not_evaluated",
       "hypothesis": "交付实际时间间隔及三帧联合支持审计可形成可核验的决策输入，而非仅有完成声明。",
       "work": [
@@ -186,15 +166,12 @@
         "../../research-runs/shared_plan_20260917/sampling_support_report.json"
       ],
       "due_at": "2026-09-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
-      "next_action": "在原始PTS与资源条件允许后审查版本化采样方案；不得把当前100条假视频诊断升格为真假协议验收。",
+      "plan_version": "cvpr27-20260917-v1",
+      "next_action": "先运行既有actual-lag支持普查",
       "partial_evidence": [
-        "../../research-runs/actual_lag_support_v1_report.json",
-        "../reviews/DX01_20260917.md"
+        "../../research-runs/actual_lag_support_v1_report.json"
       ],
-      "review_note": "DX04澄清历史时间字段来源；RS03正式采样验收仍未执行。见WORK_PLAN 3.7及DX04审查。",
-      "gate_scope": "sampling_protocol",
-      "blocker": "既有100条MS/VC2时间来自归档best-effort字段，原生整数PTS/time_base未验证；真实来源完整时间与预算缺失。C在该子集相对间隔相等仅为描述，不放行真假支持。"
+      "review_note": "旧8帧协议28,868条支持普查已交付；不证明新六帧/三帧联合支持，保持todo及not_evaluated。"
     },
     {
       "id": "RS04",
@@ -205,8 +182,8 @@
         "PL00"
       ],
       "requires_pass": [],
-      "status": "done",
-      "gate_result": "pass",
+      "status": "review",
+      "gate_result": "not_evaluated",
       "hypothesis": "交付局部对应可组合性最小原型可形成可核验的决策输入，而非仅有完成声明。",
       "work": [
         "实现冻结patch对应、两步组成与单侧索引干预",
@@ -218,24 +195,16 @@
         "未声称实际科研收益"
       ],
       "artifacts": [
-        "../../research-runtime/server/forensics/local_composability.py",
-        "../reviews/RS04_RS05_20260917.md",
-        "../../research-runs/shared_plan_20260917/composability_report.md",
-        "../../research-runs/shared_plan_20260917/backbone_integration.json"
+        "../../research-runtime/server/forensics/local_composability.py"
       ],
       "due_at": "2026-09-19T22:00:00+08:00",
-      "plan_version": "cvpr27-20260917-v1.1",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "实现冻结patch对应、两步组成与单侧索引干预",
-      "review_note": "Hash-verified software evidence and 11 locally replayed tests accepted; no real-data efficacy or novelty gate passed.",
+      "review_note": "科研任务已提交原型文件，交接确认接口存在；待正式软件验收，gate_result仍not_evaluated。",
       "partial_evidence": [
         "../../research-runs/shared_plan_20260917/handoff_ack.md",
         "../../research-runs/composability_core_v1_local.json"
-      ],
-      "gate_scope": "software_interface",
-      "completed_at": "2026-09-17T19:18:46+08:00",
-      "reviewed_by": "planagent",
-      "reviewed_under_plan_version": "cvpr27-20260917-v1.1",
-      "executed_under_plan_version": "cvpr27-20260917-v1"
+      ]
     },
     {
       "id": "RS05",
@@ -248,8 +217,8 @@
       "requires_pass": [
         "RS04"
       ],
-      "status": "done",
-      "gate_result": "pass",
+      "status": "todo",
+      "gate_result": "not_evaluated",
       "hypothesis": "交付对应算子数学与软件不变量检查可形成可核验的决策输入，而非仅有完成声明。",
       "work": [
         "验证均匀、已知置换、一致重编号和单侧干预",
@@ -260,21 +229,15 @@
         "软件通过不替代机制成立"
       ],
       "artifacts": [
-        "../../research-runs/shared_plan_20260917/composability_invariants.json",
-        "../reviews/RS04_RS05_20260917.md"
+        "../../research-runs/shared_plan_20260917/composability_invariants.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
-      "plan_version": "cvpr27-20260917-v1.1",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "验证均匀、已知置换、一致重编号和单侧干预",
       "partial_evidence": [
         "../../research-runs/shared_plan_20260917/handoff_ack.md"
       ],
-      "review_note": "Hash-verified software evidence and 11 locally replayed tests accepted; no real-data efficacy or novelty gate passed.",
-      "gate_scope": "software_invariants",
-      "completed_at": "2026-09-17T19:18:46+08:00",
-      "reviewed_by": "planagent",
-      "reviewed_under_plan_version": "cvpr27-20260917-v1.1",
-      "executed_under_plan_version": "cvpr27-20260917-v1"
+      "review_note": "11项数值不变量与CUDA算子检查由科研端报告；完整接口证据待审，父任务未pass前不放行。"
     },
     {
       "id": "RS06",
@@ -285,15 +248,13 @@
         "RS00",
         "RS02",
         "RS03",
-        "RS05",
-        "DX03"
+        "RS05"
       ],
       "requires_pass": [
         "RS00",
         "RS02",
         "RS03",
-        "RS05",
-        "DX03"
+        "RS05"
       ],
       "status": "todo",
       "gate_result": "not_evaluated",
@@ -305,14 +266,13 @@
       "acceptance": [
         "配置/样本哈希可核验",
         "不把profile当训练成果",
-        "不由GPU闲置推断无计费",
-        "C分支端到端profile须绑定C采样/配置和通过DX03，不能用A旧GPU回执认证新源码。"
+        "不由GPU闲置推断无计费"
       ],
       "artifacts": [
         "../../research-runs/shared_plan_20260917/profile_100.json"
       ],
       "due_at": "2026-09-23T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "完成100条完整提取与预测profile"
     },
     {
@@ -339,22 +299,19 @@
       "hypothesis": "交付首批机制数据和实验协议冻结可形成可核验的决策输入，而非仅有完成声明。",
       "work": [
         "冻结首批约2000条、目标6000条的分组协议",
-        "固定基线、五种子、指标、选择规则和失败条件",
-        "纳入WORK_PLAN 3.5节静态重复帧、同六帧静态patch基线及固定模型敏感性检查。"
+        "固定基线、五种子、指标、选择规则和失败条件"
       ],
       "acceptance": [
         "数据来源、采样、运行基础通过",
         "最终集隔离",
-        "用户/导师审查关键实验逻辑",
-        "静态分支保留相同原六帧语义输入与容量；仅完整方法超过静态强基线时讨论额外时间信息，非零JS/响应不构成机制证据。",
-        "冻结静态与时间分支的帧角色出现次数及计算量对照，不能把同参数/同帧数描述成相同FLOPs。"
+        "用户/导师审查关键实验逻辑"
       ],
       "artifacts": [
         "../../research-runs/shared_plan_20260917/mechanism_protocol.json",
         "../../research-runs/shared_plan_20260917/foundation_acceptance.md"
       ],
       "due_at": "2026-09-24T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "冻结首批约2000条、目标6000条的分组协议"
     },
     {
@@ -374,23 +331,20 @@
       "work": [
         "比较完整响应、普通patch、未校准组成、语义与探针",
         "评估跨来源和初始传播开发条件",
-        "在机制集上运行五种子17/29/43/59/71；后续RS09用于规模与完整方法验证。",
-        "纳入WORK_PLAN 3.5节静态重复帧、同六帧静态patch基线及固定模型敏感性检查。"
+        "在机制集上运行五种子17/29/43/59/71；后续RS09用于规模与完整方法验证。"
       ],
       "acceptance": [
         "macro增益至少0.03且配对区间下界为正",
         "机制/容量/混杂对照成立",
         "如失败完整保存负结果",
-        "至少4/5种子的增益为正；不把集成结果代替种子判据。",
-        "静态分支保留相同原六帧语义输入与容量；仅完整方法超过静态强基线时讨论额外时间信息，非零JS/响应不构成机制证据。"
+        "至少4/5种子的增益为正；不把集成结果代替种子判据。"
       ],
       "artifacts": [
         "../../research-runs/shared_plan_20260917/mechanism_screen.md"
       ],
       "due_at": "2026-09-30T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
-      "next_action": "比较完整响应、普通patch、未校准组成、语义与探针",
-      "gate_scope": "mechanism"
+      "plan_version": "cvpr27-20260917-v1",
+      "next_action": "比较完整响应、普通patch、未校准组成、语义与探针"
     },
     {
       "id": "PG01",
@@ -416,7 +370,7 @@
         "../../research-runs/shared_plan_20260917/gate_20261001.md"
       ],
       "due_at": "2026-10-01T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "整理机制证据并与用户/导师判断是否扩容"
     },
     {
@@ -446,7 +400,7 @@
         "../../research-runs/shared_plan_20260917/five_seed_method.md"
       ],
       "due_at": "2026-10-08T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "完成五种子及相同容量和增强对照"
     },
     {
@@ -475,7 +429,7 @@
         "../../research-runs/shared_plan_20260917/strong_baseline_report.md"
       ],
       "due_at": "2026-10-14T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "联通STALL、D3并优先复现WaveRep/RIFT可用流程"
     },
     {
@@ -503,7 +457,7 @@
         "../../research-runs/shared_plan_20260917/gate_20261015.md"
       ],
       "due_at": "2026-10-15T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "和用户/导师核对强基线、替代解释与创新差异"
     },
     {
@@ -533,7 +487,7 @@
         "../../research-runs/shared_plan_20260917/ablation_robustness_cost.md"
       ],
       "due_at": "2026-10-21T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "完成关键消融和未见传播协议准备"
     },
     {
@@ -562,7 +516,7 @@
         "../../research-runs/shared_plan_20260917/final_protocol_lock.json"
       ],
       "due_at": "2026-10-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "锁定checkpoint、阈值、身份、统计量和最终访问条件"
     },
     {
@@ -592,9 +546,8 @@
         "../../research-runs/shared_plan_20260917/final_confirmation.md"
       ],
       "due_at": "2026-10-29T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
-      "next_action": "评估至少7000条目标的未接触最终队列",
-      "gate_scope": "formal_confirmation"
+      "plan_version": "cvpr27-20260917-v1",
+      "next_action": "评估至少7000条目标的未接触最终队列"
     },
     {
       "id": "WR01",
@@ -605,7 +558,7 @@
         "PL00"
       ],
       "requires_pass": [],
-      "status": "done",
+      "status": "ready",
       "gate_result": "not_applicable",
       "hypothesis": "交付论文问题与贡献草稿可形成可核验的决策输入，而非仅有完成声明。",
       "work": [
@@ -619,10 +572,8 @@
         "../paper_outline.md"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
-      "plan_version": "cvpr27-20260917-v1.1",
-      "next_action": "从第一周同步写问题、相关工作和主张-证据表",
-      "completed_at": "2026-09-17T20:10:49+08:00",
-      "review_note": "工作问题与条件式主张-证据提纲作为初稿接受，不代表实际结果、最终作者安排或投稿就绪。"
+      "plan_version": "cvpr27-20260917-v1",
+      "next_action": "从第一周同步写问题、相关工作和主张-证据表"
     },
     {
       "id": "RV01",
@@ -648,7 +599,7 @@
         "../../research-runs/shared_plan_20260917/independent_review.md"
       ],
       "due_at": "2026-11-05T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "由不同于主实现者的导师/复核者检查划分与主表"
     },
     {
@@ -677,7 +628,7 @@
         "../../output/paper/supplement.pdf"
       ],
       "due_at": "2026-11-05T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "完成全文、补充材料及可复现证据说明"
     },
     {
@@ -705,7 +656,7 @@
         "../../research-runs/shared_plan_20260917/registration_receipt.md"
       ],
       "due_at": "2026-11-09T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "用户提前完成OpenReview注册和作者信息检查"
     },
     {
@@ -736,7 +687,7 @@
         "../../research-runs/shared_plan_20260917/submission_readiness.md"
       ],
       "due_at": "2026-11-13T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "审查正文、图表、匿名和补充材料"
     },
     {
@@ -767,7 +718,7 @@
         "../../research-runs/shared_plan_20260917/paper_submission_receipt.md"
       ],
       "due_at": "2026-11-16T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "用户完成正文提交并归档回执"
     },
     {
@@ -792,7 +743,7 @@
         "../../research-runs/shared_plan_20260917/supplement_submission_receipt.md"
       ],
       "due_at": "2026-11-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "用户提交补充材料并核对接收状态"
     },
     {
@@ -819,231 +770,8 @@
         "../../research-runs/shared_plan_20260917/final_archive.md"
       ],
       "due_at": "2026-11-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
+      "plan_version": "cvpr27-20260917-v1",
       "next_action": "归档版本、代码、证据和回执"
-    },
-    {
-      "id": "DX01",
-      "milestone": "M2",
-      "title": "静态强对照准备与长间隔三元组可行性诊断",
-      "assignee": "researchagent",
-      "parents": [
-        "RS04",
-        "RS05"
-      ],
-      "requires_pass": [
-        "RS04",
-        "RS05"
-      ],
-      "status": "done",
-      "gate_result": "pass",
-      "gate_scope": "preparatory_diagnostics_not_formal_release",
-      "hypothesis": "在不新开付费GPU批次的前提下，可完成静态对照软件及新采样协议的元数据可行性判定。",
-      "work": [
-        "实现全部六帧(i,i,i)静态强基线输入与固定模型分支替换诊断；保持原六帧语义输入。",
-        "仅用已存在的完整原始PTS元数据，检查新六帧全部三元组联合支持；分别报告四个短间隔组和预先指定的两个长间隔组。",
-        "长间隔组固定为(0,2,4)/(1,3,5)，目标每条边0.5秒；只报告可行性，不自行替换正式协议。",
-        "缺完整PTS时记录缺失，不重复跑旧8帧普查、不补帧、不插值、不启动新特征提取。",
-        "尽力只读核对现有授权账户账单/报价；失败明确所缺事实，不把reserved当实付。"
-      ],
-      "acceptance": [
-        "静态对照保留所有六帧信息、同参数和同选择规则",
-        "仅元数据支持结果，不能放行正式科学门槛",
-        "无新GPU训练、无原视频下载、无新实例或购买",
-        "记录每源数量、连续间隔差异和排除率；允许结论为无支持或缺证据"
-      ],
-      "artifacts": [
-        "../../research-runs/shared_plan_20260917/static_control_preparation.md",
-        "../../research-runs/shared_plan_20260917/joint_lag_feasibility.json",
-        "../../research-runs/shared_plan_20260917/collaboration_round_1.md",
-        "../reviews/DX01_20260917.md"
-      ],
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260917-v1.1",
-      "next_action": "先完成静态对照接口，再读已有完整PTS；不启动新付费GPU批次。",
-      "resource_policy": {
-        "new_gpu_job": false,
-        "new_raw_download": false,
-        "new_purchase": false,
-        "read_existing_metadata": true,
-        "note": "既有实例可能持续计费，不能把只读/CPU诊断宣称为零成本。"
-      },
-      "completed_at": "2026-09-17T20:10:49+08:00",
-      "reviewed_by": "planagent",
-      "review_note": "独立产物哈希及21项CPU测试核验；接受准备诊断、负结果与缺证据报告，不放行数据或机制门槛。",
-      "timestamp_provenance_correction": {
-        "field": "before.pts",
-        "actual_source": "ffprobe best_effort_timestamp_time",
-        "native_integer_pts_verified": false,
-        "review": "../reviews/DX04_20260918.md",
-        "frozen_analysis_plan_preserved": true
-      }
-    },
-    {
-      "id": "DX02",
-      "milestone": "M2",
-      "title": "离线采样修订与静态对照公平性草案",
-      "assignee": "researchagent",
-      "parents": [
-        "DX01",
-        "RS05"
-      ],
-      "requires_pass": [
-        "DX01",
-        "RS05"
-      ],
-      "status": "done",
-      "gate_result": "pass",
-      "gate_scope": "protocol_proposal_only_not_formal_release",
-      "hypothesis": "可在不启动服务器或真实实验时，明确消除已观测时间布局差异所需的最小采样方案和对照条件。",
-      "work": [
-        "以已交付诊断说明原六组、仅两个长组和一个0.5秒+0.5秒三帧候选的差异；后两者仅草案，不替代v1.1。",
-        "写明每方案的帧数、时间跨度、组间相位、真实PTS要求、缺失处理和所有比较臂的公平性；不能以标称FPS补齐实际PTS。",
-        "分析固定帧角色出现次数加权的静态读出是否需作为预注册对照，权重仅从三元组定义推导；保留原均匀静态基线。",
-        "给出未来原始PTS采集的最小资源合同草案，execution_authorized=false；不运行ffprobe、不访问已关闭服务器、不抽特征或训练。"
-      ],
-      "acceptance": [
-        "原公式不变，草案不冒充已批准或已实测协议",
-        "静态与时间对照的观察帧、语义输入、参数、帧角色次数和计算量逐项说明",
-        "真实来源和连续时间支持缺失明确保留",
-        "无服务器启动、购买、新真实数据实验或GPU作业"
-      ],
-      "artifacts": [
-        "../SAMPLING_REVISION_PROPOSAL_20260917.md",
-        "../STATIC_CONTROL_FAIRNESS_20260917.md",
-        "../../research-runs/shared_plan_20260917/pts_acquisition_contract_draft.json",
-        "../../research-runs/shared_plan_20260917/collaboration_round_2.md",
-        "../reviews/DX02_RS01_20260918.md"
-      ],
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.2",
-      "next_action": "仅离线撰写采样与对照草案，结合100条已有诊断；保留v1.1正式协议。",
-      "completed_at": "2026-09-18T00:34:19+08:00",
-      "reviewed_by": "planagent",
-      "executed_under_plan_version": "cvpr27-20260917-v1.1",
-      "accepted_under_plan_version": "cvpr27-20260918-v1.2",
-      "review_note": "Artifact/source digests and scoped claims checked; no novel-method, replication, data or training gate is implied."
-    },
-    {
-      "id": "DX03",
-      "milestone": "M2",
-      "title": "居中三帧C与起点静态诊断的离线软件实现",
-      "assignee": "researchagent",
-      "parents": [
-        "DX02",
-        "RS05",
-        "RS01"
-      ],
-      "requires_pass": [
-        "DX02",
-        "RS05",
-        "RS01"
-      ],
-      "status": "done",
-      "gate_result": "pass",
-      "gate_scope": "offline_software_only",
-      "hypothesis": "保持主算子和A默认行为时，可显式实现C采样和同三帧/起点静态对照，并通过可复核的CPU合成测试。",
-      "work": [
-        "按WORK_PLAN 3.6实现candidate_c_centered3_v1，明确D估计、居中目标、独立原帧、误差与平局规则；禁止三帧补成六帧。",
-        "以显式配置支持C的3帧/1时间组与3静态组，保留A默认和旧21项测试；不实现B或改变原公式/温度/尺度。",
-        "保留uniform-static强基线，加入anchor-matched-static诊断；C诊断局部仅帧0，语义为同三帧，不能冒充相同局部观察预算。",
-        "验证C与A奇数位置的选择关系、VFR/缺失/重复/非有限PTS/过短片和容差边界；只用CPU合成输入。",
-        "在精确平移特征null及完整支持下验证时间/起点静态等价；固定interior和非交换置换分别报告，不能推断真实DINO等变。",
-        "为采样哈希、frame_count、triplets、branch_mode、aggregation/control_scope建立显式配置/缓存标识与匹配训练规则；验证独立参数存储和零优化器步。"
-      ],
-      "acceptance": [
-        "C仅软件候选，不提升实际PTS支持或正式训练状态",
-        "A回归通过且历史科研证据只读",
-        "同三帧语义输入与头容量核验；时间/静态计算差异明确",
-        "anchor诊断与uniform-static强基线、固定头敏感性与独立训练严格区分",
-        "无SSH/服务器启动/ffprobe/媒体/模型下载/骨干推理/GPU或真实训练"
-      ],
-      "artifacts": [
-        "../../research-runs/shared_plan_20260917/candidate_c_software_report.md",
-        "../../research-runs/shared_plan_20260917/candidate_c_cpu_validation.json",
-        "../../research-runtime/server/configs/candidate_c_centered3_v1.json",
-        "../../research-runs/shared_plan_20260917/collaboration_round_3.md",
-        "../reviews/DX03_20260918.md"
-      ],
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.2",
-      "next_action": "软件范围已验收；保持C配置固定，后续仅按DX04分析已有开发元数据。",
-      "resource_policy": {
-        "server_access": false,
-        "media_access": false,
-        "backbone_inference": false,
-        "gpu": false,
-        "training": false
-      },
-      "completed_at": "2026-09-18T00:59:28+08:00",
-      "reviewed_by": "planagent",
-      "review_note": "Ten source digests match final receipt and e074ca7; 33 CPU tests replayed plus batch-2, 256 VFR cases and four atomic checkpoint rejection checks. No scientific/data/training gate passed.",
-      "source_commit": "e074ca7074ddea3d387d324070e7319abbbd65a5",
-      "executed_under_plan_version": "cvpr27-20260918-v1.2",
-      "accepted_under_plan_version": "cvpr27-20260918-v1.2"
-    },
-    {
-      "id": "DX04",
-      "milestone": "M2",
-      "title": "C采样在既有开发PTS上的一次固定描述审计",
-      "assignee": "researchagent",
-      "parents": [
-        "DX01",
-        "DX03"
-      ],
-      "requires_pass": [
-        "DX01",
-        "DX03"
-      ],
-      "status": "done",
-      "gate_result": "pass",
-      "gate_scope": "existing_metadata_diagnostic_only",
-      "hypothesis": "在固定C定义和原名单下，可审计实际双间隔、中心偏移和资格；仅描述已有假视频子集，不能推出真假共同支持。",
-      "work": [
-        "读取并核验冻结的100条本地before完整PTS、归档写入器及配置哈希。",
-        "按C固定规则一次采样；保存逐条资格、原帧索引、实际PTS/间隔/跨度、误差和时长。",
-        "按固定1/2/5ms视图描述双间隔及双间隔加中心误差联合支持，保留连续统计及每来源排除率。",
-        "核对可通过A的样本与A[1,3,5]关系；禁止调参、模型拟合或扩展数据。"
-      ],
-      "acceptance": [
-        "按CANDIDATE_C_METADATA_AUDIT_20260918.md执行，名单和参数在分析前冻结。",
-        "100条记录数量守恒，缺失或排除可追踪，输入与输出哈希可核对。",
-        "开发元数据后验诊断不冒充独立确认，缺失真实来源不算已验收。",
-        "无SSH、服务器、ffprobe、媒体、骨干、分类器/GPU/优化器或实际训练。"
-      ],
-      "artifacts": [
-        "../CANDIDATE_C_METADATA_AUDIT_20260918.md",
-        "../reviews/dx04_input_freeze_20260918.json",
-        "../../research-runs/shared_plan_20260917/candidate_c_existing_pts_report.md",
-        "../../research-runs/shared_plan_20260917/candidate_c_existing_pts_audit.json",
-        "../../research-runs/shared_plan_20260917/candidate_c_existing_pts_records.json",
-        "../../research-runs/shared_plan_20260917/collaboration_round_4.md",
-        "../reviews/DX04_20260918.md"
-      ],
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260918-v1.3",
-      "next_action": "描述范围已验收并附时间来源勘误；保留历史冻结输入，不重复调C，等待真实输入与资源条件。",
-      "resource_policy": {
-        "local_existing_metadata": true,
-        "server_access": false,
-        "media_access": false,
-        "backbone_inference": false,
-        "gpu": false,
-        "training": false
-      },
-      "completed_at": "2026-09-18T01:19:32+08:00",
-      "reviewed_by": "planagent",
-      "source_commit": "da6d3f365030e0717ee9141eff19368efa597681",
-      "executed_under_plan_version": "cvpr27-20260918-v1.2",
-      "accepted_under_plan_version": "cvpr27-20260918-v1.3",
-      "review_note": "100 saved records, 106 bindings and six fixed histogram views independently verified. Archived before.pts comes from best_effort_timestamp_time; native integer PTS/time_base not verified. No data/scientific/training gate released.",
-      "timestamp_provenance_correction": {
-        "field": "before.pts",
-        "actual_source": "ffprobe best_effort_timestamp_time",
-        "native_integer_pts_verified": false,
-        "review": "../reviews/DX04_20260918.md",
-        "frozen_analysis_plan_preserved": true
-      }
     }
   ],
   "storage_policy": {
@@ -2292,14 +2020,7 @@
       "formal_experiments": 25,
       "review_recovery": 20
     },
-    "purchase_authorization": "Budget ceiling does not authorize new purchases or new instances by itself.",
-    "historical_reservations_observed": {
-      "unique_count": 8,
-      "reserved_cny": 43.24,
-      "reserved_gpu_hours": 23,
-      "status": "reserved_only_not_actual_spend",
-      "evidence": "../../research-runs/shared_plan_20260917/budget_snapshot.json"
-    }
+    "purchase_authorization": "Budget ceiling does not authorize new purchases or new instances by itself."
   },
   "study_scale": {
     "status": "prospective_targets_not_acquired_samples",
@@ -2439,8 +2160,8 @@
       "status": "done"
     }
   },
-  "plan_version": "cvpr27-20260918-v1.3",
-  "updated_at": "2026-09-18T01:27:27+08:00",
+  "plan_version": "cvpr27-20260917-v1",
+  "updated_at": "2026-09-17T18:56:17+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -2477,9 +2198,7 @@
       "paired_95ci_lower_gt": 0,
       "positive_seeds_min": 4,
       "seeds_total": 5,
-      "mechanism_and_confounds_required": true,
-      "static_patch_control_required_for_temporal_claim": true,
-      "anchor_matched_static_diagnostic_required": true
+      "mechanism_and_confounds_required": true
     },
     "confirmation": {
       "macro_auroc_gain_min": 0.02,
@@ -2491,7 +2210,7 @@
     "policy": "Freeze before final evaluation; no post-hoc relaxation."
   },
   "current_evidence": {
-    "as_of": "2026-09-18",
+    "as_of": "2026-09-17",
     "source": "../../DEVLOG.md",
     "paired_dino_successes": 28672,
     "paired_consistency_fits": 60,
@@ -2502,89 +2221,11 @@
     "pair2_timing_only_auroc": 0.93367,
     "local_rank_status": "synthetic reference tests only; not a trained accepted detector",
     "formal_method_accepted": false,
-    "server_state": "Last reported lifecycle at 2026-09-17T12:07:50Z: provider shutdown issued, SSH disconnected and TCP unreachable. Current state and billing stop unverified; no new server access in DX03/DX04.",
+    "server_state": "Researchagent reports SSH restored; last reported live hardware check 2026-09-17T10:45:39Z. Not a continuous/current power-state guarantee.",
     "researchagent_handoff_at": "2026-09-17T18:56:17+08:00",
     "old_protocol_actual_lag_records": 28868,
     "actual_lag_report_sha256": "b50e090b7bf7efc9d5bc10e9ff9c593f9dc2b0e4da0fe94d64cf2aae27113c2a",
-    "canonical_composability_status": "software accepted only; real-data efficacy not evaluated",
-    "software_acceptance_at": "2026-09-17T19:18:46+08:00",
-    "software_parameter_count": 217057,
-    "software_tests": 11,
-    "software_review": "../reviews/RS04_RS05_20260917.md",
-    "static_counterexample_verified": true,
-    "scientific_mechanism_accepted": false,
-    "static_cpu_tests": 21,
-    "static_control_trained": false,
-    "joint_pts_audited_counts": {
-      "ms": 50,
-      "vc2": 50
-    },
-    "short_joint_common_support": false,
-    "long_edges_matched_in_fake_subset_only": true,
-    "real_fake_joint_support_established": false,
-    "last_reported_server_lifecycle": {
-      "observed_at": "2026-09-17T12:07:50Z",
-      "evidence": "../../DEVLOG.md",
-      "source": "researchagent report and commit 3707bf9",
-      "result": "provider shutdown issued after jobs terminal; SSH disconnected and TCP unreachable",
-      "provider_billing_stop_verified": false,
-      "planagent_live_check": false
-    },
-    "round2_proposal_accepted": true,
-    "prior_art_review_scope": "eight primary papers; seven pinned repositories; 38 text files; no third-party execution or replication",
-    "candidate_C_status": "offline software and exposed two-fake-source archived timestamp diagnostic accepted; no native PTS, real/fake support or detector effect acceptance",
-    "translation_null": {
-      "scope": "exact synthetic cyclic translations with commuting permutations and full middle support",
-      "max_replay_error": 7.771561172376096e-16,
-      "real_dino_equivariance_assumed": false,
-      "general_motion_rejection": false,
-      "evidence": "../../research-plan/reviews/translation_null_replay_20260918.json"
-    },
-    "native_pts_collector": {
-      "status": "reported_mock_tested_pending_planner_review",
-      "reported_tests": 16,
-      "report": "../../research-runs/shared_plan_20260917/native_pts_collector_preparation.md",
-      "execution_authorized": false,
-      "real_ffprobe_verified": false
-    },
-    "candidate_C_software_review": {
-      "review": "../reviews/DX03_20260918.md",
-      "source_commit": "e074ca7074ddea3d387d324070e7319abbbd65a5",
-      "tests_replayed": 33,
-      "extra_vfr_cases": 256,
-      "reviewed_at": "2026-09-18T00:59:28+08:00",
-      "cuda_initialized": false,
-      "scientific_gate_passed": false
-    },
-    "candidate_C_metadata_review": {
-      "review": "../reviews/DX04_20260918.md",
-      "source_commit": "da6d3f365030e0717ee9141eff19368efa597681",
-      "counts": {
-        "ms": 50,
-        "vc2": 50
-      },
-      "joint_gap_seconds": [
-        0.5,
-        0.5
-      ],
-      "signed_center_error_seconds": 0,
-      "source_duration_seconds": {
-        "ms": 2.0,
-        "vc2": 1.6
-      },
-      "views_verified": 6,
-      "reviewed_at": "2026-09-18T01:19:32+08:00",
-      "timestamp_source": "ffprobe best_effort_timestamp_time",
-      "native_integer_pts_verified": false,
-      "scientific_gate_passed": false
-    },
-    "joint_pts_provenance_correction": {
-      "field": "before.pts",
-      "actual_source": "ffprobe best_effort_timestamp_time",
-      "native_integer_pts_verified": false,
-      "review": "../reviews/DX04_20260918.md",
-      "frozen_analysis_plan_preserved": true
-    }
+    "canonical_composability_status": "prototype and synthetic evidence submitted for review; no efficacy gate passed"
   },
   "milestones": [
     {
@@ -2844,7 +2485,7 @@
     "supplement": "2026-11-24T19:59:59+08:00"
   },
   "reminders": {
-    "name": "CVPR 2027 科研协作与里程碑",
+    "name": "CVPR 2027 科研里程碑",
     "kind": "heartbeat",
     "target_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
     "timezone": "Asia/Shanghai",
@@ -2857,294 +2498,25 @@
     "legacy_automation_id": "cvpr-9-11-10",
     "legacy_automation_must_remain": "PAUSED",
     "next_planned_notification_at": "2026-09-23T19:00:00+08:00",
-    "verified_at": "2026-09-17T19:36:00+08:00",
+    "verified_at": "2026-09-17T18:49:30+08:00",
     "host_timezone": "China Standard Time",
-    "configured_check_time_local": "19:00",
-    "physical_heartbeat_schedule": "hourly at minutes 00 and 30",
-    "logical_milestone_check_time": "19:00 once per local day",
-    "last_check_local_date": "2026-09-17",
-    "last_checked_at": "2026-09-17T19:36:00+08:00",
-    "last_check_notifications": 0
+    "configured_check_time_local": "19:00"
   },
   "coordination": {
     "handoff_status": "acknowledged",
-    "handoff_report": "../reviews/v1_3_handoff_ack_20260918.json",
+    "handoff_report": "../../research-runs/shared_plan_20260917/handoff_ack.md",
     "setup_report": "../../research-runs/shared_plan_20260917/deployment_report.md",
     "validation_report": "../../research-runs/shared_plan_20260917/validation.json",
-    "planagent_read_version": "cvpr27-20260918-v1.3",
+    "planagent_read_version": "cvpr27-20260917-v1",
     "handoff_target_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "handoff_sent_on": "2026-09-17",
     "last_wait_cursor": "0a890551-1054-4bfa-9a62-7f46d13ea6a8:1",
-    "acknowledged_at": "2026-09-18T01:27:27+08:00",
+    "acknowledged_at": "2026-09-17T18:56:17+08:00",
     "ack_source_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-    "ack_sha256": "25432ddaf8656dd189cc90083a8b5ecfd4f1b5d052a575ff4f938199c8c13c45",
-    "researchagent_read_version": "cvpr27-20260918-v1.3",
-    "acknowledged_plan_sha256": "21e9b48119474f26a49991b702c0da935fa70ca66d14baf5a3f9ace12b38e3e1",
-    "acknowledged_research_role_sha256": "f1d75d7860b9a89968a7e9402a3996d1578fa306af04b58180a6bc6a29af0cb8",
-    "setup_status": "complete",
-    "revision_handoff": {
-      "plan_version": "cvpr27-20260918-v1.3",
-      "status": "acknowledged",
-      "plan_sha256": "21e9b48119474f26a49991b702c0da935fa70ca66d14baf5a3f9ace12b38e3e1",
-      "review": "../reviews/DX04_20260918.md",
-      "purpose": "Evidence provenance correction and completed-scope synchronization; no new research batch",
-      "sent_recorded_at": "2026-09-18T01:25:16+08:00",
-      "acknowledgement_observed_at": "2026-09-18T01:27:27+08:00",
-      "source_report": "../reviews/v1_3_handoff_ack_20260918.json"
-    },
-    "revision_handoff_history": [
-      {
-        "plan_version": "cvpr27-20260918-v1.2",
-        "status": "acknowledged_by_round3_delivery",
-        "review": "../reviews/DX02_RS01_20260918.md",
-        "plan_sha256": "dc44831b23d637ae5516c76e1da58d6c22cf7b5667548233483f706520eecbca",
-        "dispatch_id": "cc-round-3-c-software-20260918",
-        "acknowledgement_observed_at": "2026-09-18T00:59:28+08:00",
-        "source_report": "../../research-runs/shared_plan_20260917/collaboration_round_3.md"
-      }
-    ],
-    "repository_sync_authorization": {
-      "target": "https://github.com/Suaiii/motion-correspondence-forensics.git",
-      "user_quote": "继续 并且一边同步我们的进程 一边同步github好吗 这样不会漏掉我们之前的成果",
-      "evidence_source": "Researchagent located original user message and separately supplied repository URL in its existing conversation; reported to planagent on 2026-09-18. Exact original timestamp/turn ID unavailable.",
-      "scope": "Research progress, plans, task state and compact evidence; excludes unrelated files and credentials"
-    }
-  },
-  "plan_revisions": [
-    {
-      "from": "cvpr27-20260917-v1",
-      "to": "cvpr27-20260917-v1.1",
-      "at": "2026-09-17T19:18:46+08:00",
-      "reason": "Software acceptance and mandatory static-patch control after verified static counterexample",
-      "previous_project": "project_before_software_acceptance_20260917.json",
-      "previous_project_sha256": "9bf1921cdde8666b15ac201cdedb7e410c5b61acee5e12a2bcd9b10e38e04b6f",
-      "previous_plan": "WORK_PLAN_before_static_controls_20260917.md",
-      "previous_plan_sha256": "25ccf8777e288015c146d43dd542c7b8d1c043b29e9f8271dd088d08975b8d48",
-      "dates_budget_reminders_unchanged": true
-    },
-    {
-      "from": "cvpr27-20260917-v1.1",
-      "to": "cvpr27-20260918-v1.2",
-      "at": "2026-09-18T00:34:19+08:00",
-      "reason": "Accept scoped proposal/literature delivery; select centered-three CPU software diagnostic with anchor-matched null control; no real-data release.",
-      "previous_project": "project_before_candidate_c_20260918.json",
-      "previous_project_sha256": "fb0c566d73f68ca74d77ec5d0a0561072914a3fbfa02815d1fbece2ef36c3314",
-      "previous_plan": "WORK_PLAN_before_candidate_c_20260918.md",
-      "previous_plan_sha256": "8badafa25b5fa509557907f810a9d7c1c9d7054f186ad9bacb154042b82ae732",
-      "dates_budget_unchanged": true
-    },
-    {
-      "from": "cvpr27-20260918-v1.2",
-      "to": "cvpr27-20260918-v1.3",
-      "at": "2026-09-18T01:19:32+08:00",
-      "reason": "Accept DX03/DX04 only software/retrospective metadata scopes; correct archived best-effort timestamp provenance without changing candidate definition or scientific gates.",
-      "previous_project": "project_before_dx04_acceptance_20260918.json",
-      "previous_project_sha256": "a99f160d670888b8156010f3188bd846b4cc8047559fc6be5f88d614089f60bb",
-      "previous_plan": "WORK_PLAN_before_timestamp_clarification_20260918.md",
-      "previous_plan_sha256": "dc44831b23d637ae5516c76e1da58d6c22cf7b5667548233483f706520eecbca",
-      "dates_budget_reminders_algorithm_unchanged": true
-    }
-  ],
-  "continuous_collaboration": {
-    "authorized_at": "2026-09-17T19:27:21+08:00",
-    "authorization": "用户要求继续与科研agent协作直到有突破性进展。",
-    "status": "active",
-    "research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-    "plan_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-    "dispatch_interval_minutes": 30,
-    "notification_intent": "只在有证据的阶段突破、实质方法取舍、失败或需要用户动作时通知；常规无变化保持安静。",
-    "budget_caps_unchanged": true,
-    "formal_gates_unchanged": true,
-    "automation_id": "cvpr-2027",
-    "current_dispatch": null,
-    "breakthrough_status": "not_established",
-    "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
-    "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "6e0ba463-4153-4851-bfe0-8b82c68cc564:7",
-    "user_input_request": {
-      "asked_once_at": "2026-09-17T19:36:00+08:00",
-      "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
-      "status": "awaiting_response"
-    },
-    "last_coordinator_activity_at": "2026-09-18T01:27:27+08:00",
-    "research_observed_status": "idle",
-    "dispatch_history": [
-      {
-        "id": "cc-round-1-20260917",
-        "task_ids": [
-          "DX01",
-          "RS01",
-          "WR01"
-        ],
-        "status": "completed_preparatory_scope",
-        "prepared_at": "2026-09-17T19:27:21+08:00",
-        "scope": "诊断、文献和写作；不得据此启动新付费GPU批次。",
-        "sent_verified_at": "2026-09-17T19:36:00+08:00",
-        "research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-        "observed_turn_id": "01a0af1f-09dd-7901-b141-076fd6333e8c",
-        "review": "../reviews/DX01_20260917.md",
-        "reviewed_at": "2026-09-17T20:10:49+08:00",
-        "task_outcomes": {
-          "DX01": "done_preparatory_only",
-          "RS01": "partial_in_progress",
-          "WR01": "draft_delivered"
-        },
-        "wait_for_idle_before_new_dispatch": true,
-        "completed_at": "2026-09-17T20:15:13+08:00",
-        "source_report": "../../research-runs/shared_plan_20260917/collaboration_round_1.md",
-        "source_commits": [
-          "44a0c2b",
-          "3707bf9"
-        ]
-      },
-      {
-        "id": "cc-round-2-offline-20260917",
-        "task_ids": [
-          "DX02",
-          "RS01"
-        ],
-        "status": "completed_offline_scope",
-        "prepared_at": "2026-09-17T20:15:13+08:00",
-        "scope": "仅离线协议与近邻全文审查；不得启动服务器、ffprobe、GPU或真实数据实验。",
-        "sent_at": "2026-09-17T20:15:15+08:00",
-        "observed_turn_id": "01a0afb8-9c1b-7b31-acf6-3841543094b1",
-        "last_observed_status": "in_progress",
-        "duplicate_dispatch_suppressed": true,
-        "last_observed_thread_turn_id": "01a0b006-d510-7b90-a9eb-bf25c5b94940",
-        "latest_turn_attribution": "unconfirmed_after_cursor_reset; original dispatch remains sent and is not repeated",
-        "completed_at": "2026-09-18T00:34:19+08:00",
-        "review": "../reviews/DX02_RS01_20260918.md",
-        "source_report": "../../research-runs/shared_plan_20260917/collaboration_round_2.md",
-        "source_commit": "85d47e7f26773330771525d5b530dc115d9bf259",
-        "followup_commit": "3fe8fa9"
-      },
-      {
-        "id": "cc-round-3-c-software-20260918",
-        "task_ids": [
-          "DX03"
-        ],
-        "status": "completed_software_scope",
-        "prepared_at": "2026-09-18T00:34:19+08:00",
-        "scope": "仅离线CPU合成软件；无服务器/媒体/ffprobe/骨干/GPU/训练。",
-        "readiness_basis": "researchagent explicitly reports prior package complete, no remaining processes, and ready to receive DX03; active marker is goal continuation",
-        "readiness_source": "researchagent handoff mentioning 40f5bb0",
-        "sent_at": "2026-09-18T00:38:58+08:00",
-        "single_followup_to_explicitly_ready_existing_task": true,
-        "last_observed_thread_turn_id": "01a0b037-ee27-74a1-9a8e-12de99909695",
-        "last_observed_status": "inProgress",
-        "duplicate_dispatch_suppressed": true,
-        "in_progress_observation": {
-          "observed_at": "2026-09-18T00:47:59+08:00",
-          "receipt": "../../research-runs/shared_plan_20260917/candidate_c_cpu_validation.json",
-          "receipt_sha256": "182ed655564f425c3ffc8ebdbfbd475dfbd67d1b19862ac5041e69daa5bb14bc",
-          "reported_tests_run": 33,
-          "source_hashes_checked": 10,
-          "source_hashes_match": true,
-          "assessment": "interim software receipt only; final report and handoff pending; no gate acceptance"
-        },
-        "completed_at": "2026-09-18T00:59:28+08:00",
-        "review": "../reviews/DX03_20260918.md",
-        "source_report": "../../research-runs/shared_plan_20260917/collaboration_round_3.md",
-        "source_commit": "e074ca7074ddea3d387d324070e7319abbbd65a5"
-      },
-      {
-        "id": "cc-round-4-c-metadata-20260918",
-        "task_ids": [
-          "DX04"
-        ],
-        "status": "completed_metadata_diagnostic_scope",
-        "prepared_at": "2026-09-18T00:59:28+08:00",
-        "scope": "Only local archived JSON metadata; no server, media, ffprobe, backbone, fitting or GPU.",
-        "input_freeze": "../reviews/dx04_input_freeze_20260918.json",
-        "input_freeze_sha256": "7a841af5377f1f457396ae7bdc652809eddffff9c2ac431fca54fc549c9bde93",
-        "analysis_plan": "../CANDIDATE_C_METADATA_AUDIT_20260918.md",
-        "readiness_basis": "Researchagent explicitly reports DX03 complete, no remaining processes, goal blocked to prevent empty continuations, and requests next specific work package after review.",
-        "readiness_source_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-        "sent_at": "2026-09-18T01:00:28+08:00",
-        "research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-        "single_followup_after_explicit_ready_request": true,
-        "last_observed_thread_turn_id": "01a0b04f-9093-7bb3-b18c-374084002f09",
-        "last_observed_status": "inProgress",
-        "duplicate_dispatch_suppressed": true,
-        "sent_at_source": "recorded_after_successful_send_tool_response",
-        "completed_at": "2026-09-18T01:19:32+08:00",
-        "review": "../reviews/DX04_20260918.md",
-        "source_report": "../../research-runs/shared_plan_20260917/collaboration_round_4.md",
-        "source_commit": "da6d3f365030e0717ee9141eff19368efa597681"
-      }
-    ],
-    "last_substantive_review": "../reviews/DX04_20260918.md",
-    "last_cursor_reset_observed_at": "2026-09-17T23:44:29+08:00",
-    "queued_dispatch": null,
-    "dispatch_policy_state": "waiting_external_dependencies",
-    "waiting_on": [
-      "Actual billing/remaining allowance or explicitly authorized batch allowance",
-      "Original timestamp fields and two-real-source/ancestry acceptance"
-    ],
-    "no_repeat_work": [
-      "Do not repeat completed packages or tune C on the exposed 100 records",
-      "Do not repeat unchanged server/account probes or the pending budget question"
-    ]
-  },
-  "candidate_protocols": {
-    "A": {
-      "status": "reference_implemented_not_timing_accepted",
-      "frames": 6,
-      "triplets": 6
-    },
-    "B": {
-      "status": "proposal_not_selected",
-      "frames": 6,
-      "triplets": 2
-    },
-    "C": {
-      "id": "candidate_c_centered3_v1",
-      "status": "offline_software_and_archived_metadata_diagnostic_accepted_only",
-      "frames": 3,
-      "temporal_triplets": [
-        [
-          0,
-          1,
-          2
-        ]
-      ],
-      "static_triplets": [
-        [
-          0,
-          0,
-          0
-        ],
-        [
-          1,
-          1,
-          1
-        ],
-        [
-          2,
-          2,
-          2
-        ]
-      ],
-      "anchor_diagnostic_triplets": [
-        [
-          0,
-          0,
-          0
-        ]
-      ],
-      "target_edge_seconds": [
-        0.5,
-        0.5
-      ],
-      "eligibility_seconds": 1.5,
-      "target_span_seconds": 1.0,
-      "real_data_support_accepted": false,
-      "pts_acquisition_authorized": false,
-      "training_authorized": false,
-      "software_accepted_at": "2026-09-18T00:59:28+08:00",
-      "software_definition_plan_version": "cvpr27-20260918-v1.2",
-      "metadata_diagnostic_accepted_at": "2026-09-18T01:19:32+08:00",
-      "native_integer_pts_verified": false
-    }
+    "ack_sha256": "76e39cc56112206d08f330523f1dae9d7056637cde65b5e1e62910a8b81e612b",
+    "researchagent_read_version": "cvpr27-20260917-v1",
+    "acknowledged_plan_sha256": "25ccf8777e288015c146d43dd542c7b8d1c043b29e9f8271dd088d08975b8d48",
+    "acknowledged_research_role_sha256": "06441a457727feea79ecb4474f715bb64af1abf9c50bf69c7c3f476f6374fb3a",
+    "setup_status": "complete"
   }
 }

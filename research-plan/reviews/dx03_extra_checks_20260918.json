@@ -1,0 +1,40 @@
+{
+  "status": "pass",
+  "scope": "independent_mechanical_software_checks_only",
+  "observed_at": "2026-09-18T00:52:55.783595+08:00",
+  "source_commit": "e074ca7",
+  "original_receipt_sha256": "182ed655564f425c3ffc8ebdbfbd475dfbd67d1b19862ac5041e69daa5bb14bc",
+  "batch_size": 2,
+  "numpy_torch_response_max_error": {
+    "temporal": 3.885780586188048e-16,
+    "static": 7.771561172376096e-16,
+    "anchor_static": 5.551115123125783e-16
+  },
+  "independent_vfr_subset_cases": 256,
+  "checkpoint_rejections": [
+    "wrong_dtype",
+    "missing_key",
+    "extra_key",
+    "infinite_value"
+  ],
+  "checkpoint_mutations": 0,
+  "cpu_threads": 2,
+  "cuda_initialized": false,
+  "optimizer_steps": 0,
+  "real_media_read": false,
+  "server_accessed": false,
+  "scientific_gate_passed": false,
+  "elapsed_seconds": 0.6375035999999454,
+  "source_sha256": {
+    "forensics/composability.py": "428b5b20bb3840de82ce6e436c96dcd7f9e2921516d47df84da97ebaa9d60037",
+    "forensics/composability_torch.py": "9d9643d5ac91edb7ac6c0b75e323dab79937ba5a495135ed0f7b17c8685fb803",
+    "forensics/local_composability.py": "9c34100f9fc967ce6533476be7f23a86839c49ce18b68fb7782559d31a1727b9",
+    "forensics/mechanism_sampling.py": "16cecce9006711106d374301e049203c3ce1878894285c144a992fc406819860",
+    "forensics/composability_config.py": "c925fc407b93eb3e232b8c237b64a235f9c0698d6658b6677880e4f59be33490",
+    "configs/candidate_c_centered3_v1.json": "8f598b5cf1090db67bb1236ac2ba81e129347983970d185341033f3dc2df5683",
+    "tests/test_composability.py": "170d4a5313ee6418da08ad25b4686e5265122404271c00994ae37012a68ac0bf",
+    "tests/test_static_composability.py": "0c56abb7bbda2842ba44ffb4c2e5f5b41e2ac6606ea598bd8d9b404f54030b44",
+    "tests/test_candidate_c.py": "69ccae3b9426b08ba8d85a5a5ab088ca38a1ed2d7e22a71781081d20128c536e",
+    "scripts/check_candidate_c_cpu.py": "26cf8e1cc3963f2c7ec6da85054e6d618d1eef98567f75937233cfea907bdcd4"
+  }
+}

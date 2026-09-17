@@ -1,0 +1,1307 @@
+{
+  "schema_version": "0.4",
+  "project": "cvpr2027-operator-controlled-video-forensics",
+  "main_thread": "01a055fc-51ee-7b00-824b-087fc85b70d5",
+  "updated": "2026-09-14",
+  "goal": "在3000元与180 GPU小时上限内建立可迁移视频取证算法及独立证据，满足门槛后冲刺CVPR 2027主会。",
+  "canonical_plan": "PHASE2_PLAN_2026-09-14.md",
+  "status_values": [
+    "todo",
+    "ready",
+    "running",
+    "review",
+    "done",
+    "blocked"
+  ],
+  "tasks": [
+    {
+      "id": "S00",
+      "milestone": "M0",
+      "title": "服务器可迁移执行底座",
+      "assignee": "research-engineer",
+      "parents": [],
+      "status": "done",
+      "hypothesis": "相同配置可在新执行入口中复现数据处理、训练与中断恢复。",
+      "work": [
+        "可迁移入口和数据根路径",
+        "清单、预算、缓存、训练与最终访问约束",
+        "合成端到端与位级续训测试"
+      ],
+      "acceptance": [
+        "软件测试通过",
+        "历史研究结果不被改写",
+        "不冒充远程硬件验收"
+      ],
+      "artifacts": [
+        "../../research-runtime/server/README.md",
+        "../../research-runs/server_runtime_validation_v3/validation.json",
+        "../../research-runs/server_runtime_validation_v5/validation.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified"
+    },
+    {
+      "id": "S01",
+      "milestone": "M0",
+      "title": "服务器接入、硬件配额与实例单价核验",
+      "assignee": "research-engineer",
+      "parents": [],
+      "status": "done",
+      "hypothesis": "目标服务器可在已批准预算内稳定保存数据并执行训练。",
+      "work": [
+        "确认SSH主机与数据盘挂载点",
+        "核对GPU/CPU/RAM与驱动",
+        "记录价格、磁盘保留及停止计费动作"
+      ],
+      "acceptance": [
+        "SSH及配额实测",
+        "实例1.88元/小时由用户确认",
+        "存储单价和账单另列待核对，不冒充全额实付账单"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/server_connection.json",
+        "../artifacts/cvpr27/server_doctor.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified"
+    },
+    {
+      "id": "D00",
+      "milestone": "M0",
+      "title": "公共数据版本与清单审计",
+      "assignee": "research-engineer",
+      "parents": [],
+      "status": "done",
+      "hypothesis": "版本化公开清单可揭示影响独立划分的来源候选重叠。",
+      "work": [
+        "固定两个HF仓库commit",
+        "验证5份清单对象哈希",
+        "统计源前缀/提示跨split候选",
+        "实测远程ZIP索引"
+      ],
+      "acceptance": [
+        "发布版本和输入哈希齐全",
+        "候选重叠不冒充内容去重",
+        "未声称已获得视频"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/dataset_catalog_20260910.json",
+        "../artifacts/cvpr27/release_metadata_audit.json",
+        "../artifacts/cvpr27/cogvideox15_zip_index.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified"
+    },
+    {
+      "id": "D01",
+      "milestone": "M0",
+      "title": "服务器视频子集与祖先映射验收",
+      "assignee": "research-engineer",
+      "parents": [
+        "D00",
+        "S01",
+        "S02"
+      ],
+      "status": "blocked",
+      "hypothesis": "两个真实来源和四个生成器可组成可核查的独立开发池。",
+      "work": [
+        "分批下载选定成员",
+        "核对T2V、许可和来源/参考/提示映射",
+        "去重并排除历史595条",
+        "冻结6000条机制集",
+        "锁定版本的ModelScope和VideoCrafter2首批11.2GB归档下载已启动；来源与任务类型仍待验收",
+        "2026-09-11: cloned instance 35529 completed 1000-video strict and native-frame QC plus 100 retiming checks; 27002-video full QC running; real-source and ancestry acceptance remain incomplete.",
+        "2026-09-11: identified 135 shared filename-derived YouTube origin-ID candidates between Vript and HD-VG. Unify groups across collections and exclude shared candidates from independently held-out real-source evaluation.",
+        "2026-09-14: CVDF Kinetics-400 bounded probe extracted 16 complete MP4 members; all pass native 2s/8fps/16-frame sampled decode and all 16 exactly match official train.csv intervals (is_cc=0). This is availability/provenance evidence only, not accepted training data: one shard prefix, no full archive checksum, licence and cross-source ancestry unresolved.",
+        "2026-09-14 phase2: audit existing ComGenVid as exposed development; acquire/accept sufficient real-source diversity and preserve unseen final ancestors."
+      ],
+      "acceptance": [
+        "未知祖先单列不伪造verified",
+        "原视频及派生视图不跨角色",
+        "真假及各来源QC计数齐备"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/mechanism_manifest.jsonl",
+        "../artifacts/cvpr27/ancestry_audit.json",
+        "../../research-runs/overnight_closeout_20260910/report.md",
+        "../artifacts/cvpr27/real_source_id_candidates_20260911.json",
+        "../../research-runs/source_probe_20260914_cvdf/candidate_annotation_audit.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified",
+      "blocked_reason": "Accepted multi-source training and OOD manifests remain incomplete. MSVD/Sora/VEO3 local external-development videos now exist, but licences, cross-source ancestry, acquisition bias and new-role sampling need acceptance. Earlier availability blockers are historical, not proof that no external video exists."
+    },
+    {
+      "id": "S02",
+      "milestone": "M0",
+      "title": "100条性能测量与服务器GPU软件验证",
+      "assignee": "research-engineer",
+      "parents": [
+        "S00",
+        "S01"
+      ],
+      "status": "done",
+      "hypothesis": "单卡和分片缓存可在阶段预算内支持正式机制实验。",
+      "work": [
+        "100条历史性能样本",
+        "串行端到端和4/8/12进程预处理",
+        "GPU训练batch扫描",
+        "服务器GPU缓存/续训等价验证"
+      ],
+      "acceptance": [
+        "性能数据不冒充检测结果",
+        "实际账单独立等待核对",
+        "按实测吞吐选配置"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/server_profile.json",
+        "../artifacts/cvpr27/capacity_benchmark.json",
+        "../../research-runs/server_evidence_20260910/runs/gpu_smoke_cached_v1/validation.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified"
+    },
+    {
+      "id": "M01",
+      "milestone": "M2",
+      "title": "H1 相对算子响应的来源外验收",
+      "assignee": "research-engineer",
+      "parents": [
+        "S02",
+        "D01",
+        "P2D",
+        "P2C",
+        "B01"
+      ],
+      "status": "todo",
+      "hypothesis": "受控相对响应在新真实来源和未见生成器上超过简单融合与强表征基线。",
+      "work": [
+        "起步约2400条fit/calibration与900条OOD开发目标，不是已获样本",
+        "固定两未见生成器；采样和精度各臂一致",
+        "单对照、多对照、归一化、拼接、DINO对照",
+        "随机编码器五种子；确定性LR不伪造种子稳定性",
+        "祖先分层bootstrap与mask/插值核排假"
+      ],
+      "acceptance": [
+        "预注册macro增益>=.03且配对CI下界>0",
+        "两OOD生成器同方向，worst组下降<=.01",
+        "clean损失<=.01、留出整视频退化增益为正",
+        "所有失败组保留；负结果允许完成研究任务但不放行方法"
+      ],
+      "artifacts": [
+        "../artifacts/phase2/h1_protocol.json",
+        "../artifacts/phase2/h1_predictions.json",
+        "../artifacts/phase2/h1_decision.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified",
+      "phase": "phase2"
+    },
+    {
+      "id": "B01",
+      "milestone": "M1",
+      "title": "公开强基线与新颖性核对",
+      "assignee": "research-engineer",
+      "parents": [
+        "S02",
+        "P2A"
+      ],
+      "status": "running",
+      "hypothesis": "当前线索包含超出强表征和已有方法的研究空间。",
+      "work": [
+        "DINOv2 LR/MLP与普通对齐",
+        "D3/ReStraV/WaveRep/RIFT原生复现",
+        "RIFT/G2VD/DCPT/WaveRep逐项差异表",
+        "预训练来源重叠核对",
+        "优先 D3/STALL 同 ID 原生参考；与匹配 DINO 表征轨道分表",
+        "核对光流残差/时空一致性先例；未经逐项比较不宣称新颖",
+        "2026-09-14: pinned STALL commit bfcc603 and D3 commit c798fbc with license records; source provenance complete, native reproduction still pending.",
+        "2026-09-15: STALL full official embedding route scored 5098 records; matched 150 IDs AUROC 0.8228 vs frozen fusion 0.6056. Native reference only; common-protocol comparison still pending."
+      ],
+      "acceptance": [
+        "原生与匹配协议分表",
+        "所有失败复现记录",
+        "不把网址或适配器当复现完成"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/baseline_report.md",
+        "../artifacts/cvpr27/novelty_matrix.json",
+        "../../research-runs/baseline_provenance_20260914.json",
+        "../../research-runs/stall_comgenvid_20260915_comparison.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified",
+      "phase": "phase2",
+      "result": {
+        "stall_full_auc": 0.8524546178895587,
+        "stall_matched150_auc": 0.8228,
+        "fusion_matched150_auc": 0.6056,
+        "interpretation": "cross-source representation gap; not fair same-backbone ranking"
+      }
+    },
+    {
+      "id": "M02",
+      "milestone": "M3",
+      "title": "H1 支持下的可靠性读出或失败解释",
+      "assignee": "research-engineer",
+      "parents": [
+        "M01",
+        "B01"
+      ],
+      "status": "todo",
+      "hypothesis": "只有H1成立时，可靠性读出才可能在相同覆盖率下提供额外泛化收益。",
+      "work": [
+        "检查H1结论及证据哈希，通过才运行H2",
+        "比较均匀/同覆盖率随机/可靠性/mask-only",
+        "H1失败只做一次原因诊断，不自动训练新架构",
+        "最多选择一个候选；SNN继续低优先级"
+      ],
+      "acceptance": [
+        "H1通过和失败分支均记录明确决定",
+        "不以丢弃困难视频换高分",
+        "没有可靠性增益则保留H1最小模型"
+      ],
+      "artifacts": [
+        "../artifacts/phase2/h2_or_failure_report.json",
+        "../artifacts/cvpr27/method_decision.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified",
+      "phase": "phase2"
+    },
+    {
+      "id": "E01",
+      "milestone": "M4",
+      "title": "规模曲线、消融及最终协议锁定",
+      "assignee": "research-engineer",
+      "parents": [
+        "P2G"
+      ],
+      "status": "todo",
+      "hypothesis": "主方法增量在规模、来源和处理链变化下保持。",
+      "work": [
+        "必须检查P2G科学结论为pass；done或产物存在本身不释放训练。",
+        "24000/48000/96000规模阶梯；96000档需补充独立真实来源",
+        "冻结强基线、参数、阈值和主比较",
+        "检查最终来源与预训练污染"
+      ],
+      "acceptance": [
+        "测试打开前签署开发审查",
+        "无增量则停止赶稿",
+        "完整费用和代码锁定"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/final_protocol.json",
+        "../artifacts/cvpr27/development_review.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified"
+    },
+    {
+      "id": "E02",
+      "milestone": "M4",
+      "title": "一次性外部确认",
+      "assignee": "research-engineer",
+      "parents": [
+        "E01"
+      ],
+      "status": "todo",
+      "hypothesis": "未知生成器与新真实来源满足预设效果与最差组门槛。",
+      "work": [
+        "至少20000条确认目标：8000真、六个生成器各2000假",
+        "未见H265与复合路径",
+        "记录失败组和全链路成本"
+      ],
+      "acceptance": [
+        "macro增益>=.02且配对区间下界>0",
+        "最差组>=.03、clean损失<=.01",
+        "六个生成器和新真实来源；所有失败结果保留"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/final_predictions.json",
+        "../artifacts/cvpr27/final_decision.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified"
+    },
+    {
+      "id": "R27",
+      "milestone": "M5",
+      "title": "独立复核与论文证据包",
+      "assignee": "independent-reviewer",
+      "parents": [
+        "E02"
+      ],
+      "status": "todo",
+      "hypothesis": "不同复核者能够从锁定产物重建论文主表。",
+      "work": [
+        "独立重算表图",
+        "核对主张、失败结果和限制",
+        "完成可编辑图、正文和补充材料"
+      ],
+      "acceptance": [
+        "不同于实现者的复核记录",
+        "最终试验不回流调参",
+        "所有主张有可重算依据"
+      ],
+      "artifacts": [
+        "../artifacts/cvpr27/independent_review.json",
+        "../artifacts/cvpr27/claim_evidence.json"
+      ],
+      "budget_policy": "CNY3000 and 180 paid GPU-hours; stage reservations required; no provider lifecycle verified"
+    },
+    {
+      "id": "N11",
+      "milestone": "M0-night-data-audit",
+      "title": "9月11日十点截止的夜间数据与采样诊断",
+      "assignee": "research-engineer",
+      "parents": [
+        "D00",
+        "S01"
+      ],
+      "status": "done",
+      "hypothesis": "两秒准入会因封装时间尺度排除同样帧数的视频，固定帧数诊断能恢复覆盖但不自动消除来源混杂。",
+      "work": [
+        "完成500+500固定时间检查",
+        "完成相同1000条原生16帧补充检查",
+        "完成100条无重编码变速与像素一致性检查",
+        "全量27002条原归档资产检查及重复候选",
+        "到期同步结果并关闭新实例",
+        "User-authorized GPU utilization correction: frozen DINOv2-B features for 27002 native-frame videos and RAFT-small first-pair estimator diagnostics for fixed 1000; no classifier fitting."
+      ],
+      "acceptance": [
+        "严格区分补充诊断和预注册主结果",
+        "不输出单一真假类别的分类性能",
+        "原视频与代码版本可追溯",
+        "最晚2026-09-11T10:00:00+08:00关机并如实验证"
+      ],
+      "artifacts": [
+        "../NIGHT_RUNBOOK_20260911.md",
+        "../artifacts/cvpr27/overnight_20260911.json",
+        "../../research-runs/overnight_20260911/night_checkpoint_v1.zip",
+        "../../research-runtime/server/scripts/gpu_night_features.py",
+        "../../research-runtime/server/scripts/gpu_night_queue.py",
+        "../../research-runs/overnight_20260911/full_qc_report.md",
+        "../../research-runs/overnight_20260911/full_qc_checkpoint_validation.json",
+        "../../research-runs/overnight_20260911/final_report.md",
+        "../../research-runs/overnight_20260911/real_and_closeout_checkpoint_validation.json",
+        "../../research-runs/overnight_20260911/shutdown_verification.json",
+        "../../research-runs/overnight_20260911/deadline_guard_fix_verification.json"
+      ],
+      "deadline": "2026-09-11T10:00:00+08:00",
+      "outcome": {
+        "deadline_met": true,
+        "review": "primary implementer artifact verification; not independent scientific reproduction",
+        "vript_native_features": 1727,
+        "generated_native_ok": 27000,
+        "vript_downloaded": 1746,
+        "shutdown_local": "2026-09-11T03:56:07+08:00",
+        "formal_training_started": false
+      }
+    },
+    {
+      "id": "P2A",
+      "milestone": "M0",
+      "title": "第二阶段事实回放与配对证据审计",
+      "assignee": "research-engineer",
+      "parents": [],
+      "status": "done",
+      "hypothesis": "内部融合数字可复算，但来源外增量及配对必要性可能不成立。",
+      "work": [
+        "五个冻结 LR 对照",
+        "祖先分组 bootstrap",
+        "类别/来源内双端置换",
+        "保存模型、预测、输入输出哈希"
+      ],
+      "acceptance": [
+        "重现历史内外部点估计",
+        "独立公式复算和模型概率回放",
+        "解释与统计限制记录"
+      ],
+      "artifacts": [
+        "../../research-runs/phase2_evidence_audit_20260914/report.md",
+        "../../research-runs/phase2_evidence_audit_20260914/results.json",
+        "../../research-runs/phase2_evidence_audit_20260914/predictions.json",
+        "../../research-runs/phase2_evidence_audit_20260914/models.json",
+        "../../research-runs/phase2_evidence_audit_20260914/input_lock.json",
+        "../../research-runs/phase2_evidence_audit_20260914/artifact_hashes.json",
+        "../../research-runs/phase2_evidence_audit_20260914/verification.json"
+      ],
+      "phase": "phase2",
+      "dataset_version": "legacy and exposed external development; new-source acceptance pending",
+      "seed": [
+        17,
+        29,
+        43,
+        59,
+        71
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "phase_proposed_gpu_hour_ceiling": 40,
+        "phase_proposed_cny_ceiling": 400,
+        "within_existing_total": true
+      },
+      "code_revision": null,
+      "config_hash": null,
+      "split_hash": null,
+      "checkpoint_hash": null,
+      "rejection_policy": "Preserve valid negative results; no automatic escalation",
+      "artifact_sha256": {
+        "../../research-runs/phase2_evidence_audit_20260914/report.md": "16ae7923ea5377a60ad1e1d31885c102039bdbfc74b965f297b58f31a5130253",
+        "../../research-runs/phase2_evidence_audit_20260914/results.json": "269be1c1d8f722515380aca57c6057c2c6a381712ff7438fcf6bdfdae3b418c9",
+        "../../research-runs/phase2_evidence_audit_20260914/predictions.json": "a139af5a7c1513147b7103215140711c5390f7d8ffc580beb6eccb5d75ebe284",
+        "../../research-runs/phase2_evidence_audit_20260914/models.json": "b04ed4c6e9f5b0df5447c587be88081326094df602dcd6ef8aa72a29cb4297ed",
+        "../../research-runs/phase2_evidence_audit_20260914/input_lock.json": "0e3eb8bbd64123b622cb22cade5f2b65afb663aa718cf68c4a4fa01868c32631",
+        "../../research-runs/phase2_evidence_audit_20260914/artifact_hashes.json": "91d7170c1a1a46d5b17a573b5553eb98118c4289e95cac43c8b42cc190d0e524",
+        "../../research-runs/phase2_evidence_audit_20260914/verification.json": "085b42dcc7ff855b3a979e05c42c47f5a0cdb1fd5d82fa6d8cc2369f7fb21f25"
+      },
+      "review": {
+        "reviewer": "primary agent mechanical replay",
+        "verdict": "pass",
+        "independent_scientific_review": false
+      },
+      "result": {
+        "external_delta": 0.0034,
+        "external_delta_ci95": [
+          -0.05731,
+          0.06471
+        ],
+        "pairing_necessity": "not established",
+        "claim_status": "exploratory only"
+      }
+    },
+    {
+      "id": "P2D",
+      "milestone": "M1",
+      "title": "已接触样本登记与采样精度一致性",
+      "assignee": "research-engineer",
+      "parents": [
+        "P2A"
+      ],
+      "status": "ready",
+      "hypothesis": "来源祖先分组、角色登记和统一精度可使后续比较具有可核查的共同协议。",
+      "work": [
+        "登记所有已接触外部 ID/哈希和可知祖先",
+        "4fps/128 回放与 8fps/224 新轨分开",
+        "固定小样本 float16/float32 等价检查",
+        "冻结新开发与最终确认角色，未知祖先单列"
+      ],
+      "acceptance": [
+        "外部已接触池不会流入最终确认",
+        "精度差异及指标影响完整报告",
+        "数据许可状态链接 D01"
+      ],
+      "artifacts": [
+        "../artifacts/phase2/exposure_registry.json",
+        "../artifacts/phase2/protocol_equivalence.json",
+        "../artifacts/phase2/split_contract.json"
+      ],
+      "phase": "phase2",
+      "dataset_version": "legacy and exposed external development; new-source acceptance pending",
+      "seed": [
+        17,
+        29,
+        43,
+        59,
+        71
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "phase_proposed_gpu_hour_ceiling": 40,
+        "phase_proposed_cny_ceiling": 400,
+        "within_existing_total": true
+      },
+      "code_revision": null,
+      "config_hash": null,
+      "split_hash": null,
+      "checkpoint_hash": null,
+      "rejection_policy": "Preserve valid negative results; no automatic escalation"
+    },
+    {
+      "id": "P2C",
+      "milestone": "M2",
+      "title": "H1 受控相对响应原型与本地性能测量",
+      "assignee": "research-engineer",
+      "parents": [
+        "P2A"
+      ],
+      "status": "review",
+      "hypothesis": "多对照相对响应可实现，且不由插值次数或支持区域差异解释。",
+      "work": [
+        "四个匹配错误对应和相对响应图",
+        "普通差分/多对照/归一化组件对照",
+        "已知平移、零纹理、越界和共同支持测试",
+        "100 条旧开发视频 profile；无来源外选模型",
+        "2026-09-14: implemented median-control robust response; synthetic invariants pass; legacy audit AUROC 0.67895, below fusion; preserve as negative diagnosis."
+      ],
+      "acceptance": [
+        "所有分支相同采样和 mask",
+        "退化分母/截断率可审计",
+        "给出全链路时间与失败样本"
+      ],
+      "artifacts": [
+        "../../experiments/operator_response_v1/run.py",
+        "../../experiments/operator_response_v1/test.py",
+        "../../research-runs/operator_response_v1_20260914/protocol.json",
+        "../../research-runs/operator_response_v1_20260914/results.json",
+        "../../research-runs/operator_response_v1_20260914/manifest_lock.json"
+      ],
+      "phase": "phase2",
+      "dataset_version": "legacy and exposed external development; new-source acceptance pending",
+      "seed": [
+        17,
+        29,
+        43,
+        59,
+        71
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "phase_proposed_gpu_hour_ceiling": 40,
+        "phase_proposed_cny_ceiling": 400,
+        "within_existing_total": true
+      },
+      "code_revision": null,
+      "config_hash": null,
+      "split_hash": null,
+      "checkpoint_hash": null,
+      "rejection_policy": "Preserve valid negative results; no automatic escalation",
+      "result": {
+        "audit_auc": 0.6789473684210526,
+        "decision": "negative_first_operator_response_candidate",
+        "baseline_fusion_audit_auc": 0.8862573099415205,
+        "meaning": "implementation and invariants pass; relative response does not advance as main method on legacy audit"
+      }
+    },
+    {
+      "id": "P2G",
+      "milestone": "M3",
+      "title": "第二阶段 Go/No-Go 与唯一候选冻结",
+      "assignee": "research-engineer",
+      "parents": [
+        "M01",
+        "M02",
+        "B01",
+        "P2D"
+      ],
+      "status": "todo",
+      "hypothesis": "一个最小候选能够满足预设外部开发增量、对照和成本门槛。",
+      "work": [
+        "汇总H1/H2/失败结果",
+        "核对来源、基线和预算",
+        "决定扩容或延后投稿；不打开最终集"
+      ],
+      "acceptance": [
+        "明确pass/fail，不以任务done冒充方法通过",
+        "只有pass才释放规模化训练",
+        "保存唯一候选和主张证据矩阵"
+      ],
+      "artifacts": [
+        "../artifacts/phase2/stage_decision.json",
+        "../artifacts/phase2/claim_evidence.json"
+      ],
+      "phase": "phase2",
+      "dataset_version": "legacy and exposed external development; new-source acceptance pending",
+      "seed": [
+        17,
+        29,
+        43,
+        59,
+        71
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "phase_proposed_gpu_hour_ceiling": 40,
+        "phase_proposed_cny_ceiling": 400,
+        "within_existing_total": true
+      },
+      "code_revision": null,
+      "config_hash": null,
+      "split_hash": null,
+      "checkpoint_hash": null,
+      "rejection_policy": "Preserve valid negative results; no automatic escalation"
+    }
+  ],
+  "storage_policy": {
+    "primary": "server:/root/autodl-tmp/cvpr27",
+    "local_workspace": "E:/aNB/TECH/脉冲神经网络",
+    "raw_videos": "server_read_only",
+    "portable_manifests": "root_relative_POSIX",
+    "secrets_in_repository": false
+  },
+  "direction_decision": {
+    "date": "2026-09-08",
+    "basis": "Q02",
+    "memory_priority": "deprioritized",
+    "claim": "No evidence to scale order-specific memory in this bounded design; SNN not directly tested.",
+    "alignment_update": "2026-09-09: local correspondence controls passed; mask probe AUROC .8035; gain representation not superior; independent replication pending; no SNN escalation",
+    "phase2_update": "P2C first relative-response formula implemented and rejected as main method on legacy audit; do not tune on audit; next P2D/B01 and one bounded variant only after protocol freeze."
+  },
+  "historical_tasks": [
+    {
+      "id": "Q00",
+      "milestone": "M0",
+      "title": "E盘运行环境与元信息捷径诊断",
+      "assignee": "research-engineer",
+      "parents": [],
+      "status": "done",
+      "hypothesis": "仅使用元信息即可在按原视频前缀分组的开发样本上预测来源相关真假标签。",
+      "work": [
+        "E盘缓存/临时环境验证",
+        "预先固定120条样本与72/24/24角色划分",
+        "记录解码、字节哈希、近重复候选复核",
+        "拟合并复核三组预设元信息分类器",
+        "保留v1拟合前阻断与v2修订记录"
+      ],
+      "acceptance": [
+        "所有研究输出位于E盘",
+        "数据选择/配置先于拟合固定，校准阈值不使用audit",
+        "逐样本输出、参数、哈希和代码快照完整",
+        "概率重算与pairwise AUROC一致，研究意义不外推"
+      ],
+      "artifacts": [
+        "../../research-runtime/environment.json",
+        "../../research-runs/m0_metadata_v2/run_lock.json",
+        "../../research-runs/m0_metadata_v2/metrics.json",
+        "../../research-runs/m0_metadata_v2/verification.json",
+        "../../research-runs/m0_metadata_v2/artifact_hashes.json",
+        "../../research-runs/m0_metadata_v2/research_checkpoint.md"
+      ],
+      "seed": 20260907,
+      "dataset_version": "v02 historical development subset120; not finaltest",
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_training": false,
+        "sample_count": 120,
+        "max_decode_seconds": 600
+      },
+      "review": {
+        "type": "mechanical_and_primary_researcher_review",
+        "independent_scientific_review": false,
+        "verdict": "complete_for_bounded_M0_diagnostic_only"
+      },
+      "limitations": [
+        "small24clipaudit",
+        "real-prefix grouping is provisional",
+        "fake prompt/source group unknown",
+        "metadatadiagnostic does not establish detector performance"
+      ]
+    },
+    {
+      "id": "Q01",
+      "milestone": "M1-development-pilot",
+      "title": "本地神经基线训练与一次过拟合配方调整",
+      "assignee": "research-engineer",
+      "parents": [
+        "Q00"
+      ],
+      "status": "done",
+      "hypothesis": "统一采样和尺寸后，小型残差时序网络能否学习超过简单逐帧均值的开发判别信息，且配方调整能否缓解过拟合。",
+      "work": [
+        "120条固定开发输入按预先质量规则保留118条，70/24/24角色不变",
+        "三个模型×三个种子×20轮；v1/v2合计18个fit",
+        "仅由calibration选择checkpoint与阈值；v2调整先于所有audit结果",
+        "保留过拟合、v2未改善及残差顺序诊断",
+        "数值复算54组结果并保留逐视频预测"
+      ],
+      "acceptance": [
+        "本地E盘运行、无网络下载",
+        "损失和梯度有限，checkpoint加载可复现",
+        "所有版本、种子、条件结果齐备",
+        "配对区间和小样本限制报告，不通过该pilot宣称E1/E2完成"
+      ],
+      "artifacts": [
+        "../../research-runs/neural_pilot_summary_2026-09-08.md",
+        "../../research-runs/neural_pilot_v1/training_complete.json",
+        "../../research-runs/neural_pilot_v1/evaluation.json",
+        "../../research-runs/neural_pilot_v1/verification.json",
+        "../../research-runs/neural_pilot_v2/training_complete.json",
+        "../../research-runs/neural_pilot_v2/evaluation.json",
+        "../../research-runs/neural_pilot_v2/verification.json"
+      ],
+      "dataset_version": "RoboVid-v02-historical120-QC118-development-only",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu": "local RTX4060Laptop",
+        "max_training_seconds_per_version": 1800,
+        "actual_training_seconds_v1": 69.48265850000098,
+        "actual_training_seconds_v2": 63.8293715999971
+      },
+      "review": {
+        "type": "checkpoint_reload_and_per_sample_metric_recomputation",
+        "independent_scientific_review": false,
+        "verdict": "complete_for_explicitly_authorized_development_training_pilot"
+      },
+      "outcome": "alignment point estimates higher but paired CI includes zero; v2 adjustment did not improve; no SNN trained"
+    },
+    {
+      "id": "Q02",
+      "milestone": "M1-development-gate",
+      "title": "扩大样本与等参数无序池化对照",
+      "assignee": "research-engineer",
+      "parents": [
+        "Q01"
+      ],
+      "status": "done",
+      "hypothesis": "对齐残差中的顺序记忆能否在扩大开发样本后提供超过等参数无序池化的稳定增益。",
+      "work": [
+        "固定600条新抽开发视频，排除首轮源前缀/文件及字节哈希",
+        "未对齐/对齐×GRU/无序MLP共四模型，精确同参数49601",
+        "3seeds×20epochs并报告clean/JPEG70/gaussian5",
+        "固定8维残差统计副检查",
+        "按预注册门槛决定继续或降低SNN/状态输运优先级"
+      ],
+      "acceptance": [
+        "不改变audit分数方向/规则或重复搜索配方",
+        "保留质量排除、哈希、逐视频概率和种子差异",
+        "主判定使用≥0.02增益、下置信界>0、2/3同方向",
+        "未通过时保留负结果并写出转向决定"
+      ],
+      "artifacts": [
+        "../../research-runs/order_gate_v1/protocol.json",
+        "../../research-runs/order_gate_v1/manifest.json",
+        "../../research-runs/order_gate_v1/training_complete.json",
+        "../../research-runs/order_gate_v1/decision.json",
+        "../../research-runs/order_gate_v1/gate_report.md",
+        "../PIVOT_DECISION_2026-09-08.md"
+      ],
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "dataset_version": "v02 historical pool;600 presampled excluding initial120 source-prefix/file IDs;development only",
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "max_cache_seconds": 1800,
+        "max_training_seconds": 1800
+      },
+      "risks": [
+        "single real source",
+        "fake prompt ancestry unknown",
+        "optimization difficulty differs despite exact parameter count"
+      ],
+      "outcome": {
+        "kept": 595,
+        "audit": 117,
+        "fits": 12,
+        "primary_gate": "failed_all_three_checks",
+        "aligned_gru_minus_bag": -0.032163742690058506,
+        "paired95": [
+          -0.06784356725146205,
+          0.0011695906432749315
+        ],
+        "decision": "deprioritize_order_specific_memory"
+      },
+      "review": {
+        "type": "checkpoint_reload_and_per_sample_metric_recompute;primary_researcher_decision",
+        "independent_scientific_review": false,
+        "verdict": "bounded_gate_complete_with_negative_result"
+      }
+    },
+    {
+      "id": "P01",
+      "milestone": "M2-development-diagnostic",
+      "title": "对齐表示收益的排假验证",
+      "assignee": "research-engineer",
+      "parents": [
+        "Q02"
+      ],
+      "status": "review",
+      "hypothesis": "正确运动对应提供超出同次数插值、有效区域mask和源分布差异的判别信息。",
+      "work": [
+        "冻结正确/错误对应和等插值对照",
+        "各对照共享有效区域并记录mask统计",
+        "匹配无序池化读出、数据与预算",
+        "预先给出否定条件，不在旧audit调参"
+      ],
+      "acceptance": [
+        "正确对应需超过等插值和mask对照",
+        "负结果删除对应机制主张",
+        "现有历史audit仅诊断，新增结果需独立来源确认"
+      ],
+      "artifacts": [
+        "../../research-runs/alignment_gate_v1/protocol.json",
+        "../../research-runs/alignment_gate_v1/report.md",
+        "../../research-runs/alignment_gate_v1/predictions.json",
+        "../../research-runs/alignment_gate_v1/decision.json",
+        "../../research-runs/alignment_gate_v1/probes.json",
+        "../../research-runs/alignment_gate_v1/verification.json",
+        "../../research-runs/alignment_gate_v1/artifact_hashes.json",
+        "../ALIGNMENT_DECISION_2026-09-09.md"
+      ],
+      "dataset_version": "order_gate_v1 retained 595 videos; identical fit/calibration/audit; reused development audit",
+      "seed": [
+        17,
+        29,
+        43
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "local_gpu_fits": 15,
+        "max_cache_seconds": 1800,
+        "max_training_seconds": 1800,
+        "remote_jobs": false
+      },
+      "split_hash": "ca9bcf0c38e507282f78eaea1be2f50180b41af58dbd93d66d7ffe14449d1b9f",
+      "config_hash": "2412849bbf0a32643cbc28555b694927e9287eb27a7ae96b8537069e01bf0b8d",
+      "code_revision": "Source SHA256 set frozen in research-runs/alignment_gate_v1/lock.json; project code is not committed",
+      "review": {
+        "remaining": "Mask intervention and independent real-source/unseen-generator replication",
+        "type": "primary_implementer_mechanical_recomputation",
+        "verification": "../../research-runs/alignment_gate_v1/verification.json",
+        "independent_replication_complete": false,
+        "independent_scientific_review": false,
+        "local_gate_pass": true
+      }
+    },
+    {
+      "id": "R00",
+      "milestone": "M0",
+      "title": "反方审查与先例差距复核",
+      "assignee": "research-lead",
+      "parents": [],
+      "status": "review",
+      "hypothesis": "现有先例仍未充分解释和解决对齐造成的视频取证证据损失。",
+      "work": [
+        "核验光流取证、warped hidden state、阈值归一化和不变性先例",
+        "记录 C1/C2 与最近邻的准确差异"
+      ],
+      "acceptance": [
+        "以机制差异而非任务改名说明新颖性",
+        "全文不足的条目标记证据缺口",
+        "完成复核后才将该任务设为 done"
+      ],
+      "artifacts": [
+        "../ADVERSARIAL_REVIEW_2026-09-07.md"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "R01",
+      "milestone": "M0",
+      "title": "原视频分组与开发资产核验",
+      "assignee": "research-lead",
+      "parents": [],
+      "status": "running",
+      "hypothesis": "同源片段和派生视图的交叉能在训练前通过来源分组审计消除。",
+      "work": [
+        "已运行只读原视频前缀交叉检查",
+        "继续核对原元数据、内容重复、许可和可用硬件",
+        "界定历史测试为开发诊断",
+        "已完成120条源分组开发样本的元信息捷径检查：三组预设特征的24条audit AUROC均为1.0，仅作为小样本数据诊断",
+        "已核查旧抽帧重复索引及直轨迹公式伪曲率；实现拒绝重复补帧的名义CFR采样计划",
+        "2026-09-09优先补齐第二真实来源、未见生成器、许可与source/prompt映射；本地对齐排假通过不释放最终确认门槛"
+      ],
+      "acceptance": [
+        "前缀审计不冒充内容去重",
+        "分组单元与证据路径可重算",
+        "输入数据与协议约束记录"
+      ],
+      "artifacts": [
+        "../artifacts/source_group_audit.json",
+        "artifacts/R01/asset_review.md",
+        "../../research-runs/m0_metadata_v2/research_checkpoint.md"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "R02",
+      "milestone": "M1",
+      "title": "冻结开发与最终验证协议",
+      "assignee": "research-engineer",
+      "parents": [
+        "R00",
+        "R01"
+      ],
+      "status": "todo",
+      "hypothesis": "按原视频和生成器分组后可以评估真实时序增益。",
+      "work": [
+        "开发集选择与最终未打开测试隔离",
+        "冻结错误对应、遮挡、padding、时间乱序和单帧对照",
+        "对真假施加相同干预分布"
+      ],
+      "acceptance": [
+        "无源组跨 split",
+        "不按最终测试调阈值或分数方向",
+        "split/config hash 和运行预算已确定"
+      ],
+      "artifacts": [
+        "artifacts/R02/protocol.json"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "R03",
+      "milestone": "M1",
+      "title": "最小共同基线与运算测量",
+      "assignee": "research-engineer",
+      "parents": [
+        "R02"
+      ],
+      "status": "todo",
+      "hypothesis": "固定预处理和预算能比较图像聚合、普通时间模型与 SNN。",
+      "work": [
+        "固定语义骨干和对应估计",
+        "运行单帧聚合、残差 ANN、固定 LIF 及强增强基线",
+        "对可用 MAST 代码确认版本，不可用则标明重实现"
+      ],
+      "acceptance": [
+        "逐视频输出及采样、checkpoint、代码版本齐备",
+        "可重算结果",
+        "资源需求经小样本 profile 确定"
+      ],
+      "artifacts": [
+        "artifacts/R03/baseline_report.md",
+        "artifacts/R03/predictions.parquet"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "E1",
+      "milestone": "M2",
+      "title": "对齐收益与证据损失实验",
+      "assignee": "research-engineer",
+      "parents": [
+        "R03"
+      ],
+      "status": "todo",
+      "hypothesis": "固定画面与运动参照中的取证证据在不可靠对应下存在稳定互补。",
+      "work": [
+        "未对齐、仅对齐、concat、可信度路由，保持总容量",
+        "按遮挡、运动、退化分层；加入错误对应",
+        "先轻量读出验证，不叠加大型结构"
+      ],
+      "acceptance": [
+        "报告配对区间和等参数双路对照",
+        "没有互补时删除双参照主张",
+        "每次拒绝与负结果留档"
+      ],
+      "artifacts": [
+        "artifacts/E1/report.md",
+        "artifacts/E1/predictions.parquet"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "E2",
+      "milestone": "M2",
+      "title": "脉冲机制必要性实验",
+      "assignee": "research-engineer",
+      "parents": [
+        "E1"
+      ],
+      "status": "todo",
+      "hypothesis": "相同参照与增强下 SNN 具有可测的性能或开销优势。",
+      "work": [
+        "固定 LIF、输运 LIF、可信度双参照 LIF 与 GRU/ANN",
+        "探索 3 seeds；分开同参数与同延迟比较"
+      ],
+      "acceptance": [
+        "计入解码、骨干和 Warp",
+        "报告准确率—延迟前沿",
+        "被 ANN 全面支配时不保留 SNN 作为主贡献"
+      ],
+      "artifacts": [
+        "artifacts/E2/pareto_report.md"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null,
+      "priority": "deprioritized",
+      "reactivation_condition": "P01/P02 identify a representation or sequence mechanism requiring a spiking-memory comparison; Q02 alone does not support scaling."
+    },
+    {
+      "id": "E3",
+      "milestone": "M2",
+      "title": "选择性配对监督验证",
+      "assignee": "research-engineer",
+      "parents": [
+        "E1"
+      ],
+      "status": "todo",
+      "hypothesis": "选择性约束优于全局不变性且不会以丢弃困难样本换取稳定性。",
+      "work": [
+        "普通增强、全局一致性和选择性配对三组",
+        "固定/stop-gradient 权重；记录有效覆盖率和判别间距"
+      ],
+      "acceptance": [
+        "排除零权重和常量特征坍缩",
+        "teacher 不访问最终测试",
+        "没有优势时保留普通增强"
+      ],
+      "artifacts": [
+        "artifacts/E3/report.md"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "R04",
+      "milestone": "M3",
+      "title": "最小方法定型",
+      "assignee": "research-engineer",
+      "parents": [
+        "E2",
+        "E3"
+      ],
+      "status": "todo",
+      "hypothesis": "由机制实验支持的最小结构提供超出容量和数据增强的增益。",
+      "work": [
+        "仅采用被支持的 C1/C2 组件",
+        "将 Tube、GRL、EvAF 和多尺度设为可选消融",
+        "锁定实际最终方法"
+      ],
+      "acceptance": [
+        "保留/删除清单均有机制证据",
+        "无预设强制 SNN",
+        "输入输出和训练推理契约冻结"
+      ],
+      "artifacts": [
+        "artifacts/R04/method_card.md"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "R05",
+      "milestone": "M4",
+      "title": "外部泛化与规避压力评测",
+      "assignee": "research-engineer",
+      "parents": [
+        "R04"
+      ],
+      "status": "todo",
+      "hypothesis": "开发阶段结论可迁移到未知生成器、来源和路径。",
+      "work": [
+        "冻结最终协议再打开测试",
+        "自然退化与有界恶意后处理分表",
+        "SNN 替代梯度/迁移对照，排除梯度遮蔽"
+      ],
+      "acceptance": [
+        "各组区间、误报和漏检齐备",
+        "拒识报告 coverage 与 risk",
+        "不改变最终测试规则"
+      ],
+      "artifacts": [
+        "artifacts/R05/final_report.md",
+        "artifacts/R05/predictions.parquet"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    },
+    {
+      "id": "R06",
+      "milestone": "M5",
+      "title": "独立复核与论文证据包",
+      "assignee": "independent-reviewer",
+      "parents": [
+        "R05"
+      ],
+      "status": "todo",
+      "hypothesis": "每项研究主张均能被实现者以外的复核者重算。",
+      "work": [
+        "独立重算主表与图",
+        "复核理论假设和新颖性",
+        "汇集锁定产物与失败案例"
+      ],
+      "acceptance": [
+        "不同复核者出具 verdict",
+        "主张—证据矩阵与哈希齐备",
+        "仅引用实际测量"
+      ],
+      "artifacts": [
+        "artifacts/R06/review.json",
+        "artifacts/R06/claim_evidence_matrix.csv"
+      ],
+      "budget": {
+        "paid_jobs": false,
+        "remote_jobs": false,
+        "gpu_hours": null
+      },
+      "dataset_version": "RoboVid-v02-development-only; confirmatory set pending",
+      "seed": null,
+      "split_hash": null,
+      "config_hash": null,
+      "checkpoint_hash": null,
+      "code_revision": null
+    }
+  ],
+  "budget": {
+    "total_cny": 3000,
+    "paid_gpu_hours": 180,
+    "categories": {
+      "storage": 500,
+      "profile": 200,
+      "mechanism": 1000,
+      "method": 1000,
+      "recovery": 300
+    }
+  },
+  "study_scale": {
+    "status": "prospective_targets_not_acquired_samples",
+    "mechanism_clips": 18000,
+    "training_ladder": [
+      24000,
+      48000,
+      96000
+    ],
+    "default_training_target": 48000,
+    "calibration_target": 6000,
+    "ood_development_target": 6000,
+    "final_confirmation_target": 20000,
+    "final_min_real": 8000,
+    "final_min_fake_generators": 6,
+    "final_min_fake_per_generator": 2000,
+    "minimum_training_real_sources": 2,
+    "final_unseen_real_sources": 1,
+    "seeds": [
+      17,
+      29,
+      43,
+      59,
+      71
+    ],
+    "bootstrap_replicates": 5000,
+    "backbone_main": "dinov2_vitb14",
+    "backbone_capacity_check": "dinov2_vitl14",
+    "rules": [
+      "Counts must follow ancestry/quality audit; no duplication to meet quotas",
+      "96000 training tier requires an additional independently sourced real pool; never take the final real pool into training",
+      "Legacy local T2VZ was entirely ineligible at 8 fps; public releases must be audited separately",
+      "Keep task types separate and final identities closed until method freeze",
+      "Expanded monetary/GPU-hour ceiling is awaiting the user; existing limits remain effective for now"
+    ]
+  },
+  "resource_profile": {
+    "gpu": "RTX4090D24GB",
+    "cpu_quota": 16,
+    "ram_gib": 80,
+    "disk_gb": 50,
+    "hourly_cny": null,
+    "materialize_workers": 12,
+    "bag_batch": 64,
+    "monetary_expansion_pending": true,
+    "host_port": 35529,
+    "prior_instance_hourly_cny": 1.88,
+    "price_status": "Clone hourly price pending confirmation; 1.88 applies only to the prior instance"
+  },
+  "latest_closeout": {
+    "formal_training_started": false,
+    "shutdown_local": "2026-09-11T03:56:07+08:00",
+    "automation_status": "PAUSED",
+    "deadline_met": true,
+    "server_running": false,
+    "report": "../../research-runs/overnight_20260911/final_report.md"
+  },
+  "active_night": {
+    "id": "N11",
+    "host_port": 35529,
+    "old_instance_must_remain_off": true,
+    "automation_id": "cvpr-9-11-10",
+    "deadline": "2026-09-11T10:00:00+08:00",
+    "status": "done"
+  },
+  "active_phase": "phase2",
+  "phase2": {
+    "plan": "PHASE2_PLAN_2026-09-14.md",
+    "entry_tasks": [
+      "P2D",
+      "B01",
+      "P2C"
+    ],
+    "prior_project_sha256": "d59f8807348194f0cdd11a54f02e8f16a56e1806c368fd361be4dcd2ca667477",
+    "paid_jobs_started_this_turn": false,
+    "audit_wall_seconds": 15.078,
+    "proposed_reservation": {
+      "gpu_hours": 40,
+      "cny": 400,
+      "within_original_total": true,
+      "activation": "verify remaining budget, accepted data and instance lifecycle first"
+    }
+  }
+}

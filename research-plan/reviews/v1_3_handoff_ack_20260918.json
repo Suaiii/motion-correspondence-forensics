@@ -1,0 +1,15 @@
+{
+  "plan_version": "cvpr27-20260918-v1.3",
+  "source_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
+  "observed_at": "2026-09-18T01:27:27+08:00",
+  "evidence_type": "Actual researchagent version-confirmation message; receipt recorded by planagent",
+  "reported_plan_sha256": "21e9b48119474f26a49991b702c0da935fa70ca66d14baf5a3f9ace12b38e3e1",
+  "reported_research_role_sha256": "f1d75d7860b9a89968a7e9402a3996d1578fa306af04b58180a6bc6a29af0cb8",
+  "local_hashes_match": true,
+  "reported_current_dispatch": null,
+  "reported_dispatch_policy_state": "waiting_external_dependencies",
+  "reported_board_next_count": 0,
+  "reported_no_additional_research_or_server_access": true,
+  "software_definition_plan_version": "cvpr27-20260918-v1.2",
+  "timestamp_correction_acknowledged": true
+}

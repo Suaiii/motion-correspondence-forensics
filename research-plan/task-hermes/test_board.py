@@ -45,6 +45,36 @@ class BoardTests(unittest.TestCase):
         self.project["tasks"].append(child)
         self.assertEqual(board.export_plan(self.project)[1]["arguments"]["parents"], ["<HERMES_ID_FOR_A>"])
 
+    def test_completed_failed_experiment_does_not_release_success_branch(self):
+        self.project["tasks"][0].update(status="done", gate_result="fail")
+        child = copy.deepcopy(self.project["tasks"][0])
+        child.update(id="B", parents=["A"], requires_pass=["A"], status="todo", gate_result="not_evaluated")
+        self.project["tasks"].append(child)
+        self.assertEqual(board.validate(self.project), [])
+        self.assertEqual(board.available(self.project), [])
+        child["status"] = "ready"
+        self.assertTrue(any("requires passed gates" in e for e in board.validate(self.project)))
+
+    def test_passed_parent_releases_success_branch(self):
+        self.project["tasks"][0].update(status="done", gate_result="pass")
+        child = copy.deepcopy(self.project["tasks"][0])
+        child.update(id="B", parents=["A"], requires_pass=["A"], status="todo", gate_result="not_evaluated")
+        self.project["tasks"].append(child)
+        self.assertEqual(board.validate(self.project), [])
+        self.assertEqual([t["id"] for t in board.available(self.project)], ["B"])
+
+    def test_decision_task_can_review_failed_experiment(self):
+        self.project["tasks"][0].update(status="done", gate_result="fail")
+        child = copy.deepcopy(self.project["tasks"][0])
+        child.update(id="B", parents=["A"], status="ready", gate_result="not_evaluated")
+        self.project["tasks"].append(child)
+        self.assertEqual(board.validate(self.project), [])
+        self.assertEqual([t["id"] for t in board.available(self.project)], ["B"])
+
+    def test_required_gate_must_be_a_parent(self):
+        self.project["tasks"][0]["requires_pass"] = ["missing"]
+        self.assertTrue(any("subset of parents" in e for e in board.validate(self.project)))
+
 
 if __name__ == "__main__":
     unittest.main()

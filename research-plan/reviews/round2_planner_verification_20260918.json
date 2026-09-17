@@ -1,0 +1,24 @@
+{
+  "plan_version": "cvpr27-20260918-v1.2",
+  "reviewed_at": "2026-09-18T00:40:44+08:00",
+  "artifact_hashes_verified": true,
+  "author_repositories_verified": 7,
+  "author_files_verified": 38,
+  "author_bytes": 277174,
+  "third_party_code_executed": false,
+  "exact_fraction_graph_and_centered_target_checks": true,
+  "translation_null_mechanical_replay": {
+    "path": "translation_null_replay_20260918.json",
+    "max_error": 7.771561172376096e-16,
+    "general_real_video_claim": false
+  },
+  "pts_contract_execution_authorized": false,
+  "budget_reconciled": false,
+  "scientific_breakthrough": false,
+  "board_valid": true,
+  "task_count": 28,
+  "links_valid": true,
+  "next_dispatch": "cc-round-3-c-software-20260918",
+  "dispatch_status": "sent",
+  "current_plan_sha256": "dc44831b23d637ae5516c76e1da58d6c22cf7b5667548233483f706520eecbca"
+}

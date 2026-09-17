@@ -34,11 +34,16 @@ def validate(data: dict) -> list[str]:
         missing = required - set(task)
         if missing:
             errors.append(f"{task.get('id', '?')}: missing {sorted(missing)}")
-        for field in ("parents", "work", "acceptance", "artifacts"):
+        for field in ("parents", "work", "acceptance", "artifacts", "requires_pass"):
             if field in task and (not isinstance(task[field], list) or any(not isinstance(v, str) for v in task[field])):
                 errors.append(f"{task.get('id', '?')}: {field} must be a list of strings")
         if not isinstance(task.get("id"), str) or not task.get("id"):
             errors.append("task id must be a nonempty string")
+        if task.get("gate_result", "not_evaluated") not in {"not_evaluated", "pass", "fail", "not_applicable"}:
+            errors.append(f"{task.get('id', '?')}: invalid gate_result")
+        if isinstance(task.get("requires_pass", []), list) and isinstance(task.get("parents"), list):
+            if any(parent not in task["parents"] for parent in task.get("requires_pass", [])):
+                errors.append(f"{task.get('id', '?')}: requires_pass must be a subset of parents")
     if errors:
         return errors
     tasks = index(data)
@@ -61,6 +66,9 @@ def validate(data: dict) -> list[str]:
             unfinished = [p for p in task["parents"] if tasks[p]["status"] != "done"]
             if unfinished:
                 errors.append(f"{task['id']}: active/completed task has unfinished parents {unfinished}")
+            failed_gates = [p for p in task.get("requires_pass", []) if tasks[p].get("gate_result") != "pass"]
+            if failed_gates:
+                errors.append(f"{task['id']}: active/completed task requires passed gates {failed_gates}")
 
     visiting: set[str] = set()
     visited: set[str] = set()
@@ -89,6 +97,7 @@ def available(data: dict) -> list[dict]:
         for task in data["tasks"]
         if task["status"] in {"todo", "ready"}
         and all(tasks[parent]["status"] == "done" for parent in task["parents"])
+        and all(tasks[parent].get("gate_result") == "pass" for parent in task.get("requires_pass", []))
     ]
 
 
@@ -123,6 +132,9 @@ def export_plan(data: dict) -> list[dict]:
                         "artifacts": task["artifacts"],
                         "research_metadata": {k: task[k] for k in ("dataset_version", "split_hash", "seed", "budget", "config_hash", "checkpoint_hash", "code_revision") if k in task},
                         "local_status": task["status"],
+                        "gate_result": task.get("gate_result", "not_evaluated"),
+                        "requires_pass": task.get("requires_pass", []),
+                        "due_at": task.get("due_at"),
                     },
                     ensure_ascii=False,
                 ),

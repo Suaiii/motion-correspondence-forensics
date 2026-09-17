@@ -1,0 +1,7 @@
+# Scientific receipts bind exact bytes. Preserve them on Windows checkouts.
+/.gitattributes -text
+/AGENTS.md -text
+/agents/** -text
+/research-plan/** -text
+/research-runtime/** -text
+/research-runs/** -text

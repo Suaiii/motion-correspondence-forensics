@@ -1,0 +1,156 @@
+{
+  "work": "offline_translation_null_followup",
+  "plan_version": "cvpr27-20260917-v1.1",
+  "observed_utc": "2026-09-17T16:31:25.821977+00:00",
+  "seeds": [
+    17,
+    29,
+    43
+  ],
+  "grid": [
+    16,
+    16
+  ],
+  "feature_dim": 12,
+  "temperature": 0.1,
+  "scales": [
+    1,
+    2,
+    4
+  ],
+  "offsets": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      2
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "triplets": [
+    [
+      0,
+      1,
+      2
+    ],
+    [
+      1,
+      2,
+      3
+    ],
+    [
+      2,
+      3,
+      4
+    ],
+    [
+      3,
+      4,
+      5
+    ],
+    [
+      0,
+      2,
+      4
+    ],
+    [
+      1,
+      3,
+      5
+    ]
+  ],
+  "anchor_counts": [
+    2,
+    2,
+    1,
+    1,
+    0,
+    0
+  ],
+  "anchor_weights": [
+    0.3333333333333333,
+    0.3333333333333333,
+    0.16666666666666666,
+    0.16666666666666666,
+    0.0,
+    0.0
+  ],
+  "degree_weights": [
+    0.1111111111111111,
+    0.16666666666666666,
+    0.2222222222222222,
+    0.2222222222222222,
+    0.16666666666666666,
+    0.1111111111111111
+  ],
+  "cases": [
+    {
+      "seed": 17,
+      "response_map_max_error": 6.661338147750939e-16,
+      "direct_js_max_error": 1.942890293094024e-16,
+      "temporal_vs_anchor_static_readout_l2": 1.1768024475824083e-16,
+      "temporal_vs_uniform_static_readout_l2": 0.0006718410849335556,
+      "temporal_vs_degree_static_readout_l2": 0.0006436334428607313,
+      "fixed_interior_response_map_gap": 0.6281206364047206,
+      "arbitrary_reindex_response_map_gap": 0.18909957540089112
+    },
+    {
+      "seed": 29,
+      "response_map_max_error": 4.440892098500626e-16,
+      "direct_js_max_error": 2.1163626406917047e-16,
+      "temporal_vs_anchor_static_readout_l2": 8.463779660092225e-17,
+      "temporal_vs_uniform_static_readout_l2": 0.0003167881009962112,
+      "temporal_vs_degree_static_readout_l2": 0.0003876244721345819,
+      "fixed_interior_response_map_gap": 0.6521077811131938,
+      "arbitrary_reindex_response_map_gap": 0.1523428543053187
+    },
+    {
+      "seed": 43,
+      "response_map_max_error": 7.771561172376096e-16,
+      "direct_js_max_error": 2.0816681711721685e-16,
+      "temporal_vs_anchor_static_readout_l2": 1.26721668655401e-16,
+      "temporal_vs_uniform_static_readout_l2": 0.00026266804645714534,
+      "temporal_vs_degree_static_readout_l2": 0.00026858707952384273,
+      "fixed_interior_response_map_gap": 0.6772564900095919,
+      "arbitrary_reindex_response_map_gap": 0.1594221828056424
+    }
+  ],
+  "tolerance": 1e-12,
+  "checks_passed": true,
+  "elapsed_local_seconds": 5.08198880000009,
+  "numpy_version": "2.3.5",
+  "python_version": "3.12.14",
+  "source_sha256": {
+    "composability_translation_null.py": "7740e254f6989fb959b01f191981212ebf66331e4833dae1858d9b31b2454bc1",
+    "composability.py": "d19a3485a75dd6d683141b565fe2e05ce8217c710414eb555c9773afba8d7d98"
+  },
+  "classification_training": false,
+  "real_data": false,
+  "backbone_executed": false,
+  "server_accessed": false,
+  "gpu_used": false,
+  "scientific_gate_passed": false,
+  "limitations": [
+    "Exact permuted synthetic tokens, not pixels or measured DINO equivariance",
+    "Equality requires full middle support and translations commuting with perturbations",
+    "Fixed random spatial head only; readout distances are not detection metrics",
+    "Neither a general failure theorem nor evidence of a new detector"
+  ]
+}

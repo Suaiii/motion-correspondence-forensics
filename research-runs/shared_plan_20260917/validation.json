@@ -1,0 +1,80 @@
+{
+  "plan_version": "cvpr27-20260917-v1",
+  "checks_completed_at": "2026-09-17T18:46:59+08:00",
+  "test_command": "python -X utf8 -m unittest discover -s research-plan/task-hermes -p test_*.py -v",
+  "unit_tests_run": 20,
+  "unit_tests_passed": true,
+  "board_validation": "VALID 25 tasks",
+  "documents": [
+    {
+      "path": "AGENTS.md",
+      "bytes": 3312,
+      "sha256": "f21cfe83442e616d0fb89cd2766bf419b278bed5ab0e3f09189b02e95087d6fa",
+      "broken_links": []
+    },
+    {
+      "path": "agents\\researchagent\\agent.md",
+      "bytes": 3645,
+      "sha256": "06441a457727feea79ecb4474f715bb64af1abf9c50bf69c7c3f476f6374fb3a",
+      "broken_links": []
+    },
+    {
+      "path": "agents\\planagent\\agent.md",
+      "bytes": 3814,
+      "sha256": "d0202171d3d19e8ff60230961c948aa4e8d8abb363030f52635a82b858d3c7e7",
+      "broken_links": []
+    },
+    {
+      "path": "research-plan\\WORK_PLAN.md",
+      "bytes": 14809,
+      "sha256": "25ccf8777e288015c146d43dd542c7b8d1c043b29e9f8271dd088d08975b8d48",
+      "broken_links": []
+    }
+  ],
+  "near_deadline_ids": [
+    "K01"
+  ],
+  "completed_quiet": true,
+  "first_overdue_ids": [
+    "K01"
+  ],
+  "duplicate_overdue_quiet": true,
+  "checks_did_not_modify_project_or_notification_state": true,
+  "reminder_events_in_real_state": 0,
+  "scheduler_host_timezone": {
+    "id": "China Standard Time",
+    "offset": "+08:00"
+  },
+  "automation": {
+    "id": "cvpr-2027",
+    "kind": "heartbeat",
+    "status": "ACTIVE",
+    "target_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+    "check_time": "19:00",
+    "timezone": "Asia/Shanghai",
+    "next_planned_notification_at": "2026-09-23T19:00:00+08:00",
+    "legacy_automation_status": "PAUSED",
+    "verified_by": [
+      "automation_update create",
+      "automation_update view",
+      "automation.toml readback"
+    ]
+  },
+  "git_diff_check": "passed; only line-ending informational warnings",
+  "scope": "coordination setup and read-only validation; no research jobs launched",
+  "final_coordination_verified_at": "2026-09-17T18:56:17+08:00",
+  "handoff": {
+    "status": "acknowledged",
+    "source_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
+    "report_sha256": "76e39cc56112206d08f330523f1dae9d7056637cde65b5e1e62910a8b81e612b",
+    "plan_hash_matches": true,
+    "research_role_hash_matches": true
+  },
+  "board_after_handoff": "VALID 25 tasks",
+  "ready_tasks": [
+    "RS01",
+    "WR01"
+  ],
+  "research_gates_auto_passed": false,
+  "original_snapshot_sha256": "221af6fa36f2be19b7fcc336de3e3ed6792d6b836e91b1e35ec5a2e94c612bc8"
+}
