@@ -1,0 +1,275 @@
+{
+  "dispatch_id": "cc-round-3-c-software-20260918",
+  "task_id": "DX03",
+  "plan_version": "cvpr27-20260918-v1.2",
+  "work_plan_sha256": "dc44831b23d637ae5516c76e1da58d6c22cf7b5667548233483f706520eecbca",
+  "status": "pass",
+  "tests_run": 33,
+  "old_A_regression_tests": 21,
+  "new_C_tests": 12,
+  "test_log": "test_consistent_middle_reindexing_invariance_including_perturbations (test_composability.ComposabilityTests.test_consistent_middle_reindexing_invariance_including_perturbations) ... ok\ntest_js_identity_symmetry_and_disjoint_bound (test_composability.ComposabilityTests.test_js_identity_symmetry_and_disjoint_bound) ... ok\ntest_known_permutations_compose_exactly (test_composability.ComposabilityTests.test_known_permutations_compose_exactly) ... ok\ntest_missing_conditional_support_is_not_silently_valid (test_composability.ComposabilityTests.test_missing_conditional_support_is_not_silently_valid) ... ok\ntest_one_sided_permutation_is_not_consistent_reindexing (test_composability.ComposabilityTests.test_one_sided_permutation_is_not_consistent_reindexing) ... ok\ntest_reject_malformed_probability_and_permutation_inputs (test_composability.ComposabilityTests.test_reject_malformed_probability_and_permutation_inputs) ... ok\ntest_sampler_minimum_duration_translation_and_no_repeats (test_composability.ComposabilityTests.test_sampler_minimum_duration_translation_and_no_repeats) ... ok\ntest_sampler_short_vc2_and_joint_lags (test_composability.ComposabilityTests.test_sampler_short_vc2_and_joint_lags) ... ok\ntest_soft_correspondence_normalizes_and_ignores_feature_scale (test_composability.ComposabilityTests.test_soft_correspondence_normalizes_and_ignores_feature_scale) ... ok\ntest_uniform_middle_correspondence_has_zero_perturbation_response (test_composability.ComposabilityTests.test_uniform_middle_correspondence_has_zero_perturbation_response) ... ok\ntest_wraps_are_explicit_and_middle_support_removes_them (test_composability.ComposabilityTests.test_wraps_are_explicit_and_middle_support_removes_them) ... ok\ntest_compute_difference_is_recorded_not_assumed_equal (test_static_composability.StaticControlTests.test_compute_difference_is_recorded_not_assumed_equal) ... ok\ntest_empty_static_support_uses_same_semantic_fallback (test_static_composability.StaticControlTests.test_empty_static_support_uses_same_semantic_fallback) ... ok\ntest_fixed_replacement_retains_all_six_semantics_and_weights (test_static_composability.StaticControlTests.test_fixed_replacement_retains_all_six_semantics_and_weights) ... ok\ntest_identical_frames_make_static_and_temporal_branches_equal (test_static_composability.StaticControlTests.test_identical_frames_make_static_and_temporal_branches_equal) ... ok\ntest_invalid_mode_rejected (test_static_composability.StaticControlTests.test_invalid_mode_rejected) ... ok\ntest_same_parameter_count_and_initialization_but_independent_storage (test_static_composability.StaticControlTests.test_same_parameter_count_and_initialization_but_independent_storage) ... ok\ntest_static_frame_permutation_is_equivariant_then_unordered (test_static_composability.StaticControlTests.test_static_frame_permutation_is_equivariant_then_unordered) ... ok\ntest_static_head_gradients_and_frozen_input_boundary (test_static_composability.StaticControlTests.test_static_head_gradients_and_frozen_input_boundary) ... ok\ntest_static_uses_each_of_six_distinct_frames_and_matches_reference (test_static_composability.StaticControlTests.test_static_uses_each_of_six_distinct_frames_and_matches_reference) ... ok\ntest_training_rule_mismatch_is_rejected (test_static_composability.StaticControlTests.test_training_rule_mismatch_is_rejected) ... ok\ntest_C_numpy_torch_and_A_map_subset (test_candidate_c.CandidateCChecks.test_C_numpy_torch_and_A_map_subset) ... ok\ntest_all_three_semantic_vectors_retained_in_each_arm (test_candidate_c.CandidateCChecks.test_all_three_semantic_vectors_retained_in_each_arm) ... ok\ntest_cache_keys_bind_processing_frames_and_control_scope (test_candidate_c.CandidateCChecks.test_cache_keys_bind_processing_frames_and_control_scope) ... ok\ntest_checked_in_config_is_exact_and_not_training_authority (test_candidate_c.CandidateCChecks.test_checked_in_config_is_exact_and_not_training_authority) ... ok\ntest_checkpoint_identity_rejects_legacy_other_candidate_and_branch (test_candidate_c.CandidateCChecks.test_checkpoint_identity_rejects_legacy_other_candidate_and_branch) ... ok\ntest_full_capacity_independent_parameters_and_frozen_input_gradients (test_candidate_c.CandidateCChecks.test_full_capacity_independent_parameters_and_frozen_input_gradients) ... ok\ntest_reject_padded_frames_and_wrong_map_protocol (test_candidate_c.CandidateCChecks.test_reject_padded_frames_and_wrong_map_protocol) ... ok\ntest_sampler_ties_bounds_and_bad_pts (test_candidate_c.CandidateCChecks.test_sampler_ties_bounds_and_bad_pts) ... ok\ntest_sampling_A_subset_and_VFR (test_candidate_c.CandidateCChecks.test_sampling_A_subset_and_VFR) ... ok\ntest_semantic_fallback_and_fixed_head_sensitivity (test_candidate_c.CandidateCChecks.test_semantic_fallback_and_fixed_head_sensitivity) ... ok\ntest_training_rules_match_but_diagnostic_scope_differs (test_candidate_c.CandidateCChecks.test_training_rules_match_but_diagnostic_scope_differs) ... ok\ntest_translation_null_logits_and_limited_scope (test_candidate_c.CandidateCChecks.test_translation_null_logits_and_limited_scope) ... ok\n\n----------------------------------------------------------------------\nRan 33 tests in 5.299s\n\nOK\n",
+  "observed_utc": "2026-09-17T16:44:29.069420+00:00",
+  "elapsed_seconds": 5.730333800000153,
+  "python": "3.11.15",
+  "torch": "2.5.1",
+  "numpy": "2.2.6",
+  "device": "cpu",
+  "cpu_threads": 2,
+  "cuda_initialized": false,
+  "optimizer_steps": 0,
+  "backward_checks_performed": true,
+  "backbone_executed": false,
+  "real_media_read": false,
+  "server_accessed": false,
+  "real_source_joint_support_established": false,
+  "scientific_gate_passed": false,
+  "config": {
+    "candidate_id": "candidate_c_centered3_v1",
+    "plan_version": "cvpr27-20260918-v1.2",
+    "scope": "offline_software_only",
+    "frame_count": 3,
+    "eligibility_window_seconds": 1.5,
+    "duration_estimator": "last_minus_first_pts_plus_median_native_gap",
+    "target_offsets_from_center_seconds": [
+      -0.5,
+      0.0,
+      0.5
+    ],
+    "target_span_seconds": 1.0,
+    "maximum_selection_error_seconds": 0.125,
+    "numerical_tolerance_seconds": 1e-06,
+    "tie_tolerance_seconds": 1e-09,
+    "tie_break": "earlier_original_frame",
+    "duplicate_or_interpolated_frames_allowed": false,
+    "grid": [
+      16,
+      16
+    ],
+    "temperature": 0.1,
+    "scales": [
+      1,
+      2,
+      4
+    ],
+    "temporal_triplets": [
+      [
+        0,
+        1,
+        2
+      ]
+    ],
+    "static_triplets": [
+      [
+        0,
+        0,
+        0
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        2,
+        2,
+        2
+      ]
+    ],
+    "anchor_static_triplets": [
+      [
+        0,
+        0,
+        0
+      ]
+    ],
+    "aggregation": "uniform_group_mean",
+    "semantic_frames_all_branches": [
+      0,
+      1,
+      2
+    ],
+    "static_scope": "all_observed_frames_static_baseline",
+    "anchor_scope": "anchor_only_local_diagnostic",
+    "formal_training_authorized": false,
+    "real_source_joint_support_established": false
+  },
+  "observed_interfaces": {
+    "temporal": {
+      "head_parameters": 217057,
+      "response_shape": [
+        1,
+        1,
+        3,
+        16,
+        16
+      ],
+      "affinity_matrices": 3,
+      "composition_products": 13,
+      "finite_logits": true,
+      "descriptor": {
+        "candidate_id": "candidate_c_centered3_v1",
+        "frame_count": 3,
+        "triplets": [
+          [
+            0,
+            1,
+            2
+          ]
+        ],
+        "branch_mode": "temporal",
+        "aggregation": "uniform_group_mean",
+        "control_scope": "temporal_candidate",
+        "middle_support": "full",
+        "sampler_sha256": "16cecce9006711106d374301e049203c3ce1878894285c144a992fc406819860",
+        "temperature": 0.1,
+        "scales": [
+          1,
+          2,
+          4
+        ],
+        "grid": [
+          16,
+          16
+        ],
+        "target_span_seconds": 1.0,
+        "semantic_frames": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    "static": {
+      "head_parameters": 217057,
+      "response_shape": [
+        1,
+        3,
+        3,
+        16,
+        16
+      ],
+      "affinity_matrices": 3,
+      "composition_products": 39,
+      "finite_logits": true,
+      "descriptor": {
+        "candidate_id": "candidate_c_centered3_v1",
+        "frame_count": 3,
+        "triplets": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            1,
+            1
+          ],
+          [
+            2,
+            2,
+            2
+          ]
+        ],
+        "branch_mode": "static",
+        "aggregation": "uniform_group_mean",
+        "control_scope": "all_observed_frames_static_baseline",
+        "middle_support": "full",
+        "sampler_sha256": "16cecce9006711106d374301e049203c3ce1878894285c144a992fc406819860",
+        "temperature": 0.1,
+        "scales": [
+          1,
+          2,
+          4
+        ],
+        "grid": [
+          16,
+          16
+        ],
+        "target_span_seconds": 1.0,
+        "semantic_frames": [
+          0,
+          1,
+          2
+        ]
+      }
+    },
+    "anchor_static": {
+      "head_parameters": 217057,
+      "response_shape": [
+        1,
+        1,
+        3,
+        16,
+        16
+      ],
+      "affinity_matrices": 1,
+      "composition_products": 13,
+      "finite_logits": true,
+      "descriptor": {
+        "candidate_id": "candidate_c_centered3_v1",
+        "frame_count": 3,
+        "triplets": [
+          [
+            0,
+            0,
+            0
+          ]
+        ],
+        "branch_mode": "anchor_static",
+        "aggregation": "uniform_group_mean",
+        "control_scope": "anchor_only_local_diagnostic",
+        "middle_support": "full",
+        "sampler_sha256": "16cecce9006711106d374301e049203c3ce1878894285c144a992fc406819860",
+        "temperature": 0.1,
+        "scales": [
+          1,
+          2,
+          4
+        ],
+        "grid": [
+          16,
+          16
+        ],
+        "target_span_seconds": 1.0,
+        "semantic_frames": [
+          0,
+          1,
+          2
+        ]
+      }
+    }
+  },
+  "null_conditions": {
+    "translation_full": {
+      "response_max_gap": 4.440892098500626e-16,
+      "direct_js_max_gap": 2.0122792321330962e-16
+    },
+    "translation_interior": {
+      "response_max_gap": 0.5506330373912871,
+      "direct_js_max_gap": 0.5016549312011117
+    },
+    "noncommuting_full": {
+      "response_max_gap": 0.14664664608070993,
+      "direct_js_max_gap": 1.8735013540549517e-16
+    }
+  },
+  "source_sha256": {
+    "forensics/composability.py": "428b5b20bb3840de82ce6e436c96dcd7f9e2921516d47df84da97ebaa9d60037",
+    "forensics/composability_torch.py": "9d9643d5ac91edb7ac6c0b75e323dab79937ba5a495135ed0f7b17c8685fb803",
+    "forensics/local_composability.py": "9c34100f9fc967ce6533476be7f23a86839c49ce18b68fb7782559d31a1727b9",
+    "forensics/mechanism_sampling.py": "16cecce9006711106d374301e049203c3ce1878894285c144a992fc406819860",
+    "forensics/composability_config.py": "c925fc407b93eb3e232b8c237b64a235f9c0698d6658b6677880e4f59be33490",
+    "configs/candidate_c_centered3_v1.json": "8f598b5cf1090db67bb1236ac2ba81e129347983970d185341033f3dc2df5683",
+    "tests/test_composability.py": "170d4a5313ee6418da08ad25b4686e5265122404271c00994ae37012a68ac0bf",
+    "tests/test_static_composability.py": "0c56abb7bbda2842ba44ffb4c2e5f5b41e2ac6606ea598bd8d9b404f54030b44",
+    "tests/test_candidate_c.py": "29f3213fdaf5998261a74ccf7b8d931bb510249fb6e8d032223f86eae328f098",
+    "scripts/check_candidate_c_cpu.py": "26cf8e1cc3963f2c7ec6da85054e6d618d1eef98567f75937233cfea907bdcd4"
+  },
+  "limitations": [
+    "Software and synthetic feature-space evidence only",
+    "No trained baseline, real-video discrimination or GPU profile",
+    "Anchor-static is not an all-frame local baseline",
+    "Legacy raw state_dict must not bypass the new compatible-checkpoint interface"
+  ]
+}

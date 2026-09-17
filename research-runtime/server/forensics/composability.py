@@ -5,15 +5,14 @@ permutation responses. No detector, novelty claim or physical-law claim.
 """
 from __future__ import annotations
 import numpy as np
+from .composability_config import A,frame_count,triplets as configured_triplets
 
 TRIPLETS=((0,1,2),(1,2,3),(2,3,4),(3,4,5),(0,2,4),(1,3,5))
 STATIC_TRIPLETS=tuple((i,i,i) for i in range(6))
 
 
-def branch_triplets(branch_mode):
-    if branch_mode=='temporal':return TRIPLETS
-    if branch_mode=='static':return STATIC_TRIPLETS
-    raise ValueError('branch_mode must be temporal or static')
+def branch_triplets(branch_mode,candidate_id=A):
+    return configured_triplets(candidate_id,branch_mode)
 
 
 def correspondence(a,b,temperature=.1):
@@ -80,9 +79,14 @@ def response_from_matrices(ab,bc,ac,permutations,middle_support=None):
 
 
 def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False,branch_mode='temporal'):
+    return correspondence_response(tokens,grid,temperature,scales,interior_control,branch_mode,A)
+
+
+def correspondence_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False,branch_mode='temporal',candidate_id=A):
     tokens=np.asarray(tokens,dtype=np.float64);h,w=grid
-    if tokens.ndim!=3 or tokens.shape[0]!=6 or tokens.shape[1]!=h*w:
-        raise ValueError('Expected six frames on the declared patch grid')
+    frames=frame_count(candidate_id)
+    if tokens.ndim!=3 or tokens.shape[0]!=frames or tokens.shape[1]!=h*w:
+        raise ValueError('Expected candidate frame count on the declared patch grid')
     if not scales or len(set(scales))!=len(scales) or any(not isinstance(r,int) or not 0<r<min(h,w) for r in scales):
         raise ValueError('Invalid distinct perturbation scales')
     permutations=[];wrap=[]
@@ -99,7 +103,7 @@ def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interio
     def p(a,b):
         if (a,b) not in pairs:pairs[a,b]=correspondence(tokens[a],tokens[b],temperature)
         return pairs[a,b]
-    triplets=branch_triplets(branch_mode)
+    triplets=branch_triplets(branch_mode,candidate_id)
     results=[];entropy=[]
     for a,b,c in triplets:
         ab,bc,ac=p(a,b),p(b,c),p(a,c)
@@ -112,4 +116,5 @@ def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interio
         middle_probability_mass=np.stack([r['middle_probability_mass'].reshape(h,w) for r in results]),
         wrapped_middle_fraction=np.array([m.mean() for m in wrap]).reshape(len(scales),4),
         middle_support_fraction=float(keep.mean()) if keep is not None else 1.,
-        branch_mode=branch_mode,triplets=triplets,unique_affinity_matrices=len(pairs))
+        branch_mode=branch_mode,triplets=triplets,unique_affinity_matrices=len(pairs),candidate_id=candidate_id,frame_count=frames,
+        operator=dict(temperature=temperature,scales=list(scales),grid=list(grid),interior_control=interior_control))

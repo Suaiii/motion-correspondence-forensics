@@ -1,12 +1,19 @@
 """Batched torch implementation of the shared correspondence-response primitive."""
 import torch
 from .composability import branch_triplets,shift_permutation
+from .composability_config import A,frame_count
 
 
 @torch.no_grad()
 def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False,branch_mode='temporal'):
-    if tokens.ndim!=4 or tokens.shape[1]!=6 or tokens.shape[2]!=grid[0]*grid[1]:
-        raise ValueError('Expected [batch,6,patch,channel] on the declared grid')
+    return correspondence_response(tokens,grid,temperature,scales,interior_control,branch_mode,A)
+
+
+@torch.no_grad()
+def correspondence_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False,branch_mode='temporal',candidate_id=A):
+    frames=frame_count(candidate_id)
+    if tokens.ndim!=4 or tokens.shape[1]!=frames or tokens.shape[2]!=grid[0]*grid[1]:
+        raise ValueError('Expected [batch,candidate_frames,patch,channel] on the declared grid')
     if not torch.isfinite(tokens).all() or temperature<=0 or not torch.isfinite(torch.tensor(temperature)):
         raise ValueError('Finite tokens and positive finite temperature required')
     h,w=grid
@@ -28,7 +35,7 @@ def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interio
     def js(a,b):
         middle=(a+b)/2;lm=middle.clamp_min(tiny).log()
         return .5*((a*(a.clamp_min(tiny).log()-lm)).sum(-1)+(b*(b.clamp_min(tiny).log()-lm)).sum(-1))
-    triplets=branch_triplets(branch_mode)
+    triplets=branch_triplets(branch_mode,candidate_id)
     responses=[];direct=[];entropies=[];support=[];masses=[]
     for a,b,c in triplets:
         ab,bc,ac=p(a,b),p(b,c),p(a,c)
@@ -46,4 +53,5 @@ def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interio
         middle_probability_mass=torch.stack(masses,dim=1),
         wrapped_middle_fraction=torch.stack(wrap).double().mean(-1).reshape(len(scales),4),
         middle_support_fraction=float(keep.double().mean()),branch_mode=branch_mode,
-        triplets=triplets,unique_affinity_matrices=len(matrices))
+        triplets=triplets,unique_affinity_matrices=len(matrices),candidate_id=candidate_id,frame_count=frames,
+        operator=dict(temperature=temperature,scales=list(scales),grid=list(grid),interior_control=interior_control))

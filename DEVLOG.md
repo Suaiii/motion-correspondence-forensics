@@ -353,3 +353,29 @@ over-cap output. No real ffprobe process or media was run. The future Linux
 ffprobe integration still needs the authorized server pilot. Current PTS contract
 remains disabled; WORK_PLAN/project and existing scientific gates are unchanged.
 Details: shared_plan_20260917/native_pts_collector_preparation.md.
+
+## 2026-09-18 DX03: explicit centered-three-frame candidate
+
+Implemented cc-round-3-c-software-20260918 under plan v1.2. Candidate C samples
+three unique native frames around the center at -.5/0/+.5 s; A's six-frame
+sampler/default wrapper remain. Generalized NumPy/Torch responses and the head
+to explicit candidate/group identities. C uses one temporal group, three static
+groups and one anchor-only diagnostic group; all retain identical three-frame
+semantics and 217,057-parameter heads, with separate parameter storage.
+
+Added configuration, cache provenance, matched-recipe and compatible-checkpoint
+interfaces. Unlabelled/other-candidate/other-control checkpoints and corrupted
+parameter shapes/values are rejected before loading. Raw state_dict copying is
+only used for fresh matched initialization, not scientific checkpoint reuse.
+
+Final CPU validation passes 33 tests: old 21 A tests plus 12 C tests with boundary
+subcases. No optimizer step or backbone executed; CUDA remained uninitialized.
+Exact translated-feature null matches anchor-static maps at 4.44e-16 and matched
+head logits within tolerance. Fixed interior/noncommuting cases break this
+response equality and are separately recorded. These are software diagnostics,
+not real DINO equivariance, detection performance or innovation acceptance.
+
+Evidence and source hashes: shared_plan_20260917/candidate_c_cpu_validation.json;
+scope/limitations: candidate_c_software_report.md and collaboration_round_3.md.
+No server, ffprobe, media, GPU, model download or actual training this package.
+Shared planner files and historical scientific receipts were not changed.
