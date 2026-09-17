@@ -281,3 +281,10 @@ Contrastive random walks (NeurIPS 2020) are an additional close precedent for
 patch-transition/path composition. No exhaustive novelty review or scientific
 breakthrough is claimed. Deliverables: shared-plan static_control_preparation.md,
 joint_lag_feasibility.json and collaboration_round_1.md. Formal gates unchanged.
+
+Round-1 evidence and research source were pushed as 44a0c2b and remote HEAD
+verified. With all package jobs terminal and no research/GPU process observed,
+the provider shutdown command was executed under the earlier user instruction.
+SSH disconnected and the TCP port was unreachable at 2026-09-17T12:07:50Z.
+No arbitrary time cap or active-job interruption was involved. Billing status
+is unverified; the overall innovation objective and formal gates are incomplete.

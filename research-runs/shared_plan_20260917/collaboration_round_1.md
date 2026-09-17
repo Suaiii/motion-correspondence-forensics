@@ -101,3 +101,16 @@ resolved. Keep the long-triplet branch a diagnostic unless the shared protocol
 is explicitly revised. RS01 still needs full equations/splits/code review;
 WR01's claims remain conditional. No new plan dispatch is requested merely
 because this work package has ended.
+
+## Package closeout
+
+Research changes and all compact evidence were pushed as `44a0c2b`; the remote
+head matched. After verifying that every started package job had ended and
+only provider Jupyter/TensorBoard services remained, the existing instance's
+shutdown command was executed under the user's prior finish-then-shutdown
+instruction. SSH closed remotely and port 35529 was unreachable at
+2026-09-17T12:07:50Z. No active research job was interrupted, and no fixed
+30-minute job deadline was used. Provider billing/power-panel status was not
+observed; do not infer that all charges have ended. See `round_1_closeout.json`.
+This closes the permitted package work, not the overall innovation objective;
+independent literature/writing work can continue without that instance.

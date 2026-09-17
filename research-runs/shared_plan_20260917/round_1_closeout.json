@@ -1,0 +1,22 @@
+{
+  "work_package": "cc-round-1-20260917",
+  "research_commit": "44a0c2bf79afd4ec84cc96a8aa6bcc6e53b03448",
+  "github_head_verified": true,
+  "all_started_package_jobs_terminal": true,
+  "compact_evidence_transfers_and_hashes_verified": true,
+  "pre_shutdown_observation_utc": "2026-09-17T12:05:37Z",
+  "research_processes_observed": 0,
+  "gpu_compute_processes_observed": 0,
+  "baseline_provider_services_only": true,
+  "lifecycle_authorization": "Earlier user instruction to shut down after completed work; package jobs complete and verified, no active research job interrupted",
+  "provider_shutdown_command_executed": true,
+  "ssh_closed_by_remote_host": true,
+  "post_command_observation_utc": "2026-09-17T12:07:50Z",
+  "tcp_35529_reachable": false,
+  "provider_control_plane_power_state_verified": false,
+  "provider_billing_status_verified": false,
+  "stopped_for_arbitrary_time_limit": false,
+  "new_gpu_training_or_extraction_in_package": false,
+  "overall_innovation_objective_complete": false,
+  "formal_gates_released": false
+}
