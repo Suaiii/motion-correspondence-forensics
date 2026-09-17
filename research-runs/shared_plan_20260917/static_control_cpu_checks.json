@@ -1,0 +1,99 @@
+{
+  "work_package": "cc-round-1-20260917",
+  "plan_version": "cvpr27-20260917-v1.1",
+  "status": "pass",
+  "observed_utc": "2026-09-17T11:39:40.077890+00:00",
+  "tests_run": 21,
+  "wall_seconds": 4.95299999999952,
+  "torch": "2.5.1",
+  "numpy": "2.2.6",
+  "device": "cpu",
+  "cpu_threads": 2,
+  "cuda_initialized": false,
+  "source_sha256": {
+    "forensics/composability.py": "d19a3485a75dd6d683141b565fe2e05ce8217c710414eb555c9773afba8d7d98",
+    "forensics/composability_torch.py": "55eb56e500192bd7a89fb437e92cfef95041c38a96fbafcefabe4597d4dee04f",
+    "forensics/local_composability.py": "c87c1b4423e508e2c7a8a4cd1af0291d05e589ed3a2967ab7c76f6f9f72336b0",
+    "forensics/mechanism_sampling.py": "17f4ec6489c382abc9c1d73e6c2bf46137e2687c540b90f00eee3a841b3412e0",
+    "tests/test_composability.py": "170d4a5313ee6418da08ad25b4686e5265122404271c00994ae37012a68ac0bf",
+    "tests/test_static_composability.py": "0c56abb7bbda2842ba44ffb4c2e5f5b41e2ac6606ea598bd8d9b404f54030b44",
+    "scripts/check_static_control_cpu.py": "bc0d019bf84660b963d85c9fe5f97a9fa3aa4b7e98538f1d49d99d31ab99ca9c"
+  },
+  "shared_frame_count": 6,
+  "temporal_triplet_count": 6,
+  "static_triplets": [
+    [
+      0,
+      0,
+      0
+    ],
+    [
+      1,
+      1,
+      1
+    ],
+    [
+      2,
+      2,
+      2
+    ],
+    [
+      3,
+      3,
+      3
+    ],
+    [
+      4,
+      4,
+      4
+    ],
+    [
+      5,
+      5,
+      5
+    ]
+  ],
+  "head_parameters_each": 217057,
+  "semantic_input": "the same original six global vectors in both branches",
+  "unique_cached_affinity_matrices": {
+    "temporal": 11,
+    "static": 6
+  },
+  "composition_products_each": 78,
+  "synthetic_cpu_benchmark": {
+    "token_shape": [
+      1,
+      6,
+      256,
+      32
+    ],
+    "seconds_by_mode": {
+      "temporal": [
+        0.11572780000096827,
+        0.13087149999955727,
+        0.15068090000022494
+      ],
+      "static": [
+        0.1402049000007537,
+        0.14837459999944258,
+        0.1450395000010758
+      ]
+    },
+    "median_seconds": {
+      "temporal": 0.13087149999955727,
+      "static": 0.1450395000010758
+    },
+    "end_to_end": false
+  },
+  "strong_static_baseline_trained": false,
+  "training_recipe_frozen": false,
+  "optimizer_steps": 0,
+  "real_research_inputs_read": 0,
+  "formal_gate_passed": false,
+  "test_log": "test_consistent_middle_reindexing_invariance_including_perturbations (test_composability.ComposabilityTests.test_consistent_middle_reindexing_invariance_including_perturbations) ... ok\ntest_js_identity_symmetry_and_disjoint_bound (test_composability.ComposabilityTests.test_js_identity_symmetry_and_disjoint_bound) ... ok\ntest_known_permutations_compose_exactly (test_composability.ComposabilityTests.test_known_permutations_compose_exactly) ... ok\ntest_missing_conditional_support_is_not_silently_valid (test_composability.ComposabilityTests.test_missing_conditional_support_is_not_silently_valid) ... ok\ntest_one_sided_permutation_is_not_consistent_reindexing (test_composability.ComposabilityTests.test_one_sided_permutation_is_not_consistent_reindexing) ... ok\ntest_reject_malformed_probability_and_permutation_inputs (test_composability.ComposabilityTests.test_reject_malformed_probability_and_permutation_inputs) ... ok\ntest_sampler_minimum_duration_translation_and_no_repeats (test_composability.ComposabilityTests.test_sampler_minimum_duration_translation_and_no_repeats) ... ok\ntest_sampler_short_vc2_and_joint_lags (test_composability.ComposabilityTests.test_sampler_short_vc2_and_joint_lags) ... ok\ntest_soft_correspondence_normalizes_and_ignores_feature_scale (test_composability.ComposabilityTests.test_soft_correspondence_normalizes_and_ignores_feature_scale) ... ok\ntest_uniform_middle_correspondence_has_zero_perturbation_response (test_composability.ComposabilityTests.test_uniform_middle_correspondence_has_zero_perturbation_response) ... ok\ntest_wraps_are_explicit_and_middle_support_removes_them (test_composability.ComposabilityTests.test_wraps_are_explicit_and_middle_support_removes_them) ... ok\ntest_compute_difference_is_recorded_not_assumed_equal (test_static_composability.StaticControlTests.test_compute_difference_is_recorded_not_assumed_equal) ... ok\ntest_empty_static_support_uses_same_semantic_fallback (test_static_composability.StaticControlTests.test_empty_static_support_uses_same_semantic_fallback) ... ok\ntest_fixed_replacement_retains_all_six_semantics_and_weights (test_static_composability.StaticControlTests.test_fixed_replacement_retains_all_six_semantics_and_weights) ... ok\ntest_identical_frames_make_static_and_temporal_branches_equal (test_static_composability.StaticControlTests.test_identical_frames_make_static_and_temporal_branches_equal) ... ok\ntest_invalid_mode_rejected (test_static_composability.StaticControlTests.test_invalid_mode_rejected) ... ok\ntest_same_parameter_count_and_initialization_but_independent_storage (test_static_composability.StaticControlTests.test_same_parameter_count_and_initialization_but_independent_storage) ... ok\ntest_static_frame_permutation_is_equivariant_then_unordered (test_static_composability.StaticControlTests.test_static_frame_permutation_is_equivariant_then_unordered) ... ok\ntest_static_head_gradients_and_frozen_input_boundary (test_static_composability.StaticControlTests.test_static_head_gradients_and_frozen_input_boundary) ... ok\ntest_static_uses_each_of_six_distinct_frames_and_matches_reference (test_static_composability.StaticControlTests.test_static_uses_each_of_six_distinct_frames_and_matches_reference) ... ok\ntest_training_rule_mismatch_is_rejected (test_static_composability.StaticControlTests.test_training_rule_mismatch_is_rejected) ... ok\n\n----------------------------------------------------------------------\nRan 21 tests in 3.782s\n\nOK\n",
+  "limitations": [
+    "Only interface, numerical and gradient contracts are verified.",
+    "Same head capacity and six-frame information do not imply identical compute.",
+    "A fixed-model branch replacement does not provide the retrained static-baseline result."
+  ]
+}

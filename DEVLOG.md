@@ -245,3 +245,39 @@ allocation 0.366 GiB. Frozen DINO's static synthetic response is also nonzero
 (mean absolute response 0.09492, mean JS 0.03408), reinforcing the need for a
 repeated-frame control. This is not a real-video detection result or the
 100-video profile. See shared-plan `backbone_integration.json`.
+
+## 2026-09-17 cc-round-1: static control and existing-PTS feasibility
+
+Executed DX01 within its CPU/read-existing-metadata scope. Added a static mode
+using every original frame's (i,i,i) triple, with identical six-frame semantic
+input and 217,057-parameter heads. Fresh matched models and equal-recipe guards
+are separate from a fixed-eval-model branch replacement diagnostic. The latter
+does not stand in for retraining the static strong baseline. All 21 CPU checks
+pass, CUDA remained uninitialized, and no optimizer step was taken.
+
+The comparison uses the same frame budget and head capacity but not identical
+cached computation: temporal requires 11 affinity matrices, static 6; both
+construct 78 composition products. Synthetic CPU timing is recorded, without
+extrapolating to video/GPU performance. New static-source changes have CPU-only
+evidence this round; earlier GPU reports remain tied to their older hashes.
+
+Found complete original timestamps in the archived retiming diagnostic: 50 MS
+and 50 VC2 before records, with complete decoded-frame hash counts and a matching
+archived writer hash. Reused those arrays only. All 100 pass new six-frame
+timestamp selection. Short triples have no joint support across these two
+sources at 1/2/5 ms bins; long triples' four edges are all 0.5 s in both sources.
+Between-triplet offsets and total six-frame spans still differ. Complete native
+PTS for Vript/HD-VG/CogVideo were not found in the inspected caches; selected
+8/16-frame PTS were not promoted to full sequences. No raw video read, new probe,
+feature extraction, classifier fitting or old eight-frame census rerun occurred.
+
+Supplier billing could not be inspected because the Chrome connector failed.
+Actual spending, billed GPU-hours, current rates and remaining allowance stay
+unknown; historical reserved amounts do not resolve RS00. Existing-instance
+CPU/SSH work can still incur charges. The report includes required missing facts.
+
+Added a preliminary primary-source neighbor map and conditional paper outline.
+Contrastive random walks (NeurIPS 2020) are an additional close precedent for
+patch-transition/path composition. No exhaustive novelty review or scientific
+breakthrough is claimed. Deliverables: shared-plan static_control_preparation.md,
+joint_lag_feasibility.json and collaboration_round_1.md. Formal gates unchanged.

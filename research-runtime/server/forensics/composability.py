@@ -7,6 +7,13 @@ from __future__ import annotations
 import numpy as np
 
 TRIPLETS=((0,1,2),(1,2,3),(2,3,4),(3,4,5),(0,2,4),(1,3,5))
+STATIC_TRIPLETS=tuple((i,i,i) for i in range(6))
+
+
+def branch_triplets(branch_mode):
+    if branch_mode=='temporal':return TRIPLETS
+    if branch_mode=='static':return STATIC_TRIPLETS
+    raise ValueError('branch_mode must be temporal or static')
 
 
 def correspondence(a,b,temperature=.1):
@@ -72,7 +79,7 @@ def response_from_matrices(ab,bc,ac,permutations,middle_support=None):
                 support=valid,middle_probability_mass=mass)
 
 
-def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False):
+def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False,branch_mode='temporal'):
     tokens=np.asarray(tokens,dtype=np.float64);h,w=grid
     if tokens.ndim!=3 or tokens.shape[0]!=6 or tokens.shape[1]!=h*w:
         raise ValueError('Expected six frames on the declared patch grid')
@@ -92,15 +99,17 @@ def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interio
     def p(a,b):
         if (a,b) not in pairs:pairs[a,b]=correspondence(tokens[a],tokens[b],temperature)
         return pairs[a,b]
+    triplets=branch_triplets(branch_mode)
     results=[];entropy=[]
-    for a,b,c in TRIPLETS:
+    for a,b,c in triplets:
         ab,bc,ac=p(a,b),p(b,c),p(a,c)
         results.append(response_from_matrices(ab,bc,ac,permutations,keep))
         entropy.append(np.stack([-(x*np.log(np.maximum(x,np.finfo(float).tiny))).sum(1) for x in (ab,bc,ac)]))
     responses=np.stack([r['response'].reshape(len(scales),4,h*w).mean(1).reshape(len(scales),h,w) for r in results])
     return dict(responses=responses,direct_js=np.stack([r['direct_js'].reshape(h,w) for r in results]),
-        correspondence_entropies=np.stack(entropy).reshape(len(TRIPLETS),3,h,w),
+        correspondence_entropies=np.stack(entropy).reshape(len(triplets),3,h,w),
         support=np.stack([r['support'].reshape(h,w) for r in results]),
         middle_probability_mass=np.stack([r['middle_probability_mass'].reshape(h,w) for r in results]),
         wrapped_middle_fraction=np.array([m.mean() for m in wrap]).reshape(len(scales),4),
-        middle_support_fraction=float(keep.mean()) if keep is not None else 1.)
+        middle_support_fraction=float(keep.mean()) if keep is not None else 1.,
+        branch_mode=branch_mode,triplets=triplets,unique_affinity_matrices=len(pairs))

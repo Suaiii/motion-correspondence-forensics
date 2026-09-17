@@ -1,0 +1,1002 @@
+{
+  "work_package": "cc-round-1-20260917",
+  "plan_version": "cvpr27-20260917-v1.1",
+  "status": "partial_missing_real_source_full_pts",
+  "observed_utc": "2026-09-17T11:41:16.432949+00:00",
+  "existing_metadata_scope": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/retiming_diagnostic",
+  "original_only": true,
+  "retimed_after_pts_used": false,
+  "considered_counts": {
+    "ms": 50,
+    "vc2": 50
+  },
+  "eligible_counts": {
+    "ms": 50,
+    "vc2": 50
+  },
+  "exclusion_rates": {
+    "ms": 0.0,
+    "vc2": 0.0
+  },
+  "exclusions": [],
+  "complete_pts_metadata_missing": {
+    "vript": {
+      "available_complete_native_pts": 0,
+      "joint_support_evaluated": false,
+      "exclusion_rate": null,
+      "reason": "Inspected caches/writers save only selected-frame PTS or no timestamps, not a verified complete native sequence."
+    },
+    "hd_vg_130m": {
+      "available_complete_native_pts": 0,
+      "joint_support_evaluated": false,
+      "exclusion_rate": null,
+      "reason": "Inspected caches/writers save only selected-frame PTS or no timestamps, not a verified complete native sequence."
+    },
+    "cogvideo": {
+      "available_complete_native_pts": 0,
+      "joint_support_evaluated": false,
+      "exclusion_rate": null,
+      "reason": "Inspected caches/writers save only selected-frame PTS or no timestamps, not a verified complete native sequence."
+    }
+  },
+  "raw_media_read": false,
+  "new_probe_run": false,
+  "new_feature_extraction": false,
+  "new_gpu_job": false,
+  "classifier_fitted": false,
+  "real_fake_joint_support_established": false,
+  "formal_gate_passed": false,
+  "sampling": {
+    "window": 1.5,
+    "fps_target": 4,
+    "frames": 6,
+    "short_triplets": [
+      [
+        0,
+        1,
+        2
+      ],
+      [
+        1,
+        2,
+        3
+      ],
+      [
+        2,
+        3,
+        4
+      ],
+      [
+        3,
+        4,
+        5
+      ]
+    ],
+    "long_triplets": [
+      [
+        0,
+        2,
+        4
+      ],
+      [
+        1,
+        3,
+        5
+      ]
+    ],
+    "long_edge_target_seconds": 0.5
+  },
+  "joint_support": {
+    "four_short_triplets": [
+      {
+        "quantum_seconds": 0.001,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "maximum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "mean": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004
+            ],
+            "maximum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004
+            ],
+            "mean": [
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027
+            ],
+            "std": [
+              2.7755575615628914e-16,
+              8.326672684688674e-17,
+              8.326672684688674e-17,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              2.7755575615628914e-17,
+              2.7755575615628914e-17,
+              2.220446049250313e-16
+            ],
+            "maximum_deviation_from_target": 0.050000000000000044
+          }
+        },
+        "common_bins": 0,
+        "supported_counts": {
+          "ms": 0,
+          "vc2": 0
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      },
+      {
+        "quantum_seconds": 0.002,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "maximum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "mean": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004
+            ],
+            "maximum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004
+            ],
+            "mean": [
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027
+            ],
+            "std": [
+              2.7755575615628914e-16,
+              8.326672684688674e-17,
+              8.326672684688674e-17,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              2.7755575615628914e-17,
+              2.7755575615628914e-17,
+              2.220446049250313e-16
+            ],
+            "maximum_deviation_from_target": 0.050000000000000044
+          }
+        },
+        "common_bins": 0,
+        "supported_counts": {
+          "ms": 0,
+          "vc2": 0
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      },
+      {
+        "quantum_seconds": 0.005,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "maximum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "mean": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004
+            ],
+            "maximum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004
+            ],
+            "mean": [
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027
+            ],
+            "std": [
+              2.7755575615628914e-16,
+              8.326672684688674e-17,
+              8.326672684688674e-17,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              2.7755575615628914e-17,
+              2.7755575615628914e-17,
+              2.220446049250313e-16
+            ],
+            "maximum_deviation_from_target": 0.050000000000000044
+          }
+        },
+        "common_bins": 0,
+        "supported_counts": {
+          "ms": 0,
+          "vc2": 0
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      }
+    ],
+    "two_long_triplets": [
+      {
+        "quantum_seconds": 0.001,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          }
+        },
+        "common_bins": 1,
+        "supported_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      },
+      {
+        "quantum_seconds": 0.002,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          }
+        },
+        "common_bins": 1,
+        "supported_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      },
+      {
+        "quantum_seconds": 0.005,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          }
+        },
+        "common_bins": 1,
+        "supported_counts": {
+          "ms": 50,
+          "vc2": 50
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      }
+    ],
+    "all_six_triplets": [
+      {
+        "quantum_seconds": 0.001,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              2.7755575615628914e-16,
+              8.326672684688674e-17,
+              8.326672684688674e-17,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              2.7755575615628914e-17,
+              2.7755575615628914e-17,
+              2.220446049250313e-16,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.050000000000000044
+          }
+        },
+        "common_bins": 0,
+        "supported_counts": {
+          "ms": 0,
+          "vc2": 0
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      },
+      {
+        "quantum_seconds": 0.002,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              2.7755575615628914e-16,
+              8.326672684688674e-17,
+              8.326672684688674e-17,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              2.7755575615628914e-17,
+              2.7755575615628914e-17,
+              2.220446049250313e-16,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.050000000000000044
+          }
+        },
+        "common_bins": 0,
+        "supported_counts": {
+          "ms": 0,
+          "vc2": 0
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      },
+      {
+        "quantum_seconds": 0.005,
+        "continuous_by_source": {
+          "ms": {
+            "n": 50,
+            "minimum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.25,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.0
+          },
+          "vc2": {
+            "n": 50,
+            "minimum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "maximum": [
+              0.3,
+              0.2,
+              0.2,
+              0.30000000000000004,
+              0.30000000000000004,
+              0.19999999999999996,
+              0.19999999999999996,
+              0.30000000000000004,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "mean": [
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.30000000000000027,
+              0.19999999999999993,
+              0.19999999999999993,
+              0.30000000000000027,
+              0.5,
+              0.5,
+              0.5,
+              0.5
+            ],
+            "std": [
+              2.7755575615628914e-16,
+              8.326672684688674e-17,
+              8.326672684688674e-17,
+              2.220446049250313e-16,
+              2.220446049250313e-16,
+              2.7755575615628914e-17,
+              2.7755575615628914e-17,
+              2.220446049250313e-16,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "maximum_deviation_from_target": 0.050000000000000044
+          }
+        },
+        "common_bins": 0,
+        "supported_counts": {
+          "ms": 0,
+          "vc2": 0
+        },
+        "scope": "Intersection only among available sources; missing real sources cannot be inferred."
+      }
+    ]
+  },
+  "protocol_sha256": "eec11e4127cb026391cbc583ab37915499b4ba53d437e71ecfe35dcf09ef3432",
+  "archived_writer_sha256": "513212507a60ebef5b77e7f1babc0585817f9e2b295d3ce27f4efeca6da4c782",
+  "input_hash_index_sha256": "ee18291d3ac722d8e86e059ecaefcab8c6a726ec07deac7b202a9242b60f2329",
+  "joint_records_sha256": "f5252d03ba84da04fd568cf31d7329c2d21f3efd95d269041045d2332219f1b6",
+  "script_sha256": "ab8588e5d54203eb5381814c765086be76e79b643ba1da173773714b770e0984",
+  "sampler_sha256": "17f4ec6489c382abc9c1d73e6c2bf46137e2687c540b90f00eee3a841b3412e0",
+  "wall_seconds": 0.07429284602403641,
+  "limitations": [
+    "Only the archived 50 MS/50 VC2 diagnostic cohort has verified complete native PTS here.",
+    "No inference from nominal FPS, duration or selected 8/16 timestamps to a complete frame sequence.",
+    "Missing timestamps are not video-quality exclusions, and no real/fake overlap can be claimed.",
+    "No current raw-media rehash/decoding was performed; provenance is the archived metadata and writer receipt.",
+    "Existing paid instance was used for CPU/read-only work; this is not a zero-cost claim."
+  ]
+}

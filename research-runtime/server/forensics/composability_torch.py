@@ -1,10 +1,10 @@
 """Batched torch implementation of the shared correspondence-response primitive."""
 import torch
-from .composability import TRIPLETS,shift_permutation
+from .composability import branch_triplets,shift_permutation
 
 
 @torch.no_grad()
-def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False):
+def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interior_control=False,branch_mode='temporal'):
     if tokens.ndim!=4 or tokens.shape[1]!=6 or tokens.shape[2]!=grid[0]*grid[1]:
         raise ValueError('Expected [batch,6,patch,channel] on the declared grid')
     if not torch.isfinite(tokens).all() or temperature<=0 or not torch.isfinite(torch.tensor(temperature)):
@@ -28,8 +28,9 @@ def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interio
     def js(a,b):
         middle=(a+b)/2;lm=middle.clamp_min(tiny).log()
         return .5*((a*(a.clamp_min(tiny).log()-lm)).sum(-1)+(b*(b.clamp_min(tiny).log()-lm)).sum(-1))
+    triplets=branch_triplets(branch_mode)
     responses=[];direct=[];entropies=[];support=[];masses=[]
-    for a,b,c in TRIPLETS:
+    for a,b,c in triplets:
         ab,bc,ac=p(a,b),p(b,c),p(a,c)
         mass=ab[:,:,keep].sum(-1);valid=mass>1e-12
         weights=ab[:,:,keep]/mass.clamp_min(1e-12).unsqueeze(-1)
@@ -44,4 +45,5 @@ def six_frame_response(tokens,grid=(16,16),temperature=.1,scales=(1,2,4),interio
         correspondence_entropies=torch.stack(entropies,dim=1),support=torch.stack(support,dim=1),
         middle_probability_mass=torch.stack(masses,dim=1),
         wrapped_middle_fraction=torch.stack(wrap).double().mean(-1).reshape(len(scales),4),
-        middle_support_fraction=float(keep.double().mean()))
+        middle_support_fraction=float(keep.double().mean()),branch_mode=branch_mode,
+        triplets=triplets,unique_affinity_matrices=len(matrices))

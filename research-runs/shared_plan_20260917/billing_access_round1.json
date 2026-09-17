@@ -1,0 +1,22 @@
+{
+  "work_package": "cc-round-1-20260917",
+  "provider": "AutoDL",
+  "attempt": "Read-only Chrome tab inventory through the browser connector",
+  "outcome": "nodeRepl.fetch request failed",
+  "supplier_account_page_read": false,
+  "current_round_authentication_state_observed": false,
+  "actual_cumulative_paid_cny": null,
+  "actual_cumulative_billed_gpu_hours": null,
+  "current_instance_gpu_rate": null,
+  "current_storage_rate": null,
+  "project_remaining_budget_verified": false,
+  "previous_reservation_snapshot_sha256": "7587fb1d2c319b4f55045c4a708cfdfbcee02f6946ddf4a4b0fb8dbd6bf29fa3",
+  "required_facts": [
+    "Provider charges/payments attributable to this project, including earlier/cloned instances and storage",
+    "Cumulative billed GPU-hours, separate from reservation hours and process runtime",
+    "Current existing-instance GPU and storage price",
+    "Actual remaining project allowance after reconciling consumption against the cumulative caps"
+  ],
+  "no_purchase_or_account_change": true,
+  "warning": "Historical reserved 43.24 CNY/23 hours are not actual spending; an existing paid instance can incur charges during read-only/CPU work."
+}
