@@ -1,0 +1,29 @@
+{
+  "observed_utc": "2026-09-17T10:05:45.520682+00:00",
+  "status": "pass",
+  "tests_run": 16,
+  "seconds": 0.34400000000005093,
+  "python": "3.12.14",
+  "numpy": "2.3.5",
+  "compute": "small in-memory CPU synthetic arrays",
+  "real_research_videos_read": 0,
+  "gpu_used": false,
+  "detector_trained": false,
+  "server_experiment_executed": false,
+  "formal_claim_released": false,
+  "artifact_sha256": {
+    "forensics/lag_support.py": "ef0a19cb6473d3bae12f68c44389c8caf8bacdf15b8d5f8e22073d25689fed01",
+    "forensics/rank_response.py": "268a714fb1acb9b992cff0ad72e21be3908d8b9b25b69e8b36a17bfc02d314b2",
+    "tests/test_lag_support.py": "2ff676550de31faeeabb2938eb1c2094782cda12ffbcb4f455e8ac99952626b6",
+    "tests/test_rank_response.py": "27c735bd5c203675d7e2492b530ade20a0d656ca836dc74cdf7adc0e3cc74029",
+    "scripts/audit_actual_lag_support.py": "cf28796c1eebfc988a3c8da7055738f05dd36902bc8c86cc0cae8667d9d0e3e3",
+    "scripts/check_numerical_mechanisms.py": "d16b06f97fd05a3ee6fbbe975f83856f18e094590cc9592b3bdcc0616170dae7"
+  },
+  "failures": [],
+  "test_log": "test_cross_label_origin_counts_remain_groups (test_lag_support.LagSupportTests.test_cross_label_origin_counts_remain_groups) ... ok\ntest_lag_filter_does_not_depend_on_label (test_lag_support.LagSupportTests.test_lag_filter_does_not_depend_on_label) ... ok\ntest_nominal_eight_hz_does_not_establish_common_support (test_lag_support.LagSupportTests.test_nominal_eight_hz_does_not_establish_common_support) ... ok\ntest_origin_translation_is_ignored (test_lag_support.LagSupportTests.test_origin_translation_is_ignored) ... ok\ntest_refuse_bad_inputs_and_final_data (test_lag_support.LagSupportTests.test_refuse_bad_inputs_and_final_data) ... ok\ntest_rounded_overlap_retains_continuous_difference (test_lag_support.LagSupportTests.test_rounded_overlap_retains_continuous_difference) ... ok\ntest_analytic_translation_bilinear_surface (test_rank_response.RankResponseTests.test_analytic_translation_bilinear_surface) ... ok\ntest_common_positive_affine_photometric_change (test_rank_response.RankResponseTests.test_common_positive_affine_photometric_change) ... ok\ntest_fractional_weights_and_integer_lengths_are_shared (test_rank_response.RankResponseTests.test_fractional_weights_and_integer_lengths_are_shared) ... ok\ntest_integer_mode_really_matches_applied_motion_magnitudes (test_rank_response.RankResponseTests.test_integer_mode_really_matches_applied_motion_magnitudes) ... ok\ntest_local_readout_retains_arrangement_and_empty_coverage (test_rank_response.RankResponseTests.test_local_readout_retains_arrangement_and_empty_coverage) ... ok\ntest_monotone_error_transform_and_orbit_neutrality (test_rank_response.RankResponseTests.test_monotone_error_transform_and_orbit_neutrality) ... ok\ntest_quantization_does_not_create_signal_for_subpixel_motion (test_rank_response.RankResponseTests.test_quantization_does_not_create_signal_for_subpixel_motion) ... ok\ntest_reject_nonfinite_and_shape_errors (test_rank_response.RankResponseTests.test_reject_nonfinite_and_shape_errors) ... ok\ntest_support_does_not_wrap_or_hide_norm_mismatch (test_rank_response.RankResponseTests.test_support_does_not_wrap_or_hide_norm_mismatch) ... ok\ntest_zero_integer_motion_has_no_invented_response (test_rank_response.RankResponseTests.test_zero_integer_motion_has_no_invented_response) ... ok\n\n----------------------------------------------------------------------\nRan 16 tests in 0.341s\n\nOK\n",
+  "limits": [
+    "Tests verify numerical contracts and counterexamples, not detection efficacy or novelty.",
+    "The actual-lag census requires server timestamps and remains unexecuted.",
+    "The local rank component is not an end-to-end trained forensic algorithm."
+  ]
+}

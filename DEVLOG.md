@@ -171,3 +171,32 @@ The complete-cohort verifier passed all 60 frozen-head replays and artifact
 hash checks. Timing-only transfer AUROC is 0.93367 in both configurations.
 Compact evidence is retrieved locally; the 196 videos/features and detailed
 predictions remain server-side. The temporary loopback proxy tunnel is closed.
+
+## 2026-09-17 continued goal: actual-lag support and local-response reference
+
+The previous goal turn made concrete progress, but the innovation objective
+remains unmet. A completed batch is not completion of the full objective.
+The instance was shut down after that batch. This continuation verified SSH
+unreachable and used the browser to reach the AutoDL console, which redirected
+to an unauthenticated login form. The user was asked to boot the original
+instance or sign in. No cloud power-on operation succeeded or was claimed.
+
+Continued code preparation without local media downloads or local GPU work:
+
+- `lag_support.py` and `audit_actual_lag_support.py` measure source/class
+  overlap in actual timestamp intervals, including a prespecified 0.5-second
+  pair available inside the existing cache. They retain continuous within-bin
+  timing differences rather than treating quantization as removal of cues.
+- `rank_response.py` retains local operator-response maps and cell histograms.
+  It exposes a fractional-flow counterexample: equal interpolation weights
+  and equal integer displacement lengths do not imply equal full lengths.
+  An integer-only mode matches the applied lengths exactly while explicitly
+  recording quantization error and neutral uninformative motion.
+- Six actual-lag tests and ten rank-response tests check analytic translated
+  scenes, interpolation, support, ties, common monotone error transforms,
+  quantization, and the motion-length counterexample. No classifier is trained.
+
+The next-step plan records rank/census and DINO-trajectory prior art. These
+components are unvalidated research primitives, not a novel detector result.
+Real-data support census and any mechanism evaluation remain pending server
+access. See `research-plan/ACTUAL_LAG_AND_LOCAL_RANK_2026-09-17.md`.
