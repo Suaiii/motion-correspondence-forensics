@@ -94,3 +94,34 @@ state. Use live evidence for future server status.
   protocol saying minimum calibration BCE. Its saved numbers are exploratory
   final-epoch results; they cannot validate that claimed selection procedure.
 - GPU idleness does not imply absence of instance or storage billing.
+
+## 2026-09-17 live resume: timing replay and GPU consistency candidate
+
+The user booted the instance; SSH, RTX 4090 D and the existing server caches
+were verified live. No videos, weights or feature arrays were downloaded to
+the local machine. The earlier "compact JSON not retrieved" note is historical:
+those files have been retrieved and the interpretation is corrected below.
+
+`verify_paired_time.py` validated artifact hashes, reconstructed all six frozen
+heads' inputs and replayed both audit cohorts for both held generators. Main
+models were not refitted. Time-delta gains over semantic LR are +0.000425
+(95% paired ancestor-proxy CI [-0.011488, 0.011573]) and +0.007175
+([-0.004446, 0.018758]); no incremental temporal effect has passed. Actual
+time-grid median-interval probes still reach 0.78395/1.0 AUROC. Withdraw the
+earlier claim that a genuine temporal signal was confirmed by time matching.
+
+Developed and executed `sampling_consistency_pilot.py`: six equal-parameter
+MLP arms, five seeds, two generator holdouts, full 40-epoch schedules with
+minimum calibration BCE selection, no walltime cap. All 60 fits finished in
+131.81 seconds including loading and bootstrap. The paired-consistency
+candidate loses to ordinary two-view ERM on ModelScope in all five seeds,
+while improving VideoCrafter2. Shuffled pairing matches or exceeds its
+ensemble performance. Reject the candidate under its predeclared criterion;
+do not present the improved MLP baseline as algorithm novelty.
+
+`verify_sampling_consistency.py` independently reconstructed audit features
+and replayed all 60 saved checkpoints without training. Hashes, metrics,
+checkpoint epoch selection and parameter counts passed. Large artifacts stay
+on the server. See the compact paired-time and sampling-consistency reports
+under `research-runs/` and the frozen pilot plan under `research-plan/`.
+These are development diagnostics; the overall innovation goal is incomplete.
