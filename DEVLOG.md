@@ -316,3 +316,23 @@ round2_validation.json for scope and artifact hashes. No SSH, server probe,
 ffprobe, media read, feature extraction, training or new GPU job occurred.
 The previous shutdown observation is historical; billing remains unverified.
 DX02/RS01 are submitted for scoped review, without releasing formal gates.
+
+## 2026-09-18 translation-null identifiability diagnostic
+
+Using unchanged v1.1 NumPy formulas, established a restricted algebraic null:
+when all frames are toroidal translations of one fixed patch-token field and
+middle support is full, each temporal triple response equals its anchor-frame
+static response. Three synthetic seeds verify map equality below 8e-16. Thus
+the temporal pooled readout equals static pooling with anchor counts
+[2,2,1,1,0,0]/6, not general total-role weights [2,3,4,4,3,2]/18.
+
+A fixed random spatial encoder gives nonzero uniform/degree-weighted readout
+differences even in this null. These are vector distances, not detector gains.
+Arbitrary reindexing and fixed interior support break the commuting-permutation
+condition; no general motion failure or DINO equivariance is claimed. Proposed
+anchor-matched static as an additional diagnostic, not replacement for the
+required all-frame static strong baseline. See translation_null_review.md and
+translation_null_diagnostic.json under shared_plan_20260917.
+
+Ran 6.69 seconds on local CPU only, no training, backbone, raw media or server
+access. No protocol or planner state changed. Formal innovation remains unproven.
