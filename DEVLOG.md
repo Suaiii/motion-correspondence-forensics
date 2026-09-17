@@ -125,3 +125,49 @@ checkpoint epoch selection and parameter counts passed. Large artifacts stay
 on the server. See the compact paired-time and sampling-consistency reports
 under `research-runs/` and the frozen pilot plan under `research-plan/`.
 These are development diagnostics; the overall innovation goal is incomplete.
+
+## 2026-09-17 second-source access and frozen external transfer
+
+Implemented streaming recovery for the nested HD-VG 7z/RAR release. Read
+552 MiB of pinned compressed prefix and recovered 100 original videos
+(579,425,559 bytes), checking RAR header CRC, member CRC/size and SHA256.
+The first attempt stopped at the 128 MiB per-member guard; v2 safely permits
+512 MiB per member, reuses hash-verified range chunks and completes all 100.
+The whole 80 GB archive was not fetched or hashed. All media remain on server.
+The user's local Clash proxy was forwarded only to server loopback to bypass
+a direct network timeout; this was a transport fix, not a local media download.
+
+Fetched pinned author metadata and verified its Git blob against the release
+catalog. All 100 HD-VG origin IDs and 100 CogVideo prompts join to author
+indices. Excluding two origins shared with Pair1 removes four candidates;
+one additional real video hits the 60-second ffprobe deadline (an operational
+timeout, not established video-quality failure). The initial transfer cohort has 195 clips,
+100 origin groups and 95 groups spanning both real/generated labels.
+
+Evaluated all 60 old checkpoints without refitting or recalibration. Ordinary
+two-view ERM ensemble AUROC is 0.86324/0.91058 for models trained with
+VideoCrafter2/ModelScope fake videos respectively. Paired consistency remains
+unpreferred relative to shuffled pairing. Frozen interval-only controls reach
+0.93299, so high neural scores still do not establish a forensic mechanism.
+Replayed all 60 external predictions and verified raw/features/checkpoint
+hashes. Details: `research-runs/pair2_frozen_transfer_v1_report.md`.
+
+The GPU extraction path now prefetches with 12 decode workers and batches of
+32 videos. This small run completed in 92.51 seconds with 2.10 GiB peak GPU
+allocation; no claim of sustained high utilization or provider cost is made.
+The second-source access issue is reduced, but formal source acceptance and
+the algorithm-innovation goal remain incomplete. No final set was opened.
+
+The timed-out HD-VG sample is a 497-second 1080p video. A separate v2 pass
+removed the operational probe deadline, reused the 195 successful feature
+records, and recovered the clip with unchanged sampling. The complete
+98-real/98-generated cohort passes extraction, with 100 origin groups and
+96 containing both labels. Ordinary two-view ERM ensemble AUROC becomes
+0.86172/0.90848; the candidate rejection remains unchanged. The v2 process
+took 111.21 additional seconds. Preserve both versions; the first exclusion
+was an operational timeout, not evidence of bad video quality.
+
+The complete-cohort verifier passed all 60 frozen-head replays and artifact
+hash checks. Timing-only transfer AUROC is 0.93367 in both configurations.
+Compact evidence is retrieved locally; the 196 videos/features and detailed
+predictions remain server-side. The temporary loopback proxy tunnel is closed.

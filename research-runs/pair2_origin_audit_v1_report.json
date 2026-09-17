@@ -1,0 +1,34 @@
+{
+  "script_sha256": "e069a6be17bda02dc5a9a05684595df67617cf00894851a5eda682c1f3508fc7",
+  "metadata_git_blob_sha1": "9ebfc67dbe27d2827a0b8cf37029e4a66708736c",
+  "metadata_sha256": "848938778cf93467ecf05f25fabdbc98b795e3b477fb1b6eb508e58bef317747",
+  "pair1_labels_sha256": "311cc87114d1cdd0f38db0dbb1ab7d795a2d9813fc1ad3b86ec96dc772b85ff3",
+  "metadata_rows": 13853,
+  "counts": {
+    "hd_vg_130m": 100,
+    "cogvideo": 100
+  },
+  "metadata_join_counts": {
+    "True": 200
+  },
+  "source_origin_matches": 100,
+  "generator_prompt_matches": 100,
+  "exclusions": {
+    "shared_origin_with_pair1_vript": 4
+  },
+  "eligible_before_qc": {
+    "hd_vg_130m": 98,
+    "cogvideo": 98
+  },
+  "ancestry_groups": 102,
+  "multisample_groups": 98,
+  "manifest_sha256": "d78095cd936905333ff57f494436bcb5979abfe0ccb1fb3098fc6e65c96e7b9f",
+  "formal_training_released": false,
+  "limitations": [
+    "Archive-prefix selection is non-random and unsuitable as a definitive benchmark.",
+    "Author ordinal plus origin/prompt join is not independent visual ancestry proof.",
+    "HD-VG declares academic-only use and no redistribution; videos remain server-side.",
+    "Declared author real labels are not independent confirmation of camera capture.",
+    "Do not split generated prompts and reference videos across train and evaluation."
+  ]
+}

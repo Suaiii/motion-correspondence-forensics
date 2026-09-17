@@ -1,5 +1,12 @@
 # Provenance decision: CogVideo and historical source aliases
 
+> Update 2026-09-17: HD-VG small-cohort acquisition and the author
+> index/origin/prompt join have now been implemented. See
+> `research-runs/pair2_frozen_transfer_v2_report.md`: 100 HD-VG candidates,
+> 200/200 author-metadata joins across HD-VG and CogVideo, and 196 eligible
+> clips after origin-overlap exclusion and successful slow-clip retry. This is not content-verified
+> ancestry or a final set.
+
 This checkpoint supersedes source counts based on directory names in the
 provisional manifests. It does not rewrite the original manifests or metrics.
 
@@ -10,8 +17,8 @@ states that CogVideo and Mora were generated from HD-VG-130M prompts, whereas
 SVD and MuseV use extracted HD-VG frames. This supports the CogVideo subset's
 text-to-video task classification. It also establishes that Pair2 real videos
 and several generated subsets share content ancestry; they cannot be assigned
-independently to splits. The recovered member IDs still need a per-video join
-to the HD-VG reference metadata.
+independently to splits. The per-video author-metadata join to the HD-VG
+reference was completed on 2026-09-17. Content confirmation remains open.
 
 The [official repository](https://github.com/genvidbench/GenVidBench) declares
 CC BY-NC 4.0. The [project page](https://genvidbench.github.io/) also records
@@ -48,6 +55,10 @@ still only one established real-source family. Earlier claims that videoOSN
 supplied a second real source are withdrawn.
 
 ## Next experiment prerequisite
+
+The small HD-VG acquisition described in the update above now provides a
+second real-source candidate cohort. Its formal acceptance and source-quality
+review remain separate from successful extraction and metadata joining.
 
 Use the existing MSVD/ComGenVid pool as exposed development only after its
 sample-level rights/provenance review, or acquire a genuinely independent
