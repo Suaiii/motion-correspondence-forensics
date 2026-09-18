@@ -2249,7 +2249,7 @@
         "AL15",
         "AL19"
       ],
-      "status": "ready",
+      "status": "running",
       "gate_result": "not_evaluated",
       "gate_scope": "finite_response_baseline_contract",
       "hypothesis": "同四调用的交叉增量能量/内积可能精确重构OR1读出；单步标量基线可能遗漏关键普通量。",
@@ -2287,7 +2287,13 @@
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
       "next_action": "Prepared only; follow unique main-DAG dispatch/start record, no parallel package for same executor.",
-      "additional_input_review": "../reviews/AL23_MATCHING_OBJECTIVE_REVIEW_20260919.md"
+      "additional_input_review": "../reviews/AL23_MATCHING_OBJECTIVE_REVIEW_20260919.md",
+      "dispatch_status": "running_verified",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T03:56:40+08:00",
+      "observed_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
+      "execution_stage": "work_order_adoption_and_preparation"
     },
     {
       "id": "AL21",
@@ -2491,7 +2497,7 @@
         "AL12",
         "AL23"
       ],
-      "status": "ready",
+      "status": "running",
       "gate_result": "not_evaluated",
       "gate_scope": "matching_and_objective_reference_software",
       "hypothesis": "固定小表能验证最大基数/最小费用/字典序的匹配合同，以及已定一维凸目标的导数和解范围；不能据此声称检测能力。",
@@ -2533,7 +2539,13 @@
       "classifier_training_authorized": false,
       "hypothesis_result": "not_evaluated",
       "scientific_innovation_gate_passed": false,
-      "next_action": "Execute only within the new unique AL20/AL24 package; no overlap with completed AL18."
+      "next_action": "Execute only within the new unique AL20/AL24 package; no overlap with completed AL18.",
+      "dispatch_status": "running_verified",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T03:56:40+08:00",
+      "observed_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
+      "execution_stage": "work_order_adoption_and_preparation"
     }
   ],
   "storage_policy": {
@@ -3933,7 +3945,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T03:54:09+08:00",
+  "updated_at": "2026-09-19T03:56:40+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4586,7 +4598,7 @@
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "prepared_not_sent",
+      "status": "running",
       "prepared_at": "2026-09-19T03:54:09+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "work_orders": [
@@ -4600,19 +4612,26 @@
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
       "scope": "Two independent bounded components: finite-response baseline mathematics and abstract matching/one-dimensional objective software reference; no real classifier, model/media/server/GPU.",
-      "readiness_basis": "AL18 full handoff, archival/targeted review, idle/completed cursor28; AL23 mathematical contract complete"
+      "readiness_basis": "AL18 full handoff, archival/targeted review, idle/completed cursor28; AL23 mathematical contract complete",
+      "sent_at": "2026-09-19T03:55:37+08:00",
+      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+      "duplicate_dispatch_suppressed": true,
+      "last_observed_status": "inProgress",
+      "last_observed_thread_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
+      "last_observed_at": "2026-09-19T03:56:40+08:00",
+      "startup_evidence": "cursor29 active with explicit acknowledgement of both work orders, AL23, trace-only AL20 and frozen limited AL24 preparation"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:28",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:29",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T03:54:09+08:00",
-    "research_observed_status": "idle",
+    "last_coordinator_activity_at": "2026-09-19T03:56:40+08:00",
+    "research_observed_status": "active",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -5132,16 +5151,13 @@
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T03:54:09+08:00",
-    "prepared_independent_task_ids": [
-      "AL20",
-      "AL24"
-    ],
+    "prepared_independent_task_ids": [],
     "active_and_prepared_work": {
-      "running": [],
-      "prepared_independent": [
+      "running": [
         "AL20",
         "AL24"
-      ]
+      ],
+      "prepared_independent": []
     },
     "material_decision_notices": [
       {
