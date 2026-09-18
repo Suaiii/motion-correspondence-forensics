@@ -1429,8 +1429,8 @@
       "requires_pass": [
         "AL03"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "algorithm_information_theory_review",
       "hypothesis": "固定完整两两边际时二次运动代价可能完全退化为已知两两项，非二次轨迹事件可能仍缺实际联合观测，须先审查再设计新机制。",
       "work": [
@@ -1444,11 +1444,12 @@
         "数学/有限算术不冒充真实生成机制或新颖性；不触发付费实验"
       ],
       "artifacts": [
-        "../reviews/AL07_GEOMETRY_REVIEW_20260919.md"
+        "../reviews/AL07_GEOMETRY_REVIEW_20260919.md",
+        "../reviews/AL07_GEOMETRY_EXACT_20260919.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "planagent按AL07_GEOMETRY_INFORMATION_20260919.md完成独立数学审查，可与AL06并行。",
+      "next_action": "AL08仅审查观测三元组的信息合同与直接近邻；不把几何代价直接升级为新主候选。",
       "work_order": "../AL07_GEOMETRY_INFORMATION_20260919.md",
       "resource_policy": {
         "local_cpu": true,
@@ -1460,9 +1461,65 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported",
       "prepared_at": "2026-09-19T01:00:26+08:00",
-      "independent_of_AL06": true
+      "independent_of_AL06": true,
+      "started_at": "2026-09-19T01:04:43+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "work_order_sha256": "df232168e697a6b2ef508b76c73bddfe7cab61dd2b1202c059ca7fa5f32bfb54",
+      "completed_at": "2026-09-19T01:10:21+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Internal algebra/information-contract review with exact finite arithmetic; independent scientific confirmation pending",
+      "review_note": "Squared velocity-change cost is fixed by complete pair marginals for general positive lags. A fixed same-Q/same-coordinate construction has tail probability 0 or1/4 while squared expectation is25/4 for both. No observed-trajectory or detection claim.",
+      "independent_scientific_review": "pending; same planagent derived and checked the construction"
+    },
+    {
+      "id": "AL08",
+      "milestone": "M2",
+      "title": "观测三元组的信息合同与经典交互近邻审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL02",
+        "AL07"
+      ],
+      "requires_pass": [
+        "AL07"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "candidate_observation_contract_and_prior_art",
+      "hypothesis": "原始可见观测定义的三元组可能保留两两压缩丢失的信息，但其算法贡献须排除普通同输入高阶统计、Lancaster或最大熵经典交互及匹配本身的解释。",
+      "work": [
+        "明确共同可见的三元组样本、索引和依赖结构，排除伪连接或隐藏真轨迹",
+        "核对connected-information、Lancaster及其时序扩展的原始定义与估计式，复用SemanticMoments审查",
+        "仅在存在可部署输入和具体近邻差异时预注册一个新原型，否则明确拒绝该版本"
+      ],
+      "acceptance": [
+        "总体边际与共享样本全部观测元组严格区分",
+        "经典交互统计作为强基线，不通过改名称或换应用宣称创新",
+        "现阶段只做信息/方法审查，不解锁真实数据或资源批次"
+      ],
+      "artifacts": [
+        "../reviews/AL08_OBSERVED_TRIPLET_REVIEW_20260919.md"
+      ],
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "plan_version": "cvpr27-20260918-v1.4",
+      "next_action": "planagent按AL08_OBSERVED_TRIPLET_CONTRACT_20260919.md审查；不与AL06实现重叠。",
+      "work_order": "../AL08_OBSERVED_TRIPLET_CONTRACT_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false
+      },
+      "hypothesis_result": "not_evaluated",
+      "prepared_at": "2026-09-19T01:10:21+08:00",
+      "independent_of_AL06": true,
+      "implementation_authorized": false
     }
   ],
   "storage_policy": {
@@ -2862,7 +2919,7 @@
     }
   },
   "plan_version": "cvpr27-20260918-v1.4",
-  "updated_at": "2026-09-19T01:01:40+08:00",
+  "updated_at": "2026-09-19T01:10:21+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -3479,7 +3536,7 @@
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:6",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:7",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
@@ -3739,7 +3796,7 @@
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:5"
       }
     ],
-    "last_substantive_review": "../reviews/AL01_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL07_GEOMETRY_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -3817,11 +3874,15 @@
     "local_execution": {
       "task_ids": [],
       "executor_role": "planagent",
-      "status": "transferred_to_new_research_session",
-      "work_area": "research-plan/fallback-runtime",
-      "partial_evidence": "../reviews/AL03_joint_math_evidence_20260918.json",
-      "requires_cross_review": true,
-      "handoff_at": "2026-09-19T00:33:22+08:00"
+      "status": "completed_scoped_review",
+      "work_area": "research-plan/reviews",
+      "started_at": "2026-09-19T01:04:43+08:00",
+      "scope": "Exact finite probability and algebra review of fixed geometric information contract; independent of running AL06.",
+      "completed_task_ids": [
+        "AL07"
+      ],
+      "completed_at": "2026-09-19T01:10:21+08:00",
+      "review": "../reviews/AL07_GEOMETRY_REVIEW_20260919.md"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -3840,14 +3901,14 @@
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T00:50:13+08:00",
     "prepared_independent_task_ids": [
-      "AL07"
+      "AL08"
     ],
     "active_and_prepared_work": {
       "running": [
         "AL06"
       ],
       "prepared_independent": [
-        "AL07"
+        "AL08"
       ],
       "downstream_decision": [
         "AL05"
