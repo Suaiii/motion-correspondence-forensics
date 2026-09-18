@@ -1,0 +1,14 @@
+{
+  "scope": "common_rotation_mixing_key_and_payload_channels",
+  "seed": 1907,
+  "m": 8,
+  "input_sha256": "ee797d366d98a1c9bba4c0d9786bf82e239b6274c0b031ef9d8eb2d2d8e374c9",
+  "rotation_sha256": "b00b7a36ce59052ffa07f696d2f95fe5f4872103403ccec97c785a5f235c2a1e",
+  "result": {
+    "accepted": false,
+    "reason": "This first prototype requires two observed payload values per frame"
+  },
+  "interpretation": "Prototype requires declared typed key/payload spaces and binary payload support; no general DINO embedding rotation invariance is established",
+  "training_steps": 0,
+  "gpu_used": false
+}

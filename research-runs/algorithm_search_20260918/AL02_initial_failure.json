@@ -1,0 +1,9 @@
+{
+  "status": "numerical_reference_solver_failure",
+  "observed_utc": "2026-09-18T16:04:15.0096109Z",
+  "script_sha256": "df2768833604c601929826c0b892495361bc912e43ff1c6329929e1a828b140f",
+  "error": "Reference IPF did not converge; no silent substitute",
+  "location": "fixed wrong-key stress loop",
+  "output_written": false,
+  "decision": "Preserve failure; solve same binary all-pair maximum-entropy constraints by their one-dimensional parity affine family. No case or temperature changes."
+}

@@ -405,3 +405,32 @@ Local CPU analysis took 0.121 s. No server, probe, media, backbone, GPU, trainin
 or additional batch. Four requested artifacts are in shared_plan_20260917 with
 candidate_c_existing_pts prefixes and collaboration_round_4.md; the new audit
 script preserves old inputs and refuses to overwrite its outputs.
+
+## 2026-09-19 round6: independent H-J review and H-T falsification
+
+Executed cc-round-6-crossreview-ht-20260918 (AL03/AL02) after ordinary-model
+recovery; did not repeat or modify planagent's AL01 primary implementation.
+Independently assembled an equality/slack LP, proved the binary tetrahedron
+average-L1 distance by a feasible projection/witness, and checked 45 continuous
+or near-facet cases plus compatible/hard-cycle m=2/4/8 examples. The Gaussian
+static-zero construction is integrable under its positive-temperature and
+complete-support assumptions. Arbitrary consistent relabeling remains invisible.
+Reported a helper input-validation defect: negative temperature is accepted;
+the default positive-temperature theorem and old results are not thereby refuted.
+
+H-T now has an executable observable-key binary-payload prototype and explicit
+negative results. Full-index Markov maximum-entropy conditioning is tautological;
+coarse symmetric binary-payload conditioning reduces to ordinary aligned third
+moments. Equal pair histograms did not imply equal indexed Q observations.
+An exact common-sign-flip example preserves all Q/C inputs but only changes a
+coordinate-sensitive signed statistic; the invariant norm remains unchanged.
+Complete-input static second moments, amplitude, time permutation and confidently
+wrong correspondences explain or defeat the apparent toy gain.
+
+Initial IPF reference failed to converge in a fixed stress case. Preserved its
+source and failure; solved the same binary all-pair entropy problem on its exact
+one-dimensional affine feasible family. Fourteen independent probability-table
+checks against scalar optimization agree within 4.45e-16 entropy. No case or
+temperature was selected based on outcomes. Main evidence and decisions are in
+research-runs/algorithm_search_20260918, with a round6 artifact manifest/handoff.
+No server, media, backbone, GPU, classifier fitting or formal innovation claim.

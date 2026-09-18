@@ -1,0 +1,83 @@
+{
+  "status": "pass",
+  "scope": "binary_reference_solver_only",
+  "cases": 14,
+  "checks": [
+    {
+      "entropy_gap": 4.440892098500626e-16,
+      "marginal_error": 0.0,
+      "min_mass": 0.12499999999999999
+    },
+    {
+      "entropy_gap": 0.0,
+      "marginal_error": 0.0,
+      "min_mass": 0.125
+    },
+    {
+      "entropy_gap": 0.0,
+      "marginal_error": 5.551115123125783e-17,
+      "min_mass": 0.0009455439628740306
+    },
+    {
+      "entropy_gap": 2.220446049250313e-16,
+      "marginal_error": 2.7755575615628914e-17,
+      "min_mass": 0.03518414975647335
+    },
+    {
+      "entropy_gap": 0.0,
+      "marginal_error": 1.1102230246251565e-16,
+      "min_mass": 0.004890941910469772
+    },
+    {
+      "entropy_gap": 0.0,
+      "marginal_error": 5.551115123125783e-17,
+      "min_mass": 0.02108454578298395
+    },
+    {
+      "entropy_gap": 2.220446049250313e-16,
+      "marginal_error": 5.551115123125783e-17,
+      "min_mass": 0.022313789864924466
+    },
+    {
+      "entropy_gap": 4.440892098500626e-16,
+      "marginal_error": 5.551115123125783e-17,
+      "min_mass": 0.03033334396257843
+    },
+    {
+      "entropy_gap": 2.220446049250313e-16,
+      "marginal_error": 0.0,
+      "min_mass": 0.0147214242048117
+    },
+    {
+      "entropy_gap": 4.440892098500626e-16,
+      "marginal_error": 2.7755575615628914e-17,
+      "min_mass": 0.012147945093258103
+    },
+    {
+      "entropy_gap": 2.220446049250313e-16,
+      "marginal_error": 5.551115123125783e-17,
+      "min_mass": 0.017817009251316497
+    },
+    {
+      "entropy_gap": 2.220446049250313e-16,
+      "marginal_error": 1.1102230246251565e-16,
+      "min_mass": 0.023598349269722915
+    },
+    {
+      "entropy_gap": 2.220446049250313e-16,
+      "marginal_error": 5.551115123125783e-17,
+      "min_mass": 0.01943190415089665
+    },
+    {
+      "entropy_gap": 0.0,
+      "marginal_error": 2.7755575615628914e-17,
+      "min_mass": 0.0001691473836787896
+    }
+  ],
+  "prototype_sha256": "8b53edb1df7ea832696bd19e98c12e702d6aee5d55729374b9652d7e9cb3a85f",
+  "verifier_sha256": "4d8d73968fe7196ea8303fa28e231ad3f18790f01833720bd115c43518b5eba1",
+  "elapsed_seconds": 0.0656581000002916,
+  "threads": 2,
+  "training_steps": 0,
+  "real_data": false
+}

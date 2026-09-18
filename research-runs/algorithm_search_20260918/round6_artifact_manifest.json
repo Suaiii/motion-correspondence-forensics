@@ -1,0 +1,34 @@
+{
+  "dispatch_id": "cc-round-6-crossreview-ht-20260918",
+  "source_parent_commit": "6d77d44e308cd5d1360556d51adbbb9e739062b8",
+  "hypothesis_results": {
+    "AL03": {
+      "result": "supported",
+      "scope": "reviewed restricted mathematical claims; helper input issue remains, novelty unknown"
+    },
+    "AL02": {
+      "result": "refuted",
+      "scope": "current conditional-readout independent-gain claim; general research question inconclusive"
+    }
+  },
+  "integrity_checks": "passed_without_reexecuting_experiments",
+  "artifacts": {
+    "research-runs/algorithm_search_20260918/AL02_design.md": "767665127d883249b1bc483ebf4940f4c5bcf1ea4bec0a42af933df2ac3a503a",
+    "research-runs/algorithm_search_20260918/AL02_evidence.json": "bc1b4218b3e641edfa9a91912bd30ef32b02b675b3aadc79dac9b8ea1904b3d1",
+    "research-runs/algorithm_search_20260918/AL02_initial_failure.json": "e605b6c1fd5284bc49ed56fdb3f82a3473d4a6eee8c279e4290a099a1a8faa28",
+    "research-runs/algorithm_search_20260918/AL02_reference_checks.json": "3cd0cf6b3812504ad524a9ec009f82c3c3c73c91d757cac10bd748654cbd1e39",
+    "research-runs/algorithm_search_20260918/AL02_full_rotation_check.json": "e93a776b45ace4826463b43dfac1819787deefa2090ae4026ecf462b4c33f69b",
+    "research-runs/algorithm_search_20260918/AL03_cross_review.md": "4a7ac8a14fa4f9a7e963292ce5998160d47f3b4ce943ad3dcff8d22d7bcb18cf",
+    "research-runs/algorithm_search_20260918/AL03_cross_evidence.json": "a30d05b74219a7825b7cd2e59d7310192f375fdd088e5f946b34095c7dd4dd14",
+    "research-runs/algorithm_search_20260918/round6_handoff.md": "cb94301b4d47f3e949a9640f96d4bd3d3e32e0151cd499e3b6fb14f9ab55c032",
+    "research-runtime/algorithm_candidates/round6/cross_review.py": "9ca3f33feeb30804388832d59d118a79b1a71b86bc6e3c3269dcd5043d630e7a",
+    "research-runtime/algorithm_candidates/round6/higher_order_reference.py": "8b53edb1df7ea832696bd19e98c12e702d6aee5d55729374b9652d7e9cb3a85f",
+    "research-runtime/algorithm_candidates/round6/higher_order_reference_ipf_initial.py": "df2768833604c601929826c0b892495361bc912e43ff1c6329929e1a828b140f",
+    "research-runtime/algorithm_candidates/round6/verify_ht_reference.py": "4d8d73968fe7196ea8303fa28e231ad3f18790f01833720bd115c43518b5eba1",
+    "research-runtime/algorithm_candidates/round6/config.json": "a3fa015e30300dbe44cfa233cc2ecf0bd7279110a41578bf0eae7e4f18e34bba",
+    "research-runtime/algorithm_candidates/round6/ht_config.json": "e61558b07b38a282cd235fdf0f202c45de7c019b61286cbe4312b0db993f6167"
+  },
+  "frozen_C_unchanged": true,
+  "shared_plan_files_modified": false,
+  "source_reference_unchanged": true
+}

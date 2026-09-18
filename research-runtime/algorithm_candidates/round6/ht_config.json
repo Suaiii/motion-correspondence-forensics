@@ -1,0 +1,20 @@
+{
+  "dispatch_id": "cc-round-6-crossreview-ht-20260918",
+  "temperature": 0.1,
+  "matching": "row-softmax observed key cosine, equal m one-hot-key fixtures",
+  "weight": "W_ijk=P_ab(i,j)*P_bc(j,k)/m",
+  "reference": "maximum-entropy binary payload distribution with all three payload pair marginals",
+  "full_index_reference_control": "Markov W is itself maximum entropy given its ab and bc index marginals",
+  "readout": "Frobenius norm of centered third tensor; signed coordinate retained only as a non-invariant diagnostic",
+  "payload_embedding_dimension": 2,
+  "toy_C_control": "unchanged response_from_matrices formula, cosine-softmax on same concatenated observed key and payload, cyclic index shifts +/-1 +/-2 +/-4; not production 16x16 C detector",
+  "static_controls": ["pooled payload mean covariance third", "pooled full-input first and second moments"],
+  "ordinary_third_controls": ["same W and same centered payload", "same-index unaligned triple", "SemanticMoments-style coordinatewise temporal third moment, not paper reproduction"],
+  "seeds": [91862, 1907, 2909],
+  "sizes": [4, 8],
+  "scales": [0.5, 1.0, 2.0],
+  "wrong_key_fractions": [0.0, 0.25, 0.5, 1.0],
+  "time_orders": [[0,1,2],[0,2,1],[1,0,2],[1,2,0],[2,0,1],[2,1,0]],
+  "fit_classifier": false,
+  "hyperparameter_search": false
+}
