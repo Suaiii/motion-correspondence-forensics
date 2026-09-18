@@ -2275,8 +2275,8 @@
         "AL13",
         "AL16"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "coverage_evaluation_contract",
       "hypothesis": "相同类别保留比例仍可改变条件AUROC；必须分别定义完整系统与接受集上的评价。",
       "work": [
@@ -2290,7 +2290,9 @@
         "分开训练匹配和推断拒绝"
       ],
       "artifacts": [
-        "../reviews/AL21_COVERAGE_EVALUATION_REVIEW_20260919.md"
+        "../reviews/AL21_COVERAGE_EVALUATION_REVIEW_20260919.md",
+        "../reviews/AL21_COVERAGE_EXACT_20260919.json",
+        "../reviews/AL21_FIXED_ILLUSTRATION_20260919.json"
       ],
       "work_order": "../AL21_OR1_COVERAGE_REVIEW_20260919.md",
       "plan_version": "cvpr27-20260919-v1.5",
@@ -2308,10 +2310,23 @@
         "max_array_bytes": 1048576,
         "torch": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported_by_fixed_counterexample_and_conditional_metric_decomposition",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "next_action": "Prepared only; follow unique main-DAG dispatch/start record, no parallel package for same executor."
+      "next_action": "Use same target inputs and explicit acceptance/fallback contract for candidate versus strong-baseline evaluation; AL20 remains prepared.",
+      "started_at": "2026-09-19T03:17:18+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "completed_at": "2026-09-19T03:21:50+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Evaluation mathematics and fixed illustrative pair enumeration; no candidate performance measurement",
+      "review": "../reviews/AL21_COVERAGE_EVALUATION_REVIEW_20260919.md",
+      "artifact_sha256": {
+        "research-plan/reviews/AL21_COVERAGE_EVALUATION_REVIEW_20260919.md": "687194ed811763011bed8e7fdced26ca52e901423d3cada0e16686f2e561b66f",
+        "research-plan/reviews/AL21_FIXED_ILLUSTRATION_20260919.json": "9188fba1b11174fb527d2588101fb62027aa32c0849354686202dcfe63625a09",
+        "research-plan/reviews/AL21_COVERAGE_EXACT_20260919.json": "1438d1c9c1f111f4494c02f731d66cff798f91b097509339dfaf5371f8eece21",
+        "research-plan/reviews/audit_al21_coverage_20260919.py": "71bbe70fef7d1ee48376de81db1196a32bb0c0496aa53f1ed909d1004ce2d43e"
+      },
+      "independent_scientific_review": "pending; self-derived protocol mathematics, no formal OR1 efficacy result"
     }
   ],
   "storage_policy": {
@@ -3711,7 +3726,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T03:14:45+08:00",
+  "updated_at": "2026-09-19T03:21:50+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4377,19 +4392,19 @@
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "inProgress",
       "last_observed_thread_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
-      "last_observed_at": "2026-09-19T03:14:45+08:00",
+      "last_observed_at": "2026-09-19T03:21:50+08:00",
       "startup_evidence": "wait_threads active plus explicit AL18 work-order and rational-input acknowledgement; no duplicate dispatch."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:23",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:24",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T03:14:45+08:00",
+    "last_coordinator_activity_at": "2026-09-19T03:21:50+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
@@ -4767,7 +4782,7 @@
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:22"
       }
     ],
-    "last_substantive_review": "../reviews/AL19_CLAMP_COORDINATES_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL21_COVERAGE_EVALUATION_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4844,14 +4859,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL19"
+        "AL21"
       ],
       "executor_role": "planagent",
-      "status": "completed_mathematical_review",
-      "started_at": "2026-09-19T03:08:30+08:00",
+      "status": "completed_coverage_review",
       "work_area": "research-plan/reviews",
-      "scope": "Clipping counterexamples and coordinate formulas; independent of AL18 CPU implementation",
-      "completed_at": "2026-09-19T03:14:45+08:00"
+      "started_at": "2026-09-19T03:17:18+08:00",
+      "scope": "Fixed synthetic pair-enumeration counterexample and evaluation contract; no fitting, media, model, server or GPU",
+      "completed_at": "2026-09-19T03:21:50+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4868,18 +4883,16 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T03:14:45+08:00",
+    "last_local_review_at": "2026-09-19T03:21:50+08:00",
     "prepared_independent_task_ids": [
-      "AL20",
-      "AL21"
+      "AL20"
     ],
     "active_and_prepared_work": {
       "running": [
         "AL18"
       ],
       "prepared_independent": [
-        "AL20",
-        "AL21"
+        "AL20"
       ]
     },
     "material_decision_notices": [
@@ -4994,7 +5007,9 @@
       "clamp_counterexample_established": true,
       "real_clamp_confound_confirmed": false,
       "compact_baseline_task": "AL20",
-      "coverage_review_task": "AL21"
+      "coverage_review_task": "AL21",
+      "coverage_evaluation_review_task": "AL21",
+      "full_population_rejection_or_fallback_policy": "not_yet_frozen; accepted-only gains cannot substitute for complete-target benchmark"
     }
   },
   "open_review_issues": [

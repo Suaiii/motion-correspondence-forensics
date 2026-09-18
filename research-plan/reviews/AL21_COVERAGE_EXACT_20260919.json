@@ -1,0 +1,93 @@
+{
+  "task_id": "AL21",
+  "observed_at": "2026-09-18T19:19:28.831330+00:00",
+  "input_sha256": "9188fba1b11174fb527d2588101fb62027aa32c0849354686202dcfe63625a09",
+  "script_sha256": "71bbe70fef7d1ee48376de81db1196a32bb0c0496aa53f1ed909d1004ce2d43e",
+  "score_table": [
+    {
+      "id": "p_hi",
+      "label": 1,
+      "score_exact": "9/10",
+      "z": 0
+    },
+    {
+      "id": "p_low",
+      "label": 1,
+      "score_exact": "2/5",
+      "z": 1
+    },
+    {
+      "id": "n_hi",
+      "label": 0,
+      "score_exact": "3/5",
+      "z": 1
+    },
+    {
+      "id": "n_low",
+      "label": 0,
+      "score_exact": "1/10",
+      "z": 0
+    }
+  ],
+  "pairs": [
+    {
+      "positive": "p_hi",
+      "negative": "n_hi",
+      "credit_exact": "1",
+      "both_accepted": false
+    },
+    {
+      "positive": "p_hi",
+      "negative": "n_low",
+      "credit_exact": "1",
+      "both_accepted": true
+    },
+    {
+      "positive": "p_low",
+      "negative": "n_hi",
+      "credit_exact": "0",
+      "both_accepted": false
+    },
+    {
+      "positive": "p_low",
+      "negative": "n_low",
+      "credit_exact": "1",
+      "both_accepted": false
+    }
+  ],
+  "complete_AUC_exact": "3/4",
+  "accepted_AUC_exact": "1",
+  "positive_coverage_exact": "1/2",
+  "negative_coverage_exact": "1/2",
+  "accepted_pair_fraction_exact": "1/4",
+  "unresolved_full_score_completion_AUC_interval": [
+    "1/4",
+    "1"
+  ],
+  "rates_at_fixed_threshold": {
+    "TPR": {
+      "accepted_rate_exact": "1",
+      "accepted_event_per_all_exact": "1/2",
+      "rejected_outcome_unresolved_interval": [
+        "1/2",
+        "1"
+      ],
+      "provided_complete_score_rate_exact": "1/2"
+    },
+    "FPR": {
+      "accepted_rate_exact": "0",
+      "accepted_event_per_all_exact": "0",
+      "rejected_outcome_unresolved_interval": [
+        "0",
+        "1/2"
+      ],
+      "provided_complete_score_rate_exact": "1/2"
+    }
+  },
+  "scope": "Illustrative pair enumeration only; conditional evaluation can change without any change in scores",
+  "candidate_or_classifier_run": false,
+  "training": false,
+  "real_media": false,
+  "server_access": false,
+  "gpu_used": false
+}
