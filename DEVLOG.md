@@ -462,3 +462,16 @@ One batch only:35 objective evaluations,21 solves,159 scalar derivative calls,
 2 native threads, largest array1152B. Protected105 historical files and5
 dependencies unchanged. No probe/readout/model/media/real training/server/GPU.
 Evidence/report/handoff: research-runs/algorithm_search_20260918/AL30_*.
+
+## 2026-09-19 AL32: shared-q stable coordinates and induced metric
+
+Frozen at0685fbf before one arithmetic batch.85 software checks passed on only
+three archived AL25 fields and three abstract AL30 regressions at two fixed
+points each.12 r_K values reuse source q bitwise; common four-term scores match.
+Raw cancellation/negative signs retained. Six fixed-point target differences0,
+gradient transform max1.3878e-17, Hessian max6.9389e-18; induced regularizer kept.
+No optimizer, old readout, filter, probe or AE calls;12 fixed objective evaluations.
+118 historical files and5 dependencies unchanged; AL27 fail remains permanent.
+2 native threads, largest array1152B; no real data/model/media/training/server/GPU.
+Actual AE bounds unknown. Limited software integration only, no scientific gain.
+Evidence/report/handoff: research-runs/algorithm_search_20260918/AL32_*.

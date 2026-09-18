@@ -1,0 +1,60 @@
+{
+  "task": "AL32",
+  "execution_status": "done",
+  "gate_result": "pass",
+  "gate_scope": "stable_readout_metric_integration_reference",
+  "old_AL27_gate_result": "fail",
+  "freeze_commit": "0685fbf",
+  "self_excluded": true,
+  "shared_log_note": "DEVLOG.md tracked in Git; excluded from raw-byte manifest due to platform line-ending normalization.",
+  "files": {
+    "research-runs/algorithm_search_20260918/AL32_config.json": {
+      "sha256": "b04c03fa91dc6d21ac4091088b14a6a4a733494bb20833222a8feefce9dc3818",
+      "bytes": 4954
+    },
+    "research-runs/algorithm_search_20260918/AL32_evidence.json": {
+      "sha256": "53124c72ddc548bc2ed69f8b7eec6bd6c398332f8e0368e4b9442727b2b66d96",
+      "bytes": 442899
+    },
+    "research-runs/algorithm_search_20260918/AL32_freeze.json": {
+      "sha256": "7f0694cf8f9cd183ab5d4aa7281c66560f30e947296dda83571239e01f0c748c",
+      "bytes": 19121
+    },
+    "research-runs/algorithm_search_20260918/AL32_handoff.md": {
+      "sha256": "b97fe9abdf0d590e818fd1111954ce36b63fad4a57808db1b51c2e5374e7f01e",
+      "bytes": 2571
+    },
+    "research-runs/algorithm_search_20260918/AL32_inputs.json": {
+      "sha256": "73d47ca47c371b2221523d40026ec5d8007bc15d6c49a7e9b6f241bfe1d0e750",
+      "bytes": 112620
+    },
+    "research-runs/algorithm_search_20260918/AL32_protocol.md": {
+      "sha256": "2b134e2de9093d19328d3329a8bdeac1624b8b020a32b1ff36746c0bf7713d96",
+      "bytes": 7347
+    },
+    "research-runs/algorithm_search_20260918/AL32_report.md": {
+      "sha256": "d0a7905b4a1204a1f0c768a3c26c71fdafd874dd0ca6f6ca316af35f892f7c20",
+      "bytes": 6951
+    },
+    "research-runs/algorithm_search_20260918/AL32_started.json": {
+      "sha256": "76ed1d3a68543ebf255222e6d0fb210296604a287f348504da6031491521d51c",
+      "bytes": 222
+    },
+    "research-runtime/algorithm_candidates/or1_stable_baseline_reference/exact.py": {
+      "sha256": "0993c1c6aad2f5cf96dcb6ad0ac1ae897bb4932f73fb683a783e067f95995746",
+      "bytes": 2293
+    },
+    "research-runtime/algorithm_candidates/or1_stable_baseline_reference/freeze.py": {
+      "sha256": "e5328c38e8ffd64422be9e8beb709b8068393c422e85414bec6ceee5244fcdcf",
+      "bytes": 5437
+    },
+    "research-runtime/algorithm_candidates/or1_stable_baseline_reference/kernels.py": {
+      "sha256": "3ee0b2696de3e402d8fb1a83f58a9da8df08d7cb5201cca21155ab04306a70e4",
+      "bytes": 3603
+    },
+    "research-runtime/algorithm_candidates/or1_stable_baseline_reference/run.py": {
+      "sha256": "437f0f7f8648084dc906efb8f604ecb0f7fa722901890714f2f01873fc8c63db",
+      "bytes": 15362
+    }
+  }
+}
