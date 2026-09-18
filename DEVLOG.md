@@ -434,3 +434,17 @@ checks against scalar optimization agree within 4.45e-16 entropy. No case or
 temperature was selected based on outcomes. Main evidence and decisions are in
 research-runs/algorithm_search_20260918, with a round6 artifact manifest/handoff.
 No server, media, backbone, GPU, classifier fitting or formal innovation claim.
+
+## 2026-09-19 AL27: multidimensional objective batch completed, gate failed
+
+Original-coordinate 4D/12D synthetic convex reference frozen at dc78269 before
+the only numerical batch. All three prescribed Gram panels and two boundary
+types executed. 68/69 checks pass; full-rank free-head coordinate agreement
+fails (3.158438133255004e-8 versus 1e-9), despite its gradient L2 meeting the
+fixed 1e-10 stop and objective agreement near floating precision. No rerun,
+extra Newton step or tolerance change. Execution done does not release a pass
+dependency. Complete vectors/derivatives/solver calls, failure explanation and
+handoff: research-runs/algorithm_search_20260918/AL27_report.md and AL27_evidence.json.
+Only NumPy/stdlib, 2 native threads, 26 objective evaluations, 16 linear solves,
+two scalar references. No real classifier/model/probe/readout/media/server/GPU.
+All 92 protected historical files unchanged. No scientific or data gate passed.

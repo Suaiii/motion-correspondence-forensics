@@ -1,0 +1,58 @@
+{
+  "task": "AL27",
+  "execution_status": "done",
+  "gate_result": "fail",
+  "freeze_commit": "dc78269",
+  "self_excluded": true,
+  "files": {
+    "research-runs/algorithm_search_20260918/AL27_config.json": {
+      "sha256": "1785d2eebe53cea32eb4bc51f51b70b41fcd86d14aafbf930feaa97924bb77ec",
+      "bytes": 1865
+    },
+    "research-runs/algorithm_search_20260918/AL27_evidence.json": {
+      "sha256": "6fe894345287a0dda2cbe4cac029c5538da2161f371b191cd84a74dac3b3c11b",
+      "bytes": 208121
+    },
+    "research-runs/algorithm_search_20260918/AL27_freeze.json": {
+      "sha256": "da077f86cf16cc087cbfe4b0d470752bebf5e098e262e779c82727f66b5a1a17",
+      "bytes": 15991
+    },
+    "research-runs/algorithm_search_20260918/AL27_handoff.md": {
+      "sha256": "729c37dbb7703810b890c117c0038b0a52f018dea85c0b89111e30201ebda108",
+      "bytes": 2443
+    },
+    "research-runs/algorithm_search_20260918/AL27_inputs.json": {
+      "sha256": "2011c7c47a6bcc72c50ab9cc8cbee69405781fb71a8eccda5a4c827389405fe7",
+      "bytes": 11220
+    },
+    "research-runs/algorithm_search_20260918/AL27_protocol.md": {
+      "sha256": "41b37e9b722edf73571c1baf405415c5726238d39b53d41e093e1fc34d253137",
+      "bytes": 5582
+    },
+    "research-runs/algorithm_search_20260918/AL27_report.md": {
+      "sha256": "c69a64713e69774f970be927928d9ef345ab4d67e5c48cd0d222b2cbd6fa6f04",
+      "bytes": 5978
+    },
+    "research-runs/algorithm_search_20260918/AL27_started.json": {
+      "sha256": "99657e927d8b9c5746517af075a4522835aadf1e14913df1c82626323610e18e",
+      "bytes": 231
+    },
+    "research-runtime/algorithm_candidates/or1_head_reference/freeze.py": {
+      "sha256": "d668789c535a7b6f6cf1684bf2e2c752ac1206d20b8c7edf11c4559060990f9e",
+      "bytes": 5068
+    },
+    "research-runtime/algorithm_candidates/or1_head_reference/independent.py": {
+      "sha256": "388de0f58f394dfa151369a463c849036911d8e512df2425542a7ed411caee1a",
+      "bytes": 3030
+    },
+    "research-runtime/algorithm_candidates/or1_head_reference/objective.py": {
+      "sha256": "bae581b27e07f272038154b113b078f0570050ab0777623846723be4681946ff",
+      "bytes": 3827
+    },
+    "research-runtime/algorithm_candidates/or1_head_reference/run.py": {
+      "sha256": "6d75f9728f7d2357af9760dac6df960b465896682f18269fa11494bada158cdf",
+      "bytes": 12556
+    }
+  },
+  "shared_log_note": "DEVLOG.md change is tracked by Git; excluded from raw-byte manifest because of checkout line-ending normalization."
+}
