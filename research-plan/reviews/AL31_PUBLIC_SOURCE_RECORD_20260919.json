@@ -1,0 +1,80 @@
+{
+  "task_id": "AL31",
+  "query_count": 3,
+  "queries": [
+    "\"AIGVDBench\"",
+    "\"AIGVDBench\" \"Wan\" \"CogVideoX\"",
+    "HunyuanVideo VAE temporal compression CogVideoX Wan official"
+  ],
+  "sources": [
+    {
+      "id": "aigvdbench",
+      "repo": "LongMa-2025/AIGVDBench",
+      "at": "2026-09-18T21:37:35.501532+00:00",
+      "status": "public_README_read_in_memory",
+      "revision": "e38c75abda3d319c0c3072c77594f6eeef1c028f",
+      "commit_date": "2026-03-26T12:29:11Z",
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/README.md",
+      "bytes": 5674,
+      "sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962",
+      "full_text_saved": false,
+      "dataset_file_list_requested": false
+    },
+    {
+      "id": "hunyuan_original",
+      "repo": "Tencent-Hunyuan/HunyuanVideo",
+      "at": "2026-09-18T21:37:38.000126+00:00",
+      "status": "public_README_read_in_memory",
+      "revision": "e748c73ac064728bf6bd15b1cdb8161e55a4f331",
+      "commit_date": "2026-06-29T09:33:49Z",
+      "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/HunyuanVideo/e748c73ac064728bf6bd15b1cdb8161e55a4f331/README.md",
+      "bytes": 29010,
+      "sha256": "fcc29022b5d80583e2f4b3b4f09145c4d65c4e7bf63bd4006ba367ea4d470427",
+      "full_text_saved": false,
+      "dataset_file_list_requested": false
+    },
+    {
+      "id": "hunyuan_15",
+      "repo": "Tencent-Hunyuan/HunyuanVideo-1.5",
+      "at": "2026-09-18T21:37:40.413392+00:00",
+      "status": "public_README_read_in_memory",
+      "revision": "60783e704160023913bee78f0b47036d393d4dfa",
+      "commit_date": "2026-04-10T06:14:58Z",
+      "url": "https://raw.githubusercontent.com/Tencent-Hunyuan/HunyuanVideo-1.5/60783e704160023913bee78f0b47036d393d4dfa/README.md",
+      "bytes": 59553,
+      "sha256": "57eed52d56216c2e0b60f0e926267a0708fc18de2109e5a60a01d8ccac6e49dc",
+      "full_text_saved": false,
+      "dataset_file_list_requested": false
+    }
+  ],
+  "total_README_bytes_read_in_memory": 94237,
+  "full_text_saved": false,
+  "dataset_file_lists_requested": false,
+  "individual_samples_or_manifests_opened": false,
+  "media_or_model_payloads_requested": false,
+  "paper_metadata": {
+    "url": "https://arxiv.org/abs/2601.11035",
+    "version": "v1",
+    "submitted_date": "2026-01-16",
+    "read_at": "2026-09-18T21:40:39.669743+00:00",
+    "HTML_bytes": 43262,
+    "HTML_sha256": "d579782d91ffe3b7a53b675542579690cead58ebdd5672f617a4468a7a8fb17e",
+    "github_links": [
+      "https://github.com/LongMa-2025/AIGVDBench",
+      "https://github.com/LongMa-2025/AIGVDBench."
+    ],
+    "PDF_requested": false,
+    "full_text_saved": false
+  },
+  "reuse_existing_primary_source": {
+    "path": "research-plan/reviews/AL22_metadata/cog_README.md",
+    "sha256": "63167d42d73fd434096761b693142a69a96275b367c6fda32347d4b9dbce262d",
+    "role": "Quantization example explicitly pairs5b transformer with2b VAE; not benchmark-specific checkpoint proof"
+  },
+  "CVF_entry": {
+    "url": "https://openaccess.thecvf.com/content/CVPR2026/html/Ma_Your_One-Stop_Solution_for_AI-Generated_Video_Detection_CVPR_2026_paper.html",
+    "search_metadata_observed": true,
+    "web_open_status": "403",
+    "body_reviewed": false
+  }
+}

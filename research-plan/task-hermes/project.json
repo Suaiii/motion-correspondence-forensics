@@ -2937,7 +2937,7 @@
         "AL23",
         "AL24"
       ],
-      "status": "ready",
+      "status": "running",
       "gate_result": "not_evaluated",
       "gate_scope": "accuracy_budgeted_optimizer_reference",
       "hypothesis": "mu与参数误差预算能给统一更合适的停止策略；AL27梯度阈值不足不应由放宽坐标验收掩盖。",
@@ -2981,7 +2981,13 @@
       "scientific_innovation_gate_passed": false,
       "failure_recovery_parent": "AL27",
       "failure_parent_pass_not_required_reason": "New software repair explicitly follows a completed failed numerical gate; not a success-dependent scientific branch",
-      "next_action": "Execute only unique AL30 dispatch; preserve AL27 fail"
+      "next_action": "Execute only unique AL30 dispatch; preserve AL27 fail",
+      "dispatch_status": "running_verified",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T05:45:28+08:00",
+      "observed_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
+      "execution_stage": "one_frozen_batch_reported_complete_handoff_pending"
     },
     {
       "id": "AL31",
@@ -2994,8 +3000,8 @@
       "requires_pass": [
         "AL22"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "public_component_identity_metadata",
       "hypothesis": "最终候选资源与生成组件需核实到正确名称/版本层级；未知或不同库名不足以证明严格未见decoder。",
       "work": [
@@ -3009,7 +3015,8 @@
         "紧凑来源清单<=256KiB，不提交论文全文"
       ],
       "artifacts": [
-        "../reviews/AL31_HOLDOUT_COMPONENT_REVIEW_20260919.md"
+        "../reviews/AL31_HOLDOUT_COMPONENT_REVIEW_20260919.md",
+        "../reviews/AL31_PUBLIC_SOURCE_RECORD_20260919.json"
       ],
       "work_order": "../AL31_HOLDOUT_COMPONENT_METADATA_20260919.md",
       "resource_policy": {
@@ -3029,8 +3036,16 @@
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": false,
-      "hypothesis_result": "not_evaluated",
-      "scientific_innovation_gate_passed": false
+      "hypothesis_result": "resource_identity_confirmed_specific_decoder_mapping_unresolved",
+      "scientific_innovation_gate_passed": false,
+      "completed_at": "2026-09-19T05:45:28+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL31_HOLDOUT_COMPONENT_REVIEW_20260919.md",
+      "review_scope": "Public aggregate documentation and component identity metadata only; no sample-level dataset acceptance",
+      "artifact_sha256": "5fd3eee3ea16df1db85b1e5cb78d9322e3f92716e48108b4bf7bc8d082b02906",
+      "actual_dataset_records_accepted": false,
+      "final_test_set_accessed": false,
+      "next_action": "Before future strict decoder holdout claims, bind actual components/versions under approved data protocol; do not infer independence from names"
     }
   ],
   "storage_policy": {
@@ -4430,7 +4445,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T05:34:17+08:00",
+  "updated_at": "2026-09-19T05:45:28+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5082,7 +5097,7 @@
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "prepared_not_sent",
+      "status": "running",
       "prepared_at": "2026-09-19T05:34:17+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "work_order": "../AL30_ACCURACY_BUDGETED_STOPPING_CPU_20260919.md",
@@ -5090,19 +5105,26 @@
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
       "scope": "One versioned optimizer stopping-contract repair;3 known regression panels+1 predeclared scale control; no real data/model/server/GPU.",
-      "readiness_basis": "Complete AL27 failed handoff, independent preserved-failure review and idle/completed cursor39; recovery does not require failed AL27 pass"
+      "readiness_basis": "Complete AL27 failed handoff, independent preserved-failure review and idle/completed cursor39; recovery does not require failed AL27 pass",
+      "sent_at": "2026-09-19T05:35:28+08:00",
+      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+      "duplicate_dispatch_suppressed": true,
+      "last_observed_status": "inProgress",
+      "last_observed_thread_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
+      "last_observed_at": "2026-09-19T05:45:28+08:00",
+      "startup_evidence": "cursor40 active with AL30-specific report of one frozen batch and original AL27 failure retained; full result not yet reviewed"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:39",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:40",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T05:34:17+08:00",
-    "research_observed_status": "idle",
+    "last_coordinator_activity_at": "2026-09-19T05:45:28+08:00",
+    "research_observed_status": "active",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -5644,7 +5666,7 @@
         "gate_result": "fail"
       }
     ],
-    "last_substantive_review": "../reviews/AL27_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL31_HOLDOUT_COMPONENT_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -5724,10 +5746,11 @@
         "AL31"
       ],
       "executor_role": "planagent",
-      "status": "running_public_component_metadata_review",
+      "status": "completed_public_component_metadata_review",
       "started_at": "2026-09-19T05:34:17+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "Public aggregate component metadata only; no final sample manifests, media, scores or model loading"
+      "scope": "Public aggregate component metadata only; no final sample manifests, media, scores or model loading",
+      "completed_at": "2026-09-19T05:45:28+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -5744,17 +5767,13 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T05:34:17+08:00",
-    "prepared_independent_task_ids": [
-      "AL30"
-    ],
+    "last_local_review_at": "2026-09-19T05:45:28+08:00",
+    "prepared_independent_task_ids": [],
     "active_and_prepared_work": {
       "running": [
-        "AL31"
-      ],
-      "prepared_independent": [
         "AL30"
-      ]
+      ],
+      "prepared_independent": []
     },
     "material_decision_notices": [
       {
@@ -5916,7 +5935,10 @@
       "AE_precision_certificate": "unknown; coordinate changes do not certify probe accuracy",
       "multidimensional_head_status": "AL27 failed coordinate accuracy; no candidate-level scientific refutation",
       "optimizer_repair_task": "AL30",
-      "public_holdout_identity_review_task": "AL31"
+      "public_holdout_identity_review_task": "AL31",
+      "holdout_resource_name": "AIGVDBench identity confirmed through author repository and arXiv2601.11035v1",
+      "specific_benchmark_decoder_weights": "unresolved from aggregate metadata; no samples opened",
+      "optimizer_repair_status": "AL30 executing; one-batch pass reported but full review pending"
     }
   },
   "open_review_issues": [
