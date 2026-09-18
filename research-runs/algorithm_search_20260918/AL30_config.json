@@ -1,0 +1,165 @@
+{
+  "dtype": "float64",
+  "candidate_regularizer": "1/1000",
+  "free_regularizer": "1/6000",
+  "solver": {
+    "max_iterations": 200,
+    "armijo_c": 0.0001,
+    "maximum_halvings": 40
+  },
+  "scalar": {
+    "bracket": [
+      0.0,
+      64.0
+    ],
+    "width_tolerance": 1e-13,
+    "max_iterations": 128
+  },
+  "comparison_tolerance": 1e-09,
+  "native_threads": 2,
+  "maximum_pairs_per_panel": 12,
+  "maximum_feature_rows_per_panel": 24,
+  "maximum_dimension": 12,
+  "maximum_array_bytes": 1048576,
+  "expected": {
+    "aligned": {
+      "rank_z": 4,
+      "rank_q": 4,
+      "gradient_at_zero": {
+        "candidate": [
+          "-3/32",
+          "-3/32",
+          "-3/32",
+          "-3/32"
+        ],
+        "free": [
+          "-1/64",
+          "-1/64",
+          "1/32",
+          "-1/64",
+          "-1/64",
+          "1/32",
+          "-1/64",
+          "-1/64",
+          "1/32",
+          "-1/64",
+          "-1/64",
+          "1/32"
+        ]
+      }
+    },
+    "full_rank": {
+      "rank_z": 12,
+      "rank_q": 4,
+      "gradient_at_zero": {
+        "candidate": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "free": [
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96",
+          "-1/96"
+        ]
+      }
+    },
+    "symmetric": {
+      "rank_z": 4,
+      "rank_q": 4,
+      "gradient_at_zero": {
+        "candidate": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "free": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      }
+    },
+    "full_rank_scale": {
+      "rank_z": 12,
+      "rank_q": 4,
+      "gradient_at_zero": {
+        "candidate": [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        "free": [
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192",
+          "-1/192"
+        ]
+      }
+    }
+  },
+  "stopping": {
+    "candidate": {
+      "formula": "min(1e-10, mu*epsilon_x/2)",
+      "regularizer_exact": "1/1000",
+      "regularizer_float": 0.001,
+      "mu_exact": "1/500",
+      "mu_float": 0.002,
+      "epsilon_x_exact": "1/1000000000",
+      "epsilon_x_float": 1e-09,
+      "tau_exact": "1/1000000000000",
+      "tau_float": 1.0000000000000002e-12,
+      "gradient_rounding_error_bound": null,
+      "parameter_error_certified": false
+    },
+    "free": {
+      "formula": "min(1e-10, mu*epsilon_x/2)",
+      "regularizer_exact": "1/6000",
+      "regularizer_float": 0.00016666666666666666,
+      "mu_exact": "1/3000",
+      "mu_float": 0.0003333333333333333,
+      "epsilon_x_exact": "1/1000000000",
+      "epsilon_x_float": 1e-09,
+      "tau_exact": "1/6000000000000",
+      "tau_float": 1.6666666666666667e-13,
+      "gradient_rounding_error_bound": null,
+      "parameter_error_certified": false
+    }
+  },
+  "old_AL27_gate_result": "fail",
+  "case_roles": {
+    "aligned": "known_regression",
+    "full_rank": "known_regression",
+    "symmetric": "known_regression",
+    "full_rank_scale": "new_prespecified_scale_control"
+  }
+}
