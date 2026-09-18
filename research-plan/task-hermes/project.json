@@ -2785,7 +2785,7 @@
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T05:08:09+08:00",
       "observed_turn_id": "01a0b655-5394-7a91-b885-8f658561fcc2",
-      "execution_stage": "fixed_panel_and_solver_preparation"
+      "execution_stage": "analytical_expectations_and_frozen_input_preparation"
     },
     {
       "id": "AL28",
@@ -4307,7 +4307,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T05:08:09+08:00",
+  "updated_at": "2026-09-19T05:15:10+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4973,19 +4973,19 @@
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "inProgress",
       "last_observed_thread_turn_id": "01a0b655-5394-7a91-b885-8f658561fcc2",
-      "last_observed_at": "2026-09-19T05:08:09+08:00",
+      "last_observed_at": "2026-09-19T05:15:10+08:00",
       "startup_evidence": "cursor36 active with explicit adoption of AL27 fixed panels/solver and original-z parameterization; AL29 not added to that run"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:36",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:37",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T05:08:09+08:00",
+    "last_coordinator_activity_at": "2026-09-19T05:15:10+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
