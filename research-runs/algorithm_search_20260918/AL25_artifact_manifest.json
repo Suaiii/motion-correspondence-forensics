@@ -1,0 +1,64 @@
+{
+  "task_id": "AL25",
+  "dispatch_id": "cc-al25-filtered-readout-20260919",
+  "freeze_commit": "53cfb0b",
+  "generated_at": "2026-09-19T04:55:35.3784100+08:00",
+  "scope": "filtered_tensor_readout_reference",
+  "files": [
+    {
+      "path": "research-runtime/algorithm_candidates/or1_filtered_readout/freeze.py",
+      "sha256": "2e7dccd5518be5ad78863e26085436d82405b9e1e98d8b7ade72156b54733d40",
+      "bytes": 7078
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_filtered_readout/readout.py",
+      "sha256": "c189fc469f38ca576f91e220f11a9bfe897941a6331950758c6506b20e68a53b",
+      "bytes": 5732
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_filtered_readout/run.py",
+      "sha256": "0e1398fd8c49cd6293c8cca271622f6620e667e65569a42eeb69328caf4695f7",
+      "bytes": 11205
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_evidence.json",
+      "sha256": "cc76e97ebb003350461c49827f15c1b53f55662ff75d0b9887bd4fb5b4eca421",
+      "bytes": 846147
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_freeze.json",
+      "sha256": "d72214c6d19fe81139ce92c4b135e292114850dac5dcb9c6c667168c5791845b",
+      "bytes": 15609
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_handoff.md",
+      "sha256": "114aecb84f12176455e8f24ea201fc2e1b401b898d297d02562ba23cd0965dbd",
+      "bytes": 3298
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_inputs.json",
+      "sha256": "08722458abbe0d7b0745dbcf47341c36f456dab35f9463546047f0fffb59a921",
+      "bytes": 554936
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_protocol.md",
+      "sha256": "89b7f800c6a0809e5380a004e1ae5cad8219ea3aa6978e72b39796763353105d",
+      "bytes": 4652
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_readout_spec.json",
+      "sha256": "088109738d233171fb7d34f4f7ccf3057abf5a1778e3e8061e0d2e9fc69abd94",
+      "bytes": 1599
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_readout_summary.json",
+      "sha256": "709cfe260628cb7b8ac0754706e3253ce0e49426074ad7ef5f915b3fa58c8b0b",
+      "bytes": 22299
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL25_report.md",
+      "sha256": "b9f78c4fb293837d34e9afeff4b7b54a9d7497206f8fc6ba45588a1023588fec",
+      "bytes": 5845
+    }
+  ]
+}
