@@ -11,6 +11,8 @@
 3. 给具体等四调用baseline特征和固定/学习读出合同，保留完整端点强基线；区分“确定函数无新观察信息”“不同归纳约束”“真实增量”三类主张。明确4权重候选与更强维度/容量对照的实际参数，不靠零padding伪装匹配。
 4. 仅对AL15归档中的固定线性、非线性、冗余三个基础维度案例的主h trace作精确读后核查，不重新调用core、不搜索旧输入、不拟合分类器。若定义有误交付反例，不覆盖旧结果。
 
+派发前补充输入：reviews/AL23_MATCHING_OBJECTIVE_REVIEW_20260919.md第3节。若三元组确使beta=Tw、T^T T=6I，相同字面lambda并非同函数惩罚匹配；请在基线合同中独立核对正则诱导度量，并区分训练目标包含关系与测试泛化。此项不授权拟合或改变候选原lambda。
+
 产物AL20_method_baseline.md、必要的精确trace摘要、AL20_handoff.md、artifact manifest，写现有独立工作树research-runs/algorithm_search_20260918；需要新分析脚本时使用独立or1_baseline_audit目录。输入/公式及使用的trace ID须在核查前列清楚。
 
 CPU仅stdlib/Fraction或NumPy，2线程、数组<=1MiB；无媒体/模型/权重/服务器/GPU/训练。通过仅为 `finite_response_baseline_contract`，不能释放正式科学与资源门槛。尚未派发前不执行；最终读主DAG中的唯一dispatch_id。

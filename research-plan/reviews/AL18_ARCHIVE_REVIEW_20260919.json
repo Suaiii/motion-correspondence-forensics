@@ -1,0 +1,40 @@
+{
+  "task_id": "AL18",
+  "reviewer": "planagent",
+  "observed_at": "2026-09-18T19:50:32.993364+00:00",
+  "status": "pass_scoped_archive_and_targeted_interface_review",
+  "manifest_files_verified": 17,
+  "preserved_files_verified": 54,
+  "dependencies_verified": 2,
+  "v1_records_reviewed": 147,
+  "v1_status_counts": {
+    "conditional_interval": 24,
+    "residual_energy_not_certified_positive": 69,
+    "denominator_lower_not_positive": 3,
+    "uncertified_bound": 12,
+    "invalid_input": 39
+  },
+  "v1_R_mocks": 192,
+  "v1_endpoint_readouts": 6,
+  "v1_contract_queries": 156,
+  "v2_archived_targeted_queries": 24,
+  "v2_full_v1_replay": false,
+  "reviewer_new_v2_queries": 3,
+  "reviewer_previous_v1_queries": 2,
+  "targeted_checks": {
+    "N5_nonfinite_before_unknown": "invalid_input",
+    "N2_nonfinite_not_ignored": "invalid_input",
+    "N2_supplied_nonzero_consumed": true
+  },
+  "source_result_commit": "1e823fde809dbec3e1c5d89d802531db8e2d2040",
+  "source_v1_sha256": "3ac18e29774aaa9f2eeecb593f2a8e8233d864b0a69cdd6156520fee640d5984",
+  "source_v2_sha256": "7a16a0f3335d57ff22d1409c0a3cc77273a05f8fc76d5a558d6b044bf764c5a5",
+  "audit_script_sha256": "0554d5af5793ab9608909c450e65174a633312d348d64c2f5c93ae10abbcf1f5",
+  "scientific_breakthrough": false,
+  "limits": [
+    "No formal scientific replication",
+    "No real AE error or Lipschitz bound measured",
+    "v2 accepted for24 targeted regressions plus3 reviewer probes, not unrestricted API verification",
+    "Non-square norm path not exercised by fixed suite"
+  ]
+}

@@ -2102,8 +2102,8 @@
         "AL15",
         "AL16"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "conditional_numerical_contract_software",
       "hypothesis": "已知误差可产生有前提的区间，重复一致不能认证未知误差；接口应明确数值未认证状态。",
       "work": [
@@ -2117,7 +2117,9 @@
         "完整源码/输入/结果哈希、失败和调用账本"
       ],
       "artifacts": [
-        "../../research-runs/algorithm_search_20260918/AL18_handoff.md"
+        "../../research-runs/algorithm_search_20260918/AL18_handoff.md",
+        "../reviews/AL18_REVIEW_20260919.md",
+        "../reviews/AL18_ARCHIVE_REVIEW_20260919.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
@@ -2136,23 +2138,40 @@
       },
       "prepared_at": "2026-09-19T03:08:30+08:00",
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported_in_fixed_v1_numeric_suite_and_targeted_v2_interface_scope",
       "implementation_authorized": true,
-      "next_action": "按唯一派发及工作单执行；AL19由planagent独立处理。",
-      "dispatch_status": "running_verified",
+      "next_action": "AL20 compact baseline and AL24 abstract matching/objective reference; preserve v1 limitations",
+      "dispatch_status": "completed_scoped_review",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T03:14:45+08:00",
       "observed_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
       "preliminary_review": {
-        "status": "interface_findings_pending_resolution",
+        "status": "resolved_in_v2_targeted_scope_v1_preserved",
         "source_freeze_commit": "8ff3400b0f8669fb80dc981c805e77488836fba1",
         "source_sha256": "3ac18e29774aaa9f2eeecb593f2a8e8233d864b0a69cdd6156520fee640d5984",
         "reviewer": "planagent",
         "calls": 2,
         "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
-        "full_handoff_received": false
-      }
+        "full_handoff_received": true,
+        "resolution": "../reviews/AL18_REVIEW_20260919.md"
+      },
+      "completed_at": "2026-09-19T03:54:09+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL18_REVIEW_20260919.md",
+      "review_scope": "147 archived rational checks plus source audit;24 archived v2 regressions and3 reviewer v2 calls; no full v2 replay or actual AE safety claim",
+      "source_commits": [
+        "8ff3400",
+        "0546f63",
+        "4a771f7",
+        "1e823fd"
+      ],
+      "integration_commits": [
+        "410d199",
+        "e97dd52",
+        "d4d0021",
+        "268ae95"
+      ]
     },
     {
       "id": "AL19",
@@ -2267,7 +2286,8 @@
       "hypothesis_result": "not_evaluated",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "next_action": "Prepared only; follow unique main-DAG dispatch/start record, no parallel package for same executor."
+      "next_action": "Prepared only; follow unique main-DAG dispatch/start record, no parallel package for same executor.",
+      "additional_input_review": "../reviews/AL23_MATCHING_OBJECTIVE_REVIEW_20260919.md"
     },
     {
       "id": "AL21",
@@ -2400,6 +2420,120 @@
       "SDK_model_compatibility_tested": false,
       "next_action": "Jointly bind probe bank and strict decoder holdouts before any real admission; AL20 compact baseline remains prepared.",
       "artifact_sha256": "1555999fc04c44650e353eaf50f07371fc56e394df9aa0ab5f0616bf0c839092"
+    },
+    {
+      "id": "AL23",
+      "milestone": "M2",
+      "title": "OR1匹配与凸读出的优化合同审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL21"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL21"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "matching_and_optimization_contract",
+      "hypothesis": "确定配对后的读出严格凸，但等费用配对不唯一可改变目标；确定性重复不提供独立种子证据。",
+      "work": [
+        "推导固定配对损失的梯度/Hessian及唯一解",
+        "固定抽象四样本验证匹配平局影响目标，不拟合",
+        "明确训练种子解释及未来需记录的随机环节"
+      ],
+      "acceptance": [
+        "限定数学合同，不声称原创或检测增益",
+        "不改正则/匹配协议，保留配对ID和权重需求",
+        "不训练、不读真实数据或运行模型"
+      ],
+      "artifacts": [
+        "../reviews/AL23_MATCHING_OBJECTIVE_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL23_OR1_MATCHING_OBJECTIVE_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "started_at": "2026-09-19T03:45:23+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "hypothesis_result": "supported_conditional_optimization_and_matching_facts",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "completed_at": "2026-09-19T03:54:09+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL23_MATCHING_OBJECTIVE_REVIEW_20260919.md",
+      "review_scope": "Mathematical derivations and fixed abstract pairing example; no fitting or scientific novelty claim",
+      "next_action": "AL20 accounts for induced regularization metric; AL24 bounded software reference",
+      "independent_scientific_review": "pending; self-derived planning review"
+    },
+    {
+      "id": "AL24",
+      "milestone": "M2",
+      "title": "抽象匹配和凸目标的有限CPU参考实现",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL12",
+        "AL23"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL23"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "matching_and_objective_reference_software",
+      "hypothesis": "固定小表能验证最大基数/最小费用/字典序的匹配合同，以及已定一维凸目标的导数和解范围；不能据此声称检测能力。",
+      "work": [
+        "每侧<=4的精确匹配参考，固定4图及2类非法输入",
+        "预定差分的目标/梯度/Hessian和一维数值解参考",
+        "冻结源码/实际输入后单次运行，分开空支持与零差分"
+      ],
+      "acceptance": [
+        "G1最大基数优先、G2费用优先、G3固定平局、G4无支持全部正确",
+        "固定M1/M2/零差分控制符合解析方向，无真实分类性能",
+        "stdlib或NumPy，2线程，数组<=1MiB，无真实数据/模型/服务器/GPU"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL24_evidence.json",
+        "../../research-runs/algorithm_search_20260918/AL24_report.md",
+        "../../research-runs/algorithm_search_20260918/AL24_handoff.md"
+      ],
+      "work_order": "../AL24_MATCHING_OBJECTIVE_CPU_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false,
+        "maximum_items_per_bipartition": 4,
+        "max_vector_dimension": 12,
+        "synthetic_objective_optimization": true
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "prepared_at": "2026-09-19T03:54:09+08:00",
+      "implementation_authorized": true,
+      "classifier_training_authorized": false,
+      "hypothesis_result": "not_evaluated",
+      "scientific_innovation_gate_passed": false,
+      "next_action": "Execute only within the new unique AL20/AL24 package; no overlap with completed AL18."
     }
   ],
   "storage_policy": {
@@ -3799,7 +3933,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T03:33:55+08:00",
+  "updated_at": "2026-09-19T03:54:09+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4444,42 +4578,41 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al18-numerical-contract-20260919",
+      "id": "cc-al20-al24-baseline-matching-20260919",
       "task_ids": [
-        "AL18"
+        "AL20",
+        "AL24"
       ],
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "running",
-      "prepared_at": "2026-09-19T03:08:30+08:00",
+      "status": "prepared_not_sent",
+      "prepared_at": "2026-09-19T03:54:09+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "work_order": "../AL18_OR1_NUMERICAL_CPU_20260919.md",
-      "work_order_sha256": "02f3f7dc2ee96fee2fa2439b84b94c971b111bd701153aab115e8fdb0e8f6b9c",
+      "work_orders": [
+        "../AL20_OR1_COMPACT_BASELINE_20260919.md",
+        "../AL24_MATCHING_OBJECTIVE_CPU_20260919.md"
+      ],
+      "work_order_sha256": {
+        "AL20": "7784b52940d94799926f867ea47ed01f5801be88455c7c6628a5fbb56dcfa3d3",
+        "AL24": "f4c00367c7a2ff4105ec86b969ac6a2570c270ec25c2380423171ec70fdbfa9f"
+      },
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
-      "scope": "Frozen8-family conditional numerical contract, CPU only; no AL15 rerun, models/media/server/GPU/training.",
-      "readiness_basis": "AL15 substantive handoff, source and exact trace review plus idle/completed cursor22.",
-      "sent_at": "2026-09-19T03:10:33+08:00",
-      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
-      "duplicate_dispatch_suppressed": true,
-      "last_observed_status": "inProgress",
-      "last_observed_thread_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
-      "last_observed_at": "2026-09-19T03:33:55+08:00",
-      "startup_evidence": "wait_threads active plus explicit AL18 work-order and rational-input acknowledgement; no duplicate dispatch.",
-      "preliminary_review_findings": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json"
+      "scope": "Two independent bounded components: finite-response baseline mathematics and abstract matching/one-dimensional objective software reference; no real classifier, model/media/server/GPU.",
+      "readiness_basis": "AL18 full handoff, archival/targeted review, idle/completed cursor28; AL23 mathematical contract complete"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:26",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:28",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T03:33:55+08:00",
-    "research_observed_status": "active",
+    "last_coordinator_activity_at": "2026-09-19T03:54:09+08:00",
+    "research_observed_status": "idle",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -4854,9 +4987,50 @@
           "e8c7385"
         ],
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:22"
+      },
+      {
+        "id": "cc-al18-numerical-contract-20260919",
+        "task_ids": [
+          "AL18"
+        ],
+        "executor_role": "researchagent_next",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "host_id": "local",
+        "status": "completed_scoped_review",
+        "prepared_at": "2026-09-19T03:08:30+08:00",
+        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+        "work_order": "../AL18_OR1_NUMERICAL_CPU_20260919.md",
+        "work_order_sha256": "02f3f7dc2ee96fee2fa2439b84b94c971b111bd701153aab115e8fdb0e8f6b9c",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+        "scope": "Frozen8-family conditional numerical contract, CPU only; no AL15 rerun, models/media/server/GPU/training.",
+        "readiness_basis": "AL15 substantive handoff, source and exact trace review plus idle/completed cursor22.",
+        "sent_at": "2026-09-19T03:10:33+08:00",
+        "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+        "duplicate_dispatch_suppressed": true,
+        "last_observed_status": "completed",
+        "last_observed_thread_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
+        "last_observed_at": "2026-09-19T03:45:23+08:00",
+        "startup_evidence": "wait_threads active plus explicit AL18 work-order and rational-input acknowledgement; no duplicate dispatch.",
+        "preliminary_review_findings": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
+        "completed_at": "2026-09-19T03:54:09+08:00",
+        "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:28",
+        "review": "../reviews/AL18_REVIEW_20260919.md",
+        "source_commits": [
+          "8ff3400",
+          "0546f63",
+          "4a771f7",
+          "1e823fd"
+        ],
+        "integration_commits": [
+          "410d199",
+          "e97dd52",
+          "d4d0021",
+          "268ae95"
+        ]
       }
     ],
-    "last_substantive_review": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
+    "last_substantive_review": "../reviews/AL18_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4868,7 +5042,7 @@
       "Do not repeat completed packages or tune C on the exposed 100 records",
       "Do not repeat unchanged server/account probes or the pending budget question"
     ],
-    "last_observed_completed_turn_id": "01a0b5cd-a00b-7280-9e0a-c7bcbe33b2fb",
+    "last_observed_completed_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
     "configuration_faults": {
       "thread_coordination_tools_unavailable": {
         "status": "resolved",
@@ -4933,13 +5107,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL18"
+        "AL23"
       ],
       "executor_role": "planagent",
-      "status": "completed_preliminary_independent_interface_review",
+      "status": "completed_mathematical_review",
+      "started_at": "2026-09-19T03:45:23+08:00",
       "work_area": "research-plan/reviews",
-      "completed_at": "2026-09-19T03:33:55+08:00",
-      "scope": "Reviewer only; implementation ownership remains researchagent_next,2 targeted API calls on frozen module"
+      "scope": "Frozen pairwise loss and deterministic matching contract; independent of AL18 and AL20",
+      "completed_at": "2026-09-19T03:54:09+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4956,16 +5131,16 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T03:33:55+08:00",
+    "last_local_review_at": "2026-09-19T03:54:09+08:00",
     "prepared_independent_task_ids": [
-      "AL20"
+      "AL20",
+      "AL24"
     ],
     "active_and_prepared_work": {
-      "running": [
-        "AL18"
-      ],
+      "running": [],
       "prepared_independent": [
-        "AL20"
+        "AL20",
+        "AL24"
       ]
     },
     "material_decision_notices": [
@@ -5007,10 +5182,14 @@
         "dispatch_id": "cc-al18-numerical-contract-20260919",
         "target_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
         "sent_at": "2026-09-19T03:33:55+08:00",
-        "status": "sent_not_yet_acknowledged",
+        "status": "resolved_in_final_handoff_and_review",
         "scope": "Within current package: preserve original results, resolve2 targeted optional-output/schema validation findings in separately versioned interface",
         "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
-        "evidence_sha256": "8e2bec74ec47ddce3de2437c5b52ddff3a9cffb882961f057f2ee1567ddd3604"
+        "evidence_sha256": "8e2bec74ec47ddce3de2437c5b52ddff3a9cffb882961f057f2ee1567ddd3604",
+        "acknowledged_at": "2026-09-19T03:45:23+08:00",
+        "evidence_of_ack": "wait_threads cursor27 commentary accepts both findings and states separate v2 repair with original bytes preserved",
+        "resolution": "../reviews/AL18_REVIEW_20260919.md",
+        "resolved_at": "2026-09-19T03:54:09+08:00"
       }
     ]
   },
@@ -5097,7 +5276,10 @@
       "public_probe_metadata_task": "AL22",
       "public_probe_pair_selection": "not_selected",
       "public_weight_identity_status": "remote LFS expected digests recorded; no weight payload locally/server verified",
-      "strict_decoder_holdout_issue": "Probe/production decoder component overlap must be audited; unseen detector-training generator is insufficient"
+      "strict_decoder_holdout_issue": "Probe/production decoder component overlap must be audited; unseen detector-training generator is insufficient",
+      "numerical_contract_status": "v1 fixed suite and v2 targeted interface checks passed; actual AE precision unknown",
+      "matching_reference_task": "AL24",
+      "optimization_contract_task": "AL23"
     }
   },
   "open_review_issues": [
@@ -5113,22 +5295,28 @@
     {
       "id": "AL18-N5-INVALID-FIRST",
       "task_id": "AL18",
-      "status": "open",
+      "status": "resolved_in_v2",
       "reported_at": "2026-09-19T03:33:55+08:00",
       "title": "N5 optional nonfinite quotient is checked after unknown-bound return",
       "scope": "Targeted public input contract; original147 fixed results preserved, not a mechanism failure",
       "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
-      "next_action": "Research executor handles within same package in versioned module/receipt; no duplicate dispatch or old rerun"
+      "next_action": "Research executor handles within same package in versioned module/receipt; no duplicate dispatch or old rerun",
+      "resolved_at": "2026-09-19T03:54:09+08:00",
+      "resolution": "../reviews/AL18_ARCHIVE_REVIEW_20260919.json",
+      "v1_historical_defect_retained": true
     },
     {
       "id": "AL18-N2-EXPLICIT-K",
       "task_id": "AL18",
-      "status": "open",
+      "status": "resolved_in_v2",
       "reported_at": "2026-09-19T03:33:55+08:00",
       "title": "N2 silently ignores supplied final-K observation; requires schema rejection or explicit support",
       "scope": "Targeted public input contract; original147 fixed results preserved, not a mechanism failure",
       "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
-      "next_action": "Research executor handles within same package in versioned module/receipt; no duplicate dispatch or old rerun"
+      "next_action": "Research executor handles within same package in versioned module/receipt; no duplicate dispatch or old rerun",
+      "resolved_at": "2026-09-19T03:54:09+08:00",
+      "resolution": "../reviews/AL18_ARCHIVE_REVIEW_20260919.json",
+      "v1_historical_defect_retained": true
     }
   ],
   "budget_readonly_checks": [
