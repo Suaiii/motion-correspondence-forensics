@@ -2737,7 +2737,7 @@
         "AL23",
         "AL24"
       ],
-      "status": "ready",
+      "status": "running",
       "gate_result": "not_evaluated",
       "gate_scope": "multidimensional_objective_reference_software",
       "hypothesis": "固定子空间/满秩/对称面板能检验完整优化与相容正则，而不提供来源检测证据。",
@@ -2779,7 +2779,13 @@
         "max_feature_rows": 24
       },
       "implementation_authorized": true,
-      "classifier_training_authorized": false
+      "classifier_training_authorized": false,
+      "dispatch_status": "running_verified",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T05:08:09+08:00",
+      "observed_turn_id": "01a0b655-5394-7a91-b885-8f658561fcc2",
+      "execution_stage": "fixed_panel_and_solver_preparation"
     },
     {
       "id": "AL28",
@@ -2856,8 +2862,8 @@
         "AL20",
         "AL25"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "stable_baseline_coordinate_contract",
       "hypothesis": "通过共享直接差分能量的可逆坐标与匹配诱导正则，可以避免将不稳定三项相减产生的差异误当方法信息增益。",
       "work": [
@@ -2871,7 +2877,8 @@
         "不将坐标变化称创新，不运行模型/训练/真实数据"
       ],
       "artifacts": [
-        "../reviews/AL29_STABLE_BASELINE_REVIEW_20260919.md"
+        "../reviews/AL29_STABLE_BASELINE_REVIEW_20260919.md",
+        "../reviews/AL29_COORDINATE_MATRICES_20260919.json"
       ],
       "work_order": "../AL29_STABLE_BASELINE_COORDINATES_20260919.md",
       "resource_policy": {
@@ -2889,12 +2896,18 @@
       "plan_version": "cvpr27-20260919-v1.5",
       "prepared_at": "2026-09-19T04:57:21+08:00",
       "due_at": "2026-09-20T22:00:00+08:00",
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "invertible_stable_coordinate_and_pullback_regularization_contract_supported",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "next_action": "Prove stable-coordinate and induced-regularization contract using reviewed AL25 receipt only",
+      "next_action": "Future full comparison should share candidate q and induced metric; do not change active AL27 original-z panel",
       "started_at": "2026-09-19T05:03:09+08:00",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b"
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "completed_at": "2026-09-19T05:08:09+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL29_STABLE_BASELINE_REVIEW_20260919.md",
+      "review_scope": "Exact finite matrix identities and archival cancellation citation only; no stable tensor execution or actual AE certificate",
+      "artifact_sha256": "b15bfb0f4b0be4e77dd347b8e6c69fcca708029e34a2b5a60587f5971d411b01",
+      "independent_scientific_review": "pending; planagent mathematical contract"
     }
   ],
   "storage_policy": {
@@ -4294,7 +4307,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T05:03:09+08:00",
+  "updated_at": "2026-09-19T05:08:09+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4946,7 +4959,7 @@
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "prepared_not_sent",
+      "status": "running",
       "prepared_at": "2026-09-19T05:03:09+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "work_order": "../AL27_FULL_HEAD_REFERENCE_CPU_20260919.md",
@@ -4954,19 +4967,26 @@
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
       "scope": "Fixed3 abstract Gram panels;4D candidate/12D free convex objectives, no real classifier/model/media/server/GPU.",
-      "readiness_basis": "AL25 full handoff, exact archival tensor review and idle/completed cursor35; AL20/23/24 mathematical and small-reference parents passed"
+      "readiness_basis": "AL25 full handoff, exact archival tensor review and idle/completed cursor35; AL20/23/24 mathematical and small-reference parents passed",
+      "sent_at": "2026-09-19T05:04:01+08:00",
+      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+      "duplicate_dispatch_suppressed": true,
+      "last_observed_status": "inProgress",
+      "last_observed_thread_turn_id": "01a0b655-5394-7a91-b885-8f658561fcc2",
+      "last_observed_at": "2026-09-19T05:08:09+08:00",
+      "startup_evidence": "cursor36 active with explicit adoption of AL27 fixed panels/solver and original-z parameterization; AL29 not added to that run"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:35",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:36",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T05:03:09+08:00",
-    "research_observed_status": "idle",
+    "last_coordinator_activity_at": "2026-09-19T05:08:09+08:00",
+    "research_observed_status": "active",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -5471,7 +5491,7 @@
         "final_handoff_received_at": "2026-09-19T05:03:09+08:00"
       }
     ],
-    "last_substantive_review": "../reviews/AL25_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL29_STABLE_BASELINE_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -5551,10 +5571,11 @@
         "AL29"
       ],
       "executor_role": "planagent",
-      "status": "running_stable_coordinate_review",
+      "status": "completed_stable_coordinate_review",
       "started_at": "2026-09-19T05:03:09+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "Exact coordinate/metric derivation; cite archived AL25 cancellation without replay or changing frozen implementation"
+      "scope": "Exact coordinate/metric derivation; cite archived AL25 cancellation without replay or changing frozen implementation",
+      "completed_at": "2026-09-19T05:08:09+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -5571,17 +5592,13 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T05:03:09+08:00",
-    "prepared_independent_task_ids": [
-      "AL27"
-    ],
+    "last_local_review_at": "2026-09-19T05:08:09+08:00",
+    "prepared_independent_task_ids": [],
     "active_and_prepared_work": {
       "running": [
-        "AL29"
-      ],
-      "prepared_independent": [
         "AL27"
-      ]
+      ],
+      "prepared_independent": []
     },
     "material_decision_notices": [
       {
@@ -5737,7 +5754,10 @@
       "stable_baseline_review_task": "AL29",
       "filtered_readout_status": "OR1-readout-1 passed on7 fixed fields only; actual wrapper and AE precision pending",
       "multidimensional_head_task": "AL27",
-      "stable_baseline_coordinate_task": "AL29"
+      "stable_baseline_coordinate_task": "AL29",
+      "stable_baseline_coordinate_status": "mathematical contract passed; not implemented or fitted",
+      "stable_baseline_regularization": "lambda/6 times ||M^T gamma||^2; candidate q reused as second feature",
+      "AE_precision_certificate": "unknown; coordinate changes do not certify probe accuracy"
     }
   },
   "open_review_issues": [

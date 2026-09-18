@@ -1,0 +1,83 @@
+{
+  "task_id": "AL29",
+  "observed_at": "2026-09-18T21:06:12.651836+00:00",
+  "M": [
+    [
+      "1",
+      "1",
+      "2"
+    ],
+    [
+      "1",
+      "1",
+      "-2"
+    ],
+    [
+      "1",
+      "-1",
+      "0"
+    ]
+  ],
+  "inverse": [
+    [
+      "1/4",
+      "1/4",
+      "1/2"
+    ],
+    [
+      "1/4",
+      "1/4",
+      "-1/2"
+    ],
+    [
+      "1/4",
+      "-1/4",
+      "0"
+    ]
+  ],
+  "M_M_transpose": [
+    [
+      "6",
+      "-2",
+      "0"
+    ],
+    [
+      "-2",
+      "6",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "2"
+    ]
+  ],
+  "determinant": -8,
+  "eigenvalues_of_metric": [
+    2,
+    4,
+    8
+  ],
+  "both_inverse_products_identity": true,
+  "candidate_gamma": [
+    0,
+    1,
+    0
+  ],
+  "corresponding_beta": [
+    1,
+    1,
+    -2
+  ],
+  "candidate_penalty_factor": 6,
+  "regularizer": "lambda/6 * gamma^T (M M^T) gamma",
+  "reviewed_AL25_evidence_sha256": "cc76e97ebb003350461c49827f15c1b53f55662ff75d0b9887bd4fb5b4eca421",
+  "archived_cancellation": {
+    "q_direct": 1.3877787807807517e-17,
+    "q_compact_raw": 0.0,
+    "numbers_copied_from_archive_no_recalculation": true
+  },
+  "readout_or_model_calls": 0,
+  "scientific_breakthrough": false,
+  "scope": "Exact finite matrix identities and archival citation; stable tensor implementation not executed"
+}
