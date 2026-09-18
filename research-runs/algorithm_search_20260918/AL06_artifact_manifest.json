@@ -1,0 +1,52 @@
+{
+  "task_id": "AL06",
+  "freeze_commit": "1956f49",
+  "created_at": "2026-09-19T01:14:21.0423001+08:00",
+  "files": [
+    {
+      "path": "research-runtime/algorithm_candidates/al06/certificates.py",
+      "sha256": "159ef4b13102de794d382a5970990b2622e1c950565f21d4f120f57c33e4eced",
+      "bytes": 4318
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/al06/config.json",
+      "sha256": "0c9109444f2e3aa0111e0f11a6186149b9e8ff7d3f64700122a3efe061f14a2b",
+      "bytes": 1557
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/al06/run_package.py",
+      "sha256": "a9cf727d91292e9130a76f528c323ec2e3e53223c60afcced7f0af04597b06be",
+      "bytes": 13803
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL06_design.md",
+      "sha256": "d73215790155fe148aeac38f35e9eaea81e59eb71737515ed48afc399b70f5f1",
+      "bytes": 8179
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL06_evidence.json",
+      "sha256": "6499a1869a03dbe657b2f24aaf833e01125b1caea708162be22ae51cc8a79cdf",
+      "bytes": 1619481
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL06_freeze.json",
+      "sha256": "bccc6a60abc6ac4ff206a14e0e644b061e9e3f12a76a04cc632a0c1b908de874",
+      "bytes": 4645
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL06_handoff.md",
+      "sha256": "5eae7483c92b58d40b25042134069f4150ef97f12be26c967bd74fc8ff782c66",
+      "bytes": 6770
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL06_inputs.json",
+      "sha256": "9cce6ead901e6fdbf30d53cb5e3566dc20edbc1cafadf1865899d0feaa1a4236",
+      "bytes": 247982
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL06_omissions.json",
+      "sha256": "538250091770fc8497c5be398bfe74229d170d221c8487fa80ca564dfd5fd467",
+      "bytes": 9757
+    }
+  ]
+}
