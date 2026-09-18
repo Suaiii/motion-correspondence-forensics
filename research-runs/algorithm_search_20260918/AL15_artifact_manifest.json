@@ -1,0 +1,59 @@
+{
+  "task_id": "AL15",
+  "dispatch_id": "cc-al15-or1-cpu-20260919",
+  "freeze_commit": "f897e0c",
+  "generated_at": "2026-09-19T02:55:27.9204063+08:00",
+  "result_scope": "software_algebra_and_mock_contract_only",
+  "files": [
+    {
+      "path": "research-runtime/algorithm_candidates/or1_cpu/config.json",
+      "sha256": "ed2dea574565bf65844ab9694474078f2a26b48af6278d915f803296ff928884",
+      "bytes": 1687
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_cpu/core.py",
+      "sha256": "c838e34a1fb196b1955d9a0b43d2939830249b6259a3195f693b1d35c6961c13",
+      "bytes": 8063
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_cpu/freeze.py",
+      "sha256": "e5c0c9662f77f1202a46ef328ce6211830e782025440e9544a1995b586e13ed2",
+      "bytes": 11367
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_cpu/run.py",
+      "sha256": "eb69ccd2065760df4a9bdb09ea059e77766cdecc46bea00aa30ac3211de0f536",
+      "bytes": 15390
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL15_evidence.json",
+      "sha256": "076ae934e740d72943ca2e9f1b9c5cda27ffd8ecc2611a7ca8b386e88646c3ec",
+      "bytes": 1703610
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL15_freeze.json",
+      "sha256": "0cf305ed39d11de16a55b30fc76dc72480a4ee9a8084e60af6fc8e18f4535801",
+      "bytes": 10156
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL15_handoff.md",
+      "sha256": "e2d7dad9199fb89b1ec806f35e74c5c980b1f5d3740615205e456ecee784e77a",
+      "bytes": 4000
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL15_inputs.json",
+      "sha256": "86b601c79629bf5da747d23722aba8d1a13abe78146b3f4424fa27b300b8bab2",
+      "bytes": 775153
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL15_protocol.md",
+      "sha256": "527166ee247d13a43a877df9abff46b084ff60a5327651f66e9412bf5d18f619",
+      "bytes": 6398
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL15_report.md",
+      "sha256": "8aa2f0e34ed6cc46b20778ea6135c40c188be29272a94a2bec974ef4dcc69b19",
+      "bytes": 7459
+    }
+  ]
+}
