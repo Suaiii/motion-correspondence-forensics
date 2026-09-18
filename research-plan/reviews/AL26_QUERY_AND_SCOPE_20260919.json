@@ -1,0 +1,37 @@
+{
+  "task_id": "AL26",
+  "review_date_local": "2026-09-19",
+  "topic_search_count": 4,
+  "queries": [
+    "\"AI-generated\" \"cross reconstruction\" detection",
+    "\"generated image detection\" \"autoencoders\" reconstruction",
+    "\"generated\" \"reconstruction trajectory\" detection diffusion",
+    "\"commutator\" \"forensics\" OR \"reconstruction\" detection"
+  ],
+  "primary_domain_filters": [
+    "arxiv.org",
+    "openaccess.thecvf.com",
+    "openreview.net",
+    "proceedings.mlr.press"
+  ],
+  "new_full_text_reviews": [
+    {"id": "fire", "title": "FIRE: Robust Detection of Diffusion-Generated Images via Frequency-Guided Reconstruction Error", "version": "CVPR2025 official proceedings PDF", "reviewed_sections": ["3.2", "3.3", "3.4"], "result": "Perturbation/frequency-conditioned AE response prior; same AE on two inputs, not established as the same two-probe soft-step commutator"},
+    {"id": "beyond_generation", "title": "Beyond Generation: A Diffusion-based Low-level Feature Extractor for Detecting AI-generated Images", "version": "CVPR2025 official proceedings PDF", "reviewed_sections": ["3.2", "3.3"], "result": "Corruption/restoration pretext and real-feature density prior; distinct downstream objective"},
+    {"id": "bias_free", "title": "A Bias-Free Training Paradigm for More General AI-generated Image Detection", "version": "CVPR2025 official proceedings PDF", "reviewed_sections": ["4", "Figure3", "6"], "result": "Content alignment is prior work; native fake labels differ from OR1 camera-origin reconstruction protocol"}
+  ],
+  "unreviewed_title_leads": ["Recovery-based Black-Box Detection of AI-Generated Content"],
+  "not_counted_as_new": ["AEROBLADE", "DRCT", "Aligned Datasets Improve Detection of Latent Diffusion-Generated Images", "arXiv2605.23449v1"],
+  "retrieval": {
+    "web_tool_CVF_HTML_and_PDF": "403; retained as a retrieval limitation, not a scientific negative result",
+    "ordinary_direct_public_CVF_PDF": "Succeeded without credentials or alternate identity; source payload retained only in memory, temporary extracted text removed after review",
+    "model_or_media_payloads_requested": false,
+    "source_PDF_hashes": "AL26_RETRIEVAL_RECORD_20260919.json",
+    "full_text_cache_is_deliverable": false
+  },
+  "limits": [
+    "Bounded targeted search, not an exhaustive novelty certificate",
+    "No claims inferred from unread paper titles or inaccessible pages",
+    "No original-code reproduction or model/data experiment",
+    "No formal innovation admission or real detection gain"
+  ]
+}

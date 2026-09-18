@@ -1,0 +1,59 @@
+{
+  "task_id": "AL26",
+  "records": [
+    {
+      "id": "bias_free",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Guillaro_A_Bias-Free_Training_Paradigm_for_More_General_AI-generated_Image_Detection_CVPR_2025_paper.pdf",
+      "attempt": "ordinary public HTTPS via stdlib; no credentials or custom access",
+      "at": "2026-09-18T20:34:34.743037+00:00",
+      "status": "retrieved_official_pdf_in_memory_text_saved",
+      "PDF_bytes": 1710245,
+      "PDF_sha256": "268221a5e3f92bced7bca180a680bc781127eda2697f54bc52ced7bf1fe43ed3",
+      "PDF_saved": false,
+      "pages": 10,
+      "text_bytes": 51076,
+      "text_sha256": "10febea349833a088d3bd6b8cd01ae9573c6013e8775b043b51eb3d9ece945de",
+      "text_path": "research-plan/reviews/AL26_sources/bias_free.txt",
+      "text_retained": false,
+      "text_disposition": "Temporary full-paper extraction removed after review; use official URL and PDF SHA256, not a redistributed full-text artifact"
+    },
+    {
+      "id": "beyond_generation",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Zhong_Beyond_Generation_A_Diffusion-based_Low-level_Feature_Extractor_for_Detecting_AI-generated_CVPR_2025_paper.pdf",
+      "attempt": "ordinary public HTTPS via stdlib; no credentials or custom access",
+      "at": "2026-09-18T20:34:38.403243+00:00",
+      "status": "retrieved_official_pdf_in_memory_text_saved",
+      "PDF_bytes": 1135352,
+      "PDF_sha256": "2cc3298b5f70c5bcb24ed0683ae42cce1ede6ac0b8eb16f81845e6f51a76b7b6",
+      "PDF_saved": false,
+      "pages": 11,
+      "text_bytes": 51390,
+      "text_sha256": "3273abb874c1d673e7cd9f3f0125ab382ae278af67e3bfc2679524cfbe93ac77",
+      "text_path": "research-plan/reviews/AL26_sources/beyond_generation.txt",
+      "text_retained": false,
+      "text_disposition": "Temporary full-paper extraction removed after review; use official URL and PDF SHA256, not a redistributed full-text artifact"
+    },
+    {
+      "id": "fire",
+      "url": "https://openaccess.thecvf.com/content/CVPR2025/papers/Chu_FIRE_Robust_Detection_of_Diffusion-Generated_Images_via_Frequency-Guided_Reconstruction_Error_CVPR_2025_paper.pdf",
+      "attempt": "ordinary public HTTPS via stdlib; no credentials or custom access",
+      "at": "2026-09-18T20:34:41.936019+00:00",
+      "status": "retrieved_official_pdf_in_memory_text_saved",
+      "PDF_bytes": 3194852,
+      "PDF_sha256": "db8080fbeb05485db132336caf99b9735fcb35109d6435937866576a9863c550",
+      "PDF_saved": false,
+      "pages": 10,
+      "text_bytes": 47259,
+      "text_sha256": "ab4b85c8d2bfc992c4b246b06598248a57e4963106c91c4207279a3af2cdd554",
+      "text_path": "research-plan/reviews/AL26_sources/fire.txt",
+      "text_retained": false,
+      "text_disposition": "Temporary full-paper extraction removed after review; use official URL and PDF SHA256, not a redistributed full-text artifact"
+    }
+  ],
+  "total_saved_text_bytes": 149725,
+  "PDFs_saved": false,
+  "weights_or_media_downloaded": false,
+  "review_completed_at": "2026-09-18T20:38:56.630454+00:00",
+  "retained_full_text_bytes": 0,
+  "full_text_cache_is_deliverable": false
+}
