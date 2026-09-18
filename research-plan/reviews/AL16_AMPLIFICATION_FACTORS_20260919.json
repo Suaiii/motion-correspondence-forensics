@@ -1,0 +1,34 @@
+{
+  "task_id": "AL16",
+  "observed_at_utc": "2026-09-18T18:42:29.069850+00:00",
+  "scope": "Exact coefficients of conditional inequalities only; no model evaluation",
+  "work_order_sha256": "3f864e65e4f9990d1bc4810c26af1b55019c8f1479b5de11ca176fe8eaf5ddfc",
+  "rows": [
+    {
+      "h": "1/4",
+      "single_endpoint_factor": "16",
+      "two_equal_endpoint_factor": "32",
+      "equal_probe_error_factor_under_lipschitz_L_equals_1": "16"
+    },
+    {
+      "h": "1/8",
+      "single_endpoint_factor": "64",
+      "two_equal_endpoint_factor": "128",
+      "equal_probe_error_factor_under_lipschitz_L_equals_1": "32"
+    },
+    {
+      "h": "1/16",
+      "single_endpoint_factor": "256",
+      "two_equal_endpoint_factor": "512",
+      "equal_probe_error_factor_under_lipschitz_L_equals_1": "64"
+    }
+  ],
+  "actual_probe_errors": "unknown",
+  "actual_lipschitz_constants": "unknown",
+  "float64_toy_does_not_certify_GPU_precision": true,
+  "server_access": false,
+  "media_read": false,
+  "gpu_used": false,
+  "scientific_breakthrough": false,
+  "assumption_for_probe_column": "L_a,L_b<=1; equal per-probe error bound; no mixing/final arithmetic error"
+}

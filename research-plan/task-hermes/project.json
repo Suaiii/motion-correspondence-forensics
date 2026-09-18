@@ -1965,8 +1965,8 @@
       "requires_pass": [
         "AL12"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "numerical_error_contract",
       "hypothesis": "h^-2端点差和小分母能量比可放大数值误差；需要明确误差来源/界和覆盖条件，确定性重复不等于精度证明。",
       "work": [
@@ -1980,12 +1980,13 @@
         "不改AL15实现/输入，不把稳定性合同当真实机制"
       ],
       "artifacts": [
-        "../reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md"
+        "../reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md",
+        "../reviews/AL16_AMPLIFICATION_FACTORS_20260919.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
       "work_order": "../AL16_OR1_NUMERICAL_CONTRACT_20260919.md",
-      "next_action": "仅按本工作单及主DAG实际派发执行。",
+      "next_action": "结合AL15交付审查；未来真实profile须量化误差来源与coverage，不能用float64 toy替代GPU精度验收。",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1998,10 +1999,20 @@
         "max_array_bytes": 1048576,
         "torch": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported",
       "prepared_at": "2026-09-19T02:35:46+08:00",
       "implementation_authorized": false,
-      "scientific_innovation_gate_passed": false
+      "scientific_innovation_gate_passed": false,
+      "started_at": "2026-09-19T02:42:27+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "completed_at": "2026-09-19T02:45:08+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Conditional numerical error inequalities and profile contract only; no measured model precision or scientific acceptance",
+      "review_note": "Endpoint error scales h^-2; per-probe error has a different soft-step propagation bound. Filtered-energy/ratio bounds require positive denominator lower bounds and known error sources; deterministic repetition does not establish accuracy.",
+      "actual_probe_errors": "unknown",
+      "actual_lipschitz_constants": "unknown",
+      "independent_scientific_review": "pending; planagent-derived conditional bounds",
+      "artifact_sha256": "d5502a3cf233c6948610c1b3d0ef38936d7bfd5b02fdb06fb7846f995ea29036"
     }
   ],
   "storage_policy": {
@@ -3401,7 +3412,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T02:38:25+08:00",
+  "updated_at": "2026-09-19T02:45:08+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4421,7 +4432,7 @@
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:19"
       }
     ],
-    "last_substantive_review": "../reviews/AL12_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4499,15 +4510,15 @@
     "local_execution": {
       "task_ids": [],
       "executor_role": "planagent",
-      "status": "completed_primary_source_review",
+      "status": "completed_numerical_contract_review",
       "work_area": "research-plan/reviews",
-      "started_at": "2026-09-19T02:14:11+08:00",
-      "scope": "Native reconstruction baseline and label contracts; no candidate implementation or experiments.",
+      "started_at": "2026-09-19T02:42:27+08:00",
+      "scope": "Conditional numerical bounds and fixed exact amplification factors; no probe/model execution or AL15 changes.",
       "completed_task_ids": [
-        "AL14"
+        "AL16"
       ],
-      "completed_at": "2026-09-19T02:22:20+08:00",
-      "review": "../reviews/AL14_RECONSTRUCTION_BASELINES_20260919.md"
+      "completed_at": "2026-09-19T02:45:08+08:00",
+      "review": "../reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4525,19 +4536,18 @@
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T00:50:13+08:00",
-    "prepared_independent_task_ids": [
-      "AL16"
-    ],
+    "prepared_independent_task_ids": [],
     "active_and_prepared_work": {
       "running": [
         "AL15"
       ],
-      "prepared_independent": [
+      "prepared_independent": [],
+      "completed_parallel_inputs": [
+        "AL13",
+        "AL14",
         "AL16"
       ],
-      "downstream_decision": [
-        "scientific candidate admission remains required"
-      ]
+      "next_action": "Review actual AL15 frozen delivery with numerical/protocol evidence; then replenish meaningful independent follow-ups."
     },
     "material_decision_notices": [
       {
@@ -4552,11 +4562,13 @@
       },
       {
         "id": "or1-bounded-cpu-prototype-selected",
-        "status": "pending_final_output",
+        "status": "confirmed_final_output",
         "prepared_at": "2026-09-19T02:38:25+08:00",
         "message": "已选定OR1进入有限CPU原型开发，检验两个重建探针交换顺序后的响应及调用公平性。新颖性和真实检测增益仍待验证。",
         "evidence": "../reviews/AL12_REVIEW_20260919.md",
-        "not_a_milestone_receipt": true
+        "not_a_milestone_receipt": true,
+        "confirmed_at": "2026-09-19T02:42:27+08:00",
+        "confirmation_evidence": "Actual NOTIFY XML in prior completed cvpr-2027 heartbeat turn triggered2026-09-18T18:22:58.901Z; no OS push claim."
       }
     ],
     "context_updates": [
