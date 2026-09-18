@@ -1,0 +1,85 @@
+{
+  "reviewed_at_utc": "2026-09-18T16:45:58.334689+00:00",
+  "source_commit": "29373fa",
+  "freeze_commit": "43e35291190cedae18c2b59255b80ab9420cd251",
+  "file_checks": [
+    {
+      "path": "research-runtime/algorithm_candidates/al04/config.json",
+      "sha256": "acb487757a9b9087c22e0d2875daac837566f84019991c937f1eba8667e22bb7",
+      "disk_and_commit_match": true
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/al04/protocol.py",
+      "sha256": "ba0a28c26f44e7c9246440e4dbf48a5e630b42b6f9142e773173c309a260ebc7",
+      "disk_and_commit_match": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL04_protocol.md",
+      "sha256": "25ca6914bdb17ac735aa355fac9aac8f8ace2baf791a735f447eb4623368976b",
+      "disk_and_commit_match": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL04_cases.json",
+      "sha256": "6f8be0b87163378faece3222d4e4769daba0dbbb424b1252a744a43bc76bfdd5",
+      "disk_and_commit_match": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL04_freeze.json",
+      "sha256": "a53c6c87f085c1be54f87a1fd008a9c6bd7aa9221ac453cbd99a708037b950b1",
+      "disk_and_commit_match": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL04_validation.json",
+      "sha256": "85551a67df0e28086b60f6dbb6fb1c0382774c2a121d10bacb0106571b433cbf",
+      "disk_and_commit_match": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL04_handoff.md",
+      "sha256": "037aea2268eac3c74177e96ea59106568319a05ae5bc1c1289bd22084934c34d",
+      "disk_and_commit_match": true
+    }
+  ],
+  "freeze_precedes_execution": true,
+  "frozen_commit_matches": true,
+  "counts": {
+    "reference_rows": 32,
+    "coverage_rejections": 12,
+    "information_rows": 2,
+    "ordinary_baselines": 16
+  },
+  "recomputed_max_errors": {
+    "objective": 5.474323550006687e-13,
+    "single_masses": 9.463263506148678e-14,
+    "joint_witness": 0.0,
+    "ordinary_tensor": 8.881784197001252e-16,
+    "complete_pair_law": 0.0
+  },
+  "event_certificates": [
+    {
+      "id": "development_m2_incompatible",
+      "event_bound": 0.5466666666666665,
+      "reported_distance": 0.5466666666666665
+    },
+    {
+      "id": "development_m4_incompatible",
+      "event_bound": 0.526666666666667,
+      "reported_distance": 0.5466666666666667
+    },
+    {
+      "id": "independent_check_m4_incompatible",
+      "event_bound": 0.526666666666667,
+      "reported_distance": 0.5466666666666667
+    },
+    {
+      "id": "independent_check_m8_incompatible",
+      "event_bound": 0.5166666666666666,
+      "reported_distance": 0.5466666666666667
+    }
+  ],
+  "review_scope": "frozen protocol and archived arithmetic only",
+  "ht_integration": "not_run_pending_preserved",
+  "lp_rerun": false,
+  "server_access": false,
+  "gpu_used": false,
+  "scientific_breakthrough": false
+}

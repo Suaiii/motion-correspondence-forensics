@@ -1169,7 +1169,9 @@
       "independent_review_pending": true,
       "completed_at": "2026-09-19T00:26:49+08:00",
       "reviewed_by": "planagent",
-      "review_scope": "Current H-T independent-gain claim refuted; general higher-order research remains open"
+      "review_scope": "Current H-T independent-gain claim refuted; general higher-order research remains open",
+      "execution_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
+      "executed_by_role_at_review": "researchagent_legacy"
     },
     {
       "id": "AL03",
@@ -1223,7 +1225,9 @@
       "temporary_assignment_reason": "Research task recovered using supported ordinary model; cross-review and independent H-T work separated from local AL01.",
       "completed_at": "2026-09-19T00:26:49+08:00",
       "reviewed_by": "planagent",
-      "review_scope": "Restricted mathematical/software and bounded method review only; not formal science or novelty acceptance"
+      "review_scope": "Restricted mathematical/software and bounded method review only; not formal science or novelty acceptance",
+      "execution_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
+      "executed_by_role_at_review": "researchagent_legacy"
     },
     {
       "id": "AL04",
@@ -1236,8 +1240,8 @@
       "requires_pass": [
         "RS05"
       ],
-      "status": "review",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "candidate_test_protocol",
       "hypothesis": "统一固定输入信息和扰动场景可以区分机制收益与熵/容量/对齐伪增量。",
       "work": [
@@ -1253,11 +1257,13 @@
       ],
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL04_protocol.md",
-        "../../research-runs/algorithm_search_20260918/AL04_validation.json"
+        "../../research-runs/algorithm_search_20260918/AL04_validation.json",
+        "../reviews/AL04_REVIEW_20260919.md",
+        "../reviews/AL04_DELIVERY_CHECK_20260919.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "为H-J/H-T及简单基线定义共同输入/统计/失败字段和开发与独立检查场景。",
+      "next_action": "保留冻结协议和HT pending；AL01完整交付后进入候选取舍，不由协议通过放行真实实验。",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1268,14 +1274,26 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "inconclusive",
       "original_assignee": "researchagent",
       "temporary_assignment_reason": "User explicitly requested a new research conversation; AL04 is independent from ongoing AL03/AL02.",
       "independent_review_pending": true,
       "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "started_at": "2026-09-19T00:20:04+08:00"
+      "started_at": "2026-09-19T00:20:04+08:00",
+      "completed_at": "2026-09-19T00:50:13+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Frozen protocol, information permissions and archived arithmetic; HT candidate integration, innovation and detector mechanism not accepted",
+      "review_note": "7 artifact hashes and freeze order verified; saved witnesses/objectives and ordinary tensors independently recomputed without rerunning the original LP batch.",
+      "source_commits": [
+        "43e35291190cedae18c2b59255b80ab9420cd251",
+        "29373fa"
+      ],
+      "integration_commits": [
+        "07c7089",
+        "1675ab6"
+      ]
     },
     {
       "id": "AL05",
@@ -1286,7 +1304,8 @@
         "AL01",
         "AL02",
         "AL03",
-        "AL04"
+        "AL04",
+        "AL06"
       ],
       "requires_pass": [
         "AL03",
@@ -1310,7 +1329,7 @@
       ],
       "due_at": "2026-09-21T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "审查两候选的数学/软件/信息公平性及近邻差异，选择至多一个主候选或明确全部拒绝。",
+      "next_action": "待AL01及经典投影对照AL06完成后取舍；负结果可以结项，但不能作为创新成功放行。",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1321,7 +1340,57 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "not_evaluated"
+      "hypothesis_result": "not_evaluated",
+      "dependency_update_reason": "2026-09-19一手方法审查发现二值投影循环约束是直接经典对照，选择H-J前须纳入其结果。AL06失败不阻碍作出拒绝决定。"
+    },
+    {
+      "id": "AL06",
+      "milestone": "M2",
+      "title": "H-J经典二值投影下界与遗漏对照",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL03"
+      ],
+      "requires_pass": [
+        "AL03"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "classical_certificate_baseline_and_failure_analysis",
+      "hypothesis": "均匀质量下二值粗化可给出DJ的廉价有效下界，但可能遗漏不兼容输入，且投影循环约束属于明确既有方法。",
+      "work": [
+        "独立证明平衡二值粗化的L1收缩下界和符号代表规则",
+        "冻结至多24项新Q实例，与同Q DJ/简单循环/JS/熵比较并保留遗漏和失败",
+        "逐公式对照Sontag-Jaakkola投影约束，不把经典对照包装为新算法"
+      ],
+      "acceptance": [
+        "证明尺度与不等式方向正确；合法Gamma输入无显著正证书",
+        "完整记录预注册全部输入和哈希，没找到遗漏不称完备",
+        "区分经典方法特例、软件检查和真实检测创新；不解锁GPU或数据支路"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL06_design.md",
+        "../../research-runs/algorithm_search_20260918/AL06_evidence.json",
+        "../../research-runs/algorithm_search_20260918/AL06_handoff.md"
+      ],
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "plan_version": "cvpr27-20260918-v1.4",
+      "next_action": "等待AL01完整交接后按独立工作包派发；先读取AL06_PROJECTED_CERTIFICATES_20260919.md。",
+      "work_order": "../AL06_PROJECTED_CERTIFICATES_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false
+      },
+      "hypothesis_result": "not_evaluated",
+      "prepared_at": "2026-09-19T00:50:13+08:00",
+      "dispatch_status": "not_sent",
+      "independent_of_current_AL01": true
     }
   ],
   "storage_policy": {
@@ -2721,7 +2790,7 @@
     }
   },
   "plan_version": "cvpr27-20260918-v1.4",
-  "updated_at": "2026-09-19T00:33:23+08:00",
+  "updated_at": "2026-09-19T00:50:13+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -3336,7 +3405,7 @@
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:2",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:3",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
@@ -3539,7 +3608,7 @@
         ],
         "executor_role": "researchagent_next",
         "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
-        "status": "delivered_pending_review",
+        "status": "completed_protocol_scope",
         "prepared_at": "2026-09-19T00:11:01+08:00",
         "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md",
         "scope": "Independent worktree CPU protocol/falsification harness; old research task continues AL03/AL02.",
@@ -3557,10 +3626,16 @@
           "43e3529",
           "29373fa"
         ],
-        "handoff_report": "D:/SUAI/codex/worktree/662f/脉冲神经网络/research-runs/algorithm_search_20260918/AL04_handoff.md"
+        "handoff_report": "D:/SUAI/codex/worktree/662f/脉冲神经网络/research-runs/algorithm_search_20260918/AL04_handoff.md",
+        "reviewed_at": "2026-09-19T00:50:13+08:00",
+        "review": "../reviews/AL04_REVIEW_20260919.md",
+        "integration_commits": [
+          "07c7089",
+          "1675ab6"
+        ]
       }
     ],
-    "last_substantive_review": "../reviews/ROUND6_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL04_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -3658,7 +3733,22 @@
       "one_package_per_executor": true
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-    "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6"
+    "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
+    "last_local_review_at": "2026-09-19T00:50:13+08:00",
+    "prepared_independent_task_ids": [
+      "AL06"
+    ],
+    "active_and_prepared_work": {
+      "running": [
+        "AL01"
+      ],
+      "prepared_independent": [
+        "AL06"
+      ],
+      "downstream_decision": [
+        "AL05"
+      ]
+    }
   },
   "candidate_protocols": {
     "A": {
