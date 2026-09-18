@@ -1,0 +1,26 @@
+{
+  "task_id": "AL01",
+  "dispatch_id": "cc-new-session-al01-complete-20260919",
+  "execution_status": "completed",
+  "software_scope": "input validation/default regression/analytic controls pass; initial normalization failure preserved and recovered with the same objective",
+  "initial_receipt": "AL01_evidence.json",
+  "initial_receipt_status": "failure_preserved",
+  "initial_failures": [
+    "development_m4_features",
+    "independent_check_m4_features",
+    "independent_check_m8_features"
+  ],
+  "recovery_receipt": "AL01_normalization_recovery.json",
+  "recovery_status": "pass_same_problem_recovery",
+  "hypothesis_result": "supported_only_for_named_summary_collisions",
+  "novelty": "not_established",
+  "real_detection": "not_evaluated",
+  "independent_v2_review": "pending",
+  "scientific_breakthrough": false,
+  "original_reference_and_AL04_unchanged": true,
+  "frozen_commits": [
+    "5689d3e",
+    "81e7087",
+    "64325e8"
+  ]
+}
