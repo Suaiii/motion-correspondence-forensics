@@ -2249,8 +2249,8 @@
         "AL15",
         "AL19"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "finite_response_baseline_contract",
       "hypothesis": "同四调用的交叉增量能量/内积可能精确重构OR1读出；单步标量基线可能遗漏关键普通量。",
       "work": [
@@ -2265,7 +2265,9 @@
       ],
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL20_method_baseline.md",
-        "../../research-runs/algorithm_search_20260918/AL20_handoff.md"
+        "../../research-runs/algorithm_search_20260918/AL20_handoff.md",
+        "../reviews/AL20_AL24_REVIEW_20260919.md",
+        "../reviews/AL20_AL24_ARCHIVE_REVIEW_20260919.json"
       ],
       "work_order": "../AL20_OR1_COMPACT_BASELINE_20260919.md",
       "plan_version": "cvpr27-20260919-v1.5",
@@ -2283,17 +2285,29 @@
         "max_array_bytes": 1048576,
         "torch": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "exact_compact_baseline_containment_and_regularization_relation_supported",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "next_action": "Prepared only; follow unique main-DAG dispatch/start record, no parallel package for same executor.",
+      "next_action": "AL25 implements common-support tensor readout; AL26 audits prior overlap",
       "additional_input_review": "../reviews/AL23_MATCHING_OBJECTIVE_REVIEW_20260919.md",
-      "dispatch_status": "running_verified",
+      "dispatch_status": "completed_scoped_review",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T03:56:40+08:00",
       "observed_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
-      "execution_stage": "draft_source_and_protocol_preparation_observed"
+      "execution_stage": "complete_scoped_delivery",
+      "completed_at": "2026-09-19T04:31:07+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL20_AL24_REVIEW_20260919.md",
+      "review_scope": "Bounded algebra/archival and synthetic reference validation only",
+      "source_commits": [
+        "bef69a4",
+        "e5ae5e6"
+      ],
+      "integration_commits": [
+        "bee2ac2",
+        "7c2e10f"
+      ]
     },
     {
       "id": "AL21",
@@ -2497,8 +2511,8 @@
         "AL12",
         "AL23"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "matching_and_objective_reference_software",
       "hypothesis": "固定小表能验证最大基数/最小费用/字典序的匹配合同，以及已定一维凸目标的导数和解范围；不能据此声称检测能力。",
       "work": [
@@ -2514,7 +2528,9 @@
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL24_evidence.json",
         "../../research-runs/algorithm_search_20260918/AL24_report.md",
-        "../../research-runs/algorithm_search_20260918/AL24_handoff.md"
+        "../../research-runs/algorithm_search_20260918/AL24_handoff.md",
+        "../reviews/AL20_AL24_REVIEW_20260919.md",
+        "../reviews/AL20_AL24_ARCHIVE_REVIEW_20260919.json"
       ],
       "work_order": "../AL24_MATCHING_OBJECTIVE_CPU_20260919.md",
       "resource_policy": {
@@ -2537,15 +2553,143 @@
       "prepared_at": "2026-09-19T03:54:09+08:00",
       "implementation_authorized": true,
       "classifier_training_authorized": false,
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported_on_fixed_small_matching_and_scalar_objective_controls",
       "scientific_innovation_gate_passed": false,
-      "next_action": "Execute only within the new unique AL20/AL24 package; no overlap with completed AL18.",
-      "dispatch_status": "running_verified",
+      "next_action": "Retain bounded reference; no actual large matching or general4D fitting admitted",
+      "dispatch_status": "completed_scoped_review",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T03:56:40+08:00",
       "observed_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
-      "execution_stage": "draft_source_and_protocol_preparation_observed"
+      "execution_stage": "complete_scoped_delivery",
+      "completed_at": "2026-09-19T04:31:07+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL20_AL24_REVIEW_20260919.md",
+      "review_scope": "Bounded algebra/archival and synthetic reference validation only",
+      "source_commits": [
+        "bef69a4",
+        "e5ae5e6"
+      ],
+      "integration_commits": [
+        "bee2ac2",
+        "7c2e10f"
+      ]
+    },
+    {
+      "id": "AL25",
+      "milestone": "M2",
+      "title": "OR1共同支持四滤波读出与紧凑基线CPU参考",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL12",
+        "AL15",
+        "AL16",
+        "AL19",
+        "AL20"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL15",
+        "AL16",
+        "AL19",
+        "AL20"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "filtered_tensor_readout_reference",
+      "hypothesis": "在共同valid支持、相同kernel/mean尺度/分母下可重构OR1；有限精度消去必须与数学包含关系分开。",
+      "work": [
+        "新OR1-readout-1固定THWC、valid共同支持与四个明确kernel",
+        "冻结7个响应场与3类非法输入并单次运行",
+        "保留4维q/12维z、带符号内积、精确参考与消去差，不拟合"
+      ],
+      "acceptance": [
+        "固定核/同支持/全元素mean符合声明，形状或NaN拒绝",
+        "普通场1e-12预定容差；消去例完整保留运算差，不静默裁负或改eta",
+        "仅最大150元素合成数组，无真实数据/模型/服务器/GPU"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL25_report.md",
+        "../../research-runs/algorithm_search_20260918/AL25_handoff.md"
+      ],
+      "work_order": "../AL25_OR1_FILTERED_READOUT_CPU_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 25,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false,
+        "synthetic_tensor_readout": true,
+        "max_tensor_elements": 150,
+        "max_T": 2,
+        "max_H": 5,
+        "max_W": 5,
+        "channels": 3
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T04:31:07+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "hypothesis_result": "not_evaluated",
+      "implementation_authorized": true,
+      "readout_version": "OR1-readout-1",
+      "scientific_innovation_gate_passed": false,
+      "next_action": "Only execute unique dispatched AL25 package; historical formulas/results remain immutable"
+    },
+    {
+      "id": "AL26",
+      "milestone": "M2",
+      "title": "OR1交叉重建与响应对齐的定向近邻审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL14",
+        "AL20"
+      ],
+      "requires_pass": [
+        "AL14",
+        "AL20"
+      ],
+      "status": "running",
+      "gate_result": "not_evaluated",
+      "gate_scope": "targeted_cross_reconstruction_prior_review",
+      "hypothesis": "交叉重建和响应三元组可能已有直接近邻；当前剩余归纳约束主张需明确逐项差异，不能把检索未命中当首创。",
+      "work": [
+        "至多4个定向检索与8个新增primary入口",
+        "至多4篇相关正文，核对公式/输入/监督目标/对照",
+        "保留直接覆盖或缺证结论，查新与真实增益分开"
+      ],
+      "acceptance": [
+        "可追溯查询/日期/版本，不凭摘要猜公式",
+        "不重复把已审AL14资料当新发现",
+        "仅公开小文本，无模型/实验/服务器，最多256KiB本地"
+      ],
+      "artifacts": [
+        "../reviews/AL26_CROSS_RECONSTRUCTION_PRIOR_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL26_OR1_CROSS_RECONSTRUCTION_PRIORS_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "started_at": "2026-09-19T04:31:07+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "hypothesis_result": "not_evaluated",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false
     }
   ],
   "storage_policy": {
@@ -3945,7 +4089,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T04:13:33+08:00",
+  "updated_at": "2026-09-19T04:31:07+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4590,54 +4734,34 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al20-al24-baseline-matching-20260919",
+      "id": "cc-al25-filtered-readout-20260919",
       "task_ids": [
-        "AL20",
-        "AL24"
+        "AL25"
       ],
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "running",
-      "prepared_at": "2026-09-19T03:54:09+08:00",
+      "status": "prepared_not_sent",
+      "prepared_at": "2026-09-19T04:31:07+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "work_orders": [
-        "../AL20_OR1_COMPACT_BASELINE_20260919.md",
-        "../AL24_MATCHING_OBJECTIVE_CPU_20260919.md"
-      ],
-      "work_order_sha256": {
-        "AL20": "7784b52940d94799926f867ea47ed01f5801be88455c7c6628a5fbb56dcfa3d3",
-        "AL24": "f4c00367c7a2ff4105ec86b969ac6a2570c270ec25c2380423171ec70fdbfa9f"
-      },
+      "work_order": "../AL25_OR1_FILTERED_READOUT_CPU_20260919.md",
+      "work_order_sha256": "472e4f302d0ffce04bda5df972550e7781ecffeae18dc7c7cadf0d63e24c1e5a",
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
-      "scope": "Two independent bounded components: finite-response baseline mathematics and abstract matching/one-dimensional objective software reference; no real classifier, model/media/server/GPU.",
-      "readiness_basis": "AL18 full handoff, archival/targeted review, idle/completed cursor28; AL23 mathematical contract complete",
-      "sent_at": "2026-09-19T03:55:37+08:00",
-      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
-      "duplicate_dispatch_suppressed": true,
-      "last_observed_status": "inProgress",
-      "last_observed_thread_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
-      "last_observed_at": "2026-09-19T04:13:33+08:00",
-      "startup_evidence": "cursor29 active with explicit acknowledgement of both work orders, AL23, trace-only AL20 and frozen limited AL24 preparation",
-      "draft_preflight_review": {
-        "recorded_at": "2026-09-19T04:13:33+08:00",
-        "scope": "Read AL20 preregistered3 trace IDs/formulas and in-progress AL20/AL24 source. Matching lexicographic objective, scalar solver limitations and no-real-data boundaries align at inspection.",
-        "execution_or_gate_pass_claimed": false,
-        "final_hash_and_complete_handoff_review_pending": true
-      }
+      "scope": "Seven fixed synthetic response fields and3 refusal types; four filters/common valid support, no real media or model/GPU/fit.",
+      "readiness_basis": "Complete AL20/AL24 handoff and independent archive/math review; idle/completed cursor31"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:30",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:31",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T04:13:33+08:00",
-    "research_observed_status": "active",
+    "last_coordinator_activity_at": "2026-09-19T04:31:07+08:00",
+    "research_observed_status": "idle",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -5053,9 +5177,58 @@
           "d4d0021",
           "268ae95"
         ]
+      },
+      {
+        "id": "cc-al20-al24-baseline-matching-20260919",
+        "task_ids": [
+          "AL20",
+          "AL24"
+        ],
+        "executor_role": "researchagent_next",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "host_id": "local",
+        "status": "completed_scoped_review",
+        "prepared_at": "2026-09-19T03:54:09+08:00",
+        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+        "work_orders": [
+          "../AL20_OR1_COMPACT_BASELINE_20260919.md",
+          "../AL24_MATCHING_OBJECTIVE_CPU_20260919.md"
+        ],
+        "work_order_sha256": {
+          "AL20": "7784b52940d94799926f867ea47ed01f5801be88455c7c6628a5fbb56dcfa3d3",
+          "AL24": "f4c00367c7a2ff4105ec86b969ac6a2570c270ec25c2380423171ec70fdbfa9f"
+        },
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+        "scope": "Two independent bounded components: finite-response baseline mathematics and abstract matching/one-dimensional objective software reference; no real classifier, model/media/server/GPU.",
+        "readiness_basis": "AL18 full handoff, archival/targeted review, idle/completed cursor28; AL23 mathematical contract complete",
+        "sent_at": "2026-09-19T03:55:37+08:00",
+        "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+        "duplicate_dispatch_suppressed": true,
+        "last_observed_status": "completed",
+        "last_observed_thread_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
+        "last_observed_at": "2026-09-19T04:13:33+08:00",
+        "startup_evidence": "cursor29 active with explicit acknowledgement of both work orders, AL23, trace-only AL20 and frozen limited AL24 preparation",
+        "draft_preflight_review": {
+          "recorded_at": "2026-09-19T04:13:33+08:00",
+          "scope": "Read AL20 preregistered3 trace IDs/formulas and in-progress AL20/AL24 source. Matching lexicographic objective, scalar solver limitations and no-real-data boundaries align at inspection.",
+          "execution_or_gate_pass_claimed": false,
+          "final_hash_and_complete_handoff_review_pending": true
+        },
+        "completed_at": "2026-09-19T04:31:07+08:00",
+        "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:31",
+        "review": "../reviews/AL20_AL24_REVIEW_20260919.md",
+        "source_commits": [
+          "bef69a4",
+          "e5ae5e6"
+        ],
+        "integration_commits": [
+          "bee2ac2",
+          "7c2e10f"
+        ]
       }
     ],
-    "last_substantive_review": "../reviews/AL18_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL20_AL24_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -5067,7 +5240,7 @@
       "Do not repeat completed packages or tune C on the exposed 100 records",
       "Do not repeat unchanged server/account probes or the pending budget question"
     ],
-    "last_observed_completed_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
+    "last_observed_completed_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
     "configuration_faults": {
       "thread_coordination_tools_unavailable": {
         "status": "resolved",
@@ -5132,14 +5305,13 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL23"
+        "AL26"
       ],
       "executor_role": "planagent",
-      "status": "completed_mathematical_review",
-      "started_at": "2026-09-19T03:45:23+08:00",
+      "status": "running_primary_literature_review",
+      "started_at": "2026-09-19T04:31:07+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "Frozen pairwise loss and deterministic matching contract; independent of AL18 and AL20",
-      "completed_at": "2026-09-19T03:54:09+08:00"
+      "scope": "New targeted cross-reconstruction priors only; independent of AL25 implementation"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -5156,14 +5328,17 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T03:54:09+08:00",
-    "prepared_independent_task_ids": [],
+    "last_local_review_at": "2026-09-19T04:31:07+08:00",
+    "prepared_independent_task_ids": [
+      "AL25"
+    ],
     "active_and_prepared_work": {
       "running": [
-        "AL20",
-        "AL24"
+        "AL26"
       ],
-      "prepared_independent": []
+      "prepared_independent": [
+        "AL25"
+      ]
     },
     "material_decision_notices": [
       {
@@ -5277,7 +5452,7 @@
     },
     "OR1": {
       "version": "AL12-OR1",
-      "status": "vector_mock_pass_numerical_and_wrapper_conditions_pending",
+      "status": "bounded_vector_numeric_and_matching_references_pass_tensor_readout_pending",
       "source_commit": "a4cfdeb",
       "innovation_admitted": false,
       "real_mechanism_confirmed": false,
@@ -5301,7 +5476,12 @@
       "strict_decoder_holdout_issue": "Probe/production decoder component overlap must be audited; unseen detector-training generator is insufficient",
       "numerical_contract_status": "v1 fixed suite and v2 targeted interface checks passed; actual AE precision unknown",
       "matching_reference_task": "AL24",
-      "optimization_contract_task": "AL23"
+      "optimization_contract_task": "AL23",
+      "compact_baseline_containment_verified": true,
+      "real_generalization_order": "unknown",
+      "filtered_readout_task": "AL25",
+      "readout_version_under_implementation": "OR1-readout-1",
+      "targeted_prior_review_task": "AL26"
     }
   },
   "open_review_issues": [

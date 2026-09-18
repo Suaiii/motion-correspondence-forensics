@@ -1,0 +1,53 @@
+{
+  "tasks": [
+    "AL20",
+    "AL24"
+  ],
+  "reviewer": "planagent",
+  "observed_at": "2026-09-18T20:27:01.224248+00:00",
+  "status": "pass_in_declared_mathematics_and_small_reference_scope",
+  "manifest_files_verified": {
+    "AL20": 7,
+    "AL24": 11
+  },
+  "freeze_commit": "bef69a44a2ba181541773d71f7771c25ea5aba7f",
+  "result_commit": "e5ae5e632538d46688609391dc802f389c21cae8",
+  "AL20_exact_trace_checks": 3,
+  "AL20_cross_terms_in_checked_traces_all_zero": true,
+  "T_gram": "6I verified exactly",
+  "AL24_graphs_and_negative_records": 6,
+  "AL24_objective_point_diagnostics": [
+    {
+      "id": "M1",
+      "solution_first_coordinate": "4.66512041240594044211320579051971435546875",
+      "decimal_gradient": "4.46878536169438148105362377225285601762059637315E-15",
+      "decimal_hessian_00": "0.0112431874309585092012348270683239129472852076888683016703076",
+      "scope": "60-digit arithmetic diagnostic of archived candidate points, not optimizer replay or rigorous interval certificate"
+    },
+    {
+      "id": "M2",
+      "solution_first_coordinate": "0.45302601272078391048125922679901123046875",
+      "decimal_gradient": "9.5131535170914591606376327170687479258294526443E-14",
+      "decimal_hessian_00": "0.85256641799783807511293306959625206764402658272027086893824",
+      "scope": "60-digit arithmetic diagnostic of archived candidate points, not optimizer replay or rigorous interval certificate"
+    },
+    {
+      "id": "zero_difference",
+      "solution_first_coordinate": "0",
+      "decimal_gradient": "0.000",
+      "decimal_hessian_00": "0.002",
+      "scope": "60-digit arithmetic diagnostic of archived candidate points, not optimizer replay or rigorous interval certificate"
+    }
+  ],
+  "research_calls_replayed": 0,
+  "model_or_media_or_gpu": false,
+  "scientific_breakthrough": false,
+  "scope": "No additional scientific inputs or fitted models; original traces and matched tiny cases only",
+  "remaining_limits": [
+    "Actual four-filter tensor readout pending",
+    "Three AL20 trace checks are not independent real samples; two share the same numerical setup",
+    "AL24 covers2x2 graphs and a one-dimensional subproblem, not large matching or general4D fitting",
+    "No actual detection benefit or innovative mechanism established"
+  ],
+  "audit_source_sha256": "fafdf2ebb84dc7d99175d99d5bdd90ea958696a81a4361e93d1152eb548ce93f"
+}
