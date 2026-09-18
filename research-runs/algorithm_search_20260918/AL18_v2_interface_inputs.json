@@ -1,0 +1,1659 @@
+{
+  "records": [
+    {
+      "id": "N5_nan_observation_unknown_bound__h1/4",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": {
+          "nonfinite": "nan"
+        },
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": null,
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N5_finite_observation_unknown_bound__h1/4",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": "1/2",
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": null,
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "uncertified_bound"
+      }
+    },
+    {
+      "id": "N5_finite_observation_known_bound__h1/4",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": "1/2",
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "conditional_interval",
+        "q_hat": "1/2",
+        "B_q": "0"
+      }
+    },
+    {
+      "id": "N2_nan_final_observation__h1/4",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          {
+            "nonfinite": "nan"
+          }
+        ]
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N2_finite_final_observation__h1/4",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "0"
+        ]
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "residual_energy_not_certified_positive",
+        "K_hat": [
+          "0"
+        ],
+        "B_K": "0"
+      }
+    },
+    {
+      "id": "N2_finite_final_unknown_L__h1/4",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": null,
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "0"
+        ]
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "uncertified_bound"
+      }
+    },
+    {
+      "id": "N2_nonzero_final_observation_used__h1/4",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "1/64",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "1/64"
+        ]
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "residual_energy_not_certified_positive",
+        "K_hat": [
+          "1/64"
+        ],
+        "B_K": "1/64",
+        "first_interval": [
+          "0",
+          "1/32"
+        ]
+      }
+    },
+    {
+      "id": "N2_unsupported_output_field__h1/4",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "1/64",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "undeclared_final_K": [
+          "0"
+        ]
+      },
+      "h": "1/4",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N5_nan_observation_unknown_bound__h1/8",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": {
+          "nonfinite": "nan"
+        },
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": null,
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N5_finite_observation_unknown_bound__h1/8",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": "1/2",
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": null,
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "uncertified_bound"
+      }
+    },
+    {
+      "id": "N5_finite_observation_known_bound__h1/8",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": "1/2",
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "conditional_interval",
+        "q_hat": "1/2",
+        "B_q": "0"
+      }
+    },
+    {
+      "id": "N2_nan_final_observation__h1/8",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          {
+            "nonfinite": "nan"
+          }
+        ]
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N2_finite_final_observation__h1/8",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "0"
+        ]
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "residual_energy_not_certified_positive",
+        "K_hat": [
+          "0"
+        ],
+        "B_K": "0"
+      }
+    },
+    {
+      "id": "N2_finite_final_unknown_L__h1/8",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": null,
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "0"
+        ]
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "uncertified_bound"
+      }
+    },
+    {
+      "id": "N2_nonzero_final_observation_used__h1/8",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "1/64",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "1/64"
+        ]
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "residual_energy_not_certified_positive",
+        "K_hat": [
+          "1/64"
+        ],
+        "B_K": "1/64",
+        "first_interval": [
+          "0",
+          "1/32"
+        ]
+      }
+    },
+    {
+      "id": "N2_unsupported_output_field__h1/8",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "1/64",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "undeclared_final_K": [
+          "0"
+        ]
+      },
+      "h": "1/8",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N5_nan_observation_unknown_bound__h1/16",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": {
+          "nonfinite": "nan"
+        },
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": null,
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N5_finite_observation_unknown_bound__h1/16",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": "1/2",
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": null,
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "uncertified_bound"
+      }
+    },
+    {
+      "id": "N5_finite_observation_known_bound__h1/16",
+      "kind": "N5",
+      "payload": {
+        "hat_n": "1/4",
+        "hat_d": "1/2",
+        "hat_q": "1/2",
+        "bounds": {
+          "B_N": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "B_D": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_q": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_s": {
+            "value": "0",
+            "basis": "analytic_mock"
+          }
+        }
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "conditional_interval",
+        "q_hat": "1/2",
+        "B_q": "0"
+      }
+    },
+    {
+      "id": "N2_nan_final_observation__h1/16",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          {
+            "nonfinite": "nan"
+          }
+        ]
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    },
+    {
+      "id": "N2_finite_final_observation__h1/16",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "0"
+        ]
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "residual_energy_not_certified_positive",
+        "K_hat": [
+          "0"
+        ],
+        "B_K": "0"
+      }
+    },
+    {
+      "id": "N2_finite_final_unknown_L__h1/16",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "L_a": null,
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "0"
+        ]
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "uncertified_bound"
+      }
+    },
+    {
+      "id": "N2_nonzero_final_observation_used__h1/16",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "1/64",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "hat_k": [
+          "1/64"
+        ]
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "residual_energy_not_certified_positive",
+        "K_hat": [
+          "1/64"
+        ],
+        "B_K": "1/64",
+        "first_interval": [
+          "0",
+          "1/32"
+        ]
+      }
+    },
+    {
+      "id": "N2_unsupported_output_field__h1/16",
+      "kind": "N2",
+      "payload": {
+        "observations": {
+          "x": [
+            "0"
+          ],
+          "ra0": [
+            "0"
+          ],
+          "rb0": [
+            "0"
+          ],
+          "pa": [
+            "0"
+          ],
+          "pb": [
+            "0"
+          ],
+          "rab": [
+            "0"
+          ],
+          "rba": [
+            "0"
+          ],
+          "uab": [
+            "0"
+          ],
+          "uba": [
+            "0"
+          ]
+        },
+        "bounds": {
+          "eps_a0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_b0": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "eps_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_a": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_b": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ab": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_ba": {
+            "value": "0",
+            "basis": "analytic_mock"
+          },
+          "rho_K": {
+            "value": "1/64",
+            "basis": "analytic_mock"
+          },
+          "L_a": {
+            "value": "1",
+            "basis": "analytic_mock"
+          },
+          "L_b": {
+            "value": "1",
+            "basis": "analytic_mock"
+          }
+        },
+        "undeclared_final_K": [
+          "0"
+        ]
+      },
+      "h": "1/16",
+      "eta": "1/1000000000000",
+      "expected": {
+        "status": "invalid_input"
+      }
+    }
+  ],
+  "scope": "Two reviewed modes with valid/unknown/consumption/schema controls; no new scientific examples",
+  "public_queries_expected": 24,
+  "probe_calls_expected": 0,
+  "endpoint_readouts_expected": 0,
+  "v1_queries_in_this_run": 0
+}
