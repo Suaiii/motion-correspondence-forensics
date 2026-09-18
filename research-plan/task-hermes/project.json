@@ -1612,8 +1612,8 @@
       "requires_pass": [
         "AL06"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "archived_classical_counterexample_attribution",
       "hypothesis": "一般非平衡二分三角可能已捕获AL06两个遗漏，须只用归档Q定位约束限制而不扩张随机搜索。",
       "work": [
@@ -1627,12 +1627,68 @@
         "仅经典边界解释，不作新主候选"
       ],
       "artifacts": [
-        "../reviews/AL10_OMISSION_REVIEW_20260919.md"
+        "../reviews/AL10_OMISSION_REVIEW_20260919.md",
+        "../reviews/AL10_OMISSION_EVIDENCE_20260919.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
       "work_order": "../AL10_OMISSION_ATTRIBUTION_20260919.md",
-      "next_action": "按工作单执行；具体派发以continuous_collaboration为准。",
+      "next_action": "限定归因已完成，不再追逐完整经典约束；AL11独立审查相位假设的采样信息条件。",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false
+      },
+      "hypothesis_result": "supported",
+      "prepared_at": "2026-09-19T01:26:51+08:00",
+      "implementation_authorized": true,
+      "started_at": "2026-09-19T01:33:45+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "completed_at": "2026-09-19T01:36:55+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Only two archived cases and general binary triangles; not a completeness or novelty result",
+      "review_note": "Both balanced-family omissions are detected by nonbalanced classical triangles; m4 bound matches DJ numerically, m8 lower bound remains loose. No further search.",
+      "independent_scientific_review": "pending; planagent derived and checked this bounded attribution"
+    },
+    {
+      "id": "AL11",
+      "milestone": "M2",
+      "title": "时间相位采样的可辨识性与输入合同审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL07",
+        "RS05"
+      ],
+      "requires_pass": [
+        "AL07",
+        "RS05"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "conditional_sampling_identifiability",
+      "hypothesis": "若存在周期相位响应，原帧抽样可能造成不可识别别名；必须先明确覆盖和基线假设，不能将架构stride等同可见周期。",
+      "work": [
+        "证明整数等步长的相位轨道与有限设计矩阵秩",
+        "固定P4/d1,2,8,12/K3,8区分未知或已知基线的不可识别例",
+        "列出非均匀索引、未知相位及未来采样所需字段与必要条件"
+      ],
+      "acceptance": [
+        "仅条件采样模型，不据此确认真实生成周期",
+        "区分必要覆盖与充分检测条件，不把物理时间直接当原帧索引",
+        "不访问已暴露视频或改变数据/资源门槛"
+      ],
+      "artifacts": [
+        "../reviews/AL11_PHASE_SAMPLING_REVIEW_20260919.md"
+      ],
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "work_order": "../AL11_PHASE_SAMPLING_CONTRACT_20260919.md",
+      "next_action": "planagent按固定工作单完成条件数学审查，与AL09设计独立。",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1644,8 +1700,9 @@
         "large_downloads": false
       },
       "hypothesis_result": "not_evaluated",
-      "prepared_at": "2026-09-19T01:26:51+08:00",
-      "implementation_authorized": true
+      "prepared_at": "2026-09-19T01:36:55+08:00",
+      "independent_of_AL09": true,
+      "sampling_model_only": true
     }
   ],
   "storage_policy": {
@@ -3045,7 +3102,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T01:28:40+08:00",
+  "updated_at": "2026-09-19T01:36:55+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -3079,7 +3136,7 @@
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "branch": "codex/al06-projected-certificates",
       "startup_verified_at": "2026-09-19T00:20:04+08:00",
-      "plan_version_read": "cvpr27-20260918-v1.4",
+      "plan_version_read": "cvpr27-20260919-v1.5",
       "mode": "primary_research_session"
     },
     "scientific_review": {
@@ -3105,7 +3162,7 @@
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "branch": "codex/al06-projected-certificates",
       "startup_verified_at": "2026-09-19T00:20:04+08:00",
-      "plan_version_read": "cvpr27-20260918-v1.4",
+      "plan_version_read": "cvpr27-20260919-v1.5",
       "role_alias_of": "researchagent"
     },
     "researchagent_legacy": {
@@ -3524,29 +3581,32 @@
     "coordination_target": "roles.researchagent and current active dispatches; legacy research task closed"
   },
   "coordination": {
-    "handoff_status": "v1.5_sent_pending_ack",
+    "handoff_status": "acknowledged",
     "handoff_report": "../../research-runs/algorithm_search_20260918/AL06_handoff.md",
     "setup_report": "../../research-runs/shared_plan_20260917/deployment_report.md",
     "validation_report": "../../research-runs/shared_plan_20260917/validation.json",
     "planagent_read_version": "cvpr27-20260919-v1.5",
     "handoff_target_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
     "handoff_sent_on": "2026-09-17",
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:9",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:11",
     "acknowledged_at": "2026-09-18T01:27:27+08:00",
     "ack_source_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
     "ack_sha256": "25432ddaf8656dd189cc90083a8b5ecfd4f1b5d052a575ff4f938199c8c13c45",
-    "researchagent_read_version": "cvpr27-20260918-v1.4",
-    "acknowledged_plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+    "researchagent_read_version": "cvpr27-20260919-v1.5",
+    "acknowledged_plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
     "acknowledged_research_role_sha256": "f1d75d7860b9a89968a7e9402a3996d1578fa306af04b58180a6bc6a29af0cb8",
     "setup_status": "complete",
     "revision_handoff": {
       "plan_version": "cvpr27-20260919-v1.5",
-      "status": "sent_pending_ack",
+      "status": "acknowledged_by_actual_progress",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
       "dispatch_id": "cc-al09-generator-mechanism-20260919",
       "target_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "purpose": "Current candidates not admitted; new generator-mechanism design, thresholds and resources unchanged",
-      "sent_at": "2026-09-19T01:27:39+08:00"
+      "sent_at": "2026-09-19T01:27:39+08:00",
+      "acknowledgement_observed_at": "2026-09-19T01:33:45+08:00",
+      "acknowledgement_turn_id": "01a0b58e-8640-78b3-8f08-2f64e4cc2dee",
+      "acknowledgement_text": "已确认主计划为 v1.5，摘要与派发一致。"
     },
     "revision_handoff_history": [
       {
@@ -3615,7 +3675,8 @@
         "acknowledged_prior_plan_sha256": "6d5e9f7a83010b9af0ab411d9d7cae8f3aa1b487e4abbd609e166dd06c462d31",
         "next_dispatch": "cc-round-6-crossreview-ht-20260918"
       }
-    }
+    },
+    "acknowledgement_observed_at": "2026-09-19T01:33:45+08:00"
   },
   "plan_revisions": [
     {
@@ -3712,7 +3773,7 @@
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:10",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:11",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
@@ -4002,7 +4063,7 @@
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:9"
       }
     ],
-    "last_substantive_review": "../reviews/AL05_SELECTION_20260918.md",
+    "last_substantive_review": "../reviews/AL10_OMISSION_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4082,13 +4143,13 @@
       "executor_role": "planagent",
       "status": "completed_scoped_review",
       "work_area": "research-plan/reviews",
-      "started_at": "2026-09-19T01:12:32+08:00",
-      "scope": "Observed-triplet contract and primary-source mathematical review; independent of AL06 implementation.",
+      "started_at": "2026-09-19T01:33:45+08:00",
+      "scope": "Only two archived Q counterexamples; general binary triangle attribution, no new inputs or full LP batch.",
       "completed_task_ids": [
-        "AL08"
+        "AL10"
       ],
-      "completed_at": "2026-09-19T01:26:51+08:00",
-      "review": "../reviews/AL08_OBSERVED_TRIPLET_REVIEW_20260919.md"
+      "completed_at": "2026-09-19T01:36:55+08:00",
+      "review": "../reviews/AL10_OMISSION_REVIEW_20260919.md"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4107,14 +4168,14 @@
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T00:50:13+08:00",
     "prepared_independent_task_ids": [
-      "AL10"
+      "AL11"
     ],
     "active_and_prepared_work": {
       "running": [
         "AL09"
       ],
       "prepared_independent": [
-        "AL10"
+        "AL11"
       ],
       "downstream_decision": [
         "new candidate admission required"
@@ -4123,11 +4184,13 @@
     "material_decision_notices": [
       {
         "id": "v15-candidate-no-go-and-mechanism-pivot",
-        "status": "pending_final_output",
+        "status": "confirmed_final_output",
         "prepared_at": "2026-09-19T01:28:40+08:00",
         "message": "当前H-J/H-T版本均未通过新算法准入。已保留有效结论和负结果，并启动生成器解码机制的新设计研究；尚未达到预定突破标准。",
         "evidence": "../reviews/AL05_SELECTION_20260918.md",
-        "not_a_milestone_receipt": true
+        "not_a_milestone_receipt": true,
+        "confirmed_at": "2026-09-19T01:33:45+08:00",
+        "confirmation_evidence": "Actual prior completed NOTIFY XML under cvpr-2027 heartbeat trigger2026-09-18T17:10:57.763Z; does not assert OS push delivery."
       }
     ]
   },

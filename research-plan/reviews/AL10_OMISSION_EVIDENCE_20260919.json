@@ -1,0 +1,133 @@
+{
+  "task_id": "AL10",
+  "observed_at_utc": "2026-09-18T17:33:46.725141+00:00",
+  "work_order_sha256": "79f7772b8f4650b34b4c71b9f49b73c697f1d189de3d81bd188804561ab52cc8",
+  "input_sha256": "9cce6ead901e6fdbf30d53cb5e3566dc20edbc1cafadf1865899d0feaa1a4236",
+  "rows": [
+    {
+      "id": "development_m4_08",
+      "m": 4,
+      "partitions_per_variable": 7,
+      "partition_triples": 343,
+      "min_facet_float": -0.02916666666666662,
+      "selected_h": [
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1
+        ]
+      ],
+      "positive_group_sizes": [
+        2,
+        3,
+        3
+      ],
+      "facet_signs": [
+        1,
+        -1,
+        -1
+      ],
+      "exact_correlations": [
+        "-1770833333333333/12500000000000000",
+        "46249999999999997/100000000000000000",
+        "21249999999999999/50000000000000000"
+      ],
+      "exact_facet": "-2916666666666659/100000000000000000",
+      "certified_general_triangle_lower_bound": "2916666666666659/300000000000000000",
+      "lower_bound_float": 0.009722222222222196,
+      "archived_balanced_bound": 0.0,
+      "archived_DJ": 0.009722222222222257,
+      "conclusion": "captured_after_removing_balance_restriction",
+      "captured_above_tolerance": true
+    },
+    {
+      "id": "independent_check_m8_08",
+      "m": 8,
+      "partitions_per_variable": 127,
+      "partition_triples": 2048383,
+      "min_facet_float": -0.057291666666666574,
+      "selected_h": [
+        [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "positive_group_sizes": [
+        7,
+        6,
+        5
+      ],
+      "facet_signs": [
+        -1,
+        1,
+        -1
+      ],
+      "exact_correlations": [
+        "51302083333333329/125000000000000000",
+        "-9687499999999999/50000000000000000",
+        "28320312499999997/62500000000000000"
+      ],
+      "exact_facet": "-14322916666666641/250000000000000000",
+      "certified_general_triangle_lower_bound": "4774305555555547/250000000000000000",
+      "lower_bound_float": 0.01909722222222219,
+      "archived_balanced_bound": 0.0,
+      "archived_DJ": 0.021527777777777878,
+      "conclusion": "captured_after_removing_balance_restriction",
+      "captured_above_tolerance": true
+    }
+  ],
+  "resource": {
+    "elapsed_seconds": 0.05063259999951697,
+    "requested_threads": 2,
+    "largest_single_facet_array_bytes": 16387064,
+    "peak_RSS": "not_measured",
+    "LP_calls": 0,
+    "new_random_inputs": 0,
+    "server_access": false,
+    "gpu_used": false
+  },
+  "scope": "General binary triangles only; no claim of exact nonuniform binary distance or complete classic projection method",
+  "scientific_breakthrough": false,
+  "independent_scientific_review": "pending; planagent derived and checked the attribution",
+  "comparison_tolerance": 1e-08,
+  "metadata_note": "Tolerance field spelling clarified before archive; all inputs and numerical results unchanged."
+}
