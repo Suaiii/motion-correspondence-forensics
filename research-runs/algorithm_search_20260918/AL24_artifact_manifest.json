@@ -1,0 +1,63 @@
+{
+  "task_id": "AL24",
+  "dispatch_id": "cc-al20-al24-baseline-matching-20260919",
+  "freeze_commit": "bef69a4",
+  "created_at": "2026-09-19T04:19:23.5765084+08:00",
+  "files": [
+    {
+      "path": "research-runtime/algorithm_candidates/or1_matching_reference/config.json",
+      "sha256": "119b6293434ef3cbba0a4f2b154f49967434778aef0de0b46d9b346d0e8d7f30",
+      "bytes": 667
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_matching_reference/freeze.py",
+      "sha256": "0c5c161256b82323e963b13b52abeee648d9488c5c4dfa7ee8af0f75e7420f0e",
+      "bytes": 4675
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_matching_reference/matching.py",
+      "sha256": "46da2dc7c5c55bfe54a9b715686766d6e4ade4c0af0edc99fd486e9c03997acc",
+      "bytes": 3608
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_matching_reference/objective.py",
+      "sha256": "fe996ce1417b09b870b1998e02f041e8b8a6bf5844a2329919f218ccf0f55ecc",
+      "bytes": 4592
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_matching_reference/run.py",
+      "sha256": "9caeaaf2fbac571cba7fae5accc6c727de8b2584d37fc5ccf14eb1da477c6b72",
+      "bytes": 9406
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL24_evidence.json",
+      "sha256": "f5268ff4ff5be16d7e1e1dab064c157a62f64f73e68232361b008ca842578b57",
+      "bytes": 44746
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL24_freeze.json",
+      "sha256": "4ff3f325f37b0a7b9cb96915f2176b85f5a23e090bf428fa6448d335c281acab",
+      "bytes": 11833
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL24_handoff.md",
+      "sha256": "d92b055d2afab0e6f14fcb83754177adf25190ab501a947b388a90ede051917a",
+      "bytes": 2879
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL24_inputs.json",
+      "sha256": "ad83c543ac4b0a40004ca533dc90e1b0d036aea0026eff9abd9a8a2d325a16a0",
+      "bytes": 11408
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL24_protocol.md",
+      "sha256": "10321236614e1c78b93bdc2acc8f28dfba3e7e77f7ba7994302d2ad927ff754f",
+      "bytes": 4681
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL24_report.md",
+      "sha256": "6605ac9351cb04ca3a2f7a2a75a76283f799b1bed3c56e9200be6f34e0143441",
+      "bytes": 5460
+    }
+  ]
+}

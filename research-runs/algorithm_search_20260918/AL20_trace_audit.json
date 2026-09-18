@@ -1,0 +1,289 @@
+{
+  "task_id": "AL20",
+  "dispatch_id": "cc-al20-al24-baseline-matching-20260919",
+  "observed_at": "2026-09-18T20:14:21.623282+00:00",
+  "git_revision": "bef69a44a2ba181541773d71f7771c25ea5aba7f",
+  "status": "pass_finite_response_baseline_contract",
+  "failures": [],
+  "freeze_sha256": "ab3a00da3e6b606901c2770e78c9de6c76f0ca0107ff311cba342b084c2d3f36",
+  "files": {
+    "research-runtime/algorithm_candidates/or1_baseline_audit/audit.py": "02bbba71236b5d86002a212ad4c40bbb8f39653afabfe4530fbc68cc3d19a83a",
+    "research-runtime/algorithm_candidates/or1_baseline_audit/config.json": "c9d0acf31eba7c54da3c5630e150a013b417189837de31928de5ccf395cd6720",
+    "research-runs/algorithm_search_20260918/AL20_protocol.md": "c60fc8696a02f90874d4e98f6c979130b99994dc2e68bfaff540007585b15bf0",
+    "research-runs/algorithm_search_20260918/AL15_evidence.json": "076ae934e740d72943ca2e9f1b9c5cda27ffd8ecc2611a7ca8b386e88646c3ec"
+  },
+  "traces": [
+    {
+      "trace_id": "linear_exact__development_base__sample_0__h0.125",
+      "h": "1/8",
+      "dimension": 2,
+      "x": [
+        "1/2",
+        "1/4"
+      ],
+      "d_a": [
+        "1/2",
+        "0"
+      ],
+      "d_b": [
+        "0",
+        "1/4"
+      ],
+      "K": [
+        "1/2",
+        "-1/4"
+      ],
+      "mean_cross_energy": [
+        "1/8",
+        "1/32",
+        "0"
+      ],
+      "common_denominator": "773712524558314431969094161/4951760157141521099596496896",
+      "eta_as_archived_binary_rational": "4951760157141521/4951760157141521099596496896",
+      "normalized_compact_triplet": [
+        "618970019642690137449562112/773712524558314431969094161",
+        "154742504910672534362390528/773712524558314431969094161",
+        "0"
+      ],
+      "q_exact": "773712524553362671811952640/773712524558314431969094161",
+      "archived_q_float": 0.9999999999936,
+      "archive_float_minus_exact": "29103186325820347770961913/3484491437292710611063486602794299457273856",
+      "float_difference_display": 8.352204862478348e-18,
+      "checks": {
+        "primary_h": true,
+        "K_reconstructed_exactly": true,
+        "endpoint_relation_exact": true,
+        "energy_expansion_exact": true,
+        "ratio_reconstruction_exact": true,
+        "archived_scalar_rounding_replayed": true
+      },
+      "passed": true
+    },
+    {
+      "trace_id": "nonlinear_remainder__development_base__sample_0__h0.125",
+      "h": "1/8",
+      "dimension": 2,
+      "x": [
+        "1/2",
+        "1/4"
+      ],
+      "d_a": [
+        "0",
+        "33/128"
+      ],
+      "d_b": [
+        "1/4",
+        "0"
+      ],
+      "K": [
+        "-1/4",
+        "33/128"
+      ],
+      "mean_cross_energy": [
+        "1089/32768",
+        "1/32",
+        "0"
+      ],
+      "common_denominator": "309485009826296828881922577/4951760157141521099596496896",
+      "eta_as_archived_binary_rational": "4951760157141521/4951760157141521099596496896",
+      "normalized_compact_triplet": [
+        "54855009065013798802292736/103161669942098942960640859",
+        "154742504910672534362390528/309485009826296828881922577",
+        "0"
+      ],
+      "q_exact": "319307532105713930769268736/309485009826296828881922577",
+      "archived_q_float": 1.031738281233492,
+      "archive_float_minus_exact": "-130533809863060465718674169/1393796574930464691544513014733515566088192",
+      "float_difference_display": -9.365341557793158e-17,
+      "checks": {
+        "primary_h": true,
+        "K_reconstructed_exactly": true,
+        "endpoint_relation_exact": true,
+        "energy_expansion_exact": true,
+        "ratio_reconstruction_exact": true,
+        "archived_scalar_rounding_replayed": true
+      },
+      "passed": true
+    },
+    {
+      "trace_id": "noncommuting_but_redundant__development_base__sample_0__h0.125",
+      "h": "1/8",
+      "dimension": 2,
+      "x": [
+        "1/2",
+        "1/4"
+      ],
+      "d_a": [
+        "1/2",
+        "0"
+      ],
+      "d_b": [
+        "0",
+        "1/4"
+      ],
+      "K": [
+        "1/2",
+        "-1/4"
+      ],
+      "mean_cross_energy": [
+        "1/8",
+        "1/32",
+        "0"
+      ],
+      "common_denominator": "773712524558314431969094161/4951760157141521099596496896",
+      "eta_as_archived_binary_rational": "4951760157141521/4951760157141521099596496896",
+      "normalized_compact_triplet": [
+        "618970019642690137449562112/773712524558314431969094161",
+        "154742504910672534362390528/773712524558314431969094161",
+        "0"
+      ],
+      "q_exact": "773712524553362671811952640/773712524558314431969094161",
+      "archived_q_float": 0.9999999999936,
+      "archive_float_minus_exact": "29103186325820347770961913/3484491437292710611063486602794299457273856",
+      "float_difference_display": 8.352204862478348e-18,
+      "checks": {
+        "primary_h": true,
+        "K_reconstructed_exactly": true,
+        "endpoint_relation_exact": true,
+        "energy_expansion_exact": true,
+        "ratio_reconstruction_exact": true,
+        "archived_scalar_rounding_replayed": true
+      },
+      "passed": true
+    }
+  ],
+  "T": [
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "1",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "-2",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "1",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "-2",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "-2",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "-2"
+    ]
+  ],
+  "T_transpose_T": [
+    [
+      "6",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "6",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "6",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "6"
+    ]
+  ],
+  "regularization": {
+    "candidate_lambda": "1/1000",
+    "canonical_embedding_penalty_factor": "6",
+    "proposed_free_baseline_lambda": "1/6000",
+    "old_candidate_lambda_changed": false,
+    "training_objective_inclusion_requires": "Same features, pairs, weights, support, denominator and the lambda/6 baseline penalty",
+    "test_generalization_order": "not_proven"
+  },
+  "coverage": {
+    "archive_entries_mathematically_checked": 3,
+    "selected_inner_products_all_zero": true,
+    "note": "The first and third prescribed traces share their numeric setup; no additional trace was selected to create novelty"
+  },
+  "calls": {
+    "AL15_core": 0,
+    "probe": 0,
+    "classifier_fitting": 0
+  },
+  "elapsed_seconds": 0.11927709999872604,
+  "resources": {
+    "stdlib_only": true,
+    "worker_count": 1,
+    "worker_cap": 2,
+    "trace_vector_dimension": 2,
+    "coefficient_matrix_shape": [
+      12,
+      4
+    ],
+    "server": false,
+    "GPU": false,
+    "media": false,
+    "models": false
+  },
+  "scientific_breakthrough": false
+}

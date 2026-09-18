@@ -1,0 +1,1708 @@
+{
+  "task_id": "AL24",
+  "dispatch_id": "cc-al20-al24-baseline-matching-20260919",
+  "observed_at": "2026-09-18T20:14:22.620238+00:00",
+  "git_revision": "bef69a44a2ba181541773d71f7771c25ea5aba7f",
+  "freeze_sha256": "4ff3f325f37b0a7b9cb96915f2176b85f5a23e090bf428fa6448d335c281acab",
+  "files": {
+    "research-runtime/algorithm_candidates/or1_matching_reference/matching.py": "46da2dc7c5c55bfe54a9b715686766d6e4ade4c0af0edc99fd486e9c03997acc",
+    "research-runtime/algorithm_candidates/or1_matching_reference/objective.py": "fe996ce1417b09b870b1998e02f041e8b8a6bf5844a2329919f218ccf0f55ecc",
+    "research-runtime/algorithm_candidates/or1_matching_reference/config.json": "119b6293434ef3cbba0a4f2b154f49967434778aef0de0b46d9b346d0e8d7f30",
+    "research-runtime/algorithm_candidates/or1_matching_reference/freeze.py": "0c5c161256b82323e963b13b52abeee648d9488c5c4dfa7ee8af0f75e7420f0e",
+    "research-runtime/algorithm_candidates/or1_matching_reference/run.py": "9caeaaf2fbac571cba7fae5accc6c727de8b2584d37fc5ccf14eb1da477c6b72",
+    "research-runs/algorithm_search_20260918/AL24_inputs.json": "ad83c543ac4b0a40004ca533dc90e1b0d036aea0026eff9abd9a8a2d325a16a0",
+    "research-runs/algorithm_search_20260918/AL24_protocol.md": "10321236614e1c78b93bdc2acc8f28dfba3e7e77f7ba7994302d2ad927ff754f"
+  },
+  "dependencies": {
+    "E:\\AAGenvid\\.conda_envs\\d3_cuda\\python.exe": "418228fb1417da15512fc44aba6f2e1d948786878ffd06fd661881c6d104c0f6",
+    "E:\\AAGenvid\\.conda_envs\\d3_cuda\\Lib\\fractions.py": "d52a647a86a32e1905d38fe7a19cf200291f598dc4ed51273ac27f38723fb559"
+  },
+  "prior_artifacts_unchanged": true,
+  "status": "pass_matching_and_scalar_objective_reference",
+  "failures": [],
+  "graphs": [
+    {
+      "id": "G1",
+      "worker": "AL24match_0",
+      "checks": {
+        "status": true,
+        "selected_pairs": true,
+        "cardinality": true,
+        "exact_cost": true,
+        "complete_tie_set": true,
+        "q_not_used": true
+      },
+      "result": {
+        "status": "supported_matching",
+        "selected_pairs": [
+          [
+            "p1",
+            "n2"
+          ],
+          [
+            "p2",
+            "n1"
+          ]
+        ],
+        "cardinality": 2,
+        "total_squared_RMS_cost": "5/16",
+        "all_max_cardinality_min_cost_ties": [
+          [
+            [
+              "p1",
+              "n2"
+            ],
+            [
+              "p2",
+              "n1"
+            ]
+          ]
+        ],
+        "admissible_edges": [
+          [
+            "p1",
+            "n1"
+          ],
+          [
+            "p1",
+            "n2"
+          ],
+          [
+            "p2",
+            "n1"
+          ]
+        ],
+        "all_pair_costs": [
+          {
+            "pair": [
+              "p1",
+              "n1"
+            ],
+            "squared_RMS_cost": "0",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p1",
+              "n2"
+            ],
+            "squared_RMS_cost": "1/4",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p2",
+              "n1"
+            ],
+            "squared_RMS_cost": "1/16",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p2",
+              "n2"
+            ],
+            "squared_RMS_cost": "9/16",
+            "admissible": false
+          }
+        ],
+        "feasible_matchings_enumerated": [
+          {
+            "pairs": [],
+            "cardinality": 0,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p2",
+                "n1"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "1/16"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n1"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n2"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "1/4"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n2"
+              ],
+              [
+                "p2",
+                "n1"
+              ]
+            ],
+            "cardinality": 2,
+            "cost": "5/16"
+          }
+        ],
+        "unmatched_left": [],
+        "unmatched_right": [],
+        "selection_rule": "maximum cardinality, minimum exact squared-RMS cost, then sorted pair-ID list lexical order",
+        "standardization_performed": false,
+        "q_accessed": false,
+        "max_descriptor_container_bytes": 1384,
+        "scalability": "exhaustive small reference only; maximum 4 per side"
+      },
+      "passed": true
+    },
+    {
+      "id": "G2",
+      "worker": "AL24match_0",
+      "checks": {
+        "status": true,
+        "selected_pairs": true,
+        "cardinality": true,
+        "exact_cost": true,
+        "complete_tie_set": true,
+        "q_not_used": true
+      },
+      "result": {
+        "status": "supported_matching",
+        "selected_pairs": [
+          [
+            "p1",
+            "n1"
+          ],
+          [
+            "p2",
+            "n2"
+          ]
+        ],
+        "cardinality": 2,
+        "total_squared_RMS_cost": "0",
+        "all_max_cardinality_min_cost_ties": [
+          [
+            [
+              "p1",
+              "n1"
+            ],
+            [
+              "p2",
+              "n2"
+            ]
+          ]
+        ],
+        "admissible_edges": [
+          [
+            "p1",
+            "n1"
+          ],
+          [
+            "p1",
+            "n2"
+          ],
+          [
+            "p2",
+            "n1"
+          ],
+          [
+            "p2",
+            "n2"
+          ]
+        ],
+        "all_pair_costs": [
+          {
+            "pair": [
+              "p1",
+              "n1"
+            ],
+            "squared_RMS_cost": "0",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p1",
+              "n2"
+            ],
+            "squared_RMS_cost": "1/16",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p2",
+              "n1"
+            ],
+            "squared_RMS_cost": "1/16",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p2",
+              "n2"
+            ],
+            "squared_RMS_cost": "0",
+            "admissible": true
+          }
+        ],
+        "feasible_matchings_enumerated": [
+          {
+            "pairs": [],
+            "cardinality": 0,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p2",
+                "n1"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "1/16"
+          },
+          {
+            "pairs": [
+              [
+                "p2",
+                "n2"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n1"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n1"
+              ],
+              [
+                "p2",
+                "n2"
+              ]
+            ],
+            "cardinality": 2,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n2"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "1/16"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n2"
+              ],
+              [
+                "p2",
+                "n1"
+              ]
+            ],
+            "cardinality": 2,
+            "cost": "1/8"
+          }
+        ],
+        "unmatched_left": [],
+        "unmatched_right": [],
+        "selection_rule": "maximum cardinality, minimum exact squared-RMS cost, then sorted pair-ID list lexical order",
+        "standardization_performed": false,
+        "q_accessed": false,
+        "max_descriptor_container_bytes": 1384,
+        "scalability": "exhaustive small reference only; maximum 4 per side"
+      },
+      "passed": true
+    },
+    {
+      "id": "G3",
+      "worker": "AL24match_0",
+      "checks": {
+        "status": true,
+        "selected_pairs": true,
+        "cardinality": true,
+        "exact_cost": true,
+        "complete_tie_set": true,
+        "q_not_used": true
+      },
+      "result": {
+        "status": "supported_matching",
+        "selected_pairs": [
+          [
+            "p1",
+            "n1"
+          ],
+          [
+            "p2",
+            "n2"
+          ]
+        ],
+        "cardinality": 2,
+        "total_squared_RMS_cost": "0",
+        "all_max_cardinality_min_cost_ties": [
+          [
+            [
+              "p1",
+              "n1"
+            ],
+            [
+              "p2",
+              "n2"
+            ]
+          ],
+          [
+            [
+              "p1",
+              "n2"
+            ],
+            [
+              "p2",
+              "n1"
+            ]
+          ]
+        ],
+        "admissible_edges": [
+          [
+            "p1",
+            "n1"
+          ],
+          [
+            "p1",
+            "n2"
+          ],
+          [
+            "p2",
+            "n1"
+          ],
+          [
+            "p2",
+            "n2"
+          ]
+        ],
+        "all_pair_costs": [
+          {
+            "pair": [
+              "p1",
+              "n1"
+            ],
+            "squared_RMS_cost": "0",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p1",
+              "n2"
+            ],
+            "squared_RMS_cost": "0",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p2",
+              "n1"
+            ],
+            "squared_RMS_cost": "0",
+            "admissible": true
+          },
+          {
+            "pair": [
+              "p2",
+              "n2"
+            ],
+            "squared_RMS_cost": "0",
+            "admissible": true
+          }
+        ],
+        "feasible_matchings_enumerated": [
+          {
+            "pairs": [],
+            "cardinality": 0,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p2",
+                "n1"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p2",
+                "n2"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n1"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n1"
+              ],
+              [
+                "p2",
+                "n2"
+              ]
+            ],
+            "cardinality": 2,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n2"
+              ]
+            ],
+            "cardinality": 1,
+            "cost": "0"
+          },
+          {
+            "pairs": [
+              [
+                "p1",
+                "n2"
+              ],
+              [
+                "p2",
+                "n1"
+              ]
+            ],
+            "cardinality": 2,
+            "cost": "0"
+          }
+        ],
+        "unmatched_left": [],
+        "unmatched_right": [],
+        "selection_rule": "maximum cardinality, minimum exact squared-RMS cost, then sorted pair-ID list lexical order",
+        "standardization_performed": false,
+        "q_accessed": false,
+        "max_descriptor_container_bytes": 1384,
+        "scalability": "exhaustive small reference only; maximum 4 per side"
+      },
+      "passed": true
+    },
+    {
+      "id": "G4",
+      "worker": "AL24match_0",
+      "checks": {
+        "status": true,
+        "selected_pairs": true,
+        "cardinality": true,
+        "exact_cost": true,
+        "complete_tie_set": true,
+        "q_not_used": true
+      },
+      "result": {
+        "status": "no_training_support",
+        "selected_pairs": [],
+        "cardinality": 0,
+        "total_squared_RMS_cost": "0",
+        "all_max_cardinality_min_cost_ties": [
+          []
+        ],
+        "admissible_edges": [],
+        "all_pair_costs": [
+          {
+            "pair": [
+              "p1",
+              "n1"
+            ],
+            "squared_RMS_cost": "1",
+            "admissible": false
+          },
+          {
+            "pair": [
+              "p1",
+              "n2"
+            ],
+            "squared_RMS_cost": "1",
+            "admissible": false
+          },
+          {
+            "pair": [
+              "p2",
+              "n1"
+            ],
+            "squared_RMS_cost": "1",
+            "admissible": false
+          },
+          {
+            "pair": [
+              "p2",
+              "n2"
+            ],
+            "squared_RMS_cost": "1",
+            "admissible": false
+          }
+        ],
+        "feasible_matchings_enumerated": [
+          {
+            "pairs": [],
+            "cardinality": 0,
+            "cost": "0"
+          }
+        ],
+        "unmatched_left": [
+          "p1",
+          "p2"
+        ],
+        "unmatched_right": [
+          "n1",
+          "n2"
+        ],
+        "selection_rule": "maximum cardinality, minimum exact squared-RMS cost, then sorted pair-ID list lexical order",
+        "standardization_performed": false,
+        "q_accessed": false,
+        "max_descriptor_container_bytes": 1384,
+        "scalability": "exhaustive small reference only; maximum 4 per side"
+      },
+      "passed": true
+    },
+    {
+      "id": "duplicate_ID",
+      "worker": "AL24match_0",
+      "checks": {
+        "expected_input_rejection": true
+      },
+      "error": "MatchingInputError: Duplicate IDs",
+      "passed": true
+    },
+    {
+      "id": "nonfinite_b",
+      "worker": "AL24match_0",
+      "checks": {
+        "expected_input_rejection": true
+      },
+      "error": "MatchingInputError: Nonfinite standardized b",
+      "passed": true
+    }
+  ],
+  "objectives": [
+    {
+      "id": "M1",
+      "worker": "AL24objective_0",
+      "checks": {
+        "prespecified_pair_differences": true,
+        "gradient_at_one_sign": true,
+        "analytic_coarse_solution_range": true,
+        "other_three_weights_fixed": true,
+        "observed_positive_hessian": true,
+        "numeric_gradient_residual": true,
+        "no_strict_numeric_certificate": true
+      },
+      "pairs": [
+        [
+          "p1",
+          "n1"
+        ],
+        [
+          "p2",
+          "n2"
+        ]
+      ],
+      "differences": [
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "1",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "at_w1": {
+        "w": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "value": 0.31426168751822287,
+        "gradient": [
+          -0.2669414213699951,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "hessian": [
+          [
+            0.19861193324148188,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.002,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.002,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.002
+          ]
+        ],
+        "arithmetic": "ordinary binary64 numeric check, not a rigorous error-certified value"
+      },
+      "solver": {
+        "status": "numerical_scalar_solution",
+        "solution": {
+          "w": [
+            4.66512041240594,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "value": 0.031137388635847155,
+          "gradient": [
+            4.468647674116255e-15,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "hessian": [
+            [
+              0.01124318743095851,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.002,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.002,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.002
+            ]
+          ],
+          "arithmetic": "ordinary binary64 numeric check, not a rigorous error-certified value"
+        },
+        "iterations": 45,
+        "stop_reason": "floating_bracket_width",
+        "floating_bracket": [
+          4.665120412405486,
+          4.665120412406395
+        ],
+        "bracket_width": 9.094947017729282e-13,
+        "absolute_computed_gradient": 4.468647674116255e-15,
+        "objective_evaluations": 48,
+        "history": [
+          {
+            "iteration": 1,
+            "t": 0.0,
+            "value": 0.6931471805599453,
+            "gradient": -0.5,
+            "hessian_00": 0.252
+          },
+          {
+            "iteration": 2,
+            "t": 8.0,
+            "value": 0.06433540637289577,
+            "gradient": 0.01566464986953352,
+            "hessian_00": 0.0023352376707564742
+          },
+          {
+            "iteration": 3,
+            "t": 4.0,
+            "value": 0.03414992791780974,
+            "gradient": -0.009986209962091555,
+            "hessian_00": 0.019662706213291116
+          },
+          {
+            "iteration": 4,
+            "t": 6.0,
+            "value": 0.038475685137730455,
+            "gradient": 0.009527376843365225,
+            "hessian_00": 0.0044665092913600485
+          },
+          {
+            "iteration": 5,
+            "t": 5.0,
+            "value": 0.03171534848911807,
+            "gradient": 0.003307149075715144,
+            "hessian_00": 0.008648056670790157
+          },
+          {
+            "iteration": 6,
+            "t": 4.5,
+            "value": 0.03129774484859382,
+            "gradient": -0.0019869426305931786,
+            "hessian_00": 0.012866229722225234
+          },
+          {
+            "iteration": 7,
+            "t": 4.75,
+            "value": 0.031176983762175557,
+            "gradient": 0.0009225145862880139,
+            "hessian_00": 0.010503912157689544
+          },
+          {
+            "iteration": 8,
+            "t": 4.625,
+            "value": 0.031146536000221374,
+            "gradient": -0.00045847648147406654,
+            "hessian_00": 0.01161422196588273
+          },
+          {
+            "iteration": 9,
+            "t": 4.6875,
+            "value": 0.03114018733394216,
+            "gradient": 0.00024936261081947957,
+            "hessian_00": 0.011042360131421711
+          },
+          {
+            "iteration": 10,
+            "t": 4.65625,
+            "value": 0.031137832023965674,
+            "gradient": -0.00010008958760982303,
+            "hessian_00": 0.011323992744865041
+          },
+          {
+            "iteration": 11,
+            "t": 4.671875,
+            "value": 0.03113764465285177,
+            "gradient": 7.573661908567494e-05,
+            "hessian_00": 0.011182117308885516
+          },
+          {
+            "iteration": 12,
+            "t": 4.6640625,
+            "value": 0.03113739492920526,
+            "gradient": -1.1899385054083347e-05,
+            "hessian_00": 0.01125278832954068
+          },
+          {
+            "iteration": 13,
+            "t": 4.66796875,
+            "value": 0.0311374342090777,
+            "gradient": 3.1987631606354705e-05,
+            "hessian_00": 0.011217386385240063
+          },
+          {
+            "iteration": 14,
+            "t": 4.666015625,
+            "value": 0.03113739313993942,
+            "gradient": 1.0061409376866184e-05,
+            "hessian_00": 0.011235070718913647
+          },
+          {
+            "iteration": 15,
+            "t": 4.6650390625,
+            "value": 0.03113738867305059,
+            "gradient": -9.146622503806989e-07,
+            "hessian_00": 0.011243925360854662
+          },
+          {
+            "iteration": 16,
+            "t": 4.66552734375,
+            "value": 0.03113738956664253,
+            "gradient": 4.574454452130686e-06,
+            "hessian_00": 0.011239496999510434
+          },
+          {
+            "iteration": 17,
+            "t": 4.665283203125,
+            "value": 0.03113738878481747,
+            "gradient": 1.8301663866002182e-06,
+            "hessian_00": 0.011241710920030458
+          },
+          {
+            "iteration": 18,
+            "t": 4.6651611328125,
+            "value": 0.03113738864516851,
+            "gradient": 4.5781964747894366e-07,
+            "hessian_00": 0.011242818075397204
+          },
+          {
+            "iteration": 19,
+            "t": 4.66510009765625,
+            "value": 0.031137388638167143,
+            "gradient": -2.2840440561458508e-07,
+            "hessian_00": 0.011243371701863679
+          },
+          {
+            "iteration": 20,
+            "t": 4.665130615234375,
+            "value": 0.03113738863643235,
+            "gradient": 1.1471184476440077e-07,
+            "hessian_00": 0.011243094884564995
+          },
+          {
+            "iteration": 21,
+            "t": 4.6651153564453125,
+            "value": 0.03113738863599086,
+            "gradient": -5.684522445120743e-08,
+            "hessian_00": 0.01124323329219796
+          },
+          {
+            "iteration": 22,
+            "t": 4.665122985839844,
+            "value": 0.031137388635884382,
+            "gradient": 2.8933574147682606e-08,
+            "hessian_00": 0.011243164088127386
+          },
+          {
+            "iteration": 23,
+            "t": 4.665119171142578,
+            "value": 0.031137388635855818,
+            "gradient": -1.3955759152473046e-08,
+            "hessian_00": 0.011243198690099146
+          },
+          {
+            "iteration": 24,
+            "t": 4.665121078491211,
+            "value": 0.031137388635849653,
+            "gradient": 7.48892399655976e-09,
+            "hessian_00": 0.01124318138909739
+          },
+          {
+            "iteration": 25,
+            "t": 4.6651201248168945,
+            "value": 0.031137388635847623,
+            "gradient": -3.2334134519168556e-09,
+            "hessian_00": 0.011243190039594297
+          },
+          {
+            "iteration": 26,
+            "t": 4.665120601654053,
+            "value": 0.031137388635847356,
+            "gradient": 2.1277563044819203e-09,
+            "hessian_00": 0.011243185714344846
+          },
+          {
+            "iteration": 27,
+            "t": 4.665120363235474,
+            "value": 0.03113738863584717,
+            "gradient": -5.528283161110314e-10,
+            "hessian_00": 0.011243187876969324
+          },
+          {
+            "iteration": 28,
+            "t": 4.665120482444763,
+            "value": 0.031137388635847182,
+            "gradient": 7.874640575028513e-10,
+            "hessian_00": 0.011243186795657023
+          },
+          {
+            "iteration": 29,
+            "t": 4.665120422840118,
+            "value": 0.03113738863584716,
+            "gradient": 1.1731788630842122e-10,
+            "hessian_00": 0.011243187336313161
+          },
+          {
+            "iteration": 30,
+            "t": 4.665120393037796,
+            "value": 0.031137388635847155,
+            "gradient": -2.1775521143185816e-10,
+            "hessian_00": 0.011243187606641239
+          },
+          {
+            "iteration": 31,
+            "t": 4.665120407938957,
+            "value": 0.031137388635847155,
+            "gradient": -5.0218662561718475e-11,
+            "hessian_00": 0.0112431874714772
+          },
+          {
+            "iteration": 32,
+            "t": 4.665120415389538,
+            "value": 0.031137388635847155,
+            "gradient": 3.354961274071311e-11,
+            "hessian_00": 0.011243187403895178
+          },
+          {
+            "iteration": 33,
+            "t": 4.6651204116642475,
+            "value": 0.03113738863584716,
+            "gradient": -8.334522308417469e-12,
+            "hessian_00": 0.011243187437686186
+          },
+          {
+            "iteration": 34,
+            "t": 4.665120413526893,
+            "value": 0.031137388635847155,
+            "gradient": 1.2607543481424344e-11,
+            "hessian_00": 0.011243187420790682
+          },
+          {
+            "iteration": 35,
+            "t": 4.66512041259557,
+            "value": 0.03113738863584716,
+            "gradient": 2.1365114538651753e-12,
+            "hessian_00": 0.011243187429238435
+          },
+          {
+            "iteration": 36,
+            "t": 4.665120412129909,
+            "value": 0.03113738863584716,
+            "gradient": -3.099007161999623e-12,
+            "hessian_00": 0.011243187433462313
+          },
+          {
+            "iteration": 37,
+            "t": 4.665120412362739,
+            "value": 0.031137388635847155,
+            "gradient": -4.812469867054858e-13,
+            "hessian_00": 0.011243187431350372
+          },
+          {
+            "iteration": 38,
+            "t": 4.665120412479155,
+            "value": 0.031137388635847155,
+            "gradient": 8.276313662181067e-13,
+            "hessian_00": 0.011243187430294404
+          },
+          {
+            "iteration": 39,
+            "t": 4.665120412420947,
+            "value": 0.031137388635847155,
+            "gradient": 1.7319305711804844e-13,
+            "hessian_00": 0.011243187430822386
+          },
+          {
+            "iteration": 40,
+            "t": 4.665120412391843,
+            "value": 0.03113738863584716,
+            "gradient": -1.5402783215545668e-13,
+            "hessian_00": 0.011243187431086382
+          },
+          {
+            "iteration": 41,
+            "t": 4.665120412406395,
+            "value": 0.031137388635847155,
+            "gradient": 9.582612481295882e-15,
+            "hessian_00": 0.011243187430954385
+          },
+          {
+            "iteration": 42,
+            "t": 4.665120412399119,
+            "value": 0.031137388635847155,
+            "gradient": -7.222347719881839e-14,
+            "hessian_00": 0.01124318743102038
+          },
+          {
+            "iteration": 43,
+            "t": 4.665120412402757,
+            "value": 0.031137388635847155,
+            "gradient": -3.132216708223723e-14,
+            "hessian_00": 0.011243187430987386
+          },
+          {
+            "iteration": 44,
+            "t": 4.665120412404576,
+            "value": 0.03113738863584716,
+            "gradient": -1.0869777300470673e-14,
+            "hessian_00": 0.011243187430970884
+          },
+          {
+            "iteration": 45,
+            "t": 4.665120412405486,
+            "value": 0.031137388635847155,
+            "gradient": -6.435824095873954e-16,
+            "hessian_00": 0.011243187430962632
+          }
+        ],
+        "rigorous_parameter_error_bound": null,
+        "limitation": "Gradient/exp rounding error has no certified bound; this is not an AL18-style exact certificate"
+      },
+      "objective_evaluations_total": 49,
+      "lambda_used": 0.001,
+      "lambda_binary_hex": "0x1.0624dd2f1a9fcp-10",
+      "passed": true
+    },
+    {
+      "id": "M2",
+      "worker": "AL24objective_0",
+      "checks": {
+        "prespecified_pair_differences": true,
+        "gradient_at_one_sign": true,
+        "analytic_coarse_solution_range": true,
+        "other_three_weights_fixed": true,
+        "observed_positive_hessian": true,
+        "numeric_gradient_residual": true,
+        "no_strict_numeric_certificate": true
+      },
+      "pairs": [
+        [
+          "p1",
+          "n2"
+        ],
+        [
+          "p2",
+          "n1"
+        ]
+      ],
+      "differences": [
+        [
+          "3",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "-1",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "at_w1": {
+        "w": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "value": 0.6819245195459824,
+        "gradient": [
+          0.2963904795486523,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "hessian": [
+          [
+            0.30360093540984556,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.002,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.002,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.002
+          ]
+        ],
+        "arithmetic": "ordinary binary64 numeric check, not a rigorous error-certified value"
+      },
+      "solver": {
+        "status": "numerical_scalar_solution",
+        "solution": {
+          "w": [
+            0.4530260127207839,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "value": 0.5870773491942499,
+          "gradient": [
+            9.513017543844038e-14,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "hessian": [
+            [
+              0.8525664179978379,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.002,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.002,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.002
+            ]
+          ],
+          "arithmetic": "ordinary binary64 numeric check, not a rigorous error-certified value"
+        },
+        "iterations": 45,
+        "stop_reason": "floating_bracket_width",
+        "floating_bracket": [
+          0.45302601272032916,
+          0.45302601272123866
+        ],
+        "bracket_width": 9.094947017729282e-13,
+        "absolute_computed_gradient": 9.513017543844038e-14,
+        "objective_evaluations": 48,
+        "history": [
+          {
+            "iteration": 1,
+            "t": 0.0,
+            "value": 0.6931471805599453,
+            "gradient": -0.5,
+            "hessian_00": 1.252
+          },
+          {
+            "iteration": 2,
+            "t": 8.0,
+            "value": 4.064167703205324,
+            "gradient": 0.5158323248781398,
+            "hessian_00": 0.0021676190052592917
+          },
+          {
+            "iteration": 3,
+            "t": 4.0,
+            "value": 2.0250780360556435,
+            "gradient": 0.4989976787570509,
+            "hessian_00": 0.010859001722476556
+          },
+          {
+            "iteration": 4,
+            "t": 2.0,
+            "value": 1.0687018480903516,
+            "gradient": 0.440689604253989,
+            "hessian_00": 0.06559608451287348
+          },
+          {
+            "iteration": 5,
+            "t": 1.0,
+            "value": 0.6819245195459824,
+            "gradient": 0.2963904795486523,
+            "hessian_00": 0.30360093540984556
+          },
+          {
+            "iteration": 6,
+            "t": 0.5,
+            "value": 0.5879951310814295,
+            "gradient": 0.03859137989139283,
+            "hessian_00": 0.7906608904172949
+          },
+          {
+            "iteration": 7,
+            "t": 0.25,
+            "value": 0.6064677129968717,
+            "gradient": -0.1996437007940114,
+            "hessian_00": 1.105594513296962
+          },
+          {
+            "iteration": 8,
+            "t": 0.375,
+            "value": 0.5897773251940774,
+            "gradient": -0.07054421972152272,
+            "hessian_00": 0.9552890232427224
+          },
+          {
+            "iteration": 9,
+            "t": 0.4375,
+            "value": 0.5871809340624082,
+            "gradient": -0.013396621619212137,
+            "hessian_00": 0.8731346405212059
+          },
+          {
+            "iteration": 10,
+            "t": 0.46875,
+            "value": 0.5871818873200866,
+            "gradient": 0.013242122293385526,
+            "hessian_00": 0.8317628141678046
+          },
+          {
+            "iteration": 11,
+            "t": 0.453125,
+            "value": 0.5870773533709639,
+            "gradient": 8.438674180683275e-05,
+            "hessian_00": 0.8524353234142572
+          },
+          {
+            "iteration": 12,
+            "t": 0.4453125,
+            "value": 0.5871028136256532,
+            "gradient": -0.006615687302878682,
+            "hessian_00": 0.862784310399719
+          },
+          {
+            "iteration": 13,
+            "t": 0.44921875,
+            "value": 0.5870835404578965,
+            "gradient": -0.0032555437381113373,
+            "hessian_00": 0.8576093080457774
+          },
+          {
+            "iteration": 14,
+            "t": 0.451171875,
+            "value": 0.5870788160890544,
+            "gradient": -0.00158305213165414,
+            "hessian_00": 0.8550221464185024
+          },
+          {
+            "iteration": 15,
+            "t": 0.4521484375,
+            "value": 0.5870776776404443,
+            "gradient": -0.0007487011459143424,
+            "hessian_00": 0.8537286873594909
+          },
+          {
+            "iteration": 16,
+            "t": 0.45263671875,
+            "value": 0.5870774138104056,
+            "gradient": -0.00033199932068635847,
+            "hessian_00": 0.8530819928460953
+          },
+          {
+            "iteration": 17,
+            "t": 0.452880859375,
+            "value": 0.5870773581764964,
+            "gradient": -0.0001237668198683739,
+            "hessian_00": 0.8527586549136664
+          },
+          {
+            "iteration": 18,
+            "t": 0.4530029296875,
+            "value": 0.5870773494213876,
+            "gradient": -1.9680171736316792e-05,
+            "hessian_00": 0.8525969883496779
+          },
+          {
+            "iteration": 19,
+            "t": 0.45306396484375,
+            "value": 0.5870773498082407,
+            "gradient": 3.23557518463189e-05,
+            "hessian_00": 0.8525161556771278
+          },
+          {
+            "iteration": 20,
+            "t": 0.453033447265625,
+            "value": 0.5870773492178115,
+            "gradient": 6.3384067593275474e-06,
+            "hessian_00": 0.8525565719623515
+          },
+          {
+            "iteration": 21,
+            "t": 0.4530181884765625,
+            "value": 0.5870773492203466,
+            "gradient": -6.6707283122395804e-06,
+            "hessian_00": 0.8525767801432717
+          },
+          {
+            "iteration": 22,
+            "t": 0.45302581787109375,
+            "value": 0.5870773491942661,
+            "gradient": -1.6612223237148002e-07,
+            "hessian_00": 0.8525666760496233
+          },
+          {
+            "iteration": 23,
+            "t": 0.4530296325683594,
+            "value": 0.5870773491998357,
+            "gradient": 3.0861518994922425e-06,
+            "hessian_00": 0.8525616240051901
+          },
+          {
+            "iteration": 24,
+            "t": 0.45302772521972656,
+            "value": 0.5870773491955001,
+            "gradient": 1.4600172425223e-06,
+            "hessian_00": 0.8525641500272074
+          },
+          {
+            "iteration": 25,
+            "t": 0.45302677154541016,
+            "value": 0.5870773491944954,
+            "gradient": 6.469481073159439e-07,
+            "hessian_00": 0.8525654130383656
+          },
+          {
+            "iteration": 26,
+            "t": 0.45302629470825195,
+            "value": 0.5870773491942839,
+            "gradient": 2.404130880462839e-07,
+            "hessian_00": 0.852566044543982
+          },
+          {
+            "iteration": 27,
+            "t": 0.45302605628967285,
+            "value": 0.5870773491942507,
+            "gradient": 3.714546550177226e-08,
+            "hessian_00": 0.8525663602967997
+          },
+          {
+            "iteration": 28,
+            "t": 0.4530259370803833,
+            "value": 0.5870773491942524,
+            "gradient": -6.448837402571374e-08,
+            "hessian_00": 0.8525665181732107
+          },
+          {
+            "iteration": 29,
+            "t": 0.4530259966850281,
+            "value": 0.58707734919425,
+            "gradient": -1.3671451930502392e-08,
+            "hessian_00": 0.852566439235005
+          },
+          {
+            "iteration": 30,
+            "t": 0.45302602648735046,
+            "value": 0.58707734919425,
+            "gradient": 1.1737007340746446e-08,
+            "hessian_00": 0.8525663997659021
+          },
+          {
+            "iteration": 31,
+            "t": 0.45302601158618927,
+            "value": 0.5870773491942498,
+            "gradient": -9.672221561000949e-10,
+            "hessian_00": 0.8525664195004534
+          },
+          {
+            "iteration": 32,
+            "t": 0.45302601903676987,
+            "value": 0.58707734919425,
+            "gradient": 5.3848926477801165e-09,
+            "hessian_00": 0.8525664096331779
+          },
+          {
+            "iteration": 33,
+            "t": 0.45302601531147957,
+            "value": 0.58707734919425,
+            "gradient": 2.2088352457858007e-09,
+            "hessian_00": 0.8525664145668158
+          },
+          {
+            "iteration": 34,
+            "t": 0.4530260134488344,
+            "value": 0.5870773491942498,
+            "gradient": 6.208065448428529e-10,
+            "hessian_00": 0.8525664170336349
+          },
+          {
+            "iteration": 35,
+            "t": 0.45302601251751184,
+            "value": 0.5870773491942499,
+            "gradient": -1.7320772236189413e-10,
+            "hessian_00": 0.8525664182670439
+          },
+          {
+            "iteration": 36,
+            "t": 0.45302601298317313,
+            "value": 0.5870773491942499,
+            "gradient": 2.2379938353911388e-10,
+            "hessian_00": 0.8525664176503392
+          },
+          {
+            "iteration": 37,
+            "t": 0.4530260127503425,
+            "value": 0.5870773491942499,
+            "gradient": 2.529574726767292e-11,
+            "hessian_00": 0.8525664179586918
+          },
+          {
+            "iteration": 38,
+            "t": 0.45302601263392717,
+            "value": 0.5870773491942499,
+            "gradient": -7.395604300405173e-11,
+            "hessian_00": 0.8525664181128679
+          },
+          {
+            "iteration": 39,
+            "t": 0.4530260126921348,
+            "value": 0.5870773491942499,
+            "gradient": -2.4330064655672667e-11,
+            "hessian_00": 0.8525664180357796
+          },
+          {
+            "iteration": 40,
+            "t": 0.45302601272123866,
+            "value": 0.5870773491942499,
+            "gradient": 4.828413060001258e-13,
+            "hessian_00": 0.8525664179972358
+          },
+          {
+            "iteration": 41,
+            "t": 0.45302601270668674,
+            "value": 0.5870773491942499,
+            "gradient": -1.1923639376201778e-11,
+            "hessian_00": 0.8525664180165077
+          },
+          {
+            "iteration": 42,
+            "t": 0.4530260127139627,
+            "value": 0.5870773491942499,
+            "gradient": -5.720426736466333e-12,
+            "hessian_00": 0.8525664180068717
+          },
+          {
+            "iteration": 43,
+            "t": 0.4530260127176007,
+            "value": 0.5870773491942499,
+            "gradient": -2.6188482805944435e-12,
+            "hessian_00": 0.852566418002054
+          },
+          {
+            "iteration": 44,
+            "t": 0.45302601271941967,
+            "value": 0.58707734919425,
+            "gradient": -1.0680034330870503e-12,
+            "hessian_00": 0.8525664179996449
+          },
+          {
+            "iteration": 45,
+            "t": 0.45302601272032916,
+            "value": 0.5870773491942499,
+            "gradient": -2.9258106354346225e-13,
+            "hessian_00": 0.8525664179984402
+          }
+        ],
+        "rigorous_parameter_error_bound": null,
+        "limitation": "Gradient/exp rounding error has no certified bound; this is not an AL18-style exact certificate"
+      },
+      "objective_evaluations_total": 49,
+      "lambda_used": 0.001,
+      "lambda_binary_hex": "0x1.0624dd2f1a9fcp-10",
+      "passed": true
+    },
+    {
+      "id": "zero_difference",
+      "worker": "AL24objective_0",
+      "checks": {
+        "gradient_at_one_sign": true,
+        "nonempty_zero_difference_solution": true,
+        "other_three_weights_fixed": true,
+        "observed_positive_hessian": true,
+        "numeric_gradient_residual": true,
+        "no_strict_numeric_certificate": true
+      },
+      "pairs": null,
+      "differences": [
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ],
+        [
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      ],
+      "at_w1": {
+        "w": [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "value": 0.6941471805599453,
+        "gradient": [
+          0.002,
+          0.0,
+          0.0,
+          0.0
+        ],
+        "hessian": [
+          [
+            0.002,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.002,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.002,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            0.002
+          ]
+        ],
+        "arithmetic": "ordinary binary64 numeric check, not a rigorous error-certified value"
+      },
+      "solver": {
+        "status": "analytic_zero_difference_control",
+        "solution": {
+          "w": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "value": 0.6931471805599453,
+          "gradient": [
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "hessian": [
+            [
+              0.002,
+              0.0,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.002,
+              0.0,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.002,
+              0.0
+            ],
+            [
+              0.0,
+              0.0,
+              0.0,
+              0.002
+            ]
+          ],
+          "arithmetic": "ordinary binary64 numeric check, not a rigorous error-certified value"
+        },
+        "iterations": 0,
+        "objective_evaluations": 1,
+        "reason": "Nonempty objective is log(2)+lambda*t^2; t=0 analytically, displayed loss is numeric"
+      },
+      "objective_evaluations_total": 2,
+      "lambda_used": 0.001,
+      "lambda_binary_hex": "0x1.0624dd2f1a9fcp-10",
+      "passed": true
+    }
+  ],
+  "G3_pair_binding": {
+    "M1_is_G3_selected": true,
+    "M2_is_predeclared_unchosen_optimal_tie": true
+  },
+  "empty_support_control": {
+    "result": {
+      "status": "no_training_support",
+      "w": null,
+      "value": null,
+      "iterations": 0,
+      "objective_evaluations": 0,
+      "reason": "Empty matching is not a nonempty zero-difference objective"
+    },
+    "passed": true,
+    "objective_evaluations": 0
+  },
+  "calls": {
+    "matching_queries": 6,
+    "scalar_solver_queries": 4,
+    "value_gradient_hessian_evaluations": 100,
+    "probe": 0,
+    "model": 0
+  },
+  "resources": {
+    "wall_seconds": 0.15106200000082026,
+    "process_cpu_seconds": 0.046875,
+    "worker_cap": 2,
+    "worker_pools": "Matching pool completes before objective pool starts; at most two numeric workers concurrently",
+    "workers": [
+      "AL24match_0",
+      "AL24objective_0"
+    ],
+    "stdlib_only": true,
+    "max_actual_items_per_side": 2,
+    "hard_limit_per_side": 4,
+    "b_dimension": 12,
+    "q_dimension": 4,
+    "max_descriptor_container_bytes": 1384,
+    "process_peak_RSS": "not_measured",
+    "server": false,
+    "media": false,
+    "GPU": false,
+    "weights_or_models": false
+  },
+  "scope": "Exact small matching and ordinary-float first-coordinate mathematical objectives only; not a detector or generic four-dimensional optimizer",
+  "real_source_labels_used": false,
+  "classification_probabilities_produced": false,
+  "classification_metrics_computed": false,
+  "scientific_breakthrough": false
+}

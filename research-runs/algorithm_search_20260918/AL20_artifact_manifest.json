@@ -1,0 +1,43 @@
+{
+  "task_id": "AL20",
+  "dispatch_id": "cc-al20-al24-baseline-matching-20260919",
+  "freeze_commit": "bef69a4",
+  "created_at": "2026-09-19T04:19:23.5217665+08:00",
+  "files": [
+    {
+      "path": "research-runtime/algorithm_candidates/or1_baseline_audit/audit.py",
+      "sha256": "02bbba71236b5d86002a212ad4c40bbb8f39653afabfe4530fbc68cc3d19a83a",
+      "bytes": 6666
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_baseline_audit/config.json",
+      "sha256": "c9d0acf31eba7c54da3c5630e150a013b417189837de31928de5ccf395cd6720",
+      "bytes": 763
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL20_freeze.json",
+      "sha256": "ab3a00da3e6b606901c2770e78c9de6c76f0ca0107ff311cba342b084c2d3f36",
+      "bytes": 1062
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL20_handoff.md",
+      "sha256": "fff91d51ce44eb1977ddd85e39b251e0e18e66953724ef8fbf9b280132a60968",
+      "bytes": 3248
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL20_method_baseline.md",
+      "sha256": "13f792220ffffcf976a90815dac3988446314f7e81d3d0215e0b67f01d6d2810",
+      "bytes": 5783
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL20_protocol.md",
+      "sha256": "c60fc8696a02f90874d4e98f6c979130b99994dc2e68bfaff540007585b15bf0",
+      "bytes": 2004
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL20_trace_audit.json",
+      "sha256": "994b7cb164b82a8e7fc6b80d9a498d37aa89bf50345d00b993a37d874a270fe2",
+      "bytes": 7034
+    }
+  ]
+}
