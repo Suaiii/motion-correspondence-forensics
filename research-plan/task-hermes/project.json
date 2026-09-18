@@ -2706,6 +2706,118 @@
       "new_primary_full_text_reviews": 3,
       "artifact_sha256": "c809b56abfc4751057c41912b966ffceaec66edf6077717fdb8d7c979524ca9a",
       "next_action": "Include FIRE/low-level restoration/content-alignment comparisons in later preregistration; do not alter active AL25 or claim first-of-kind"
+    },
+    {
+      "id": "AL27",
+      "milestone": "M2",
+      "title": "约束4维与自由12维凸目标CPU参考",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL20",
+        "AL23",
+        "AL24"
+      ],
+      "requires_pass": [
+        "AL20",
+        "AL23",
+        "AL24"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "multidimensional_objective_reference_software",
+      "hypothesis": "固定子空间/满秩/对称面板能检验完整优化与相容正则，而不提供来源检测证据。",
+      "work": [
+        "新目录实现稳定梯度/Hessian和固定阻尼Newton",
+        "冻结3个抽象Gram面板及2个边界后一次执行",
+        "精确核查秩/零性，独立标量对称参考，保留所有失败"
+      ],
+      "acceptance": [
+        "lambda与lambda/6固定，不调配对或搜索超参",
+        "子空间等价/满秩候选零解/对称零解符合解析条件",
+        "仅合成数值目标，无真实检测器拟合或分类性能"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL27_report.md",
+        "../../research-runs/algorithm_search_20260918/AL27_handoff.md"
+      ],
+      "work_order": "../AL27_FULL_HEAD_REFERENCE_CPU_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T04:46:52+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "hypothesis_result": "not_evaluated",
+      "scientific_innovation_gate_passed": false,
+      "next_action": "Prepared only; do not start while an overlapping package is held. Follow main-DAG dispatch/start record.",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false,
+        "maximum_items_per_bipartition": 4,
+        "max_vector_dimension": 12,
+        "synthetic_objective_optimization": true,
+        "max_pairs": 12
+      },
+      "implementation_authorized": true,
+      "classifier_training_authorized": false
+    },
+    {
+      "id": "AL28",
+      "milestone": "M2",
+      "title": "时间聚合与静态对照的输入成本审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL17",
+        "AL20"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL17",
+        "AL20"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "temporal_and_static_control_contract",
+      "hypothesis": "逐帧探针和mean读出可对时间置换不变；能量ratio聚合与静态对照的权重/成本需明确。",
+      "work": [
+        "证明逐帧前提下时间置换性质",
+        "固定两帧表推导ratio-of-means权重",
+        "静态全部内容对照与四调用弱对照分开，输出/输入shuffle分开"
+      ],
+      "acceptance": [
+        "不宣称实际3D probe已经有时间机制",
+        "不要求静态为零，不隐藏4T调用成本",
+        "仅数学/合同，真实PTS及模型运行未授权"
+      ],
+      "artifacts": [
+        "../reviews/AL28_TEMPORAL_READOUT_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL28_TEMPORAL_READOUT_CONTRACT_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T04:46:52+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "hypothesis_result": "not_evaluated",
+      "scientific_innovation_gate_passed": false,
+      "next_action": "Prepared only; do not start while an overlapping package is held. Follow main-DAG dispatch/start record.",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "implementation_authorized": false
     }
   ],
   "storage_policy": {
@@ -4105,7 +4217,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T04:40:10+08:00",
+  "updated_at": "2026-09-19T04:46:52+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4771,19 +4883,19 @@
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "inProgress",
       "last_observed_thread_turn_id": "01a0b638-2c07-7710-b966-60d952c67c8d",
-      "last_observed_at": "2026-09-19T04:40:10+08:00",
+      "last_observed_at": "2026-09-19T04:46:52+08:00",
       "startup_evidence": "cursor32 active with explicit AL25-specific acknowledgement of kernels, common valid support, seven fixed fields and preserved cancellation differences"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:32",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:33",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T04:40:10+08:00",
+    "last_coordinator_activity_at": "2026-09-19T04:46:52+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
@@ -5353,12 +5465,18 @@
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T04:40:10+08:00",
-    "prepared_independent_task_ids": [],
+    "prepared_independent_task_ids": [
+      "AL27",
+      "AL28"
+    ],
     "active_and_prepared_work": {
       "running": [
         "AL25"
       ],
-      "prepared_independent": []
+      "prepared_independent": [
+        "AL27",
+        "AL28"
+      ]
     },
     "material_decision_notices": [
       {
