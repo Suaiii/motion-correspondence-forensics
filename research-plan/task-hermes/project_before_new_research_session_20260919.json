@@ -1212,7 +1212,7 @@
       "id": "AL04",
       "milestone": "M2",
       "title": "新算法共同压力测试与独立检查协议",
-      "assignee": "researchagent_next",
+      "assignee": "researchagent",
       "parents": [
         "RS05"
       ],
@@ -1253,9 +1253,8 @@
       },
       "hypothesis_result": "not_evaluated",
       "original_assignee": "researchagent",
-      "temporary_assignment_reason": "User explicitly requested a new research conversation; AL04 is independent from ongoing AL03/AL02.",
-      "independent_review_pending": true,
-      "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md"
+      "temporary_assignment_reason": "Research task recovered using supported ordinary model; cross-review and independent H-T work separated from local AL01.",
+      "independent_review_pending": true
     },
     {
       "id": "AL05",
@@ -2701,7 +2700,7 @@
     }
   },
   "plan_version": "cvpr27-20260918-v1.4",
-  "updated_at": "2026-09-19T00:11:01+08:00",
+  "updated_at": "2026-09-19T00:02:27+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -2730,21 +2729,6 @@
     "scientific_review": {
       "responsible": "user_and_advisor",
       "mechanical_replay_is_not_independent_review": true
-    },
-    "researchagent_next": {
-      "thread_id": null,
-      "host_id": "local",
-      "title": "科研冲击新会话",
-      "instructions": "../../agents/researchagent-next/agent.md",
-      "creation_status": "prepared",
-      "initial_task_ids": [
-        "AL04"
-      ],
-      "environment": "worktree",
-      "writes": [
-        "own worktree AL04 code/protocol/evidence only"
-      ],
-      "canonical_state": "E:/aNB/TECH/脉冲神经网络/research-plan/task-hermes/project.json"
     }
   },
   "scientific_gates": {
@@ -3535,25 +3519,6 @@
       "work_area": "research-plan/fallback-runtime",
       "partial_evidence": "../reviews/AL03_joint_math_evidence_20260918.json",
       "requires_cross_review": true
-    },
-    "additional_dispatches": [
-      {
-        "id": "cc-new-session-al04-20260919",
-        "task_ids": [
-          "AL04"
-        ],
-        "executor_role": "researchagent_next",
-        "thread_id": null,
-        "status": "prepared_for_explicitly_requested_new_task",
-        "prepared_at": "2026-09-19T00:11:01+08:00",
-        "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md",
-        "scope": "Independent worktree CPU protocol/falsification harness; old research task continues AL03/AL02."
-      }
-    ],
-    "new_session_authorization": {
-      "at": "2026-09-19T00:11:01+08:00",
-      "basis": "User: 你可以开一个新的研究会话",
-      "do_not_duplicate_active_package": true
     }
   },
   "candidate_protocols": {

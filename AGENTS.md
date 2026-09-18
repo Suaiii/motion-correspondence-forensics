@@ -15,8 +15,9 @@
 
 - planagent：当前任务“Plan9.16”，任务 ID 01a0aea6-38cb-77e1-8f1f-aba2a8dce36b；读取 [规划角色](agents/planagent/agent.md)。
 - researchagent：现有任务“科研冲击”，任务 ID 01a09db1-3c10-7710-b866-130d4cc44d9e；读取 [科研角色](agents/researchagent/agent.md)。
+- researchagent_next：用户于2026-09-19明确授权的新研究会话，实际任务ID见主工作区project.json；读取[接续角色](agents/researchagent-next/agent.md)。首包AL04，与旧任务AL03/AL02不重叠。
 - 用户明确指定角色时，以用户为准。新任务仅处理排期、状态或提醒时使用 planagent；执行研究代码、数据或实验时使用 researchagent。职责不清且会造成冲突时，先读共享记录再澄清。
-- 角色文件不等于新建了软件 agent。本工作区使用上述已有任务，不自动创建新任务或派生 agent。
+- 角色文件不等于新建了软件agent。仅使用用户明确授权的任务；2026-09-19新增会话按NEW_RESEARCH_HANDOFF_20260919.md接续，不自动再创建其他任务或派生agent。
 
 ## 共享事实与写入责任
 
