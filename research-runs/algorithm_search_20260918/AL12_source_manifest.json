@@ -1,0 +1,209 @@
+{
+  "schema_version": 1,
+  "task_id": "AL12",
+  "dispatch_id": "cc-al12-decoder-matched-design-20260919",
+  "context_update_id": "al14-prior-context-20260919",
+  "created_at": "2026-09-19T02:26:46.1685221+08:00",
+  "plan_version": "cvpr27-20260919-v1.5",
+  "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+  "candidate": "AL12-OR1",
+  "execution_status": "completed_literature_and_design_only",
+  "recommendation": "Independent review of remaining construction value before separately authorizing CPU draft",
+  "novelty": "inconclusive_high_direct_overlap_risk",
+  "real_mechanism": "unverified",
+  "candidate_admission": "not_granted",
+  "cpu_preregistration_status": "draft_not_authorized",
+  "cpu_execution_performed": false,
+  "papers": [
+    {
+      "id": "G2VD",
+      "version": "2607.04607v1",
+      "url": "https://arxiv.org/html/2607.04607v1",
+      "read_scope": "III-B equations 4-9; III-C labels and III-D equations 15-16",
+      "status": "method_read"
+    },
+    {
+      "id": "AEROBLADE",
+      "version": "2401.17879v2, with initial v1 reading",
+      "url": "https://arxiv.org/html/2401.17879v2",
+      "read_scope": "Section 4 equations 1-2; Section 5.5 deeper DDIM reconstructions",
+      "status": "method_read_and_corrected_scope",
+      "note": "No claim of repeated same-AE T^k based on deeper-DDIM section"
+    },
+    {
+      "id": "CIU",
+      "version": "2605.23449v1",
+      "url": "https://arxiv.org/html/2605.23449v1",
+      "read_scope": "Sections 3.1-3.2, equation 2 and BCH discussion",
+      "status": "direct_method_overlap_read",
+      "note": "Existing order-swap response; formal template overlap and distinct operator/training constraints documented"
+    },
+    {
+      "id": "Aligned_Datasets",
+      "version": "2410.11835v3 / ICLR2025",
+      "url": "https://arxiv.org/html/2410.11835v3",
+      "read_scope": "Section 4 reconstruction data and fake labels",
+      "status": "method_read"
+    },
+    {
+      "id": "DRCT",
+      "version": "ICML2024 PMLR235:7621-7639 plus fixed author README",
+      "url": "https://proceedings.mlr.press/v235/chen24ay.html",
+      "read_scope": "Publisher abstract and pinned author README framework/labels; AL14 supplied Figure3/3.1 confirmation",
+      "status": "bounded_primary_read",
+      "gap": "Full paper loss derivation not freshly read; PDF content-type and OpenReview challenge failures"
+    },
+    {
+      "id": "FakeInversion",
+      "version": "2406.08603v1",
+      "url": "https://arxiv.org/html/2406.08603v1",
+      "read_scope": "Section 3 equations 5-7 and reconstruction inputs",
+      "status": "method_read"
+    },
+    {
+      "id": "DIRE",
+      "version": "2303.09295 abstract",
+      "url": "https://arxiv.org/abs/2303.09295",
+      "read_scope": "Primary abstract only",
+      "status": "abstract_only"
+    },
+    {
+      "id": "DANN",
+      "version": "JMLR17(59),2016",
+      "url": "https://jmlr.org/papers/v17/15-239.html",
+      "read_scope": "Publisher description and canonical adversarial training setup",
+      "status": "bounded_primary_read"
+    },
+    {
+      "id": "CDAN",
+      "version": "1705.10667v4",
+      "url": "https://arxiv.org/html/1705.10667v4",
+      "read_scope": "Sections 3.1-3.3 equations 2-4,9",
+      "status": "method_read"
+    },
+    {
+      "id": "RIFT",
+      "version": "2609.00742v1",
+      "url": "https://arxiv.org/html/2609.00742v1",
+      "read_scope": "Reuse AL09 sections 2.4-2.5 audit",
+      "status": "prior_bounded_read_reused"
+    },
+    {
+      "id": "WaveRep",
+      "version": "Author project + AL09 inherited fixed review",
+      "url": "https://grip-unina.github.io/WaveRep-SyntheticVideoDetection/",
+      "read_scope": "AL09 bounded project/old code review",
+      "status": "partial_inherited",
+      "gap": "No new full-text or code re-read"
+    },
+    {
+      "id": "Order_forensics",
+      "version": "Bayar-Stamm Electronic Imaging2018 author paper",
+      "url": "https://research.coe.drexel.edu/ece/misl/wp-content/uploads/2018/04/BayarStammEI18.pdf",
+      "read_scope": "Abstract/introduction method scope, not complete theory",
+      "status": "bounded_primary_read"
+    }
+  ],
+  "new_repository_text": {
+    "repo": "beibuwandeluori/DRCT",
+    "commit": "01aa7d0b6de903cf3208801f8f6b469edffbc762",
+    "commit_date": "2025-04-05T17:19:31Z",
+    "path": "README.md",
+    "url": "https://raw.githubusercontent.com/beibuwandeluori/DRCT/01aa7d0b6de903cf3208801f8f6b469edffbc762/README.md",
+    "bytes": 7889,
+    "sha256": "41d6e4dcc1a1a1622339f966ab68a7ee2363d501c0aeb95c8e2e62a752981351",
+    "git_blob_sha1": "db5d6df1e42ab31ee2c6c9dd80f0e9045c6b0b29",
+    "retrieved_at": "2026-09-19T02:09:11.7895266+08:00",
+    "read_scope": "Framework stages and Real/Fake labels; no executable code read or run",
+    "local_path": "research-runs/algorithm_search_20260918/AL12_sources/DRCT_README.md.txt"
+  },
+  "new_executable_code_downloads": 0,
+  "new_readme_bytes": 7889,
+  "reused_AL09_manifest_sha256": "e03b3c75555eb8eaf55879f31f340f458ad20e2825582d0f043a32fdec5a2f13",
+  "canonical_context": [
+    {
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\WORK_PLAN.md",
+      "sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+      "role": "Read-only canonical context captured at closeout"
+    },
+    {
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\task-hermes\\project.json",
+      "sha256": "79277ff4459af4d1fdcf1bd27fcfce135a35a0bdff41c87c61b4b5ca5c618b0e",
+      "role": "Read-only canonical context captured at closeout"
+    },
+    {
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\AL12_DECODER_MATCHED_DESIGN_20260919.md",
+      "sha256": "5d5ffd1bc1925c93732d137d5df3b5ad946492f4af002f1a26ff43a670e48778",
+      "role": "Read-only canonical context captured at closeout"
+    },
+    {
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL09_REVIEW_20260919.md",
+      "sha256": "827a203ed24ebcfc2eea8cfa9e20c4122f2a30489c0b57e857cda44db80c2054",
+      "role": "Read-only canonical context captured at closeout"
+    },
+    {
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL11_PHASE_SAMPLING_REVIEW_20260919.md",
+      "sha256": "d6dedd5a7bdff7881111d92c2020c73eb9758cd47749761a587ba73e402ea00b",
+      "role": "Read-only canonical context captured at closeout"
+    },
+    {
+      "path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL13_COUNTERFACTUAL_PROTOCOL_20260919.md",
+      "sha256": "54c98657404d8093fff9175f6f3e71c23fac34cd509581a481c860a2913e99a3",
+      "role": "Read-only canonical context captured at closeout"
+    }
+  ],
+  "scope": {
+    "main_DAG_modified": false,
+    "AL13_written_or_executed": false,
+    "operator_or_tensor_experiment": false,
+    "classifier_training": false,
+    "media_read": false,
+    "server_access": false,
+    "old_evidence_modified": false,
+    "gpu_used": false,
+    "model_or_weights_execution": false
+  },
+  "discarded_lookup": {
+    "reason": "Actual title is NTIRE2024 quality assessment, not DRCT; not used as evidence",
+    "url": "https://arxiv.org/html/2404.16687v1"
+  },
+  "artifacts": [
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_method_design.md",
+      "sha256": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+      "bytes": 18437
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_prior_comparison.md",
+      "sha256": "f9bd0d4f75f5108135311d7bbddb0d6039fbe0678b4e5331e801856b77270ab1",
+      "bytes": 10017
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_cpu_preregistration.json",
+      "sha256": "91e856957b34beb14c3f098ce7f078594cb0529268367ec120f3eb1da2f78292",
+      "bytes": 4056
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_handoff.md",
+      "sha256": "825ddf2b3e2b5b4f46441359fef4a48b9148bf6fab50c5f71488044c908d6937",
+      "bytes": 6584
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_sources/DRCT_README.md.txt",
+      "sha256": "41d6e4dcc1a1a1622339f966ab68a7ee2363d501c0aeb95c8e2e62a752981351",
+      "bytes": 7889
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_sources/acquisition.json",
+      "sha256": "467abc06e8ea52f85d4e1c097c558b454fe99b1eed39e6a87c573e95a9b812f4",
+      "bytes": 670
+    }
+  ],
+  "verification": {
+    "authored_documents_whitespace": "pass",
+    "raw_README_whitespace": "Original trailing whitespace at lines 2,27,64,86 preserved to retain exact source hash",
+    "json_parse": "pass",
+    "prior_AL01_AL04_AL06_AL09_artifacts": "hashes_unchanged",
+    "scientific_tests_executed": 0
+  }
+}

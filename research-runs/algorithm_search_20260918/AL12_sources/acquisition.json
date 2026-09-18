@@ -1,0 +1,13 @@
+{
+  "repo": "beibuwandeluori/DRCT",
+  "commit": "01aa7d0b6de903cf3208801f8f6b469edffbc762",
+  "commit_date": "2025-04-05T17:19:31Z",
+  "path": "README.md",
+  "url": "https://raw.githubusercontent.com/beibuwandeluori/DRCT/01aa7d0b6de903cf3208801f8f6b469edffbc762/README.md",
+  "bytes": 7889,
+  "sha256": "41d6e4dcc1a1a1622339f966ab68a7ee2363d501c0aeb95c8e2e62a752981351",
+  "git_blob_sha1": "db5d6df1e42ab31ee2c6c9dd80f0e9045c6b0b29",
+  "retrieved_at": "2026-09-19T02:09:11.7895266+08:00",
+  "read_scope": "Framework stages and Real/Fake labels; no executable code read or run",
+  "local_path": "research-runs/algorithm_search_20260918/AL12_sources/DRCT_README.md.txt"
+}

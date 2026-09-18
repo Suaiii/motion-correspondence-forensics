@@ -1,0 +1,40 @@
+{
+  "task_id": "AL12",
+  "candidate_version": "AL12-OR1",
+  "context_update_id": "al14-prior-context-20260919",
+  "prior_review_required": "Order-swap response is already present in 2605.23449v1; review remaining instantiation value before authorizing this mechanical prototype",
+  "status": "draft_not_authorized",
+  "execution_performed": false,
+  "purpose": "Review-only proposal for a subsequent independently dispatched CPU algebra and path-contract package",
+  "resource_limits": {"threads": 2, "max_vector_dimension": 8, "max_array_bytes": 1048576, "torch": false, "models": false, "media": false, "server": false, "gpu": false, "classifier_fitting": false},
+  "soft_steps": [0.25, 0.125, 0.0625],
+  "primary_soft_step": 0.125,
+  "tolerance_float64": 1e-10,
+  "epsilon_ratio_denominator": 1e-12,
+  "random_search": false,
+  "development_dimensions": [2, 3],
+  "independent_check_dimensions": [4, 8],
+  "independent_check_definition": "Fixed zero-padded embeddings and coordinate permutations of declared operators; separated mechanical checks, not statistically independent scientific confirmation",
+  "cases": [
+    {"id": "linear_exact", "A": [[1,1],[0,1]], "B": [[1,0],[1,1]], "x": [0.5,0.25], "expected": "(P_A(P_B(x))-P_B(P_A(x)))/h^2=(AB-BA)x for every h"},
+    {"id": "constant_translation", "v_a": [0.25,0], "v_b": [0,0.125], "x": [0.25,0.25], "expected": "Both routes identical despite nonzero first-step errors"},
+    {"id": "commuting_projection", "A": [[1,0,0],[0,1,0],[0,0,0]], "B": [[1,0,0],[0,0,0],[0,0,0]], "x": [0.25,0.5,0.25], "expected": "K=0; does not mean input is authentic"},
+    {"id": "matched_scalar_errors", "A": [[0.5,0,0],[0,1,0],[0,0,1]], "B": [[0,0.5,0],[0,0,0.5],[0,0,0]], "x_pair": [[0,1,0],[0,0,1]], "expected": "Input norms both 1; A-error^2 both 0; B-error^2 both 5/4; K energy 1/16 versus 0; no semantic labels assigned"},
+    {"id": "probe_order_swap", "reuse": "matched_scalar_errors", "expected": "Swap A/B flips K, leaves energy ratios and source labels unchanged"},
+    {"id": "nonlinear_remainder", "v_a": "(0,x1^2)", "v_b": "(x2,0)", "x": [0.5,0.25], "expected": "K_h=(-x1^2,2*x1*x2+h*x2^2); exact remainder norm h*abs(x2)^2 relative to bracket"},
+    {"id": "noncommuting_but_redundant", "A": [[1,1],[0,1]], "B": [[1,0],[1,1]], "x_pair": [[0.5,0.25],[0.25,0.5]], "expected": "K energy equals input squared norm; summed first-step errors equal same norm; normalized ratio offers no new distinction beyond those scalars"},
+    {"id": "equal_output_distribution", "output_multiset_Y0": [[0,1,0],[0,0,1]], "output_multiset_Y1": [[0,0,1],[0,1,0]], "probe_case": "matched_scalar_errors", "expected": "Every deterministic probe/readout has identical empirical output distribution; no classifier trained"}
+  ],
+  "contract_checks": [
+    "Mock each route logs probe a once and b once with identical step, support, and conditions",
+    "Four total reconstruction calls per input with shared first-level nodes",
+    "Camera-origin C/R/R2 stay label 0; generated G/G2 stay label 1; processing depth is separate",
+    "No production decoder ID, original prompt, or true latent enters inference",
+    "Reject output-slot mismatch, undeclared crop/clock mapping, NaN, or stochastic probes; do not claim pixelwise physical correspondence",
+    "Construct base arms before the common final propagation A_kappa; keep soft-probe intermediates floating point without asymmetric codec writes",
+    "No parameter optimization, AUROC, artificial fake/real training, or adaptive case addition"
+  ],
+  "stop_rule": "Run only these families after separate authorization; preserve failures and all step values; no change of labels or favorable step selection",
+  "pass_scope": "Software/algebra and resource-contract verification only; not novelty, real mechanism, or candidate admission",
+  "real_stage_dependencies": ["AL13 evaluation contract", "probe-wrapper frame alignment", "frozen public probe weights and code", "source/ancestor/native-time acceptance", "matched strong baselines", "budget and resource authorization"]
+}
