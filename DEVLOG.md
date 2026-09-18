@@ -448,3 +448,17 @@ handoff: research-runs/algorithm_search_20260918/AL27_report.md and AL27_evidenc
 Only NumPy/stdlib, 2 native threads, 26 objective evaluations, 16 linear solves,
 two scalar references. No real classifier/model/probe/readout/media/server/GPU.
 All 92 protected historical files unchanged. No scientific or data gate passed.
+
+## 2026-09-19 AL30: accuracy-budgeted stopping software reference
+
+Frozen new batch at 1fa8bb8; only solver threshold changes by the uniform
+mu/parameter-error-budget rule. Original objective module byte-identical;
+three known regressions plus one prespecified delta=1/8 scale control pass
+94 archived software checks. Full-rank regression naturally reaches step5
+with coordinate difference5.3291e-15; original AL27 remains done/fail with
+all source, inputs and failed evidence preserved. Gradient rounding bound
+unknown/null, no rigorous parameter certificate or scientific efficacy claim.
+One batch only:35 objective evaluations,21 solves,159 scalar derivative calls,
+2 native threads, largest array1152B. Protected105 historical files and5
+dependencies unchanged. No probe/readout/model/media/real training/server/GPU.
+Evidence/report/handoff: research-runs/algorithm_search_20260918/AL30_*.

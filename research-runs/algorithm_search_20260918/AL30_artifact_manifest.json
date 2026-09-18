@@ -1,0 +1,60 @@
+{
+  "task": "AL30",
+  "execution_status": "done",
+  "gate_result": "pass",
+  "gate_scope": "accuracy_budgeted_optimizer_reference",
+  "old_AL27_gate_result": "fail",
+  "freeze_commit": "1fa8bb8",
+  "self_excluded": true,
+  "shared_log_note": "DEVLOG.md change is tracked by Git; excluded from raw-byte manifest because of checkout line-ending normalization.",
+  "files": {
+    "research-runs/algorithm_search_20260918/AL30_config.json": {
+      "sha256": "a4672cfbba80b9f513e02c3f1ad714b10a7f1939b604b4c86b2517c5e9dff3e5",
+      "bytes": 3439
+    },
+    "research-runs/algorithm_search_20260918/AL30_evidence.json": {
+      "sha256": "84a23113534364b766b8cda6ea207d8f8ebbba43bc676b88a0a542841be5749e",
+      "bytes": 301560
+    },
+    "research-runs/algorithm_search_20260918/AL30_freeze.json": {
+      "sha256": "4cec792b254b4ffdfab6fd07b9f272e4be351c62e0e04371bde408882d3dcaf4",
+      "bytes": 17671
+    },
+    "research-runs/algorithm_search_20260918/AL30_handoff.md": {
+      "sha256": "7134f434db52d69e642a35cb1fc10fbc8529fe5bc234363dbb2df3a32fadbed3",
+      "bytes": 2424
+    },
+    "research-runs/algorithm_search_20260918/AL30_inputs.json": {
+      "sha256": "203e0d5da71ecce85bea8bfecc66e6e24dedfd079ca54bb976dc7ebeb251e317",
+      "bytes": 16630
+    },
+    "research-runs/algorithm_search_20260918/AL30_protocol.md": {
+      "sha256": "804806307e675ab75d61ad1d2c05228fb9ad23dd5072d0ae58ff223619420ca5",
+      "bytes": 6333
+    },
+    "research-runs/algorithm_search_20260918/AL30_report.md": {
+      "sha256": "18b80b8950ede632d8b7ddfb8b0144bd444f830b0bc3db5e4af36f8b1f0f9bd1",
+      "bytes": 6883
+    },
+    "research-runs/algorithm_search_20260918/AL30_started.json": {
+      "sha256": "cf19e9a7411064a2c986391cda5cadddaf0fe3b2e09ff7e9c93ff5f8a98b94c9",
+      "bytes": 231
+    },
+    "research-runtime/algorithm_candidates/or1_head_accuracy_v2/freeze.py": {
+      "sha256": "92532fcf8e8a9a1bbab0133f02639246c6f7a35a1b1f781110e80aa205426b9d",
+      "bytes": 5074
+    },
+    "research-runtime/algorithm_candidates/or1_head_accuracy_v2/independent.py": {
+      "sha256": "6dc9d2e6c9c39b3da8195da140284107c9df9387855190ebcc0d819f593a4fde",
+      "bytes": 3094
+    },
+    "research-runtime/algorithm_candidates/or1_head_accuracy_v2/objective.py": {
+      "sha256": "bae581b27e07f272038154b113b078f0570050ab0777623846723be4681946ff",
+      "bytes": 3827
+    },
+    "research-runtime/algorithm_candidates/or1_head_accuracy_v2/run.py": {
+      "sha256": "adbbf8826a0c2e99c87e9f5a97b6e5a932495e81010fb0bd97925aefee413546",
+      "bytes": 13639
+    }
+  }
+}
