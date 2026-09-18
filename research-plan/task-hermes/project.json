@@ -2,7 +2,7 @@
   "schema_version": "0.5",
   "project": "cvpr2027-operator-controlled-video-forensics",
   "main_thread": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-  "updated": "2026-09-18",
+  "updated": "2026-09-19",
   "goal": "在项目累计6000元和初始累计180 GPU小时约束内，由用户主导、双角色协作验证未知生成器与传播退化下的视频取证算法；证据满足门槛后冲刺CVPR 2027一作投稿，证据不足允许延期。",
   "canonical_plan": "WORK_PLAN.md",
   "status_values": [
@@ -1056,7 +1056,7 @@
       "id": "AL01",
       "milestone": "M2",
       "title": "联合轨迹可实现性缺陷的推导与反例原型",
-      "assignee": "planagent",
+      "assignee": "researchagent_next",
       "parents": [
         "RS01",
         "DX03"
@@ -1086,7 +1086,7 @@
       ],
       "due_at": "2026-09-19T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "按ALGORITHM_SEARCH_20260918.md实现H-J的小规模LP参考，给出可实现与不可实现证据。",
+      "next_action": "在新版本中补正温度/有限值前提与容差说明，保留原参考；补简单循环/熵对照及条件边界后交叉复核。",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1099,14 +1099,23 @@
       },
       "hypothesis_result": "inconclusive",
       "original_assignee": "researchagent",
-      "temporary_assignment_reason": "Research task failed at API startup before execution; CPU-only fallback under latest continuous-research authorization.",
+      "temporary_assignment_reason": "Primary implementation transferred after root mathematical reference and independent AL03 review; no local execution overlaps.",
       "independent_review_pending": true,
       "partial_evidence": [
         "../fallback-runtime/joint_marginal_reference.py",
         "../reviews/AL03_joint_math_evidence_20260918.json",
         "../reviews/AL03_PRIOR_SCREEN_20260918.md"
       ],
-      "review_note": "Restricted structural distinction and static-kernel zero-defect construction proposed and numerically checked; novelty, robustness and efficacy not established."
+      "review_note": "Restricted structural distinction and static-kernel zero-defect construction proposed and numerically checked; novelty, robustness and efficacy not established.",
+      "review_issues": [
+        "symmetric_kernel_coupling requires positive finite tau validation",
+        "Input/LP tolerance gap must stay explicit",
+        "Novelty and geometric/real-video claims unproved"
+      ],
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T00:39:55+08:00",
+      "observed_turn_id": "01a0b55d-90b4-7603-b50e-e1862e7874d7"
     },
     {
       "id": "AL02",
@@ -1121,8 +1130,8 @@
         "RS01",
         "DX03"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "fail",
       "gate_scope": "candidate_information_and_toy_falsification",
       "hypothesis": "某些对应条件化多帧统计可能补充低阶观测，但必须证明信息来源并排除oracle、坐标与普通高阶池化解释。",
       "work": [
@@ -1138,7 +1147,8 @@
       ],
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL02_design.md",
-        "../../research-runs/algorithm_search_20260918/AL02_evidence.json"
+        "../../research-runs/algorithm_search_20260918/AL02_evidence.json",
+        "../reviews/ROUND6_REVIEW_20260919.md"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
@@ -1153,10 +1163,13 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "refuted",
       "original_assignee": "researchagent",
       "temporary_assignment_reason": "Research task recovered using supported ordinary model; cross-review and independent H-T work separated from local AL01.",
-      "independent_review_pending": true
+      "independent_review_pending": true,
+      "completed_at": "2026-09-19T00:26:49+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Current H-T independent-gain claim refuted; general higher-order research remains open"
     },
     {
       "id": "AL03",
@@ -1169,8 +1182,8 @@
       "requires_pass": [
         "RS01"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "bounded_new_candidate_prior_review",
       "hypothesis": "通过核对输入/目标/假设和反例，可提前识别明显重述并形成可审查的创新差异。",
       "work": [
@@ -1186,7 +1199,8 @@
       ],
       "artifacts": [
         "../reviews/AL03_PRIOR_SCREEN_20260918.md",
-        "../../research-runs/algorithm_search_20260918/AL03_cross_review.md"
+        "../../research-runs/algorithm_search_20260918/AL03_cross_review.md",
+        "../reviews/ROUND6_REVIEW_20260919.md"
       ],
       "due_at": "2026-09-19T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
@@ -1201,12 +1215,15 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported",
       "partial_evidence": [
         "../reviews/AL03_joint_math_evidence_20260918.json",
         "../../research-runs/algorithm_search_20260918/AL03_cross_evidence.json"
       ],
-      "temporary_assignment_reason": "Research task recovered using supported ordinary model; cross-review and independent H-T work separated from local AL01."
+      "temporary_assignment_reason": "Research task recovered using supported ordinary model; cross-review and independent H-T work separated from local AL01.",
+      "completed_at": "2026-09-19T00:26:49+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Restricted mathematical/software and bounded method review only; not formal science or novelty acceptance"
     },
     {
       "id": "AL04",
@@ -1219,7 +1236,7 @@
       "requires_pass": [
         "RS05"
       ],
-      "status": "ready",
+      "status": "review",
       "gate_result": "not_evaluated",
       "gate_scope": "candidate_test_protocol",
       "hypothesis": "统一固定输入信息和扰动场景可以区分机制收益与熵/容量/对齐伪增量。",
@@ -1255,7 +1272,10 @@
       "original_assignee": "researchagent",
       "temporary_assignment_reason": "User explicitly requested a new research conversation; AL04 is independent from ongoing AL03/AL02.",
       "independent_review_pending": true,
-      "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md"
+      "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T00:20:04+08:00"
     },
     {
       "id": "AL05",
@@ -2701,7 +2721,7 @@
     }
   },
   "plan_version": "cvpr27-20260918-v1.4",
-  "updated_at": "2026-09-19T00:11:01+08:00",
+  "updated_at": "2026-09-19T00:33:23+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -2717,6 +2737,54 @@
       ]
     },
     "researchagent": {
+      "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "host_id": "local",
+      "title": "科研冲击新会话",
+      "instructions": "../../agents/researchagent-next/agent.md",
+      "creation_status": "active_verified",
+      "initial_task_ids": [
+        "AL04"
+      ],
+      "environment": "worktree",
+      "writes": [
+        "Assigned research code, protocols and evidence in own worktree only; historical references remain read-only"
+      ],
+      "canonical_state": "E:/aNB/TECH/脉冲神经网络/research-plan/task-hermes/project.json",
+      "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
+      "creation_requested_at": "2026-09-19T00:12:39+08:00",
+      "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "branch": "codex/al04-fixed-protocol",
+      "startup_verified_at": "2026-09-19T00:20:04+08:00",
+      "plan_version_read": "cvpr27-20260918-v1.4",
+      "mode": "primary_research_session"
+    },
+    "scientific_review": {
+      "responsible": "user_and_advisor",
+      "mechanical_replay_is_not_independent_review": true
+    },
+    "researchagent_next": {
+      "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "host_id": "local",
+      "title": "科研冲击新会话",
+      "instructions": "../../agents/researchagent-next/agent.md",
+      "creation_status": "active_verified",
+      "initial_task_ids": [
+        "AL04"
+      ],
+      "environment": "worktree",
+      "writes": [
+        "Assigned research code, protocols and evidence in own worktree only; historical references remain read-only"
+      ],
+      "canonical_state": "E:/aNB/TECH/脉冲神经网络/research-plan/task-hermes/project.json",
+      "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
+      "creation_requested_at": "2026-09-19T00:12:39+08:00",
+      "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "branch": "codex/al04-fixed-protocol",
+      "startup_verified_at": "2026-09-19T00:20:04+08:00",
+      "plan_version_read": "cvpr27-20260918-v1.4",
+      "role_alias_of": "researchagent"
+    },
+    "researchagent_legacy": {
       "thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
       "host_id": "local",
       "title": "科研冲击",
@@ -2725,26 +2793,8 @@
         "research code",
         "experimental evidence",
         "DEVLOG.md"
-      ]
-    },
-    "scientific_review": {
-      "responsible": "user_and_advisor",
-      "mechanical_replay_is_not_independent_review": true
-    },
-    "researchagent_next": {
-      "thread_id": null,
-      "host_id": "local",
-      "title": "科研冲击新会话",
-      "instructions": "../../agents/researchagent-next/agent.md",
-      "creation_status": "prepared",
-      "initial_task_ids": [
-        "AL04"
       ],
-      "environment": "worktree",
-      "writes": [
-        "own worktree AL04 code/protocol/evidence only"
-      ],
-      "canonical_state": "E:/aNB/TECH/脉冲神经网络/research-plan/task-hermes/project.json"
+      "mode": "current_package_closed_history_retained"
     }
   },
   "scientific_gates": {
@@ -2863,7 +2913,9 @@
     },
     "latest_server_access_review": "../reviews/server_49714_readonly_20260918.json",
     "algorithm_search_status": "H-J CPU reference and restricted structural checks produced by planagent; cross-review and H-T assigned to recovered research task; no novelty or real efficacy gate passed.",
-    "new_candidate_partial_evidence": "../reviews/AL03_joint_math_evidence_20260918.json"
+    "new_candidate_partial_evidence": "../reviews/AL03_joint_math_evidence_20260918.json",
+    "H_T_v0_hypothesis": "refuted: zero/redundant reference and unfair information assumptions; no real-data efficacy claim",
+    "H_J_cross_review": "restricted mathematics supported; helper validation issue and geometric blind spot remain; novelty/effect unknown"
   },
   "milestones": [
     {
@@ -3136,7 +3188,7 @@
     "legacy_automation_id": "cvpr-9-11-10",
     "legacy_automation_must_remain": "PAUSED",
     "next_planned_notification_at": "2026-09-23T19:00:00+08:00",
-    "verified_at": "2026-09-18T23:44:20+08:00",
+    "verified_at": "2026-09-19T00:39:55+08:00",
     "host_timezone": "China Standard Time",
     "configured_check_time_local": "19:00",
     "physical_heartbeat_schedule": "hourly at minutes 00,10,20,30,40,50",
@@ -3144,7 +3196,8 @@
     "last_check_local_date": "2026-09-18",
     "last_checked_at": "2026-09-18T19:02:36.516187+08:00",
     "last_check_notifications": 0,
-    "last_check_receipt": "checks/20260918T190236.json"
+    "last_check_receipt": "checks/20260918T190236.json",
+    "coordination_target": "roles.researchagent and current active dispatches; legacy research task closed"
   },
   "coordination": {
     "handoff_status": "acknowledged",
@@ -3252,7 +3305,7 @@
     "authorized_at": "2026-09-17T19:27:21+08:00",
     "authorization": "用户要求继续与科研agent协作直到有突破性进展。",
     "status": "active",
-    "research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
+    "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
     "plan_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
     "dispatch_interval_minutes": 10,
     "notification_intent": "只在有证据的阶段突破、实质方法取舍、失败或需要用户动作时通知；常规无变化保持安静。",
@@ -3260,46 +3313,36 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-round-6-crossreview-ht-20260918",
+      "id": "cc-new-session-al01-complete-20260919",
       "task_ids": [
-        "AL03",
-        "AL02"
+        "AL01"
       ],
+      "executor_role": "researchagent_next",
+      "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "host_id": "local",
       "status": "running",
-      "prepared_at": "2026-09-18T23:52:26+08:00",
-      "executor_role": "researchagent",
-      "research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-      "execution_model": "gpt-6-astra",
-      "scope": "CPU cross-review of H-J proof/reference plus independent H-T prototype; no server/GPU/training.",
-      "readiness_basis": "Ordinary-model read-only recovery completed and researchagent explicitly offered to accept non-overlapping cross-review.",
-      "plan_version": "cvpr27-20260918-v1.4",
-      "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
-      "must_not_repeat": [
-        "AL01 primary implementation",
-        "cc-round-5-algorithm-search-20260918"
-      ],
-      "sent_at": "2026-09-18T23:53:53+08:00",
+      "prepared_at": "2026-09-19T00:33:22+08:00",
+      "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "scope": "Versioned positive-temperature/input validation repair and missing simple controls for H-J; no change to archived reference or real/GPU experiments.",
+      "readiness_basis": "New task explicitly delivered AL04 with clean worktree and no remaining processes.",
+      "sent_at": "2026-09-19T00:33:23+08:00",
       "sent_at_source": "recorded_after_successful_send_tool_response",
-      "last_observed_thread_turn_id": "01a0b539-6629-7281-8a4a-d25ea0325580",
       "last_observed_status": "inProgress",
+      "last_observed_thread_turn_id": "01a0b55d-90b4-7603-b50e-e1862e7874d7",
+      "last_observed_at": "2026-09-19T00:39:55+08:00",
       "duplicate_dispatch_suppressed": true,
-      "last_observed_at": "2026-09-19T00:02:27+08:00",
-      "interim_evidence": {
-        "path": "../../research-runs/algorithm_search_20260918/AL03_cross_evidence.json",
-        "sha256": "a30d05b74219a7825b7cd2e59d7310192f375fdd088e5f946b34095c7dd4dd14",
-        "scope": "Existing interim artifact read; final cross-review and package handoff pending; not accepted as scientific success."
-      }
+      "startup_evidence": "wait_threads confirmed active turn and AL01-specific assistant progress after the successful dispatch."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:2",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T00:02:27+08:00",
+    "last_coordinator_activity_at": "2026-09-19T00:33:22+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
@@ -3449,9 +3492,75 @@
         "transferred_task_ids": [
           "AL02"
         ]
+      },
+      {
+        "id": "cc-round-6-crossreview-ht-20260918",
+        "task_ids": [
+          "AL03",
+          "AL02"
+        ],
+        "status": "completed_scoped_review",
+        "prepared_at": "2026-09-18T23:52:26+08:00",
+        "executor_role": "researchagent",
+        "research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
+        "execution_model": "gpt-6-astra",
+        "scope": "CPU cross-review of H-J proof/reference plus independent H-T prototype; no server/GPU/training.",
+        "readiness_basis": "Ordinary-model read-only recovery completed and researchagent explicitly offered to accept non-overlapping cross-review.",
+        "plan_version": "cvpr27-20260918-v1.4",
+        "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+        "must_not_repeat": [
+          "AL01 primary implementation",
+          "cc-round-5-algorithm-search-20260918"
+        ],
+        "sent_at": "2026-09-18T23:53:53+08:00",
+        "sent_at_source": "recorded_after_successful_send_tool_response",
+        "last_observed_thread_turn_id": "01a0b539-6629-7281-8a4a-d25ea0325580",
+        "last_observed_status": "inProgress",
+        "duplicate_dispatch_suppressed": true,
+        "last_observed_at": "2026-09-19T00:02:27+08:00",
+        "interim_evidence": {
+          "path": "../../research-runs/algorithm_search_20260918/AL03_cross_evidence.json",
+          "sha256": "a30d05b74219a7825b7cd2e59d7310192f375fdd088e5f946b34095c7dd4dd14",
+          "scope": "Existing interim artifact read; final cross-review and package handoff pending; not accepted as scientific success."
+        },
+        "source_commit": "86bebaf",
+        "handoff_report": "../../research-runs/algorithm_search_20260918/round6_handoff.md",
+        "completed_at": "2026-09-19T00:26:49+08:00",
+        "review": "../reviews/ROUND6_REVIEW_20260919.md",
+        "task_outcomes": {
+          "AL03": "done_pass_restricted_math",
+          "AL02": "done_fail_current_hypothesis"
+        }
+      },
+      {
+        "id": "cc-new-session-al04-20260919",
+        "task_ids": [
+          "AL04"
+        ],
+        "executor_role": "researchagent_next",
+        "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "status": "delivered_pending_review",
+        "prepared_at": "2026-09-19T00:11:01+08:00",
+        "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md",
+        "scope": "Independent worktree CPU protocol/falsification harness; old research task continues AL03/AL02.",
+        "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
+        "creation_requested_at": "2026-09-19T00:12:39+08:00",
+        "host_id": "local",
+        "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:1",
+        "observed_turn_id": "01a0b54a-3dff-7cd2-ac1e-ba5bc3ea62fd",
+        "observed_at": "2026-09-19T00:20:04+08:00",
+        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+        "startup_evidence": "wait_threads returned active plus actual assistant confirmation of v1.4, worktree, baseline 6d77d44 and AL04-only scope.",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "delivery_received_at": "2026-09-19T00:33:22+08:00",
+        "source_commits": [
+          "43e3529",
+          "29373fa"
+        ],
+        "handoff_report": "D:/SUAI/codex/worktree/662f/脉冲神经网络/research-runs/algorithm_search_20260918/AL04_handoff.md"
       }
     ],
-    "last_substantive_review": "../reviews/DX04_20260918.md",
+    "last_substantive_review": "../reviews/ROUND6_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -3527,34 +3636,29 @@
       "post_breakthrough": "continue robustness, confirmation and paper; do not automatically stop research"
     },
     "local_execution": {
-      "task_ids": [
-        "AL01"
-      ],
+      "task_ids": [],
       "executor_role": "planagent",
-      "status": "in_progress",
+      "status": "transferred_to_new_research_session",
       "work_area": "research-plan/fallback-runtime",
       "partial_evidence": "../reviews/AL03_joint_math_evidence_20260918.json",
-      "requires_cross_review": true
+      "requires_cross_review": true,
+      "handoff_at": "2026-09-19T00:33:22+08:00"
     },
-    "additional_dispatches": [
-      {
-        "id": "cc-new-session-al04-20260919",
-        "task_ids": [
-          "AL04"
-        ],
-        "executor_role": "researchagent_next",
-        "thread_id": null,
-        "status": "prepared_for_explicitly_requested_new_task",
-        "prepared_at": "2026-09-19T00:11:01+08:00",
-        "work_order": "../NEW_RESEARCH_HANDOFF_20260919.md",
-        "scope": "Independent worktree CPU protocol/falsification harness; old research task continues AL03/AL02."
-      }
-    ],
+    "additional_dispatches": [],
     "new_session_authorization": {
       "at": "2026-09-19T00:11:01+08:00",
       "basis": "User: 你可以开一个新的研究会话",
       "do_not_duplicate_active_package": true
-    }
+    },
+    "successor_research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+    "multi_session_transition": {
+      "authorized_by_user": true,
+      "old_task_scope": "AL03/AL02 reviewed and closed; retain history, no automatic dispatch or polling",
+      "new_task_scope": "Primary research session; AL04 delivered for review and AL01 transferred/running; follow current dispatch thereafter",
+      "one_package_per_executor": true
+    },
+    "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
+    "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6"
   },
   "candidate_protocols": {
     "A": {
