@@ -1,0 +1,48 @@
+{
+  "frozen_at": "2026-09-18T17:11:27.568495+00:00",
+  "pre_evaluation": true,
+  "files": {
+    "research-runtime/algorithm_candidates/al06/certificates.py": "159ef4b13102de794d382a5970990b2622e1c950565f21d4f120f57c33e4eced",
+    "research-runtime/algorithm_candidates/al06/run_package.py": "a9cf727d91292e9130a76f528c323ec2e3e53223c60afcced7f0af04597b06be",
+    "research-runtime/algorithm_candidates/al06/config.json": "0c9109444f2e3aa0111e0f11a6186149b9e8ff7d3f64700122a3efe061f14a2b",
+    "research-runs/algorithm_search_20260918/AL06_inputs.json": "9cce6ead901e6fdbf30d53cb5e3566dc20edbc1cafadf1865899d0feaa1a4236",
+    "research-runs/algorithm_search_20260918/AL06_design.md": "d73215790155fe148aeac38f35e9eaea81e59eb71737515ed48afc399b70f5f1",
+    "research-plan/fallback-runtime/joint_marginal_reference.py": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b"
+  },
+  "preserved": {
+    "research-runs/algorithm_search_20260918/AL01_artifact_manifest.json": "380af8ba68f0a935fa031fb8925717a707f314deb2a0481f0711bc4f4d2b9a6c",
+    "research-runs/algorithm_search_20260918/AL01_design.md": "4bff04a8cfdaf61dace3977ecdaa60755e813a60934b48a2893850935128bf68",
+    "research-runs/algorithm_search_20260918/AL01_evidence.json": "df25db48379ef1c6471f5374163c71ccbb1bd8897071849f800ea0ad1c886cc6",
+    "research-runs/algorithm_search_20260918/AL01_freeze.json": "6d73f677cabbde93df6af8e4674f116efb7c5942f9e6d6dd118a43200c923848",
+    "research-runs/algorithm_search_20260918/AL01_handoff.md": "a1300d78bf15380d6d3579c9e9e3b22852b7c456348e9343b8e3a2a51f319c88",
+    "research-runs/algorithm_search_20260918/AL01_inputs.json": "4d328702d6dcb59026dcda630a9bd8d5487c77c5f48fbceb6c8effd4b75fa7a9",
+    "research-runs/algorithm_search_20260918/AL01_normalization_freeze.json": "720d8b515b0ae809e9a49056af8d1c698e3331aaa8de90514d61b95f4d943468",
+    "research-runs/algorithm_search_20260918/AL01_normalization_note.md": "04f4e7241e65572e0d92f024ec1031fca216348c5cda40362119e2fc39b537b4",
+    "research-runs/algorithm_search_20260918/AL01_normalization_recovery.json": "f62176db34a133e33003f27a0df5d0a9faccc46956fb94aa5a98fe7cd849289e",
+    "research-runs/algorithm_search_20260918/AL01_result_summary.json": "eeca6d1a3ec5239b3c8b9af29962e626ca3258b65a32ef2d95b849bfc0c40452",
+    "research-runs/algorithm_search_20260918/AL04_artifact_manifest.json": "c5a42669bed20bdf0efdea617f6a9047cd98b2fec4669b9fb574132a14676897",
+    "research-runs/algorithm_search_20260918/AL04_cases.json": "6f8be0b87163378faece3222d4e4769daba0dbbb424b1252a744a43bc76bfdd5",
+    "research-runs/algorithm_search_20260918/AL04_freeze.json": "a53c6c87f085c1be54f87a1fd008a9c6bd7aa9221ac453cbd99a708037b950b1",
+    "research-runs/algorithm_search_20260918/AL04_handoff.md": "037aea2268eac3c74177e96ea59106568319a05ae5bc1c1289bd22084934c34d",
+    "research-runs/algorithm_search_20260918/AL04_protocol.md": "25ca6914bdb17ac735aa355fac9aac8f8ace2baf791a735f447eb4623368976b",
+    "research-runs/algorithm_search_20260918/AL04_validation.json": "85551a67df0e28086b60f6dbb6fb1c0382774c2a121d10bacb0106571b433cbf",
+    "research-runtime/algorithm_candidates/al01_v2/balance_newton.py": "46c9e89c333185b7ed0909ab4474aaed54b79d6452417260b76cf8e5fe7cf4e0",
+    "research-runtime/algorithm_candidates/al01_v2/config.json": "be88c1165910f85267113b4f88ce6afc5ae8ad685c58d6da3caa5f255a94d07a",
+    "research-runtime/algorithm_candidates/al01_v2/joint_v2.py": "aef6816318f0699ade6d242f3ed914d1ebfd539c26e519f0dba6f7f768048f18",
+    "research-runtime/algorithm_candidates/al01_v2/recover_normalization.py": "262cacd278e489dbb73e9354a0d05d60f2a3daadb694c5d12ed6f0e9186184e7",
+    "research-runtime/algorithm_candidates/al01_v2/run_package.py": "f83ce8390a43bf7b2ee8fe989950124ed5e97488224cf4179644c8352d4fdd36"
+  },
+  "canonical_inputs_at_freeze": {
+    "research-plan/AL06_PROJECTED_CERTIFICATES_20260919.md": "490252a10e89a1cd054d4e3dffdc7e0f6f10cf5cbb62c12fe707e922516600a2",
+    "research-plan/reviews/AL01_REVIEW_20260919.md": "ef482ae2635f7abc24953f6487865e5bd6faf49034ecd5ed845659601e930428",
+    "research-plan/WORK_PLAN.md": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+    "research-plan/task-hermes/project.json": "57989f52d66754731ef0925d33c0ec66e60f303f388dfa27179bfc5cd9c1b947"
+  },
+  "source_reading": {
+    "url": "https://proceedings.neurips.cc/paper/2007/file/2b323d6eb28422cef49b266557dd31ad-Paper.pdf",
+    "sections": "3-4",
+    "equations": "4-7",
+    "claim": "balanced single-projection triangles are a restricted classical special case"
+  },
+  "unmodified_known_issue": "AL01-NUMPY-BOOL; no scalar-temperature helper used in AL06"
+}

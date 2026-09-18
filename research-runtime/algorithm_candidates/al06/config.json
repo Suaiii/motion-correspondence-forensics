@@ -1,0 +1,30 @@
+{
+  "dispatch_id": "cc-al06-projected-certificates-20260919",
+  "task_id": "AL06",
+  "version": "AL06-balanced-binary-classical-control-v1",
+  "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+  "reference_sha256": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b",
+  "development": {"m": 4, "seed": 49979687},
+  "independent_check": {"m": 8, "seed": 67867967},
+  "compatible_dense_shapes": [0.15, 1.5],
+  "compatible_sparse_components": [4, 7],
+  "compatible_sparse_uniform_noise": 0.07,
+  "pair_mixtures": [
+    {"weights": [1.0], "uniform_noise": 0.0},
+    {"weights": [0.5, 0.5], "uniform_noise": 0.0},
+    {"weights": [0.2, 0.3, 0.5], "uniform_noise": 0.0},
+    {"weights": [0.65, 0.35], "uniform_noise": 0.07},
+    {"weights": [0.16666666666666666, 0.16666666666666666, 0.16666666666666666, 0.16666666666666666, 0.16666666666666666, 0.16666666666666666], "uniform_noise": 0.15}
+  ],
+  "derived_reindex_parent_positions": [0, 4],
+  "nonuniform_Q_records_per_split": 1,
+  "instances_per_split_including_reindex": 12,
+  "max_total_Q_instances": 24,
+  "mass_tolerance": 1e-10,
+  "comparison_tolerance": 1e-8,
+  "threads": 2,
+  "max_explicit_array_bytes": 536870912,
+  "stop_rule": "Exactly the frozen 24 records; no adaptive search after outcomes",
+  "source_url": "https://proceedings.neurips.cc/paper/2007/file/2b323d6eb28422cef49b266557dd31ad-Paper.pdf",
+  "source_scope": "Sontag-Jaakkola 2007 sections 3-4, Definition 1, Theorem 1, equations 4-7; classical special case, no optimizer reproduction"
+}
