@@ -1,0 +1,81 @@
+{
+  "task_id": "AL30",
+  "reviewed_at": "2026-09-18T21:51:19.030104+00:00",
+  "reviewer": "planagent",
+  "gate_result": "pass",
+  "old_AL27_gate_result": "fail",
+  "manifest_files_verified": 12,
+  "historical_files_verified": 105,
+  "dependencies_verified": 5,
+  "solver_math_source_byte_identical": true,
+  "known_regression_panels": 3,
+  "new_prespecified_panels": 1,
+  "exact_Gram_checks": 288,
+  "archived_checks": 94,
+  "independent_terminal_diagnostics": [
+    {
+      "panel": "aligned",
+      "head": "candidate",
+      "gradient_l2_decimal": "2.07221815658933378183754291168319325407640084100000000000000E-16",
+      "objective_decimal": "0.112393094715434227016177046352843370815234619449790656667280",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    },
+    {
+      "panel": "aligned",
+      "head": "free",
+      "gradient_l2_decimal": "8.45979519895773113358773918768490384111310172272252303283336E-17",
+      "objective_decimal": "0.112393094715434227016177046352843370815234619449790656667280",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    },
+    {
+      "panel": "full_rank",
+      "head": "candidate",
+      "gradient_l2_decimal": "0.000",
+      "objective_decimal": "0.69314718055994530941723212145817656807550013436025525412068",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    },
+    {
+      "panel": "full_rank",
+      "head": "free",
+      "gradient_l2_decimal": "2.01827772178366347957828408737390627563997591776543343278060E-19",
+      "objective_decimal": "0.254700899337267852986836386683362722311222656359510005085355",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    },
+    {
+      "panel": "symmetric",
+      "head": "candidate",
+      "gradient_l2_decimal": "0.000",
+      "objective_decimal": "0.69314718055994530941723212145817656807550013436025525412068",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    },
+    {
+      "panel": "symmetric",
+      "head": "free",
+      "gradient_l2_decimal": "0E-63",
+      "objective_decimal": "0.693147180559945309417232121458176568075500134360255254120680",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    },
+    {
+      "panel": "full_rank_scale",
+      "head": "candidate",
+      "gradient_l2_decimal": "0.0000",
+      "objective_decimal": "0.69314718055994530941723212145817656807550013436025525412068",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    },
+    {
+      "panel": "full_rank_scale",
+      "head": "free",
+      "gradient_l2_decimal": "1.21116170567895940320361547878779497758442727968462184443565E-18",
+      "objective_decimal": "0.441076315595753228367523059525314415471510477511077766418613",
+      "scope": "High-precision arithmetic diagnostic of archived points, not a certified bound or optimizer rerun"
+    }
+  ],
+  "original_prefix_evaluations_unchanged": 5,
+  "extra_step_cause": "Unified new stopping criterion; old step4 residual exceeds new threshold",
+  "solver_or_model_replayed": false,
+  "parameter_error_certified": false,
+  "scientific_breakthrough": false,
+  "freeze_commit": "1fa8bb8bcd6a1a94238c0ca8243e4b011fd96602",
+  "result_commit": "24933a6116ec30d15bd5596b6ffd2d2a874127fd",
+  "audit_source_sha256": "a0006efbe95d38924b98171dadd912f1c2b32aa4ee9019dde1adbda02bb5d373"
+}

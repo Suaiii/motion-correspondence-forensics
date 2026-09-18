@@ -2937,8 +2937,8 @@
         "AL23",
         "AL24"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "accuracy_budgeted_optimizer_reference",
       "hypothesis": "mu与参数误差预算能给统一更合适的停止策略；AL27梯度阈值不足不应由放宽坐标验收掩盖。",
       "work": [
@@ -2953,7 +2953,9 @@
       ],
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL30_report.md",
-        "../../research-runs/algorithm_search_20260918/AL30_handoff.md"
+        "../../research-runs/algorithm_search_20260918/AL30_handoff.md",
+        "../reviews/AL30_REVIEW_20260919.md",
+        "../reviews/AL30_ARCHIVE_REVIEW_20260919.json"
       ],
       "work_order": "../AL30_ACCURACY_BUDGETED_STOPPING_CPU_20260919.md",
       "resource_policy": {
@@ -2977,17 +2979,29 @@
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": true,
       "classifier_training_authorized": false,
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "accuracy_target_met_on_known_regressions_and_one_prespecified_scale_control",
       "scientific_innovation_gate_passed": false,
       "failure_recovery_parent": "AL27",
       "failure_parent_pass_not_required_reason": "New software repair explicitly follows a completed failed numerical gate; not a success-dependent scientific branch",
-      "next_action": "Execute only unique AL30 dispatch; preserve AL27 fail",
-      "dispatch_status": "running_verified",
+      "next_action": "AL32 stable readout/metric integration; AL27 fail remains unchanged",
+      "dispatch_status": "completed_scoped_review",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T05:45:28+08:00",
       "observed_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
-      "execution_stage": "one_frozen_batch_reported_complete_handoff_pending"
+      "execution_stage": "complete_scoped_delivery",
+      "completed_at": "2026-09-19T05:57:19+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL30_REVIEW_20260919.md",
+      "review_scope": "12 manifest/105 historical/5 dependency hashes, exact Gram/rank and archived-terminal diagnostics; no optimizer replay or strict error certificate",
+      "source_commits": [
+        "1fa8bb8",
+        "24933a6"
+      ],
+      "integration_commits": [
+        "c9c3678",
+        "9f6ca75"
+      ]
     },
     {
       "id": "AL31",
@@ -3046,6 +3060,123 @@
       "actual_dataset_records_accepted": false,
       "final_test_set_accessed": false,
       "next_action": "Before future strict decoder holdout claims, bind actual components/versions under approved data protocol; do not infer independence from names"
+    },
+    {
+      "id": "AL32",
+      "milestone": "M2",
+      "title": "稳定紧凑读出与诱导正则坐标CPU集成",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL20",
+        "AL25",
+        "AL29",
+        "AL30"
+      ],
+      "requires_pass": [
+        "AL20",
+        "AL25",
+        "AL29",
+        "AL30"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "stable_readout_metric_integration_reference",
+      "hypothesis": "直接共享候选q的稳定坐标及拉回正则应在所声明范围保留同信息/同目标合同，不能借浮点消去制造优势。",
+      "work": [
+        "只处理3个指定AL25归档滤波场，不重跑readout",
+        "复用q值，固定w/gamma核查评分与惩罚",
+        "3个已知Gram面板×2固定参数点核查值/梯度/Hessian变换，不优化"
+      ],
+      "acceptance": [
+        "r_K与源q的float.hex一致，raw差保留",
+        "同D/支持/参数映射及诱导正则符合AL29",
+        "仅新算术/固定目标求值，无源模型/优化器/媒体/训练"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL32_report.md",
+        "../../research-runs/algorithm_search_20260918/AL32_handoff.md"
+      ],
+      "work_order": "../AL32_STABLE_BASELINE_INTEGRATION_CPU_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false,
+        "max_vector_dimension": 12,
+        "synthetic_objective_optimization": false,
+        "max_pairs": 12,
+        "matching_performed": false,
+        "max_feature_rows": 24,
+        "fixed_objective_evaluation_only": true,
+        "optimizer_calls_authorized": false,
+        "readout_or_probe_calls_authorized": false,
+        "max_archived_filtered_field_elements": 54
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T05:57:19+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "implementation_authorized": true,
+      "classifier_training_authorized": false,
+      "hypothesis_result": "not_evaluated",
+      "scientific_innovation_gate_passed": false
+    },
+    {
+      "id": "AL33",
+      "milestone": "M2",
+      "title": "理想投影重建下的归一化响应机制审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL15",
+        "AL20"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL15",
+        "AL20"
+      ],
+      "status": "running",
+      "gate_result": "not_evaluated",
+      "gate_scope": "ideal_projection_mechanism_audit",
+      "hypothesis": "在单个二维投影角度块上，响应可能完全由普通输入/残差能量决定，不能仅因非交换就解释为新增来源信息。",
+      "work": [
+        "符号推导投影commutator、能量/方向界及2eta尺度",
+        "唯一c=3/5,s=4/5下2个向量精确核对",
+        "说明四滤波扩展条件与不适用于任意真实AE的限制"
+      ],
+      "acceptance": [
+        "仅限定投影模型，不能推成全OR1真实否证",
+        "不扫描角度/拟合来源，不隐藏普通量解释",
+        "无模型/媒体/服务器/GPU"
+      ],
+      "artifacts": [
+        "../reviews/AL33_PROJECTOR_MECHANISM_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL33_PROJECTOR_MECHANISM_AUDIT_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "started_at": "2026-09-19T05:57:19+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "implementation_authorized": false,
+      "hypothesis_result": "not_evaluated",
+      "scientific_innovation_gate_passed": false
     }
   ],
   "storage_policy": {
@@ -4445,7 +4576,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T05:45:28+08:00",
+  "updated_at": "2026-09-19T05:57:19+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5090,41 +5221,34 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al30-accuracy-budgeted-stop-20260919",
+      "id": "cc-al32-stable-baseline-integration-20260919",
       "task_ids": [
-        "AL30"
+        "AL32"
       ],
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "running",
-      "prepared_at": "2026-09-19T05:34:17+08:00",
+      "status": "prepared_not_sent",
+      "prepared_at": "2026-09-19T05:57:19+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "work_order": "../AL30_ACCURACY_BUDGETED_STOPPING_CPU_20260919.md",
-      "work_order_sha256": "7b529dd8a39637e0d67d111b6815d3b529d597c43b1c493dd73ee3cb05e3ee51",
+      "work_order": "../AL32_STABLE_BASELINE_INTEGRATION_CPU_20260919.md",
+      "work_order_sha256": "86ee01efe1b273a71f1c80f2a0e007a82f684f8cbfdb5c04141d64ed130a693d",
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
-      "scope": "One versioned optimizer stopping-contract repair;3 known regression panels+1 predeclared scale control; no real data/model/server/GPU.",
-      "readiness_basis": "Complete AL27 failed handoff, independent preserved-failure review and idle/completed cursor39; recovery does not require failed AL27 pass",
-      "sent_at": "2026-09-19T05:35:28+08:00",
-      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
-      "duplicate_dispatch_suppressed": true,
-      "last_observed_status": "inProgress",
-      "last_observed_thread_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
-      "last_observed_at": "2026-09-19T05:45:28+08:00",
-      "startup_evidence": "cursor40 active with AL30-specific report of one frozen batch and original AL27 failure retained; full result not yet reviewed"
+      "scope": "3 archived field cases and3 abstract panels at2 fixed points; stable feature/metric integration only, no optimizer/model/readout/GPU.",
+      "readiness_basis": "AL30 complete handoff independently reviewed, old AL27 fail preserved, idle/completed cursor41"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:40",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:41",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T05:45:28+08:00",
-    "research_observed_status": "active",
+    "last_coordinator_activity_at": "2026-09-19T05:57:19+08:00",
+    "research_observed_status": "idle",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -5664,9 +5788,45 @@
           "6025efa"
         ],
         "gate_result": "fail"
+      },
+      {
+        "id": "cc-al30-accuracy-budgeted-stop-20260919",
+        "task_ids": [
+          "AL30"
+        ],
+        "executor_role": "researchagent_next",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "host_id": "local",
+        "status": "completed_scoped_review",
+        "prepared_at": "2026-09-19T05:34:17+08:00",
+        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+        "work_order": "../AL30_ACCURACY_BUDGETED_STOPPING_CPU_20260919.md",
+        "work_order_sha256": "7b529dd8a39637e0d67d111b6815d3b529d597c43b1c493dd73ee3cb05e3ee51",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+        "scope": "One versioned optimizer stopping-contract repair;3 known regression panels+1 predeclared scale control; no real data/model/server/GPU.",
+        "readiness_basis": "Complete AL27 failed handoff, independent preserved-failure review and idle/completed cursor39; recovery does not require failed AL27 pass",
+        "sent_at": "2026-09-19T05:35:28+08:00",
+        "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+        "duplicate_dispatch_suppressed": true,
+        "last_observed_status": "completed",
+        "last_observed_thread_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
+        "last_observed_at": "2026-09-19T05:45:28+08:00",
+        "startup_evidence": "cursor40 active with AL30-specific report of one frozen batch and original AL27 failure retained; full result not yet reviewed",
+        "completed_at": "2026-09-19T05:57:19+08:00",
+        "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:41",
+        "review": "../reviews/AL30_REVIEW_20260919.md",
+        "source_commits": [
+          "1fa8bb8",
+          "24933a6"
+        ],
+        "integration_commits": [
+          "c9c3678",
+          "9f6ca75"
+        ]
       }
     ],
-    "last_substantive_review": "../reviews/AL31_HOLDOUT_COMPONENT_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL30_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -5678,7 +5838,7 @@
       "Do not repeat completed packages or tune C on the exposed 100 records",
       "Do not repeat unchanged server/account probes or the pending budget question"
     ],
-    "last_observed_completed_turn_id": "01a0b655-5394-7a91-b885-8f658561fcc2",
+    "last_observed_completed_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
     "configuration_faults": {
       "thread_coordination_tools_unavailable": {
         "status": "resolved",
@@ -5743,14 +5903,13 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL31"
+        "AL33"
       ],
       "executor_role": "planagent",
-      "status": "completed_public_component_metadata_review",
-      "started_at": "2026-09-19T05:34:17+08:00",
+      "status": "running_ideal_projection_mechanism_review",
+      "started_at": "2026-09-19T05:57:19+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "Public aggregate component metadata only; no final sample manifests, media, scores or model loading",
-      "completed_at": "2026-09-19T05:45:28+08:00"
+      "scope": "Conditional2D projection mathematics and2 exact vectors; no actual AE claims"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -5767,13 +5926,17 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T05:45:28+08:00",
-    "prepared_independent_task_ids": [],
+    "last_local_review_at": "2026-09-19T05:57:19+08:00",
+    "prepared_independent_task_ids": [
+      "AL32"
+    ],
     "active_and_prepared_work": {
       "running": [
-        "AL30"
+        "AL33"
       ],
-      "prepared_independent": []
+      "prepared_independent": [
+        "AL32"
+      ]
     },
     "material_decision_notices": [
       {
@@ -5938,7 +6101,9 @@
       "public_holdout_identity_review_task": "AL31",
       "holdout_resource_name": "AIGVDBench identity confirmed through author repository and arXiv2601.11035v1",
       "specific_benchmark_decoder_weights": "unresolved from aggregate metadata; no samples opened",
-      "optimizer_repair_status": "AL30 executing; one-batch pass reported but full review pending"
+      "optimizer_repair_status": "AL30 scoped reference passed; AL27 remains failed, no strict numerical certificate",
+      "stable_baseline_integration_task": "AL32",
+      "projection_mechanism_review_task": "AL33"
     }
   },
   "open_review_issues": [
