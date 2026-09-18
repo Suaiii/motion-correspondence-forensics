@@ -1,0 +1,17 @@
+{
+  "frozen_at": "2026-09-18T16:48:54.996832+00:00",
+  "failure_commit": "81e7087",
+  "files": {
+    "research-runtime/algorithm_candidates/al01_v2/balance_newton.py": "46c9e89c333185b7ed0909ab4474aaed54b79d6452417260b76cf8e5fe7cf4e0",
+    "research-runtime/algorithm_candidates/al01_v2/recover_normalization.py": "262cacd278e489dbb73e9354a0d05d60f2a3daadb694c5d12ed6f0e9186184e7",
+    "research-runtime/algorithm_candidates/al01_v2/joint_v2.py": "aef6816318f0699ade6d242f3ed914d1ebfd539c26e519f0dba6f7f768048f18",
+    "research-runtime/algorithm_candidates/al01_v2/run_package.py": "f83ce8390a43bf7b2ee8fe989950124ed5e97488224cf4179644c8352d4fdd36",
+    "research-runtime/algorithm_candidates/al01_v2/config.json": "be88c1165910f85267113b4f88ce6afc5ae8ad685c58d6da3caa5f255a94d07a",
+    "research-runs/algorithm_search_20260918/AL01_inputs.json": "4d328702d6dcb59026dcda630a9bd8d5487c77c5f48fbceb6c8effd4b75fa7a9",
+    "research-runs/algorithm_search_20260918/AL01_evidence.json": "df25db48379ef1c6471f5374163c71ccbb1bd8897071849f800ea0ad1c886cc6",
+    "research-runs/algorithm_search_20260918/AL01_freeze.json": "6d73f677cabbde93df6af8e4674f116efb7c5942f9e6d6dd118a43200c923848",
+    "research-runs/algorithm_search_20260918/AL01_normalization_note.md": "04f4e7241e65572e0d92f024ec1031fca216348c5cda40362119e2fc39b537b4"
+  },
+  "unchanged_problem": "same inputs, tau=.1, KL scaling objective, target masses and 1e-12 residual",
+  "solver": "fixed 100 Newton steps, 40 backtracks, last dual coordinate fixed to zero"
+}
