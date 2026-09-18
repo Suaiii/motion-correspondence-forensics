@@ -1,0 +1,69 @@
+{
+  "retrieved_at": "2026-09-19T01:29:54.2762851+08:00",
+  "text_files": 6,
+  "text_bytes": 96531.0,
+  "max_text_files": 8,
+  "max_text_bytes": 204800,
+  "files": [
+    {
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "path": "sat/vae_modules/cp_enc_dec.py",
+      "url": "https://raw.githubusercontent.com/THUDM/CogVideo/7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2/sat/vae_modules/cp_enc_dec.py",
+      "bytes": 33480,
+      "sha256": "446c978ac2d216797d36eb3c1f0f88614cda46af7c3efd01e349ec5313bfadee",
+      "git_blob_sha1": "ee7efed8bcb819baf4d7c91c9f6249f93d24651e",
+      "local_path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__vae_modules__cp_enc_dec.py.txt"
+    },
+    {
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "path": "sat/vae_modules/autoencoder.py",
+      "url": "https://raw.githubusercontent.com/THUDM/CogVideo/7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2/sat/vae_modules/autoencoder.py",
+      "bytes": 24325,
+      "sha256": "3b83cdd5b53f15284298b3fd0f5046557a882b1718c33dfa10a6be09f01032ec",
+      "git_blob_sha1": "a2aea9a2ca1742e32a6631f7a5477fd1f5c34d31",
+      "local_path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__vae_modules__autoencoder.py.txt"
+    },
+    {
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "path": "sat/configs/cogvideox_5b.yaml",
+      "url": "https://raw.githubusercontent.com/THUDM/CogVideo/7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2/sat/configs/cogvideox_5b.yaml",
+      "bytes": 4413,
+      "sha256": "7dc4a1b2af7e3cbe3d368901511e07d787fde3d051f135449d9de97308933cac",
+      "git_blob_sha1": "be04ede6d3619c161b990bb59245c5689a238cf8",
+      "local_path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__configs__cogvideox_5b.yaml.txt"
+    },
+    {
+      "repo": "Wan-Video/Wan2.1",
+      "commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+      "path": "wan/modules/vae.py",
+      "url": "https://raw.githubusercontent.com/Wan-Video/Wan2.1/9737cba9c1c3c4d04b33fcad41c111989865d315/wan/modules/vae.py",
+      "bytes": 23163,
+      "sha256": "4912ffd7a9fbb17ceef9a17d4a9c4b8aee36ec37c32594f54e57693b29909498",
+      "git_blob_sha1": "5c6da5723536cdd49889132479fdd35700e0e5ca",
+      "local_path": "research-runs/algorithm_search_20260918/AL09_sources/Wan2.1__wan__modules__vae.py.txt"
+    },
+    {
+      "repo": "Wan-Video/Wan2.1",
+      "commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+      "path": "wan/configs/shared_config.py",
+      "url": "https://raw.githubusercontent.com/Wan-Video/Wan2.1/9737cba9c1c3c4d04b33fcad41c111989865d315/wan/configs/shared_config.py",
+      "bytes": 915,
+      "sha256": "a942b6f0a1d1a4ec9a7893c17a6218651ce272953b90d012ce5cdd19d15e45f7",
+      "git_blob_sha1": "04a9f454218fc1ce958b628e71ad5738222e2aa4",
+      "local_path": "research-runs/algorithm_search_20260918/AL09_sources/Wan2.1__wan__configs__shared_config.py.txt"
+    },
+    {
+      "repo": "Wan-Video/Wan2.1",
+      "commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+      "path": "wan/text2video.py",
+      "url": "https://raw.githubusercontent.com/Wan-Video/Wan2.1/9737cba9c1c3c4d04b33fcad41c111989865d315/wan/text2video.py",
+      "bytes": 10235,
+      "sha256": "169f0929b273b27a7bc0e094d15a01d48183adc529a1dbce626b179dced29fe8",
+      "git_blob_sha1": "c518b616bb327b19d5b201ce9f3e1e5bbae58969",
+      "local_path": "research-runs/algorithm_search_20260918/AL09_sources/Wan2.1__wan__text2video.py.txt"
+    }
+  ]
+}
