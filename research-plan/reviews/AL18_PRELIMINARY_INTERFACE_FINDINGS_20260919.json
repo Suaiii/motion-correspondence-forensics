@@ -1,0 +1,99 @@
+{
+  "task_id": "AL18",
+  "reviewer": "planagent",
+  "observed_at": "2026-09-18T19:32:32.351845+00:00",
+  "reviewed_source_sha256": "3ac18e29774aaa9f2eeecb593f2a8e8233d864b0a69cdd6156520fee640d5984",
+  "source_worktree": "D:\\SUAI\\codex\\worktree\\662f\\脉冲神经网络\\research-runtime\\algorithm_candidates\\or1_numerics\\bounds.py",
+  "frozen_revision": "8ff3400b0f8669fb80dc981c805e77488836fba1",
+  "status": "interface_review_findings_not_frozen_science_result_failure",
+  "calls": 2,
+  "checks": [
+    {
+      "id": "N5_invalid_observation_before_unknown_bound",
+      "input_description": "hat_n=1/4,hat_d=1/2,hat_q=NaN; B_D unknown, other bounds0; h1/8 eta1e-12",
+      "expected": "invalid_input under protocol public-numerical-first rule",
+      "observed": {
+        "equation": "N5",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/8",
+        "eta": "1/1000000000000",
+        "status": "uncertified_bound",
+        "interval_valid": false,
+        "unknown_fields": [
+          {
+            "field": "B_D",
+            "reason": "missing_or_unknown"
+          }
+        ],
+        "bound_sources": {
+          "B_N": "analytic_mock",
+          "rho_q": "analytic_mock",
+          "rho_s": "analytic_mock"
+        },
+        "reason": "Unknown or empirical-only errors/Lipschitz values are never filled with zero"
+      }
+    },
+    {
+      "id": "N2_supplied_hat_k_is_ignored",
+      "input_description": "all identity observations0, all errors0, L_a=L_b=1, supplied hat_k=[NaN]; h1/8 eta1e-12",
+      "expected": "reject invalid/unsupported optional final-K field, or explicitly restrict schema; do not silently certify a different returned K",
+      "observed": {
+        "equation": "N2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/8",
+        "eta": "1/1000000000000",
+        "status": "residual_energy_not_certified_positive",
+        "interval_valid": true,
+        "K_hat": [
+          "0"
+        ],
+        "B_K": "0",
+        "coordinate_intervals": [
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "observed_norm_enclosure": [
+          "0",
+          "0"
+        ],
+        "norm_enclosure_exact": true,
+        "response_norm_lower": "0",
+        "response_energy_lower": "0",
+        "energy_positive_certified": false,
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_a": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "interpretation": "Euclidean error ball and coordinate enclosure, conditional on declared endpoint bounds",
+        "propagation": {
+          "ell_a": "1",
+          "ell_b": "1",
+          "delta_a": "0",
+          "delta_b": "0",
+          "delta_ab": "0",
+          "delta_ba": "0"
+        }
+      }
+    }
+  ],
+  "scope": "Two targeted API-boundary probes after source review; no replay of147 frozen cases or AL15, no real AE/GPU/media",
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "source_changed": false
+}

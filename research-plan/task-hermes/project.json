@@ -2143,7 +2143,16 @@
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T03:14:45+08:00",
-      "observed_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78"
+      "observed_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
+      "preliminary_review": {
+        "status": "interface_findings_pending_resolution",
+        "source_freeze_commit": "8ff3400b0f8669fb80dc981c805e77488836fba1",
+        "source_sha256": "3ac18e29774aaa9f2eeecb593f2a8e8233d864b0a69cdd6156520fee640d5984",
+        "reviewer": "planagent",
+        "calls": 2,
+        "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
+        "full_handoff_received": false
+      }
     },
     {
       "id": "AL19",
@@ -3790,7 +3799,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T03:29:27+08:00",
+  "updated_at": "2026-09-19T03:33:55+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4456,19 +4465,20 @@
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "inProgress",
       "last_observed_thread_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
-      "last_observed_at": "2026-09-19T03:24:26+08:00",
-      "startup_evidence": "wait_threads active plus explicit AL18 work-order and rational-input acknowledgement; no duplicate dispatch."
+      "last_observed_at": "2026-09-19T03:33:55+08:00",
+      "startup_evidence": "wait_threads active plus explicit AL18 work-order and rational-input acknowledgement; no duplicate dispatch.",
+      "preliminary_review_findings": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:25",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:26",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T03:29:27+08:00",
+    "last_coordinator_activity_at": "2026-09-19T03:33:55+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
@@ -4846,7 +4856,7 @@
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:22"
       }
     ],
-    "last_substantive_review": "../reviews/AL22_PUBLIC_PROBE_METADATA_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4923,14 +4933,13 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL22"
+        "AL18"
       ],
       "executor_role": "planagent",
-      "status": "completed_static_metadata_audit",
-      "started_at": "2026-09-19T03:24:26+08:00",
+      "status": "completed_preliminary_independent_interface_review",
       "work_area": "research-plan/reviews",
-      "scope": "Official small metadata only; no model weights or execution",
-      "completed_at": "2026-09-19T03:29:27+08:00"
+      "completed_at": "2026-09-19T03:33:55+08:00",
+      "scope": "Reviewer only; implementation ownership remains researchagent_next,2 targeted API calls on frozen module"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4947,7 +4956,7 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T03:29:27+08:00",
+    "last_local_review_at": "2026-09-19T03:33:55+08:00",
     "prepared_independent_task_ids": [
       "AL20"
     ],
@@ -4991,6 +5000,17 @@
         "scope": "Correct AEROBLADE deeper-reconstruction scope; add 2605.23449 order-swap prior and AL13/native-label contract. No new work package or experiment.",
         "acknowledged_at": "2026-09-19T02:35:46+08:00",
         "evidence": "../../research-runs/algorithm_search_20260918/AL12_handoff.md"
+      },
+      {
+        "id": "al18-interface-review-20260919",
+        "task_id": "AL18",
+        "dispatch_id": "cc-al18-numerical-contract-20260919",
+        "target_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "sent_at": "2026-09-19T03:33:55+08:00",
+        "status": "sent_not_yet_acknowledged",
+        "scope": "Within current package: preserve original results, resolve2 targeted optional-output/schema validation findings in separately versioned interface",
+        "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
+        "evidence_sha256": "8e2bec74ec47ddce3de2437c5b52ddff3a9cffb882961f057f2ee1567ddd3604"
       }
     ]
   },
@@ -5089,6 +5109,26 @@
       "scope": "Input-type validation only; frozen numerical inputs/results unchanged",
       "evidence": "../reviews/AL01_REVIEW_EVIDENCE_20260919.json",
       "next_action": "Versioned fix before reusing the API with arbitrary NumPy scalar inputs; do not edit frozen v2 or rerun old scientific cases."
+    },
+    {
+      "id": "AL18-N5-INVALID-FIRST",
+      "task_id": "AL18",
+      "status": "open",
+      "reported_at": "2026-09-19T03:33:55+08:00",
+      "title": "N5 optional nonfinite quotient is checked after unknown-bound return",
+      "scope": "Targeted public input contract; original147 fixed results preserved, not a mechanism failure",
+      "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
+      "next_action": "Research executor handles within same package in versioned module/receipt; no duplicate dispatch or old rerun"
+    },
+    {
+      "id": "AL18-N2-EXPLICIT-K",
+      "task_id": "AL18",
+      "status": "open",
+      "reported_at": "2026-09-19T03:33:55+08:00",
+      "title": "N2 silently ignores supplied final-K observation; requires schema rejection or explicit support",
+      "scope": "Targeted public input contract; original147 fixed results preserved, not a mechanism failure",
+      "evidence": "../reviews/AL18_PRELIMINARY_INTERFACE_FINDINGS_20260919.json",
+      "next_action": "Research executor handles within same package in versioned module/receipt; no duplicate dispatch or old rerun"
     }
   ],
   "budget_readonly_checks": [
