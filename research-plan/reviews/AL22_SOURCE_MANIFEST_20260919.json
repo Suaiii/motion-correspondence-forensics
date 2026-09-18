@@ -1,0 +1,172 @@
+{
+  "task_id": "AL22",
+  "retrieved_at": "2026-09-18T19:25:08.301293+00:00",
+  "metadata_budget_bytes": 262144,
+  "total_downloaded_metadata_bytes": 64078,
+  "repositories": [
+    {
+      "label": "cog",
+      "repo": "zai-org/CogVideoX-2b",
+      "requested_repo": "zai-org/CogVideoX-2b",
+      "revision": "1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01",
+      "last_modified": "2024-11-23T06:34:46.000Z",
+      "private": false,
+      "gated": false,
+      "license_tag": "apache-2.0",
+      "relevant_files": [
+        {
+          "rfilename": "LICENSE",
+          "blobId": "f98e413cf55b56dbabdf693559055d79800f63c9",
+          "size": 11360
+        },
+        {
+          "rfilename": "README.md",
+          "blobId": "9a133026cd6da3606e7027799a16b48464bc4da3",
+          "size": 16479
+        },
+        {
+          "rfilename": "model_index.json",
+          "blobId": "fb567b55facec3424156baa3ae3e1968cc4526b9",
+          "size": 411
+        },
+        {
+          "rfilename": "vae/config.json",
+          "blobId": "c402176986b75b2f31dd0837ea8a412f52a57eca",
+          "size": 879
+        },
+        {
+          "rfilename": "vae/diffusion_pytorch_model.safetensors",
+          "blobId": "bb977c24bd502a1b34c74b78bc8c524fcc0833aa",
+          "size": 862388596,
+          "lfs": {
+            "sha256": "a410e48d988c8224cef392b68db0654485cfd41f345f4a3a81d3e6b765bb995e",
+            "size": 862388596,
+            "pointerSize": 134
+          }
+        }
+      ]
+    },
+    {
+      "label": "wan",
+      "repo": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+      "requested_repo": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+      "revision": "0fad780a534b6463e45facd96134c9f345acfa5b",
+      "last_modified": "2025-04-04T02:28:36.000Z",
+      "private": false,
+      "gated": false,
+      "license_tag": "apache-2.0",
+      "relevant_files": [
+        {
+          "rfilename": "README.md",
+          "blobId": "2f8fe9a78013851be7e69056de08f3dc9c2a4607",
+          "size": 18116
+        },
+        {
+          "rfilename": "model_index.json",
+          "blobId": "5939d0bf16bfab26f95f149dc29abf898ed5056c",
+          "size": 400
+        },
+        {
+          "rfilename": "vae/config.json",
+          "blobId": "fe988ee53511225fb2fd0a01004d6e19524df75f",
+          "size": 724
+        },
+        {
+          "rfilename": "vae/diffusion_pytorch_model.safetensors",
+          "blobId": "af13d1f7b1bc28a9f1e9cd85cac5da951aead1b3",
+          "size": 507591892,
+          "lfs": {
+            "sha256": "d6e524b3fffede1787a74e81b30976dce5400c4439ba64222168e607ed19e793",
+            "size": 507591892,
+            "pointerSize": 134
+          }
+        }
+      ]
+    }
+  ],
+  "files": [
+    {
+      "url": "https://huggingface.co/api/models/zai-org/CogVideoX-2b?blobs=true",
+      "resolved_url": "https://huggingface.co/api/models/zai-org/CogVideoX-2b?blobs=true",
+      "bytes": 6232,
+      "sha256": "cbf23b4aaff3cff22211fa907f66e62972df1c63dd937e5207ad04e31d2497a3",
+      "local_path": "research-plan/reviews/AL22_metadata/cog_model_api.json",
+      "role": "model_API_metadata"
+    },
+    {
+      "url": "https://huggingface.co/api/models/Wan-AI/Wan2.1-T2V-1.3B-Diffusers?blobs=true",
+      "resolved_url": "https://huggingface.co/api/models/Wan-AI/Wan2.1-T2V-1.3B-Diffusers?blobs=true",
+      "bytes": 9477,
+      "sha256": "ca1f1223f70b4263201c2f811d14e0f4ad111c36c8feb7a1770647520613a669",
+      "local_path": "research-plan/reviews/AL22_metadata/wan_model_api.json",
+      "role": "model_API_metadata"
+    },
+    {
+      "url": "https://huggingface.co/zai-org/CogVideoX-2b/resolve/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/vae/config.json",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/zai-org/CogVideoX-2b/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/vae%2Fconfig.json?%2Fzai-org%2FCogVideoX-2b%2Fresolve%2F1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01%2Fvae%2Fconfig.json=&etag=%22c402176986b75b2f31dd0837ea8a412f52a57eca%22",
+      "bytes": 879,
+      "sha256": "fb212585242726f5d963271357731c78481da25cc29bdd5c2b9cb058c43f8688",
+      "verified_git_blob_sha1": "c402176986b75b2f31dd0837ea8a412f52a57eca",
+      "local_path": "research-plan/reviews/AL22_metadata/cog_vae_config.json",
+      "role": "pinned_text_metadata"
+    },
+    {
+      "url": "https://huggingface.co/zai-org/CogVideoX-2b/resolve/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/model_index.json",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/zai-org/CogVideoX-2b/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/model_index.json?%2Fzai-org%2FCogVideoX-2b%2Fresolve%2F1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01%2Fmodel_index.json=&etag=%22fb567b55facec3424156baa3ae3e1968cc4526b9%22",
+      "bytes": 411,
+      "sha256": "c1a0f395ec8dec5411275a71a72ef6bae3b6326277e8a89a0e3791de6c2d3f0d",
+      "verified_git_blob_sha1": "fb567b55facec3424156baa3ae3e1968cc4526b9",
+      "local_path": "research-plan/reviews/AL22_metadata/cog_model_index.json",
+      "role": "pinned_text_metadata"
+    },
+    {
+      "url": "https://huggingface.co/zai-org/CogVideoX-2b/resolve/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/README.md",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/zai-org/CogVideoX-2b/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/README.md?%2Fzai-org%2FCogVideoX-2b%2Fresolve%2F1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01%2FREADME.md=&etag=%229a133026cd6da3606e7027799a16b48464bc4da3%22",
+      "bytes": 16479,
+      "sha256": "63167d42d73fd434096761b693142a69a96275b367c6fda32347d4b9dbce262d",
+      "verified_git_blob_sha1": "9a133026cd6da3606e7027799a16b48464bc4da3",
+      "local_path": "research-plan/reviews/AL22_metadata/cog_README.md",
+      "role": "pinned_text_metadata"
+    },
+    {
+      "url": "https://huggingface.co/zai-org/CogVideoX-2b/resolve/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/LICENSE",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/zai-org/CogVideoX-2b/1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01/LICENSE?%2Fzai-org%2FCogVideoX-2b%2Fresolve%2F1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01%2FLICENSE=&etag=%22f98e413cf55b56dbabdf693559055d79800f63c9%22",
+      "bytes": 11360,
+      "sha256": "4c3f6aeb71e12415a59117dfd35cfc177514424f0356c81798fde1a239d0b6a8",
+      "verified_git_blob_sha1": "f98e413cf55b56dbabdf693559055d79800f63c9",
+      "local_path": "research-plan/reviews/AL22_metadata/cog_LICENSE",
+      "role": "pinned_text_metadata"
+    },
+    {
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/resolve/0fad780a534b6463e45facd96134c9f345acfa5b/vae/config.json",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/0fad780a534b6463e45facd96134c9f345acfa5b/vae%2Fconfig.json?%2FWan-AI%2FWan2.1-T2V-1.3B-Diffusers%2Fresolve%2F0fad780a534b6463e45facd96134c9f345acfa5b%2Fvae%2Fconfig.json=&etag=%22fe988ee53511225fb2fd0a01004d6e19524df75f%22",
+      "bytes": 724,
+      "sha256": "f0c1cc1d7decb5badc384f54691746a27a9aeff49f7ebca974e583389342d527",
+      "verified_git_blob_sha1": "fe988ee53511225fb2fd0a01004d6e19524df75f",
+      "local_path": "research-plan/reviews/AL22_metadata/wan_vae_config.json",
+      "role": "pinned_text_metadata"
+    },
+    {
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/resolve/0fad780a534b6463e45facd96134c9f345acfa5b/model_index.json",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/0fad780a534b6463e45facd96134c9f345acfa5b/model_index.json?%2FWan-AI%2FWan2.1-T2V-1.3B-Diffusers%2Fresolve%2F0fad780a534b6463e45facd96134c9f345acfa5b%2Fmodel_index.json=&etag=%225939d0bf16bfab26f95f149dc29abf898ed5056c%22",
+      "bytes": 400,
+      "sha256": "b8b28e022329acf975e027579a1d2dc3de44dba28f4c909b98a880fbf5b0de7d",
+      "verified_git_blob_sha1": "5939d0bf16bfab26f95f149dc29abf898ed5056c",
+      "local_path": "research-plan/reviews/AL22_metadata/wan_model_index.json",
+      "role": "pinned_text_metadata"
+    },
+    {
+      "url": "https://huggingface.co/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/resolve/0fad780a534b6463e45facd96134c9f345acfa5b/README.md",
+      "resolved_url": "https://huggingface.co/api/resolve-cache/models/Wan-AI/Wan2.1-T2V-1.3B-Diffusers/0fad780a534b6463e45facd96134c9f345acfa5b/README.md?%2FWan-AI%2FWan2.1-T2V-1.3B-Diffusers%2Fresolve%2F0fad780a534b6463e45facd96134c9f345acfa5b%2FREADME.md=&etag=%222f8fe9a78013851be7e69056de08f3dc9c2a4607%22",
+      "bytes": 18116,
+      "sha256": "816554be63d52aceaf640948c87ae0888887846ee2d2cdcc48231b3322089e37",
+      "verified_git_blob_sha1": "2f8fe9a78013851be7e69056de08f3dc9c2a4607",
+      "local_path": "research-plan/reviews/AL22_metadata/wan_README.md",
+      "role": "pinned_text_metadata"
+    }
+  ],
+  "weights_downloaded": false,
+  "modules_imported": false,
+  "server_access": false,
+  "pinned_text_retrieved_at": "2026-09-18T19:25:52.178006+00:00"
+}

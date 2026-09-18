@@ -1,0 +1,58 @@
+{
+  "task_id": "AL22",
+  "SDK_commit": "a3e0b8ec235c27a6c17a21976daf7fd32d819d05",
+  "configs": [
+    {
+      "label": "cog",
+      "class_name": "AutoencoderKLCogVideoX",
+      "explicit_config_keys": 21,
+      "different_or_unknown_config_keys": {},
+      "fields_missing_in_config_using_pinned_SDK_defaults": {},
+      "config_sha256": "fb212585242726f5d963271357731c78481da25cc29bdd5c2b9cb058c43f8688",
+      "source_sha256": "25631b4e03f2b0aa09810f31b6b0ddbeecea06f602ab6c467313595d93a5ccdc",
+      "scope": "Literal __init__ defaults versus config text only; no model loader or module imported"
+    },
+    {
+      "label": "wan",
+      "class_name": "AutoencoderKLWan",
+      "explicit_config_keys": 9,
+      "different_or_unknown_config_keys": {},
+      "fields_missing_in_config_using_pinned_SDK_defaults": {
+        "decoder_base_dim": null,
+        "is_residual": false,
+        "in_channels": 3,
+        "out_channels": 3,
+        "patch_size": null,
+        "scale_factor_temporal": 4,
+        "scale_factor_spatial": 8
+      },
+      "config_sha256": "f0c1cc1d7decb5badc384f54691746a27a9aeff49f7ebca974e583389342d527",
+      "source_sha256": "a38de0c53adcb81887a0b48d44e3fb59737d7b1e4779a666febe83be666e8fa8",
+      "scope": "Literal __init__ defaults versus config text only; no model loader or module imported"
+    }
+  ],
+  "remote_weight_metadata": [
+    {
+      "repo": "zai-org/CogVideoX-2b",
+      "revision": "1137dacfc2c9c012bed6a0793f4ecf2ca8e7ba01",
+      "file": "vae/diffusion_pytorch_model.safetensors",
+      "remote_declared_sha256": "a410e48d988c8224cef392b68db0654485cfd41f345f4a3a81d3e6b765bb995e",
+      "remote_declared_bytes": 862388596,
+      "downloaded": false,
+      "local_weight_bytes_verified": false
+    },
+    {
+      "repo": "Wan-AI/Wan2.1-T2V-1.3B-Diffusers",
+      "revision": "0fad780a534b6463e45facd96134c9f345acfa5b",
+      "file": "vae/diffusion_pytorch_model.safetensors",
+      "remote_declared_sha256": "d6e524b3fffede1787a74e81b30976dce5400c4439ba64222168e607ed19e793",
+      "remote_declared_bytes": 507591892,
+      "downloaded": false,
+      "local_weight_bytes_verified": false
+    }
+  ],
+  "remote_declared_weight_bytes_total": 1369980488,
+  "weights_downloaded": false,
+  "model_loading_tested": false,
+  "probe_bank_selected": false
+}

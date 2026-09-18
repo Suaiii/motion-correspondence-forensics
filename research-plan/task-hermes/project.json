@@ -2327,6 +2327,70 @@
         "research-plan/reviews/audit_al21_coverage_20260919.py": "71bbe70fef7d1ee48376de81db1196a32bb0c0496aa53f1ed909d1004ce2d43e"
       },
       "independent_scientific_review": "pending; self-derived protocol mathematics, no formal OR1 efficacy result"
+    },
+    {
+      "id": "AL22",
+      "milestone": "M2",
+      "title": "公开VAE配置与严格未见解码器边界的静态审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL17"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL17"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "public_probe_metadata_and_holdout_audit",
+      "hypothesis": "公开probe可与留出生成器共享解码器或其家族；同配置不证明权重相同，必须按层级绑定版本与未见定义。",
+      "work": [
+        "只读官方VAE配置/模型卡/许可小文本并固定revision/hash",
+        "核对与AL17默认配置的差异和仍待验证项目",
+        "审查选作probe时对严格decoder留出的影响，不自动选择bank"
+      ],
+      "acceptance": [
+        "元数据合计<=256KiB，无权重/媒体/模型/服务器/GPU",
+        "配置/组件/权重/家族层级分开，不冒充实际运行",
+        "提出后续绑定条件，不改变最终集或资源门槛"
+      ],
+      "artifacts": [
+        "../reviews/AL22_PUBLIC_PROBE_METADATA_REVIEW_20260919.md",
+        "../reviews/AL22_SOURCE_MANIFEST_20260919.json",
+        "../reviews/AL22_CONFIG_COMPARISON_20260919.json"
+      ],
+      "work_order": "../AL22_PUBLIC_PROBE_METADATA_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "started_at": "2026-09-19T03:24:26+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "hypothesis_result": "identity_hierarchy_required_specific_holdout_overlap_not_verified",
+      "model_execution_authorized": false,
+      "completed_at": "2026-09-19T03:29:27+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Official pinned text metadata and identity-scope audit only; no checkpoint payload or runtime verification",
+      "review": "../reviews/AL22_PUBLIC_PROBE_METADATA_REVIEW_20260919.md",
+      "metadata_downloaded_bytes": 64078,
+      "metadata_files": 9,
+      "probe_bank_selected": false,
+      "remote_weight_metadata_available": true,
+      "actual_weight_bytes_verified": false,
+      "SDK_model_compatibility_tested": false,
+      "next_action": "Jointly bind probe bank and strict decoder holdouts before any real admission; AL20 compact baseline remains prepared.",
+      "artifact_sha256": "1555999fc04c44650e353eaf50f07371fc56e394df9aa0ab5f0616bf0c839092"
     }
   ],
   "storage_policy": {
@@ -3726,7 +3790,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T03:21:50+08:00",
+  "updated_at": "2026-09-19T03:29:27+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4392,19 +4456,19 @@
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "inProgress",
       "last_observed_thread_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
-      "last_observed_at": "2026-09-19T03:21:50+08:00",
+      "last_observed_at": "2026-09-19T03:24:26+08:00",
       "startup_evidence": "wait_threads active plus explicit AL18 work-order and rational-input acknowledgement; no duplicate dispatch."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:24",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:25",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T03:21:50+08:00",
+    "last_coordinator_activity_at": "2026-09-19T03:29:27+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
@@ -4782,7 +4846,7 @@
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:22"
       }
     ],
-    "last_substantive_review": "../reviews/AL21_COVERAGE_EVALUATION_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL22_PUBLIC_PROBE_METADATA_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4859,14 +4923,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL21"
+        "AL22"
       ],
       "executor_role": "planagent",
-      "status": "completed_coverage_review",
+      "status": "completed_static_metadata_audit",
+      "started_at": "2026-09-19T03:24:26+08:00",
       "work_area": "research-plan/reviews",
-      "started_at": "2026-09-19T03:17:18+08:00",
-      "scope": "Fixed synthetic pair-enumeration counterexample and evaluation contract; no fitting, media, model, server or GPU",
-      "completed_at": "2026-09-19T03:21:50+08:00"
+      "scope": "Official small metadata only; no model weights or execution",
+      "completed_at": "2026-09-19T03:29:27+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4883,7 +4947,7 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T03:21:50+08:00",
+    "last_local_review_at": "2026-09-19T03:29:27+08:00",
     "prepared_independent_task_ids": [
       "AL20"
     ],
@@ -5009,7 +5073,11 @@
       "compact_baseline_task": "AL20",
       "coverage_review_task": "AL21",
       "coverage_evaluation_review_task": "AL21",
-      "full_population_rejection_or_fallback_policy": "not_yet_frozen; accepted-only gains cannot substitute for complete-target benchmark"
+      "full_population_rejection_or_fallback_policy": "not_yet_frozen; accepted-only gains cannot substitute for complete-target benchmark",
+      "public_probe_metadata_task": "AL22",
+      "public_probe_pair_selection": "not_selected",
+      "public_weight_identity_status": "remote LFS expected digests recorded; no weight payload locally/server verified",
+      "strict_decoder_holdout_issue": "Probe/production decoder component overlap must be audited; unseen detector-training generator is insufficient"
     }
   },
   "open_review_issues": [
