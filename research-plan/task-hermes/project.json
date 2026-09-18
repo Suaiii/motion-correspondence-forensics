@@ -1065,8 +1065,8 @@
         "RS01",
         "DX03"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "candidate_math_and_toy_falsification",
       "hypothesis": "联合边际可实现性可能分开软对应歧义与真正互不兼容的对应，但须区别已有MM-OT/同步目标。",
       "work": [
@@ -1082,11 +1082,14 @@
       ],
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL01_design.md",
-        "../../research-runs/algorithm_search_20260918/AL01_evidence.json"
+        "../../research-runs/algorithm_search_20260918/AL01_evidence.json",
+        "../../research-runs/algorithm_search_20260918/AL01_normalization_recovery.json",
+        "../reviews/AL01_REVIEW_20260919.md",
+        "../reviews/AL01_REVIEW_EVIDENCE_20260919.json"
       ],
       "due_at": "2026-09-19T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "在新版本中补正温度/有限值前提与容差说明，保留原参考；补简单循环/熵对照及条件边界后交叉复核。",
+      "next_action": "由AL06比较一般小型Q的经典投影证书；不重复已归档解析例，AL05后续作方法取舍。",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1106,7 +1109,7 @@
         "../reviews/AL03_joint_math_evidence_20260918.json",
         "../reviews/AL03_PRIOR_SCREEN_20260918.md"
       ],
-      "review_note": "Restricted structural distinction and static-kernel zero-defect construction proposed and numerically checked; novelty, robustness and efficacy not established.",
+      "review_note": "14 artifacts verified; 29 primal/dual certificates and 12 normalization KKT relations recomputed. Initial failures preserved. NumPy Boolean temperature type-contract gap remains open; float tau=.1 archived results unaffected.",
       "review_issues": [
         "symmetric_kernel_coupling requires positive finite tau validation",
         "Input/LP tolerance gap must stay explicit",
@@ -1115,7 +1118,26 @@
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T00:39:55+08:00",
-      "observed_turn_id": "01a0b55d-90b4-7603-b50e-e1862e7874d7"
+      "observed_turn_id": "01a0b55d-90b4-7603-b50e-e1862e7874d7",
+      "completed_at": "2026-09-19T01:00:26+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Named-summary distinctions, block-lift equivalence and saved numerical certificates; no innovation or real-detection acceptance",
+      "software_contract_status": "partial_known_numpy_bool_type_gap",
+      "open_review_issue_ids": [
+        "AL01-NUMPY-BOOL"
+      ],
+      "source_commits": [
+        "5689d3e",
+        "81e7087",
+        "64325e8",
+        "9c594b5"
+      ],
+      "integration_commits": [
+        "882457a",
+        "202d656",
+        "0d26f7f",
+        "a305413"
+      ]
     },
     {
       "id": "AL02",
@@ -1354,7 +1376,7 @@
       "requires_pass": [
         "AL03"
       ],
-      "status": "ready",
+      "status": "running",
       "gate_result": "not_evaluated",
       "gate_scope": "classical_certificate_baseline_and_failure_analysis",
       "hypothesis": "均匀质量下二值粗化可给出DJ的廉价有效下界，但可能遗漏不兼容输入，且投影循环约束属于明确既有方法。",
@@ -1389,8 +1411,58 @@
       },
       "hypothesis_result": "not_evaluated",
       "prepared_at": "2026-09-19T00:50:13+08:00",
-      "dispatch_status": "not_sent",
-      "independent_of_current_AL01": true
+      "dispatch_status": "running_verified",
+      "independent_of_current_AL01": true,
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T01:01:40+08:00",
+      "observed_turn_id": "01a0b576-58eb-7563-b28a-75526b50fd38"
+    },
+    {
+      "id": "AL07",
+      "milestone": "M2",
+      "title": "可见几何与运动代价的最小信息审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL03"
+      ],
+      "requires_pass": [
+        "AL03"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "algorithm_information_theory_review",
+      "hypothesis": "固定完整两两边际时二次运动代价可能完全退化为已知两两项，非二次轨迹事件可能仍缺实际联合观测，须先审查再设计新机制。",
+      "work": [
+        "一般时间间隔下展开二次速度变化代价，判定联合优化是否存在额外自由度",
+        "核验固定同Q同坐标的两个Gamma在预定非二次事件上的可识别性",
+        "列出必须新增的真实可见输入与公平对照，仅在条件明确时提出下一可否证假设"
+      ],
+      "acceptance": [
+        "推导给出系数、量纲、合法联合见证和固定阈值，不后验换例",
+        "区分观察到的轨迹与在可行集内选出的先验最优轨迹",
+        "数学/有限算术不冒充真实生成机制或新颖性；不触发付费实验"
+      ],
+      "artifacts": [
+        "../reviews/AL07_GEOMETRY_REVIEW_20260919.md"
+      ],
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "plan_version": "cvpr27-20260918-v1.4",
+      "next_action": "planagent按AL07_GEOMETRY_INFORMATION_20260919.md完成独立数学审查，可与AL06并行。",
+      "work_order": "../AL07_GEOMETRY_INFORMATION_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false
+      },
+      "hypothesis_result": "not_evaluated",
+      "prepared_at": "2026-09-19T01:00:26+08:00",
+      "independent_of_AL06": true
     }
   ],
   "storage_policy": {
@@ -2790,7 +2862,7 @@
     }
   },
   "plan_version": "cvpr27-20260918-v1.4",
-  "updated_at": "2026-09-19T00:50:13+08:00",
+  "updated_at": "2026-09-19T01:01:40+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -2822,7 +2894,7 @@
       "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
       "creation_requested_at": "2026-09-19T00:12:39+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "branch": "codex/al04-fixed-protocol",
+      "branch": "codex/al01-validated-joint",
       "startup_verified_at": "2026-09-19T00:20:04+08:00",
       "plan_version_read": "cvpr27-20260918-v1.4",
       "mode": "primary_research_session"
@@ -2848,7 +2920,7 @@
       "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
       "creation_requested_at": "2026-09-19T00:12:39+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "branch": "codex/al04-fixed-protocol",
+      "branch": "codex/al01-validated-joint",
       "startup_verified_at": "2026-09-19T00:20:04+08:00",
       "plan_version_read": "cvpr27-20260918-v1.4",
       "role_alias_of": "researchagent"
@@ -3382,30 +3454,32 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-new-session-al01-complete-20260919",
+      "id": "cc-al06-projected-certificates-20260919",
       "task_ids": [
-        "AL01"
+        "AL06"
       ],
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
       "status": "running",
-      "prepared_at": "2026-09-19T00:33:22+08:00",
+      "prepared_at": "2026-09-19T01:00:26+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "scope": "Versioned positive-temperature/input validation repair and missing simple controls for H-J; no change to archived reference or real/GPU experiments.",
-      "readiness_basis": "New task explicitly delivered AL04 with clean worktree and no remaining processes.",
-      "sent_at": "2026-09-19T00:33:23+08:00",
-      "sent_at_source": "recorded_after_successful_send_tool_response",
+      "work_order": "../AL06_PROJECTED_CERTIFICATES_20260919.md",
+      "work_order_sha256": "490252a10e89a1cd054d4e3dffdc7e0f6f10cf5cbb62c12fe707e922516600a2",
+      "scope": "Classical balanced-binary projection lower-bound comparison on at most24 newly frozen small Q inputs; no old-case tuning, server, media, backbone or GPU.",
+      "readiness_basis": "Actual AL01 handoff complete/no processes plus wait_threads idle/completed cursor :5; AL01 archived scoped review completed.",
+      "plan_version": "cvpr27-20260918-v1.4",
+      "sent_at": "2026-09-19T01:01:05+08:00",
+      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
       "last_observed_status": "inProgress",
-      "last_observed_thread_turn_id": "01a0b55d-90b4-7603-b50e-e1862e7874d7",
-      "last_observed_at": "2026-09-19T00:39:55+08:00",
-      "duplicate_dispatch_suppressed": true,
-      "startup_evidence": "wait_threads confirmed active turn and AL01-specific assistant progress after the successful dispatch."
+      "last_observed_thread_turn_id": "01a0b576-58eb-7563-b28a-75526b50fd38",
+      "last_observed_at": "2026-09-19T01:01:40+08:00",
+      "duplicate_dispatch_suppressed": true
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:3",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:6",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
@@ -3633,9 +3707,39 @@
           "07c7089",
           "1675ab6"
         ]
+      },
+      {
+        "id": "cc-new-session-al01-complete-20260919",
+        "task_ids": [
+          "AL01"
+        ],
+        "executor_role": "researchagent_next",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "host_id": "local",
+        "status": "completed_scoped_review",
+        "prepared_at": "2026-09-19T00:33:22+08:00",
+        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+        "scope": "Versioned positive-temperature/input validation repair and missing simple controls for H-J; no change to archived reference or real/GPU experiments.",
+        "readiness_basis": "New task explicitly delivered AL04 with clean worktree and no remaining processes.",
+        "sent_at": "2026-09-19T00:33:23+08:00",
+        "sent_at_source": "recorded_after_successful_send_tool_response",
+        "last_observed_status": "completed",
+        "last_observed_thread_turn_id": "01a0b55d-90b4-7603-b50e-e1862e7874d7",
+        "last_observed_at": "2026-09-19T00:39:55+08:00",
+        "duplicate_dispatch_suppressed": true,
+        "startup_evidence": "wait_threads confirmed active turn and AL01-specific assistant progress after the successful dispatch.",
+        "completed_at": "2026-09-19T01:00:26+08:00",
+        "review": "../reviews/AL01_REVIEW_20260919.md",
+        "source_commits": [
+          "5689d3e",
+          "81e7087",
+          "64325e8",
+          "9c594b5"
+        ],
+        "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:5"
       }
     ],
-    "last_substantive_review": "../reviews/AL04_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL01_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -3736,14 +3840,14 @@
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T00:50:13+08:00",
     "prepared_independent_task_ids": [
-      "AL06"
+      "AL07"
     ],
     "active_and_prepared_work": {
       "running": [
-        "AL01"
+        "AL06"
       ],
       "prepared_independent": [
-        "AL06"
+        "AL07"
       ],
       "downstream_decision": [
         "AL05"
@@ -3810,5 +3914,16 @@
       "metadata_diagnostic_accepted_at": "2026-09-18T01:19:32+08:00",
       "native_integer_pts_verified": false
     }
-  }
+  },
+  "open_review_issues": [
+    {
+      "id": "AL01-NUMPY-BOOL",
+      "task_id": "AL01",
+      "status": "open",
+      "reported_at": "2026-09-19T01:00:26+08:00",
+      "scope": "Input-type validation only; frozen numerical inputs/results unchanged",
+      "evidence": "../reviews/AL01_REVIEW_EVIDENCE_20260919.json",
+      "next_action": "Versioned fix before reusing the API with arbitrary NumPy scalar inputs; do not edit frozen v2 or rerun old scientific cases."
+    }
+  ]
 }
