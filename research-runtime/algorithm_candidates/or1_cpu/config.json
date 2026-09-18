@@ -1,0 +1,31 @@
+{
+  "dispatch_id": "cc-al15-or1-cpu-20260919",
+  "task_id": "AL15",
+  "plan_version": "cvpr27-20260919-v1.5",
+  "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+  "draft_commit": "a4cfdeb",
+  "draft_sha256": "91e856957b34beb14c3f098ce7f078594cb0529268367ec120f3eb1da2f78292",
+  "current_authorization": "AL15_OR1_CPU_WORK_ORDER_20260919.md and explicit cc-al15-or1-cpu-20260919 dispatch; archived AL12 draft stays unchanged",
+  "threads": 2,
+  "steps": [0.25, 0.125, 0.0625],
+  "primary_step": 0.125,
+  "eta_mean": 1e-12,
+  "tolerance": 1e-10,
+  "maximum_dimension": 8,
+  "maximum_array_bytes": 1048576,
+  "variants": [
+    {"id":"development_base", "dimension":"base", "permutation":"identity"},
+    {"id":"check_embed4", "dimension":4, "permutation":[0,1,2,3]},
+    {"id":"check_permute4", "dimension":4, "permutation":[2,0,3,1]},
+    {"id":"check_embed8", "dimension":8, "permutation":[0,1,2,3,4,5,6,7]},
+    {"id":"check_permute8", "dimension":8, "permutation":[7,2,5,0,6,1,4,3]}
+  ],
+  "complement_rule":"Identity reconstruction on padded coordinates; zero initial padded vector",
+  "primary_ratio":"mean(K^2)/(mean(v_a^2)+mean(v_b^2)+eta_mean)",
+  "diagnostic_ratio":"sum(K^2)/(sum(v_a^2)+sum(v_b^2)+eta_sum); equivalent eta_sum=dimension*eta_mean",
+  "scaled_eta_diagnostic":"Only diagnostic: eta_mean=(base_dimension/embedded_dimension)*1e-12 preserves base mean-ratio under zero padding",
+  "extra_repeat_diagnostics":"Two calls each for normal A, normal B, and a deterministic alternating mock; six calls separate from core",
+  "real_filters":"pending",
+  "training_matching_and_classifier":"pending_not_fitted",
+  "video_wrapper":"pending"
+}
