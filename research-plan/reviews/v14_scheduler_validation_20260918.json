@@ -1,0 +1,13 @@
+{
+  "checked_at": "2026-09-18T23:49:56.107327+08:00",
+  "plan_version": "cvpr27-20260918-v1.4",
+  "tasks_valid": 34,
+  "algorithm_queue_survives_RS00_block": true,
+  "failed_candidate_tasks_allow_selection_review_in_memory_only": true,
+  "failed_selection_blocks_paid_profile_in_memory_only": true,
+  "simulation_never_written_to_project": true,
+  "local_links_valid": true,
+  "ten_minute_heartbeat_active": true,
+  "legacy_automation_paused": true,
+  "work_plan_sha256": "6d5e9f7a83010b9af0ab411d9d7cae8f3aa1b487e4abbd609e166dd06c462d31"
+}

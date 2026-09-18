@@ -1,8 +1,8 @@
 # 共享计划与核验入口
 
 当前科学方案见[WORK_PLAN](WORK_PLAN.md)，任务状态见[project.json](task-hermes/project.json)。
-两个角色由根AGENTS.md显式路由；当前计划版本v1.3只更正时间证据来源和交付状态，
-不更改v1.2的C软件定义、实际采样规则或科学门槛。
+两个角色由根AGENTS.md显式路由。v1.4增加持续算法研究与双工作线，v1.3的时间来源
+勘误保留；不更改v1.2的C软件定义、冻结采样规则或正式科学门槛。
 
 ## 保持冻结字节
 
@@ -31,3 +31,14 @@ DX04原冻结分析计划和输入表仍在原路径，保持原字节；其历�
 
 计划端核验只证明给定文件和算术一致，不替代真实媒体校验、预算核对或独立科学复核。
 reminder_state.json仅为此任务的通知去重记录；新副本不能把它当成用户已经收到新通知。
+
+## v1.4结构研究
+
+H-J的小规模LP参考代码位于fallback-runtime/joint_marginal_reference.py，依赖已有
+NumPy与SciPy，只运行CPU合成数组。给定一个尚不存在的新输出路径即可复核：
+
+    python -X utf8 research-plan/fallback-runtime/joint_marginal_reference.py --output <new-receipt.json>
+
+原回执和适用条件见reviews/AL03_joint_math_evidence_20260918.json与
+reviews/AL03_PRIOR_SCREEN_20260918.md。程序对固定125个二元组合及30个静态/置换
+案例检查结构性质，不产生真实视频性能、创新性或论文录用结论。

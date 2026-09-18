@@ -1,0 +1,332 @@
+{
+  "candidate": "H-J",
+  "implementation": "CPU small LP reference",
+  "status": "pass_limited_structural_checks",
+  "observed_utc": "2026-09-18T15:39:47.929051+00:00",
+  "binary_grid_cases": 125,
+  "binary_formula_max_error": 0.0,
+  "examples": {
+    "compatible_ambiguous": {
+      "correlations": [
+        0.5,
+        0.5,
+        0.5
+      ],
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.009137183166849878,
+      "gamma": [
+        [
+          [
+            0.25,
+            0.125
+          ],
+          [
+            0.125,
+            0.0
+          ]
+        ],
+        [
+          [
+            0.125,
+            0.0
+          ],
+          [
+            0.0,
+            0.375
+          ]
+        ]
+      ],
+      "marginal_error": 0.0
+    },
+    "incompatible": {
+      "correlations": [
+        -0.5,
+        -0.5,
+        -0.5
+      ],
+      "joint_distance": 0.16666666666666666,
+      "multiplicative_js": 0.07336501588806302,
+      "gamma": [
+        [
+          [
+            0.0,
+            0.125
+          ],
+          [
+            0.125,
+            0.25
+          ]
+        ],
+        [
+          [
+            0.25,
+            0.125
+          ],
+          [
+            0.125,
+            0.0
+          ]
+        ]
+      ],
+      "marginal_error": 0.0
+    }
+  },
+  "static_and_permutation_cases": [
+    {
+      "seed": 17,
+      "m": 2,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00010823035116973604,
+      "single_marginal_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 17,
+      "m": 2,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00010823035116973604,
+      "single_marginal_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 17,
+      "m": 4,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0005912080556081326,
+      "single_marginal_error": 8.254508188088039e-14
+    },
+    {
+      "seed": 17,
+      "m": 4,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0005912080556081328,
+      "single_marginal_error": 4.490852134608758e-14
+    },
+    {
+      "seed": 17,
+      "m": 8,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00293181840037076,
+      "single_marginal_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 17,
+      "m": 8,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0029318184003707458,
+      "single_marginal_error": 1.899869150889799e-14
+    },
+    {
+      "seed": 29,
+      "m": 2,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 3.269863245103123e-05,
+      "single_marginal_error": 0.0
+    },
+    {
+      "seed": 29,
+      "m": 2,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 3.269863245103123e-05,
+      "single_marginal_error": 0.0
+    },
+    {
+      "seed": 29,
+      "m": 4,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0008633599490401669,
+      "single_marginal_error": 9.325873406851315e-15
+    },
+    {
+      "seed": 29,
+      "m": 4,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.000863359949040139,
+      "single_marginal_error": 9.547918011776346e-15
+    },
+    {
+      "seed": 29,
+      "m": 8,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00023418225276646787,
+      "single_marginal_error": 2.914335439641036e-15
+    },
+    {
+      "seed": 29,
+      "m": 8,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00023418225276646064,
+      "single_marginal_error": 3.7192471324942744e-15
+    },
+    {
+      "seed": 43,
+      "m": 2,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 2.3881027421547872e-05,
+      "single_marginal_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 43,
+      "m": 2,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 2.3881027421547872e-05,
+      "single_marginal_error": 1.1102230246251565e-16
+    },
+    {
+      "seed": 43,
+      "m": 4,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00021979695280671373,
+      "single_marginal_error": 1.1102230246251565e-15
+    },
+    {
+      "seed": 43,
+      "m": 4,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00021979695280665863,
+      "single_marginal_error": 1.2490009027033011e-15
+    },
+    {
+      "seed": 43,
+      "m": 8,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.00045612257671852666,
+      "single_marginal_error": 1.214306433183765e-14
+    },
+    {
+      "seed": 43,
+      "m": 8,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0004561225767185404,
+      "single_marginal_error": 6.342149028171207e-15
+    },
+    {
+      "seed": 59,
+      "m": 2,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 3.6669881987740853e-07,
+      "single_marginal_error": 0.0
+    },
+    {
+      "seed": 59,
+      "m": 2,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 3.6669881987740853e-07,
+      "single_marginal_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 59,
+      "m": 4,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 1.7205693302835327e-05,
+      "single_marginal_error": 7.216449660063518e-16
+    },
+    {
+      "seed": 59,
+      "m": 4,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 1.72056933028492e-05,
+      "single_marginal_error": 3.0531133177191805e-16
+    },
+    {
+      "seed": 59,
+      "m": 8,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0025332005321532566,
+      "single_marginal_error": 7.632783294297951e-16
+    },
+    {
+      "seed": 59,
+      "m": 8,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.002533200532153263,
+      "single_marginal_error": 2.0039525594484076e-14
+    },
+    {
+      "seed": 71,
+      "m": 2,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0006790034526803243,
+      "single_marginal_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 71,
+      "m": 2,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0006790034526803243,
+      "single_marginal_error": 5.551115123125783e-17
+    },
+    {
+      "seed": 71,
+      "m": 4,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 8.162804685867182e-05,
+      "single_marginal_error": 4.163336342344337e-16
+    },
+    {
+      "seed": 71,
+      "m": 4,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 8.162804685867182e-05,
+      "single_marginal_error": 6.938893903907228e-16
+    },
+    {
+      "seed": 71,
+      "m": 8,
+      "case": "static",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0015177251340056938,
+      "single_marginal_error": 9.539591339091658e-14
+    },
+    {
+      "seed": 71,
+      "m": 8,
+      "case": "consistent_permutation",
+      "joint_distance": 0.0,
+      "multiplicative_js": 0.0015177251340057149,
+      "single_marginal_error": 4.835021272242557e-14
+    }
+  ],
+  "max_numpy_constraint_matrix_bytes": 2162688,
+  "mismatched_mass_rejected": true,
+  "scipy_version": "1.17.1",
+  "numpy_version": "2.2.6",
+  "script_sha256": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b",
+  "elapsed_seconds": 0.5988107000002856,
+  "gpu_used": false,
+  "media_read": false,
+  "training_steps": 0,
+  "scientific_breakthrough": false,
+  "independent_review_completed": false,
+  "limitations": [
+    "Classical marginal compatibility foundation, not a novelty proof",
+    "Uniform complete support only; rejecting malformed mass is not occlusion robustness",
+    "No detector, real feature extraction, trained baseline or generalization evidence"
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "observed_utc": "2026-09-18T14:51:57.457358+00:00",
+  "hostname": "autodl-container-f8eb449d16-23ba9645",
+  "python_executable": "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+  "gpu": {
+    "returncode": 0,
+    "stdout": "NVIDIA GeForce RTX 4090 D, 24564, 595.71.05, 0, 1",
+    "stderr": ""
+  },
+  "gpu_processes": {
+    "returncode": 0,
+    "stdout": "",
+    "stderr": ""
+  },
+  "cpu_count_visible": 128,
+  "cgroup_quota": {
+    "/sys/fs/cgroup/cpu.max": "1600000 100000",
+    "/sys/fs/cgroup/memory.max": "66571993088"
+  },
+  "disk_bytes": {
+    "total": 53687091200,
+    "used": 39367872512,
+    "free": 14319218688
+  },
+  "project_root_exists": true,
+  "project_entries": [
+    "HDVG_14k_classes.txt",
+    "Pair1_labels.txt",
+    "Pair2_labels.txt",
+    "__pycache__",
+    "actual-lag-fe2ed86.tar",
+    "audit_pair2_origins.py",
+    "audit_source_lineage.py",
+    "cache",
+    "cached_dino_baseline.py",
+    "composability-core-v1.tar",
+    "composability-core-v2.tar",
+    "composability-core-v3.tar",
+    "composability-integration-v1.tar",
+    "cvpr27-server",
+    "data",
+    "environment",
+    "evaluate_pair2_frozen.py",
+    "existing-pts-round1.tar",
+    "incoming",
+    "metadata",
+    "models",
+    "paired_dino_baseline.py",
+    "paired_dino_baseline_run.py",
+    "rar5_index_probe.py",
+    "real_manifest.jsonl",
+    "releases",
+    "runs",
+    "sampling_consistency_pilot.py",
+    "stream_hdvg_prefix.py",
+    "time_matched_dino.py",
+    "verify_artifact_transfer.py",
+    "verify_cached_dino_baseline.py",
+    "verify_cached_dino_baseline_run.py",
+    "verify_pair2_transfer.py",
+    "verify_paired.py",
+    "verify_paired_time.py",
+    "verify_sampling_consistency.py"
+  ],
+  "required_paths": {
+    "data": true,
+    "cache": true,
+    "runs": true,
+    "releases": true,
+    "environment/venv/bin/python": true
+  },
+  "process_summary": {
+    "returncode": 0,
+    "stdout": "PID COMMAND         %CPU %MEM\n   882 supervisord      2.1  0.0\n   901 tensorboard      0.4  0.0\n  1629 sshd             0.4  0.0\n   903 jupyter-lab      0.3  0.0\n   902 autopanel        0.2  0.0\n     1 bash             0.0  0.0\n   897 sshd             0.0  0.0\n   906 proxy            0.0  0.0\n   907 proxy            0.0  0.0\n   972 server           0.0  0.0\n  1648 python           0.0  0.0\n  1655 ps               0.0  0.0",
+    "stderr": ""
+  },
+  "actions": "Read-only inventory; no experiment, installation, download, reboot or shutdown.",
+  "endpoint": {
+    "host": "connect.westb.seetacloud.com",
+    "port": 49714,
+    "user": "root"
+  },
+  "checked_by": "planagent",
+  "credentials_persisted": false,
+  "provider_billing_verified": false,
+  "new_paid_experiment_started": false,
+  "local_recorded_at": "2026-09-18T22:51:57.017835+08:00"
+}
