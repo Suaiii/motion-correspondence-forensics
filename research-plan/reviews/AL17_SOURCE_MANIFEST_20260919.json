@@ -1,0 +1,55 @@
+{
+  "task_id": "AL17",
+  "retrieved_at_utc": "2026-09-18T18:51:01.600083+00:00",
+  "repo": "huggingface/diffusers",
+  "commit": "a3e0b8ec235c27a6c17a21976daf7fd32d819d05",
+  "commit_date": "2026-09-18T12:06:16Z",
+  "files": [
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_cogvideox.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/a3e0b8ec235c27a6c17a21976daf7fd32d819d05/src/diffusers/models/autoencoders/autoencoder_kl_cogvideox.py",
+      "bytes": 60247,
+      "git_blob_sha1": "ed624dc9e62e11a3c0c4d5ad3f809cb2ae775181",
+      "sha256": "25631b4e03f2b0aa09810f31b6b0ddbeecea06f602ab6c467313595d93a5ccdc",
+      "local_path": "research-plan/reviews/AL17_sources/autoencoder_kl_cogvideox.py.txt"
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/autoencoder_kl_wan.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/a3e0b8ec235c27a6c17a21976daf7fd32d819d05/src/diffusers/models/autoencoders/autoencoder_kl_wan.py",
+      "bytes": 54261,
+      "git_blob_sha1": "de8a56edc20edccd9c8d64d8e7a8961cf7f4ea14",
+      "sha256": "a38de0c53adcb81887a0b48d44e3fb59737d7b1e4779a666febe83be666e8fa8",
+      "local_path": "research-plan/reviews/AL17_sources/autoencoder_kl_wan.py.txt"
+    },
+    {
+      "path": "src/diffusers/models/downsampling.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/a3e0b8ec235c27a6c17a21976daf7fd32d819d05/src/diffusers/models/downsampling.py",
+      "bytes": 15831,
+      "git_blob_sha1": "6ae1b647a1914ec5875bb3f48658847cedf67c92",
+      "sha256": "bce174aa8007b2c40787331e7f46b31eef1eab7785f16b4e54733553b3d14724",
+      "local_path": "research-plan/reviews/AL17_sources/downsampling.py.txt"
+    },
+    {
+      "path": "src/diffusers/models/upsampling.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/a3e0b8ec235c27a6c17a21976daf7fd32d819d05/src/diffusers/models/upsampling.py",
+      "bytes": 19568,
+      "git_blob_sha1": "36f22250a873634025f617bb86c1a956beb40995",
+      "sha256": "d6410c71fa01c5363c6130784a709eb13b5be7e6b401dba7fa930f59b5e5559d",
+      "local_path": "research-plan/reviews/AL17_sources/upsampling.py.txt"
+    },
+    {
+      "path": "src/diffusers/models/autoencoders/vae.py",
+      "url": "https://raw.githubusercontent.com/huggingface/diffusers/a3e0b8ec235c27a6c17a21976daf7fd32d819d05/src/diffusers/models/autoencoders/vae.py",
+      "bytes": 34045,
+      "git_blob_sha1": "4461d1540203d0d6634f450d601466b1631e528a",
+      "sha256": "59b51fdf2d951da45d697569271e0c99adf4a959ec0f91885f3d9314e925a12c",
+      "local_path": "research-plan/reviews/AL17_sources/vae.py.txt"
+    }
+  ],
+  "total_source_bytes": 183952,
+  "source_text_only": true,
+  "modules_imported": false,
+  "weights_downloaded": false,
+  "code_executed": false,
+  "additional_retrieved_at_utc": "2026-09-18T18:54:16.410265+00:00"
+}

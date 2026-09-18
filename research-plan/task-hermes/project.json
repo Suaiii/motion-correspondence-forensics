@@ -1909,8 +1909,8 @@
         "AL13",
         "AL14"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "software_algebra_and_mock_contract",
       "hypothesis": "OR1的有限顺序响应应满足声明的代数关系、交换不变量和同调用信息合同；失败必须保存而非当来源证据。",
       "work": [
@@ -1926,12 +1926,14 @@
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL15_report.md",
         "../../research-runs/algorithm_search_20260918/AL15_evidence.json",
-        "../../research-runs/algorithm_search_20260918/AL15_handoff.md"
+        "../../research-runs/algorithm_search_20260918/AL15_handoff.md",
+        "../reviews/AL15_REVIEW_20260919.md",
+        "../reviews/AL15_ARCHIVE_REVIEW_20260919.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
       "work_order": "../AL15_OR1_CPU_WORK_ORDER_20260919.md",
-      "next_action": "仅按本工作单及主DAG实际派发执行。",
+      "next_action": "AL18 numerical contract; real wrappers, training and scientific admission remain pending",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1944,15 +1946,27 @@
         "max_array_bytes": 1048576,
         "torch": false
       },
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported_in_frozen_vector_mock_scope",
       "prepared_at": "2026-09-19T02:35:46+08:00",
       "implementation_authorized": true,
       "scientific_innovation_gate_passed": false,
-      "dispatch_status": "running_verified",
+      "dispatch_status": "completed_scoped_review",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T02:38:25+08:00",
-      "observed_turn_id": "01a0b5cd-a00b-7280-9e0a-c7bcbe33b2fb"
+      "observed_turn_id": "01a0b5cd-a00b-7280-9e0a-c7bcbe33b2fb",
+      "completed_at": "2026-09-19T03:08:30+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL15_REVIEW_20260919.md",
+      "review_scope": "Source and exact archived trace review; not independent scientific replication",
+      "source_commits": [
+        "f897e0c",
+        "7f93f8c"
+      ],
+      "integration_commits": [
+        "c7e4742",
+        "e8c7385"
+      ]
     },
     {
       "id": "AL16",
@@ -2013,6 +2027,173 @@
       "actual_lipschitz_constants": "unknown",
       "independent_scientific_review": "pending; planagent-derived conditional bounds",
       "artifact_sha256": "d5502a3cf233c6948610c1b3d0ef38936d7bfd5b02fdb06fb7846f995ea29036"
+    },
+    {
+      "id": "AL17",
+      "milestone": "M2",
+      "title": "OR1公开探针接口的静态接入可行性审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL13",
+        "AL16"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL13",
+        "AL16"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "static_probe_interface_review",
+      "hypothesis": "公开VAE接口可能提供可绑定的等槽位重建probe，但必须核对编码/解码、latent缩放、时间长度及缓存，不能沿用不匹配的导出入口。",
+      "work": [
+        "只读检查官方CogVideoX/Wan VAE接口与最少必要固定源码文本",
+        "给出posterior mean、输入输出尺度、时间槽位/缓存及版本绑定清单",
+        "分开标记静态预期与未运行/未下载的权重和真实行为，不扩大GPU授权"
+      ],
+      "acceptance": [
+        "优先复用AL09已存源码，仅补必要官方资料，不克隆大仓库/下载模型",
+        "不导入Torch或执行模型；17帧仍须后续实际验证",
+        "不能用接口文档代替原生PTS、数据来源、预算或实际精度验收"
+      ],
+      "artifacts": [
+        "../reviews/AL17_PROBE_INTERFACE_REVIEW_20260919.md",
+        "../reviews/AL17_SOURCE_MANIFEST_20260919.json"
+      ],
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "next_action": "AL19 clamp/coordinate alternatives; checkpoints and actual wrapper remain unbound",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "hypothesis_result": "conditional_interface_path_identified_runtime_not_evaluated",
+      "started_at": "2026-09-19T02:49:27+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "independent_of_active_AL15_implementation": true,
+      "model_execution_authorized": false,
+      "completed_at": "2026-09-19T03:08:30+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Fixed official SDK source text only",
+      "source_commit": "a3e0b8ec235c27a6c17a21976daf7fd32d819d05",
+      "source_bytes": 183952,
+      "review": "../reviews/AL17_PROBE_INTERFACE_REVIEW_20260919.md",
+      "model_runtime_verified": false
+    },
+    {
+      "id": "AL18",
+      "milestone": "M2",
+      "title": "OR1条件数值界与未认证状态CPU接入",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL15",
+        "AL16"
+      ],
+      "requires_pass": [
+        "AL15",
+        "AL16"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "conditional_numerical_contract_software",
+      "hypothesis": "已知误差可产生有前提的区间，重复一致不能认证未知误差；接口应明确数值未认证状态。",
+      "work": [
+        "新目录实现N1/N2/N4/N5条件数值合同",
+        "冻结并执行8族有界误差与未知/非法状态检查，完整保留所有h及角点",
+        "保留AL15旧核心与证据，明确精确有理上包络和显示浮点的区别"
+      ],
+      "acceptance": [
+        "已知界覆盖预定精确真值，未知界不填0",
+        "拒绝/无信息域不当来源判别；无模型/训练/服务器",
+        "完整源码/输入/结果哈希、失败和调用账本"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL18_handoff.md"
+      ],
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "work_order": "../AL18_OR1_NUMERICAL_CPU_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "prepared_at": "2026-09-19T03:08:30+08:00",
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "not_evaluated",
+      "implementation_authorized": true,
+      "next_action": "按唯一派发及工作单执行；AL19由planagent独立处理。"
+    },
+    {
+      "id": "AL19",
+      "milestone": "M2",
+      "title": "OR1夹断与像素坐标约定的替代解释审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL16",
+        "AL17"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL16",
+        "AL17"
+      ],
+      "status": "running",
+      "gate_result": "not_evaluated",
+      "gate_scope": "clamp_coordinate_alternative_explanation",
+      "hypothesis": "可交换底层平移在夹断后可能产生非零顺序响应；固定eta也可能破坏尺度不变性。",
+      "work": [
+        "给共同范围内的夹断平移解析反例",
+        "推导共同仿射坐标变换与eta尺度效应",
+        "给wrapper所需对照，区分反例和实际收益解释"
+      ],
+      "acceptance": [
+        "不把有限h响应当无条件C2几何证据",
+        "不调用模型/真实数据，不修改AL15或AL18",
+        "给具体固定算例和适用前提"
+      ],
+      "artifacts": [
+        "../reviews/AL19_CLAMP_COORDINATES_REVIEW_20260919.md"
+      ],
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "work_order": "../AL19_OR1_CLAMP_COORDINATES_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "prepared_at": "2026-09-19T03:08:30+08:00",
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "not_evaluated",
+      "started_at": "2026-09-19T03:08:30+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "next_action": "本任务独立数学审查，与AL18并行。"
     }
   ],
   "storage_policy": {
@@ -3412,7 +3593,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T02:45:08+08:00",
+  "updated_at": "2026-09-19T03:08:30+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4057,41 +4238,34 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al15-or1-cpu-20260919",
+      "id": "cc-al18-numerical-contract-20260919",
       "task_ids": [
-        "AL15"
+        "AL18"
       ],
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "running",
-      "prepared_at": "2026-09-19T02:35:46+08:00",
+      "status": "prepared_not_sent",
+      "prepared_at": "2026-09-19T03:08:30+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "work_order": "../AL15_OR1_CPU_WORK_ORDER_20260919.md",
-      "work_order_sha256": "ceaeb0cb922c53b13a8dddad35204199ba8896f16632174d156a25b775788a91",
+      "work_order": "../AL18_OR1_NUMERICAL_CPU_20260919.md",
+      "work_order_sha256": "02f3f7dc2ee96fee2fa2439b84b94c971b111bd701153aab115e8fdb0e8f6b9c",
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
-      "input_preregistration_sha256": "91e856957b34beb14c3f098ce7f078594cb0529268367ec120f3eb1da2f78292",
-      "scope": "One frozen8-family CPU algebra/mock-path package; NumPy/stdlib,2 threads,dim<=8,array<=1MiB; no Torch/media/models/server/GPU/classifier fitting.",
-      "readiness_basis": "AL12 full handoff plus idle/completed cursor:19; final source/contract/formula review completed.",
-      "sent_at": "2026-09-19T02:37:03+08:00",
-      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
-      "last_observed_status": "inProgress",
-      "last_observed_thread_turn_id": "01a0b5cd-a00b-7280-9e0a-c7bcbe33b2fb",
-      "last_observed_at": "2026-09-19T02:38:25+08:00",
-      "duplicate_dispatch_suppressed": true
+      "scope": "Frozen8-family conditional numerical contract, CPU only; no AL15 rerun, models/media/server/GPU/training.",
+      "readiness_basis": "AL15 substantive handoff, source and exact trace review plus idle/completed cursor22."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:20",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:22",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T00:33:22+08:00",
-    "research_observed_status": "active",
+    "last_coordinator_activity_at": "2026-09-19T03:08:30+08:00",
+    "research_observed_status": "idle",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -4430,9 +4604,45 @@
         "source_commit": "a4cfdeb",
         "integration_commit": "72ff233",
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:19"
+      },
+      {
+        "id": "cc-al15-or1-cpu-20260919",
+        "task_ids": [
+          "AL15"
+        ],
+        "executor_role": "researchagent_next",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "host_id": "local",
+        "status": "completed_scoped_review",
+        "prepared_at": "2026-09-19T02:35:46+08:00",
+        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+        "work_order": "../AL15_OR1_CPU_WORK_ORDER_20260919.md",
+        "work_order_sha256": "ceaeb0cb922c53b13a8dddad35204199ba8896f16632174d156a25b775788a91",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+        "input_preregistration_sha256": "91e856957b34beb14c3f098ce7f078594cb0529268367ec120f3eb1da2f78292",
+        "scope": "One frozen8-family CPU algebra/mock-path package; NumPy/stdlib,2 threads,dim<=8,array<=1MiB; no Torch/media/models/server/GPU/classifier fitting.",
+        "readiness_basis": "AL12 full handoff plus idle/completed cursor:19; final source/contract/formula review completed.",
+        "sent_at": "2026-09-19T02:37:03+08:00",
+        "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+        "last_observed_status": "completed",
+        "last_observed_thread_turn_id": "01a0b5cd-a00b-7280-9e0a-c7bcbe33b2fb",
+        "last_observed_at": "2026-09-19T02:38:25+08:00",
+        "duplicate_dispatch_suppressed": true,
+        "completed_at": "2026-09-19T03:08:30+08:00",
+        "review": "../reviews/AL15_REVIEW_20260919.md",
+        "source_commits": [
+          "f897e0c",
+          "7f93f8c"
+        ],
+        "integration_commits": [
+          "c7e4742",
+          "e8c7385"
+        ],
+        "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:22"
       }
     ],
-    "last_substantive_review": "../reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL15_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4444,7 +4654,7 @@
       "Do not repeat completed packages or tune C on the exposed 100 records",
       "Do not repeat unchanged server/account probes or the pending budget question"
     ],
-    "last_observed_completed_turn_id": "01a0b065-b893-71b0-8e2a-c06330cac75b",
+    "last_observed_completed_turn_id": "01a0b5cd-a00b-7280-9e0a-c7bcbe33b2fb",
     "configuration_faults": {
       "thread_coordination_tools_unavailable": {
         "status": "resolved",
@@ -4508,17 +4718,14 @@
       "post_breakthrough": "continue robustness, confirmation and paper; do not automatically stop research"
     },
     "local_execution": {
-      "task_ids": [],
-      "executor_role": "planagent",
-      "status": "completed_numerical_contract_review",
-      "work_area": "research-plan/reviews",
-      "started_at": "2026-09-19T02:42:27+08:00",
-      "scope": "Conditional numerical bounds and fixed exact amplification factors; no probe/model execution or AL15 changes.",
-      "completed_task_ids": [
-        "AL16"
+      "task_ids": [
+        "AL19"
       ],
-      "completed_at": "2026-09-19T02:45:08+08:00",
-      "review": "../reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md"
+      "executor_role": "planagent",
+      "status": "running_mathematical_review",
+      "started_at": "2026-09-19T03:08:30+08:00",
+      "work_area": "research-plan/reviews",
+      "scope": "Clipping counterexamples and coordinate formulas; independent of AL18 CPU implementation"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4535,19 +4742,17 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T00:50:13+08:00",
-    "prepared_independent_task_ids": [],
+    "last_local_review_at": "2026-09-19T03:08:30+08:00",
+    "prepared_independent_task_ids": [
+      "AL18"
+    ],
     "active_and_prepared_work": {
       "running": [
-        "AL15"
+        "AL19"
       ],
-      "prepared_independent": [],
-      "completed_parallel_inputs": [
-        "AL13",
-        "AL14",
-        "AL16"
-      ],
-      "next_action": "Review actual AL15 frozen delivery with numerical/protocol evidence; then replenish meaningful independent follow-ups."
+      "prepared_independent": [
+        "AL18"
+      ]
     },
     "material_decision_notices": [
       {
@@ -4646,7 +4851,7 @@
     },
     "OR1": {
       "version": "AL12-OR1",
-      "status": "bounded_cpu_validation_in_progress",
+      "status": "vector_mock_pass_numerical_and_wrapper_conditions_pending",
       "source_commit": "a4cfdeb",
       "innovation_admitted": false,
       "real_mechanism_confirmed": false,
@@ -4654,7 +4859,10 @@
       "classifier_training_authorized": false,
       "overlap_risk": "high;2605.23449 and reconstruction baselines explicitly retained",
       "prototype_task": "AL15",
-      "independent_numerical_review_task": "AL16"
+      "independent_numerical_review_task": "AL16",
+      "numerical_implementation_task": "AL18",
+      "clamp_coordinate_review_task": "AL19",
+      "static_interface_review_task": "AL17"
     }
   },
   "open_review_issues": [

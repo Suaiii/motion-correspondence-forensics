@@ -1,0 +1,50 @@
+{
+  "task_id": "AL15",
+  "reviewer": "planagent",
+  "observed_at": "2026-09-18T19:03:45.855612+00:00",
+  "source_worktree": "D:\\SUAI\\codex\\worktree\\662f\\脉冲神经网络",
+  "source_result_commit": "7f93f8ce87dea18d664f5c0f89506292d3e5ad47",
+  "source_freeze_commit": "f897e0ccc2e59faaaf6100cdf5b029ba1d8c6fb0",
+  "status": "pass_archival_exact_trace_review",
+  "scope": "Hashes, source review, exact arithmetic reconstruction from archived input/trace; not independent scientific replication",
+  "manifest_files_verified": 10,
+  "frozen_source_input_blobs_verified": 7,
+  "preserved_artifacts_verified": 53,
+  "dependency_hashes_verified": 5,
+  "exact_trace_evaluations": 210,
+  "call_counts": {
+    "core": 840,
+    "contract_negative": 4,
+    "diagnostic_repeat": 6
+  },
+  "total_calls": 850,
+  "family_counts": {
+    "linear_exact": 15,
+    "constant_translation": 15,
+    "commuting_projection": 15,
+    "matched_scalar_errors": 30,
+    "probe_order_swap": 30,
+    "nonlinear_remainder": 15,
+    "noncommuting_but_redundant": 30,
+    "equal_output_distribution": 60
+  },
+  "steps": [
+    0.0625,
+    0.125,
+    0.25
+  ],
+  "pending": [
+    "actual four filters",
+    "matching and trained readout",
+    "real probe wrappers/checkpoints/clock",
+    "numerical uncertainty contract",
+    "scientific innovation and real detection evidence"
+  ],
+  "audit_candidate_imports": false,
+  "audit_candidate_calls": 0,
+  "audit_numpy_imported": false,
+  "server_or_media_or_gpu": false,
+  "qualification": "Archive assertions do not prove process chronology beyond recorded freeze commit or object identity beyond reviewed implementation",
+  "source_evidence_sha256": "076ae934e740d72943ca2e9f1b9c5cda27ffd8ecc2611a7ca8b386e88646c3ec",
+  "audit_source_sha256": "eebb62b44ff91b3610ba15737b9479b7e379c5ce519aad641e72c9c168600024"
+}
