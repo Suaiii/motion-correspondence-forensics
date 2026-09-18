@@ -2440,7 +2440,7 @@
     }
   },
   "plan_version": "cvpr27-20260918-v1.3",
-  "updated_at": "2026-09-18T01:27:27+08:00",
+  "updated_at": "2026-09-18T22:33:05+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -2862,9 +2862,10 @@
     "configured_check_time_local": "19:00",
     "physical_heartbeat_schedule": "hourly at minutes 00 and 30",
     "logical_milestone_check_time": "19:00 once per local day",
-    "last_check_local_date": "2026-09-17",
-    "last_checked_at": "2026-09-17T19:36:00+08:00",
-    "last_check_notifications": 0
+    "last_check_local_date": "2026-09-18",
+    "last_checked_at": "2026-09-18T19:02:36.516187+08:00",
+    "last_check_notifications": 0,
+    "last_check_receipt": "checks/20260918T190236.json"
   },
   "coordination": {
     "handoff_status": "acknowledged",
@@ -2960,13 +2961,13 @@
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "6e0ba463-4153-4851-bfe0-8b82c68cc564:7",
+    "last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:2",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-18T01:27:27+08:00",
+    "last_coordinator_activity_at": "2026-09-18T22:33:05+08:00",
     "research_observed_status": "idle",
     "dispatch_history": [
       {
@@ -3074,7 +3075,7 @@
       }
     ],
     "last_substantive_review": "../reviews/DX04_20260918.md",
-    "last_cursor_reset_observed_at": "2026-09-17T23:44:29+08:00",
+    "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "waiting_external_dependencies",
     "waiting_on": [
@@ -3084,7 +3085,43 @@
     "no_repeat_work": [
       "Do not repeat completed packages or tune C on the exposed 100 records",
       "Do not repeat unchanged server/account probes or the pending budget question"
-    ]
+    ],
+    "last_observed_completed_turn_id": "01a0b065-b893-71b0-8e2a-c06330cac75b",
+    "configuration_faults": {
+      "thread_coordination_tools_unavailable": {
+        "status": "resolved",
+        "first_observed_at": "2026-09-18T10:21:59+08:00",
+        "detected_during_heartbeat": "2026-09-18T02:15:23.855Z",
+        "missing_tools": [
+          "wait_threads",
+          "read_thread",
+          "send_message_to_thread"
+        ],
+        "verification": "Not present in ALL_TOOLS; previous wait/read methods are undefined; no tool_search available.",
+        "required_action": "Restore Codex task coordination tools; keep local read-only checks and do not infer research task status.",
+        "notification_state": "confirmed_final_output",
+        "pending_notice": "当前缺少任务状态与消息工具，无法完成自动协作；需恢复任务协作工具。",
+        "last_observed_at": "2026-09-18T10:32:53+08:00",
+        "notification_confirmation": {
+          "confirmed_at": "2026-09-18T10:32:53+08:00",
+          "automation_id": "cvpr-2027",
+          "trigger_time_iso": "2026-09-18T02:15:23.855Z",
+          "evidence": "The previous completed conversation turn contains the actual NOTIFY final XML for this configuration fault. This does not establish OS push delivery.",
+          "actual_message": "出现新的协作配置故障：当前未提供任务状态和消息工具，无法核实科研任务状态或自动交接。共享文件检查正常；需恢复 Codex 的任务协作工具。期间不启动实验，相同故障不重复通知。"
+        },
+        "resolved_at": "2026-09-18T22:27:00+08:00",
+        "resolution_evidence": "wait_threads succeeded; wait/read/send tools are present in the active tool inventory. Latest completed research turn remains the v1.3 acknowledgement; no task was awakened.",
+        "resolution_notification_state": "confirmed_final_output",
+        "pending_resolution_notice": "任务协作工具已恢复，已重新核实科研任务状态。研究仍等待预算与真实输入条件，未启动新实验。",
+        "resolution_notification_confirmation": {
+          "confirmed_at": "2026-09-18T22:33:05+08:00",
+          "automation_id": "cvpr-2027",
+          "trigger_time_iso": "2026-09-18T14:25:24.541Z",
+          "evidence": "Actual recovery NOTIFY XML exists in the previous completed conversation turn; not an OS push-delivery claim.",
+          "actual_message": "任务协作工具已恢复，已重新核实科研任务状态。研究仍等待预算与真实输入条件，未启动新实验。"
+        }
+      }
+    }
   },
   "candidate_protocols": {
     "A": {
