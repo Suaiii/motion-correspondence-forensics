@@ -2750,7 +2750,6 @@
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
-        "max_toy_patch_count": 8,
         "server_access": false,
         "real_media": false,
         "gpu": false,
@@ -2758,10 +2757,11 @@
         "large_downloads": false,
         "max_array_bytes": 1048576,
         "torch": false,
-        "maximum_items_per_bipartition": 4,
         "max_vector_dimension": 12,
         "synthetic_objective_optimization": true,
-        "max_pairs": 12
+        "max_pairs": 12,
+        "matching_performed": false,
+        "max_feature_rows": 24
       },
       "implementation_authorized": true,
       "classifier_training_authorized": false
@@ -4217,7 +4217,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T04:46:52+08:00",
+  "updated_at": "2026-09-19T04:47:52+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
