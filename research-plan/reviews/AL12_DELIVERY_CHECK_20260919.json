@@ -1,0 +1,42 @@
+{
+  "task_id": "AL12",
+  "reviewed_at_utc": "2026-09-18T18:31:03.521791+00:00",
+  "source_commit": "a4cfdeb",
+  "manifest_sha256": "ca208abc60e7f8f1aa33a459fc63715110792d79574062689c9018d363ff9458",
+  "artifacts": [
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_method_design.md",
+      "sha256": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_prior_comparison.md",
+      "sha256": "f9bd0d4f75f5108135311d7bbddb0d6039fbe0678b4e5331e801856b77270ab1",
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_cpu_preregistration.json",
+      "sha256": "91e856957b34beb14c3f098ce7f078594cb0529268367ec120f3eb1da2f78292",
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_handoff.md",
+      "sha256": "825ddf2b3e2b5b4f46441359fef4a48b9148bf6fab50c5f71488044c908d6937",
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_sources/DRCT_README.md.txt",
+      "sha256": "41d6e4dcc1a1a1622339f966ab68a7ee2363d501c0aeb95c8e2e62a752981351",
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL12_sources/acquisition.json",
+      "sha256": "467abc06e8ea52f85d4e1c097c558b454fe99b1eed39e6a87c573e95a9b812f4",
+      "verified": true
+    }
+  ],
+  "new_readme_git_blob_verified": true,
+  "scope": "Final design/source integrity and independently reviewed formulas; no scientific experiments or novelty acceptance",
+  "server_access": false,
+  "gpu_used": false
+}
