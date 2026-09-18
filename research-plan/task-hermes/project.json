@@ -3078,7 +3078,7 @@
         "AL29",
         "AL30"
       ],
-      "status": "ready",
+      "status": "running",
       "gate_result": "not_evaluated",
       "gate_scope": "stable_readout_metric_integration_reference",
       "hypothesis": "直接共享候选q的稳定坐标及拉回正则应在所声明范围保留同信息/同目标合同，不能借浮点消去制造优势。",
@@ -3123,7 +3123,13 @@
       "implementation_authorized": true,
       "classifier_training_authorized": false,
       "hypothesis_result": "not_evaluated",
-      "scientific_innovation_gate_passed": false
+      "scientific_innovation_gate_passed": false,
+      "dispatch_status": "running_verified",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T06:03:47+08:00",
+      "observed_turn_id": "01a0b687-0e93-7631-ab8d-16fbe53c2ed7",
+      "execution_stage": "archived_feature_and_metric_integration_preparation"
     },
     {
       "id": "AL33",
@@ -3140,8 +3146,8 @@
         "AL15",
         "AL20"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "ideal_projection_mechanism_audit",
       "hypothesis": "在单个二维投影角度块上，响应可能完全由普通输入/残差能量决定，不能仅因非交换就解释为新增来源信息。",
       "work": [
@@ -3155,7 +3161,8 @@
         "无模型/媒体/服务器/GPU"
       ],
       "artifacts": [
-        "../reviews/AL33_PROJECTOR_MECHANISM_REVIEW_20260919.md"
+        "../reviews/AL33_PROJECTOR_MECHANISM_REVIEW_20260919.md",
+        "../reviews/AL33_PROJECTOR_EXACT_20260919.json"
       ],
       "work_order": "../AL33_PROJECTOR_MECHANISM_AUDIT_20260919.md",
       "resource_policy": {
@@ -3175,8 +3182,15 @@
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": false,
-      "hypothesis_result": "not_evaluated",
-      "scientific_innovation_gate_passed": false
+      "hypothesis_result": "ordinary_energy_ratio_explains_response_under_declared_projection_block_assumptions",
+      "scientific_innovation_gate_passed": false,
+      "completed_at": "2026-09-19T06:03:47+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL33_PROJECTOR_MECHANISM_REVIEW_20260919.md",
+      "review_scope": "Conditional2D ideal projection mathematics and2 exact vectors; not actual AE validation or full OR1 refutation",
+      "artifact_sha256": "266caa08071d6d23295a88e722fad0f05e643963cad79b8c18c45ecae2567c1b",
+      "independent_scientific_review": "pending; planagent mathematical mechanism audit",
+      "next_action": "Include two-call normalized input-energy control in future comparison design; test real nonlinear mechanism separately"
     }
   ],
   "storage_policy": {
@@ -4576,7 +4590,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T05:57:19+08:00",
+  "updated_at": "2026-09-19T06:03:47+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5228,7 +5242,7 @@
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "prepared_not_sent",
+      "status": "running",
       "prepared_at": "2026-09-19T05:57:19+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "work_order": "../AL32_STABLE_BASELINE_INTEGRATION_CPU_20260919.md",
@@ -5236,19 +5250,26 @@
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
       "scope": "3 archived field cases and3 abstract panels at2 fixed points; stable feature/metric integration only, no optimizer/model/readout/GPU.",
-      "readiness_basis": "AL30 complete handoff independently reviewed, old AL27 fail preserved, idle/completed cursor41"
+      "readiness_basis": "AL30 complete handoff independently reviewed, old AL27 fail preserved, idle/completed cursor41",
+      "sent_at": "2026-09-19T05:58:20+08:00",
+      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+      "duplicate_dispatch_suppressed": true,
+      "last_observed_status": "inProgress",
+      "last_observed_thread_turn_id": "01a0b687-0e93-7631-ab8d-16fbe53c2ed7",
+      "last_observed_at": "2026-09-19T06:03:47+08:00",
+      "startup_evidence": "cursor42 active with actual archived near-cancellation value and literal-q reuse acknowledgement; file preparation observed"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:41",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:42",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T05:57:19+08:00",
-    "research_observed_status": "idle",
+    "last_coordinator_activity_at": "2026-09-19T06:03:47+08:00",
+    "research_observed_status": "active",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -5826,7 +5847,7 @@
         ]
       }
     ],
-    "last_substantive_review": "../reviews/AL30_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL33_PROJECTOR_MECHANISM_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -5906,10 +5927,11 @@
         "AL33"
       ],
       "executor_role": "planagent",
-      "status": "running_ideal_projection_mechanism_review",
+      "status": "completed_ideal_projection_mechanism_review",
       "started_at": "2026-09-19T05:57:19+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "Conditional2D projection mathematics and2 exact vectors; no actual AE claims"
+      "scope": "Conditional2D projection mathematics and2 exact vectors; no actual AE claims",
+      "completed_at": "2026-09-19T06:03:47+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -5926,17 +5948,13 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T05:57:19+08:00",
-    "prepared_independent_task_ids": [
-      "AL32"
-    ],
+    "last_local_review_at": "2026-09-19T06:03:47+08:00",
+    "prepared_independent_task_ids": [],
     "active_and_prepared_work": {
       "running": [
-        "AL33"
-      ],
-      "prepared_independent": [
         "AL32"
-      ]
+      ],
+      "prepared_independent": []
     },
     "material_decision_notices": [
       {
@@ -6103,7 +6121,9 @@
       "specific_benchmark_decoder_weights": "unresolved from aggregate metadata; no samples opened",
       "optimizer_repair_status": "AL30 scoped reference passed; AL27 remains failed, no strict numerical certificate",
       "stable_baseline_integration_task": "AL32",
-      "projection_mechanism_review_task": "AL33"
+      "projection_mechanism_review_task": "AL33",
+      "ideal_projection_result": "In declared2D single-angle block q=kappa*input_energy/(single_residual_sum+eta); real nonlinear AE extension not established",
+      "two_call_ratio_control": "Required future diagnostic: input energy over single-probe residual sum+eta; scale/regularization must be declared; not implemented or trained"
     }
   },
   "open_review_issues": [

@@ -1,0 +1,103 @@
+{
+  "task_id": "AL33",
+  "observed_at": "2026-09-18T22:02:05.399995+00:00",
+  "scope": "Two-dimensional ideal orthogonal projections only; no real AE or source labels",
+  "c": "3/5",
+  "s": "4/5",
+  "A": [
+    [
+      "1",
+      "0"
+    ],
+    [
+      "0",
+      "0"
+    ]
+  ],
+  "B": [
+    [
+      "9/25",
+      "12/25"
+    ],
+    [
+      "12/25",
+      "16/25"
+    ]
+  ],
+  "commutator": [
+    [
+      "0",
+      "12/25"
+    ],
+    [
+      "-12/25",
+      "0"
+    ]
+  ],
+  "commutator_transpose_product": [
+    [
+      "144/625",
+      "0"
+    ],
+    [
+      "0",
+      "144/625"
+    ]
+  ],
+  "residual_energy_matrix": [
+    [
+      "16/25",
+      "-12/25"
+    ],
+    [
+      "-12/25",
+      "34/25"
+    ]
+  ],
+  "exact_examples": [
+    {
+      "x": [
+        "2",
+        "1"
+      ],
+      "Kx": [
+        "12/25",
+        "-24/25"
+      ],
+      "input_energy_mean": "5/2",
+      "residual_a_mean": "1/2",
+      "residual_b_mean": "1/2",
+      "N_mean": "72/125",
+      "eta": "1/1000000000000",
+      "q": "576000000000/1000000000001",
+      "two_call_ratio": "2500000000000/1000000000001",
+      "constant_factor": "144/625",
+      "denominator_matrix_eigenvalue": "2/5"
+    },
+    {
+      "x": [
+        "-1",
+        "2"
+      ],
+      "Kx": [
+        "24/25",
+        "12/25"
+      ],
+      "input_energy_mean": "5/2",
+      "residual_a_mean": "2",
+      "residual_b_mean": "2",
+      "N_mean": "72/125",
+      "eta": "1/1000000000000",
+      "q": "576000000000/4000000000001",
+      "two_call_ratio": "2500000000000/4000000000001",
+      "constant_factor": "144/625",
+      "denominator_matrix_eigenvalue": "8/5"
+    }
+  ],
+  "model_calls": 0,
+  "parameter_scan": false,
+  "classifier_fitting": false,
+  "OR1_real_refutation": false,
+  "scientific_breakthrough": false,
+  "work_order_sha256": "f1d97c504c6c7e5404d03e0df5ea5331a928db1c1f7fb23d597d44e8cef51b37"
+}
