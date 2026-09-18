@@ -1,0 +1,517 @@
+{
+  "task_id": "AL11",
+  "observed_at_utc": "2026-09-18T17:46:22.374730+00:00",
+  "work_order_sha256": "b8a3531d4783518c0b24780c9f2589c2dd02d2fda9d34aab0f845dd4ee998545",
+  "model": "y_n=b+theta[(r+n*d) mod P], interior periodic response assumed for analysis only",
+  "rows": [
+    {
+      "P": 4,
+      "d": 1,
+      "K": 3,
+      "r": 0,
+      "phases": [
+        0,
+        1,
+        2
+      ],
+      "orbit_length": 4,
+      "observed_count": 3,
+      "ranks": {
+        "known_b_free_theta": 3,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 3,
+        "unknown_b_zero_mean_theta": 3
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 1,
+        "known_b_zero_mean_theta": 0,
+        "unknown_b_free_theta": 2,
+        "unknown_b_zero_mean_theta": 1
+      },
+      "unknown_baseline_hidden_signal": {
+        "delta_b": "-1",
+        "zero_mean_nonconstant_delta_theta": [
+          "1",
+          "1",
+          "1",
+          "-3"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_baseline_hidden_signal": null,
+      "known_zero_mean_profile_identifiable_when_r_known": true,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": false
+    },
+    {
+      "P": 4,
+      "d": 1,
+      "K": 8,
+      "r": 0,
+      "phases": [
+        0,
+        1,
+        2,
+        3,
+        0,
+        1,
+        2,
+        3
+      ],
+      "orbit_length": 4,
+      "observed_count": 4,
+      "ranks": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 4,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 0,
+        "known_b_zero_mean_theta": 0,
+        "unknown_b_free_theta": 1,
+        "unknown_b_zero_mean_theta": 0
+      },
+      "unknown_baseline_hidden_signal": null,
+      "known_baseline_hidden_signal": null,
+      "known_zero_mean_profile_identifiable_when_r_known": true,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": true
+    },
+    {
+      "P": 4,
+      "d": 2,
+      "K": 3,
+      "r": 0,
+      "phases": [
+        0,
+        2,
+        0
+      ],
+      "orbit_length": 2,
+      "observed_count": 2,
+      "ranks": {
+        "known_b_free_theta": 2,
+        "known_b_zero_mean_theta": 2,
+        "unknown_b_free_theta": 2,
+        "unknown_b_zero_mean_theta": 2
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 2,
+        "known_b_zero_mean_theta": 1,
+        "unknown_b_free_theta": 3,
+        "unknown_b_zero_mean_theta": 2
+      },
+      "unknown_baseline_hidden_signal": {
+        "delta_b": "-1",
+        "zero_mean_nonconstant_delta_theta": [
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_baseline_hidden_signal": {
+        "known_b": 0,
+        "zero_mean_nonconstant_delta_theta": [
+          "0",
+          "1",
+          "0",
+          "-1"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_zero_mean_profile_identifiable_when_r_known": false,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": false
+    },
+    {
+      "P": 4,
+      "d": 2,
+      "K": 8,
+      "r": 0,
+      "phases": [
+        0,
+        2,
+        0,
+        2,
+        0,
+        2,
+        0,
+        2
+      ],
+      "orbit_length": 2,
+      "observed_count": 2,
+      "ranks": {
+        "known_b_free_theta": 2,
+        "known_b_zero_mean_theta": 2,
+        "unknown_b_free_theta": 2,
+        "unknown_b_zero_mean_theta": 2
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 2,
+        "known_b_zero_mean_theta": 1,
+        "unknown_b_free_theta": 3,
+        "unknown_b_zero_mean_theta": 2
+      },
+      "unknown_baseline_hidden_signal": {
+        "delta_b": "-1",
+        "zero_mean_nonconstant_delta_theta": [
+          "1",
+          "-1",
+          "1",
+          "-1"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_baseline_hidden_signal": {
+        "known_b": 0,
+        "zero_mean_nonconstant_delta_theta": [
+          "0",
+          "1",
+          "0",
+          "-1"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_zero_mean_profile_identifiable_when_r_known": false,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": false
+    },
+    {
+      "P": 4,
+      "d": 8,
+      "K": 3,
+      "r": 0,
+      "phases": [
+        0,
+        0,
+        0
+      ],
+      "orbit_length": 1,
+      "observed_count": 1,
+      "ranks": {
+        "known_b_free_theta": 1,
+        "known_b_zero_mean_theta": 1,
+        "unknown_b_free_theta": 1,
+        "unknown_b_zero_mean_theta": 1
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 3,
+        "known_b_zero_mean_theta": 2,
+        "unknown_b_free_theta": 4,
+        "unknown_b_zero_mean_theta": 3
+      },
+      "unknown_baseline_hidden_signal": {
+        "delta_b": "-1",
+        "zero_mean_nonconstant_delta_theta": [
+          "1",
+          "-1/3",
+          "-1/3",
+          "-1/3"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_baseline_hidden_signal": {
+        "known_b": 0,
+        "zero_mean_nonconstant_delta_theta": [
+          "0",
+          "1",
+          "-1",
+          "0"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_zero_mean_profile_identifiable_when_r_known": false,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": false
+    },
+    {
+      "P": 4,
+      "d": 8,
+      "K": 8,
+      "r": 0,
+      "phases": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "orbit_length": 1,
+      "observed_count": 1,
+      "ranks": {
+        "known_b_free_theta": 1,
+        "known_b_zero_mean_theta": 1,
+        "unknown_b_free_theta": 1,
+        "unknown_b_zero_mean_theta": 1
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 3,
+        "known_b_zero_mean_theta": 2,
+        "unknown_b_free_theta": 4,
+        "unknown_b_zero_mean_theta": 3
+      },
+      "unknown_baseline_hidden_signal": {
+        "delta_b": "-1",
+        "zero_mean_nonconstant_delta_theta": [
+          "1",
+          "-1/3",
+          "-1/3",
+          "-1/3"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_baseline_hidden_signal": {
+        "known_b": 0,
+        "zero_mean_nonconstant_delta_theta": [
+          "0",
+          "1",
+          "-1",
+          "0"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_zero_mean_profile_identifiable_when_r_known": false,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": false
+    },
+    {
+      "P": 4,
+      "d": 12,
+      "K": 3,
+      "r": 0,
+      "phases": [
+        0,
+        0,
+        0
+      ],
+      "orbit_length": 1,
+      "observed_count": 1,
+      "ranks": {
+        "known_b_free_theta": 1,
+        "known_b_zero_mean_theta": 1,
+        "unknown_b_free_theta": 1,
+        "unknown_b_zero_mean_theta": 1
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 3,
+        "known_b_zero_mean_theta": 2,
+        "unknown_b_free_theta": 4,
+        "unknown_b_zero_mean_theta": 3
+      },
+      "unknown_baseline_hidden_signal": {
+        "delta_b": "-1",
+        "zero_mean_nonconstant_delta_theta": [
+          "1",
+          "-1/3",
+          "-1/3",
+          "-1/3"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_baseline_hidden_signal": {
+        "known_b": 0,
+        "zero_mean_nonconstant_delta_theta": [
+          "0",
+          "1",
+          "-1",
+          "0"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_zero_mean_profile_identifiable_when_r_known": false,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": false
+    },
+    {
+      "P": 4,
+      "d": 12,
+      "K": 8,
+      "r": 0,
+      "phases": [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "orbit_length": 1,
+      "observed_count": 1,
+      "ranks": {
+        "known_b_free_theta": 1,
+        "known_b_zero_mean_theta": 1,
+        "unknown_b_free_theta": 1,
+        "unknown_b_zero_mean_theta": 1
+      },
+      "parameter_dimensions": {
+        "known_b_free_theta": 4,
+        "known_b_zero_mean_theta": 3,
+        "unknown_b_free_theta": 5,
+        "unknown_b_zero_mean_theta": 4
+      },
+      "nullities": {
+        "known_b_free_theta": 3,
+        "known_b_zero_mean_theta": 2,
+        "unknown_b_free_theta": 4,
+        "unknown_b_zero_mean_theta": 3
+      },
+      "unknown_baseline_hidden_signal": {
+        "delta_b": "-1",
+        "zero_mean_nonconstant_delta_theta": [
+          "1",
+          "-1/3",
+          "-1/3",
+          "-1/3"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_baseline_hidden_signal": {
+        "known_b": 0,
+        "zero_mean_nonconstant_delta_theta": [
+          "0",
+          "1",
+          "-1",
+          "0"
+        ],
+        "sampled_difference": [
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0",
+          "0"
+        ]
+      },
+      "known_zero_mean_profile_identifiable_when_r_known": false,
+      "unknown_baseline_zero_mean_profile_identifiable_when_r_known": false
+    }
+  ],
+  "unknown_r": "cyclic relabeling ambiguity; phase coverage and rank do not increase by marginalizing r",
+  "irregular_index_rule": "rank equals number of distinct n_j mod P for unconstrained phase profile, and appropriate restricted-design rank for zero-mean/known-baseline variants",
+  "arithmetic": "Exact rational row reduction and explicit null witnesses; no random inputs",
+  "real_generator_period_confirmed": false,
+  "data_protocol_changed": false,
+  "scientific_breakthrough": false,
+  "server_access": false,
+  "media_read": false,
+  "gpu_used": false,
+  "independent_scientific_review": "pending; same planagent derived and checked the conditional model"
+}

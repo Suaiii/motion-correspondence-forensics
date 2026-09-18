@@ -1,0 +1,104 @@
+{
+  "task_id": "AL09",
+  "reviewed_at_utc": "2026-09-18T17:53:26.793705+00:00",
+  "source_commit": "0184cd7",
+  "manifest_sha256": "e03b3c75555eb8eaf55879f31f340f458ad20e2825582d0f043a32fdec5a2f13",
+  "code_snapshots": [
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__vae_modules__cp_enc_dec.py.txt",
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "sha256": "446c978ac2d216797d36eb3c1f0f88614cda46af7c3efd01e349ec5313bfadee",
+      "git_blob_sha1": "ee7efed8bcb819baf4d7c91c9f6249f93d24651e",
+      "bytes": 33480,
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__vae_modules__autoencoder.py.txt",
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "sha256": "3b83cdd5b53f15284298b3fd0f5046557a882b1718c33dfa10a6be09f01032ec",
+      "git_blob_sha1": "a2aea9a2ca1742e32a6631f7a5477fd1f5c34d31",
+      "bytes": 24325,
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__configs__cogvideox_5b.yaml.txt",
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "sha256": "7dc4a1b2af7e3cbe3d368901511e07d787fde3d051f135449d9de97308933cac",
+      "git_blob_sha1": "be04ede6d3619c161b990bb59245c5689a238cf8",
+      "bytes": 4413,
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/Wan2.1__wan__modules__vae.py.txt",
+      "repo": "Wan-Video/Wan2.1",
+      "commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+      "sha256": "4912ffd7a9fbb17ceef9a17d4a9c4b8aee36ec37c32594f54e57693b29909498",
+      "git_blob_sha1": "5c6da5723536cdd49889132479fdd35700e0e5ca",
+      "bytes": 23163,
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/Wan2.1__wan__configs__shared_config.py.txt",
+      "repo": "Wan-Video/Wan2.1",
+      "commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+      "sha256": "a942b6f0a1d1a4ec9a7893c17a6218651ce272953b90d012ce5cdd19d15e45f7",
+      "git_blob_sha1": "04a9f454218fc1ce958b628e71ad5738222e2aa4",
+      "bytes": 915,
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/Wan2.1__wan__text2video.py.txt",
+      "repo": "Wan-Video/Wan2.1",
+      "commit": "9737cba9c1c3c4d04b33fcad41c111989865d315",
+      "sha256": "169f0929b273b27a7bc0e094d15a01d48183adc529a1dbce626b179dced29fe8",
+      "git_blob_sha1": "c518b616bb327b19d5b201ce9f3e1e5bbae58969",
+      "bytes": 10235,
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__sample_video.py.txt",
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "sha256": "d3528431b2f8e7ee7cd1ff0bd96e530e30abd29daa724ef65ab286c8210c0459",
+      "git_blob_sha1": "03d3b68072789f4cb85cc524132e9503fa7cd993",
+      "bytes": 11679,
+      "verified": true
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/CogVideo__sat__diffusion_video.py.txt",
+      "repo": "THUDM/CogVideo",
+      "commit": "7a1af7154511e0ce4e4be8d62faa8c5e5a3532d2",
+      "sha256": "7419239a6078698d3f34aea1c9363b906b10979c08ecdd885e9a8d8d59ac7e3d",
+      "git_blob_sha1": "9a09288c4fdf64ae18ba704530b5571b0736a71b",
+      "bytes": 15791,
+      "verified": true
+    }
+  ],
+  "artifact_hashes_verified": [
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_mechanism_design.md",
+      "sha256": "baa917cd60667e5d53458d11eb270f0f68f23669ff7369555d29480f3444e16c"
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_handoff.md",
+      "sha256": "736319a580f14db60cc53d376f533d57e035f0a576520145c70e6e0f0ebe1be9"
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/acquisition.json",
+      "sha256": "a03a717b190aed71828a939808b2709107213fbc3a88d37b55b6bc12050c58b4"
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL09_sources/acquisition_complete.json",
+      "sha256": "74d2cf66b7a2a7ef011896c57bcb8a8c9c508f710392f5c29879e2b58ea786de"
+    }
+  ],
+  "scope": "Versioned text integrity plus separately documented equation/call-path review; no model or prototype run",
+  "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+  "source_budget_respected": true,
+  "scientific_breakthrough": false,
+  "server_access": false,
+  "gpu_used": false
+}
