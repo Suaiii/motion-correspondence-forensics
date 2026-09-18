@@ -1,0 +1,97 @@
+{
+  "task_id": "AL25",
+  "reviewer": "planagent",
+  "observed_at": "2026-09-18T21:01:03.258037+00:00",
+  "status": "pass_fixed_fields_and_declared_tensor_contract",
+  "manifest_files_verified": 11,
+  "preserved_files_verified": 92,
+  "dependency_hashes_verified": 5,
+  "source_freeze_commit": "53cfb0b73e0d40809a44515738b47187dbd74178",
+  "source_result_commit": "de3fe067d30291a4bd2c054f8a933eb44be493a7",
+  "exact_signed_arrays_reviewed": 140,
+  "exact_N_by_case": [
+    {
+      "id": "zero",
+      "exact_N": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "id": "constant",
+      "exact_N": [
+        "2",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "id": "ramp_x",
+      "exact_N": [
+        "1/12",
+        "0",
+        "1/8",
+        "0"
+      ]
+    },
+    {
+      "id": "quadratic",
+      "exact_N": [
+        "5/288",
+        "1/128",
+        "1/48",
+        "1/48"
+      ]
+    },
+    {
+      "id": "positive_inner",
+      "exact_N": [
+        "1/6",
+        "0",
+        "1/8",
+        "1/8"
+      ]
+    },
+    {
+      "id": "negative_inner",
+      "exact_N": [
+        "2/3",
+        "0",
+        "1/2",
+        "1/2"
+      ]
+    },
+    {
+      "id": "near_cancellation",
+      "exact_N": [
+        "1/36028797018963968",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "cancellation": {
+    "exact_N": "1/36028797018963968",
+    "exact_q": "244140625/17592186044424796093022208",
+    "q_direct": 1.3877787807807517e-17,
+    "q_compact_raw": 0.0,
+    "direct_minus_compact": 1.3877787807807517e-17,
+    "scope": "Observed binary64 operation-order loss, not extra source information"
+  },
+  "original_readout_calls_replayed": 0,
+  "review_arithmetic": "stdlib Fraction convolution on stored inputs only; no NumPy/candidate imports",
+  "scientific_breakthrough": false,
+  "AE_error_bounds": "unknown",
+  "limitations": [
+    "Seven fixed maximum-shape fields only",
+    "v_b is zero in every frozen field; nonzero E_b not numerically covered",
+    "Mock time slots duplicated; not temporal mechanism evidence",
+    "17-frame/BCTHW/media/model pipeline not implemented",
+    "Float operation-order differences cannot be counted as algorithmic information gain"
+  ],
+  "audit_source_sha256": "fbb1c0c44d3b6fa5acf9dce7f26eb46680d542b64d0c6374e46a2d9c1dd5846a"
+}
