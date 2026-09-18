@@ -2781,8 +2781,8 @@
         "AL17",
         "AL20"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "temporal_and_static_control_contract",
       "hypothesis": "逐帧探针和mean读出可对时间置换不变；能量ratio聚合与静态对照的权重/成本需明确。",
       "work": [
@@ -2796,15 +2796,16 @@
         "仅数学/合同，真实PTS及模型运行未授权"
       ],
       "artifacts": [
-        "../reviews/AL28_TEMPORAL_READOUT_REVIEW_20260919.md"
+        "../reviews/AL28_TEMPORAL_READOUT_REVIEW_20260919.md",
+        "../reviews/AL28_AGGREGATION_EXACT_20260919.json"
       ],
       "work_order": "../AL28_TEMPORAL_READOUT_CONTRACT_20260919.md",
       "plan_version": "cvpr27-20260919-v1.5",
       "prepared_at": "2026-09-19T04:46:52+08:00",
       "due_at": "2026-09-20T22:00:00+08:00",
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "conditional_permutation_invariance_and_energy_weighted_aggregation_established",
       "scientific_innovation_gate_passed": false,
-      "next_action": "Prepared only; do not start while an overlapping package is held. Follow main-DAG dispatch/start record.",
+      "next_action": "Keep input-shuffle/output-shuffle and4 versus4T static comparisons distinct in future real preregistration",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -2817,7 +2818,66 @@
         "max_array_bytes": 1048576,
         "torch": false
       },
-      "implementation_authorized": false
+      "implementation_authorized": false,
+      "started_at": "2026-09-19T04:51:12+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "completed_at": "2026-09-19T04:57:21+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL28_TEMPORAL_READOUT_REVIEW_20260919.md",
+      "review_scope": "Mathematics and static-control accounting only; no temporal mechanism or model execution established",
+      "artifact_sha256": "e1bcf894bc1f5c97bafb87ff15dd1170e2ff142326b9e59647d798a824958a98",
+      "independent_scientific_review": "pending; planagent mathematical contract"
+    },
+    {
+      "id": "AL29",
+      "milestone": "M2",
+      "title": "避免浮点消去优势的稳定紧凑基线审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL20",
+        "AL25"
+      ],
+      "requires_pass": [
+        "AL20",
+        "AL25"
+      ],
+      "status": "todo",
+      "gate_result": "not_evaluated",
+      "gate_scope": "stable_baseline_coordinate_contract",
+      "hypothesis": "通过共享直接差分能量的可逆坐标与匹配诱导正则，可以避免将不稳定三项相减产生的差异误当方法信息增益。",
+      "work": [
+        "推导M及逆、beta=M^T gamma和拉回正则",
+        "明确共享候选q的稳定基线特征合同",
+        "只引用最终AL25回执，区分代数/浮点/真实误差范围"
+      ],
+      "acceptance": [
+        "等待AL25正式review，不重跑或改原输入",
+        "数学上包含候选且保留同正则度量",
+        "不将坐标变化称创新，不运行模型/训练/真实数据"
+      ],
+      "artifacts": [
+        "../reviews/AL29_STABLE_BASELINE_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL29_STABLE_BASELINE_COORDINATES_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T04:57:21+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "hypothesis_result": "not_evaluated",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "next_action": "After AL25 done/pass scoped review, planagent starts independently of AL27"
     }
   ],
   "storage_policy": {
@@ -4217,7 +4277,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T04:47:52+08:00",
+  "updated_at": "2026-09-19T04:57:21+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4883,19 +4943,20 @@
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "inProgress",
       "last_observed_thread_turn_id": "01a0b638-2c07-7710-b966-60d952c67c8d",
-      "last_observed_at": "2026-09-19T04:46:52+08:00",
-      "startup_evidence": "cursor32 active with explicit AL25-specific acknowledgement of kernels, common valid support, seven fixed fields and preserved cancellation differences"
+      "last_observed_at": "2026-09-19T04:57:21+08:00",
+      "startup_evidence": "cursor32 active with explicit AL25-specific acknowledgement of kernels, common valid support, seven fixed fields and preserved cancellation differences",
+      "partial_execution_evidence": "AL25 frozen source53cfb0b and uncommitted evidence observed; thread reports single-run pass and preserves cancellation diagnostic; final handoff not yet received"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:33",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:34",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T04:46:52+08:00",
+    "last_coordinator_activity_at": "2026-09-19T04:57:21+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
@@ -5363,7 +5424,7 @@
         ]
       }
     ],
-    "last_substantive_review": "../reviews/AL26_CROSS_RECONSTRUCTION_PRIOR_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL28_TEMPORAL_READOUT_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -5440,14 +5501,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL26"
+        "AL28"
       ],
       "executor_role": "planagent",
-      "status": "completed_bounded_primary_literature_review",
-      "started_at": "2026-09-19T04:31:07+08:00",
+      "status": "completed_temporal_control_review",
+      "started_at": "2026-09-19T04:51:12+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "New targeted cross-reconstruction priors only; independent of AL25 implementation",
-      "completed_at": "2026-09-19T04:40:10+08:00"
+      "scope": "Framewise permutation theorem, aggregation identity and static-control cost; no probe/data execution",
+      "completed_at": "2026-09-19T04:57:21+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -5464,18 +5525,20 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T04:40:10+08:00",
+    "last_local_review_at": "2026-09-19T04:57:21+08:00",
     "prepared_independent_task_ids": [
       "AL27",
-      "AL28"
+      "AL29"
     ],
     "active_and_prepared_work": {
       "running": [
         "AL25"
       ],
       "prepared_independent": [
-        "AL27",
-        "AL28"
+        "AL27"
+      ],
+      "prepared_after_AL25_review": [
+        "AL29"
       ]
     },
     "material_decision_notices": [
@@ -5626,7 +5689,10 @@
         "Beyond Generation: low-level restoration pretext/real-density reference, not reproduced",
         "B-Free: content alignment and native label differences, not reproduced"
       ],
-      "exact_prior_equivalence": "not established by bounded search; no novelty admission"
+      "exact_prior_equivalence": "not established by bounded search; no novelty admission",
+      "temporal_control_review_task": "AL28",
+      "temporal_mechanism_confirmed": false,
+      "stable_baseline_review_task": "AL29"
     }
   },
   "open_review_issues": [

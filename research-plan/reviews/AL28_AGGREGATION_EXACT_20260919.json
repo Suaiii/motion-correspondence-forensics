@@ -1,0 +1,40 @@
+{
+  "task_id": "AL28",
+  "observed_at": "2026-09-18T20:53:25.032940+00:00",
+  "input_origin": "Fixed arithmetic example in AL28 work order, not probe measurements",
+  "eta": "1/1000000000000",
+  "n": [
+    "1",
+    "0"
+  ],
+  "d_raw": [
+    "1",
+    "9"
+  ],
+  "per_frame_q": [
+    "1000000000000/1000000000001",
+    "0"
+  ],
+  "energy_weights": [
+    "1000000000001/10000000000002",
+    "9000000000001/10000000000002"
+  ],
+  "ratio_of_means": "500000000000/5000000000001",
+  "weighted_mean": "500000000000/5000000000001",
+  "unweighted_mean": "500000000000/1000000000001",
+  "exact_weighted_identity": true,
+  "unweighted_is_different": true,
+  "static_comparison": {
+    "T": 17,
+    "temporal_full_sequence_R_calls": 4,
+    "single_repeated_frame_R_calls": 4,
+    "all17_static_repeated_sequences_R_calls": 68,
+    "counting": "Per-sequence R evaluations without memoization; batching does not make68 sample-equivalent calls equal4",
+    "GPU_or_latency_measured": false
+  },
+  "model_calls": 0,
+  "actual_media": false,
+  "GPU": false,
+  "scientific_breakthrough": false,
+  "work_order_sha256": "831b0025c0149f8aa7ed915596bf1fe0b1e8aeb5d36cc57242b310d1c25d8457"
+}
