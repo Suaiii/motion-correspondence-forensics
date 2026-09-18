@@ -2293,7 +2293,7 @@
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T03:56:40+08:00",
       "observed_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
-      "execution_stage": "work_order_adoption_and_preparation"
+      "execution_stage": "draft_source_and_protocol_preparation_observed"
     },
     {
       "id": "AL21",
@@ -2545,7 +2545,7 @@
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T03:56:40+08:00",
       "observed_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
-      "execution_stage": "work_order_adoption_and_preparation"
+      "execution_stage": "draft_source_and_protocol_preparation_observed"
     }
   ],
   "storage_policy": {
@@ -3945,7 +3945,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T03:56:40+08:00",
+  "updated_at": "2026-09-19T04:13:33+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4618,19 +4618,25 @@
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "inProgress",
       "last_observed_thread_turn_id": "01a0b616-b604-7af0-99b5-ce8757a506bf",
-      "last_observed_at": "2026-09-19T03:56:40+08:00",
-      "startup_evidence": "cursor29 active with explicit acknowledgement of both work orders, AL23, trace-only AL20 and frozen limited AL24 preparation"
+      "last_observed_at": "2026-09-19T04:13:33+08:00",
+      "startup_evidence": "cursor29 active with explicit acknowledgement of both work orders, AL23, trace-only AL20 and frozen limited AL24 preparation",
+      "draft_preflight_review": {
+        "recorded_at": "2026-09-19T04:13:33+08:00",
+        "scope": "Read AL20 preregistered3 trace IDs/formulas and in-progress AL20/AL24 source. Matching lexicographic objective, scalar solver limitations and no-real-data boundaries align at inspection.",
+        "execution_or_gate_pass_claimed": false,
+        "final_hash_and_complete_handoff_review_pending": true
+      }
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:29",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:30",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T03:56:40+08:00",
+    "last_coordinator_activity_at": "2026-09-19T04:13:33+08:00",
     "research_observed_status": "active",
     "dispatch_history": [
       {
