@@ -1,0 +1,16 @@
+{
+  "frozen_at_utc": "2026-09-18T16:20:01.224497+00:00",
+  "freeze_stage": "all inputs and rules saved before any H-J LP or H-T candidate call",
+  "files": {
+    "research-runtime/algorithm_candidates/al04/config.json": "acb487757a9b9087c22e0d2875daac837566f84019991c937f1eba8667e22bb7",
+    "research-runtime/algorithm_candidates/al04/protocol.py": "ba0a28c26f44e7c9246440e4dbf48a5e630b42b6f9142e773173c309a260ebc7",
+    "research-runs/algorithm_search_20260918/AL04_protocol.md": "25ca6914bdb17ac735aa355fac9aac8f8ace2baf791a735f447eb4623368976b",
+    "research-runs/algorithm_search_20260918/AL04_cases.json": "6f8be0b87163378faece3222d4e4769daba0dbbb424b1252a744a43bc76bfdd5",
+    "research-plan/fallback-runtime/joint_marginal_reference.py": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b"
+  },
+  "generator_calls_hj_distance": false,
+  "ht_candidate_status": "pending",
+  "development_seed": 104729,
+  "independent_check_seed": 130363,
+  "prior_knowledge": "Known AL01 and AL02/AL03 qualitative outcomes were read; these are new protocol-check instances, not blind scientific confirmation"
+}

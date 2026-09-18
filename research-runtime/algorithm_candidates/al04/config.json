@@ -1,0 +1,24 @@
+{
+  "dispatch_id": "cc-new-session-al04-20260919",
+  "task_id": "AL04",
+  "protocol_version": "AL04-v1",
+  "plan_version": "cvpr27-20260918-v1.4",
+  "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+  "reference_sha256": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b",
+  "threads": 2,
+  "temperature": 0.1,
+  "tolerances": {"input_mass": 1e-10, "lp_zero": 1e-8, "invariance": 1e-8, "array": 1e-10, "lp_objective": 1e-7},
+  "development": {"seed": 104729, "sizes": [2, 4]},
+  "independent_check": {"seed": 130363, "sizes": [4, 8]},
+  "mixture_weights": [0.2, 0.35, 0.45],
+  "uniform_mixture": 0.15,
+  "incompatible_uniform_noise": 0.12,
+  "payload_scales": [0.75, 1.25],
+  "max_array_bytes": 536870912,
+  "ht_candidate": {
+    "status": "pending",
+    "reason": "Round6 files appeared in the main workspace but were not committed or manifest-archived at AL04 freeze. No candidate invocation or invented score. A separately hash-bound integration run is required.",
+    "required_signature": "infer(keys, payload, tau), with no labels, true trajectory or override_w",
+    "required_output": ["tensor", "delta", "reference_tensor", "score", "ordinary_aligned_score", "w"]
+  }
+}
