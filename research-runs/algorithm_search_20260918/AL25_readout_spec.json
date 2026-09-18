@@ -1,0 +1,31 @@
+{
+  "version": "OR1-readout-1",
+  "task_id": "AL25",
+  "dispatch_id": "cc-al25-filtered-readout-20260919",
+  "work_order_sha256": "472e4f302d0ffce04bda5df972550e7781ecffeae18dc7c7cadf0d63e24c1e5a",
+  "layout": "THWC",
+  "dtype": "float64",
+  "fields": ["d_a", "d_b", "v_a", "v_b"],
+  "filter_order": ["identity", "laplacian", "sobel_x", "sobel_y"],
+  "kernels": {
+    "identity": {"rule":"crop to the same spatial interior; no convolution"},
+    "laplacian": {"numerator":[[0,1,0],[1,-4,1],[0,1,0]],"denominator":4},
+    "sobel_x": {"numerator":[[-1,0,1],[-2,0,2],[-1,0,1]],"denominator":8},
+    "sobel_y": {"numerator":[[-1,-2,-1],[0,0,0],[1,2,1]],"denominator":8}
+  },
+  "operator": "correlation; kernel not flipped",
+  "support": "common valid interior: spatial indices 1..H-2 and 1..W-2, identity included",
+  "reduction": "uniform mean of all T, interior H, interior W and C scalar elements",
+  "eta_mathematical": "1/1000000000000",
+  "eta_float_literal": 1e-12,
+  "normal_absolute_tolerance": 1e-12,
+  "cancellation_policy": "Retain exact positive reference, q_direct, raw normalized-triplet q_compact, numerator-first diagnostic, and every signed difference; no clipping or platform-specific expected cancellation float",
+  "input_domain": {"T":[1,2],"H":[3,5],"W":[3,5],"C":3,"max_raw_elements_per_array":150,"max_array_bytes":1048576},
+  "fixed_case_shape": [2,5,5,3],
+  "channel_coefficients": [1,2,-1],
+  "threads": 2,
+  "python_workers": 1,
+  "AE_error_bounds": "unknown",
+  "real_wrapper": "pending; not BCTHW or a 17-frame media/probe interface",
+  "historical_AL12_changed": false
+}
