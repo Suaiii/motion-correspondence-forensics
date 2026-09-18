@@ -1,0 +1,35 @@
+{
+  "frozen_at": "2026-09-18T16:45:56.683053+00:00",
+  "adopted_review": {
+    "research-runs/algorithm_search_20260918/AL03_cross_review.md": {
+      "commit": "86bebaf",
+      "sha256": "4a7ac8a14fa4f9a7e963292ce5998160d47f3b4ce943ad3dcff8d22d7bcb18cf"
+    },
+    "research-runs/algorithm_search_20260918/AL03_cross_evidence.json": {
+      "commit": "86bebaf",
+      "sha256": "a30d05b74219a7825b7cd2e59d7310192f375fdd088e5f946b34095c7dd4dd14"
+    },
+    "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\ROUND6_REVIEW_20260919.md": {
+      "sha256": "1fa2ad8d0f4b5cfe7c73a57f523aed15d06fbf6065ea65de76b973f53c5bb79a",
+      "role": "planner acceptance read only"
+    }
+  },
+  "files": {
+    "research-runtime/algorithm_candidates/al01_v2/joint_v2.py": "aef6816318f0699ade6d242f3ed914d1ebfd539c26e519f0dba6f7f768048f18",
+    "research-runtime/algorithm_candidates/al01_v2/run_package.py": "f83ce8390a43bf7b2ee8fe989950124ed5e97488224cf4179644c8352d4fdd36",
+    "research-runtime/algorithm_candidates/al01_v2/config.json": "be88c1165910f85267113b4f88ce6afc5ae8ad685c58d6da3caa5f255a94d07a",
+    "research-runs/algorithm_search_20260918/AL01_inputs.json": "4d328702d6dcb59026dcda630a9bd8d5487c77c5f48fbceb6c8effd4b75fa7a9",
+    "research-runs/algorithm_search_20260918/AL01_design.md": "4bff04a8cfdaf61dace3977ecdaa60755e813a60934b48a2893850935128bf68",
+    "research-plan/fallback-runtime/joint_marginal_reference.py": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b"
+  },
+  "preserved_AL04": {
+    "research-runs/algorithm_search_20260918/AL04_artifact_manifest.json": "c5a42669bed20bdf0efdea617f6a9047cd98b2fec4669b9fb574132a14676897",
+    "research-runs/algorithm_search_20260918/AL04_cases.json": "6f8be0b87163378faece3222d4e4769daba0dbbb424b1252a744a43bc76bfdd5",
+    "research-runs/algorithm_search_20260918/AL04_freeze.json": "a53c6c87f085c1be54f87a1fd008a9c6bd7aa9221ac453cbd99a708037b950b1",
+    "research-runs/algorithm_search_20260918/AL04_handoff.md": "037aea2268eac3c74177e96ea59106568319a05ae5bc1c1289bd22084934c34d",
+    "research-runs/algorithm_search_20260918/AL04_protocol.md": "25ca6914bdb17ac735aa355fac9aac8f8ace2baf791a735f447eb4623368976b",
+    "research-runs/algorithm_search_20260918/AL04_validation.json": "85551a67df0e28086b60f6dbb6fb1c0382774c2a121d10bacb0106571b433cbf"
+  },
+  "pre_solver_freeze": true,
+  "old_reference_sha256": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b"
+}

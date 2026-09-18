@@ -1,0 +1,23 @@
+{
+  "dispatch_id": "cc-new-session-al01-complete-20260919",
+  "task_id": "AL01",
+  "version": "HJ-v2-domain-and-controls",
+  "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+  "old_reference_sha256": "82975f90f5040b6a781cd4cc559ee40b207d1e3df1f838edf49bf04a45887a8b",
+  "review_commit": "86bebaf",
+  "temperature": 0.1,
+  "threads": 2,
+  "development": {"seed": 15485863, "sizes": [2,4]},
+  "independent_check": {"seed": 32452843, "sizes": [4,8]},
+  "near_facet_epsilons": [1e-11,1e-8,1e-5],
+  "input_mass_perturbations": [5e-12,5e-9,2e-8],
+  "collision_groups": {
+    "same_forward_js": [[0.4,0.4,-0.1],[0.8,0.2,-0.1]],
+    "same_entropy": [[0.45,0.45,0.45],[-0.45,0.45,0.45]],
+    "same_mean_cycle": {"compatible_r": "[sqrt(2.13)-1,sqrt(2.13)-1,0]", "incompatible_r": [0.9,0.1,-0.02]}
+  },
+  "lift_sizes": [4,8],
+  "pass_tolerance": 1e-8,
+  "max_explicit_array_bytes": 536870912,
+  "novelty_or_real_efficacy_acceptance": false
+}
