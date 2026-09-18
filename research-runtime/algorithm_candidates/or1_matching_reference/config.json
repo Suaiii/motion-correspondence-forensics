@@ -1,0 +1,21 @@
+{
+  "task_id": "AL24",
+  "dispatch_id": "cc-al20-al24-baseline-matching-20260919",
+  "work_order_sha256": "f4c00367c7a2ff4105ec86b969ac6a2570c270ec25c2380423171ec70fdbfa9f",
+  "caliper": "1/2",
+  "lambda_target": "1/1000",
+  "b_dimension": 12,
+  "q_dimension": 4,
+  "maximum_per_side": 4,
+  "solver_coordinate": 0,
+  "other_weights": [0,0,0],
+  "initial_bracket": [-16,16],
+  "bracket_width_tolerance": 1e-12,
+  "maximum_iterations": 128,
+  "gradient_sign_check_at": 1,
+  "numeric_worker_cap": 2,
+  "max_numeric_container_bytes": 1048576,
+  "numerical_certificate": false,
+  "classifier_training": false,
+  "only_prespecified_scalar_objectives_are_optimized": true
+}

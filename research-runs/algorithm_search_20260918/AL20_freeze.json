@@ -1,0 +1,17 @@
+{
+  "frozen_at": "2026-09-18T20:13:19.345657+00:00",
+  "trace_ids": [
+    "linear_exact__development_base__sample_0__h0.125",
+    "nonlinear_remainder__development_base__sample_0__h0.125",
+    "noncommuting_but_redundant__development_base__sample_0__h0.125"
+  ],
+  "files": {
+    "research-runtime/algorithm_candidates/or1_baseline_audit/audit.py": "02bbba71236b5d86002a212ad4c40bbb8f39653afabfe4530fbc68cc3d19a83a",
+    "research-runtime/algorithm_candidates/or1_baseline_audit/config.json": "c9d0acf31eba7c54da3c5630e150a013b417189837de31928de5ccf395cd6720",
+    "research-runs/algorithm_search_20260918/AL20_protocol.md": "c60fc8696a02f90874d4e98f6c979130b99994dc2e68bfaff540007585b15bf0",
+    "research-runs/algorithm_search_20260918/AL15_evidence.json": "076ae934e740d72943ca2e9f1b9c5cda27ffd8ecc2611a7ca8b386e88646c3ec"
+  },
+  "mathematical_trace_reads_before_freeze": 0,
+  "work_order_sha256": "7784b52940d94799926f867ea47ed01f5801be88455c7c6628a5fbb56dcfa3d3",
+  "AL23_review_sha256": "acc111c10b8d1796a50b8b1cb84d46e58939d4dfd7794b163abf532f2157a4b1"
+}

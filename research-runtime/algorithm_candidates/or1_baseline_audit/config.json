@@ -1,0 +1,18 @@
+{
+  "task_id": "AL20",
+  "dispatch_id": "cc-al20-al24-baseline-matching-20260919",
+  "work_order_sha256": "7784b52940d94799926f867ea47ed01f5801be88455c7c6628a5fbb56dcfa3d3",
+  "archive_path": "research-runs/algorithm_search_20260918/AL15_evidence.json",
+  "archive_sha256": "076ae934e740d72943ca2e9f1b9c5cda27ffd8ecc2611a7ca8b386e88646c3ec",
+  "trace_ids": [
+    "linear_exact__development_base__sample_0__h0.125",
+    "nonlinear_remainder__development_base__sample_0__h0.125",
+    "noncommuting_but_redundant__development_base__sample_0__h0.125"
+  ],
+  "filter_for_archive_audit": "identity only; four real image filters are not executed",
+  "lambda_target": "1/1000",
+  "analysis_threads": 1,
+  "thread_cap": 2,
+  "probe_or_core_calls": 0,
+  "fitting": false
+}
