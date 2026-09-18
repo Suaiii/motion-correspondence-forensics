@@ -1,0 +1,140 @@
+{
+  "task_id": "AL27",
+  "reviewed_at": "2026-09-18T21:29:53.850122+00:00",
+  "execution_status": "done",
+  "gate_result": "fail",
+  "reviewer": "planagent",
+  "manifest_files_verified": 12,
+  "historical_files_verified": 92,
+  "dependencies_verified": 5,
+  "source_freeze_commit": "dc7826916c14decf0f717a134c1f315b24f748d3",
+  "source_result_commit": "505b00198c2eb3f84e7a104e99fb5a68c2b76600",
+  "checks_total": 69,
+  "checks_passed": 68,
+  "gram_conditions_exactly_checked": 192,
+  "independent_terminal_diagnostics": [
+    {
+      "panel": "aligned",
+      "head": "candidate",
+      "rank": 4,
+      "terminal_gradient_l2_decimal": "2.07221815658933378183754291168319325407640084100000000000000E-16",
+      "objective_decimal": "0.112393094715434227016177046352843370815234619449790656667280",
+      "initial_gradient_exact": [
+        "-3/32",
+        "-3/32",
+        "-3/32",
+        "-3/32"
+      ]
+    },
+    {
+      "panel": "aligned",
+      "head": "free",
+      "rank": 4,
+      "terminal_gradient_l2_decimal": "8.45979519895773113358773918768490384111310172272252303283336E-17",
+      "objective_decimal": "0.112393094715434227016177046352843370815234619449790656667280",
+      "initial_gradient_exact": [
+        "-1/64",
+        "-1/64",
+        "1/32",
+        "-1/64",
+        "-1/64",
+        "1/32",
+        "-1/64",
+        "-1/64",
+        "1/32",
+        "-1/64",
+        "-1/64",
+        "1/32"
+      ]
+    },
+    {
+      "panel": "full_rank",
+      "head": "candidate",
+      "rank": 4,
+      "terminal_gradient_l2_decimal": "0.000",
+      "objective_decimal": "0.69314718055994530941723212145817656807550013436025525412068",
+      "initial_gradient_exact": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "panel": "full_rank",
+      "head": "free",
+      "rank": 12,
+      "terminal_gradient_l2_decimal": "9.86735367852797870826109830495974449380873976084379147741236E-11",
+      "objective_decimal": "0.254700899337267858384847433175270032348723538299663076967625",
+      "initial_gradient_exact": [
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96",
+        "-1/96"
+      ]
+    },
+    {
+      "panel": "symmetric",
+      "head": "candidate",
+      "rank": 4,
+      "terminal_gradient_l2_decimal": "0.000",
+      "objective_decimal": "0.69314718055994530941723212145817656807550013436025525412068",
+      "initial_gradient_exact": [
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "panel": "symmetric",
+      "head": "free",
+      "rank": 4,
+      "terminal_gradient_l2_decimal": "0E-63",
+      "objective_decimal": "0.693147180559945309417232121458176568075500134360255254120680",
+      "initial_gradient_exact": [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    }
+  ],
+  "failure": {
+    "coordinate_error": 3.158438133255004e-08,
+    "coordinate_limit": 1e-09,
+    "gradient_l2": 9.867353717817214e-11,
+    "gradient_limit": 1e-10,
+    "head_mu_exact": "1/3000",
+    "conditional_bound_from_original_gradient_limit": "3/10000000",
+    "precise_scalar_reference_derivative": "-5.69735552334240445844313332990598908363179742E-17",
+    "interpretation": "Frozen gradient stopping threshold is not sufficient to guarantee frozen coordinate accuracy; execution followed stopping rule"
+  },
+  "parameter_derived_future_gradient_budget": {
+    "target_parameter_error": "1/1000000000",
+    "rule": "min(1e-10, mu*target/2); half reserved for unknown gradient computation error if a formal guarantee is desired",
+    "candidate": "1/1000000000000",
+    "free": "1/6000000000000",
+    "formal_float_gradient_error_bound": "unknown"
+  },
+  "optimizer_or_objective_module_calls": 0,
+  "scientific_OR1_refutation": false,
+  "scientific_breakthrough": false,
+  "audit_source_sha256": "a7f00c39672016850c143672053cde324a1a71833907af75d7a23ada2e305e58"
+}
