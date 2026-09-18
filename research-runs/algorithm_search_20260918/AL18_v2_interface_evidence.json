@@ -1,0 +1,1007 @@
+{
+  "task_id": "AL18",
+  "dispatch_id": "cc-al18-numerical-contract-20260919",
+  "scope": "bounded_interface_v2_regression_only",
+  "observed_at": "2026-09-18T19:42:01.342784+00:00",
+  "git_revision": "4a771f7a854926412c502de69311c85568957ebe",
+  "status": "pass_targeted_interface_repair",
+  "failures": [],
+  "records": [
+    {
+      "id": "N5_nan_observation_unknown_bound__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "hat_q: nonfinite value"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_finite_observation_unknown_bound__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/4",
+        "eta": "1/1000000000000",
+        "status": "uncertified_bound",
+        "interval_valid": false,
+        "unknown_fields": [
+          {
+            "field": "B_D",
+            "reason": "missing_or_unknown"
+          }
+        ],
+        "bound_sources": {
+          "B_N": "analytic_mock",
+          "rho_q": "analytic_mock",
+          "rho_s": "analytic_mock"
+        },
+        "reason": "Unknown or empirical-only errors/Lipschitz values are never filled with zero"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_finite_observation_known_bound__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/4",
+        "eta": "1/1000000000000",
+        "status": "conditional_interval",
+        "interval_valid": true,
+        "q_hat": "1/2",
+        "B_q": "0",
+        "ratio_interval": [
+          "1/2",
+          "1/2"
+        ],
+        "denominator_lower": "1/2",
+        "numerator_energy_lower": "1/4",
+        "denominator_residual_energy_lower": "499999999999/1000000000000",
+        "nonpositivity_reasons": [],
+        "score": {
+          "score_hat": "1/2",
+          "B_score": "0",
+          "interval": [
+            "1/2",
+            "1/2"
+          ],
+          "threshold": "0",
+          "sign_stability": "strict_positive",
+          "origin_decision": null,
+          "scope": "Numerical sign stability only; no correctness of source classification claimed"
+        },
+        "bound_sources": {
+          "B_N": "analytic_mock",
+          "B_D": "analytic_mock",
+          "rho_q": "analytic_mock",
+          "rho_s": "analytic_mock"
+        },
+        "interpretation": "Interval may be valid while positive residual energy remains unproved; neither state is an origin label"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "q_hat_honored": true,
+        "B_q_honored": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_nan_final_observation__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "hat_k[0]: nonfinite value"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_finite_final_observation__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/4",
+        "eta": "1/1000000000000",
+        "status": "residual_energy_not_certified_positive",
+        "interval_valid": true,
+        "K_hat": [
+          "0"
+        ],
+        "B_K": "0",
+        "coordinate_intervals": [
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "observed_norm_enclosure": [
+          "0",
+          "0"
+        ],
+        "norm_enclosure_exact": true,
+        "response_norm_lower": "0",
+        "response_energy_lower": "0",
+        "energy_positive_certified": false,
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_a": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "interpretation": "Euclidean error ball and coordinate enclosure, conditional on declared endpoint bounds",
+        "propagation": {
+          "ell_a": "1",
+          "ell_b": "1",
+          "delta_a": "0",
+          "delta_b": "0",
+          "delta_ab": "0",
+          "delta_ba": "0"
+        },
+        "final_K_observation": "supplied_and_checked"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "B_K_honored": true,
+        "supplied_K_is_returned": true,
+        "supplied_K_is_marked_checked": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_finite_final_unknown_L__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/4",
+        "eta": "1/1000000000000",
+        "status": "uncertified_bound",
+        "interval_valid": false,
+        "unknown_fields": [
+          {
+            "field": "L_a",
+            "reason": "missing_or_unknown"
+          }
+        ],
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "reason": "Unknown or empirical-only errors/Lipschitz values are never filled with zero"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_nonzero_final_observation_used__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/4",
+        "eta": "1/1000000000000",
+        "status": "residual_energy_not_certified_positive",
+        "interval_valid": true,
+        "K_hat": [
+          "1/64"
+        ],
+        "B_K": "1/64",
+        "coordinate_intervals": [
+          [
+            "0",
+            "1/32"
+          ]
+        ],
+        "observed_norm_enclosure": [
+          "1/64",
+          "1/64"
+        ],
+        "norm_enclosure_exact": true,
+        "response_norm_lower": "0",
+        "response_energy_lower": "0",
+        "energy_positive_certified": false,
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_a": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "interpretation": "Euclidean error ball and coordinate enclosure, conditional on declared endpoint bounds",
+        "propagation": {
+          "ell_a": "1",
+          "ell_b": "1",
+          "delta_a": "0",
+          "delta_b": "0",
+          "delta_ab": "0",
+          "delta_ba": "0"
+        },
+        "final_K_observation": "supplied_and_checked"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "B_K_honored": true,
+        "supplied_K_is_returned": true,
+        "supplied_K_is_marked_checked": true,
+        "nonzero_observation_changes_interval": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_unsupported_output_field__h1/4",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "Missing or unsupported public observation fields"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_nan_observation_unknown_bound__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "hat_q: nonfinite value"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_finite_observation_unknown_bound__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/8",
+        "eta": "1/1000000000000",
+        "status": "uncertified_bound",
+        "interval_valid": false,
+        "unknown_fields": [
+          {
+            "field": "B_D",
+            "reason": "missing_or_unknown"
+          }
+        ],
+        "bound_sources": {
+          "B_N": "analytic_mock",
+          "rho_q": "analytic_mock",
+          "rho_s": "analytic_mock"
+        },
+        "reason": "Unknown or empirical-only errors/Lipschitz values are never filled with zero"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_finite_observation_known_bound__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/8",
+        "eta": "1/1000000000000",
+        "status": "conditional_interval",
+        "interval_valid": true,
+        "q_hat": "1/2",
+        "B_q": "0",
+        "ratio_interval": [
+          "1/2",
+          "1/2"
+        ],
+        "denominator_lower": "1/2",
+        "numerator_energy_lower": "1/4",
+        "denominator_residual_energy_lower": "499999999999/1000000000000",
+        "nonpositivity_reasons": [],
+        "score": {
+          "score_hat": "1/2",
+          "B_score": "0",
+          "interval": [
+            "1/2",
+            "1/2"
+          ],
+          "threshold": "0",
+          "sign_stability": "strict_positive",
+          "origin_decision": null,
+          "scope": "Numerical sign stability only; no correctness of source classification claimed"
+        },
+        "bound_sources": {
+          "B_N": "analytic_mock",
+          "B_D": "analytic_mock",
+          "rho_q": "analytic_mock",
+          "rho_s": "analytic_mock"
+        },
+        "interpretation": "Interval may be valid while positive residual energy remains unproved; neither state is an origin label"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "q_hat_honored": true,
+        "B_q_honored": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_nan_final_observation__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "hat_k[0]: nonfinite value"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_finite_final_observation__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/8",
+        "eta": "1/1000000000000",
+        "status": "residual_energy_not_certified_positive",
+        "interval_valid": true,
+        "K_hat": [
+          "0"
+        ],
+        "B_K": "0",
+        "coordinate_intervals": [
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "observed_norm_enclosure": [
+          "0",
+          "0"
+        ],
+        "norm_enclosure_exact": true,
+        "response_norm_lower": "0",
+        "response_energy_lower": "0",
+        "energy_positive_certified": false,
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_a": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "interpretation": "Euclidean error ball and coordinate enclosure, conditional on declared endpoint bounds",
+        "propagation": {
+          "ell_a": "1",
+          "ell_b": "1",
+          "delta_a": "0",
+          "delta_b": "0",
+          "delta_ab": "0",
+          "delta_ba": "0"
+        },
+        "final_K_observation": "supplied_and_checked"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "B_K_honored": true,
+        "supplied_K_is_returned": true,
+        "supplied_K_is_marked_checked": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_finite_final_unknown_L__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/8",
+        "eta": "1/1000000000000",
+        "status": "uncertified_bound",
+        "interval_valid": false,
+        "unknown_fields": [
+          {
+            "field": "L_a",
+            "reason": "missing_or_unknown"
+          }
+        ],
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "reason": "Unknown or empirical-only errors/Lipschitz values are never filled with zero"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_nonzero_final_observation_used__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/8",
+        "eta": "1/1000000000000",
+        "status": "residual_energy_not_certified_positive",
+        "interval_valid": true,
+        "K_hat": [
+          "1/64"
+        ],
+        "B_K": "1/64",
+        "coordinate_intervals": [
+          [
+            "0",
+            "1/32"
+          ]
+        ],
+        "observed_norm_enclosure": [
+          "1/64",
+          "1/64"
+        ],
+        "norm_enclosure_exact": true,
+        "response_norm_lower": "0",
+        "response_energy_lower": "0",
+        "energy_positive_certified": false,
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_a": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "interpretation": "Euclidean error ball and coordinate enclosure, conditional on declared endpoint bounds",
+        "propagation": {
+          "ell_a": "1",
+          "ell_b": "1",
+          "delta_a": "0",
+          "delta_b": "0",
+          "delta_ab": "0",
+          "delta_ba": "0"
+        },
+        "final_K_observation": "supplied_and_checked"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "B_K_honored": true,
+        "supplied_K_is_returned": true,
+        "supplied_K_is_marked_checked": true,
+        "nonzero_observation_changes_interval": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_unsupported_output_field__h1/8",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "Missing or unsupported public observation fields"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_nan_observation_unknown_bound__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "hat_q: nonfinite value"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_finite_observation_unknown_bound__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/16",
+        "eta": "1/1000000000000",
+        "status": "uncertified_bound",
+        "interval_valid": false,
+        "unknown_fields": [
+          {
+            "field": "B_D",
+            "reason": "missing_or_unknown"
+          }
+        ],
+        "bound_sources": {
+          "B_N": "analytic_mock",
+          "rho_q": "analytic_mock",
+          "rho_s": "analytic_mock"
+        },
+        "reason": "Unknown or empirical-only errors/Lipschitz values are never filled with zero"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N5_finite_observation_known_bound__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N5",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/16",
+        "eta": "1/1000000000000",
+        "status": "conditional_interval",
+        "interval_valid": true,
+        "q_hat": "1/2",
+        "B_q": "0",
+        "ratio_interval": [
+          "1/2",
+          "1/2"
+        ],
+        "denominator_lower": "1/2",
+        "numerator_energy_lower": "1/4",
+        "denominator_residual_energy_lower": "499999999999/1000000000000",
+        "nonpositivity_reasons": [],
+        "score": {
+          "score_hat": "1/2",
+          "B_score": "0",
+          "interval": [
+            "1/2",
+            "1/2"
+          ],
+          "threshold": "0",
+          "sign_stability": "strict_positive",
+          "origin_decision": null,
+          "scope": "Numerical sign stability only; no correctness of source classification claimed"
+        },
+        "bound_sources": {
+          "B_N": "analytic_mock",
+          "B_D": "analytic_mock",
+          "rho_q": "analytic_mock",
+          "rho_s": "analytic_mock"
+        },
+        "interpretation": "Interval may be valid while positive residual energy remains unproved; neither state is an origin label"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "q_hat_honored": true,
+        "B_q_honored": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_nan_final_observation__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "hat_k[0]: nonfinite value"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_finite_final_observation__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/16",
+        "eta": "1/1000000000000",
+        "status": "residual_energy_not_certified_positive",
+        "interval_valid": true,
+        "K_hat": [
+          "0"
+        ],
+        "B_K": "0",
+        "coordinate_intervals": [
+          [
+            "0",
+            "0"
+          ]
+        ],
+        "observed_norm_enclosure": [
+          "0",
+          "0"
+        ],
+        "norm_enclosure_exact": true,
+        "response_norm_lower": "0",
+        "response_energy_lower": "0",
+        "energy_positive_certified": false,
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_a": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "interpretation": "Euclidean error ball and coordinate enclosure, conditional on declared endpoint bounds",
+        "propagation": {
+          "ell_a": "1",
+          "ell_b": "1",
+          "delta_a": "0",
+          "delta_b": "0",
+          "delta_ab": "0",
+          "delta_ba": "0"
+        },
+        "final_K_observation": "supplied_and_checked"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "B_K_honored": true,
+        "supplied_K_is_returned": true,
+        "supplied_K_is_marked_checked": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_finite_final_unknown_L__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/16",
+        "eta": "1/1000000000000",
+        "status": "uncertified_bound",
+        "interval_valid": false,
+        "unknown_fields": [
+          {
+            "field": "L_a",
+            "reason": "missing_or_unknown"
+          }
+        ],
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "reason": "Unknown or empirical-only errors/Lipschitz values are never filled with zero"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_nonzero_final_observation_used__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "h": "1/16",
+        "eta": "1/1000000000000",
+        "status": "residual_energy_not_certified_positive",
+        "interval_valid": true,
+        "K_hat": [
+          "1/64"
+        ],
+        "B_K": "1/64",
+        "coordinate_intervals": [
+          [
+            "0",
+            "1/32"
+          ]
+        ],
+        "observed_norm_enclosure": [
+          "1/64",
+          "1/64"
+        ],
+        "norm_enclosure_exact": true,
+        "response_norm_lower": "0",
+        "response_energy_lower": "0",
+        "energy_positive_certified": false,
+        "bound_sources": {
+          "eps_a0": "analytic_mock",
+          "eps_b0": "analytic_mock",
+          "eps_ab": "analytic_mock",
+          "eps_ba": "analytic_mock",
+          "L_a": "analytic_mock",
+          "L_b": "analytic_mock",
+          "rho_a": "analytic_mock",
+          "rho_b": "analytic_mock",
+          "rho_ab": "analytic_mock",
+          "rho_ba": "analytic_mock",
+          "rho_K": "analytic_mock"
+        },
+        "interpretation": "Euclidean error ball and coordinate enclosure, conditional on declared endpoint bounds",
+        "propagation": {
+          "ell_a": "1",
+          "ell_b": "1",
+          "delta_a": "0",
+          "delta_b": "0",
+          "delta_ab": "0",
+          "delta_ba": "0"
+        },
+        "final_K_observation": "supplied_and_checked"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "B_K_honored": true,
+        "supplied_K_is_returned": true,
+        "supplied_K_is_marked_checked": true,
+        "nonzero_observation_changes_interval": true
+      },
+      "passed": true
+    },
+    {
+      "id": "N2_unsupported_output_field__h1/16",
+      "worker": "AL18v2_0",
+      "result": {
+        "equation": "N2",
+        "interface_version": "AL18-v2",
+        "norm": "Euclidean, squared energy uses sum",
+        "arithmetic": "exact rational",
+        "certificate_scope": "conditional on valid declared bounds, not empirical repeat agreement",
+        "origin_decision": null,
+        "status": "invalid_input",
+        "interval_valid": false,
+        "reason": "Missing or unsupported public observation fields"
+      },
+      "checks": {
+        "expected_state": true,
+        "no_origin_label": true,
+        "not_certified": true
+      },
+      "passed": true
+    }
+  ],
+  "source_hash_before": "3ac18e29774aaa9f2eeecb593f2a8e8233d864b0a69cdd6156520fee640d5984",
+  "source_hash_v2": "7a16a0f3335d57ff22d1409c0a3cc77273a05f8fc76d5a558d6b044bf764c5a5",
+  "v1_evidence_sha256": "b56917ec8688c534cddaf82ba3f2a503cd48f5388b9faf1cb26d42053e250c9f",
+  "v2_freeze_sha256": "01f66ce1f7b6f8e41d3a4fdff23c0842bc791e493b3bade7b7d51af3566dd762",
+  "files": {
+    "research-runtime/algorithm_candidates/or1_numerics/bounds.py": "3ac18e29774aaa9f2eeecb593f2a8e8233d864b0a69cdd6156520fee640d5984",
+    "research-runtime/algorithm_candidates/or1_numerics/bounds_v2.py": "7a16a0f3335d57ff22d1409c0a3cc77273a05f8fc76d5a558d6b044bf764c5a5",
+    "research-runtime/algorithm_candidates/or1_numerics/interface_regression_v2.py": "188e48a55df6d77d4ba5359b4aaef47534b547dc76df548972df734d985375e5",
+    "research-runs/algorithm_search_20260918/AL18_v2_interface_inputs.json": "e76f638de2a7c3efa4c3c9fede72a10c94ab48a8a9cc5fb2624c4af9c9dcd94d",
+    "research-runs/algorithm_search_20260918/AL18_v2_interface_note.md": "fc9345fdbc028250b836b46fcde098b07963445a74681eabf29d9f9519def348",
+    "research-runs/algorithm_search_20260918/AL18_interface_findings_source.json": "8e2bec74ec47ddce3de2437c5b52ddff3a9cffb882961f057f2ee1567ddd3604",
+    "research-runs/algorithm_search_20260918/AL18_evidence.json": "b56917ec8688c534cddaf82ba3f2a503cd48f5388b9faf1cb26d42053e250c9f",
+    "research-runs/algorithm_search_20260918/AL18_inputs.json": "3e91b7eddc14bcfbb7e541651f9e19b5d9d3d462696cd4aa0b9949684f93314a",
+    "research-runs/algorithm_search_20260918/AL18_freeze.json": "702fdfad829c17007f2b6d002d7a2faec0aca2ba20318556459854565255990e"
+  },
+  "v1_and_old_artifacts_unchanged": true,
+  "calls": {
+    "v2_public_contract_queries": 24,
+    "v1_public_queries_by_this_executor": 0,
+    "reviewer_preliminary_v1_queries": 2,
+    "mock_probe_calls": 0,
+    "endpoint_readouts": 0,
+    "original_147_replayed": false,
+    "AL15_replayed": false
+  },
+  "worker_cap": 2,
+  "observed_workers": [
+    "AL18v2_0"
+  ],
+  "wall_seconds": 0.11413270000048215,
+  "arithmetic": "stdlib Fraction",
+  "scientific_breakthrough": false,
+  "real_AE_precision_certified": false
+}

@@ -1,0 +1,96 @@
+{
+  "task_id": "AL18",
+  "dispatch_id": "cc-al18-numerical-contract-20260919",
+  "freeze_commit_v1": "8ff3400",
+  "original_result_commit": "0546f63",
+  "freeze_commit_v2": "4a771f7",
+  "created_at": "2026-09-19T03:45:27.4450157+08:00",
+  "scope": "v1 fixed conditional numerical contract plus bounded v2 interface repair; no full v2 replay",
+  "files": [
+    {
+      "path": "research-runtime/algorithm_candidates/or1_numerics/bounds_v2.py",
+      "sha256": "7a16a0f3335d57ff22d1409c0a3cc77273a05f8fc76d5a558d6b044bf764c5a5",
+      "bytes": 3717
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_numerics/bounds.py",
+      "sha256": "3ac18e29774aaa9f2eeecb593f2a8e8233d864b0a69cdd6156520fee640d5984",
+      "bytes": 10129
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_numerics/config.json",
+      "sha256": "496888e78f5c0ddb58aadbe188648bcac2a4ddda48ccd48ac1b410950c01b6e6",
+      "bytes": 1121
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_numerics/freeze.py",
+      "sha256": "442b43fd9fa88500a59685b379a84aac660ad884ca74de6bd8640b73d3bdee46",
+      "bytes": 9880
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_numerics/interface_regression_v2.py",
+      "sha256": "188e48a55df6d77d4ba5359b4aaef47534b547dc76df548972df734d985375e5",
+      "bytes": 8172
+    },
+    {
+      "path": "research-runtime/algorithm_candidates/or1_numerics/run.py",
+      "sha256": "a4f3f64ecc9063e642d66e56a2bfca346cb610e2588d5d5921c2f877ee033249",
+      "bytes": 15039
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_evidence.json",
+      "sha256": "b56917ec8688c534cddaf82ba3f2a503cd48f5388b9faf1cb26d42053e250c9f",
+      "bytes": 443552
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_freeze.json",
+      "sha256": "702fdfad829c17007f2b6d002d7a2faec0aca2ba20318556459854565255990e",
+      "bytes": 9546
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_handoff.md",
+      "sha256": "180618f11efb13f6948746bc881ab511a148420c3fc2add8464bd3e1c821fe36",
+      "bytes": 6224
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_inputs.json",
+      "sha256": "3e91b7eddc14bcfbb7e541651f9e19b5d9d3d462696cd4aa0b9949684f93314a",
+      "bytes": 223733
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_interface_findings_source.json",
+      "sha256": "8e2bec74ec47ddce3de2437c5b52ddff3a9cffb882961f057f2ee1567ddd3604",
+      "bytes": 3773
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_protocol.md",
+      "sha256": "706fc1c14a014465fcb1514e9564087fb27e3a5eff7465e6e6d432d127560aa5",
+      "bytes": 7639
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_report.md",
+      "sha256": "e573f9274afa1f47a7a9d5e634c74f19683d6a06a133e8d36152dfe48a04f76b",
+      "bytes": 9919
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_v2_interface_evidence.json",
+      "sha256": "a1b268ac8b25b1a2c3551214160ee5e802d55a4c1c74adcf82b9a27a4b20c7a3",
+      "bytes": 32884
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_v2_interface_freeze.json",
+      "sha256": "01f66ce1f7b6f8e41d3a4fdff23c0842bc791e493b3bade7b7d51af3566dd762",
+      "bytes": 1659
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_v2_interface_inputs.json",
+      "sha256": "e76f638de2a7c3efa4c3c9fede72a10c94ab48a8a9cc5fb2624c4af9c9dcd94d",
+      "bytes": 34705
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL18_v2_interface_note.md",
+      "sha256": "fc9345fdbc028250b836b46fcde098b07963445a74681eabf29d9f9519def348",
+      "bytes": 1972
+    }
+  ]
+}
