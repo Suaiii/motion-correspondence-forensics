@@ -2102,7 +2102,7 @@
         "AL15",
         "AL16"
       ],
-      "status": "ready",
+      "status": "running",
       "gate_result": "not_evaluated",
       "gate_scope": "conditional_numerical_contract_software",
       "hypothesis": "已知误差可产生有前提的区间，重复一致不能认证未知误差；接口应明确数值未认证状态。",
@@ -2138,7 +2138,12 @@
       "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
       "implementation_authorized": true,
-      "next_action": "按唯一派发及工作单执行；AL19由planagent独立处理。"
+      "next_action": "按唯一派发及工作单执行；AL19由planagent独立处理。",
+      "dispatch_status": "running_verified",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "started_at": "2026-09-19T03:14:45+08:00",
+      "observed_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78"
     },
     {
       "id": "AL19",
@@ -2155,8 +2160,8 @@
         "AL16",
         "AL17"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "clamp_coordinate_alternative_explanation",
       "hypothesis": "可交换底层平移在夹断后可能产生非零顺序响应；固定eta也可能破坏尺度不变性。",
       "work": [
@@ -2170,7 +2175,8 @@
         "给具体固定算例和适用前提"
       ],
       "artifacts": [
-        "../reviews/AL19_CLAMP_COORDINATES_REVIEW_20260919.md"
+        "../reviews/AL19_CLAMP_COORDINATES_REVIEW_20260919.md",
+        "../reviews/AL19_CLAMP_COORDINATES_EXACT_20260919.json"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
@@ -2189,11 +2195,123 @@
       },
       "prepared_at": "2026-09-19T03:08:30+08:00",
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "supported_for_explicit_counterexample_and_coordinate_conditions",
       "started_at": "2026-09-19T03:08:30+08:00",
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "implementation_authorized": false,
-      "next_action": "本任务独立数学审查，与AL18并行。"
+      "next_action": "AL20 compact strong baseline and AL21 coverage contract; no changes to frozen OR1",
+      "completed_at": "2026-09-19T03:14:45+08:00",
+      "reviewed_by": "planagent",
+      "review_scope": "Self-derived exact mathematical alternatives; not real-model scientific validation",
+      "review": "../reviews/AL19_CLAMP_COORDINATES_REVIEW_20260919.md",
+      "independent_scientific_review": "pending; planagent mathematical derivation"
+    },
+    {
+      "id": "AL20",
+      "milestone": "M2",
+      "title": "OR1有限交叉响应的紧凑强基线合同",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL12",
+        "AL15",
+        "AL19"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL15",
+        "AL19"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "finite_response_baseline_contract",
+      "hypothesis": "同四调用的交叉增量能量/内积可能精确重构OR1读出；单步标量基线可能遗漏关键普通量。",
+      "work": [
+        "推导有限h精确关系及共同分母特征",
+        "设计完整紧凑强基线和容量/信息合同",
+        "仅核查预定三个AL15主h trace，不重新调用/拟合"
+      ],
+      "acceptance": [
+        "报告精确重构条件和不能推断的真实效能",
+        "保留完整端点与普通读出对照",
+        "不调旧审计输入/参数、不释放模型/资源门槛"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL20_method_baseline.md",
+        "../../research-runs/algorithm_search_20260918/AL20_handoff.md"
+      ],
+      "work_order": "../AL20_OR1_COMPACT_BASELINE_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T03:14:45+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "hypothesis_result": "not_evaluated",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "next_action": "Prepared only; follow unique main-DAG dispatch/start record, no parallel package for same executor."
+    },
+    {
+      "id": "AL21",
+      "milestone": "M2",
+      "title": "OR1数值拒绝与共同支持的评价审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL13",
+        "AL16"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL13",
+        "AL16"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "coverage_evaluation_contract",
+      "hypothesis": "相同类别保留比例仍可改变条件AUROC；必须分别定义完整系统与接受集上的评价。",
+      "work": [
+        "固定小分数/掩码反例",
+        "区分条件指标、联合覆盖和预定fallback",
+        "约束FPR分母与祖先配对统计"
+      ],
+      "acceptance": [
+        "无模型拟合/真实标签或阈值调整",
+        "完整列正负对，不能用选择性覆盖冒充全部增益",
+        "分开训练匹配和推断拒绝"
+      ],
+      "artifacts": [
+        "../reviews/AL21_COVERAGE_EVALUATION_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL21_OR1_COVERAGE_REVIEW_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T03:14:45+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_toy_patch_count": 8,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "max_array_bytes": 1048576,
+        "torch": false
+      },
+      "hypothesis_result": "not_evaluated",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "next_action": "Prepared only; follow unique main-DAG dispatch/start record, no parallel package for same executor."
     }
   ],
   "storage_policy": {
@@ -3593,7 +3711,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T03:08:30+08:00",
+  "updated_at": "2026-09-19T03:14:45+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4245,7 +4363,7 @@
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
-      "status": "prepared_not_sent",
+      "status": "running",
       "prepared_at": "2026-09-19T03:08:30+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "work_order": "../AL18_OR1_NUMERICAL_CPU_20260919.md",
@@ -4253,19 +4371,26 @@
       "plan_version": "cvpr27-20260919-v1.5",
       "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
       "scope": "Frozen8-family conditional numerical contract, CPU only; no AL15 rerun, models/media/server/GPU/training.",
-      "readiness_basis": "AL15 substantive handoff, source and exact trace review plus idle/completed cursor22."
+      "readiness_basis": "AL15 substantive handoff, source and exact trace review plus idle/completed cursor22.",
+      "sent_at": "2026-09-19T03:10:33+08:00",
+      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+      "duplicate_dispatch_suppressed": true,
+      "last_observed_status": "inProgress",
+      "last_observed_thread_turn_id": "01a0b5ec-7830-7553-b42d-fbfbffcb1b78",
+      "last_observed_at": "2026-09-19T03:14:45+08:00",
+      "startup_evidence": "wait_threads active plus explicit AL18 work-order and rational-input acknowledgement; no duplicate dispatch."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:22",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:23",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T03:08:30+08:00",
-    "research_observed_status": "idle",
+    "last_coordinator_activity_at": "2026-09-19T03:14:45+08:00",
+    "research_observed_status": "active",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -4642,7 +4767,7 @@
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:22"
       }
     ],
-    "last_substantive_review": "../reviews/AL15_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL19_CLAMP_COORDINATES_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4722,10 +4847,11 @@
         "AL19"
       ],
       "executor_role": "planagent",
-      "status": "running_mathematical_review",
+      "status": "completed_mathematical_review",
       "started_at": "2026-09-19T03:08:30+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "Clipping counterexamples and coordinate formulas; independent of AL18 CPU implementation"
+      "scope": "Clipping counterexamples and coordinate formulas; independent of AL18 CPU implementation",
+      "completed_at": "2026-09-19T03:14:45+08:00"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4742,16 +4868,18 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T03:08:30+08:00",
+    "last_local_review_at": "2026-09-19T03:14:45+08:00",
     "prepared_independent_task_ids": [
-      "AL18"
+      "AL20",
+      "AL21"
     ],
     "active_and_prepared_work": {
       "running": [
-        "AL19"
+        "AL18"
       ],
       "prepared_independent": [
-        "AL18"
+        "AL20",
+        "AL21"
       ]
     },
     "material_decision_notices": [
@@ -4862,7 +4990,11 @@
       "independent_numerical_review_task": "AL16",
       "numerical_implementation_task": "AL18",
       "clamp_coordinate_review_task": "AL19",
-      "static_interface_review_task": "AL17"
+      "static_interface_review_task": "AL17",
+      "clamp_counterexample_established": true,
+      "real_clamp_confound_confirmed": false,
+      "compact_baseline_task": "AL20",
+      "coverage_review_task": "AL21"
     }
   },
   "open_review_issues": [
