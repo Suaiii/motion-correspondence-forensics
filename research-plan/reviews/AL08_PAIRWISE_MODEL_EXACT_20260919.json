@@ -1,0 +1,93 @@
+{
+  "task_id": "AL08",
+  "observed_at_utc": "2026-09-18T17:14:37.336778+00:00",
+  "scope": "Exact fixed distribution counterexample; not a detector implementation or empirical effect",
+  "definition": "P(s) proportional to 2^(s_a+s_b+s_c+s_a*s_b+s_a*s_c+s_b*s_c)",
+  "normalizer": "275/4",
+  "states": [
+    {
+      "s": [
+        -1,
+        -1,
+        -1
+      ],
+      "p": "4/275"
+    },
+    {
+      "s": [
+        -1,
+        -1,
+        1
+      ],
+      "p": "1/275"
+    },
+    {
+      "s": [
+        -1,
+        1,
+        -1
+      ],
+      "p": "1/275"
+    },
+    {
+      "s": [
+        -1,
+        1,
+        1
+      ],
+      "p": "4/275"
+    },
+    {
+      "s": [
+        1,
+        -1,
+        -1
+      ],
+      "p": "1/275"
+    },
+    {
+      "s": [
+        1,
+        -1,
+        1
+      ],
+      "p": "4/275"
+    },
+    {
+      "s": [
+        1,
+        1,
+        -1
+      ],
+      "p": "4/275"
+    },
+    {
+      "s": [
+        1,
+        1,
+        1
+      ],
+      "p": "256/275"
+    }
+  ],
+  "means": [
+    "51/55",
+    "51/55",
+    "51/55"
+  ],
+  "pair_moments": [
+    "51/55",
+    "51/55",
+    "51/55"
+  ],
+  "ordinary_centered_third": "-16848/166375",
+  "ordinary_centered_third_float": -0.10126521412471826,
+  "linear_Lancaster_squared_norm": "283855104/27680640625",
+  "connected_information_order3": "0 analytically: P is the unique maximum-entropy distribution at its own one/two-variable constraints",
+  "proof": "For any R with those constraints E_R log P=E_P log P. D(R||P)=H(P)-H(R)>=0. Thus P=P_ME2, although its centered third moment is nonzero.",
+  "scientific_breakthrough": false,
+  "server_access": false,
+  "gpu_used": false,
+  "independent_review": "pending; planagent-derived finite counterexample",
+  "work_order_sha256": "9ba5037d9b7f23c936b6f43f25d2b11b0dcf826c1aa4c6a091b0a51461b07d3f"
+}

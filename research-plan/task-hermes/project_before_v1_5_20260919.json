@@ -74,7 +74,7 @@
         "../../research-runs/shared_plan_20260917/asset_and_budget_review.md"
       ],
       "due_at": "2026-09-18T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "只读核对现有授权账单或既有用量回复，核清付费额度；算法队列继续，不重复索要已询问信息。",
       "blocker": "49714访问、硬件、原项目目录与无人值守公钥登录已核验；实际累计支出/计费小时、当前报价/剩余额度仍未知。此阻塞仅影响付费支路。",
       "partial_evidence": [
@@ -157,7 +157,7 @@
         "../../research-runs/shared_plan_20260917/accepted_manifest_audit.json"
       ],
       "due_at": "2026-09-21T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "复用已恢复HD-VG/CogVideo与Vript，核对祖先连通组"
     },
     {
@@ -187,7 +187,7 @@
         "../../research-runs/shared_plan_20260917/sampling_support_report.json"
       ],
       "due_at": "2026-09-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "在原始PTS与资源条件允许后审查版本化采样方案；不得把当前100条假视频诊断升格为真假协议验收。",
       "partial_evidence": [
         "../../research-runs/actual_lag_support_v1_report.json",
@@ -316,7 +316,7 @@
         "../../research-runs/shared_plan_20260917/profile_100.json"
       ],
       "due_at": "2026-09-23T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "完成100条完整提取与预测profile"
     },
     {
@@ -361,7 +361,7 @@
         "../../research-runs/shared_plan_20260917/foundation_acceptance.md"
       ],
       "due_at": "2026-09-24T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "冻结首批约2000条、目标6000条的分组协议"
     },
     {
@@ -395,7 +395,7 @@
         "../../research-runs/shared_plan_20260917/mechanism_screen.md"
       ],
       "due_at": "2026-09-30T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "比较完整响应、普通patch、未校准组成、语义与探针",
       "gate_scope": "mechanism"
     },
@@ -423,7 +423,7 @@
         "../../research-runs/shared_plan_20260917/gate_20261001.md"
       ],
       "due_at": "2026-10-01T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "整理机制证据并与用户/导师判断是否扩容"
     },
     {
@@ -453,7 +453,7 @@
         "../../research-runs/shared_plan_20260917/five_seed_method.md"
       ],
       "due_at": "2026-10-08T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "完成五种子及相同容量和增强对照"
     },
     {
@@ -482,7 +482,7 @@
         "../../research-runs/shared_plan_20260917/strong_baseline_report.md"
       ],
       "due_at": "2026-10-14T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "联通STALL、D3并优先复现WaveRep/RIFT可用流程"
     },
     {
@@ -510,7 +510,7 @@
         "../../research-runs/shared_plan_20260917/gate_20261015.md"
       ],
       "due_at": "2026-10-15T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "和用户/导师核对强基线、替代解释与创新差异"
     },
     {
@@ -540,7 +540,7 @@
         "../../research-runs/shared_plan_20260917/ablation_robustness_cost.md"
       ],
       "due_at": "2026-10-21T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "完成关键消融和未见传播协议准备"
     },
     {
@@ -569,7 +569,7 @@
         "../../research-runs/shared_plan_20260917/final_protocol_lock.json"
       ],
       "due_at": "2026-10-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "锁定checkpoint、阈值、身份、统计量和最终访问条件"
     },
     {
@@ -599,7 +599,7 @@
         "../../research-runs/shared_plan_20260917/final_confirmation.md"
       ],
       "due_at": "2026-10-29T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "评估至少7000条目标的未接触最终队列",
       "gate_scope": "formal_confirmation"
     },
@@ -655,7 +655,7 @@
         "../../research-runs/shared_plan_20260917/independent_review.md"
       ],
       "due_at": "2026-11-05T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "由不同于主实现者的导师/复核者检查划分与主表"
     },
     {
@@ -684,7 +684,7 @@
         "../../output/paper/supplement.pdf"
       ],
       "due_at": "2026-11-05T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "完成全文、补充材料及可复现证据说明"
     },
     {
@@ -712,7 +712,7 @@
         "../../research-runs/shared_plan_20260917/registration_receipt.md"
       ],
       "due_at": "2026-11-09T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "用户提前完成OpenReview注册和作者信息检查"
     },
     {
@@ -743,7 +743,7 @@
         "../../research-runs/shared_plan_20260917/submission_readiness.md"
       ],
       "due_at": "2026-11-13T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "审查正文、图表、匿名和补充材料"
     },
     {
@@ -774,7 +774,7 @@
         "../../research-runs/shared_plan_20260917/paper_submission_receipt.md"
       ],
       "due_at": "2026-11-16T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "用户完成正文提交并归档回执"
     },
     {
@@ -799,7 +799,7 @@
         "../../research-runs/shared_plan_20260917/supplement_submission_receipt.md"
       ],
       "due_at": "2026-11-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "用户提交补充材料并核对接收状态"
     },
     {
@@ -826,7 +826,7 @@
         "../../research-runs/shared_plan_20260917/final_archive.md"
       ],
       "due_at": "2026-11-22T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
+      "plan_version": "cvpr27-20260918-v1.4",
       "next_action": "归档版本、代码、证据和回执"
     },
     {
@@ -1333,8 +1333,8 @@
         "AL03",
         "AL04"
       ],
-      "status": "done",
-      "gate_result": "fail",
+      "status": "todo",
+      "gate_result": "not_evaluated",
       "gate_scope": "candidate_design_for_real_validation",
       "hypothesis": "只有有具体近邻差异、非oracle可部署读出和可靠反例边界的候选值得进入昂贵真实验证。",
       "work": [
@@ -1351,7 +1351,7 @@
       ],
       "due_at": "2026-09-21T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "使用AL09新机制设计和新的后续准入任务；保留本次fail，不解锁RS06/RS07。",
+      "next_action": "待AL01及经典投影对照AL06完成后取舍；负结果可以结项，但不能作为创新成功放行。",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -1362,13 +1362,8 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "inconclusive",
-      "dependency_update_reason": "2026-09-19一手方法审查发现二值投影循环约束是直接经典对照，选择H-J前须纳入其结果。AL06失败不阻碍作出拒绝决定。",
-      "completed_at": "2026-09-19T01:26:51+08:00",
-      "reviewed_by": "planagent",
-      "accepted_under_plan_version": "cvpr27-20260919-v1.5",
-      "decision": "No current candidate admitted for expensive real-data validation",
-      "review_note": "H-J classical marginal-distance formulation lacks established novelty/strong-baseline effect; current H-T independent-gain claim refuted; plain geometry/observed-interaction additions do not close the gap."
+      "hypothesis_result": "not_evaluated",
+      "dependency_update_reason": "2026-09-19一手方法审查发现二值投影循环约束是直接经典对照，选择H-J前须纳入其结果。AL06失败不阻碍作出拒绝决定。"
     },
     {
       "id": "AL06",
@@ -1381,8 +1376,8 @@
       "requires_pass": [
         "AL03"
       ],
-      "status": "done",
-      "gate_result": "pass",
+      "status": "running",
+      "gate_result": "not_evaluated",
       "gate_scope": "classical_certificate_baseline_and_failure_analysis",
       "hypothesis": "均匀质量下二值粗化可给出DJ的廉价有效下界，但可能遗漏不兼容输入，且投影循环约束属于明确既有方法。",
       "work": [
@@ -1398,13 +1393,11 @@
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL06_design.md",
         "../../research-runs/algorithm_search_20260918/AL06_evidence.json",
-        "../../research-runs/algorithm_search_20260918/AL06_handoff.md",
-        "../reviews/AL06_REVIEW_20260919.md",
-        "../reviews/AL06_REVIEW_EVIDENCE_20260919.json"
+        "../../research-runs/algorithm_search_20260918/AL06_handoff.md"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "AL10仅对两项归档遗漏定位非平衡约束，不扩充随机搜索。",
+      "next_action": "等待AL01完整交接后按独立工作包派发；先读取AL06_PROJECTED_CERTIFICATES_20260919.md。",
       "work_order": "../AL06_PROJECTED_CERTIFICATES_20260919.md",
       "resource_policy": {
         "local_cpu": true,
@@ -1416,26 +1409,14 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "supported",
+      "hypothesis_result": "not_evaluated",
       "prepared_at": "2026-09-19T00:50:13+08:00",
       "dispatch_status": "running_verified",
       "independent_of_current_AL01": true,
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T01:01:40+08:00",
-      "observed_turn_id": "01a0b576-58eb-7563-b28a-75526b50fd38",
-      "completed_at": "2026-09-19T01:26:51+08:00",
-      "reviewed_by": "planagent",
-      "review_scope": "Valid restricted classical lower bound and two independently certified omissions; no novelty or real detection acceptance",
-      "review_note": "9 artifact hashes and freeze/preservation verified; 22 stored objectives checked; 2 separate direct-dual solves yield rational feasible positive witnesses.",
-      "source_commits": [
-        "1956f49",
-        "6f6eaee"
-      ],
-      "integration_commits": [
-        "e72a3d0",
-        "8f03a44"
-      ]
+      "observed_turn_id": "01a0b576-58eb-7563-b28a-75526b50fd38"
     },
     {
       "id": "AL07",
@@ -1504,8 +1485,8 @@
       "requires_pass": [
         "AL07"
       ],
-      "status": "done",
-      "gate_result": "fail",
+      "status": "running",
+      "gate_result": "not_evaluated",
       "gate_scope": "candidate_observation_contract_and_prior_art",
       "hypothesis": "原始可见观测定义的三元组可能保留两两压缩丢失的信息，但其算法贡献须排除普通同输入高阶统计、Lancaster或最大熵经典交互及匹配本身的解释。",
       "work": [
@@ -1519,12 +1500,11 @@
         "现阶段只做信息/方法审查，不解锁真实数据或资源批次"
       ],
       "artifacts": [
-        "../reviews/AL08_OBSERVED_TRIPLET_REVIEW_20260919.md",
-        "../reviews/AL08_PAIRWISE_MODEL_EXACT_20260919.json"
+        "../reviews/AL08_OBSERVED_TRIPLET_REVIEW_20260919.md"
       ],
       "due_at": "2026-09-20T22:00:00+08:00",
       "plan_version": "cvpr27-20260918-v1.4",
-      "next_action": "停止把普通/核化交互包装为新算法；AL09从具体生成结构提出一个可证伪机制。",
+      "next_action": "planagent按AL08_OBSERVED_TRIPLET_CONTRACT_20260919.md审查；不与AL06实现重叠。",
       "work_order": "../AL08_OBSERVED_TRIPLET_CONTRACT_20260919.md",
       "resource_policy": {
         "local_cpu": true,
@@ -1536,116 +1516,12 @@
         "classifier_training": false,
         "large_downloads": false
       },
-      "hypothesis_result": "inconclusive",
+      "hypothesis_result": "not_evaluated",
       "prepared_at": "2026-09-19T01:10:21+08:00",
       "independent_of_AL06": true,
       "implementation_authorized": false,
       "started_at": "2026-09-19T01:12:32+08:00",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "completed_at": "2026-09-19T01:26:51+08:00",
-      "reviewed_by": "planagent",
-      "candidate_admission": "rejected_plain_classical_interaction_v0",
-      "review_scope": "Observation contract is definable; no specific mechanism or novelty beyond classical interactions established",
-      "review_note": "Primary definitions/estimators audited. Exact pairwise-exponential example has zero connected information order3 but nonzero centered third moment; the quantities must not be conflated.",
-      "independent_scientific_review": "pending; planagent-derived review"
-    },
-    {
-      "id": "AL09",
-      "milestone": "M2",
-      "title": "生成/解码结构驱动的新算法机制设计",
-      "assignee": "researchagent_next",
-      "parents": [
-        "AL05",
-        "AL08"
-      ],
-      "requires_pass": [],
-      "status": "running",
-      "gate_result": "not_evaluated",
-      "gate_scope": "generator_mechanism_and_algorithm_design",
-      "hypothesis": "某些时间压缩/解码结构可能产生时间相位相关的可见残差，须先核实算子、近邻和可否证控制，不能由架构直接推出检测效力。",
-      "work": [
-        "读取两个生成系统相关论文方法及最多8个固定commit文本文件",
-        "构造至多一个算子到观测的机制链和算法公式/复杂度",
-        "比较直接取证近邻，预设VAE重建真实视频/编码/重采样/未见结构等否证条件"
-      ],
-      "acceptance": [
-        "明确架构事实、推导预测和未测效果",
-        "没有近邻差异或机制链时no-go，不拼模块冒充创新",
-        "本包只读公开资料/小型数学设计，不执行模型/媒体/GPU"
-      ],
-      "artifacts": [
-        "../../research-runs/algorithm_search_20260918/AL09_mechanism_design.md",
-        "../../research-runs/algorithm_search_20260918/AL09_source_manifest.json",
-        "../../research-runs/algorithm_search_20260918/AL09_handoff.md"
-      ],
-      "due_at": "2026-09-20T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "work_order": "../AL09_GENERATOR_MECHANISM_20260919.md",
-      "next_action": "按工作单执行；具体派发以continuous_collaboration为准。",
-      "resource_policy": {
-        "local_cpu": true,
-        "threads": 2,
-        "max_toy_patch_count": 8,
-        "server_access": false,
-        "real_media": false,
-        "gpu": false,
-        "classifier_training": false,
-        "large_downloads": false
-      },
-      "hypothesis_result": "not_evaluated",
-      "prepared_at": "2026-09-19T01:26:51+08:00",
-      "implementation_authorized": false,
-      "dispatch_status": "running_verified",
-      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
-      "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "started_at": "2026-09-19T01:28:40+08:00",
-      "observed_turn_id": "01a0b58e-8640-78b3-8f08-2f64e4cc2dee"
-    },
-    {
-      "id": "AL10",
-      "milestone": "M2",
-      "title": "归档投影遗漏的非平衡约束归因",
-      "assignee": "planagent",
-      "parents": [
-        "AL06"
-      ],
-      "requires_pass": [
-        "AL06"
-      ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
-      "gate_scope": "archived_classical_counterexample_attribution",
-      "hypothesis": "一般非平衡二分三角可能已捕获AL06两个遗漏，须只用归档Q定位约束限制而不扩张随机搜索。",
-      "work": [
-        "证明一般相关三角违反量的L1下界，避免误套非均匀闭式",
-        "只枚举两个归档Q的一般非平凡二分并保存系数",
-        "捕获则归因平衡限制；未捕获则结束并将多分区循环标记未查"
-      ],
-      "acceptance": [
-        "无新随机输入/阈值修改或整批LP重跑",
-        "不把受限族遗漏升级为完整经典方法失效",
-        "仅经典边界解释，不作新主候选"
-      ],
-      "artifacts": [
-        "../reviews/AL10_OMISSION_REVIEW_20260919.md"
-      ],
-      "due_at": "2026-09-20T22:00:00+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "work_order": "../AL10_OMISSION_ATTRIBUTION_20260919.md",
-      "next_action": "按工作单执行；具体派发以continuous_collaboration为准。",
-      "resource_policy": {
-        "local_cpu": true,
-        "threads": 2,
-        "max_toy_patch_count": 8,
-        "server_access": false,
-        "real_media": false,
-        "gpu": false,
-        "classifier_training": false,
-        "large_downloads": false
-      },
-      "hypothesis_result": "not_evaluated",
-      "prepared_at": "2026-09-19T01:26:51+08:00",
-      "implementation_authorized": true
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b"
     }
   ],
   "storage_policy": {
@@ -3044,8 +2920,8 @@
       "status": "done"
     }
   },
-  "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T01:28:40+08:00",
+  "plan_version": "cvpr27-20260918-v1.4",
+  "updated_at": "2026-09-19T01:12:32+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -3077,7 +2953,7 @@
       "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
       "creation_requested_at": "2026-09-19T00:12:39+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "branch": "codex/al06-projected-certificates",
+      "branch": "codex/al01-validated-joint",
       "startup_verified_at": "2026-09-19T00:20:04+08:00",
       "plan_version_read": "cvpr27-20260918-v1.4",
       "mode": "primary_research_session"
@@ -3103,7 +2979,7 @@
       "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
       "creation_requested_at": "2026-09-19T00:12:39+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "branch": "codex/al06-projected-certificates",
+      "branch": "codex/al01-validated-joint",
       "startup_verified_at": "2026-09-19T00:20:04+08:00",
       "plan_version_read": "cvpr27-20260918-v1.4",
       "role_alias_of": "researchagent"
@@ -3512,7 +3388,7 @@
     "legacy_automation_id": "cvpr-9-11-10",
     "legacy_automation_must_remain": "PAUSED",
     "next_planned_notification_at": "2026-09-23T19:00:00+08:00",
-    "verified_at": "2026-09-19T01:28:40+08:00",
+    "verified_at": "2026-09-19T00:39:55+08:00",
     "host_timezone": "China Standard Time",
     "configured_check_time_local": "19:00",
     "physical_heartbeat_schedule": "hourly at minutes 00,10,20,30,40,50",
@@ -3524,29 +3400,32 @@
     "coordination_target": "roles.researchagent and current active dispatches; legacy research task closed"
   },
   "coordination": {
-    "handoff_status": "v1.5_sent_pending_ack",
-    "handoff_report": "../../research-runs/algorithm_search_20260918/AL06_handoff.md",
+    "handoff_status": "acknowledged",
+    "handoff_report": "../reviews/v1_3_handoff_ack_20260918.json",
     "setup_report": "../../research-runs/shared_plan_20260917/deployment_report.md",
     "validation_report": "../../research-runs/shared_plan_20260917/validation.json",
-    "planagent_read_version": "cvpr27-20260919-v1.5",
-    "handoff_target_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+    "planagent_read_version": "cvpr27-20260918-v1.4",
+    "handoff_target_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "handoff_sent_on": "2026-09-17",
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:9",
+    "last_wait_cursor": "0a890551-1054-4bfa-9a62-7f46d13ea6a8:1",
     "acknowledged_at": "2026-09-18T01:27:27+08:00",
-    "ack_source_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+    "ack_source_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "ack_sha256": "25432ddaf8656dd189cc90083a8b5ecfd4f1b5d052a575ff4f938199c8c13c45",
     "researchagent_read_version": "cvpr27-20260918-v1.4",
-    "acknowledged_plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+    "acknowledged_plan_sha256": "21e9b48119474f26a49991b702c0da935fa70ca66d14baf5a3f9ace12b38e3e1",
     "acknowledged_research_role_sha256": "f1d75d7860b9a89968a7e9402a3996d1578fa306af04b58180a6bc6a29af0cb8",
     "setup_status": "complete",
     "revision_handoff": {
-      "plan_version": "cvpr27-20260919-v1.5",
-      "status": "sent_pending_ack",
-      "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
-      "dispatch_id": "cc-al09-generator-mechanism-20260919",
-      "target_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
-      "purpose": "Current candidates not admitted; new generator-mechanism design, thresholds and resources unchanged",
-      "sent_at": "2026-09-19T01:27:39+08:00"
+      "plan_version": "cvpr27-20260918-v1.4",
+      "status": "sent_with_round6_after_recovery",
+      "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
+      "dispatch_id": "cc-round-5-algorithm-search-20260918",
+      "purpose": "Continuous algorithm research and new server endpoint; scientific gates unchanged",
+      "sent_at": "2026-09-18T23:53:53+08:00",
+      "failure_parameter": "access_programs.cyber",
+      "local_fallback_active": true,
+      "acknowledged_prior_plan_sha256": "6d5e9f7a83010b9af0ab411d9d7cae8f3aa1b487e4abbd609e166dd06c462d31",
+      "next_dispatch": "cc-round-6-crossreview-ht-20260918"
     },
     "revision_handoff_history": [
       {
@@ -3567,18 +3446,6 @@
         "sent_recorded_at": "2026-09-18T01:25:16+08:00",
         "acknowledgement_observed_at": "2026-09-18T01:27:27+08:00",
         "source_report": "../reviews/v1_3_handoff_ack_20260918.json"
-      },
-      {
-        "plan_version": "cvpr27-20260918-v1.4",
-        "status": "sent_with_round6_after_recovery",
-        "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
-        "dispatch_id": "cc-round-5-algorithm-search-20260918",
-        "purpose": "Continuous algorithm research and new server endpoint; scientific gates unchanged",
-        "sent_at": "2026-09-18T23:53:53+08:00",
-        "failure_parameter": "access_programs.cyber",
-        "local_fallback_active": true,
-        "acknowledged_prior_plan_sha256": "6d5e9f7a83010b9af0ab411d9d7cae8f3aa1b487e4abbd609e166dd06c462d31",
-        "next_dispatch": "cc-round-6-crossreview-ht-20260918"
       }
     ],
     "repository_sync_authorization": {
@@ -3586,35 +3453,6 @@
       "user_quote": "继续 并且一边同步我们的进程 一边同步github好吗 这样不会漏掉我们之前的成果",
       "evidence_source": "Researchagent located original user message and separately supplied repository URL in its existing conversation; reported to planagent on 2026-09-18. Exact original timestamp/turn ID unavailable.",
       "scope": "Research progress, plans, task state and compact evidence; excludes unrelated files and credentials"
-    },
-    "legacy_setup_handoff": {
-      "handoff_status": "acknowledged",
-      "handoff_report": "../reviews/v1_3_handoff_ack_20260918.json",
-      "setup_report": "../../research-runs/shared_plan_20260917/deployment_report.md",
-      "validation_report": "../../research-runs/shared_plan_20260917/validation.json",
-      "planagent_read_version": "cvpr27-20260918-v1.4",
-      "handoff_target_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-      "handoff_sent_on": "2026-09-17",
-      "last_wait_cursor": "0a890551-1054-4bfa-9a62-7f46d13ea6a8:1",
-      "acknowledged_at": "2026-09-18T01:27:27+08:00",
-      "ack_source_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
-      "ack_sha256": "25432ddaf8656dd189cc90083a8b5ecfd4f1b5d052a575ff4f938199c8c13c45",
-      "researchagent_read_version": "cvpr27-20260918-v1.4",
-      "acknowledged_plan_sha256": "21e9b48119474f26a49991b702c0da935fa70ca66d14baf5a3f9ace12b38e3e1",
-      "acknowledged_research_role_sha256": "f1d75d7860b9a89968a7e9402a3996d1578fa306af04b58180a6bc6a29af0cb8",
-      "setup_status": "complete",
-      "revision_handoff": {
-        "plan_version": "cvpr27-20260918-v1.4",
-        "status": "sent_with_round6_after_recovery",
-        "plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
-        "dispatch_id": "cc-round-5-algorithm-search-20260918",
-        "purpose": "Continuous algorithm research and new server endpoint; scientific gates unchanged",
-        "sent_at": "2026-09-18T23:53:53+08:00",
-        "failure_parameter": "access_programs.cyber",
-        "local_fallback_active": true,
-        "acknowledged_prior_plan_sha256": "6d5e9f7a83010b9af0ab411d9d7cae8f3aa1b487e4abbd609e166dd06c462d31",
-        "next_dispatch": "cc-round-6-crossreview-ht-20260918"
-      }
     }
   },
   "plan_revisions": [
@@ -3661,17 +3499,6 @@
       "previous_plan": "WORK_PLAN_before_algorithm_continuity_20260918.md",
       "previous_plan_sha256": "21e9b48119474f26a49991b702c0da935fa70ca66d14baf5a3f9ace12b38e3e1",
       "budget_and_scientific_thresholds_unchanged": true
-    },
-    {
-      "from": "cvpr27-20260918-v1.4",
-      "to": "cvpr27-20260919-v1.5",
-      "at": "2026-09-19T01:26:51+08:00",
-      "reason": "Evidence-based internal candidate no-go; shift new design to generator mechanism while keeping independent classical counterexample attribution.",
-      "previous_project": "project_before_v1_5_20260919.json",
-      "previous_project_sha256": "586f8db8ed655d916b7301217d5580d54ca0a729e8d256bddabb0fd7937a74e1",
-      "previous_plan": "WORK_PLAN_before_v1_5_20260919.md",
-      "previous_plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
-      "budget_and_scientific_thresholds_unchanged": true
     }
   ],
   "continuous_collaboration": {
@@ -3686,33 +3513,32 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al09-generator-mechanism-20260919",
+      "id": "cc-al06-projected-certificates-20260919",
       "task_ids": [
-        "AL09"
+        "AL06"
       ],
       "executor_role": "researchagent_next",
       "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
       "status": "running",
-      "prepared_at": "2026-09-19T01:26:51+08:00",
+      "prepared_at": "2026-09-19T01:00:26+08:00",
       "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "work_order": "../AL09_GENERATOR_MECHANISM_20260919.md",
-      "work_order_sha256": "e06f7cd47e0ecf9135eafb91e6516c082ee6929361e56fe9f54462b525c8fb61",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
-      "scope": "Primary-source generator mechanism and one falsifiable algorithm design only; no model/media/server/GPU execution.",
-      "readiness_basis": "AL06 substantive handoff plus actual idle/completed snapshot cursor :9; scoped review and integration completed.",
-      "sent_at": "2026-09-19T01:27:39+08:00",
+      "work_order": "../AL06_PROJECTED_CERTIFICATES_20260919.md",
+      "work_order_sha256": "490252a10e89a1cd054d4e3dffdc7e0f6f10cf5cbb62c12fe707e922516600a2",
+      "scope": "Classical balanced-binary projection lower-bound comparison on at most24 newly frozen small Q inputs; no old-case tuning, server, media, backbone or GPU.",
+      "readiness_basis": "Actual AL01 handoff complete/no processes plus wait_threads idle/completed cursor :5; AL01 archived scoped review completed.",
+      "plan_version": "cvpr27-20260918-v1.4",
+      "sent_at": "2026-09-19T01:01:05+08:00",
       "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
       "last_observed_status": "inProgress",
-      "last_observed_thread_turn_id": "01a0b58e-8640-78b3-8f08-2f64e4cc2dee",
-      "last_observed_at": "2026-09-19T01:28:40+08:00",
+      "last_observed_thread_turn_id": "01a0b576-58eb-7563-b28a-75526b50fd38",
+      "last_observed_at": "2026-09-19T01:01:40+08:00",
       "duplicate_dispatch_suppressed": true
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:10",
+    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:8",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
@@ -3970,39 +3796,9 @@
           "9c594b5"
         ],
         "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:5"
-      },
-      {
-        "id": "cc-al06-projected-certificates-20260919",
-        "task_ids": [
-          "AL06"
-        ],
-        "executor_role": "researchagent_next",
-        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
-        "host_id": "local",
-        "status": "completed_scoped_review",
-        "prepared_at": "2026-09-19T01:00:26+08:00",
-        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-        "work_order": "../AL06_PROJECTED_CERTIFICATES_20260919.md",
-        "work_order_sha256": "490252a10e89a1cd054d4e3dffdc7e0f6f10cf5cbb62c12fe707e922516600a2",
-        "scope": "Classical balanced-binary projection lower-bound comparison on at most24 newly frozen small Q inputs; no old-case tuning, server, media, backbone or GPU.",
-        "readiness_basis": "Actual AL01 handoff complete/no processes plus wait_threads idle/completed cursor :5; AL01 archived scoped review completed.",
-        "plan_version": "cvpr27-20260918-v1.4",
-        "sent_at": "2026-09-19T01:01:05+08:00",
-        "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
-        "last_observed_status": "inProgress",
-        "last_observed_thread_turn_id": "01a0b576-58eb-7563-b28a-75526b50fd38",
-        "last_observed_at": "2026-09-19T01:01:40+08:00",
-        "duplicate_dispatch_suppressed": true,
-        "completed_at": "2026-09-19T01:26:51+08:00",
-        "review": "../reviews/AL06_REVIEW_20260919.md",
-        "source_commits": [
-          "1956f49",
-          "6f6eaee"
-        ],
-        "completion_cursor": "a0851860-695a-4836-885f-a39498f7710a:9"
       }
     ],
-    "last_substantive_review": "../reviews/AL05_SELECTION_20260918.md",
+    "last_substantive_review": "../reviews/AL07_GEOMETRY_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "dual_lane_active",
@@ -4078,17 +3874,14 @@
       "post_breakthrough": "continue robustness, confirmation and paper; do not automatically stop research"
     },
     "local_execution": {
-      "task_ids": [],
-      "executor_role": "planagent",
-      "status": "completed_scoped_review",
-      "work_area": "research-plan/reviews",
-      "started_at": "2026-09-19T01:12:32+08:00",
-      "scope": "Observed-triplet contract and primary-source mathematical review; independent of AL06 implementation.",
-      "completed_task_ids": [
+      "task_ids": [
         "AL08"
       ],
-      "completed_at": "2026-09-19T01:26:51+08:00",
-      "review": "../reviews/AL08_OBSERVED_TRIPLET_REVIEW_20260919.md"
+      "executor_role": "planagent",
+      "status": "running_scientific_review",
+      "work_area": "research-plan/reviews",
+      "started_at": "2026-09-19T01:12:32+08:00",
+      "scope": "Observed-triplet contract and primary-source mathematical review; independent of AL06 implementation."
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -4107,29 +3900,18 @@
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T00:50:13+08:00",
     "prepared_independent_task_ids": [
-      "AL10"
+      "AL08"
     ],
     "active_and_prepared_work": {
       "running": [
-        "AL09"
+        "AL06",
+        "AL08"
       ],
-      "prepared_independent": [
-        "AL10"
-      ],
+      "prepared_independent": [],
       "downstream_decision": [
-        "new candidate admission required"
+        "AL05"
       ]
-    },
-    "material_decision_notices": [
-      {
-        "id": "v15-candidate-no-go-and-mechanism-pivot",
-        "status": "pending_final_output",
-        "prepared_at": "2026-09-19T01:28:40+08:00",
-        "message": "当前H-J/H-T版本均未通过新算法准入。已保留有效结论和负结果，并启动生成器解码机制的新设计研究；尚未达到预定突破标准。",
-        "evidence": "../reviews/AL05_SELECTION_20260918.md",
-        "not_a_milestone_receipt": true
-      }
-    ]
+    }
   },
   "candidate_protocols": {
     "A": {
