@@ -3223,8 +3223,8 @@
         "AL20",
         "AL33"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "single_step_Gram_sufficiency_math",
       "hypothesis": "AL33单角块中的能量充分性未必延伸到多角块；可用预定无标签反例检验完整单步Gram能否决定交换能量。",
       "work": [
@@ -3259,9 +3259,15 @@
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "fixed_counterexample_refutes_universal_single_step_Gram_sufficiency_only",
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "started_at": "2026-09-19T13:48:40+08:00"
+      "started_at": "2026-09-19T13:48:40+08:00",
+      "completed_at": "2026-09-19T14:07:03+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL34_SINGLE_STEP_INFORMATION_REVIEW_20260919.md",
+      "review_scope": "Planner mathematics/design only; no formal independent scientific review, real model, data or novelty admission",
+      "artifact_sha256": "1823a3c7d9bfac68893d066e19cc36bdbddfc06d4d4bdafb2ba1a1e8664603ca",
+      "next_action": "AL36 independent admission challenge when executor recovers; AL37 statistical estimand audit can continue locally"
     },
     {
       "id": "AL35",
@@ -3294,8 +3300,8 @@
         "AL31",
         "AL32"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "minimum_mechanism_protocol_draft",
       "hypothesis": "将普通重建、归一化/截断、静态及组件暴露解释分别作为失败条件，可形成下一真实批次的可审查准入草案。",
       "work": [
@@ -3329,8 +3335,137 @@
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "not_evaluated",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b"
+      "hypothesis_result": "bounded_protocol_draft_complete_real_execution_not_admitted",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "completed_at": "2026-09-19T14:07:03+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md",
+      "review_scope": "Planner mathematics/design only; no formal independent scientific review, real model, data or novelty admission",
+      "artifact_sha256": "acf3294bfcaec67b820b5328b12089415fe59b36ae81ccaadddd666a75ab5d94",
+      "next_action": "AL36 independent admission challenge when executor recovers; AL37 statistical estimand audit can continue locally"
+    },
+    {
+      "id": "AL36",
+      "milestone": "M2",
+      "title": "OR1待证归纳偏置与最小机制协议的反方准入审查",
+      "assignee": "researchagent_next",
+      "parents": [
+        "AL12",
+        "AL14",
+        "AL20",
+        "AL26",
+        "AL29",
+        "AL32",
+        "AL35"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL14",
+        "AL20",
+        "AL26",
+        "AL29",
+        "AL32",
+        "AL35"
+      ],
+      "status": "blocked",
+      "gate_result": "not_evaluated",
+      "gate_scope": "adversarial_algorithm_admission_review",
+      "hypothesis": "若OR1仅为已有同调用统计的普通受限读出且无独立可检验算法差异，则不应获新方法准入。",
+      "work": [
+        "审查主张、公式、同调用信息包含及近邻差异",
+        "最多保留一个可否证主张和最小新增信息；允许no-go",
+        "仅独立文字/数学审查，不重跑AL32或启动真实批次"
+      ],
+      "acceptance": [
+        "不以文件数量/软件测试/改名或维数代替创新",
+        "保留旧fail与已知负例，给出明确反方解释",
+        "交付独立审查建议；不修改主DAG或授权真实运行"
+      ],
+      "artifacts": [
+        "../../research-runs/algorithm_search_20260918/AL36_adversarial_review.md",
+        "../../research-runs/algorithm_search_20260918/AL36_handoff.md"
+      ],
+      "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
+      "blocker": "Primary research executor last turn failed with usage_limit; await actual supported quota recovery or user state change, no duplicate dispatch",
+      "dispatch_status": "prepared_not_sent",
+      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "next_action": "After genuine recovery, read main DAG and integrated AL32; accept one bounded review package",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T14:07:03+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "not_evaluated"
+    },
+    {
+      "id": "AL37",
+      "milestone": "M2",
+      "title": "五种子和祖先配对macro差的统计对象审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL21",
+        "AL23",
+        "AL35"
+      ],
+      "requires_pass": [
+        "AL21",
+        "AL23",
+        "AL35"
+      ],
+      "status": "running",
+      "gate_result": "not_evaluated",
+      "gate_scope": "paired_macro_seed_estimand_design",
+      "hypothesis": "共享真实祖先、视图和五种子使集成AUROC、pooled AUROC和种子macro差具有不同统计对象，需冻结配对重抽语义。",
+      "work": [
+        "写明五种子方法macro差与集成/pooled的区别",
+        "提出祖先连通组共同重抽规则及条件区间限制",
+        "最多一个事先固定排序反例，不采样真实数据或随机扫参"
+      ],
+      "acceptance": [
+        "不修改0.03/95%/4-of-5科学门槛",
+        "确定性重复不冒充随机种子稳健性",
+        "清晰登记未绑定样本/训练随机性/缺类处理"
+      ],
+      "artifacts": [
+        "../reviews/AL37_MACRO_SEED_ESTIMAND_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "dispatch_status": "planner_work_in_progress",
+      "next_action": "Complete ancestor component bootstrap specification, missing-class and training-randomness assumptions without reopening real data or altering gates",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T14:07:03+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "draft_in_progress",
+      "review_scope": "Drafted metric distinctions and one fixed counterexample; shared-real pooling equality and missing resampling fields remain",
+      "observed_work_at": "2026-09-19T14:18:47+08:00",
+      "execution_stage": "metric_definitions_and_fixed_count_checked_cluster_protocol_remaining",
+      "partial_evidence": [
+        "../reviews/AL37_MACRO_SEED_ESTIMAND_REVIEW_20260919.md",
+        "../reviews/AL37_MACRO_SEED_ESTIMAND_EXACT_20260919.json"
+      ]
     }
   ],
   "storage_policy": {
@@ -4730,7 +4865,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T13:48:40+08:00",
+  "updated_at": "2026-09-19T14:18:47+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5361,6 +5496,14 @@
       "previous_plan": "WORK_PLAN_before_v1_5_20260919.md",
       "previous_plan_sha256": "8e8fd95090ab5d02dd545badf1eb7fa722f67e3e277fca5f04cb15729c65ccb0",
       "budget_and_scientific_thresholds_unchanged": true
+    },
+    {
+      "at": "2026-09-19T14:07:03+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "progress_addendum_3_10",
+      "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
+      "reason": "AL32 archived software handoff reviewed; AL34 limited counterexample and AL35 protocol draft complete; research executor quota blocked while planner AL37 and independent AL36 prepared",
+      "date_budget_or_gate_changes": false
     }
   ],
   "continuous_collaboration": {
@@ -5375,30 +5518,27 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al34-al35-planner-mechanism-20260919",
+      "id": "cc-al37-planner-statistical-design-20260919",
       "task_ids": [
-        "AL34",
-        "AL35"
+        "AL37"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "running",
-      "prepared_at": "2026-09-19T13:48:40+08:00",
-      "started_at": "2026-09-19T13:48:40+08:00",
+      "prepared_at": "2026-09-19T14:07:03+08:00",
+      "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
+      "work_order_sha256": "f679b8e3ecc3af82f1bcd3adb27d5018e83e18e430d942216a9ca6468c745f25",
       "plan_version": "cvpr27-20260919-v1.5",
-      "work_area": "research-plan/reviews",
-      "scope": "Independent mathematics and protocol design in planner role; no replay/takeover of AL32 or research runtime",
-      "work_orders": {
-        "AL34": "research-plan\\AL34_SINGLE_STEP_INFORMATION_AUDIT_20260919.md",
-        "AL35": "research-plan\\AL35_MINIMUM_MECHANISM_PROTOCOL_DESIGN_20260919.md"
-      },
-      "work_order_sha256": {
-        "AL34": "62a1bbe911dd08d713abcd8f0d7b70e37f5f8cceda1ac8d743faea598995593c",
-        "AL35": "d440d1edaf5d364248408ce1b7e1d59ff9af364bf34b4a51bcab6d691a895118"
-      },
       "remote_send_required": false,
-      "reason": "AL32 handoff complete and reviewed; research turn ended by usage limit; planner work remains authorized"
+      "scope": "Planner statistical design; AL37 draft not yet complete",
+      "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
+      "last_progress_at": "2026-09-19T14:18:47+08:00",
+      "first_active_recorded_at": "2026-09-19T14:18:47+08:00",
+      "first_active_record_note": "Actual recording time; not claimed as first draft or process start",
+      "execution_stage": "metric_definitions_and_fixed_count_checked_cluster_protocol_remaining",
+      "background_process_running": false,
+      "remaining_work": "Complete ancestor component bootstrap specification, missing-class and training-randomness assumptions without reopening real data or altering gates"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -5409,7 +5549,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T13:48:40+08:00",
+    "last_coordinator_activity_at": "2026-09-19T14:18:47+08:00",
     "research_observed_status": "failed_usage_limit",
     "dispatch_history": [
       {
@@ -6019,9 +6159,40 @@
         "execution_artifacts_available": true,
         "rerun_required": false,
         "handoff_report": "../../research-runs/algorithm_search_20260918/AL32_handoff.md"
+      },
+      {
+        "id": "cc-al34-al35-planner-mechanism-20260919",
+        "task_ids": [
+          "AL34",
+          "AL35"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_math_and_protocol",
+        "prepared_at": "2026-09-19T13:48:40+08:00",
+        "started_at": "2026-09-19T13:48:40+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_area": "research-plan/reviews",
+        "scope": "Independent mathematics and protocol design in planner role; no replay/takeover of AL32 or research runtime",
+        "work_orders": {
+          "AL34": "research-plan\\AL34_SINGLE_STEP_INFORMATION_AUDIT_20260919.md",
+          "AL35": "research-plan\\AL35_MINIMUM_MECHANISM_PROTOCOL_DESIGN_20260919.md"
+        },
+        "work_order_sha256": {
+          "AL34": "62a1bbe911dd08d713abcd8f0d7b70e37f5f8cceda1ac8d743faea598995593c",
+          "AL35": "d440d1edaf5d364248408ce1b7e1d59ff9af364bf34b4a51bcab6d691a895118"
+        },
+        "remote_send_required": false,
+        "reason": "AL32 handoff complete and reviewed; research turn ended by usage limit; planner work remains authorized",
+        "completed_at": "2026-09-19T14:07:03+08:00",
+        "task_outcomes": {
+          "AL34": "done_pass_fixed_math_only",
+          "AL35": "done_pass_protocol_draft_only"
+        }
       }
     ],
-    "last_substantive_review": "../reviews/AL32_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
     "dispatch_policy_state": "planner_math_and_protocol_active_research_executor_usage_blocked",
@@ -6031,7 +6202,8 @@
     ],
     "no_repeat_work": [
       "Do not repeat completed packages or tune C on the exposed 100 records",
-      "Do not repeat unchanged server/account probes or the pending budget question"
+      "Do not repeat unchanged server/account probes or the pending budget question",
+      "AL32 already integrated after quota failure; do not rerun or resend. AL36 remains unsent until actual supported research-executor recovery."
     ],
     "last_observed_completed_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
     "configuration_faults": {
@@ -6097,7 +6269,10 @@
         "no_retry_until_state_change": true,
         "no_identity_or_model_change": true,
         "no_purchase": true,
-        "execution_artifacts_preserved": true
+        "execution_artifacts_preserved": true,
+        "pending_notice": "科研执行任务触及产品用量上限；AL32已保存产物经核验整合，计划端继续数学和协议工作。仍无预定算法突破。",
+        "notification_dedup_id": "research-usage-limit-01a0b687-20260919",
+        "notification_ack_rule": "Confirm only after reading the actual completed NOTIFY turn; no milestone ack or OS delivery claim"
       }
     },
     "latest_authorization_at": "2026-09-18T23:24:36+08:00",
@@ -6114,14 +6289,15 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL34",
-        "AL35"
+        "AL37"
       ],
       "executor_role": "planagent",
-      "status": "running",
-      "started_at": "2026-09-19T13:48:40+08:00",
+      "status": "in_progress_resumable",
       "work_area": "research-plan/reviews",
-      "scope": "Independent math/protocol work; not research-code fallback"
+      "last_progress_at": "2026-09-19T14:18:47+08:00",
+      "background_process_running": false,
+      "completed_scope": "Metric definitions and one exact ranking count; shared-real pooled equals count-weighted macro under declared conditions",
+      "remaining_scope": "Ancestor component resampling, missing-class handling, conditional versus training randomness"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -6138,16 +6314,19 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T13:48:40+08:00",
+    "last_local_review_at": "2026-09-19T14:07:03+08:00",
     "prepared_independent_task_ids": [
-      "AL35"
+      "AL36"
     ],
     "active_and_prepared_work": {
       "running": [
-        "AL34"
+        "AL37"
       ],
       "prepared_independent": [
-        "AL35"
+        "AL36"
+      ],
+      "executor_blocked": [
+        "AL36"
       ]
     },
     "material_decision_notices": [
@@ -6200,9 +6379,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "aa7afdb0b261514d98c1b5599e534872f31bfea3",
+      "commit": "53fb5463086047ba484f2796fcb03a0198e1822a",
       "path": "research-plan/task-hermes/project.json",
-      "sha256": "5ec1ba57e5026bffe8d7b7b6943b5e39b91cde8d941d34367447434edcfc1159"
+      "sha256": "e9d550a95c7b350dde7b8a64b835ab5c6e78309142a22430528f37cef0a579b3"
     }
   },
   "candidate_protocols": {
@@ -6326,9 +6505,13 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL34",
-        "AL35"
-      ]
+        "AL36",
+        "AL37"
+      ],
+      "single_step_Gram_audit_task": "AL34",
+      "single_step_Gram_audit_status": "limited_fixed_counterexample_only",
+      "minimum_mechanism_protocol_task": "AL35",
+      "minimum_mechanism_protocol_status": "draft_not_execution_authorized"
     }
   },
   "open_review_issues": [
