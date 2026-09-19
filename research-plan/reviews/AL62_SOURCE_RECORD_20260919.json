@@ -1,0 +1,228 @@
+{
+  "task_id": "AL62",
+  "repository": "https://github.com/ZhendongWang6/DIRE",
+  "pinned_commit": "1f89fff15f0e478307cdea9abdfe06a52fe7838a",
+  "parent_source_record_sha256": "55908d259f193637dc5f683651a308fabb9d55b21c1075a38b0f093c062368fb",
+  "source_files": [
+    {
+      "path": "guided-diffusion/guided_diffusion/gaussian_diffusion.py",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/guided-diffusion/guided_diffusion/gaussian_diffusion.py",
+      "request_started_at": "2026-09-19T13:22:00.401102+00:00",
+      "status": 200,
+      "bytes": 37247,
+      "sha256": "ceccd0d87caeeb83d77661926efd2eac855343ebbb5a7851b3e724aec4bc8a5f",
+      "git_blob_sha1": "8eab1319fda887740562e85af10df1bc57e26b0a",
+      "inventory_match": true,
+      "line_count": 1006,
+      "completed_at": "2026-09-19T13:22:02.460877+00:00"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/respace.py",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/guided-diffusion/guided_diffusion/respace.py",
+      "request_started_at": "2026-09-19T13:22:00.401102+00:00",
+      "status": 200,
+      "bytes": 5193,
+      "sha256": "b9a509b28c10a52ca3ee8cc48f40205b1d70aecfc95356b540dc88415368c2de",
+      "git_blob_sha1": "b568817e1258e4bda5a5da11630794d4a9e6bdcd",
+      "inventory_match": true,
+      "line_count": 128,
+      "completed_at": "2026-09-19T13:22:02.307985+00:00"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/script_util.py",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/guided-diffusion/guided_diffusion/script_util.py",
+      "request_started_at": "2026-09-19T13:22:02.310273+00:00",
+      "status": 200,
+      "bytes": 12349,
+      "sha256": "d47bb38ea450bf6e7c57c494a43947f6664f45b58a487f6315f5ec83365b80b8",
+      "git_blob_sha1": "2bfdad9fce28193d8abeb439f7400eca90d4f728",
+      "inventory_match": true,
+      "line_count": 452,
+      "completed_at": "2026-09-19T13:22:03.576533+00:00"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/image_datasets.py",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/guided-diffusion/guided_diffusion/image_datasets.py",
+      "request_started_at": "2026-09-19T13:22:02.462586+00:00",
+      "status": 200,
+      "bytes": 9720,
+      "sha256": "06980fb5c314c391f8cff14fcb8f447886b9774ed8a6a80afa2b07cc4ab14365",
+      "git_blob_sha1": "4992e723874c9583e449e1090f3bee233c783ffc",
+      "inventory_match": true,
+      "line_count": 266,
+      "completed_at": "2026-09-19T13:22:03.639826+00:00"
+    }
+  ],
+  "read_boundary": "Exactly4 listed text files; no import or execution of author source, no fifthfile followup",
+  "reviewed_at": "2026-09-19T21:27:19+08:00",
+  "source_payload_bytes": 64509,
+  "source_files_read": 4,
+  "byte_limit": 131072,
+  "review_report_sha256": "335c84d626f90a20434f1d928fbea5da9dfde9a247e26b47e6931adeeb31c427",
+  "gate_scope": "bounded_static_core_path_only",
+  "evidence_kind": "Manual control-flow and formula inspection; hash/text tooling only; no imported or executed inspected functions",
+  "paper_experiment_revision_match": "not_established",
+  "runtime_replication": "not_attempted",
+  "scientific_efficacy": "not_evaluated",
+  "findings": [
+    {
+      "id": "factory_and_defaults",
+      "file": "script_util.py",
+      "lines": [
+        11,
+        24,
+        43,
+        65,
+        74,
+        127,
+        386,
+        424
+      ],
+      "result": "SHELL1000/ddim20 yields SpacedDiffusion EPSILON LEARNED_RANGE; defaults do not override inputclip/realstep; rescale_timestepsFalse"
+    },
+    {
+      "id": "times_and_calls",
+      "file": "respace.py",
+      "lines": [
+        29,
+        34,
+        72,
+        91,
+        123,
+        128
+      ],
+      "result": "First integerstride50 for1000/ddim20 -> originaltimes0,50,...950, remapped into20 betas. No original999 model eval."
+    },
+    {
+      "id": "loop_count",
+      "file": "gaussian_diffusion.py",
+      "lines": [
+        260,
+        553,
+        560,
+        601,
+        608,
+        697,
+        704,
+        718,
+        784,
+        792,
+        805
+      ],
+      "result": "real_step0:20reverse and20sample iterations, one directmodel call each;40 batchlevel directcalls conditional on successful path, not runtime measurement"
+    },
+    {
+      "id": "internal_clip",
+      "file": "gaussian_diffusion.py",
+      "lines": [
+        293,
+        311,
+        566,
+        611,
+        620
+      ],
+      "result": "Both directions use clipped predictedxstart to rederiveeps; outputserialization clamp is separate"
+    },
+    {
+      "id": "endpoint_convention",
+      "file": "gaussian_diffusion.py",
+      "lines": [
+        141,
+        143,
+        611,
+        623,
+        568,
+        580
+      ],
+      "result": "reverse finalalpha_next0 outputs eps, subsequent sample starts at reducedt19 mapped950 with finitealpha; no exactinverse or sourceeffect theorem inferred"
+    },
+    {
+      "id": "random_and_precision",
+      "file": "gaussian_diffusion.py",
+      "lines": [
+        132,
+        143,
+        546,
+        576,
+        584,
+        600,
+        993,
+        1006
+      ],
+      "result": "eta0 still consumes randn_like in sampling with zero noise coefficient under finite arithmetic; coefficient extractionfloat32 despite float64 arrays; GPUbitwise behavior unverified"
+    },
+    {
+      "id": "loader_path",
+      "file": "image_datasets.py",
+      "lines": [
+        14,
+        23,
+        59,
+        74,
+        144,
+        186,
+        233,
+        246
+      ],
+      "result": "Reverse loader defaults no randomcrop/flip; RGBcenter resized/cropped then float32/127.5-1 CHW; no rawdata verification"
+    }
+  ],
+  "static_expected_batch_model_calls": {
+    "scope": "AL61fixedshell use_ddimTrue/class_condFalse/1000/ddim20/real_step0, no cond_fn, suppliednoise, validbatch, fullsuccessfulpath",
+    "reverse": 20,
+    "sample": 20,
+    "total": 40,
+    "count_basis": "Manual code path enumeration, not script execution",
+    "runtime_measured": false,
+    "not_equivalent_to_complete_AE_calls": true
+  },
+  "terminal_gaps": [
+    "Exact paper experiment revision and weight hashes",
+    "Actual external dependency/library/GPU dtype and deterministic behavior",
+    "Walltime/memory/billing",
+    "File codec and roundtrip effects on actualinputs",
+    "Classifier train/validation ancestor/preprocessing compatibility and true efficacy"
+  ],
+  "core_source_branch": "closed_after_prespecified_four_files_no_fifth_dependency",
+  "next_independent_tasks": [
+    "AL63",
+    "AL36"
+  ],
+  "inputs_sha256": {
+    "research-plan\\AL62_DIRE_CORE_PATH_TERMINAL_AUDIT_20260919.md": "3d981c848896b1a2ab07eb0e17bdfbbecf952871de6c595317227bc30c5c6586",
+    "research-plan\\reviews\\AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_REVIEW_20260919.md": "a63598691263c0c5e4f02de234ecd1de545f25110513eb6bafb326382fefb7c9",
+    "research-plan\\reviews\\AL61_SOURCE_RECORD_20260919.json": "55908d259f193637dc5f683651a308fabb9d55b21c1075a38b0f093c062368fb",
+    "research-plan\\reviews\\AL60_DIRE_PRIMARY_METHOD_REVIEW_20260919.md": "64ffe8812f421e53cbe231a21bc48078992a351ada1bc35174db1e6692999873"
+  },
+  "temporary_cleanup": {
+    "at": "2026-09-19T21:27:19+08:00",
+    "files": [
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\tmp\\al62_gaussian_diffusion.py",
+        "absent": true
+      },
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\tmp\\al62_respace.py",
+        "absent": true
+      },
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\tmp\\al62_script_util.py",
+        "absent": true
+      },
+      {
+        "path": "E:\\aNB\\TECH\\脉冲神经网络\\tmp\\al62_image_datasets.py",
+        "absent": true
+      }
+    ],
+    "source_payload_committed": false
+  },
+  "resources": {
+    "models_or_author_code_executed": false,
+    "toy_or_simulation_executed": false,
+    "media_or_weights_opened": false,
+    "server_or_GPU_accessed": false,
+    "dependencies_installed": false,
+    "public_metadata_and_text_only": true,
+    "actual_cumulative_project_expense": "unknown_unchanged"
+  }
+}

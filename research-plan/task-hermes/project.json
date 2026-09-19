@@ -5116,8 +5116,8 @@
       "requires_pass": [
         "AL60"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "DIRE_terminal_core_source_audit",
       "hypothesis": "读入口不足以判定ddim20实际调用与clip路径；固定核心实现应可闭合主要数值流程或留下终结性未知。",
       "work": [
@@ -5151,10 +5151,74 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "not_evaluated",
-      "next_action": "Terminal4-file source inspection only; no code/toy/model/media execution",
+      "hypothesis_result": "fixed_shell_loops_times_internal_clipping_and_loader_paths_confirmed_runtime_and_efficacy_unverified",
+      "next_action": "Close DIRE source-reading branch; retain runtime/checkpoint/data gaps; independent AL63 benchmark primary protocol and blockedAL36 continue",
       "dependency_note": "AL61 complete as partialread, no pass required; AL62 directly resolves its explicit unexaminedcore dependencies",
-      "pinned_author_commit": "1f89fff15f0e478307cdea9abdfe06a52fe7838a"
+      "pinned_author_commit": "1f89fff15f0e478307cdea9abdfe06a52fe7838a",
+      "started_at": "2026-09-19T21:21:19+08:00",
+      "dispatch_status": "completed_bounded_static_core_review",
+      "completed_at": "2026-09-19T21:29:14+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL62_DIRE_CORE_PATH_REVIEW_20260919.md",
+      "artifact_sha256": "335c84d626f90a20434f1d928fbea5da9dfde9a247e26b47e6931adeeb31c427",
+      "source_record": "../reviews/AL62_SOURCE_RECORD_20260919.json",
+      "source_record_sha256": "63d32ddcc523950097c68a62103d52110bab34ba05680ec1d654b80a020e8335",
+      "review_scope": "Terminal4-file static paths only;40 directmodel calls per successfulbatch analytically traced, no actual execution or complete baselineadmission",
+      "evidence_kind": "manual_source_review_with_hash_integrity_no_code_or_toy_execution"
+    },
+    {
+      "id": "AL63",
+      "milestone": "M1",
+      "title": "AIGVDBench原文的真实来源与生产组件划分审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL31",
+        "AL13",
+        "AL35"
+      ],
+      "requires_pass": [
+        "AL31",
+        "AL13",
+        "AL35"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "public_benchmark_primary_protocol_scope",
+      "hypothesis": "仅模型家族和README总量不足以保证严格未见decoder或来源控制；基准正文可能补充或明确缺失的生产组件/来源/划分信息。",
+      "work": [
+        "最多2个primary记录绑定arXiv2601.11035一个正文版本",
+        "仅读总体方法/表格/划分/限制，不请求样本ID/manifest/媒体",
+        "比较原生协议与本项目同源祖先及未见decoder要求，未知不猜测"
+      ],
+      "acceptance": [
+        "不把未见生成器自动当未见组件，不从模型家族推定权重身份",
+        "不读最终集/数据清单/预览/权重或运行模型代码",
+        "给具体可用事实和最小数据缺口，文献审查不释放RS02/03"
+      ],
+      "artifacts": [
+        "../reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md",
+        "../reviews/AL63_SOURCE_RECORD_20260919.json"
+      ],
+      "work_order": "../AL63_AIGVDBENCH_PROTOCOL_PRIMARY_AUDIT_20260919.md",
+      "work_order_sha256": "ed6b2740646d2da3568f6a9e6162687a9cd1539f28cf4b91456f15653b74492b",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T21:29:14+08:00",
+      "due_at": "2026-09-24T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "not_evaluated",
+      "next_action": "One primarypaper protocol audit to advance publicdata suitability independently of DIRE/mathreview and research401",
+      "sample_access_authorized": false
     }
   ],
   "storage_policy": {
@@ -6580,7 +6644,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T21:20:42+08:00",
+  "updated_at": "2026-09-19T21:29:14+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -7330,6 +7394,14 @@
       "plan_sha256": "20f65ef6306474c675d802aaf0bd14d2b30ff97ce0f699dff7107e0cc7e415a0",
       "reason": "Record uint8 residual/source input contract and bounded unreadcore gap; single terminal followup only",
       "budget_dates_thresholds_changed": false
+    },
+    {
+      "at": "2026-09-19T21:29:14+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "DIRE_static_core_closed_and_public_protocol_followup",
+      "plan_sha256": "1e2da7c38915c13684ca51e1db2530cedd031063ba00dcddf20545b8ac113a04",
+      "reason": "Complete bounded4-file corecall/clipping/loader audit without execution; stop recursiveDIREsourcebranch and advance independent benchmarkprotocol",
+      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
@@ -7344,20 +7416,20 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al62-planner-dire-core-20260919",
+      "id": "cc-al63-planner-aigvdbench-primary-20260919",
       "task_ids": [
-        "AL62"
+        "AL63"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T21:20:42+08:00",
-      "work_order": "../AL62_DIRE_CORE_PATH_TERMINAL_AUDIT_20260919.md",
-      "work_order_sha256": "3d981c848896b1a2ab07eb0e17bdfbbecf952871de6c595317227bc30c5c6586",
+      "prepared_at": "2026-09-19T21:29:14+08:00",
+      "work_order": "../AL63_AIGVDBENCH_PROTOCOL_PRIMARY_AUDIT_20260919.md",
+      "work_order_sha256": "ed6b2740646d2da3568f6a9e6162687a9cd1539f28cf4b91456f15653b74492b",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "20f65ef6306474c675d802aaf0bd14d2b30ff97ce0f699dff7107e0cc7e415a0",
-      "scope": "Terminal4 specific fixedcommit text files<=128KiB; no code/toy/model/media/server/GPU execution",
+      "plan_sha256": "1e2da7c38915c13684ca51e1db2530cedd031063ba00dcddf20545b8ac113a04",
+      "scope": "One primary benchmark protocol paper only; no samplelist/manifest/weights/media/code/server/GPU",
       "remote_send_required": false,
       "background_process_running": false
     },
@@ -7370,7 +7442,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T21:20:42+08:00",
+    "last_coordinator_activity_at": "2026-09-19T21:29:14+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -8471,9 +8543,33 @@
         "review": "../reviews/AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_REVIEW_20260919.md",
         "source_record": "../reviews/AL61_SOURCE_RECORD_20260919.json",
         "outcome": "Float residual converted to8bit file; demo only classifies files. Full core/clipping/count contract not evaluated."
+      },
+      {
+        "id": "cc-al62-planner-dire-core-20260919",
+        "task_ids": [
+          "AL62"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_bounded_static_core_review",
+        "prepared_at": "2026-09-19T21:20:42+08:00",
+        "work_order": "../AL62_DIRE_CORE_PATH_TERMINAL_AUDIT_20260919.md",
+        "work_order_sha256": "3d981c848896b1a2ab07eb0e17bdfbbecf952871de6c595317227bc30c5c6586",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "20f65ef6306474c675d802aaf0bd14d2b30ff97ce0f699dff7107e0cc7e415a0",
+        "scope": "Terminal4 specific fixedcommit text files<=128KiB; no code/toy/model/media/server/GPU execution",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T21:21:19+08:00",
+        "gate_result": "pass",
+        "completed_at": "2026-09-19T21:29:14+08:00",
+        "review": "../reviews/AL62_DIRE_CORE_PATH_REVIEW_20260919.md",
+        "source_record": "../reviews/AL62_SOURCE_RECORD_20260919.json",
+        "outcome": "Fixedshell20+20 batchmodelcalls; predxstart clipped in bothdirections; terminalalpha convention and loader normalization bounded; no runtime/efficacy pass"
       }
     ],
-    "last_substantive_review": "../reviews/AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL62_DIRE_CORE_PATH_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -8619,13 +8715,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL61"
+        "AL61",
+        "AL62"
       ],
       "executor_role": "planagent",
-      "status": "completed_bounded_partial_source_review",
-      "finalized_at": "2026-09-19T21:20:42+08:00",
+      "status": "completed_bounded_source_reviews_no_runtime",
+      "finalized_at": "2026-09-19T21:29:14+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL62",
+      "next_prepared_task_id": "AL63",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -8643,15 +8740,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T21:20:42+08:00",
+    "last_local_review_at": "2026-09-19T21:29:14+08:00",
     "prepared_independent_task_ids": [
-      "AL62",
+      "AL63",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL62",
+        "AL63",
         "AL36"
       ],
       "executor_blocked": [
@@ -8754,9 +8851,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "17f0a6873433b9784d17750029f0b5aa4ced5012",
+      "commit": "9345108",
       "path": "research-plan/task-hermes/project.json",
-      "sha256": "7ef7ece9890754fbd235a151a35675890fd762ae8d2c20a9e0c69d17915d0ac6"
+      "sha256": "f4fa4d4bd9419299bfff7621a50512d0a742399d015ffa1f83333a1b68ac244d"
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -8767,11 +8864,11 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T21:20:42+08:00",
+    "last_progress_at": "2026-09-19T21:29:14+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T21:13:30+08:00",
+      "at": "2026-09-19T21:29:14+08:00",
       "decision": "no_remote_wait",
-      "reason": "Only currentAL61 is local planagent; additional_dispatches empty. AL36 prepared unsent retains observed401; do not poll old legacy or infer recovery."
+      "reason": "Current/additional only localplanner; AL36 remains prepared unsent after observed401, no recovery evidence. No legacy polling."
     },
     "research_observation_note": {
       "at": "2026-09-19T18:57:52+08:00",
@@ -8908,7 +9005,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL62",
+        "AL63",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -8950,8 +9047,10 @@
       "DIRE_primary_method_task": "AL60",
       "DIRE_source_contract_task": "AL61",
       "DIRE_method_status": "One pretrained diffusion inversion/reconstruction absolute residual plus BCE ResNet50; fixed probe prior confirmed, exact OR1 equivalence and executable baseline not accepted",
-      "DIRE_source_contract_status": "PartialAL61: float residual saveduint8 then classification; actual loop/clipping/loader unread, full gate not evaluated",
-      "DIRE_terminal_core_task": "AL62"
+      "DIRE_source_contract_status": "AL61 limitedentry review not_evaluated preserved; AL62 staticcore pathpass only, no complete baseline runtime or sourceeffect verification",
+      "DIRE_terminal_core_task": "AL62",
+      "DIRE_terminal_core_status": "closed; source fixedshell20+20 batchmodelcalls with internalclipping and uint8 residual serialization, runtime/checkpoint/data still unknown",
+      "public_benchmark_protocol_review_task": "AL63"
     }
   },
   "open_review_issues": [
