@@ -4415,8 +4415,8 @@
         "AL19",
         "AL43"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "soft_mixing_mechanism_decomposition",
       "hypothesis": "有限h顺序响应可能同时含原R次序与插值弦偏离；仅K非零不足以归因为原解码次序。",
       "work": [
@@ -4430,7 +4430,8 @@
         "仅条件机制设计，不把分解当原创算法或实证"
       ],
       "artifacts": [
-        "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md"
+        "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md",
+        "../reviews/AL51_SYMBOLIC_REVIEW_RECORD_20260919.json"
       ],
       "work_order": "../AL51_SOFT_MIXING_DECOMPOSITION_AUDIT_20260919.md",
       "work_order_sha256": "d9e2480fdd16e9d9e09de3f592bdf363ac07b7987a7491fa3436375ff20d8210",
@@ -4450,8 +4451,68 @@
         "large_downloads": false,
         "research_runtime_execution": false
       },
+      "hypothesis_result": "finite_soft_response_splits_into_original_probe_order_difference_and_chord_deviation; conditional_not_empirical",
+      "failure_parent_pass_not_required_reason": "AL49 arithmetic is a question cue; its failed execution protocol remains failed and is not used as a success gate",
+      "started_at": "2026-09-19T18:25:32+08:00",
+      "dispatch_status": "completed_scoped_symbolic_review",
+      "completed_at": "2026-09-19T18:32:50+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md",
+      "artifact_sha256": "f39afd0b648e9bcba3e67a2dbcd74bd8e464adba3f7a217ff7b70c72b5c7dbf2",
+      "symbolic_record": "../reviews/AL51_SYMBOLIC_REVIEW_RECORD_20260919.json",
+      "symbolic_record_sha256": "b5f15af0676f71301e88c19559edb149168fb31600d10937de45495677d4beb0",
+      "review_scope": "Manual finite-h algebra, full-chord remainder bound and future diagnostic cost; no numerical test, model or independent scientific review",
+      "next_action": "AL52 tests identifiability from existing finite query set; no rerun ofAL49 or true model call"
+    },
+    {
+      "id": "AL52",
+      "milestone": "M2",
+      "title": "有限软步查询能否决定完整公开探针次序差",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL51"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL51"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "finite_probe_query_identifiability_math",
+      "hypothesis": "有限h软查询未覆盖完整端点时可能存在观测相同但C不同的平滑映射，须给条件构造和碰撞例外。",
+      "work": [
+        "列原各h查询集合与未查询端点",
+        "构造有限查询保持但完整复合差变化的条件映射并核对J补偿",
+        "区分映射类先验与原输出信息，不新增数字/标签/模型调用"
+      ],
+      "acceptance": [
+        "明确开域/隔离/输出余量条件及失败例外",
+        "不从人工构造推导实际AE检测效果或普遍调用下界",
+        "不重跑已归档数值或改变OR1"
+      ],
+      "artifacts": [
+        "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL52_FINITE_PROBE_IDENTIFIABILITY_AUDIT_20260919.md",
+      "work_order_sha256": "d68c27905244ac082838cf32142ed791ef849aa2ec8890ac9b6b8f09c2293a7e",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T18:32:50+08:00",
+      "due_at": "2026-09-23T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
-      "failure_parent_pass_not_required_reason": "AL49 arithmetic is a question cue; its failed execution protocol remains failed and is not used as a success gate"
+      "next_action": "Local symbolic query-identifiability review; independent of research401 and AL45 source gap"
     }
   ],
   "storage_policy": {
@@ -5877,7 +5938,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T18:17:42+08:00",
+  "updated_at": "2026-09-19T18:32:50+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -6554,6 +6615,14 @@
       "plan_sha256": "03e050ea0539ba4d11de2942cd034a7059afccabbfef9c144aa44b20302a150b",
       "reason": "AL45 remains source-blocked; scoped AL46/AL47 design; AL48 duplicate; AL49 execution fail; AL50 global certificate withdrawn; direct AL51 decomposition prepared",
       "budget_dates_thresholds_changed": false
+    },
+    {
+      "at": "2026-09-19T18:32:50+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "soft_path_mechanism_interpretation_addendum",
+      "plan_sha256": "a978712b2936529dbe31669fe5a0031a53f96647b2a05da365636115ff28772e",
+      "reason": "Separate original public-probe order from chord deviation; proposed6-call diagnostic only, no algorithm or resource change",
+      "date_budget_or_threshold_changes": false
     }
   ],
   "continuous_collaboration": {
@@ -6568,20 +6637,20 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al51-planner-soft-decomposition-20260919",
+      "id": "cc-al52-planner-query-identifiability-20260919",
       "task_ids": [
-        "AL51"
+        "AL52"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T18:17:42+08:00",
-      "work_order": "../AL51_SOFT_MIXING_DECOMPOSITION_AUDIT_20260919.md",
-      "work_order_sha256": "d9e2480fdd16e9d9e09de3f592bdf363ac07b7987a7491fa3436375ff20d8210",
+      "prepared_at": "2026-09-19T18:32:50+08:00",
+      "work_order": "../AL52_FINITE_PROBE_IDENTIFIABILITY_AUDIT_20260919.md",
+      "work_order_sha256": "d68c27905244ac082838cf32142ed791ef849aa2ec8890ac9b6b8f09c2293a7e",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "03e050ea0539ba4d11de2942cd034a7059afccabbfef9c144aa44b20302a150b",
-      "scope": "Direct soft-path mechanism decomposition; no model/media/server/GPU",
+      "plan_sha256": "a978712b2936529dbe31669fe5a0031a53f96647b2a05da365636115ff28772e",
+      "scope": "Symbolic finite-query identifiability only; no real R calls or code replay",
       "remote_send_required": false,
       "background_process_running": false
     },
@@ -6594,7 +6663,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T18:17:42+08:00",
+    "last_coordinator_activity_at": "2026-09-19T18:32:50+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -7465,9 +7534,31 @@
         "completed_at": "2026-09-19T18:17:42+08:00",
         "review": "../reviews/AL50_REVIEW_CORRECTION_20260919.md",
         "outcome": "Reject only-second-best heterogeneous error certificate; preserve7 arithmetic assertions, no real matching"
+      },
+      {
+        "id": "cc-al51-planner-soft-decomposition-20260919",
+        "task_ids": [
+          "AL51"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_symbolic_review",
+        "prepared_at": "2026-09-19T18:17:42+08:00",
+        "work_order": "../AL51_SOFT_MIXING_DECOMPOSITION_AUDIT_20260919.md",
+        "work_order_sha256": "d9e2480fdd16e9d9e09de3f592bdf363ac07b7987a7491fa3436375ff20d8210",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "03e050ea0539ba4d11de2942cd034a7059afccabbfef9c144aa44b20302a150b",
+        "scope": "Direct soft-path mechanism decomposition; no model/media/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T18:25:32+08:00",
+        "completed_at": "2026-09-19T18:32:50+08:00",
+        "review": "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md",
+        "outcome": "Finite-h exact decomposition with conditional curvature bounds; zero real/numeric execution"
       }
     ],
-    "last_substantive_review": "../reviews/AL50_REVIEW_CORRECTION_20260919.md",
+    "last_substantive_review": "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -7610,17 +7701,13 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL46",
-        "AL47",
-        "AL48",
-        "AL49",
-        "AL50"
+        "AL51"
       ],
       "executor_role": "planagent",
-      "status": "scoped_reviews_finalized_with_explicit_failures_and_deduplication",
-      "finalized_at": "2026-09-19T18:17:42+08:00",
+      "status": "completed_scoped_symbolic_review",
+      "completed_at": "2026-09-19T18:32:50+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL51",
+      "next_prepared_task_id": "AL52",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -7638,15 +7725,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T18:17:42+08:00",
+    "last_local_review_at": "2026-09-19T18:32:50+08:00",
     "prepared_independent_task_ids": [
-      "AL51",
+      "AL52",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL51",
+        "AL52",
         "AL36"
       ],
       "executor_blocked": [
@@ -7727,9 +7814,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "89bae1454c3567efa312a7825f32e62844c1312e",
-      "project_sha256": "062fa0e207f736f1ec543e97fb9ee5db3a6bf891f4479580bdfe38d4f55e4df6",
-      "contains_current_turn_local_start_update": true
+      "commit": "b26c6a1b59f48320c338710dcbd21d9bbad074a1",
+      "project_sha256": "80891ed114749a4cbc2c114b6b5bc24ef4c687c46572a1242a53aa07749bc9ba",
+      "includes_current_turn_start_record": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -7742,9 +7829,9 @@
     },
     "last_progress_at": "2026-09-19T18:06:34+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T17:21:07+08:00",
+      "at": "2026-09-19T18:25:32+08:00",
       "action": "no_remote_wait",
-      "reason": "Current executor planagent; additional_dispatches empty; AL36 queued unsent under previously observed401; no new recovery evidence."
+      "reason": "Current executor is planagent; additional_dispatches empty. AL36 remains queued unsent under prior401 with no recovery evidence; continue authorized local work."
     }
   },
   "candidate_protocols": {
@@ -7868,7 +7955,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL51",
+        "AL52",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -7887,7 +7974,11 @@
       "null_probe_envelope_task": "AL47",
       "duplicate_score_margin_task": "AL48",
       "original_to_soft_commutation_counterexample": "AL49 fixed arithmetic verified, one-run contract failed",
-      "matching_stability_review": "AL50 failed; corrected global margin in separate report"
+      "matching_stability_review": "AL50 failed; corrected global margin in separate report",
+      "soft_path_decomposition_review_task": "AL51",
+      "soft_path_decomposition_status": "K_h=C+chord_term; true contributions unmeasured",
+      "proposed_decomposition_diagnostic_R_calls": 6,
+      "proposed_decomposition_diagnostic_scope": "Generic noncoincident main-h case; actual reuse must be counted; not authorized"
     }
   },
   "open_review_issues": [

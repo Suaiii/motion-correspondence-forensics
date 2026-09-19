@@ -1,0 +1,49 @@
+{
+  "task_id": "AL51",
+  "recorded_at": "2026-09-19T18:30:17.706301+08:00",
+  "evidence_kind": "manual_symbolic_mechanism_derivation_no_numerical_batch",
+  "inputs_sha256": {
+    "research-plan/AL51_SOFT_MIXING_DECOMPOSITION_AUDIT_20260919.md": "d9e2480fdd16e9d9e09de3f592bdf363ac07b7987a7491fa3436375ff20d8210",
+    "research-runs/algorithm_search_20260918/AL12_method_design.md": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+    "research-plan/reviews/AL19_CLAMP_COORDINATES_REVIEW_20260919.md": "30603c157a8d738a8fc2718754e1c547fd334401868f1d83902511468bc99015",
+    "research-plan/reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md": "e89e5bb5f8e9d97398cb7a3728e5eeb0a53edf716a63d85e3c1dbb8a3f58dec4",
+    "research-plan/reviews/AL49_SOFT_COMPOSITION_NULL_REVIEW_20260919.md": "ca502bb09e1c6b980e7580ae8baff901474f0535595b949b83be6b116c7e108c"
+  },
+  "report_path": "research-plan/reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md",
+  "report_sha256": "f39afd0b648e9bcba3e67a2dbcd74bd8e464adba3f7a217ff7b70c72b5c7dbf2",
+  "statements_reviewed": [
+    "Finite-h endpoint expansion yields K_h=C+(J_a-J_b)/h",
+    "Full-chord integral interpolation remainder under C2 gives h(1-h) bound",
+    "J/h need not disappear when h tends to zero",
+    "Affine maps eliminate chord deviation; affine commutation includes translation terms",
+    "Filtered K energy includes signed C/E cross term",
+    "Direct future decomposition requires two additional complete-probe calls, total6"
+  ],
+  "mathematical_method": "Algebraic substitution, two integrations for chord remainder, fixed-h Taylor limit; hand-reviewed, not machine proof certificate",
+  "assumptions": [
+    "Consistent deterministic complete maps on shared vector domain/grid",
+    "All queried full endpoints and soft chord points lie in legal domains",
+    "C2 full-chord bound only where explicitly assumed",
+    "Common norm, filter support and denominator"
+  ],
+  "original_OR1_algorithm_changed": false,
+  "future_diagnostic_total_sample_equivalent_R_calls": 6,
+  "future_diagnostic_authorized": false,
+  "actual_model_calls": 0,
+  "numeric_tests_executed": 0,
+  "research_code_replayed": false,
+  "real_samples_accessed": false,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "source_label_effect_measured": false,
+  "actual_AE_curvature_bound": "unknown",
+  "independent_scientific_review": false,
+  "scientific_innovation_admitted": false,
+  "precommit_revision": {
+    "recorded_at": "2026-09-19T18:31:18.303133+08:00",
+    "previous_report_digest": "4690c927f05d9e7d44e8f3a3c7e48826db7fe784a737b8933d0da8624d71eb0c",
+    "change": "Clarify6 calls applies to generic noncoincident inputs at main h1/8; h1 or repeated query points can reuse values",
+    "previous_draft_payload_retained": false
+  },
+  "future_diagnostic_call_scope": "Generic noncoincident main-h case:4 existing+2 additional; boundary and repeated input cases logged individually"
+}
