@@ -1,0 +1,415 @@
+{
+  "task_id": "AL34",
+  "created_at": "2026-09-19T05:56:20.437748+00:00",
+  "gate_result": "pass",
+  "gate_scope": "single_step_Gram_sufficiency_math",
+  "checks": [
+    {
+      "name": "A/symmetric",
+      "passed": true
+    },
+    {
+      "name": "A/idempotent",
+      "passed": true
+    },
+    {
+      "name": "B/symmetric",
+      "passed": true
+    },
+    {
+      "name": "B/idempotent",
+      "passed": true
+    },
+    {
+      "name": "finite_h_constant_commutes",
+      "passed": true
+    },
+    {
+      "name": "finite_h_quadratic_coefficient",
+      "passed": true
+    },
+    {
+      "name": "projection_identity_C2_minus_C4",
+      "passed": true
+    },
+    {
+      "name": "x_commutator_nonzero",
+      "passed": true,
+      "value": "144/25"
+    },
+    {
+      "name": "y_commutator_zero",
+      "passed": true,
+      "value": "0"
+    },
+    {
+      "name": "complete_single_step_gram_equal",
+      "passed": true,
+      "gram": [
+        [
+          "26",
+          "25",
+          "9"
+        ],
+        [
+          "25",
+          "25",
+          "9"
+        ],
+        [
+          "9",
+          "9",
+          "9"
+        ]
+      ]
+    },
+    {
+      "name": "input_norm_equal",
+      "passed": true,
+      "value": "26"
+    },
+    {
+      "name": "ordinary_two_call_residual_equal",
+      "passed": true,
+      "value": "18"
+    },
+    {
+      "name": "ordinary_cross_terms_equal",
+      "passed": true
+    },
+    {
+      "name": "normalized_response_separates_fixed_vectors",
+      "passed": true,
+      "qx": "5760000000000/18000000000007",
+      "qy": "0"
+    },
+    {
+      "name": "same_denominator_different_numerator",
+      "passed": true
+    }
+  ],
+  "matrices": {
+    "A": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "B": [
+      [
+        "1",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "9/25",
+        "12/25",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "12/25",
+        "16/25",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "1",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ],
+    "Q": [
+      [
+        "9/25",
+        "12/25"
+      ],
+      [
+        "12/25",
+        "16/25"
+      ]
+    ],
+    "commutator": [
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "12/25",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "-12/25",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      [
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0",
+        "0"
+      ]
+    ]
+  },
+  "vectors": {
+    "x": [
+      "0",
+      "0",
+      "5",
+      "0",
+      "0",
+      "0",
+      "1"
+    ],
+    "y": [
+      "3",
+      "0",
+      "0",
+      "0",
+      "4",
+      "0",
+      "1"
+    ],
+    "Ax": [
+      "0",
+      "0",
+      "5",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    "Bx": [
+      "0",
+      "0",
+      "9/5",
+      "12/5",
+      "0",
+      "0",
+      "0"
+    ],
+    "Ay": [
+      "3",
+      "0",
+      "0",
+      "0",
+      "4",
+      "0",
+      "0"
+    ],
+    "By": [
+      "3",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ]
+  },
+  "finite_h": "Symbolic polynomial cancellation: (I+h(A-I))(I+h(B-I)) minus reversed order equals h^2(AB-BA).",
+  "gram_x": [
+    [
+      "26",
+      "25",
+      "9"
+    ],
+    [
+      "25",
+      "25",
+      "9"
+    ],
+    [
+      "9",
+      "9",
+      "9"
+    ]
+  ],
+  "gram_y": [
+    [
+      "26",
+      "25",
+      "9"
+    ],
+    [
+      "25",
+      "25",
+      "9"
+    ],
+    [
+      "9",
+      "9",
+      "9"
+    ]
+  ],
+  "residual_sum_x": "18",
+  "residual_sum_y": "18",
+  "commutator_energy_x": "144/25",
+  "commutator_energy_y": "0",
+  "q_eta_1e-12_x": "5760000000000/18000000000007",
+  "q_eta_1e-12_y": "0",
+  "interpretation": {
+    "supported": "The complete single-step Gram of (x,Ax,Bx), input norm, and ordinary two-call residuals do not determine commutator energy under this fixed projection construction.",
+    "not_supported": [
+      "real AE mechanism",
+      "four-filter OR1 refutation",
+      "source classification gain",
+      "cross-domain generalization",
+      "new algorithm admission"
+    ],
+    "failure_boundary": "This is one exact finite-dimensional counterexample; it does not show that a richer feature set or actual decoder has the same behavior."
+  },
+  "resource": {
+    "stdlib_only": true,
+    "model_calls": 0,
+    "media_calls": 0,
+    "server_calls": 0,
+    "gpu_calls": 0,
+    "classifier_training_calls": 0,
+    "selected_constructions": 1
+  }
+}

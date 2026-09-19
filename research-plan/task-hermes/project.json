@@ -3078,8 +3078,8 @@
         "AL29",
         "AL30"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "stable_readout_metric_integration_reference",
       "hypothesis": "直接共享候选q的稳定坐标及拉回正则应在所声明范围保留同信息/同目标合同，不能借浮点消去制造优势。",
       "work": [
@@ -3094,7 +3094,9 @@
       ],
       "artifacts": [
         "../../research-runs/algorithm_search_20260918/AL32_report.md",
-        "../../research-runs/algorithm_search_20260918/AL32_handoff.md"
+        "../../research-runs/algorithm_search_20260918/AL32_handoff.md",
+        "../reviews/AL32_REVIEW_20260919.md",
+        "../reviews/AL32_ARCHIVE_REVIEW_20260919.json"
       ],
       "work_order": "../AL32_STABLE_BASELINE_INTEGRATION_CPU_20260919.md",
       "resource_policy": {
@@ -3122,14 +3124,28 @@
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": true,
       "classifier_training_authorized": false,
-      "hypothesis_result": "not_evaluated",
+      "hypothesis_result": "stable_shared_q_and_induced_metric_supported_on_frozen_references_only",
       "scientific_innovation_gate_passed": false,
-      "dispatch_status": "running_verified",
+      "dispatch_status": "completed_scoped_review_after_thread_failure",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "execution_worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
       "started_at": "2026-09-19T06:03:47+08:00",
       "observed_turn_id": "01a0b687-0e93-7631-ab8d-16fbe53c2ed7",
-      "execution_stage": "archived_feature_and_metric_integration_preparation"
+      "execution_stage": "complete_archived_delivery",
+      "completed_at": "2026-09-19T13:48:40+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL32_REVIEW_20260919.md",
+      "source_commits": [
+        "0685fbf17d16b1a639037924266e1257e0b3abcd",
+        "551b0958e8cc94e2df7294b96f710df587d0b2b0"
+      ],
+      "integration_commits": [
+        "6076d52",
+        "0f71154"
+      ],
+      "execution_completed_at": "2026-09-19T06:06:22.950301+08:00",
+      "review_scope": "Archive/code audit with12 manifest,118 historical,5 dependency hashes; independent Fraction and Decimal at archived points; no runtime replay or formal scientific review",
+      "next_action": "AL34 single-step Gram sufficiency audit and independent AL35 minimum mechanism protocol design"
     },
     {
       "id": "AL33",
@@ -3191,6 +3207,130 @@
       "artifact_sha256": "266caa08071d6d23295a88e722fad0f05e643963cad79b8c18c45ecae2567c1b",
       "independent_scientific_review": "pending; planagent mathematical mechanism audit",
       "next_action": "Include two-call normalized input-energy control in future comparison design; test real nonlinear mechanism separately"
+    },
+    {
+      "id": "AL34",
+      "milestone": "M2",
+      "title": "单步重建Gram统计与多投影块的可辨识性审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL20",
+        "AL33"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL20",
+        "AL33"
+      ],
+      "status": "running",
+      "gate_result": "not_evaluated",
+      "gate_scope": "single_step_Gram_sufficiency_math",
+      "hypothesis": "AL33单角块中的能量充分性未必延伸到多角块；可用预定无标签反例检验完整单步Gram能否决定交换能量。",
+      "work": [
+        "推导任意正交投影的有限h交换响应与平方差矩阵恒等式",
+        "只检查预定7维投影对和2向量的完整Gram、误差与交换能量",
+        "限定聚合统计结论，不外推四滤波或真实AE/来源收益"
+      ],
+      "acceptance": [
+        "输入与矩阵在核验前固定，不失败换例",
+        "保留AL20完整四调用基线包含关系",
+        "仅标准库精确数学审查，不训练或执行研究代码"
+      ],
+      "artifacts": [
+        "../reviews/AL34_SINGLE_STEP_INFORMATION_REVIEW_20260919.md",
+        "../reviews/AL34_SINGLE_STEP_EXACT_20260919.json"
+      ],
+      "work_order": "../AL34_SINGLE_STEP_INFORMATION_AUDIT_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "torch": false,
+        "research_runtime_execution": false,
+        "max_matrix_dimension": 12
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T13:48:40+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "not_evaluated",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "started_at": "2026-09-19T13:48:40+08:00"
+    },
+    {
+      "id": "AL35",
+      "milestone": "M2",
+      "title": "OR1最小真实机制判别协议设计",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL17",
+        "AL19",
+        "AL20",
+        "AL21",
+        "AL22",
+        "AL25",
+        "AL26",
+        "AL28",
+        "AL31",
+        "AL32"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL17",
+        "AL19",
+        "AL20",
+        "AL21",
+        "AL22",
+        "AL25",
+        "AL26",
+        "AL28",
+        "AL31",
+        "AL32"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "minimum_mechanism_protocol_draft",
+      "hypothesis": "将普通重建、归一化/截断、静态及组件暴露解释分别作为失败条件，可形成下一真实批次的可审查准入草案。",
+      "work": [
+        "从已审证据明确算子兼容性与有标签机制筛查的分离",
+        "固定必要基线/共享数值/覆盖率/统计量与失败逻辑",
+        "列资源和真实数据缺口及新准入依赖，禁止自动执行"
+      ],
+      "acceptance": [
+        "不虚构样本、账单、权重或科学通过",
+        "AL05 fail保留，草案不放行RS06/07/08",
+        "无需AL34结果，独立推进"
+      ],
+      "artifacts": [
+        "../reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md"
+      ],
+      "work_order": "../AL35_MINIMUM_MECHANISM_PROTOCOL_DESIGN_20260919.md",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "torch": false,
+        "research_runtime_execution": false,
+        "max_matrix_dimension": 12
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T13:48:40+08:00",
+      "due_at": "2026-09-20T22:00:00+08:00",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "not_evaluated",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b"
     }
   ],
   "storage_policy": {
@@ -4590,7 +4730,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T06:03:47+08:00",
+  "updated_at": "2026-09-19T13:48:40+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5235,41 +5375,42 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al32-stable-baseline-integration-20260919",
+      "id": "cc-al34-al35-planner-mechanism-20260919",
       "task_ids": [
-        "AL32"
+        "AL34",
+        "AL35"
       ],
-      "executor_role": "researchagent_next",
-      "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "executor_role": "planagent",
+      "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "running",
-      "prepared_at": "2026-09-19T05:57:19+08:00",
-      "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "work_order": "../AL32_STABLE_BASELINE_INTEGRATION_CPU_20260919.md",
-      "work_order_sha256": "86ee01efe1b273a71f1c80f2a0e007a82f684f8cbfdb5c04141d64ed130a693d",
+      "prepared_at": "2026-09-19T13:48:40+08:00",
+      "started_at": "2026-09-19T13:48:40+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
-      "scope": "3 archived field cases and3 abstract panels at2 fixed points; stable feature/metric integration only, no optimizer/model/readout/GPU.",
-      "readiness_basis": "AL30 complete handoff independently reviewed, old AL27 fail preserved, idle/completed cursor41",
-      "sent_at": "2026-09-19T05:58:20+08:00",
-      "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
-      "duplicate_dispatch_suppressed": true,
-      "last_observed_status": "inProgress",
-      "last_observed_thread_turn_id": "01a0b687-0e93-7631-ab8d-16fbe53c2ed7",
-      "last_observed_at": "2026-09-19T06:03:47+08:00",
-      "startup_evidence": "cursor42 active with actual archived near-cancellation value and literal-q reuse acknowledgement; file preparation observed"
+      "work_area": "research-plan/reviews",
+      "scope": "Independent mathematics and protocol design in planner role; no replay/takeover of AL32 or research runtime",
+      "work_orders": {
+        "AL34": "research-plan\\AL34_SINGLE_STEP_INFORMATION_AUDIT_20260919.md",
+        "AL35": "research-plan\\AL35_MINIMUM_MECHANISM_PROTOCOL_DESIGN_20260919.md"
+      },
+      "work_order_sha256": {
+        "AL34": "62a1bbe911dd08d713abcd8f0d7b70e37f5f8cceda1ac8d743faea598995593c",
+        "AL35": "d440d1edaf5d364248408ce1b7e1d59ff9af364bf34b4a51bcab6d691a895118"
+      },
+      "remote_send_required": false,
+      "reason": "AL32 handoff complete and reviewed; research turn ended by usage limit; planner work remains authorized"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "a0851860-695a-4836-885f-a39498f7710a:42",
+    "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:1",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T06:03:47+08:00",
-    "research_observed_status": "active",
+    "last_coordinator_activity_at": "2026-09-19T13:48:40+08:00",
+    "research_observed_status": "failed_usage_limit",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -5845,12 +5986,45 @@
           "c9c3678",
           "9f6ca75"
         ]
+      },
+      {
+        "id": "cc-al32-stable-baseline-integration-20260919",
+        "task_ids": [
+          "AL32"
+        ],
+        "executor_role": "researchagent_next",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "host_id": "local",
+        "status": "completed_scoped_review_after_thread_failure",
+        "prepared_at": "2026-09-19T05:57:19+08:00",
+        "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+        "work_order": "../AL32_STABLE_BASELINE_INTEGRATION_CPU_20260919.md",
+        "work_order_sha256": "86ee01efe1b273a71f1c80f2a0e007a82f684f8cbfdb5c04141d64ed130a693d",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "5cc4f7b994c79853913cecb8d1bad9a46156f584fd33ca4712aee85c7b3fc8ec",
+        "scope": "3 archived field cases and3 abstract panels at2 fixed points; stable feature/metric integration only, no optimizer/model/readout/GPU.",
+        "readiness_basis": "AL30 complete handoff independently reviewed, old AL27 fail preserved, idle/completed cursor41",
+        "sent_at": "2026-09-19T05:58:20+08:00",
+        "sent_at_source": "recorded_after_successful_send_message_to_thread_response",
+        "duplicate_dispatch_suppressed": true,
+        "last_observed_status": "failed",
+        "last_observed_thread_turn_id": "01a0b687-0e93-7631-ab8d-16fbe53c2ed7",
+        "last_observed_at": "2026-09-19T13:48:40+08:00",
+        "startup_evidence": "cursor42 active with actual archived near-cancellation value and literal-q reuse acknowledgement; file preparation observed",
+        "completed_at": "2026-09-19T13:48:40+08:00",
+        "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:1",
+        "review": "../reviews/AL32_REVIEW_20260919.md",
+        "source_commit": "551b0958e8cc94e2df7294b96f710df587d0b2b0",
+        "failure_code": "usage_limit",
+        "execution_artifacts_available": true,
+        "rerun_required": false,
+        "handoff_report": "../../research-runs/algorithm_search_20260918/AL32_handoff.md"
       }
     ],
-    "last_substantive_review": "../reviews/AL33_PROJECTOR_MECHANISM_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL32_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": null,
-    "dispatch_policy_state": "dual_lane_active",
+    "dispatch_policy_state": "planner_math_and_protocol_active_research_executor_usage_blocked",
     "waiting_on": [
       "Actual billing/remaining allowance or explicitly authorized batch allowance",
       "Original timestamp fields and two-real-source/ancestry acceptance"
@@ -5908,6 +6082,22 @@
         "recovery_model": "gpt-6-astra",
         "special_program_access_claimed": false,
         "resolution_scope": "ordinary_research_only"
+      },
+      "research_task_usage_limit": {
+        "status": "open",
+        "observed_at": "2026-09-19T13:48:40+08:00",
+        "failed_turn_id": "01a0b687-0e93-7631-ab8d-16fbe53c2ed7",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "error_message": "You’ve hit your usage limit. Visit https://chatgpt.com/codex/settings/usage to purchase more credits or try again at Sep 24th, 2026 9:12 PM.",
+        "reported_retry_time_raw": "Sep 24th, 2026 9:12 PM",
+        "reported_timezone": null,
+        "review": "../reviews/RESEARCH_USAGE_LIMIT_20260919.md",
+        "notification_state": "prepared_for_current_final_not_confirmed",
+        "local_planner_work_continues": true,
+        "no_retry_until_state_change": true,
+        "no_identity_or_model_change": true,
+        "no_purchase": true,
+        "execution_artifacts_preserved": true
       }
     },
     "latest_authorization_at": "2026-09-18T23:24:36+08:00",
@@ -5924,14 +6114,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL33"
+        "AL34",
+        "AL35"
       ],
       "executor_role": "planagent",
-      "status": "completed_ideal_projection_mechanism_review",
-      "started_at": "2026-09-19T05:57:19+08:00",
+      "status": "running",
+      "started_at": "2026-09-19T13:48:40+08:00",
       "work_area": "research-plan/reviews",
-      "scope": "Conditional2D projection mathematics and2 exact vectors; no actual AE claims",
-      "completed_at": "2026-09-19T06:03:47+08:00"
+      "scope": "Independent math/protocol work; not research-code fallback"
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -5948,13 +6138,17 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T06:03:47+08:00",
-    "prepared_independent_task_ids": [],
+    "last_local_review_at": "2026-09-19T13:48:40+08:00",
+    "prepared_independent_task_ids": [
+      "AL35"
+    ],
     "active_and_prepared_work": {
       "running": [
-        "AL32"
+        "AL34"
       ],
-      "prepared_independent": []
+      "prepared_independent": [
+        "AL35"
+      ]
     },
     "material_decision_notices": [
       {
@@ -6004,7 +6198,12 @@
         "resolution": "../reviews/AL18_REVIEW_20260919.md",
         "resolved_at": "2026-09-19T03:54:09+08:00"
       }
-    ]
+    ],
+    "last_state_transition_snapshot": {
+      "commit": "aa7afdb0b261514d98c1b5599e534872f31bfea3",
+      "path": "research-plan/task-hermes/project.json",
+      "sha256": "5ec1ba57e5026bffe8d7b7b6943b5e39b91cde8d941d34367447434edcfc1159"
+    }
   },
   "candidate_protocols": {
     "A": {
@@ -6123,7 +6322,13 @@
       "stable_baseline_integration_task": "AL32",
       "projection_mechanism_review_task": "AL33",
       "ideal_projection_result": "In declared2D single-angle block q=kappa*input_energy/(single_residual_sum+eta); real nonlinear AE extension not established",
-      "two_call_ratio_control": "Required future diagnostic: input energy over single-probe residual sum+eta; scale/regularization must be declared; not implemented or trained"
+      "two_call_ratio_control": "Required future diagnostic: input energy over single-probe residual sum+eta; scale/regularization must be declared; not implemented or trained",
+      "stable_baseline_integration_status": "scoped_pass_AL32_only",
+      "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
+      "next_independent_tasks": [
+        "AL34",
+        "AL35"
+      ]
     }
   },
   "open_review_issues": [
