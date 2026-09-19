@@ -1,0 +1,66 @@
+{
+  "task_id": "AL65",
+  "freeze_created_at": "2026-09-20T01:15:39+08:00",
+  "pre_freeze_HEAD": "e0e51b2a5c0be5a1a7389ad5585769c8062fe6dd",
+  "files": [
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 2343,
+      "sha256": "de7dafe0de8da6865e8f642a2c3fc9cba677fb5dea309c3e7fcff6bd92d3a83a"
+    },
+    {
+      "path": "cases.json",
+      "bytes": 1068,
+      "sha256": "34e45abfb74ba5caebac5924f3c2484ce29fd0314d77ee06bc3088f8de44d1f1"
+    },
+    {
+      "path": "reference.json",
+      "bytes": 1606,
+      "sha256": "2882a3877b57daa4b6d8be1ed3cf6f42a7b576177fab15040d766b0307190dae"
+    },
+    {
+      "path": "selection_controls.py",
+      "bytes": 3146,
+      "sha256": "86a6cebb9d9e402f0810b1d9fbf2840e884fb8da0fd39e6da297f5124f5c78f3"
+    },
+    {
+      "path": "run_batch.py",
+      "bytes": 9350,
+      "sha256": "472d04e48b2bde51e03bcdd1864bb7dcc1a0970c1e121c24095146775bfd814f"
+    }
+  ],
+  "protected_inputs": [
+    {
+      "path": "research-plan/AL65_SELECTION_MECHANISM_CPU_20260920.md",
+      "absolute_path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\AL65_SELECTION_MECHANISM_CPU_20260920.md",
+      "sha256": "5878c8452e5de2778bb4714dd52cc70dd86b8b48b6c7c3cb6013d169c9b53ffe"
+    },
+    {
+      "path": "research-plan/reviews/AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md",
+      "absolute_path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md",
+      "sha256": "0a2e5c039c65984974fb91cd155a15b3721d1b7282098e23cd2499499e03dbcf"
+    },
+    {
+      "path": "research-plan/reviews/AL64_SOURCE_RECORD_20260919.json",
+      "absolute_path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL64_SOURCE_RECORD_20260919.json",
+      "sha256": "d57abb8237f555d089f5eefb1cd22d819544106ac1b494fe05c88e6c3798b5e3"
+    },
+    {
+      "path": "research-plan/reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md",
+      "absolute_path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL54_PLANNER_ADMISSION_REVIEW_20260919.md",
+      "sha256": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a"
+    },
+    {
+      "path": "research-plan/reviews/AL58_FINAL_REVIEW_RECORD_20260919.json",
+      "absolute_path": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL58_FINAL_REVIEW_RECORD_20260919.json",
+      "sha256": "30e3af849e4fc8fc53837a6c580cae9d9d7204fa70df0e5e52792c9d2148333f"
+    },
+    {
+      "path": "research-runs/algorithm_search_20260918/AL32_evidence.json",
+      "absolute_path": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\algorithm_search_20260918\\AL32_evidence.json",
+      "sha256": "53124c72ddc548bc2ed69f8b7eec6bd6c398332f8e0368e4b9442727b2b66d96"
+    }
+  ],
+  "authorization": "Registered AL65 CPU-only fallback after observed new research task protocol failure",
+  "numeric_module_executed_at_freeze": false
+}

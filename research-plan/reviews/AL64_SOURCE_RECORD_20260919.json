@@ -1,0 +1,135 @@
+{
+  "task_id": "AL64",
+  "entries": [
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22OpenVid-HD%22&max_results=20",
+      "started_at": "2026-09-19T16:28:20.721461+00:00",
+      "status": 200,
+      "bytes": 3003,
+      "sha256": "f6d6de3f9e51216f520263d56cf0821b5f95eba675387916f7335b4e592f0901",
+      "finished_at": "2026-09-19T16:28:21.478890+00:00",
+      "scope": "Identity query did not locate primary dataset paper; ContextAnyone not method-reviewed"
+    },
+    {
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22OpenVid-1M%22&max_results=20",
+      "started_at": "2026-09-19T16:28:21.479428+00:00",
+      "status": 200,
+      "bytes": 7573,
+      "sha256": "17139e9499c0d1e5046dbd21a04515b1c27ceed0673fc14ac9e83c76f184cadb",
+      "finished_at": "2026-09-19T16:28:22.638249+00:00",
+      "scope": "Located2407.02371v3; unrelated returned papers not adopted"
+    }
+  ],
+  "access_route": "Ordinary credential-free public HTTPS; no gateway/auth bypass",
+  "primary_text_request": {
+    "url": "https://arxiv.org/html/2407.02371v3",
+    "started_at": "2026-09-19T16:35:12.247696+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/html/2407.02371v3",
+    "bytes": 280453,
+    "sha256": "6746591705f0759368a462711ba79f0fd9853b6b3def6f27b19a6bb6f7f9d07e",
+    "completed_at": "2026-09-19T16:35:14.331030+00:00",
+    "extracted_text_sha256": "3c7438d03b1d209217eeb0d4979778b1b01b97dcea42f454261952e69b1fd600",
+    "extracted_characters": 66974,
+    "parser": "stdlib HTMLParser, script/style removed"
+  },
+  "identity": {
+    "title": "OpenVid-1M: A Large-Scale High-Quality Dataset for Text-to-video Generation",
+    "arxiv_id": "2407.02371v3",
+    "version_date": "2025-02-13",
+    "authors": [
+      "Kepan Nan",
+      "Rui Xie",
+      "Penghao Zhou",
+      "Tiehan Fan",
+      "Zhenheng Yang",
+      "Zhijie Chen",
+      "Xiang Li",
+      "Jian Yang",
+      "Ying Tai"
+    ],
+    "venue": "ICLR2025 per arXiv comment; separate proceedings record not read",
+    "HD_resource_name": "OpenVidHD-0.4M",
+    "AIGVDBench_actual_dataset_revision": "unknown"
+  },
+  "identity_entrypoint_count": 2,
+  "identity_request_accounting": {
+    "unique_urls": 2,
+    "recorded_content_requests": 2,
+    "additional_prior_status_only_request": {
+      "url": "https://export.arxiv.org/api/query?search_query=all:%22OpenVid-HD%22&max_results=20",
+      "status": 200,
+      "exact_time": null,
+      "source": "Visible tool chunk78ab30",
+      "note": "Earlier redundant public status request; not omitted from request accounting and not another source"
+    }
+  },
+  "read_scope": {
+    "primary_versions": 1,
+    "sections": [
+      "abstract and identity",
+      "3 Curating OpenVid-1M",
+      "4 Data Processing and Statistical Comparison/Table2",
+      "A.1 Data Processing Pipeline",
+      "F Video durations comparison",
+      "6.1 training-frame statement only"
+    ],
+    "precision_note": "HTML contains duplicate math text such as1616 and11; quantities taken from contextual text/table and not mechanically treated as exact rendered numbers.",
+    "not_read": "Dataset/sample/download manifests, additional papers, implementation or visual examples"
+  },
+  "findings": [
+    {
+      "section": "3",
+      "fact": "Upstream ChronoMagic,CelebvHQ,Open-Sora-plan,Panda downloaded50M subset; not one acquisition source"
+    },
+    {
+      "section": "3/A.1",
+      "fact": "Panda filtered by aesthetics, adjacent-frame CLIP, UniMatch flow, DOVER clarity, then cut detection; other upstream paths differ"
+    },
+    {
+      "section": "3/A.1",
+      "fact": "Caption regeneration and HD resolution selection; clip boundaries do not certify ancestor independence"
+    },
+    {
+      "section": "4/Table2/F",
+      "fact": "OpenVid1M1,019,957 clips, mean7.2s,2051h; HD433K,9.6s,about1.2kh; differs from AL63's cited benchmark11,000h assertion"
+    },
+    {
+      "section": "6.1",
+      "fact": "16 frames at3-frame intervals is generator training configuration, not nativePTS/FPS proof"
+    },
+    {
+      "section": "read provenance passages",
+      "fact": "No accepted native integerPTS/timebase, parent clip hashes, manifest-level lineage or dataset license in reviewed text; arXiv paper license is not media license"
+    }
+  ],
+  "scope_decision": "Limited primary provenance review complete; real-data/native-time/license gates unverified",
+  "hypothesis_result": "Pipeline provenance and explicit selection mechanisms found; sample acceptance remains unknown",
+  "actual_data_access": false,
+  "reviewed_at": "2026-09-20T01:05:25+08:00",
+  "review_sha256": "0a2e5c039c65984974fb91cd155a15b3721d1b7282098e23cd2499499e03dbcf",
+  "input_sha256": {
+    "research-plan/AL64_OPENVIDHD_PROVENANCE_PRIMARY_AUDIT_20260919.md": "b5f3764076712d621142e395b7766305fe314189f4aa98b066c1da4dc95226a5",
+    "research-plan/reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md": "22158083977e47f59a02884e32c6363a28b82bdea6826dcba96a68a479a86901",
+    "research-plan/reviews/AL13_COUNTERFACTUAL_PROTOCOL_20260919.md": "54c98657404d8093fff9175f6f3e71c23fac34cd509581a481c860a2913e99a3"
+  },
+  "local_extraction": {
+    "file_sha256": "220b87f0255ae2938d4579d062a5bbb994ad597f8961d7bc3f25ebf2f04fb7d9",
+    "normalized_text_sha256": "3c7438d03b1d209217eeb0d4979778b1b01b97dcea42f454261952e69b1fd600",
+    "difference_explanation": "write_text platform newline translation; rawfile and normalized text digests distinct"
+  },
+  "cleanup": {
+    "at": "2026-09-20T01:15:39+08:00",
+    "named_path": "tmp/al64_primary.txt",
+    "absent": true,
+    "fulltext_committed": false
+  },
+  "evidence_kind": "Manual selected primary text review; source parsing/hashing only, no scientific simulation",
+  "resources": {
+    "model_or_author_code_executed": false,
+    "sample_manifest_or_media_accessed": false,
+    "GPU_job_started": false,
+    "AL64_server_access": false,
+    "parallel_user_requested_readonly_server_observation": "SERVER_READONLY_RESEARCH_WINDOW_20260920.json"
+  }
+}

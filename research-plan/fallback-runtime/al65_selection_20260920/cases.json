@@ -1,0 +1,16 @@
+{
+  "protocol": "AL65-v1",
+  "source_prior": {"Y0": "1/2", "Y1": "1/2"},
+  "cell_order": [[-1, -1], [-1, 1], [0, -1], [0, 1], [1, -1], [1, 1]],
+  "base_conditional": ["1/6", "1/6", "1/6", "1/6", "1/6", "1/6"],
+  "score_direction": "larger indicates Y1; ties count one half",
+  "scores": {"f_Z": "abs(Z)", "f_Q": "indicator(Q==1)"},
+  "matching_rule": "common Z target proportional to min(P0(Z),P1(Z)); preserve each class P(Q|Z); report missing support separately",
+  "cases": [
+    {"id": "S1_all_retained", "s0": ["1", "1", "1", "1", "1", "1"], "s1": ["1", "1", "1", "1", "1", "1"]},
+    {"id": "S2_only_Y0_Z_selected", "s0": ["1/4", "1/4", "1", "1", "1/4", "1/4"], "s1": ["1", "1", "1", "1", "1", "1"]},
+    {"id": "S3_same_Z_selection", "s0": ["1/4", "1/4", "1", "1", "1/4", "1/4"], "s1": ["1/4", "1/4", "1", "1", "1/4", "1/4"]},
+    {"id": "S4_Y0_zero_support", "s0": ["0", "0", "1", "1", "0", "0"], "s1": ["1", "1", "1", "1", "1", "1"]},
+    {"id": "S5_only_Y0_Q_selected", "s0": ["1", "1/4", "1", "1/4", "1", "1/4"], "s1": ["1", "1", "1", "1", "1", "1"]}
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "started_at": "2026-09-19T16:45:40.969237+00:00",
+  "endpoint": {
+    "host": "connect.westc.seetacloud.com",
+    "port": 13340,
+    "user": "root"
+  },
+  "connection_config_sha256": "2d934f7cd5f584a155b95afd4b348415a6c099213940c89134f95086d997b10a",
+  "purpose": "User says existing server remains on; inspect current resources/jobs only",
+  "jobs_launched": false,
+  "shutdown_issued": false,
+  "cost_of_check_cny": null,
+  "billing_note": "Read-only SSH uses existing possibly billable instance; quote/invoice remains unknown",
+  "returncode": 0,
+  "stderr": "",
+  "observation": {
+    "server_utc": "2026-09-19T16:45:42.597139+00:00",
+    "python": "3.12.3",
+    "cpu_max": "1200000 100000",
+    "memory_max": "96636764160",
+    "disk": {
+      "total": 53687091200,
+      "used": 39368609792,
+      "free": 14318481408
+    },
+    "gpu": {
+      "returncode": 0,
+      "output": "NVIDIA GeForce RTX 4090, 24564, 0, 0",
+      "error": ""
+    },
+    "compute_processes": {
+      "returncode": 0,
+      "output": "",
+      "error": ""
+    },
+    "processes": {
+      "returncode": 0,
+      "output": "   PID COMMAND         %CPU %MEM\n   802 supervisord      2.0  0.0\n   822 autopanel        0.1  0.0\n     1 bash             0.0  0.0\n   818 tensorboard      0.0  0.0\n   821 jupyter-lab      0.0  0.0\n   823 sshd             0.0  0.0\n   825 proxy            0.0  0.0\n   826 proxy            0.0  0.0\n   872 server           0.0  0.0\n 17164 sshd             0.0  0.0\n 17175 python           0.0  0.0\n 17180 ps               0.0  0.0",
+      "error": ""
+    }
+  },
+  "finished_at": "2026-09-19T16:45:41.823553+00:00"
+}

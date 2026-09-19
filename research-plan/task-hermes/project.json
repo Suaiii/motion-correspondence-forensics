@@ -3349,7 +3349,7 @@
       "id": "AL36",
       "milestone": "M2",
       "title": "OR1待证归纳偏置与最小机制协议的反方准入审查",
-      "assignee": "researchagent_next",
+      "assignee": "researchagent_window",
       "parents": [
         "AL12",
         "AL14",
@@ -3387,10 +3387,9 @@
         "../../research-runs/algorithm_search_20260918/AL36_handoff.md"
       ],
       "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
-      "blocker": "Latest observed research executor turn failed with401 authentication; previous usage-limit resolution unknown. Package not sent; await supported recovery evidence.",
-      "dispatch_status": "prepared_not_sent",
-      "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
-      "next_action": "After genuine supported API recovery, read main DAG and correction AL41 before independent AL36; never rerun AL32",
+      "dispatch_status": "creation_prompt_received_startup_failed",
+      "execution_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "next_action": "Resume original independent review only after supported recovery; no duplicate send",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -3406,7 +3405,22 @@
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "not_evaluated"
+      "hypothesis_result": "not_evaluated",
+      "assignment_history": [
+        {
+          "status": "blocked",
+          "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+          "blocker": "Latest observed research executor turn failed with401 authentication; previous usage-limit resolution unknown. Package not sent; await supported recovery evidence.",
+          "dispatch_status": "prepared_not_sent",
+          "prepared_at": "2026-09-19T14:07:03+08:00"
+        }
+      ],
+      "execution_client_thread_id": "client-new-thread:b4758acd-913a-463e-a6cb-825727bc4ae7",
+      "updated_at": "2026-09-20T01:05:25+08:00",
+      "historical_blocker": "Latest observed research executor turn failed with401 authentication; previous usage-limit resolution unknown. Package not sent; await supported recovery evidence.",
+      "assignment_reason": "User repeatedly explicitly requested a fresh research execution window; previous task authentication/protocol failures preserved.",
+      "execution_worktree": "D:/SUAI/codex/worktree/a77e/脉冲神经网络",
+      "blocker": "Actual new research task failed at call-output protocol after file inventory; independent review not performed."
     },
     {
       "id": "AL37",
@@ -5245,8 +5259,8 @@
         "AL31",
         "AL13"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "public_source_provenance_protocol",
       "hypothesis": "OpenVid-HD primary source may establish provenance or explicitly leave native-time and visual-ancestry gaps.",
       "work": [
@@ -5281,8 +5295,97 @@
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
       "sample_access_authorized": false,
+      "hypothesis_result": "Upstream curation and selection pipeline confirmed; native-time/license/ancestry not accepted",
+      "next_action": "AL65 executes finite selection controls in user-requested research task; AL36 independently reviews OR1",
+      "started_at": "2026-09-20T00:28:20.721461+08:00",
+      "resumed_at": "2026-09-20T00:33:52+08:00",
+      "dispatch_status": "completed_primary_provenance_scope_review",
+      "start_provenance": "Restored from already recorded public metadata request; DAG transition recorded at resumed_at",
+      "completed_at": "2026-09-20T01:05:25+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md",
+      "artifact_sha256": "0a2e5c039c65984974fb91cd155a15b3721d1b7282098e23cd2499499e03dbcf",
+      "source_record": "../reviews/AL64_SOURCE_RECORD_20260919.json",
+      "source_record_sha256": "d57abb8237f555d089f5eefb1cd22d819544106ac1b494fe05c88e6c3798b5e3",
+      "review_scope": "One primary version provenance review only; no sample/data/efficacy gate release",
+      "evidence_kind": "manual_primary_source_review"
+    },
+    {
+      "id": "AL65",
+      "milestone": "M2",
+      "title": "真实参考筛选机制的有限支持CPU对照",
+      "assignee": "planagent",
+      "parents": [
+        "AL64",
+        "AL13",
+        "AL54"
+      ],
+      "requires_pass": [
+        "AL64",
+        "AL13",
+        "AL54"
+      ],
+      "status": "running",
+      "gate_result": "not_evaluated",
+      "gate_scope": "finite_support_selection_control_software",
+      "hypothesis": "Identical source laws can acquire separable observed statistics under unequal selection; matching limited nuisance statistics or weighting without overlap cannot generally recover unselected source comparison.",
+      "work": [
+        "Implement five frozen Fraction scenarios with full six-cell probabilities",
+        "Report fixed score AUROCs, normalization and common-support effects",
+        "Compare known-propensity inverse weighting, document oracle scope and zero-support failure"
+      ],
+      "acceptance": [
+        "Runnable isolated CPU code and exact per-cell evidence, not a planning-only report",
+        "No actual media/model/server/GPU/classifier fitting",
+        "Preserve failures and declared settings; do not count classic control arithmetic as innovation"
+      ],
+      "artifacts": [
+        "../fallback-runtime/al65_selection_20260920/PROTOCOL.md",
+        "../fallback-runtime/al65_selection_20260920/run_v1/evidence.json",
+        "../reviews/AL65_FALLBACK_HANDOFF_20260920.md"
+      ],
+      "work_order": "../AL65_SELECTION_MECHANISM_CPU_20260920.md",
+      "work_order_sha256": "5878c8452e5de2778bb4714dd52cc70dd86b8b48b6c7c3cb6013d169c9b53ffe",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-20T01:05:25+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "execution_client_thread_id": "client-new-thread:b4758acd-913a-463e-a6cb-825727bc4ae7",
+      "dispatch_status": "running_authorized_fallback_cpu",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "max_array_bytes": 1048576,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "existing_research_runtime_execution": false,
+        "new_isolated_CPU_module_allowed": true
+      },
+      "implementation_authorized": true,
+      "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
-      "next_action": "Bounded public provenance audit only"
+      "next_action": "Execute one pre-frozen exact finite-support batch locally, retain original failure/revision scope and hand back for independent review",
+      "executor_history": [
+        {
+          "executor_role": "researchagent_window",
+          "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+          "turn_id": "01a0ba9d-c930-7e02-8b6f-092f8651ec2c",
+          "outcome": "startup failure after read-only inventory, no code/evidence produced"
+        }
+      ],
+      "started_at": "2026-09-20T01:09:55+08:00",
+      "original_execution_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "fallback_reason": "Confirmed system/API startup error and clean worktree without AL65 artifacts",
+      "execution_area": "research-plan/fallback-runtime/al65_selection_20260920",
+      "independent_scientific_review": "pending; planagent execution is not independent validation",
+      "original_artifact_paths": [
+        "../../research-runs/algorithm_search_20260920/AL65_protocol.md",
+        "../../research-runs/algorithm_search_20260920/AL65_evidence.json",
+        "../../research-runs/algorithm_search_20260920/AL65_handoff.md"
+      ]
     }
   ],
   "storage_policy": {
@@ -6708,7 +6811,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-20T00:17:48+08:00",
+  "updated_at": "2026-09-20T01:15:39+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -6724,52 +6827,44 @@
       ]
     },
     "researchagent": {
-      "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "client_thread_id": "client-new-thread:b4758acd-913a-463e-a6cb-825727bc4ae7",
       "host_id": "local",
-      "title": "科研冲击新会话",
-      "instructions": "../../agents/researchagent-next/agent.md",
-      "creation_status": "active_verified",
-      "initial_task_ids": [
-        "AL04"
-      ],
+      "title_requested": "科研专项冲击 · 算法与CPU原型",
+      "creation_status": "created_verified_startup_failed",
       "environment": "worktree",
+      "instructions": "../../agents/researchagent-next/agent.md",
+      "handoff": "../RESEARCH_WINDOW_HANDOFF_20260920.md",
+      "canonical_state": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\task-hermes\\project.json",
       "writes": [
-        "Assigned research code, protocols and evidence in own worktree only; historical references remain read-only"
+        "Own worktree research code and evidence only"
       ],
-      "canonical_state": "E:/aNB/TECH/脉冲神经网络/research-plan/task-hermes/project.json",
-      "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
-      "creation_requested_at": "2026-09-19T00:12:39+08:00",
-      "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "branch": "codex/al12-decoder-matched",
-      "startup_verified_at": "2026-09-19T00:20:04+08:00",
-      "plan_version_read": "cvpr27-20260919-v1.5",
-      "mode": "primary_research_session"
+      "title": "科研专项冲击 · 算法与CPU原型",
+      "worktree": "D:/SUAI/codex/worktree/a77e/脉冲神经网络",
+      "mode": "primary_research_window_requires_protocol_recovery",
+      "role_alias_of": "researchagent_window"
     },
     "scientific_review": {
       "responsible": "user_and_advisor",
       "mechanical_replay_is_not_independent_review": true
     },
     "researchagent_next": {
-      "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "client_thread_id": "client-new-thread:b4758acd-913a-463e-a6cb-825727bc4ae7",
       "host_id": "local",
-      "title": "科研冲击新会话",
-      "instructions": "../../agents/researchagent-next/agent.md",
-      "creation_status": "active_verified",
-      "initial_task_ids": [
-        "AL04"
-      ],
+      "title_requested": "科研专项冲击 · 算法与CPU原型",
+      "creation_status": "created_verified_startup_failed",
       "environment": "worktree",
+      "instructions": "../../agents/researchagent-next/agent.md",
+      "handoff": "../RESEARCH_WINDOW_HANDOFF_20260920.md",
+      "canonical_state": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\task-hermes\\project.json",
       "writes": [
-        "Assigned research code, protocols and evidence in own worktree only; historical references remain read-only"
+        "Own worktree research code and evidence only"
       ],
-      "canonical_state": "E:/aNB/TECH/脉冲神经网络/research-plan/task-hermes/project.json",
-      "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
-      "creation_requested_at": "2026-09-19T00:12:39+08:00",
-      "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
-      "branch": "codex/al12-decoder-matched",
-      "startup_verified_at": "2026-09-19T00:20:04+08:00",
-      "plan_version_read": "cvpr27-20260919-v1.5",
-      "role_alias_of": "researchagent"
+      "title": "科研专项冲击 · 算法与CPU原型",
+      "worktree": "D:/SUAI/codex/worktree/a77e/脉冲神经网络",
+      "mode": "primary_research_window_requires_protocol_recovery",
+      "role_alias_of": "researchagent_window"
     },
     "researchagent_legacy": {
       "thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
@@ -6782,6 +6877,46 @@
         "DEVLOG.md"
       ],
       "mode": "current_package_closed_history_retained"
+    },
+    "researchagent_window": {
+      "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "client_thread_id": "client-new-thread:b4758acd-913a-463e-a6cb-825727bc4ae7",
+      "host_id": "local",
+      "title_requested": "科研专项冲击 · 算法与CPU原型",
+      "creation_status": "created_verified_startup_failed",
+      "environment": "worktree",
+      "instructions": "../../agents/researchagent-next/agent.md",
+      "handoff": "../RESEARCH_WINDOW_HANDOFF_20260920.md",
+      "canonical_state": "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\task-hermes\\project.json",
+      "writes": [
+        "Own worktree research code and evidence only"
+      ],
+      "title": "科研专项冲击 · 算法与CPU原型",
+      "worktree": "D:/SUAI/codex/worktree/a77e/脉冲神经网络",
+      "mode": "primary_research_window_requires_protocol_recovery"
+    },
+    "researchagent_previous_failed": {
+      "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "host_id": "local",
+      "title": "科研冲击新会话",
+      "instructions": "../../agents/researchagent-next/agent.md",
+      "creation_status": "active_verified",
+      "initial_task_ids": [
+        "AL04"
+      ],
+      "environment": "worktree",
+      "writes": [
+        "Assigned research code, protocols and evidence in own worktree only; historical references remain read-only"
+      ],
+      "canonical_state": "E:/aNB/TECH/脉冲神经网络/research-plan/task-hermes/project.json",
+      "client_thread_id": "client-new-thread:73a019e7-aaba-4406-8eb9-b84ee7f0d582",
+      "creation_requested_at": "2026-09-19T00:12:39+08:00",
+      "worktree": "D:/SUAI/codex/worktree/662f/脉冲神经网络",
+      "branch": "codex/al12-decoder-matched",
+      "startup_verified_at": "2026-09-19T00:20:04+08:00",
+      "plan_version_read": "cvpr27-20260919-v1.5",
+      "mode": "prior_executor_failed_no_new_dispatch",
+      "latest_startup_error": "function_call_output requires call_id on HTTP requests"
     }
   },
   "scientific_gates": {
@@ -7474,13 +7609,21 @@
       "plan_sha256": "9d72c9cad850bf7d3e340834b831ae5b96de00c35ec1e27cfe2e58618914c43d",
       "reason": "Finish AL63 and register AL64; preserve scientific gates and explicit pending research task setup",
       "budget_dates_thresholds_changed": false
+    },
+    {
+      "at": "2026-09-20T01:05:25+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "primary_provenance_and_user_requested_research_window",
+      "plan_sha256": "95550610ab5bf3b0bd78d021e4b0ab8a536c583d1bf433d5b35bb24e2bfa002d",
+      "reason": "Finish AL64; assign independent AL36/AL65 execution package to new user-requested window; actual startup still unverified",
+      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
     "authorized_at": "2026-09-17T19:27:21+08:00",
     "authorization": "用户要求继续与科研agent协作直到有突破性进展。",
     "status": "active",
-    "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+    "research_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
     "plan_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
     "dispatch_interval_minutes": 10,
     "notification_intent": "只在有证据的阶段突破、实质方法取舍、失败或需要用户动作时通知；常规无变化保持安静。",
@@ -7488,34 +7631,36 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al64-planner-openvidhd-provenance-20260920",
+      "id": "cc-al65-plan-fallback-selection-20260920",
       "task_ids": [
-        "AL64"
+        "AL65"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
-      "status": "prepared",
-      "prepared_at": "2026-09-20T00:17:48+08:00",
-      "work_order": "../AL64_OPENVIDHD_PROVENANCE_PRIMARY_AUDIT_20260919.md",
-      "work_order_sha256": "b5f3764076712d621142e395b7766305fe314189f4aa98b066c1da4dc95226a5",
+      "status": "running",
+      "started_at": "2026-09-20T01:09:55+08:00",
+      "work_order": "../AL65_SELECTION_MECHANISM_CPU_20260920.md",
+      "work_order_sha256": "5878c8452e5de2778bb4714dd52cc70dd86b8b48b6c7c3cb6013d169c9b53ffe",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "9d72c9cad850bf7d3e340834b831ae5b96de00c35ec1e27cfe2e58618914c43d",
-      "scope": "Public provenance review; no samples/media/models/runtime/server/GPU",
+      "scope": "AL65 exact finite-support CPU control in isolated fallback-runtime; no real data/model/server/GPU",
+      "failed_source_dispatch_id": "cc-research-window-al36-al65-20260920",
+      "failed_source_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "failed_source_turn_id": "01a0ba9d-c930-7e02-8b6f-092f8651ec2c",
       "remote_send_required": false,
       "background_process_running": false
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:3",
+    "last_wait_cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-20T00:17:48+08:00",
-    "research_observed_status": "blocked_system_error_no_artifact",
+    "last_coordinator_activity_at": "2026-09-20T01:09:55+08:00",
+    "research_observed_status": "systemError_call_output_no_research_artifact",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -8663,39 +8808,111 @@
         "review": "../reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md",
         "source_record": "../reviews/AL63_SOURCE_RECORD_20260919.json",
         "outcome": "Public aggregate protocol confirmed; no release of project source/decoder/time gates"
+      },
+      {
+        "id": "cc-al64-planner-openvidhd-provenance-20260920",
+        "task_ids": [
+          "AL64"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_primary_provenance_scope_review",
+        "prepared_at": "2026-09-20T00:17:48+08:00",
+        "work_order": "../AL64_OPENVIDHD_PROVENANCE_PRIMARY_AUDIT_20260919.md",
+        "work_order_sha256": "b5f3764076712d621142e395b7766305fe314189f4aa98b066c1da4dc95226a5",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "9d72c9cad850bf7d3e340834b831ae5b96de00c35ec1e27cfe2e58618914c43d",
+        "scope": "Public provenance review; no samples/media/models/runtime/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-20T00:28:20.721461+08:00",
+        "resumed_at": "2026-09-20T00:33:52+08:00",
+        "completed_at": "2026-09-20T01:05:25+08:00",
+        "gate_result": "pass",
+        "review": "../reviews/AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md",
+        "source_record": "../reviews/AL64_SOURCE_RECORD_20260919.json"
+      },
+      {
+        "id": "cc-al36-research-admission-review-20260919",
+        "task_ids": [
+          "AL36"
+        ],
+        "executor_role": "researchagent_next",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "host_id": "local",
+        "status": "superseded_unsent_by_user_requested_new_package",
+        "prepared_at": "2026-09-19T14:07:03+08:00",
+        "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
+        "work_order_sha256": "04c9d7c95877cd39e567da98f798dec7b7d1afa5c7d4ac977e9f8b21afd0c111",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "One bounded adversarial OR1 admission review; no model/media/server/GPU; not sent while executor API is unauthorized.",
+        "remote_send_required": true,
+        "duplicate_dispatch_suppressed": true,
+        "last_observed_status": "systemError",
+        "last_observed_at": "2026-09-19T14:54:30+08:00",
+        "failure_code": "401_unauthorized",
+        "execution_artifacts_available": false,
+        "rerun_required": false,
+        "dispatch_status": "prepared_not_sent_until_state_change",
+        "blocker": "Research executor API returned 401; no artifact and no retry or identity change.",
+        "observation_note": "Historical status from existing401 receipt; not polled anew during local work",
+        "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:3",
+        "observed_thread_ui_state": "notLoaded",
+        "api_recovery_confirmed": false,
+        "superseded_at": "2026-09-20T01:05:25+08:00",
+        "replacement_dispatch_id": "cc-research-window-al36-al65-20260920"
+      },
+      {
+        "id": "cc-research-window-al36-al65-20260920",
+        "task_ids": [
+          "AL36",
+          "AL65"
+        ],
+        "executor_role": "researchagent_window",
+        "executor_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+        "executor_client_thread_id": "client-new-thread:b4758acd-913a-463e-a6cb-825727bc4ae7",
+        "host_id": "local",
+        "status": "failed_startup_no_research_artifact",
+        "recorded_at": "2026-09-20T01:05:25+08:00",
+        "creation_return_provenance": "Actual create_thread client receipt in current conversation; no actual threadID yet",
+        "work_order": "../RESEARCH_WINDOW_HANDOFF_20260920.md",
+        "work_order_sha256": "45c4986f2d7062ca383135bc908dfb863fc006addf7e5ac3aed74a7f108550fd",
+        "additional_work_orders": [
+          "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
+          "../AL65_SELECTION_MECHANISM_CPU_20260920.md"
+        ],
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "95550610ab5bf3b0bd78d021e4b0ab8a536c583d1bf433d5b35bb24e2bfa002d",
+        "remote_send_required": false,
+        "initial_prompt_already_sent_via_create": true,
+        "do_not_resend": true,
+        "background_process_running": null,
+        "failed_turn_id": "01a0ba9d-c930-7e02-8b6f-092f8651ec2c",
+        "failure_code": "function_call_output_requires_call_id",
+        "observed_at": "2026-09-20T01:09:55+08:00",
+        "last_wait_cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
+        "evidence": "../reviews/RESEARCH_WINDOW_STARTUP_20260920.md"
       }
     ],
-    "last_substantive_review": "../reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
-      "id": "cc-al36-research-admission-review-20260919",
+      "id": "cc-al36-new-window-recovery-review-20260920",
       "task_ids": [
         "AL36"
       ],
-      "executor_role": "researchagent_next",
-      "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "executor_role": "researchagent_window",
+      "executor_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
       "host_id": "local",
-      "status": "blocked_external_research_api_auth",
-      "prepared_at": "2026-09-19T14:07:03+08:00",
+      "status": "blocked_after_startup_failure",
       "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
-      "work_order_sha256": "04c9d7c95877cd39e567da98f798dec7b7d1afa5c7d4ac977e9f8b21afd0c111",
       "plan_version": "cvpr27-20260919-v1.5",
-      "scope": "One bounded adversarial OR1 admission review; no model/media/server/GPU; not sent while executor API is unauthorized.",
-      "remote_send_required": true,
-      "duplicate_dispatch_suppressed": true,
-      "last_observed_status": "systemError",
-      "last_observed_at": "2026-09-19T14:54:30+08:00",
-      "failure_code": "401_unauthorized",
-      "execution_artifacts_available": false,
-      "rerun_required": false,
-      "dispatch_status": "prepared_not_sent_until_state_change",
-      "blocker": "Research executor API returned 401; no artifact and no retry or identity change.",
-      "observation_note": "Historical status from existing401 receipt; not polled anew during local work",
-      "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:3",
-      "observed_thread_ui_state": "notLoaded",
-      "api_recovery_confirmed": false
+      "last_wait_cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
+      "do_not_resend": true,
+      "blocker": "Tool-call output protocol failed; independent review has no artifact."
     },
-    "dispatch_policy_state": "local_planner_work_prepared_external_research_auth_blocked",
+    "dispatch_policy_state": "one_new_research_package_pending_startup_no_duplicate_send",
     "waiting_on": [
       "Actual billing/remaining allowance or explicitly authorized batch allowance",
       "Original timestamp fields and two-real-source/ancestry acceptance"
@@ -8795,6 +9012,41 @@
         "separate_from_usage_limit": true,
         "notification_confirmed_at": "2026-09-19T16:37:32+08:00",
         "confirmation_evidence": "Completed heartbeat final for2026-09-19T06:46:15.667Z is visible in conversation; no OS push-delivery assertion"
+      },
+      "research_call_output_protocol": {
+        "status": "open",
+        "recorded_at": "2026-09-20T01:05:25+08:00",
+        "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "failed_turn_id": "01a0ba91-ed79-7863-8092-26092480fb0e",
+        "error": "function_call_output requires call_id on HTTP requests",
+        "source": "Actual wait_threads response in preceding user turn",
+        "started_at_epoch": 1789836520,
+        "completed_at_epoch": 1789836523,
+        "cursor": "295e4a43-3323-4f5a-962b-53980a8c6181:1",
+        "sent_prompt": "AttemptedAL64 followup despite planner current assignment; failed before any assistant/tool artifact",
+        "model_override_observed": "gpt-5.6-sol/high",
+        "model_override_authorized": false,
+        "handling": "Do not repeat model overrides/resend; new user-requested task uses default model"
+      },
+      "archived_research_default_model": {
+        "status": "historical_task_failed",
+        "recorded_at": "2026-09-20T01:05:25+08:00",
+        "thread_id": "01a0ba4b-887a-7981-b313-76b2ff5fca98",
+        "failed_turn_id": "01a0ba4c-aef9-71c2-b4ec-33f472276bb7",
+        "error": "The 'gpt-5.4' model is not supported when using Codex with a ChatGPT account.",
+        "scope": "Different archived thread; not the old01a0b54a error"
+      },
+      "new_research_call_output_protocol": {
+        "status": "open",
+        "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+        "failed_turn_id": "01a0ba9d-c930-7e02-8b6f-092f8651ec2c",
+        "error": "function_call_output requires call_id on HTTP requests",
+        "observed_at": "2026-09-20T01:09:55+08:00",
+        "started_at": "2026-09-19T17:01:38+00:00",
+        "completed_at": "2026-09-19T17:02:12+00:00",
+        "source": "Actual read_thread plus compact wait, matched clean worktree",
+        "code_or_experiment_artifact": false,
+        "do_not_retry_automatically": true
       }
     },
     "latest_authorization_at": "2026-09-18T23:24:36+08:00",
@@ -8811,12 +9063,12 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL63"
+        "AL65"
       ],
       "executor_role": "planagent",
-      "status": "completed_primary_protocol_scope_review",
-      "finalized_at": "2026-09-20T00:17:48+08:00",
-      "next_prepared_task_id": "AL64",
+      "status": "running_authorized_fallback_cpu",
+      "started_at": "2026-09-20T01:09:55+08:00",
+      "work_area": "research-plan/fallback-runtime/al65_selection_20260920",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -8825,7 +9077,7 @@
       "basis": "User: 你可以开一个新的研究会话",
       "do_not_duplicate_active_package": true
     },
-    "successor_research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+    "successor_research_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
     "multi_session_transition": {
       "authorized_by_user": true,
       "old_task_scope": "AL03/AL02 reviewed and closed; retain history, no automatic dispatch or polling",
@@ -8834,15 +9086,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-20T00:17:48+08:00",
+    "last_local_review_at": "2026-09-20T01:05:25+08:00",
     "prepared_independent_task_ids": [
-      "AL64",
       "AL36"
     ],
     "active_and_prepared_work": {
-      "running": [],
+      "running": [
+        "AL65"
+      ],
       "prepared_independent": [
-        "AL64",
         "AL36"
       ],
       "executor_blocked": [
@@ -8958,22 +9210,22 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-20T00:17:48+08:00",
+    "last_progress_at": "2026-09-20T01:05:25+08:00",
     "last_poll_decision": {
-      "at": "2026-09-20T00:17:48+08:00",
-      "decision": "no eligible research executor wait",
-      "reason": "Only planner is current; no additional dispatch. Earlier self-wait was invalid and delivered no research status; no retry."
+      "at": "2026-09-20T01:09:55+08:00",
+      "decision": "one compact wait completed",
+      "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
+      "result": "failed startup, AL65 fallback allowed, AL36 not resent"
     },
     "research_observation_note": {
-      "at": "2026-09-19T18:57:52+08:00",
-      "cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:3",
-      "thread_ui_state": "notLoaded",
-      "latest_turn_status": "failed",
-      "failed_turn_id": "01a0b833-341f-7bc0-81f6-05f617d6448c",
-      "failure_code": "401_unauthorized",
+      "recorded_at": "2026-09-20T01:05:25+08:00",
+      "thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "failed_turn_id": "01a0ba91-ed79-7863-8092-26092480fb0e",
+      "error": "function_call_output requires call_id on HTTP requests",
+      "execution_artifacts_available": false,
       "recovery_confirmed": false,
-      "research_dispatch_sent": false,
-      "meaning": "UI unloaded state does not establish API recovery; local planner remains actual executor"
+      "AL36_sent": false
     },
     "user_requested_session_setup": {
       "recorded_at": "2026-09-20T00:17:48+08:00",
@@ -8986,7 +9238,35 @@
       "latest_thread_id": null,
       "latest_status": "creation request accepted; actual thread identity not yet observed",
       "recreate_automatically": false,
-      "coordination_rule": "Do not claim receiving/running, assign AL63 again, or send new work until latest task identity and status are resolved."
+      "coordination_rule": "Do not claim receiving/running, assign AL63 again, or send new work until latest task identity and status are resolved.",
+      "latest_archive_inventory_at": "2026-09-20T00:33:52+08:00",
+      "latest_archive_inventory_result": "Previously observed research threads still archived; latest d03 client has no observed actual thread id. No recreation or resend.",
+      "third_request": {
+        "client_thread_id": "client-new-thread:b4758acd-913a-463e-a6cb-825727bc4ae7",
+        "requested_title": "科研专项冲击 · 算法与CPU原型",
+        "recorded_at": "2026-09-20T01:05:25+08:00",
+        "user_authorization": "开启新的科研冲击窗口继续办事 服务器一直开着",
+        "model_override": null,
+        "environment": "worktree",
+        "actual_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+        "task_ids": [
+          "AL36",
+          "AL65"
+        ],
+        "additional_creations_allowed": false,
+        "actual_title": "科研专项冲击 · 算法与CPU原型",
+        "worktree": "D:/SUAI/codex/worktree/a77e/脉冲神经网络",
+        "status": "created_opened_but_startup_failed",
+        "observed_at": "2026-09-20T01:09:55+08:00",
+        "failed_turn_id": "01a0ba9d-c930-7e02-8b6f-092f8651ec2c",
+        "last_wait_cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
+        "task_panel_opened": true
+      }
+    },
+    "server_latest_readonly": {
+      "evidence": "../reviews/SERVER_READONLY_RESEARCH_WINDOW_20260920.json",
+      "sha256": "a34ac207237e81ed61a597a324006f56ff8f81a5fcc3b4856baf7d75533615ca",
+      "note": "Host and server clocks differ about1second; original clocks preserved; no job or shutdown"
     }
   },
   "candidate_protocols": {
@@ -9112,8 +9392,8 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL64",
-        "AL36"
+        "AL36",
+        "AL65"
       ],
       "single_step_Gram_audit_task": "AL34",
       "single_step_Gram_audit_status": "limited_fixed_counterexample_only",
@@ -9160,7 +9440,9 @@
       "public_benchmark_protocol_review_task": "AL63",
       "AIGVDBench_primary_review_task": "AL63",
       "AIGVDBench_primary_review_status": "Aggregate protocol reviewed; strict decoder/source/time scope unverified",
-      "OpenVidHD_provenance_task": "AL64"
+      "OpenVidHD_provenance_task": "AL64",
+      "OpenVidHD_provenance_status": "Source selection mechanisms verified by primary text; nativePTS, lineage, release and license unaccepted",
+      "selection_controls_task": "AL65"
     }
   },
   "open_review_issues": [

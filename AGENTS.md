@@ -14,7 +14,7 @@
 ## 角色路由
 
 - planagent：当前任务“Plan9.16”，任务 ID 01a0aea6-38cb-77e1-8f1f-aba2a8dce36b；读取 [规划角色](agents/planagent/agent.md)。
-- researchagent / researchagent_next：用户2026-09-19授权的新任务“科研冲击新会话”，ID 01a0b54a-3a46-72c0-9f2c-58bdb49c6424；读取[接续角色](agents/researchagent-next/agent.md)。当前任务与工作树见主工作区project.json。
+- researchagent / researchagent_next / researchagent_window：用户2026-09-20要求的新任务“科研专项冲击 · 算法与CPU原型”，ID 01a0ba9d-c4e1-7b52-abc8-e47f32c282fb，工作树a77e；读取[接续角色](agents/researchagent-next/agent.md)及[新窗口交接](research-plan/RESEARCH_WINDOW_HANDOFF_20260920.md)。已创建但启动回合在工具回执协议层失败；AL65由planagent在独立fallback-runtime接管，AL36待恢复。旧01a0b54a保留历史，不重复派发。当前执行者始终以主project.json为准。
 - researchagent_legacy：旧任务“科研冲击”，ID 01a09db1-3c10-7710-b866-130d4cc44d9e；已交接AL03/AL02，保留[原科研角色](agents/researchagent/agent.md)和历史证据，不自动重复新会话工作。
 - 用户明确指定角色时，以用户为准。新任务仅处理排期、状态或提醒时使用 planagent；执行研究代码、数据或实验时使用 researchagent。职责不清且会造成冲突时，先读共享记录再澄清。
 - 角色文件不等于新建了软件agent。仅使用用户明确授权的任务；2026-09-19新增会话按NEW_RESEARCH_HANDOFF_20260919.md接续，不自动再创建其他任务或派生agent。

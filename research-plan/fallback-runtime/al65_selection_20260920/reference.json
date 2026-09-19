@@ -1,0 +1,11 @@
+{
+  "evidence_kind": "manual algebraic predictions fixed before first batch; not executed evidence or independent review",
+  "derivation": "For binary f with r_y=P(f=1|Y=y), AUC=1/2+(r_1-r_0)/2. Retention uses six equal base masses. Known positive selection inverse weighting returns base; a zero selection probability cannot restore unobserved target mass.",
+  "cases": {
+    "S1_all_retained": {"retention": ["1", "1"], "observed_auc": ["1/2", "1/2"], "overlap_mass_Z": "1", "matched_auc": ["1/2", "1/2"], "conditional_Q_gap": "0", "ipw_full_population_identifiable": true, "Y1_mass_outside_common_Z": "0"},
+    "S2_only_Y0_Z_selected": {"retention": ["1/2", "1"], "observed_auc": ["2/3", "1/2"], "overlap_mass_Z": "2/3", "matched_auc": ["1/2", "1/2"], "conditional_Q_gap": "0", "ipw_full_population_identifiable": true, "Y1_mass_outside_common_Z": "0"},
+    "S3_same_Z_selection": {"retention": ["1/2", "1/2"], "observed_auc": ["1/2", "1/2"], "overlap_mass_Z": "1", "matched_auc": ["1/2", "1/2"], "conditional_Q_gap": "0", "ipw_full_population_identifiable": true, "Y1_mass_outside_common_Z": "0"},
+    "S4_Y0_zero_support": {"retention": ["1/3", "1"], "observed_auc": ["5/6", "1/2"], "overlap_mass_Z": "1/3", "matched_auc": ["1/2", "1/2"], "conditional_Q_gap": "0", "ipw_full_population_identifiable": false, "Y1_mass_outside_common_Z": "2/3"},
+    "S5_only_Y0_Q_selected": {"retention": ["5/8", "1"], "observed_auc": ["1/2", "13/20"], "overlap_mass_Z": "1", "matched_auc": ["1/2", "13/20"], "conditional_Q_gap": "3/10", "ipw_full_population_identifiable": true, "Y1_mass_outside_common_Z": "0"}
+  }
+}

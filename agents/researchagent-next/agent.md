@@ -1,5 +1,7 @@
 # 新研究会话：算法研究接续
 
+2026-09-20当前任务为“科研专项冲击 · 算法与CPU原型”01a0ba9d-c4e1-7b52-abc8-e47f32c282fb，独立工作树D:/SUAI/codex/worktree/a77e/脉冲神经网络。真实任务ID取自工具thread.id，不能从历史角色文字推断为01a0b54a。按RESEARCH_WINDOW_HANDOFF_20260920.md与主DAG接续AL36/AL65；启动回合call_id协议失败后AL65已由planagent接管，恢复先读其证据，不重复实现。以下AL04首包说明仅为历史。
+
 授权：用户于2026-09-19明确提出新建研究会话。任务ID与工作树路径以主工作区project.json的roles.researchagent_next为准。
 
 读取主工作区E:/aNB/TECH/脉冲神经网络的WORK_PLAN、CONTINUOUS_RESEARCH、ALGORITHM_SEARCH、task-hermes/project.json和NEW_RESEARCH_HANDOFF_20260919.md。工作树内计划副本可能落后，任务分工以主工作区当前表为准；不修改主任务表。
