@@ -1,0 +1,2058 @@
+{
+  "task_id": "AL65",
+  "protocol": "AL65-v1",
+  "executor": "planagent_fallback",
+  "started_at_utc": "2026-09-19T17:17:59.782545+00:00",
+  "finished_at_utc": "2026-09-19T17:17:59.803596+00:00",
+  "command": [
+    "C:\\Users\\ZHUyi\\.cache\\codex-runtimes\\codex-primary-runtime\\dependencies\\python\\python.exe",
+    "research-plan/fallback-runtime/al65_selection_20260920/run_batch.py",
+    "--output",
+    "run_v1"
+  ],
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "Windows-11-10.0.26200-SP0",
+  "freeze_sha256": "d14285f136941fe7cba8bccfa791290f9be2c4ff0bc1c20ece05d7448e481fb3",
+  "frozen_inputs": [
+    {
+      "path": "PROTOCOL.md",
+      "bytes": 2343,
+      "sha256": "de7dafe0de8da6865e8f642a2c3fc9cba677fb5dea309c3e7fcff6bd92d3a83a"
+    },
+    {
+      "path": "cases.json",
+      "bytes": 1068,
+      "sha256": "34e45abfb74ba5caebac5924f3c2484ce29fd0314d77ee06bc3088f8de44d1f1"
+    },
+    {
+      "path": "reference.json",
+      "bytes": 1606,
+      "sha256": "2882a3877b57daa4b6d8be1ed3cf6f42a7b576177fab15040d766b0307190dae"
+    },
+    {
+      "path": "selection_controls.py",
+      "bytes": 3146,
+      "sha256": "86a6cebb9d9e402f0810b1d9fbf2840e884fb8da0fd39e6da297f5124f5c78f3"
+    },
+    {
+      "path": "run_batch.py",
+      "bytes": 9350,
+      "sha256": "472d04e48b2bde51e03bcdd1864bb7dcc1a0970c1e121c24095146775bfd814f"
+    }
+  ],
+  "cases": [
+    {
+      "id": "S1_all_retained",
+      "rows": [
+        {
+          "Z": -1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/6",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/12",
+          "observed_joint_Y1": "1/12",
+          "matched_given_Y0": "1/6",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": -1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/6",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/12",
+          "observed_joint_Y1": "1/12",
+          "matched_given_Y0": "1/6",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/6",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/12",
+          "observed_joint_Y1": "1/12",
+          "matched_given_Y0": "1/6",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/6",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/12",
+          "observed_joint_Y1": "1/12",
+          "matched_given_Y0": "1/6",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/6",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/12",
+          "observed_joint_Y1": "1/12",
+          "matched_given_Y0": "1/6",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/6",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/12",
+          "observed_joint_Y1": "1/12",
+          "matched_given_Y0": "1/6",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        }
+      ],
+      "retention": [
+        "1",
+        "1"
+      ],
+      "observed_class_prior": [
+        "1/2",
+        "1/2"
+      ],
+      "observed_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "Z_matching": {
+        "status": "conditional_common_support_only",
+        "marginal0": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "marginal1": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "overlap_mass": "1",
+        "common_Z": [
+          -1,
+          0,
+          1
+        ],
+        "target_Z": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "outside0": "0",
+        "outside1": "0",
+        "matched0": [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        "matched1": [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        "conditional_Q1_gap": {
+          "-1": "0",
+          "0": "0",
+          "1": "0"
+        }
+      },
+      "matched_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "oracle_IPW": [
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        },
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ],
+      "oracle_IPW_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    },
+    {
+      "id": "S2_only_Y0_Z_selected",
+      "rows": [
+        {
+          "Z": -1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/36",
+          "observed_joint_Y1": "1/9",
+          "matched_given_Y0": "1/8",
+          "matched_given_Y1": "1/8",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": -1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/36",
+          "observed_joint_Y1": "1/9",
+          "matched_given_Y0": "1/8",
+          "matched_given_Y1": "1/8",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/3",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/9",
+          "observed_joint_Y1": "1/9",
+          "matched_given_Y0": "1/4",
+          "matched_given_Y1": "1/4",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/3",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/9",
+          "observed_joint_Y1": "1/9",
+          "matched_given_Y0": "1/4",
+          "matched_given_Y1": "1/4",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/36",
+          "observed_joint_Y1": "1/9",
+          "matched_given_Y0": "1/8",
+          "matched_given_Y1": "1/8",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/36",
+          "observed_joint_Y1": "1/9",
+          "matched_given_Y0": "1/8",
+          "matched_given_Y1": "1/8",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        }
+      ],
+      "retention": [
+        "1/2",
+        "1"
+      ],
+      "observed_class_prior": [
+        "1/3",
+        "2/3"
+      ],
+      "observed_auc": {
+        "f_Z": "2/3",
+        "f_Q": "1/2"
+      },
+      "Z_matching": {
+        "status": "conditional_common_support_only",
+        "marginal0": {
+          "-1": "1/6",
+          "0": "2/3",
+          "1": "1/6"
+        },
+        "marginal1": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "overlap_mass": "2/3",
+        "common_Z": [
+          -1,
+          0,
+          1
+        ],
+        "target_Z": {
+          "-1": "1/4",
+          "0": "1/2",
+          "1": "1/4"
+        },
+        "outside0": "0",
+        "outside1": "0",
+        "matched0": [
+          "1/8",
+          "1/8",
+          "1/4",
+          "1/4",
+          "1/8",
+          "1/8"
+        ],
+        "matched1": [
+          "1/8",
+          "1/8",
+          "1/4",
+          "1/4",
+          "1/8",
+          "1/8"
+        ],
+        "conditional_Q1_gap": {
+          "-1": "0",
+          "0": "0",
+          "1": "0"
+        }
+      },
+      "matched_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "oracle_IPW": [
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        },
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ],
+      "oracle_IPW_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    },
+    {
+      "id": "S3_same_Z_selection",
+      "rows": [
+        {
+          "Z": -1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1/4",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/24",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/12",
+          "observed_joint_Y0": "1/24",
+          "observed_joint_Y1": "1/24",
+          "matched_given_Y0": "1/12",
+          "matched_given_Y1": "1/12",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": -1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1/4",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/24",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/12",
+          "observed_joint_Y0": "1/24",
+          "observed_joint_Y1": "1/24",
+          "matched_given_Y0": "1/12",
+          "matched_given_Y1": "1/12",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/3",
+          "observed_given_Y1": "1/3",
+          "observed_joint_Y0": "1/6",
+          "observed_joint_Y1": "1/6",
+          "matched_given_Y0": "1/3",
+          "matched_given_Y1": "1/3",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/3",
+          "observed_given_Y1": "1/3",
+          "observed_joint_Y0": "1/6",
+          "observed_joint_Y1": "1/6",
+          "matched_given_Y0": "1/3",
+          "matched_given_Y1": "1/3",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1/4",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/24",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/12",
+          "observed_joint_Y0": "1/24",
+          "observed_joint_Y1": "1/24",
+          "matched_given_Y0": "1/12",
+          "matched_given_Y1": "1/12",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1/4",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/24",
+          "observed_given_Y0": "1/12",
+          "observed_given_Y1": "1/12",
+          "observed_joint_Y0": "1/24",
+          "observed_joint_Y1": "1/24",
+          "matched_given_Y0": "1/12",
+          "matched_given_Y1": "1/12",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        }
+      ],
+      "retention": [
+        "1/2",
+        "1/2"
+      ],
+      "observed_class_prior": [
+        "1/2",
+        "1/2"
+      ],
+      "observed_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "Z_matching": {
+        "status": "conditional_common_support_only",
+        "marginal0": {
+          "-1": "1/6",
+          "0": "2/3",
+          "1": "1/6"
+        },
+        "marginal1": {
+          "-1": "1/6",
+          "0": "2/3",
+          "1": "1/6"
+        },
+        "overlap_mass": "1",
+        "common_Z": [
+          -1,
+          0,
+          1
+        ],
+        "target_Z": {
+          "-1": "1/6",
+          "0": "2/3",
+          "1": "1/6"
+        },
+        "outside0": "0",
+        "outside1": "0",
+        "matched0": [
+          "1/12",
+          "1/12",
+          "1/3",
+          "1/3",
+          "1/12",
+          "1/12"
+        ],
+        "matched1": [
+          "1/12",
+          "1/12",
+          "1/3",
+          "1/3",
+          "1/12",
+          "1/12"
+        ],
+        "conditional_Q1_gap": {
+          "-1": "0",
+          "0": "0",
+          "1": "0"
+        }
+      },
+      "matched_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "oracle_IPW": [
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        },
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ],
+      "oracle_IPW_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    },
+    {
+      "id": "S4_Y0_zero_support",
+      "rows": [
+        {
+          "Z": -1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "0",
+          "selection1": "1",
+          "selected_unnormalized0": "0",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "0",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "0",
+          "observed_joint_Y1": "1/8",
+          "matched_given_Y0": "0",
+          "matched_given_Y1": "0",
+          "ipw_given_Y0": null,
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": -1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "0",
+          "selection1": "1",
+          "selected_unnormalized0": "0",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "0",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "0",
+          "observed_joint_Y1": "1/8",
+          "matched_given_Y0": "0",
+          "matched_given_Y1": "0",
+          "ipw_given_Y0": null,
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/2",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/8",
+          "observed_joint_Y1": "1/8",
+          "matched_given_Y0": "1/2",
+          "matched_given_Y1": "1/2",
+          "ipw_given_Y0": null,
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/2",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/8",
+          "observed_joint_Y1": "1/8",
+          "matched_given_Y0": "1/2",
+          "matched_given_Y1": "1/2",
+          "ipw_given_Y0": null,
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "0",
+          "selection1": "1",
+          "selected_unnormalized0": "0",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "0",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "0",
+          "observed_joint_Y1": "1/8",
+          "matched_given_Y0": "0",
+          "matched_given_Y1": "0",
+          "ipw_given_Y0": null,
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "0",
+          "selection1": "1",
+          "selected_unnormalized0": "0",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "0",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "0",
+          "observed_joint_Y1": "1/8",
+          "matched_given_Y0": "0",
+          "matched_given_Y1": "0",
+          "ipw_given_Y0": null,
+          "ipw_given_Y1": "1/6"
+        }
+      ],
+      "retention": [
+        "1/3",
+        "1"
+      ],
+      "observed_class_prior": [
+        "1/4",
+        "3/4"
+      ],
+      "observed_auc": {
+        "f_Z": "5/6",
+        "f_Q": "1/2"
+      },
+      "Z_matching": {
+        "status": "conditional_common_support_only",
+        "marginal0": {
+          "-1": "0",
+          "0": "1",
+          "1": "0"
+        },
+        "marginal1": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "overlap_mass": "1/3",
+        "common_Z": [
+          0
+        ],
+        "target_Z": {
+          "0": "1"
+        },
+        "outside0": "0",
+        "outside1": "2/3",
+        "matched0": [
+          "0",
+          "0",
+          "1/2",
+          "1/2",
+          "0",
+          "0"
+        ],
+        "matched1": [
+          "0",
+          "0",
+          "1/2",
+          "1/2",
+          "0",
+          "0"
+        ],
+        "conditional_Q1_gap": {
+          "0": "0"
+        }
+      },
+      "matched_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "oracle_IPW": [
+        {
+          "status": "full_population_unidentifiable_zero_propensity",
+          "unobserved_cells": [
+            [
+              -1,
+              -1
+            ],
+            [
+              -1,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "recovered_law": null
+        },
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ],
+      "oracle_IPW_auc": null
+    },
+    {
+      "id": "S5_only_Y0_Q_selected",
+      "rows": [
+        {
+          "Z": -1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "4/15",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "4/39",
+          "observed_joint_Y1": "4/39",
+          "matched_given_Y0": "4/15",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": -1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/15",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/39",
+          "observed_joint_Y1": "4/39",
+          "matched_given_Y0": "1/15",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "4/15",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "4/39",
+          "observed_joint_Y1": "4/39",
+          "matched_given_Y0": "4/15",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 0,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/15",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/39",
+          "observed_joint_Y1": "4/39",
+          "matched_given_Y0": "1/15",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": -1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1",
+          "selection1": "1",
+          "selected_unnormalized0": "1/6",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "4/15",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "4/39",
+          "observed_joint_Y1": "4/39",
+          "matched_given_Y0": "4/15",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        },
+        {
+          "Z": 1,
+          "Q": 1,
+          "base_given_Y0": "1/6",
+          "base_given_Y1": "1/6",
+          "selection0": "1/4",
+          "selection1": "1",
+          "selected_unnormalized0": "1/24",
+          "selected_unnormalized1": "1/6",
+          "observed_given_Y0": "1/15",
+          "observed_given_Y1": "1/6",
+          "observed_joint_Y0": "1/39",
+          "observed_joint_Y1": "4/39",
+          "matched_given_Y0": "1/15",
+          "matched_given_Y1": "1/6",
+          "ipw_given_Y0": "1/6",
+          "ipw_given_Y1": "1/6"
+        }
+      ],
+      "retention": [
+        "5/8",
+        "1"
+      ],
+      "observed_class_prior": [
+        "5/13",
+        "8/13"
+      ],
+      "observed_auc": {
+        "f_Z": "1/2",
+        "f_Q": "13/20"
+      },
+      "Z_matching": {
+        "status": "conditional_common_support_only",
+        "marginal0": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "marginal1": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "overlap_mass": "1",
+        "common_Z": [
+          -1,
+          0,
+          1
+        ],
+        "target_Z": {
+          "-1": "1/3",
+          "0": "1/3",
+          "1": "1/3"
+        },
+        "outside0": "0",
+        "outside1": "0",
+        "matched0": [
+          "4/15",
+          "1/15",
+          "4/15",
+          "1/15",
+          "4/15",
+          "1/15"
+        ],
+        "matched1": [
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6",
+          "1/6"
+        ],
+        "conditional_Q1_gap": {
+          "-1": "3/10",
+          "0": "3/10",
+          "1": "3/10"
+        }
+      },
+      "matched_auc": {
+        "f_Z": "1/2",
+        "f_Q": "13/20"
+      },
+      "oracle_IPW": [
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        },
+        {
+          "status": "recovered_with_oracle_positive_propensity",
+          "unobserved_cells": [],
+          "recovered_law": [
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6",
+            "1/6"
+          ]
+        }
+      ],
+      "oracle_IPW_auc": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "S1_all_retained/retention",
+      "actual": [
+        "1",
+        "1"
+      ],
+      "expected": [
+        "1",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/observed_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/observed_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/joint_mass",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/overlap_Z",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/outside_common_support_Y1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/matched_Z_marginals",
+      "actual": {
+        "-1": "1/3",
+        "0": "1/3",
+        "1": "1/3"
+      },
+      "expected": {
+        "-1": "1/3",
+        "0": "1/3",
+        "1": "1/3"
+      },
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/matched_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/matched_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/Q1_gap_given_Z-1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/Q1_gap_given_Z0",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/Q1_gap_given_Z1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/observed_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/matched_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/binary_marginal_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/observed_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/matched_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/binary_marginal_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/full_IPW_identifiability",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/full_IPW_law_Y0",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/full_IPW_law_Y1",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/IPW_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/IPW_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S1_all_retained/same_selection_same_observed_law",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/retention",
+      "actual": [
+        "1/2",
+        "1"
+      ],
+      "expected": [
+        "1/2",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/observed_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/observed_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/joint_mass",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/overlap_Z",
+      "actual": "2/3",
+      "expected": "2/3",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/outside_common_support_Y1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/matched_Z_marginals",
+      "actual": {
+        "-1": "1/4",
+        "0": "1/2",
+        "1": "1/4"
+      },
+      "expected": {
+        "-1": "1/4",
+        "0": "1/2",
+        "1": "1/4"
+      },
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/matched_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/matched_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/Q1_gap_given_Z-1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/Q1_gap_given_Z0",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/Q1_gap_given_Z1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/observed_f_Z",
+      "actual": "2/3",
+      "expected": "2/3",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/matched_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/binary_marginal_f_Z",
+      "actual": "2/3",
+      "expected": "2/3",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/observed_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/matched_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/binary_marginal_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/full_IPW_identifiability",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/full_IPW_law_Y0",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/full_IPW_law_Y1",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/IPW_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S2_only_Y0_Z_selected/IPW_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/retention",
+      "actual": [
+        "1/2",
+        "1/2"
+      ],
+      "expected": [
+        "1/2",
+        "1/2"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/observed_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/observed_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/joint_mass",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/overlap_Z",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/outside_common_support_Y1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/matched_Z_marginals",
+      "actual": {
+        "-1": "1/6",
+        "0": "2/3",
+        "1": "1/6"
+      },
+      "expected": {
+        "-1": "1/6",
+        "0": "2/3",
+        "1": "1/6"
+      },
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/matched_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/matched_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/Q1_gap_given_Z-1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/Q1_gap_given_Z0",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/Q1_gap_given_Z1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/observed_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/matched_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/binary_marginal_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/observed_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/matched_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/binary_marginal_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/full_IPW_identifiability",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/full_IPW_law_Y0",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/full_IPW_law_Y1",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/IPW_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/IPW_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S3_same_Z_selection/same_selection_same_observed_law",
+      "actual": [
+        "1/12",
+        "1/12",
+        "1/3",
+        "1/3",
+        "1/12",
+        "1/12"
+      ],
+      "expected": [
+        "1/12",
+        "1/12",
+        "1/3",
+        "1/3",
+        "1/12",
+        "1/12"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/retention",
+      "actual": [
+        "1/3",
+        "1"
+      ],
+      "expected": [
+        "1/3",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/observed_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/observed_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/joint_mass",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/overlap_Z",
+      "actual": "1/3",
+      "expected": "1/3",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/outside_common_support_Y1",
+      "actual": "2/3",
+      "expected": "2/3",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/matched_Z_marginals",
+      "actual": {
+        "-1": "0",
+        "0": "1",
+        "1": "0"
+      },
+      "expected": {
+        "-1": "0",
+        "0": "1",
+        "1": "0"
+      },
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/matched_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/matched_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/Q1_gap_given_Z0",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/observed_f_Z",
+      "actual": "5/6",
+      "expected": "5/6",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/matched_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/binary_marginal_f_Z",
+      "actual": "5/6",
+      "expected": "5/6",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/observed_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/matched_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/binary_marginal_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/full_IPW_identifiability",
+      "actual": false,
+      "expected": false,
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/full_IPW_law_Y1",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S4_Y0_zero_support/IPW_unavailable_score_is_null",
+      "actual": null,
+      "expected": null,
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/retention",
+      "actual": [
+        "5/8",
+        "1"
+      ],
+      "expected": [
+        "5/8",
+        "1"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/observed_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/observed_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/joint_mass",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/overlap_Z",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/outside_common_support_Y1",
+      "actual": "0",
+      "expected": "0",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/matched_Z_marginals",
+      "actual": {
+        "-1": "1/3",
+        "0": "1/3",
+        "1": "1/3"
+      },
+      "expected": {
+        "-1": "1/3",
+        "0": "1/3",
+        "1": "1/3"
+      },
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/matched_mass_Y0",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/matched_mass_Y1",
+      "actual": "1",
+      "expected": "1",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/Q1_gap_given_Z-1",
+      "actual": "3/10",
+      "expected": "3/10",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/Q1_gap_given_Z0",
+      "actual": "3/10",
+      "expected": "3/10",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/Q1_gap_given_Z1",
+      "actual": "3/10",
+      "expected": "3/10",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/observed_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/matched_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/binary_marginal_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/observed_f_Q",
+      "actual": "13/20",
+      "expected": "13/20",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/matched_f_Q",
+      "actual": "13/20",
+      "expected": "13/20",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/binary_marginal_f_Q",
+      "actual": "13/20",
+      "expected": "13/20",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/full_IPW_identifiability",
+      "actual": true,
+      "expected": true,
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/full_IPW_law_Y0",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/full_IPW_law_Y1",
+      "actual": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "expected": [
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6",
+        "1/6"
+      ],
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/IPW_f_Z",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "S5_only_Y0_Q_selected/IPW_f_Q",
+      "actual": "1/2",
+      "expected": "1/2",
+      "passed": true
+    },
+    {
+      "name": "all_five_cases_delivered",
+      "actual": [
+        "S1_all_retained",
+        "S2_only_Y0_Z_selected",
+        "S3_same_Z_selection",
+        "S4_Y0_zero_support",
+        "S5_only_Y0_Q_selected"
+      ],
+      "expected": [
+        "S1_all_retained",
+        "S2_only_Y0_Z_selected",
+        "S3_same_Z_selection",
+        "S4_Y0_zero_support",
+        "S5_only_Y0_Q_selected"
+      ],
+      "passed": true
+    },
+    {
+      "name": "frozen_sources_unchanged",
+      "actual": {
+        "PROTOCOL.md": "de7dafe0de8da6865e8f642a2c3fc9cba677fb5dea309c3e7fcff6bd92d3a83a",
+        "cases.json": "34e45abfb74ba5caebac5924f3c2484ce29fd0314d77ee06bc3088f8de44d1f1",
+        "reference.json": "2882a3877b57daa4b6d8be1ed3cf6f42a7b576177fab15040d766b0307190dae",
+        "selection_controls.py": "86a6cebb9d9e402f0810b1d9fbf2840e884fb8da0fd39e6da297f5124f5c78f3",
+        "run_batch.py": "472d04e48b2bde51e03bcdd1864bb7dcc1a0970c1e121c24095146775bfd814f"
+      },
+      "expected": {
+        "PROTOCOL.md": "de7dafe0de8da6865e8f642a2c3fc9cba677fb5dea309c3e7fcff6bd92d3a83a",
+        "cases.json": "34e45abfb74ba5caebac5924f3c2484ce29fd0314d77ee06bc3088f8de44d1f1",
+        "reference.json": "2882a3877b57daa4b6d8be1ed3cf6f42a7b576177fab15040d766b0307190dae",
+        "selection_controls.py": "86a6cebb9d9e402f0810b1d9fbf2840e884fb8da0fd39e6da297f5124f5c78f3",
+        "run_batch.py": "472d04e48b2bde51e03bcdd1864bb7dcc1a0970c1e121c24095146775bfd814f"
+      },
+      "passed": true
+    },
+    {
+      "name": "historical_inputs_unchanged",
+      "actual": {
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\AL65_SELECTION_MECHANISM_CPU_20260920.md": "5878c8452e5de2778bb4714dd52cc70dd86b8b48b6c7c3cb6013d169c9b53ffe",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md": "0a2e5c039c65984974fb91cd155a15b3721d1b7282098e23cd2499499e03dbcf",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL64_SOURCE_RECORD_20260919.json": "d57abb8237f555d089f5eefb1cd22d819544106ac1b494fe05c88e6c3798b5e3",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL54_PLANNER_ADMISSION_REVIEW_20260919.md": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL58_FINAL_REVIEW_RECORD_20260919.json": "30e3af849e4fc8fc53837a6c580cae9d9d7204fa70df0e5e52792c9d2148333f",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\algorithm_search_20260918\\AL32_evidence.json": "53124c72ddc548bc2ed69f8b7eec6bd6c398332f8e0368e4b9442727b2b66d96"
+      },
+      "expected": {
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\AL65_SELECTION_MECHANISM_CPU_20260920.md": "5878c8452e5de2778bb4714dd52cc70dd86b8b48b6c7c3cb6013d169c9b53ffe",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md": "0a2e5c039c65984974fb91cd155a15b3721d1b7282098e23cd2499499e03dbcf",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL64_SOURCE_RECORD_20260919.json": "d57abb8237f555d089f5eefb1cd22d819544106ac1b494fe05c88e6c3798b5e3",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL54_PLANNER_ADMISSION_REVIEW_20260919.md": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-plan\\reviews\\AL58_FINAL_REVIEW_RECORD_20260919.json": "30e3af849e4fc8fc53837a6c580cae9d9d7204fa70df0e5e52792c9d2148333f",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\algorithm_search_20260918\\AL32_evidence.json": "53124c72ddc548bc2ed69f8b7eec6bd6c398332f8e0368e4b9442727b2b66d96"
+      },
+      "passed": true
+    }
+  ],
+  "errors": [],
+  "software_pass": true,
+  "resources": {
+    "wall_seconds": 0.4800857000082033,
+    "process_cpu_seconds": 0.15625,
+    "measured_python_alloc_peak_bytes_during_batch": 116310,
+    "largest_law_cell_count": 6,
+    "pair_terms_per_auc": 36,
+    "OMP_NUM_THREADS": null,
+    "network_requests": 0,
+    "server_calls": 0,
+    "model_calls": 0,
+    "media_reads": 0,
+    "classifier_fits": 0,
+    "dense_numeric_arrays": false
+  },
+  "limits": [
+    "Hand-labelled finite-population arithmetic only, not real detection AUROC",
+    "Inverse selection probabilities are oracle inputs; do not assume them for actual datasets",
+    "Support-restricted matching does not restore unobserved source mass",
+    "No new algorithm or OR1 innovation/efficacy accepted; independent review pending"
+  ]
+}

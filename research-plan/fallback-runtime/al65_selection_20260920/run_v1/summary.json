@@ -1,0 +1,64 @@
+{
+  "task_id": "AL65",
+  "software_pass": true,
+  "checks": 116,
+  "failed_checks": [],
+  "errors": [],
+  "case_aucs": [
+    {
+      "id": "S1_all_retained",
+      "observed": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "matched": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    },
+    {
+      "id": "S2_only_Y0_Z_selected",
+      "observed": {
+        "f_Z": "2/3",
+        "f_Q": "1/2"
+      },
+      "matched": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    },
+    {
+      "id": "S3_same_Z_selection",
+      "observed": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      },
+      "matched": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    },
+    {
+      "id": "S4_Y0_zero_support",
+      "observed": {
+        "f_Z": "5/6",
+        "f_Q": "1/2"
+      },
+      "matched": {
+        "f_Z": "1/2",
+        "f_Q": "1/2"
+      }
+    },
+    {
+      "id": "S5_only_Y0_Q_selected",
+      "observed": {
+        "f_Z": "1/2",
+        "f_Q": "13/20"
+      },
+      "matched": {
+        "f_Z": "1/2",
+        "f_Q": "13/20"
+      }
+    }
+  ]
+}
