@@ -1,0 +1,42 @@
+{
+  "recorded_at": "2026-09-19T19:32:56+08:00",
+  "evidence_kind": "manual_final_review_with_conditional_derivations_and_deduplication",
+  "input_sha256": {
+    "research-plan/AL53_ENDPOINT_PARTIAL_IDENTIFICATION_AUDIT_20260919.md": "aad6494060757d96407615b92d61b95f2b0f9459fb14afd5b314daa2fa0ca4b7",
+    "research-plan/reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md": "f39afd0b648e9bcba3e67a2dbcd74bd8e464adba3f7a217ff7b70c72b5c7dbf2",
+    "research-plan/reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md": "cfc36da2b8783fdcb10f5b8d6390317e1cd022da65c2b8393790852cfba92d4a",
+    "research-plan/reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md": "d5502a3cf233c6948610c1b3d0ef38936d7bfd5b02fdb06fb7846f995ea29036",
+    "research-plan/reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md": "acf3294bfcaec67b820b5328b12089415fe59b36ae81ccaadddd666a75ab5d94",
+    "research-plan/reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md": "855f6acfe3eac5e8719c703887c1fccc9aecfddce66a0e325f4efbbcfd9043f9"
+  },
+  "authoritative_final_sha256": {
+    "AL53_ENDPOINT_BOUNDS_FINAL_REVIEW_20260919.md": "96c82368f8e2c6dc2acc4af22ac90c83848fce56e1a08ec42e17a98f6366fab4",
+    "AL54_PLANNER_ADMISSION_REVIEW_20260919.md": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a",
+    "AL55_DEDUPLICATION_DECISION_20260919.md": "b4ce6321d79673158bf9c743a66c57bb4249e38c737eacd760f8a1a9c9d20e4c"
+  },
+  "retained_draft_sha256": {
+    "AL53_ENDPOINT_PARTIAL_IDENTIFICATION_REVIEW_20260919.md": "c54618bbcc95d76dd23f842850728e4b3bdf328170b80e3e60328bbf682c4356",
+    "AL53_ENDPOINT_PARTIAL_IDENTIFICATION_EXACT_20260919.json": "0aa78dd142636433dbe1244b87433ce3c79358a7d32e31cfe32bc763accb10bf",
+    "AL54_OR1_CLAIM_EVIDENCE_NO_GO_REVIEW_20260919.md": "92b05c7dd32a689efbc1892c715a4240b0f51bedcaf6336e48f81ee478f5ca25",
+    "AL54_OR1_CLAIM_EVIDENCE_NO_GO_EXACT_20260919.json": "4bf0076ae2f8ea71a52ccded7b964825702a859c1137ed52a605478de437d031",
+    "AL55_OR1_MINIMUM_NEW_INFORMATION_REVIEW_20260919.md": "dd2a56dfa2aca22bcee66df3ac1b7bbc344f4a855958854f0bac33886f515a36"
+  },
+  "draft_exact_json_role": "Manually authored checklist, not executable tests or proof certificates; pass flags not acceptance input.",
+  "AL53_corrections": [
+    "Necessary outer enclosure, not automatic equality to true feasible set",
+    "Explicit empty-intersection inconsistency state",
+    "Conservative radius about fixed estimate and target/input error propagation",
+    "C is not the sole argument of original q; AL51/AL52 compensation prevents such a substitution"
+  ],
+  "AL54_scope": "Planner no-go for presently unsupported theories and experimental admission; only one unproven inductive-bias claim retained; independentAL36 missing",
+  "AL55_scope": "Duplicate of AL13/AL35/AL54, not a new result",
+  "mathematical_review": "Triangle inequalities and set inclusions in declared norms; manual, no machine certificate",
+  "numeric_tests_executed": 0,
+  "model_calls": 0,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "real_samples_accessed": false,
+  "independent_scientific_review": false,
+  "scientific_innovation_admitted": false,
+  "no_failed_candidate_reactivated": true
+}

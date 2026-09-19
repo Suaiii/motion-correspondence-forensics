@@ -4539,8 +4539,8 @@
         "AL51",
         "AL52"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "endpoint_partial_identification_design",
       "hypothesis": "有限查询的非唯一性不排除可信正则性先验下的小外包络，须区分必要集合、可实现范围与新增调用价值。",
       "work": [
@@ -4554,7 +4554,10 @@
         "明确真实常数与来源效果未证，不变更原算法或门槛"
       ],
       "artifacts": [
-        "../reviews/AL53_ENDPOINT_PARTIAL_IDENTIFICATION_REVIEW_20260919.md"
+        "../reviews/AL53_ENDPOINT_PARTIAL_IDENTIFICATION_REVIEW_20260919.md",
+        "../reviews/AL53_ENDPOINT_PARTIAL_IDENTIFICATION_EXACT_20260919.json",
+        "../reviews/AL53_ENDPOINT_BOUNDS_FINAL_REVIEW_20260919.md",
+        "../reviews/AL53_AL55_FINAL_REVIEW_RECORD_20260919.json"
       ],
       "work_order": "../AL53_ENDPOINT_PARTIAL_IDENTIFICATION_AUDIT_20260919.md",
       "work_order_sha256": "aad6494060757d96407615b92d61b95f2b0f9459fb14afd5b314daa2fa0ca4b7",
@@ -4573,8 +4576,241 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "Credible error/regularity can give necessary endpoint outer bounds; no actual constants or C-only original-score propagation",
+      "next_action": "AL54 claim-evidence no-go matrix; no real model/endpoint calls",
+      "started_at": "2026-09-19T18:57:52+08:00",
+      "dispatch_status": "completed_scoped_review",
+      "completed_at": "2026-09-19T19:32:56+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL53_ENDPOINT_BOUNDS_FINAL_REVIEW_20260919.md",
+      "review_scope": "Full conditional ball-intersection/difference/radius design; actual regularity and efficacy not established",
+      "artifact_sha256": "96c82368f8e2c6dc2acc4af22ac90c83848fce56e1a08ec42e17a98f6366fab4",
+      "draft_assessment_history": [
+        {
+          "recorded_completed_at": "2026-09-19T19:01:43+08:00",
+          "draft_review": "../reviews/AL53_ENDPOINT_PARTIAL_IDENTIFICATION_REVIEW_20260919.md",
+          "draft_sha256": "c54618bbcc95d76dd23f842850728e4b3bdf328170b80e3e60328bbf682c4356",
+          "draft_checklist_sha256": "0aa78dd142636433dbe1244b87433ce3c79358a7d32e31cfe32bc763accb10bf",
+          "superseded_at": "2026-09-19T19:32:56+08:00",
+          "reason": "Final manuscript-level mathematical/planning review completed; manual checklist not numerical evidence"
+        }
+      ],
+      "finalized_at": "2026-09-19T19:32:56+08:00",
+      "evidence_kind": "manual_review_no_numerical_execution",
+      "final_review_record": "../reviews/AL53_AL55_FINAL_REVIEW_RECORD_20260919.json"
+    },
+    {
+      "id": "AL54",
+      "milestone": "M2",
+      "title": "OR1候选主张证据与no-go矩阵",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL14",
+        "AL20",
+        "AL26",
+        "AL32",
+        "AL35",
+        "AL40",
+        "AL42",
+        "AL43",
+        "AL46",
+        "AL47",
+        "AL49",
+        "AL50",
+        "AL51",
+        "AL52",
+        "AL53"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL14",
+        "AL20",
+        "AL26",
+        "AL32",
+        "AL35",
+        "AL42",
+        "AL43",
+        "AL46",
+        "AL47",
+        "AL51",
+        "AL52",
+        "AL53"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "claim_evidence_no_go_matrix",
+      "hypothesis": "仅当方法主张、强完整基线、未见来源/decoder与预注册统计门槛均可证时保留候选；实现/经典构造/坐标整理不足则no-go。",
+      "work": [
+        "汇总主张/公式/近邻/已有证据/替代解释/失败条件",
+        "映射最小新增信息、资源与独立复核依赖",
+        "保留AL40/AL49/AL50失败与研究API401阻塞"
+      ],
+      "acceptance": [
+        "最多保留一个待证主张并明确no-go",
+        "不编造来源/数据/指标或放行真实批次",
+        "矩阵是规划审查，不是算法创新准入"
+      ],
+      "artifacts": [
+        "../reviews/AL54_OR1_CLAIM_EVIDENCE_NO_GO_REVIEW_20260919.md",
+        "../reviews/AL54_OR1_CLAIM_EVIDENCE_NO_GO_EXACT_20260919.json",
+        "../reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md",
+        "../reviews/AL53_AL55_FINAL_REVIEW_RECORD_20260919.json"
+      ],
+      "work_order": "../AL54_OR1_CLAIM_EVIDENCE_NO_GO_MATRIX_AUDIT_20260919.md",
+      "work_order_sha256": "1d177c9999b1e41083a4034fd49b7207e252ed84137e72def36e4f621c5a58bb",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T19:01:43+08:00",
+      "due_at": "2026-09-24T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "OR1 not admitted on current evidence; one transferable-inductive-bias hypothesis retained for independently gated falsification",
+      "dispatch_status": "completed_scoped_review",
+      "completed_at": "2026-09-19T19:32:56+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md",
+      "review_scope": "Planner synthesis only; does not decide final novelty or replace scientific review",
+      "artifact_sha256": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a",
+      "next_action": "AL55 minimum-new-information plan; AL36 external review remains blocked by401",
+      "draft_assessment_history": [
+        {
+          "recorded_completed_at": "2026-09-19T19:13:46+08:00",
+          "draft_review": "../reviews/AL54_OR1_CLAIM_EVIDENCE_NO_GO_REVIEW_20260919.md",
+          "draft_sha256": "92b05c7dd32a689efbc1892c715a4240b0f51bedcaf6336e48f81ee478f5ca25",
+          "draft_checklist_sha256": "4bf0076ae2f8ea71a52ccded7b964825702a859c1137ed52a605478de437d031",
+          "superseded_at": "2026-09-19T19:32:56+08:00",
+          "reason": "Final manuscript-level mathematical/planning review completed; manual checklist not numerical evidence"
+        }
+      ],
+      "finalized_at": "2026-09-19T19:32:56+08:00",
+      "evidence_kind": "manual_review_no_numerical_execution",
+      "final_review_record": "../reviews/AL53_AL55_FINAL_REVIEW_RECORD_20260919.json",
+      "nonblocking_reference_tasks": [
+        "AL45"
+      ],
+      "dependency_note": "AL45 partial status/source gap cited as such, not used as passed evidence or bypassed experiment dependency"
+    },
+    {
+      "id": "AL55",
+      "milestone": "M2",
+      "title": "OR1唯一待证主张的最小新增信息计划",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL32",
+        "AL35",
+        "AL54"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL32",
+        "AL35",
+        "AL54"
+      ],
+      "status": "done",
+      "gate_result": "not_applicable",
+      "gate_scope": "minimum_new_information_plan",
+      "hypothesis": "若算子、完整特征/强基线和跨来源统计证据未齐，不能将q受限读出纳入新算法；最小新增信息应分算子/信息/科学三层绑定。",
+      "work": [
+        "冻结wrapper/权重/dtype/cache/输入输出合同与误差",
+        "同时保存q、r、普通单步特征、分子分母、评分和成本",
+        "预注册祖先/来源/decoder/传播/五种子/strongest baseline/invalid规则"
+      ],
+      "acceptance": [
+        "计划不虚构库存/资源/指标",
+        "任何层缺失保持pending/no-go",
+        "不启动模型媒体服务器GPU，不替代AL36独立审查"
+      ],
+      "artifacts": [
+        "../reviews/AL55_OR1_MINIMUM_NEW_INFORMATION_REVIEW_20260919.md",
+        "../reviews/AL55_DEDUPLICATION_DECISION_20260919.md"
+      ],
+      "work_order": "../AL55_OR1_MINIMUM_NEW_INFORMATION_PLAN_20260919.md",
+      "work_order_sha256": "f64f108b040adc1180f1ba6d207b91b5682003bc5fc40cab9fa2795603647d2f",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T19:13:46+08:00",
+      "due_at": "2026-09-24T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "No new question or evidence beyond AL13/AL35/AL54",
+      "dispatch_status": "closed_as_duplicate",
+      "completed_at": "2026-09-19T19:32:56+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL55_DEDUPLICATION_DECISION_20260919.md",
+      "artifact_sha256": "b4ce6321d79673158bf9c743a66c57bb4249e38c737eacd760f8a1a9c9d20e4c",
+      "evidence_kind": "deduplication_decision",
+      "review_scope": "Close duplicate planning item; no new pass or experiment",
+      "next_action": "AL56 checks a previously unread recovery prior; stop repeating minimum-information plans"
+    },
+    {
+      "id": "AL56",
+      "milestone": "M2",
+      "title": "未读恢复检测直接先例的身份与方法审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL26",
+        "AL54"
+      ],
+      "requires_pass": [
+        "AL26",
+        "AL54"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "unread_recovery_prior_review",
+      "hypothesis": "AL26留下的恢复检测先例可能限制或覆盖OR1的探针/信息权限/目标，需要真正核对而非从题名推断。",
+      "work": [
+        "至多3个公开primary记录/查询定位唯一标题",
+        "仅一个正文版本核对恢复算子、访问权限、标签与调用",
+        "给具体重叠或未读缺口，不复现模型或引入性能结果"
+      ],
+      "acceptance": [
+        "身份与方法主张可追溯，不凭二手标题归类",
+        "不可访问写缺口不绕过或改账号",
+        "不重复已读先例计数，不产生算法准入"
+      ],
+      "artifacts": [
+        "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL56_RECOVERY_DETECTION_PRIOR_AUDIT_20260919.md",
+      "work_order_sha256": "b42463d791aff85915b82222fff9624ef695fb1088a511f908acf1d1e79a6442",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T19:32:56+08:00",
+      "due_at": "2026-09-24T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
-      "next_action": "Local symbolic set-bound design independent of research401 and AL45 source gap"
+      "next_action": "Read-only primary-source identity/method audit, independent of research401"
     }
   ],
   "storage_policy": {
@@ -6000,7 +6236,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T18:44:20+08:00",
+  "updated_at": "2026-09-19T19:35:31+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -6473,11 +6709,12 @@
     "configured_check_time_local": "19:00",
     "physical_heartbeat_schedule": "hourly at minutes 00,10,20,30,40,50",
     "logical_milestone_check_time": "19:00 once per local day",
-    "last_check_local_date": "2026-09-18",
-    "last_checked_at": "2026-09-18T19:02:36.516187+08:00",
+    "last_check_local_date": "2026-09-19",
+    "last_checked_at": "2026-09-19T19:02:29.886563+08:00",
     "last_check_notifications": 0,
-    "last_check_receipt": "checks/20260918T190236.json",
-    "coordination_target": "roles.researchagent and current active dispatches; legacy research task closed"
+    "last_check_receipt": "checks/20260919T190229.json",
+    "coordination_target": "roles.researchagent and current active dispatches; legacy research task closed",
+    "last_check_recorded_at": "2026-09-19T19:32:56+08:00"
   },
   "coordination": {
     "handoff_status": "acknowledged",
@@ -6693,6 +6930,14 @@
       "plan_sha256": "69ceeabfcc3f926031a464847db4f0c89a1fa357cf674a692720d1f6c0cd8dd7",
       "reason": "Conditional transcript-preserving construction clarifies what the proposed diagnostic adds; prepare bounded partial-identification question, no real experiment",
       "date_budget_or_threshold_changes": false
+    },
+    {
+      "at": "2026-09-19T19:35:31+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "partial_bounds_and_claim_admission_scope",
+      "plan_sha256": "be0ee75bf2eb0b3d3eecdbca01dfe6423d562079f5cd5120edc410d3eaccb144",
+      "reason": "Finalize endpoint outer bounds and non-admission claim matrix, deduplicateAL55, prepare previously unread recovery prior; fix stale current-plan status and save actual milestone check",
+      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
@@ -6707,33 +6952,33 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al53-planner-endpoint-bounds-20260919",
+      "id": "cc-al56-planner-recovery-prior-20260919",
       "task_ids": [
-        "AL53"
+        "AL56"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T18:44:20+08:00",
-      "work_order": "../AL53_ENDPOINT_PARTIAL_IDENTIFICATION_AUDIT_20260919.md",
-      "work_order_sha256": "aad6494060757d96407615b92d61b95f2b0f9459fb14afd5b314daa2fa0ca4b7",
+      "prepared_at": "2026-09-19T19:32:56+08:00",
+      "work_order": "../AL56_RECOVERY_DETECTION_PRIOR_AUDIT_20260919.md",
+      "work_order_sha256": "b42463d791aff85915b82222fff9624ef695fb1088a511f908acf1d1e79a6442",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "69ceeabfcc3f926031a464847db4f0c89a1fa357cf674a692720d1f6c0cd8dd7",
-      "scope": "Symbolic partial-identification bounds with explicitly unknown actual model constants; no numerical/model/server work",
+      "scope": "Unreviewed recovery-method primary source; no model/media/server/GPU",
       "remote_send_required": false,
-      "background_process_running": false
+      "background_process_running": false,
+      "plan_sha256": "be0ee75bf2eb0b3d3eecdbca01dfe6423d562079f5cd5120edc410d3eaccb144"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:2",
+    "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:3",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T18:44:20+08:00",
+    "last_coordinator_activity_at": "2026-09-19T19:35:31+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -7648,9 +7893,76 @@
         "completed_at": "2026-09-19T18:44:20+08:00",
         "review": "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md",
         "outcome": "Finite transcript non-uniqueness with compensating J; model class/tolerance limitations retained"
+      },
+      {
+        "id": "cc-al53-planner-endpoint-bounds-20260919",
+        "task_ids": [
+          "AL53"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_design",
+        "prepared_at": "2026-09-19T18:44:20+08:00",
+        "work_order": "../AL53_ENDPOINT_PARTIAL_IDENTIFICATION_AUDIT_20260919.md",
+        "work_order_sha256": "aad6494060757d96407615b92d61b95f2b0f9459fb14afd5b314daa2fa0ca4b7",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "69ceeabfcc3f926031a464847db4f0c89a1fa357cf674a692720d1f6c0cd8dd7",
+        "scope": "Symbolic partial-identification bounds with explicitly unknown actual model constants; no numerical/model/server work",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T18:57:52+08:00",
+        "completed_at": "2026-09-19T19:32:56+08:00",
+        "review": "../reviews/AL53_ENDPOINT_BOUNDS_FINAL_REVIEW_20260919.md",
+        "outcome": "Conditional partial-identification bounds; unknown constants retained",
+        "draft_completion_recorded_at": "2026-09-19T19:01:43+08:00",
+        "finalization_note": "Final supported assumptions and evidence kind bound after in-turn draft review"
+      },
+      {
+        "id": "cc-al54-planner-claim-matrix-20260919",
+        "task_ids": [
+          "AL54"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_planning",
+        "prepared_at": "2026-09-19T19:01:43+08:00",
+        "work_order": "../AL54_OR1_CLAIM_EVIDENCE_NO_GO_MATRIX_AUDIT_20260919.md",
+        "work_order_sha256": "1d177c9999b1e41083a4034fd49b7207e252ed84137e72def36e4f621c5a58bb",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Claim-evidence and no-go planning only; no model/media/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T19:32:56+08:00",
+        "review": "../reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md",
+        "outcome": "Claim matrix and no-go rules; one bounded unproven claim retained",
+        "draft_completion_recorded_at": "2026-09-19T19:13:46+08:00",
+        "finalization_note": "Final supported assumptions and evidence kind bound after in-turn draft review"
+      },
+      {
+        "id": "cc-al55-planner-minimum-info-20260919",
+        "task_ids": [
+          "AL55"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "closed_as_duplicate",
+        "prepared_at": "2026-09-19T19:13:46+08:00",
+        "work_order": "../AL55_OR1_MINIMUM_NEW_INFORMATION_PLAN_20260919.md",
+        "work_order_sha256": "f64f108b040adc1180f1ba6d207b91b5682003bc5fc40cab9fa2795603647d2f",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Minimum information planning only; no model/media/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T19:32:56+08:00",
+        "review": "../reviews/AL55_DEDUPLICATION_DECISION_20260919.md",
+        "gate_result": "not_applicable",
+        "outcome": "Existing minimum-information fields reused, no new evidence count"
       }
     ],
-    "last_substantive_review": "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -7675,7 +7987,10 @@
       "rerun_required": false,
       "dispatch_status": "prepared_not_sent_until_state_change",
       "blocker": "Research executor API returned 401; no artifact and no retry or identity change.",
-      "observation_note": "Historical status from existing401 receipt; not polled anew during local work"
+      "observation_note": "Historical status from existing401 receipt; not polled anew during local work",
+      "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:3",
+      "observed_thread_ui_state": "notLoaded",
+      "api_recovery_confirmed": false
     },
     "dispatch_policy_state": "local_planner_work_prepared_external_research_auth_blocked",
     "waiting_on": [
@@ -7793,13 +8108,15 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL52"
+        "AL53",
+        "AL54",
+        "AL55"
       ],
       "executor_role": "planagent",
-      "status": "completed_scoped_symbolic_review",
-      "completed_at": "2026-09-19T18:44:20+08:00",
+      "status": "completed_scoped_reviews_and_deduplication",
+      "finalized_at": "2026-09-19T19:32:56+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL53",
+      "next_prepared_task_id": "AL56",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -7817,15 +8134,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T18:44:20+08:00",
+    "last_local_review_at": "2026-09-19T19:32:56+08:00",
     "prepared_independent_task_ids": [
-      "AL53",
+      "AL56",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL53",
+        "AL56",
         "AL36"
       ],
       "executor_blocked": [
@@ -7906,9 +8223,10 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "dd3e8f994f08b2f9e47cbb77baf5fd70eb8b6ada",
-      "prior_project_sha256": "aa76587fdc55db32e733dfb670d1be1f9afab98e57b3f4c86fbc38e0e4db94f9",
-      "contains_current_turn_start_record": true
+      "commit": "01582ac6b4138eaae209d47233cfcb32fce4ae12",
+      "path": "research-plan/task-hermes/project.json",
+      "sha256": "f7db5ae1b6b5b9d11e73db357bff9db912b9c029218dcc4340bc9dbfd86f1bf8",
+      "includes_in_turn_draft_records": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -7919,11 +8237,22 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T18:06:34+08:00",
+    "last_progress_at": "2026-09-19T19:13:46+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T18:38:47+08:00",
-      "action": "no_remote_wait",
-      "reason": "Only current executor is planagent; additional_dispatches empty. Research AL36 remains queued unsent under recorded401, no new recovery evidence."
+      "at": "2026-09-19T19:35:31+08:00",
+      "action": "no_additional_remote_wait",
+      "reason": "This turn already observed cursor3; latest turn remains failed401 and no recovery output. Only planner packages were executed; no resend."
+    },
+    "research_observation_note": {
+      "at": "2026-09-19T18:57:52+08:00",
+      "cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:3",
+      "thread_ui_state": "notLoaded",
+      "latest_turn_status": "failed",
+      "failed_turn_id": "01a0b833-341f-7bc0-81f6-05f617d6448c",
+      "failure_code": "401_unauthorized",
+      "recovery_confirmed": false,
+      "research_dispatch_sent": false,
+      "meaning": "UI unloaded state does not establish API recovery; local planner remains actual executor"
     }
   },
   "candidate_protocols": {
@@ -8047,7 +8376,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL53",
+        "AL56",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -8072,7 +8401,13 @@
       "proposed_decomposition_diagnostic_R_calls": 6,
       "proposed_decomposition_diagnostic_scope": "Generic noncoincident main-h case; actual reuse must be counted; not authorized",
       "finite_query_identifiability_review_task": "AL52",
-      "finite_query_identifiability_status": "Broad smooth black-box class only; C not uniquely determined by finite soft transcript, actual known architecture not covered"
+      "finite_query_identifiability_status": "Broad smooth black-box class only; C not uniquely determined by finite soft transcript, actual known architecture not covered",
+      "endpoint_partial_identification_task": "AL53",
+      "endpoint_partial_identification_status": "Necessary outer enclosures only; C alone does not determine original q",
+      "claim_evidence_matrix_task": "AL54",
+      "claim_evidence_matrix_status": "Planner no-go for formal admission on current evidence; one unproven inductive-bias hypothesis remains",
+      "minimum_new_information_plan_task": "AL55",
+      "minimum_new_information_status": "AL55 deduplicated against AL13/AL35/AL54; no new gate"
     }
   },
   "open_review_issues": [

@@ -1,0 +1,28 @@
+{
+  "task_id": "AL53",
+  "scope": "endpoint_partial_identification_design",
+  "gate_result": "pass",
+  "checks": [
+    {"name": "query_output_ball_propagation", "passed": true},
+    {"name": "input_uncertainty_triangle_bound", "passed": true},
+    {"name": "intersection_outer_envelope_not_exact_set", "passed": true},
+    {"name": "minkowski_difference_for_C", "passed": true},
+    {"name": "score_set_threshold_stability_separated_from_efficacy", "passed": true},
+    {"name": "extra_endpoint_value_is_conditioned_on_error_bounds", "passed": true},
+    {"name": "unknown_L_and_denominator_do_not_get_filled_with_zero", "passed": true}
+  ],
+  "formulae": {
+    "U_i": "closed_ball(yhat_i, epsilon_i + L*(norm(phat-x_i)+epsilon_p))",
+    "U_R": "Omega intersection_i U_i",
+    "U_C": "U_a - U_b (Minkowski difference)",
+    "decision_rule": "all scores in U_s lie on one fixed threshold side; otherwise undecided"
+  },
+  "real_samples_accessed": false,
+  "model_calls": 0,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "numerical_examples": 0,
+  "formal_scientific_review": false,
+  "formal_breakthrough": false,
+  "interpretation": "Strong predeclared regularity/error information can shrink the AL52 non-unique set; the soft transcript alone does not supply that information."
+}
