@@ -3423,8 +3423,8 @@
         "AL23",
         "AL35"
       ],
-      "status": "running",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "paired_macro_seed_estimand_design",
       "hypothesis": "共享真实祖先、视图和五种子使集成AUROC、pooled AUROC和种子macro差具有不同统计对象，需冻结配对重抽语义。",
       "work": [
@@ -3443,7 +3443,7 @@
       "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "dispatch_status": "planner_work_in_progress",
-      "next_action": "Freeze or defer formal resampling implementation only after actual data/randomness fields are bound; do not reopen exposed data or alter gates",
+      "next_action": "AL36 remains blocked until research API auth recovery; no formal resampling or real training admission",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -3459,14 +3459,18 @@
       "due_at": "2026-09-20T22:00:00+08:00",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "draft_in_progress",
-      "review_scope": "Completed limited statistical object/design review and fixed count example; formal bootstrap code/protocol and real data remain open",
+      "hypothesis_result": "macro_pooled_ensemble_estimands_and_ancestor_missingness_bound_without_real_protocol_freeze",
+      "review_scope": "Limited statistical estimand/design audit; no real data, bootstrap code, training randomness or formal independent scientific review",
       "observed_work_at": "2026-09-19T14:58:25+08:00",
       "execution_stage": "metric_definitions_and_fixed_count_checked_cluster_protocol_remaining",
       "partial_evidence": [
         "../reviews/AL37_MACRO_SEED_ESTIMAND_REVIEW_20260919.md",
         "../reviews/AL37_MACRO_SEED_ESTIMAND_EXACT_20260919.json"
-      ]
+      ],
+      "completed_at": "2026-09-19T15:31:00+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL37_FINAL_REVIEW_20260919.md",
+      "artifact_sha256": "3799cbc72bb6c4dee4aa8c07607c1170cde756c2e42363cc41cdf61f44e9d26f"
     },
     {
       "id": "AL38",
@@ -5054,7 +5058,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T15:27:00+08:00",
+  "updated_at": "2026-09-19T15:35:00+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5721,33 +5725,28 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al37-planner-statistical-design-20260919",
+      "id": "cc-al36-research-admission-review-20260919",
       "task_ids": [
-        "AL37"
+        "AL36"
       ],
-      "executor_role": "planagent",
-      "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "executor_role": "researchagent_next",
+      "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
       "host_id": "local",
       "status": "blocked_external_research_api_auth",
       "prepared_at": "2026-09-19T14:07:03+08:00",
-      "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
-      "work_order_sha256": "f679b8e3ecc3af82f1bcd3adb27d5018e83e18e430d942216a9ca6468c745f25",
+      "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
+      "work_order_sha256": "04c9d7c95877cd39e567da98f798dec7b7d1afa5c7d4ac977e9f8b21afd0c111",
       "plan_version": "cvpr27-20260919-v1.5",
-      "remote_send_required": false,
-      "scope": "Planner statistical design; AL37 draft not yet complete",
-      "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
-      "last_progress_at": "2026-09-19T15:27:00+08:00",
-      "first_active_recorded_at": "2026-09-19T14:18:47+08:00",
-      "first_active_record_note": "Actual recording time; not claimed as first draft or process start",
-      "execution_stage": "AL37_limited_design_complete_AL39_AL40_math_reviews_complete",
-      "background_process_running": false,
-      "remaining_work": "AL37 formal resampling fields; AL36 blocked until research API recovers",
+      "scope": "One bounded adversarial OR1 admission review; no model/media/server/GPU; not sent while executor API is unauthorized.",
+      "remote_send_required": true,
+      "duplicate_dispatch_suppressed": true,
       "last_observed_status": "systemError",
-      "last_observed_at": "2026-09-19T14:54:30+08:00",
+      "last_observed_at": "2026-09-19T15:35:00+08:00",
       "failure_code": "401_unauthorized",
       "execution_artifacts_available": false,
       "rerun_required": false,
-      "dispatch_status": "prepared_not_sent_until_state_change"
+      "dispatch_status": "prepared_not_sent_until_state_change",
+      "blocker": "Research executor API returned 401 Unauthorized; no artifact and no retry or identity change."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -5758,7 +5757,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T15:27:00+08:00",
+    "last_coordinator_activity_at": "2026-09-19T15:35:00+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -6399,6 +6398,40 @@
           "AL34": "done_pass_fixed_math_only",
           "AL35": "done_pass_protocol_draft_only"
         }
+      },
+      {
+        "id": "cc-al37-planner-statistical-design-20260919",
+        "task_ids": [
+          "AL37"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_math_review",
+        "prepared_at": "2026-09-19T14:07:03+08:00",
+        "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
+        "work_order_sha256": "f679b8e3ecc3af82f1bcd3adb27d5018e83e18e430d942216a9ca6468c745f25",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "remote_send_required": false,
+        "scope": "Planner statistical design; AL37 draft not yet complete",
+        "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
+        "last_progress_at": "2026-09-19T15:31:00+08:00",
+        "first_active_recorded_at": "2026-09-19T14:18:47+08:00",
+        "first_active_record_note": "Actual recording time; not claimed as first draft or process start",
+        "execution_stage": "AL37_limited_statistical_design_complete",
+        "background_process_running": false,
+        "remaining_work": "AL36 blocked until research API recovers; formal resampling remains unadmitted",
+        "last_observed_status": "systemError",
+        "last_observed_at": "2026-09-19T14:54:30+08:00",
+        "failure_code": "401_unauthorized",
+        "execution_artifacts_available": false,
+        "rerun_required": false,
+        "dispatch_status": "prepared_not_sent_until_state_change",
+        "completed_at": "2026-09-19T15:35:00+08:00",
+        "task_outcomes": {
+          "AL37": "done_pass_limited"
+        },
+        "review": "../reviews/AL37_FINAL_REVIEW_20260919.md"
       }
     ],
     "last_substantive_review": "../reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md",
@@ -6521,14 +6554,16 @@
         "AL37"
       ],
       "executor_role": "planagent",
-      "status": "in_progress_resumable",
+      "status": "completed_limited_statistical_design",
       "work_area": "research-plan/reviews",
       "last_progress_at": "2026-09-19T15:06:00+08:00",
       "background_process_running": false,
       "completed_scope": "Macro versus pooled versus ensemble definitions, shared-real weighting identity, ancestor bootstrap unit, missing-class invalid rule, deterministic-seed boundary; AL38 pure-sampling alias and finite-kernel boundary reviewed",
       "remaining_scope": "AL37 formal resampling fields; AL36 external research review",
       "research_api_fault": "401_unauthorized_no_artifact",
-      "research_thread_retry": false
+      "research_thread_retry": false,
+      "completed_at": "2026-09-19T15:31:00+08:00",
+      "next_prepared_task_id": null
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -6546,18 +6581,15 @@
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-19T14:07:03+08:00",
-    "prepared_independent_task_ids": [
-      "AL36"
-    ],
+    "prepared_independent_task_ids": [],
     "active_and_prepared_work": {
-      "running": [
-        "AL37"
-      ],
-      "prepared_independent": [
-        "AL36"
-      ],
+      "running": [],
+      "prepared_independent": [],
       "executor_blocked": [
         "AL36"
+      ],
+      "research_system_error": [
+        "cc-al36-research-admission-review-20260919"
       ]
     },
     "material_decision_notices": [
@@ -6622,7 +6654,8 @@
       "evidence": "../reviews/server_13340_readonly_20260919.json",
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
-    }
+    },
+    "last_progress_at": "2026-09-19T15:35:00+08:00"
   },
   "candidate_protocols": {
     "A": {
