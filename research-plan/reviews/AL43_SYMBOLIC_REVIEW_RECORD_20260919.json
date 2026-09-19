@@ -1,0 +1,32 @@
+{
+  "task_id": "AL43",
+  "recorded_at": "2026-09-19T16:54:24.801793+08:00",
+  "reviewer": "planagent",
+  "evidence_kind": "manual_symbolic_derivation_with_explicit_smoothness_support_and_denominator_assumptions",
+  "inputs_sha256": {
+    "research-plan/AL43_OR1_ENERGY_SENSITIVITY_AUDIT_20260919.md": "2dbad273476cd5651bd2d8277c8a741e125244a613efba5e17358e6b6c05f2d4",
+    "research-runs/algorithm_search_20260918/AL12_method_design.md": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+    "research-plan/reviews/AL16_OR1_NUMERICAL_REVIEW_20260919.md": "d5502a3cf233c6948610c1b3d0ef38936d7bfd5b02fdb06fb7846f995ea29036",
+    "research-plan/reviews/AL29_STABLE_BASELINE_REVIEW_20260919.md": "b15bfb0f4b0be4e77dd347b8e6c69fcca708029e34a2b5a60587f5971d411b01"
+  },
+  "report_sha256": "f7567f550cad2f3a9be9a49382adca0ccbb7ff0d626f8d868de5635a6e8ab71a",
+  "derivations": [
+    "quotient directional derivative for fixed support energy ratio",
+    "energy-null point has zero first derivative",
+    "second and third order directional expansions under declared differentiability",
+    "Hessian at zero field under C2 assumptions",
+    "feature derivative and final linear-score cancellation are distinct"
+  ],
+  "mathematical_method": "Product rule, quotient rule, squared inner-product Taylor expansion; no machine proof certificate",
+  "new_numerical_tests_executed": 0,
+  "research_code_replayed": false,
+  "synthetic_label_experiments": false,
+  "model_calls": 0,
+  "media_accessed": false,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "independent_scientific_review": false,
+  "actual_AE_differentiability_established": false,
+  "real_mechanism_result": "not_evaluated",
+  "innovation_admitted": false
+}

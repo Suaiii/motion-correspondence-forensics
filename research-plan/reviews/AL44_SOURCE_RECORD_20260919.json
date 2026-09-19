@@ -1,0 +1,88 @@
+{
+  "task_id": "AL44",
+  "reviewed_at": "2026-09-19T17:14:10+08:00",
+  "evidence_kind": "primary_identity_and_selected_method_scope_review",
+  "web_route": {
+    "result": "failed_before_content",
+    "code": "404_not_found",
+    "reason": "provider gateway does not support /v1/alpha/search"
+  },
+  "html": {
+    "url": "https://arxiv.org/html/2605.23449v1",
+    "bytes": 285181,
+    "sha256": "57f90cc05a43f087d9ae8e0d76657f7de34dcd3df4df998d90f13c051479fabc",
+    "retrieval_time_source": "Exact call time not separately recorded; file modified time below is local cache metadata",
+    "cache_modified_at": "2026-09-19T09:05:08.925422+00:00",
+    "read_sections": [
+      "document title/authors",
+      "abstract and section3 context",
+      "S3.SS1.SSS0.Px2",
+      "S3.E1",
+      "S3.E2",
+      "S3.SS2; equations4/5"
+    ],
+    "payload_retained_in_repository": false
+  },
+  "record_page": {
+    "url": "https://arxiv.org/abs/2605.23449v1",
+    "final_url": "https://arxiv.org/abs/2605.23449v1",
+    "status": 200,
+    "retrieved_at": "2026-09-19T09:09:53.251604+00:00",
+    "bytes": 43915,
+    "sha256": "9cd8ecb849163a3aa02cd5b63748762435d859267266a59af772d27ee59832e0",
+    "submission_history": "Submission history From: Tahereh Dehdarirad [ view email ] [v1] Fri, 22 May 2026 10:03:46 UTC (6,325 KB)"
+  },
+  "citation_metadata": {
+    "citation_title": [
+      "Commutator-Induced Uncertainty in VAEs"
+    ],
+    "citation_author": [
+      "Dehdarirad, Tahereh",
+      "Felsberg, Michael",
+      "Eilertsen, Gabriel",
+      "Xiong, Ziliang"
+    ],
+    "citation_date": [
+      "2026/05/22"
+    ],
+    "citation_online_date": [
+      "2026/05/22"
+    ],
+    "citation_pdf_url": [
+      "https://arxiv.org/pdf/2605.23449"
+    ],
+    "citation_arxiv_id": [
+      "2605.23449"
+    ]
+  },
+  "scope_findings": {
+    "id_title_version_match": true,
+    "decoder_order_swap_formula_present": true,
+    "learned_latent_action_not_two_fixed_complete_reconstructors": true,
+    "equation4_is_explicit_modeling_assumption_not_derived_guarantee": true,
+    "forensic_detection_experiment_verified": false,
+    "authors_experiments_reproduced": false
+  },
+  "prior_project_files_sha256": {
+    "research-plan/reviews/AL14_RECONSTRUCTION_BASELINES_20260919.md": "ecae4d9eda7d7de21d3c77af53e85d3be31e9ff47a132b6d056e6b4ab2870094",
+    "research-plan/reviews/AL26_CROSS_RECONSTRUCTION_PRIOR_REVIEW_20260919.md": "c809b56abfc4751057c41912b966ffceaec66edf6077717fdb8d7c979524ca9a",
+    "research-runs/algorithm_search_20260918/AL12_prior_comparison.md": "f9bd0d4f75f5108135311d7bbddb0d6039fbe0678b4e5331e801856b77270ab1"
+  },
+  "new_prior_count": 0,
+  "review_report_sha256": "33d4741d37664ec637afdd442ed01f5d3f402fc081f96d6eadbec155c02df09c",
+  "access_route": "ordinary public HTTPS without credentials; no account/model/organization changes",
+  "model_calls": 0,
+  "media_accessed": false,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "innovation_admitted": false,
+  "temporary_cache_cleanup": {
+    "verified_at": "2026-09-19T17:15:01.764476+08:00",
+    "named_local_files_absent": [
+      "tmp\\al44_2605.html",
+      "tmp\\al44_metadata_receipt.json",
+      "tmp\\al44_extract.py"
+    ],
+    "complete_paper_payload_committed": false
+  }
+}

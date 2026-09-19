@@ -3803,8 +3803,8 @@
         "AL20",
         "AL29"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "energy_readout_local_sensitivity_math",
       "hypothesis": "J_K delta非零可能仍不能提供q的一阶增量，需要分开场变化与实际能量比读出敏感性。",
       "work": [
@@ -3817,7 +3817,9 @@
         "限定数学审查不作为创新准入或正式独立复核"
       ],
       "artifacts": [
-        "../reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md"
+        "../reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md",
+        "../reviews/AL43_SYMBOLIC_REVIEW_RECORD_20260919.json",
+        "../reviews/AL43_FINALIZATION_20260919.json"
       ],
       "work_order": "../AL43_OR1_ENERGY_SENSITIVITY_AUDIT_20260919.md",
       "work_order_sha256": "2dbad273476cd5651bd2d8277c8a741e125244a613efba5e17358e6b6c05f2d4",
@@ -3837,8 +3839,130 @@
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "not_evaluated",
-      "prepared_at": "2026-09-19T16:37:32+08:00"
+      "hypothesis_result": "nonzero_field_jacobian_not_sufficient_for_energy_ratio_or_score_sensitivity; zero_field_starts_second_order",
+      "prepared_at": "2026-09-19T16:37:32+08:00",
+      "started_at": "2026-09-19T16:49:51+08:00",
+      "dispatch_status": "completed_scoped_symbolic_review",
+      "completed_at": "2026-09-19T17:14:10+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md",
+      "review_scope": "Manual symbolic derivative/expansion audit; no numerical tests, real AE, data, independent scientific review or innovation admission",
+      "artifact_sha256": "e89e5bb5f8e9d97398cb7a3728e5eeb0a53edf716a63d85e3c1dbb8a3f58dec4",
+      "next_action": "AL44 provenance audit; no real execution until candidate and resource/data gates",
+      "finalization_history": [
+        {
+          "superseded_completed_at": "2026-09-19T16:58:30+08:00",
+          "old_record_sha256": "15221633d0e0d2e87528a1843a03f9f9d20c15564103d014a965f10f60de3886",
+          "reason": "Correct pre-final draft hash binding and replace manually assigned completion time with actual finalization time"
+        }
+      ],
+      "reviewed_at": "2026-09-19T17:14:10+08:00",
+      "symbolic_review_finalization": "../reviews/AL43_FINALIZATION_20260919.json"
+    },
+    {
+      "id": "AL44",
+      "milestone": "M2",
+      "title": "关键顺序响应近邻的身份与公式追溯",
+      "assignee": "planagent",
+      "parents": [
+        "AL14",
+        "AL26"
+      ],
+      "requires_pass": [
+        "AL14",
+        "AL26"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "critical_prior_provenance_review",
+      "hypothesis": "关键来源和统计比较身份必须明确可证，不能由相似术语或选择性报告推成方法优势。",
+      "work": [
+        "核对唯一arXiv v1身份及已引方法范围",
+        "区分建模下界、定理与模型调用域，保留访问方式"
+      ],
+      "acceptance": [
+        "ID/版本/正文可追溯，不以自身摘要作来源",
+        "不将元数据或先例差异当创新准入"
+      ],
+      "artifacts": [
+        "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
+        "../reviews/AL44_SOURCE_RECORD_20260919.json"
+      ],
+      "work_order": "../AL44_CRITICAL_PRIOR_PROVENANCE_AUDIT_20260919.md",
+      "work_order_sha256": "d43c14ff1fa705dc1eaf4d7bdcb34826e1863621fb05e9325d85374de57fbc3e",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "gpu": false,
+        "real_media": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "recorded_at": "2026-09-19T17:14:10+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "scientific_innovation_gate_passed": false,
+      "implementation_authorized": false,
+      "completed_at": "2026-09-19T17:14:10+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
+      "artifact_sha256": "33d4741d37664ec637afdd442ed01f5d3f402fc081f96d6eadbec155c02df09c",
+      "hypothesis_result": "identity_and_scope_confirmed_empirical_lower_bound_is_postulate",
+      "evidence_kind": "Manual primary passage review with retrieval hashes; no model replication",
+      "registration_mode": "Registered after retrieval, no prospective frozen preregistration claimed",
+      "next_action": "Give AL36 the verified postulate boundary on recovery; does not support OR1 novelty or true efficacy"
+    },
+    {
+      "id": "AL45",
+      "milestone": "M2",
+      "title": "最强基线选择与比较统计目标审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL35",
+        "AL37",
+        "AL42"
+      ],
+      "requires_pass": [
+        "AL35",
+        "AL37",
+        "AL42"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "strong_baseline_selection_design",
+      "hypothesis": "关键来源和统计比较身份必须明确可证，不能由相似术语或选择性报告推成方法优势。",
+      "work": [
+        "区分calibration选定基线与固定集合同时优势",
+        "核对相应假设检验/区间选择前提，不改原门槛"
+      ],
+      "acceptance": [
+        "提供明确比较对象与失败处理",
+        "主张多重性保证前核对primary方法学依据，无依据则保留未评估"
+      ],
+      "artifacts": [
+        "../reviews/AL45_STRONG_BASELINE_SELECTION_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
+      "work_order_sha256": "3b31d2d4de984f4dfa83d6cff995ad067b16e41ff82ee2803f7bccd84f7bbb18",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "gpu": false,
+        "real_media": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "plan_version": "cvpr27-20260919-v1.5",
+      "recorded_at": "2026-09-19T17:14:10+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "scientific_innovation_gate_passed": false,
+      "implementation_authorized": false,
+      "prepared_at": "2026-09-19T17:14:10+08:00",
+      "hypothesis_result": "not_evaluated"
     }
   ],
   "storage_policy": {
@@ -5264,7 +5388,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T16:43:16+08:00",
+  "updated_at": "2026-09-19T17:16:24+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5925,6 +6049,14 @@
       "reason": "Correct wrong fixed-kernel response and withdraw originalpass; keep原始bytes. AL42 missing-mass design completed, AL43 new sensitivity question prepared.",
       "plan_sha256": "76c83df0775225e054affd679d3718fb781e3d700b47f960437d6593ff8070c5",
       "date_budget_or_scientific_threshold_changes": false
+    },
+    {
+      "at": "2026-09-19T17:16:24+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "OR1_readout_sensitivity_and_primary_provenance_addendum",
+      "plan_sha256": "a2513aeb3a3e4a2df72a3a399fce07ffd9a1e7ff077e302c871f48fa1951a586",
+      "reason": "Separate K, q and frozen score sensitivity; authenticate critical prior and identify its empirical postulate; no experiment/gate relaxation",
+      "date_budget_or_threshold_changes": false
     }
   ],
   "continuous_collaboration": {
@@ -5939,22 +6071,22 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al43-planner-energy-sensitivity-20260919",
+      "id": "cc-al45-planner-baseline-selection-20260919",
       "task_ids": [
-        "AL43"
+        "AL45"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T16:43:16+08:00",
-      "work_order": "../AL43_OR1_ENERGY_SENSITIVITY_AUDIT_20260919.md",
-      "work_order_sha256": "2dbad273476cd5651bd2d8277c8a741e125244a613efba5e17358e6b6c05f2d4",
+      "prepared_at": "2026-09-19T17:14:10+08:00",
+      "work_order": "../AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
+      "work_order_sha256": "3b31d2d4de984f4dfa83d6cff995ad067b16e41ff82ee2803f7bccd84f7bbb18",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "76c83df0775225e054affd679d3718fb781e3d700b47f960437d6593ff8070c5",
-      "scope": "New symbolic sensitivity condition for actual energy-ratio readout; no repeated archived tests, fitting, media, server or GPU",
       "remote_send_required": false,
-      "background_process_running": false
+      "background_process_running": false,
+      "scope": "Independent comparison-estimand review; no repeated prototype, true data or model execution",
+      "plan_sha256": "a2513aeb3a3e4a2df72a3a399fce07ffd9a1e7ff077e302c871f48fa1951a586"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -5965,7 +6097,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T16:43:16+08:00",
+    "last_coordinator_activity_at": "2026-09-19T17:16:24+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -6661,9 +6793,53 @@
         "completed_at": "2026-09-19T16:43:16+08:00",
         "review": "../reviews/AL42_CLUSTER_MISSING_MASS_REVIEW_20260919.md",
         "outcome": "Seven actual arithmetic checks of one predeclared distribution; zero bootstrap/model/server calls"
+      },
+      {
+        "id": "cc-al43-planner-energy-sensitivity-20260919",
+        "task_ids": [
+          "AL43"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_design",
+        "prepared_at": "2026-09-19T16:43:16+08:00",
+        "work_order": "../AL43_OR1_ENERGY_SENSITIVITY_AUDIT_20260919.md",
+        "work_order_sha256": "2dbad273476cd5651bd2d8277c8a741e125244a613efba5e17358e6b6c05f2d4",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "76c83df0775225e054affd679d3718fb781e3d700b47f960437d6593ff8070c5",
+        "scope": "New symbolic sensitivity condition for actual energy-ratio readout; no repeated archived tests, fitting, media, server or GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T16:49:51+08:00",
+        "completed_at": "2026-09-19T17:14:10+08:00",
+        "review": "../reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md",
+        "outcome": "Manual symbolic sensitivity review; zero numerical/model calls",
+        "completed_at_before_finalization": "2026-09-19T16:58:30+08:00",
+        "completion_timestamp_note": "Final record uses actual finalization clock; earlier manual assignment retained separately"
+      },
+      {
+        "id": "cc-al44-planner-prior-provenance-20260919",
+        "task_ids": [
+          "AL44"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_source_review",
+        "prepared_at": "2026-09-19T16:58:30+08:00",
+        "work_order": "../AL44_CRITICAL_PRIOR_PROVENANCE_AUDIT_20260919.md",
+        "work_order_sha256": "d43c14ff1fa705dc1eaf4d7bdcb34826e1863621fb05e9325d85374de57fbc3e",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Critical provenance audit for one nearest prior; no new method/model/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T17:14:10+08:00",
+        "review": "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
+        "recording_note": "Original prepared timestamp was manually assigned; this completion is actual clock time"
       }
     ],
-    "last_substantive_review": "../reviews/AL42_CLUSTER_MISSING_MASS_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -6805,13 +6981,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL42"
+        "AL43",
+        "AL44"
       ],
       "executor_role": "planagent",
-      "status": "completed_scoped_design",
-      "completed_at": "2026-09-19T16:43:16+08:00",
+      "status": "completed_scoped_reviews",
+      "completed_at": "2026-09-19T17:14:10+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL43",
+      "next_prepared_task_id": "AL45",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -6829,15 +7006,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T16:43:16+08:00",
+    "last_local_review_at": "2026-09-19T17:14:10+08:00",
     "prepared_independent_task_ids": [
-      "AL43",
+      "AL45",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL43",
+        "AL45",
         "AL36"
       ],
       "executor_blocked": [
@@ -6867,10 +7044,21 @@
       },
       {
         "id": "al40-arithmetic-verdict-withdrawal",
-        "status": "prepared_for_current_final_not_confirmed",
+        "status": "confirmed_final_output",
         "prepared_at": "2026-09-19T16:37:32+08:00",
         "message": "AL40差分核响应误写导致原通过判定无效，已撤销并保留纠错回执。",
         "evidence": "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+        "not_a_milestone_receipt": true,
+        "confirmed_at": "2026-09-19T16:49:51+08:00",
+        "confirmation_evidence": "Immediately preceding completed heartbeat NOTIFY final in this conversation explicitly withdraws AL40 and gives0 versus2; no OS delivery claim"
+      },
+      {
+        "id": "or1-observed-readout-sensitivity-requirement",
+        "status": "prepared_for_current_final_not_confirmed",
+        "prepared_at": "2026-09-19T17:16:24+08:00",
+        "message": "OR1需检查实际q和冻结评分而非仅场变化；关键先例下界为建模假设，不用作OR1理论保证。",
+        "evidence": "../reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md",
+        "secondary_evidence": "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
         "not_a_milestone_receipt": true
       }
     ],
@@ -6902,9 +7090,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "git_revision": "fa32698ba3cc0e7c837e7ca493f29bea74a39dd5",
-      "project_sha256_before": "88927fdd588a4de68d5c4623e3b3105032769c5a3b9187c67b6f9265c7e3d477",
-      "prior_state_already_in_same_turn": true
+      "git_commit": "8ffc7cb9bdba2d2ec8d3bb5d6819ba9d27e4327e",
+      "prior_project_sha256": "abd87911e45f296fab90732af76efc34bb2f05442399b0a79ce7e94731ac755b",
+      "prior_state_includes_uncommitted_current_turn_changes": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -6915,7 +7103,12 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T15:35:00+08:00"
+    "last_progress_at": "2026-09-19T16:58:30+08:00",
+    "last_poll_decision": {
+      "at": "2026-09-19T16:49:51+08:00",
+      "action": "no_remote_wait",
+      "reason": "Only current executor is planagent; additional_dispatches empty. AL36 is unsent queued under known401; no evidence of recovery. Continue authorized local review."
+    }
   },
   "candidate_protocols": {
     "A": {
@@ -7038,7 +7231,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL43",
+        "AL45",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -7047,7 +7240,10 @@
       "minimum_mechanism_protocol_status": "draft_not_execution_authorized",
       "missing_mass_review_task": "AL42",
       "evidence_correction_reference": "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
-      "formal_scientific_evidence_changed": false
+      "formal_scientific_evidence_changed": false,
+      "energy_readout_sensitivity_review_task": "AL43",
+      "critical_prior_provenance_task": "AL44",
+      "critical_prior_lower_bound_status": "Explicit modeling assumption in2605.23449v1; no OR1 theorem imported"
     }
   },
   "open_review_issues": [
