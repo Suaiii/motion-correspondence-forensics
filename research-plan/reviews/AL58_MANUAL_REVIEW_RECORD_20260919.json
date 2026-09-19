@@ -1,0 +1,143 @@
+{
+  "task_id": "AL58",
+  "recorded_at": "2026-09-19T20:32:49+08:00",
+  "status": "executed_scoped_symbolic_review",
+  "evidence_kind": "manual_derivation_plus_exact_fraction_toy_check",
+  "command": "C:/Users/ZHUyi/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 research-plan/reviews/AL58_FRACTION_CHECK.py",
+  "python_version": "Python 3.12.14",
+  "script": "../reviews/AL58_FRACTION_CHECK.py",
+  "script_sha256": "2b9a36a7ed0ccb97059228e87f49ec998df7904817dd6db266b85cd24489d341",
+  "inputs_sha256": {
+    "research-plan/AL58_RECOVERY_AGGREGATION_GAP_AUDIT_20260919.md": "6c06e125f19c550e4709800bec78bda0e8379846ee8e3dac313a1fc2b2b60e3f",
+    "research-plan/reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md": "4822d26031b34622c062437bb01a5df044a52e79d312d642f6ba48f355f5c6e2",
+    "research-plan/reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md": "0d19d2857644c66044d3fc837e4333e4fa71f18831c633f40a109d6701aa6375",
+    "research-plan/reviews/AL57_SOURCE_RECORD_20260919.json": "7bc281596535e5f0400f0b463d45c7d489a34a3ccc7233694b0e3724753e4e06"
+  },
+  "output_sha256": "2ad0e0284940e39ba1eef9d6f5291eead5023219baf3897c7928266c4ff32a88",
+  "stdout_json": {
+    "K": 2,
+    "dimension": 1,
+    "identical_source_law_reference": {
+      "E_A": {
+        "den": 2,
+        "num": 1
+      },
+      "E_B": {
+        "den": 8,
+        "num": 3
+      }
+    },
+    "iid_same_recovery_law_counterexample": {
+      "E_A_generated": {
+        "den": 2,
+        "num": 1
+      },
+      "E_A_real": {
+        "den": 4,
+        "num": 1
+      },
+      "E_B_generated": {
+        "den": 8,
+        "num": 3
+      },
+      "E_B_real": {
+        "den": 8,
+        "num": 1
+      },
+      "generated_y": {
+        "den": 1,
+        "num": 0
+      },
+      "real_y": {
+        "den": 2,
+        "num": 1
+      },
+      "recovery_pair_probability": {
+        "den": 4,
+        "num": 1
+      },
+      "recovery_support": [
+        {
+          "den": 1,
+          "num": 0
+        },
+        {
+          "den": 1,
+          "num": 1
+        }
+      ],
+      "same_recovery_law": true
+    },
+    "single_realization_table": [
+      {
+        "A": {
+          "den": 2,
+          "num": 1
+        },
+        "A_minus_B": {
+          "den": 4,
+          "num": 1
+        },
+        "B": {
+          "den": 4,
+          "num": 1
+        },
+        "y": {
+          "den": 1,
+          "num": 0
+        }
+      },
+      {
+        "A": {
+          "den": 4,
+          "num": 1
+        },
+        "A_minus_B": {
+          "den": 4,
+          "num": 1
+        },
+        "B": {
+          "den": 1,
+          "num": 0
+        },
+        "y": {
+          "den": 2,
+          "num": 1
+        }
+      },
+      {
+        "A": {
+          "den": 2,
+          "num": 1
+        },
+        "A_minus_B": {
+          "den": 4,
+          "num": 1
+        },
+        "B": {
+          "den": 4,
+          "num": 1
+        },
+        "y": {
+          "den": 1,
+          "num": 1
+        }
+      }
+    ]
+  },
+  "resources": {
+    "model_calls": 0,
+    "media_files_read": 0,
+    "server_calls": 0,
+    "gpu_calls": 0,
+    "network_calls": 0,
+    "third_party_packages": 0
+  },
+  "scientific_scope": "A-B exact identity, conditional covariance decomposition, one fixed-support source-gap counterexample; no efficacy or innovation admission",
+  "limitations": [
+    "Toy support is not a video or generative-model mechanism",
+    "Manual derivation is not independent scientific review",
+    "No author code or masked recovery path executed",
+    "No claim about empirical PSNR/AUROC"
+  ]
+}

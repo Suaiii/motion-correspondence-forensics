@@ -1,0 +1,66 @@
+{
+  "task_id": "AL58",
+  "reviewed_at": "2026-09-19T20:42:24+08:00",
+  "final_gate_result": "fail",
+  "gate_scope": "execution_contract_and_original_evidence_sufficiency",
+  "scientific_efficacy": "not_evaluated",
+  "independent_scientific_review": false,
+  "final_report": "AL58_FINAL_AGGREGATION_REVIEW_20260919.md",
+  "final_report_sha256": "f9e0d7f522efd83abcdb2bb0aa709dae5be6e8ee3855adff9112dfb3b3e70805",
+  "preserved_original_artifacts": {
+    "AL58_FRACTION_CHECK.py": "2b9a36a7ed0ccb97059228e87f49ec998df7904817dd6db266b85cd24489d341",
+    "AL58_MANUAL_REVIEW_RECORD_20260919.json": "51a8f2956da7d784a41475bd5cef6d1eb9084028e2098d3d464f569a0503c236",
+    "AL58_AGGREGATION_REVIEW_DRAFT_20260919.md": "f01f5cf4bce19e78db213af149f8ff1d3951ff49a7fed4b14cddb5354079088c",
+    "AL58_RECOVERY_AGGREGATION_GAP_REVIEW_20260919.md": "f01f5cf4bce19e78db213af149f8ff1d3951ff49a7fed4b14cddb5354079088c"
+  },
+  "observed_execution_count": 2,
+  "execution_observations": [
+    {
+      "ordinal": 1,
+      "evidence": "Visible tool chunk b29f60: python -X utf8 research-plan/reviews/AL58_FRACTION_CHECK.py followed by SHA256; exit0",
+      "started_at": null
+    },
+    {
+      "ordinal": 2,
+      "evidence": "Visible chunk b246a6: subprocess.check_output of same unchanged script, output stored in initial record",
+      "recorded_at": "2026-09-19T20:32:49+08:00",
+      "started_at": null
+    }
+  ],
+  "normalized_stdout_sha256": "2ad0e0284940e39ba1eef9d6f5291eead5023219baf3897c7928266c4ff32a88",
+  "contract_findings": [
+    "Current dispatch declared no execution/manual review; deterministic toy script was executed twice in reviews",
+    "Second identical execution added no necessary evidence",
+    "Self-equality assertion cannot test source equality",
+    "Original fixed generated target did not itself demonstrate equality of generated and recovery distributions"
+  ],
+  "valid_facts_retained": [
+    "A-B finite ensemble variance identity",
+    "Common-mean covariance expressions with explicit conditions",
+    "Manual distribution-level completion on same support G=Q=Uniform{0,1}, C=pointmass1/2 has negative expected distance gap"
+  ],
+  "correction_evidence_kind": "Manual algebra with explicit source distribution, no third execution or additional synthetic case",
+  "limits": [
+    "Expected squared-error gap is not PSNR expectation or AUROC",
+    "Recoverer must not depend on hidden target beyond fixed X for source-gap formulas",
+    "FixedX sameQ variance terms cancel between source mean distances; no unconditional variance-matching invalidity rule"
+  ],
+  "inputs_sha256": {
+    "research-plan/AL58_RECOVERY_AGGREGATION_GAP_AUDIT_20260919.md": "6c06e125f19c550e4709800bec78bda0e8379846ee8e3dac313a1fc2b2b60e3f",
+    "research-plan/reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md": "4822d26031b34622c062437bb01a5df044a52e79d312d642f6ba48f355f5c6e2",
+    "research-plan/reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md": "0d19d2857644c66044d3fc837e4333e4fa71f18831c633f40a109d6701aa6375",
+    "research-plan/reviews/AL57_SOURCE_RECORD_20260919.json": "7bc281596535e5f0400f0b463d45c7d489a34a3ccc7233694b0e3724753e4e06"
+  },
+  "source_no_new_requests": true,
+  "model_or_media_runs": false,
+  "server_or_gpu_runs": false,
+  "discarded_unregistered_proposal": {
+    "path": "../AL59_RECOVERY_DISTANCE_ESTIMAND_CONTRACT_20260919.md",
+    "status": "withdrawn_before_registration_or_dispatch",
+    "reason": "Overlaps existing protocol plans; variance-matching no-go rule lacked justification"
+  },
+  "next_independent_tasks": [
+    "AL60",
+    "AL36"
+  ]
+}
