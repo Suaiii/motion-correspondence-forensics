@@ -1,0 +1,70 @@
+{
+  "recorded_at": "2026-09-19T18:17:42+08:00",
+  "evidence_kind": "final_manual_review_and_digest_binding",
+  "task_verdicts": {
+    "AL45": [
+      "blocked",
+      "not_evaluated"
+    ],
+    "AL46": [
+      "done",
+      "pass"
+    ],
+    "AL47": [
+      "done",
+      "pass"
+    ],
+    "AL48": [
+      "done",
+      "not_applicable"
+    ],
+    "AL49": [
+      "done",
+      "fail"
+    ],
+    "AL50": [
+      "done",
+      "fail"
+    ]
+  },
+  "authoritative_files": {
+    "AL45_SELECTION_PROOF_AND_LIMITS_20260919.md": "855f6acfe3eac5e8719c703887c1fccc9aecfddce66a0e325f4efbbcfd9043f9",
+    "AL45_SOURCE_AND_REVIEW_LIMITS_20260919.json": "d8411707aa0286f0274009a3018a8548c34b5fe6725e9768795538b9f857cf96",
+    "AL46_MATCHED_DIRECTION_RANK_REVIEW_20260919.md": "e004d7f11c5baa4a894189d6238face86564bbf8bb76cb513fa4051d5abad434",
+    "AL47_OR1_NULL_PROBE_ENVELOPE_DESIGN_20260919.md": "cf3176b57e3474c0b1ba61b4fd1a8c707c1aa327d33e4b3a3b64785356b7c6f1",
+    "AL47_OR1_NULL_PROBE_ENVELOPE_REVIEW_20260919.md": "b90b32e922a7144c040d05d833bcf126d091baa4547e52f23e57d609df010142",
+    "AL48_DEDUPLICATION_DECISION_20260919.md": "a88bd3e9693ae098f0d6180db3675bdfb3ff889443ce65b465cc43ab5117b2c6",
+    "AL49_SOFT_COMPOSITION_NULL_REVIEW_20260919.md": "ca502bb09e1c6b980e7580ae8baff901474f0535595b949b83be6b116c7e108c",
+    "AL49_POLYNOMIAL_REVIEW_20260919.json": "07e49e06317ccfe28782db5e0444e446032d4d41943514a626bac4fde8574af6",
+    "AL50_REVIEW_CORRECTION_20260919.md": "9297026364c9dfeeb90459b27d4f48cf8ecaae259b843caead2c0d134fc2d3d1"
+  },
+  "duplicate_dispatch_entries_removed_from_active_history": [
+    {
+      "id": "cc-al48-planner-error-margin-20260919",
+      "task_ids": [
+        "AL48"
+      ],
+      "executor_role": "planagent",
+      "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "host_id": "local",
+      "status": "prepared",
+      "prepared_at": "2026-09-19T17:49:17+08:00",
+      "work_order": "../AL48_OR1_ERROR_AWARE_DECISION_MARGIN_AUDIT_20260919.md",
+      "work_order_sha256": "345bcd41bd56bb64b2ac7c612435a44f4e0ae969ffe8d8aee3a3ce3e9f5c2813",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "scope": "Error-aware score margin design only; no model/media/server/GPU",
+      "remote_send_required": false,
+      "background_process_running": false
+    }
+  ],
+  "original_source_and_failure_outputs_preserved": true,
+  "actual_new_numeric_outputs": [
+    "AL49 nested and expanded arithmetic with disclosed failures",
+    "AL50 seven assert categories insufficient for claimed global matching certificate"
+  ],
+  "no_new_numeric_replay_this_finalization": true,
+  "independent_scientific_review": false,
+  "task_table_structural_validation_not_scientific_validation": true,
+  "prior_project_sha256": "1e76e1b35cee3b1a024ff0fb1050985bebde41a26817a11a5287b8367cba1769",
+  "latest_committed_project": "89bae1454c3567efa312a7825f32e62844c1312e"
+}

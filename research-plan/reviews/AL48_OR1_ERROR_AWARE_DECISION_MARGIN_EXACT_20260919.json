@@ -1,0 +1,21 @@
+{
+  "task_id": "AL48",
+  "scope": "error_aware_decision_margin_math",
+  "gate_result": "pass",
+  "checks": [
+    {"name": "weighted_score_error_triangle_bound", "passed": true},
+    {"name": "outside_margin_sign_stability", "passed": true},
+    {"name": "inside_margin_is_undecided", "passed": true},
+    {"name": "positive_denominator_required", "passed": true},
+    {"name": "empirical_bound_not_certified", "passed": true},
+    {"name": "coverage_and_AUROC_separated", "passed": true}
+  ],
+  "formula": "B_s=sum_abs_w_l*B_q_l+rho_s; abs(s_hat-s)<=B_s",
+  "stable_condition": "abs(s_hat-tau)>B_s",
+  "undecided_condition": "abs(s_hat-tau)<=B_s",
+  "real_samples_accessed": false,
+  "model_calls": 0,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "formal_breakthrough": false
+}

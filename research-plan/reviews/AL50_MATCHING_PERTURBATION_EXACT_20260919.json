@@ -1,0 +1,93 @@
+{
+  "task_id": "AL50",
+  "created_at": "2026-09-19T10:10:50.127782+00:00",
+  "gate_result": "pass",
+  "gate_scope": "matching_perturbation_margin_math",
+  "checks": [
+    {
+      "name": "present_edges_safe",
+      "passed": true,
+      "margin": [
+        "29/100",
+        "19/100"
+      ]
+    },
+    {
+      "name": "absent_edges_safe",
+      "passed": true,
+      "margin": [
+        "19/100",
+        "29/100"
+      ]
+    },
+    {
+      "name": "cost_gap_positive",
+      "passed": true,
+      "gap": "7/25"
+    },
+    {
+      "name": "matching_identity_stable",
+      "passed": true,
+      "threshold": "101/2500",
+      "gap": "7/25"
+    },
+    {
+      "name": "pair_specific_gap_bound",
+      "passed": true,
+      "bound": "71/2500"
+    },
+    {
+      "name": "tie_break_not_margin",
+      "passed": true,
+      "note": "deterministic lex tie-break exists but gives no positive robustness margin"
+    },
+    {
+      "name": "standardization_bound_finite",
+      "passed": true,
+      "bound": "3/199"
+    }
+  ],
+  "fixed_caliper": "1/2",
+  "descriptor_error_bound": "1/100",
+  "matching_cardinality": 2,
+  "d_star": [
+    "1/5",
+    "3/10"
+  ],
+  "d_alternative": [
+    "2/5",
+    "1/2"
+  ],
+  "cost_gap": "7/25",
+  "eta_max": "101/10000",
+  "stability_threshold": "101/2500",
+  "pair_specific_bound": "71/2500",
+  "standardization_example": {
+    "x": "4",
+    "mu": "1",
+    "sigma": "2",
+    "epsilon_x": "1/100",
+    "epsilon_mu": "1/200",
+    "epsilon_sigma": "1/100",
+    "bound": "3/199"
+  },
+  "interpretation": {
+    "supported": "A strict caliper graph margin and unique same-cardinality cost gap can certify matching identity under declared descriptor errors.",
+    "not_supported": [
+      "actual AL12 pairing stability",
+      "real standardization error bound",
+      "source information",
+      "AUROC",
+      "new algorithm admission"
+    ],
+    "failure_boundary": "Zero cost gap or edges within the caliper uncertainty band remain non-robust even with deterministic ID tie-break."
+  },
+  "resources": {
+    "fraction_only": true,
+    "matching_enumeration": false,
+    "real_samples_accessed": false,
+    "model_calls": 0,
+    "server_calls": 0,
+    "gpu_calls": 0
+  }
+}

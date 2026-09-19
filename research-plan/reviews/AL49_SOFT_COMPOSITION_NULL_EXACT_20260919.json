@@ -1,0 +1,61 @@
+{
+  "task_id": "AL49",
+  "started_at": "2026-09-19T10:00:36.352726+00:00",
+  "completed_at": "2026-09-19T10:00:36.352726+00:00",
+  "gate_scope": "soft_composition_null_math",
+  "gate_result": "pass",
+  "work_order_sha256": "9d70fcfb677cb2a57ca89e6b927e2e39aaf2739a37702b520a4a714cf3815a26",
+  "checks": [
+    {
+      "name": "original_R_maps_commute",
+      "passed": true
+    },
+    {
+      "name": "fixed_soft_h_input_exactly_evaluated",
+      "passed": true
+    },
+    {
+      "name": "nonlinear_soft_maps_do_not_commute_here",
+      "passed": true
+    },
+    {
+      "name": "h_zero_boundary_preserved",
+      "passed": true
+    },
+    {
+      "name": "h_one_boundary_preserved",
+      "passed": true
+    }
+  ],
+  "identity_check": {
+    "R_a_of_R_b_equals_R_b_of_R_a": true,
+    "soft_ab": "54321/131072",
+    "soft_ba": "3491265/8388608",
+    "soft_commutator": "-14721/8388608",
+    "K_h": "-14721/131072",
+    "h": "1/8",
+    "x": "1/2",
+    "h_zero_normalized_commutator": "undefined (division by h^2 at h=0)",
+    "h_one_original_composition_commutes": true
+  },
+  "interpretation": {
+    "supported": "Even commuting nonlinear original maps need not yield commuting affine soft mixtures at finite h; this fixed null construction is a correction to the null-condition contract.",
+    "not_supported": [
+      "actual VAE behavior",
+      "source information",
+      "OR1 efficacy",
+      "new algorithm admission",
+      "CCF-A breakthrough"
+    ],
+    "limits": "One predeclared scalar rational point, no frequency/point/h search; original maps are artificial and have no labels."
+  },
+  "resources": {
+    "fraction_only": true,
+    "model_calls": 0,
+    "media_access": false,
+    "server_calls": 0,
+    "gpu_calls": 0,
+    "training_calls": 0,
+    "search_count": 1
+  }
+}

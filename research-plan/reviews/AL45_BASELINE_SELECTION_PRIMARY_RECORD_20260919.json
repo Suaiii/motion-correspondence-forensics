@@ -1,0 +1,15 @@
+{
+  "task_id": "AL45",
+  "retrieved_at": "2026-09-19T09:25:34.316634+00:00",
+  "source": "https://www.jmlr.org/papers/v11/cawley10a.html",
+  "source_title": "On Over-fitting in Model Selection and Subsequent Selection Bias in Performance Evaluation",
+  "authors": ["Gavin C. Cawley", "Nicola L. C. Talbot"],
+  "publication": "JMLR 11(70):2079-2107, 2010",
+  "bytes": 6655,
+  "sha256": "c3118f2b3a84d3826d6e45565a8e7f5a308b356635a30776844ded55b7db4509",
+  "read_scope": "Official article metadata and abstract page only; no full PDF stored or downloaded",
+  "directly_supported": "Selecting a model criterion on finite evaluation data can overfit the selection criterion and introduce selection bias in later performance evaluation.",
+  "not_imported_as": ["a CVPR result", "a simultaneous confidence procedure", "a project efficacy result"],
+  "model_calls": 0,
+  "real_samples_accessed": false
+}

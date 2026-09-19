@@ -1,0 +1,80 @@
+{
+  "task_id": "AL45",
+  "recorded_at": "2026-09-19T17:36:54+08:00",
+  "gate_result": "not_evaluated",
+  "evidence_kind": "primary_retrieval_status_and_manual_conditional_probability_proofs",
+  "search_gateway": {
+    "result": "404_not_found",
+    "reason": "provider gateway does not support /v1/alpha/search",
+    "content_received": false
+  },
+  "primary_entry_limit": 3,
+  "primary_entries": [
+    {
+      "url": "https://www.jmlr.org/papers/v11/cawley10a.html",
+      "final_url": "https://www.jmlr.org/papers/v11/cawley10a.html",
+      "status": 200,
+      "bytes": 6655,
+      "sha256": "c3118f2b3a84d3826d6e45565a8e7f5a308b356635a30776844ded55b7db4509",
+      "retrieved_at": "2026-09-19T09:25:34.316634+00:00",
+      "content_type": "text/html",
+      "read_scope": "Official metadata and abstract only; selection-bias warning, not IUT theorem",
+      "full_paper_read": false,
+      "payload_saved": false
+    },
+    {
+      "url": "https://www.fda.gov/media/102657/download",
+      "observed_at": "2026-09-19T09:25:37.424705+00:00",
+      "result": "HTTP404",
+      "article_retrieved": false
+    },
+    {
+      "url": "https://projecteuclid.org/journals/statistical-science/volume-11/issue-4/Bioequivalence-trials-intersection-union-tests-and-equivalence-confidence-sets/10.1214/ss/1032280304.pdf",
+      "started_at": "2026-09-19T09:26:29.639058+00:00",
+      "final_url": "https://projecteuclid.org/journals/statistical-science/volume-11/issue-4/Bioequivalence-trials-intersection-union-tests-and-equivalence-confidence-sets/10.1214/ss/1032280304.pdf",
+      "status": 200,
+      "bytes": 1161,
+      "sha256": "66e1ef488887e6bb73aa509068f222ced2ff0ca23cd687efe88cd6676871856d",
+      "content_type": "text/html",
+      "article_retrieved": false,
+      "returned_page_title": null,
+      "recorded_at": "2026-09-19T09:26:31.267106+00:00",
+      "raw_payload_saved": false,
+      "read_scope": "Returned HTML identification only; requested paper PDF not obtained",
+      "full_paper_read": false,
+      "payload_saved": false
+    }
+  ],
+  "conditional_proofs_in_current_note": [
+    "calibration choice defines conditional comparator; CI validity remains separate",
+    "IUT rejection event subset of each component event under fixed true null",
+    "minimum component lower bound is valid for the minimum parameter under stated component validity",
+    "observed strongest baseline need not maximize candidate advantage; direction depends on selection"
+  ],
+  "unverified": [
+    "Original IUT methodology full text",
+    "Project cluster CI validity and finite-sample coverage",
+    "Real trained model/sample identity"
+  ],
+  "old_draft_receipt": {
+    "path": "research-plan\\reviews\\AL45_STRONG_BASELINE_SELECTION_EXACT_20260919.json",
+    "sha256": "0e40ee154cca34dd3d4df66fc243a3aee46973676ee5c62122a7d72f006c716a",
+    "role": "superseded_manual_checklist_not_executed_evidence",
+    "pass_not_accepted": true
+  },
+  "old_draft_report": {
+    "path": "research-plan\\reviews\\AL45_STRONG_BASELINE_SELECTION_REVIEW_20260919.md",
+    "sha256": "572f14167adeb903628edaa550a1447e8b319bd8c37d2f17474e72d2e5b405f1",
+    "role": "superseded_draft_with_selection_direction_and_bound_overstatements"
+  },
+  "authoritative_review": "research-plan\\reviews\\AL45_SELECTION_PROOF_AND_LIMITS_20260919.md",
+  "authoritative_review_sha256": "855f6acfe3eac5e8719c703887c1fccc9aecfddce66a0e325f4efbbcfd9043f9",
+  "numeric_checks_executed": 0,
+  "bootstrap_runs": 0,
+  "real_prediction_access": false,
+  "model_calls": 0,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "formal_independent_scientific_review": false,
+  "work_order_limits_respected": true
+}

@@ -3929,7 +3929,7 @@
         "AL37",
         "AL42"
       ],
-      "status": "ready",
+      "status": "blocked",
       "gate_result": "not_evaluated",
       "gate_scope": "strong_baseline_selection_design",
       "hypothesis": "关键来源和统计比较身份必须明确可证，不能由相似术语或选择性报告推成方法优势。",
@@ -3942,7 +3942,9 @@
         "主张多重性保证前核对primary方法学依据，无依据则保留未评估"
       ],
       "artifacts": [
-        "../reviews/AL45_STRONG_BASELINE_SELECTION_REVIEW_20260919.md"
+        "../reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md",
+        "../reviews/AL45_SOURCE_AND_REVIEW_LIMITS_20260919.json",
+        "../reviews/AL45_BASELINE_SELECTION_PRIMARY_RECORD_20260919.json"
       ],
       "work_order": "../AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
       "work_order_sha256": "3b31d2d4de984f4dfa83d6cff995ad067b16e41ff82ee2803f7bccd84f7bbb18",
@@ -3962,7 +3964,494 @@
       "scientific_innovation_gate_passed": false,
       "implementation_authorized": false,
       "prepared_at": "2026-09-19T17:14:10+08:00",
-      "hypothesis_result": "not_evaluated"
+      "hypothesis_result": "conditional_selection_and_IUT_algebra_written_external_methodology_verification_incomplete",
+      "started_at": "2026-09-19T17:21:07+08:00",
+      "dispatch_status": "partial_design_delivered_primary_IUT_source_unavailable",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md",
+      "review_scope": "Partial design with conditional set-inclusion proofs; not completed external source verification",
+      "artifact_sha256": "855f6acfe3eac5e8719c703887c1fccc9aecfddce66a0e325f4efbbcfd9043f9",
+      "primary_source_record": "../reviews/AL45_BASELINE_SELECTION_PRIMARY_RECORD_20260919.json",
+      "next_action": "Resume only unresolved primary methodology/CI scope when source access changes; independent local AL46 can proceed",
+      "superseded_in_turn_assessment": {
+        "status": "done",
+        "gate_result": "pass",
+        "completed_at": "2026-09-19T17:30:58+08:00",
+        "review": "../reviews/AL45_STRONG_BASELINE_SELECTION_REVIEW_20260919.md",
+        "artifact_sha256": "572f14167adeb903628edaa550a1447e8b319bd8c37d2f17474e72d2e5b405f1",
+        "corrected_at": "2026-09-19T17:36:54+08:00",
+        "reason": "Initial close relied on self-authored checklist and abstract-only source; explicit work-order full methodology condition not satisfied"
+      },
+      "observed_work_at": "2026-09-19T17:36:54+08:00",
+      "blocker": "Within3 primary entries, selection-bias abstract read but original IUT/full methodology text unavailable. No actual CI verification; do not accept self-authored exact/checklist pass.",
+      "superseded_draft_artifacts": [
+        {
+          "path": "research-plan\\reviews\\AL45_STRONG_BASELINE_SELECTION_EXACT_20260919.json",
+          "sha256": "0e40ee154cca34dd3d4df66fc243a3aee46973676ee5c62122a7d72f006c716a",
+          "role": "superseded_manual_checklist_not_executed_evidence",
+          "pass_not_accepted": true
+        },
+        {
+          "path": "research-plan\\reviews\\AL45_STRONG_BASELINE_SELECTION_REVIEW_20260919.md",
+          "sha256": "572f14167adeb903628edaa550a1447e8b319bd8c37d2f17474e72d2e5b405f1",
+          "role": "superseded_draft_with_selection_direction_and_bound_overstatements"
+        }
+      ]
+    },
+    {
+      "id": "AL46",
+      "milestone": "M2",
+      "title": "匹配基线后OR1读出的局部方向与秩条件审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL20",
+        "AL29",
+        "AL43"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL20",
+        "AL29",
+        "AL43"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "matched_direction_local_rank_math",
+      "hypothesis": "存在原单步匹配描述的一阶零方向并不保证实际q可见；核/行空间条件应明确弱基线和完整同信息基线的区别。",
+      "work": [
+        "给B=J_b,Q=J_q的核空间/行空间/秩与伪逆条件",
+        "分开固定评分、坐标度量和数值误差",
+        "不重复既有场、标签、模型或真实媒体运行"
+      ],
+      "acceptance": [
+        "公式前提与必要充分性推导完整",
+        "实际可微性和数值秩未知保留",
+        "不把弱基线方向当同信息强基线之外的新增信息"
+      ],
+      "artifacts": [
+        "../reviews/AL46_MATCHED_DIRECTION_RANK_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL46_MATCHED_DIRECTION_RANK_AUDIT_20260919.md",
+      "work_order_sha256": "a829d7c91d8e989529ee06884f07dfc16497fc1bc9f931003064fade10bac44a",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T17:36:54+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "weak_baseline_null_direction_condition_separated_from_full_stable_feature_containment",
+      "next_action": "AL47 null-probe envelope design; no real execution until candidate/data/resource gates",
+      "started_at": "2026-09-19T17:37:53+08:00",
+      "dispatch_status": "completed_scoped_manual_review",
+      "completed_at": "2026-09-19T18:17:42+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL46_MATCHED_DIRECTION_RANK_REVIEW_20260919.md",
+      "review_scope": "Manual row/null-space/rank derivation; no Jacobian estimation, model, data, independent scientific review or innovation admission",
+      "artifact_sha256": "e004d7f11c5baa4a894189d6238face86564bbf8bb76cb513fa4051d5abad434",
+      "draft_hash_history": [
+        {
+          "old_sha256": "558378ebc8b613e2cf977737215831c52382ef5c66c9b9159e8de9a502521d9f",
+          "old_completed_at": "2026-09-19T17:43:17+08:00",
+          "reason": "In-turn report expanded with full proof and precise null/support assumptions before final commit; final bytes now bound"
+        }
+      ],
+      "finalized_at": "2026-09-19T18:17:42+08:00",
+      "evidence_kind": "manual_symbolic_or_protocol_design; no numerical test batch claimed"
+    },
+    {
+      "id": "AL47",
+      "milestone": "M2",
+      "title": "OR1零假设探针与实际读出功效的最小区分设计",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL19",
+        "AL35",
+        "AL43"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL19",
+        "AL35",
+        "AL43"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "null_probe_envelope_design",
+      "hypothesis": "探针非交换或K非零不足以支持来源信息，需在固定null边界下分离实现/处理/读出失败解释。",
+      "work": [
+        "固定null情形、输入权限、支持/缓存/数值字段和失败规则",
+        "区分K、q、冻结分数、完整强基线与处理属性",
+        "不执行模型/媒体/服务器/GPU，不从条件表构造新算法主张"
+      ],
+      "acceptance": [
+        "草案可否证、无新数据/标签选择",
+        "失败不重命名开发池或恢复AL05",
+        "与AL36外部反方审查分离"
+      ],
+      "artifacts": [
+        "../reviews/AL47_OR1_NULL_PROBE_ENVELOPE_DESIGN_20260919.md",
+        "../reviews/AL47_OR1_NULL_PROBE_ENVELOPE_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL47_OR1_NULL_PROBE_ENVELOPE_DESIGN_20260919.md",
+      "work_order_sha256": "1b3b126784a1db8582dc003a2f632670eed84aa38c9c35107269b0f14d2585a7",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T17:43:17+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "null_boundary_table_separates_implementation_processing_readout_and_transfer_failure",
+      "dispatch_status": "completed_scoped_manual_review",
+      "completed_at": "2026-09-19T18:17:42+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL47_OR1_NULL_PROBE_ENVELOPE_REVIEW_20260919.md",
+      "review_scope": "Planner null/probe envelope design only; no model, data, server, GPU, independent scientific review, or innovation admission",
+      "artifact_sha256": "b90b32e922a7144c040d05d833bcf126d091baa4547e52f23e57d609df010142",
+      "next_action": "AL48 removed as duplicate ofAL16; followAL51 soft mixing decomposition, not repeated error propagation",
+      "draft_hash_history": [
+        {
+          "old_sha256": "93c1fde33d87d9af070c00f6d124bb5b0a0c3a5d640e0b48e2294bbeec185488",
+          "old_completed_at": "2026-09-19T17:49:17+08:00",
+          "reason": "In-turn report expanded with full proof and precise null/support assumptions before final commit; final bytes now bound"
+        }
+      ],
+      "finalized_at": "2026-09-19T18:17:42+08:00",
+      "evidence_kind": "manual_symbolic_or_protocol_design; no numerical test batch claimed"
+    },
+    {
+      "id": "AL48",
+      "milestone": "M2",
+      "title": "OR1误差界与读出决策间隔的条件审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL16",
+        "AL43",
+        "AL47"
+      ],
+      "requires_pass": [
+        "AL16",
+        "AL43",
+        "AL47"
+      ],
+      "status": "done",
+      "gate_result": "not_applicable",
+      "gate_scope": "error_aware_decision_margin_math",
+      "hypothesis": "若q分量误差界和分母正下界可审计，只有评分离阈值超过传播界才可称数值决策稳定；稳定不等于来源正确或泛化。",
+      "work": [
+        "推导分数误差界与undecided区间",
+        "区分阈值稳定、coverage、AUROC、来源正确和跨decoder泛化",
+        "处理经验界/无分母下界/支持变化；不执行模型或旧批次"
+      ],
+      "acceptance": [
+        "固定阈值和fallback不看标签重选",
+        "未知界标unknown，不写certified",
+        "公式审查不释放真实实验或创新准入"
+      ],
+      "artifacts": [
+        "../reviews/AL48_OR1_ERROR_AWARE_DECISION_MARGIN_REVIEW_20260919.md",
+        "../reviews/AL48_DEDUPLICATION_DECISION_20260919.md"
+      ],
+      "work_order": "../AL48_OR1_ERROR_AWARE_DECISION_MARGIN_AUDIT_20260919.md",
+      "work_order_sha256": "345bcd41bd56bb64b2ac7c612435a44f4e0ae969ffe8d8aee3a3ce3e9f5c2813",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T17:49:17+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "already_covered_by_AL16; no_new_information",
+      "dispatch_status": "closed_as_duplicate",
+      "completed_at": "2026-09-19T17:56:42+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL48_DEDUPLICATION_DECISION_20260919.md",
+      "review_scope": "Deduplicated against AL16; proposed draft not accepted as a new execution or new result",
+      "next_action": "Proceed to AL49 soft composition null audit; do not rerun error-bound formulas",
+      "superseded_draft": {
+        "task_snapshot": {
+          "id": "AL48",
+          "milestone": "M2",
+          "title": "OR1误差界与读出决策间隔的条件审查",
+          "assignee": "planagent",
+          "parents": [
+            "AL16",
+            "AL43",
+            "AL47"
+          ],
+          "requires_pass": [
+            "AL16",
+            "AL43",
+            "AL47"
+          ],
+          "status": "ready",
+          "gate_result": "not_evaluated",
+          "gate_scope": "error_aware_decision_margin_math",
+          "hypothesis": "若q分量误差界和分母正下界可审计，只有评分离阈值超过传播界才可称数值决策稳定；稳定不等于来源正确或泛化。",
+          "work": [
+            "推导分数误差界与undecided区间",
+            "区分阈值稳定、coverage、AUROC、来源正确和跨decoder泛化",
+            "处理经验界/无分母下界/支持变化；不执行模型或旧批次"
+          ],
+          "acceptance": [
+            "固定阈值和fallback不看标签重选",
+            "未知界标unknown，不写certified",
+            "公式审查不释放真实实验或创新准入"
+          ],
+          "artifacts": [
+            "../reviews/AL48_OR1_ERROR_AWARE_DECISION_MARGIN_REVIEW_20260919.md"
+          ],
+          "work_order": "../AL48_OR1_ERROR_AWARE_DECISION_MARGIN_AUDIT_20260919.md",
+          "work_order_sha256": "345bcd41bd56bb64b2ac7c612435a44f4e0ae969ffe8d8aee3a3ce3e9f5c2813",
+          "plan_version": "cvpr27-20260919-v1.5",
+          "prepared_at": "2026-09-19T17:49:17+08:00",
+          "due_at": "2026-09-22T22:00:00+08:00",
+          "resource_policy": {
+            "local_cpu": true,
+            "threads": 2,
+            "server_access": false,
+            "real_media": false,
+            "gpu": false,
+            "classifier_training": false,
+            "large_downloads": false,
+            "research_runtime_execution": false
+          },
+          "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+          "implementation_authorized": false,
+          "scientific_innovation_gate_passed": false,
+          "hypothesis_result": "not_evaluated",
+          "dispatch_status": "prepared_local_planner_work"
+        },
+        "draft_exact_artifact_not_accepted": true,
+        "reason": "AL16 already includes weighted score bound and threshold stability conditions"
+      },
+      "evidence_kind": "deduplication_decision",
+      "artifact_sha256": "a88bd3e9693ae098f0d6180db3675bdfb3ff889443ce65b465cc43ab5117b2c6",
+      "unexecuted_draft_receipt": {
+        "path": "../reviews/AL48_OR1_ERROR_AWARE_DECISION_MARGIN_EXACT_20260919.json",
+        "sha256": "ebfde647d29b5fd89be565ec3aad49782d3fe5699882887940def907bcaec122",
+        "role": "manual_checklist_not_execution_evidence",
+        "pass_not_accepted": true
+      }
+    },
+    {
+      "id": "AL49",
+      "milestone": "M2",
+      "title": "原重建映射可交换是否传递到软混合路径",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL15",
+        "AL47"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL15",
+        "AL47"
+      ],
+      "status": "done",
+      "gate_result": "fail",
+      "gate_scope": "soft_composition_null_math",
+      "hypothesis": "非线性原R可交换不自动保证P=(1-h)id+hR的软路径可交换，需在固定有理构造中核对。",
+      "work": [
+        "固定标量R_a=x^2、R_b=x^4、h=1/8、u=1/2",
+        "直接有理计算两个软路径与K，给出一般边界",
+        "不改旧结果、不执行模型媒体服务器GPU，不形成来源收益"
+      ],
+      "acceptance": [
+        "输入和核查顺序固定，不扫h/点/标签",
+        "保留h=0的K/h^2未定义边界与h=1端点",
+        "仅改进null对照合法性，不作为新算法准入"
+      ],
+      "artifacts": [
+        "../reviews/AL49_SOFT_COMPOSITION_NULL_REVIEW_20260919.md",
+        "../reviews/AL49_SOFT_COMPOSITION_NULL_EXACT_20260919.json",
+        "../reviews/AL49_POLYNOMIAL_REVIEW_20260919.json"
+      ],
+      "work_order": "../AL49_SOFT_COMPOSITION_NULL_AUDIT_20260919.md",
+      "work_order_sha256": "9d70fcfb677cb2a57ca89e6b927e2e39aaf2739a37702b520a4a714cf3815a26",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T17:56:42+08:00",
+      "due_at": "2026-09-23T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "nonlinear_commuting_original_maps_do_not_guarantee_soft_composition_commutes; original_execution_contract_failed",
+      "dispatch_status": "completed_failed_execution_contract",
+      "completed_at": "2026-09-19T18:06:34+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL49_SOFT_COMPOSITION_NULL_REVIEW_20260919.md",
+      "review_scope": "Fixed scalar rational counterexample arithmetic corrected, but one-time execution contract failed; no real model/data or independent review",
+      "artifact_sha256": "ca502bb09e1c6b980e7580ae8baff901474f0535595b949b83be6b116c7e108c",
+      "exact_artifact_sha256": "07e49e06317ccfe28782db5e0444e446032d4d41943514a626bac4fde8574af6",
+      "next_action": "AL50 matching perturbation margin audit; do not rerun AL49 or alter null input",
+      "execution_contract_failure": "Inline arithmetic occurred before saved script and saved script required correction; original one-batch preregistration contract not met. Arithmetic cross-check preserved, scientific result not erased.",
+      "evidence_kind": "fixed_math_counterexample_with_disclosed_failed_assertion_and_reruns"
+    },
+    {
+      "id": "AL50",
+      "milestone": "M2",
+      "title": "配对图与最小费用匹配在描述误差下的稳定条件",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL23",
+        "AL46"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL23",
+        "AL46"
+      ],
+      "status": "done",
+      "gate_result": "fail",
+      "gate_scope": "matching_perturbation_margin_math",
+      "hypothesis": "标准化描述误差和匹配费用间隔共同决定离散配对身份是否稳定，固定ID平局不能替代鲁棒性证书。",
+      "work": [
+        "推导RMS描述误差对caliper边图与费用的传播界",
+        "用次优同基数费用间隔写唯一最优身份保持条件",
+        "区分平局/字典序与扰动稳定性，不重选配对或运行真实匹配"
+      ],
+      "acceptance": [
+        "输入配置/误差范围/间隔均预先声明",
+        "界不满足时保留unknown/fail，不扩大caliper或重排ID",
+        "不产生真实AUROC、模型/服务器/GPU或新算法准入"
+      ],
+      "artifacts": [
+        "../reviews/AL50_MATCHING_PERTURBATION_MARGIN_REVIEW_20260919.md",
+        "../reviews/AL50_MATCHING_PERTURBATION_EXACT_20260919.json",
+        "../reviews/AL50_REVIEW_CORRECTION_20260919.md"
+      ],
+      "work_order": "../AL50_MATCHING_PERTURBATION_MARGIN_AUDIT_20260919.md",
+      "work_order_sha256": "0ad7088a3b1048f1883c91180b96aaa14c3c8717e082a60fe0796547daa84aaa",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T18:06:34+08:00",
+      "due_at": "2026-09-23T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "heterogeneous_two_matching_bound_not_sufficient; numeric_lists_do_not_define_verified_common_graph",
+      "dispatch_status": "prepared_local_planner_work",
+      "completed_at": "2026-09-19T18:17:42+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL50_REVIEW_CORRECTION_20260919.md",
+      "artifact_sha256": "9297026364c9dfeeb90459b27d4f48cf8ecaae259b843caead2c0d134fc2d3d1",
+      "review_scope": "Symbolic correction; original seven arithmetic checks preserved but no global matching identity certificate",
+      "execution_stage": "original_receipt_not_accepted_after_review",
+      "next_action": "Do not rerun or extend AL50 lists; retain corrected all-competitor margin formula for future preregistration",
+      "superseded_original_claim": {
+        "report_sha256": "315eb65a5b4f54e0857c5ba861ca79796d60c6f2ea4aa4eff848b4a539d0a9d4",
+        "receipt_sha256": "9591d15984a38770ffbd5915e1e3b669f7456df6b318961caa9ac21bd70b0ee1",
+        "original_report_check_count": 8,
+        "actual_archive_assertion_categories": 7,
+        "original_report_pass_not_accepted": true,
+        "unified_graph_or_competing_matchings_specified": false,
+        "nominal_competitor_at_caliper_boundary": true
+      }
+    },
+    {
+      "id": "AL51",
+      "milestone": "M2",
+      "title": "软混合响应的原次序项与插值曲率项分解",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL19",
+        "AL43",
+        "AL49"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL19",
+        "AL43"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "soft_mixing_mechanism_decomposition",
+      "hypothesis": "有限h顺序响应可能同时含原R次序与插值弦偏离；仅K非零不足以归因为原解码次序。",
+      "work": [
+        "逐项推导K_h=C+(J_a-J_b)/h并说明作用域",
+        "审查C2条件下插值项尺度及极限，分开线性和非线性",
+        "设计至多一个未执行的分解对照并明确额外调用成本"
+      ],
+      "acceptance": [
+        "不重跑AL49或改变其fail",
+        "未知平滑性/真实作用域不填已证",
+        "仅条件机制设计，不把分解当原创算法或实证"
+      ],
+      "artifacts": [
+        "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL51_SOFT_MIXING_DECOMPOSITION_AUDIT_20260919.md",
+      "work_order_sha256": "d9e2480fdd16e9d9e09de3f592bdf363ac07b7987a7491fa3436375ff20d8210",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T18:17:42+08:00",
+      "due_at": "2026-09-23T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "hypothesis_result": "not_evaluated",
+      "failure_parent_pass_not_required_reason": "AL49 arithmetic is a question cue; its failed execution protocol remains failed and is not used as a success gate"
     }
   ],
   "storage_policy": {
@@ -5388,7 +5877,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T17:16:24+08:00",
+  "updated_at": "2026-09-19T18:17:42+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -6057,6 +6546,14 @@
       "plan_sha256": "a2513aeb3a3e4a2df72a3a399fce07ffd9a1e7ff077e302c871f48fa1951a586",
       "reason": "Separate K, q and frozen score sensitivity; authenticate critical prior and identify its empirical postulate; no experiment/gate relaxation",
       "date_budget_or_threshold_changes": false
+    },
+    {
+      "at": "2026-09-19T18:17:42+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "comparison_gap_and_null_mechanism_audits",
+      "plan_sha256": "03e050ea0539ba4d11de2942cd034a7059afccabbfef9c144aa44b20302a150b",
+      "reason": "AL45 remains source-blocked; scoped AL46/AL47 design; AL48 duplicate; AL49 execution fail; AL50 global certificate withdrawn; direct AL51 decomposition prepared",
+      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
@@ -6071,22 +6568,22 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al45-planner-baseline-selection-20260919",
+      "id": "cc-al51-planner-soft-decomposition-20260919",
       "task_ids": [
-        "AL45"
+        "AL51"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T17:14:10+08:00",
-      "work_order": "../AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
-      "work_order_sha256": "3b31d2d4de984f4dfa83d6cff995ad067b16e41ff82ee2803f7bccd84f7bbb18",
+      "prepared_at": "2026-09-19T18:17:42+08:00",
+      "work_order": "../AL51_SOFT_MIXING_DECOMPOSITION_AUDIT_20260919.md",
+      "work_order_sha256": "d9e2480fdd16e9d9e09de3f592bdf363ac07b7987a7491fa3436375ff20d8210",
       "plan_version": "cvpr27-20260919-v1.5",
+      "plan_sha256": "03e050ea0539ba4d11de2942cd034a7059afccabbfef9c144aa44b20302a150b",
+      "scope": "Direct soft-path mechanism decomposition; no model/media/server/GPU",
       "remote_send_required": false,
-      "background_process_running": false,
-      "scope": "Independent comparison-estimand review; no repeated prototype, true data or model execution",
-      "plan_sha256": "a2513aeb3a3e4a2df72a3a399fce07ffd9a1e7ff077e302c871f48fa1951a586"
+      "background_process_running": false
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -6097,7 +6594,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T17:16:24+08:00",
+    "last_coordinator_activity_at": "2026-09-19T18:17:42+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -6837,9 +7334,140 @@
         "completed_at": "2026-09-19T17:14:10+08:00",
         "review": "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
         "recording_note": "Original prepared timestamp was manually assigned; this completion is actual clock time"
+      },
+      {
+        "id": "cc-al45-planner-baseline-selection-20260919",
+        "task_ids": [
+          "AL45"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "partial_delivery_blocked_source_verification",
+        "prepared_at": "2026-09-19T17:14:10+08:00",
+        "work_order": "../AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
+        "work_order_sha256": "3b31d2d4de984f4dfa83d6cff995ad067b16e41ff82ee2803f7bccd84f7bbb18",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "scope": "Independent comparison-estimand review; no repeated prototype, true data or model execution",
+        "plan_sha256": "a2513aeb3a3e4a2df72a3a399fce07ffd9a1e7ff077e302c871f48fa1951a586",
+        "started_at": "2026-09-19T17:21:07+08:00",
+        "completed_at": "2026-09-19T17:30:58+08:00",
+        "review": "../reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md",
+        "outcome": "Conditional proofs delivered; full IUT primary methodology unavailable; prior draft-only pass not accepted",
+        "superseded_in_turn_status": "completed_scoped_design",
+        "reviewed_at": "2026-09-19T17:36:54+08:00",
+        "gate_result": "not_evaluated"
+      },
+      {
+        "id": "cc-al46-planner-matched-direction-20260919",
+        "task_ids": [
+          "AL46"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_design",
+        "prepared_at": "2026-09-19T17:36:54+08:00",
+        "work_order": "../AL46_MATCHED_DIRECTION_RANK_AUDIT_20260919.md",
+        "work_order_sha256": "a829d7c91d8e989529ee06884f07dfc16497fc1bc9f931003064fade10bac44a",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Matched-direction sensitivity design; symbolic only, no repeated prototype or model/media/server",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T17:37:53+08:00",
+        "completed_at": "2026-09-19T18:17:42+08:00",
+        "review": "../reviews/AL46_MATCHED_DIRECTION_RANK_REVIEW_20260919.md",
+        "outcome": "Symbolic rank conditions only; zero model/JVP/data calls",
+        "draft_completion_recorded_at": "2026-09-19T17:43:17+08:00"
+      },
+      {
+        "id": "cc-al47-planner-null-probe-design-20260919",
+        "task_ids": [
+          "AL47"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_design",
+        "prepared_at": "2026-09-19T17:43:17+08:00",
+        "work_order": "../AL47_OR1_NULL_PROBE_ENVELOPE_DESIGN_20260919.md",
+        "work_order_sha256": "1b3b126784a1db8582dc003a2f632670eed84aa38c9c35107269b0f14d2585a7",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Null-probe envelope design only; no model/media/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T18:17:42+08:00",
+        "review": "../reviews/AL47_OR1_NULL_PROBE_ENVELOPE_REVIEW_20260919.md",
+        "outcome": "Bounded null/probe decision table; zero model/media/server/GPU calls",
+        "draft_completion_recorded_at": "2026-09-19T17:49:17+08:00"
+      },
+      {
+        "id": "cc-al48-planner-error-margin-20260919",
+        "task_ids": [
+          "AL48"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "closed_as_duplicate",
+        "prepared_at": "2026-09-19T17:49:17+08:00",
+        "work_order": "../AL48_OR1_ERROR_AWARE_DECISION_MARGIN_AUDIT_20260919.md",
+        "work_order_sha256": "345bcd41bd56bb64b2ac7c612435a44f4e0ae969ffe8d8aee3a3ce3e9f5c2813",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Error-aware score margin design only; no model/media/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T17:56:42+08:00",
+        "task_outcomes": {
+          "AL48": "done_not_applicable"
+        },
+        "review": "../reviews/AL48_DEDUPLICATION_DECISION_20260919.md",
+        "gate_result": "not_applicable"
+      },
+      {
+        "id": "cc-al49-planner-soft-null-20260919",
+        "task_ids": [
+          "AL49"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_with_failed_execution_contract",
+        "prepared_at": "2026-09-19T17:56:42+08:00",
+        "work_order": "../AL49_SOFT_COMPOSITION_NULL_AUDIT_20260919.md",
+        "work_order_sha256": "9d70fcfb677cb2a57ca89e6b927e2e39aaf2739a37702b520a4a714cf3815a26",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Fixed nonlinear soft composition null audit; no model/media/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T18:06:34+08:00",
+        "review": "../reviews/AL49_SOFT_COMPOSITION_NULL_REVIEW_20260919.md",
+        "outcome": "Corrected fixed rational null counterexample; one-time execution contract failed; no model calls"
+      },
+      {
+        "id": "cc-al50-planner-matching-margin-20260919",
+        "task_ids": [
+          "AL50"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_failed_review",
+        "prepared_at": "2026-09-19T18:06:34+08:00",
+        "work_order": "../AL50_MATCHING_PERTURBATION_MARGIN_AUDIT_20260919.md",
+        "work_order_sha256": "0ad7088a3b1048f1883c91180b96aaa14c3c8717e082a60fe0796547daa84aaa",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "Matching perturbation margin design only; no data/model/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T18:17:42+08:00",
+        "review": "../reviews/AL50_REVIEW_CORRECTION_20260919.md",
+        "outcome": "Reject only-second-best heterogeneous error certificate; preserve7 arithmetic assertions, no real matching"
       }
     ],
-    "last_substantive_review": "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL50_REVIEW_CORRECTION_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -6858,12 +7486,13 @@
       "remote_send_required": true,
       "duplicate_dispatch_suppressed": true,
       "last_observed_status": "systemError",
-      "last_observed_at": "2026-09-19T15:35:00+08:00",
+      "last_observed_at": "2026-09-19T14:54:30+08:00",
       "failure_code": "401_unauthorized",
       "execution_artifacts_available": false,
       "rerun_required": false,
       "dispatch_status": "prepared_not_sent_until_state_change",
-      "blocker": "Research executor API returned 401 Unauthorized; no artifact and no retry or identity change."
+      "blocker": "Research executor API returned 401; no artifact and no retry or identity change.",
+      "observation_note": "Historical status from existing401 receipt; not polled anew during local work"
     },
     "dispatch_policy_state": "local_planner_work_prepared_external_research_auth_blocked",
     "waiting_on": [
@@ -6981,14 +7610,17 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL43",
-        "AL44"
+        "AL46",
+        "AL47",
+        "AL48",
+        "AL49",
+        "AL50"
       ],
       "executor_role": "planagent",
-      "status": "completed_scoped_reviews",
-      "completed_at": "2026-09-19T17:14:10+08:00",
+      "status": "scoped_reviews_finalized_with_explicit_failures_and_deduplication",
+      "finalized_at": "2026-09-19T18:17:42+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL45",
+      "next_prepared_task_id": "AL51",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -7006,19 +7638,22 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T17:14:10+08:00",
+    "last_local_review_at": "2026-09-19T18:17:42+08:00",
     "prepared_independent_task_ids": [
-      "AL45",
+      "AL51",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL45",
+        "AL51",
         "AL36"
       ],
       "executor_blocked": [
         "AL36"
+      ],
+      "source_blocked": [
+        "AL45"
       ]
     },
     "material_decision_notices": [
@@ -7054,12 +7689,14 @@
       },
       {
         "id": "or1-observed-readout-sensitivity-requirement",
-        "status": "prepared_for_current_final_not_confirmed",
+        "status": "confirmed_final_output",
         "prepared_at": "2026-09-19T17:16:24+08:00",
         "message": "OR1需检查实际q和冻结评分而非仅场变化；关键先例下界为建模假设，不用作OR1理论保证。",
         "evidence": "../reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md",
         "secondary_evidence": "../reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md",
-        "not_a_milestone_receipt": true
+        "not_a_milestone_receipt": true,
+        "confirmed_at": "2026-09-19T17:21:07+08:00",
+        "confirmation_evidence": "Previous completed heartbeat NOTIFY final in visible conversation stated K/q/score distinction and modeling lower-bound limitation; not OS delivery"
       }
     ],
     "context_updates": [
@@ -7090,9 +7727,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "git_commit": "8ffc7cb9bdba2d2ec8d3bb5d6819ba9d27e4327e",
-      "prior_project_sha256": "abd87911e45f296fab90732af76efc34bb2f05442399b0a79ce7e94731ac755b",
-      "prior_state_includes_uncommitted_current_turn_changes": true
+      "commit": "89bae1454c3567efa312a7825f32e62844c1312e",
+      "project_sha256": "062fa0e207f736f1ec543e97fb9ee5db3a6bf891f4479580bdfe38d4f55e4df6",
+      "contains_current_turn_local_start_update": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -7103,11 +7740,11 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T16:58:30+08:00",
+    "last_progress_at": "2026-09-19T18:06:34+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T16:49:51+08:00",
+      "at": "2026-09-19T17:21:07+08:00",
       "action": "no_remote_wait",
-      "reason": "Only current executor is planagent; additional_dispatches empty. AL36 is unsent queued under known401; no evidence of recovery. Continue authorized local review."
+      "reason": "Current executor planagent; additional_dispatches empty; AL36 queued unsent under previously observed401; no new recovery evidence."
     }
   },
   "candidate_protocols": {
@@ -7231,7 +7868,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL45",
+        "AL51",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -7243,7 +7880,14 @@
       "formal_scientific_evidence_changed": false,
       "energy_readout_sensitivity_review_task": "AL43",
       "critical_prior_provenance_task": "AL44",
-      "critical_prior_lower_bound_status": "Explicit modeling assumption in2605.23449v1; no OR1 theorem imported"
+      "critical_prior_lower_bound_status": "Explicit modeling assumption in2605.23449v1; no OR1 theorem imported",
+      "strong_baseline_selection_review_task": "AL45",
+      "strong_baseline_selection_status": "Partial design; primary IUT methodology/source and actual CI acceptance pending",
+      "matched_direction_rank_review_task": "AL46",
+      "null_probe_envelope_task": "AL47",
+      "duplicate_score_margin_task": "AL48",
+      "original_to_soft_commutation_counterexample": "AL49 fixed arithmetic verified, one-run contract failed",
+      "matching_stability_review": "AL50 failed; corrected global margin in separate report"
     }
   },
   "open_review_issues": [

@@ -168,6 +168,12 @@ AL37 已完成限定统计对象审查：明确 generator-macro、pooled、ensem
 
 [AL44来源追溯](reviews/AL44_CRITICAL_PRIOR_PROVENANCE_REVIEW_20260919.md)已用公开arXiv记录页及v1正文核对2605.23449的身份和所引公式；其响应下界是明确的建模假设，不是可移植到OR1的定理。未增加新先例计数或复现作者结果。AL43最终报告以新的finalization记录绑定，原草稿哈希记录保留；当前接续AL45最强基线选择/统计对象审查，AL36独立反方审查仍待研究任务正常鉴权恢复。没有模型、媒体、服务器或GPU批次被授权。
 
+AL45交付了选择后比较、全体比较以及最小差下界的条件概率推导；仅取得选择偏差论文的官方摘要，IUT原始方法学正文未核实，故维持blocked/not_evaluated，人工草稿中的pass不采纳。权威材料为[条件推导与缺口](reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md)，不更改原先预指定最强匹配基线的验收目标。
+
+[AL46](reviews/AL46_MATCHED_DIRECTION_RANK_REVIEW_20260919.md)给出原b匹配后实际q可见方向的核/行空间条件；实际Jacobian、合法方向与来源关联尚未知。[AL47](reviews/AL47_OR1_NULL_PROBE_ENVELOPE_DESIGN_20260919.md)仅完善正确零对照的前提与失败处理，未运行probe。AL48因评分误差界已在AL16完整覆盖而去重结项，不追加测试或pass成果。接续AL49核对非线性原R可交换是否传递到软P路径，保留独立AL36待正常执行；不因外部鉴权问题让本地可推进工作停下。
+
+AL49固定有理反例表明原非线性R可交换不保证软P可交换，但其脚本期望值断言出错后发生重跑，未满足原一次执行合同，故done/fail；数学结果与执行失败在[审查](reviews/AL49_SOFT_COMPOSITION_NULL_REVIEW_20260919.md)分列。AL50仅检查名义次优的异质误差界不能认证全部匹配稳定，原通过报告也不采纳；[更正](reviews/AL50_REVIEW_CORRECTION_20260919.md)保留全竞争项/统一上界的条件和原字节。后续AL51独立分解软混合中的原次序与插值曲率，避免将非零K直接解释成解码来源信息；未启动任何真实实验。
+
 研究会话随后出现独立的 401 API 鉴权错误，回合无产出；见[鉴权失败记录](reviews/RESEARCH_STARTUP_AUTH_401_20260919.md)。不重发 AL36、不更换账户或绕过授权；继续保留 planagent 可执行的数学审查，直到研究端状态发生真实变化。
 
 ## 4. 数据、实验与科学验收

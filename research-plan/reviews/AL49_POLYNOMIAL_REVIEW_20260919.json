@@ -1,0 +1,70 @@
+{
+  "task_id": "AL49",
+  "review_started_at": "2026-09-19T10:04:21.632974+00:00",
+  "review_completed_at": "2026-09-19T10:04:21.633971+00:00",
+  "evidence_kind": "expanded_polynomial_cross_check_and_execution_history_correction",
+  "old_receipt_sha256": "8baf7ef6253ad28ac9f4e15c9ecb99e48c72da0eaf97ae84d388c2bc61abd537",
+  "work_order_sha256": "9d70fcfb677cb2a57ca89e6b927e2e39aaf2739a37702b520a4a714cf3815a26",
+  "audit_source_sha256": "9ad5a28c5b8fc8330a977ff013093ff5de95683e7d51c40679a4b394b7a86718",
+  "checks_executed": [
+    {
+      "name": "first_soft_a_equals_15_over32",
+      "passed": true
+    },
+    {
+      "name": "first_soft_b_equals_57_over128",
+      "passed": true
+    },
+    {
+      "name": "expanded_ab_matches_recorded_value",
+      "passed": true
+    },
+    {
+      "name": "expanded_ba_matches_recorded_value",
+      "passed": true
+    },
+    {
+      "name": "collected_polynomial_equals_endpoint_difference",
+      "passed": true
+    },
+    {
+      "name": "nonzero_K_matches_recorded_value",
+      "passed": true
+    },
+    {
+      "name": "old_receipt_unchanged",
+      "passed": true
+    }
+  ],
+  "h": "1/8",
+  "u": "1/2",
+  "P_a_u": "15/32",
+  "P_b_u": "57/128",
+  "expanded_PaPb": "54321/131072",
+  "expanded_PbPa": "3491265/8388608",
+  "difference": "-14721/8388608",
+  "K_h": "-14721/131072",
+  "arithmetic_result": "verified_on_fixed_input",
+  "execution_contract_result": "fail_single_attempt_requirement_not_met",
+  "prior_execution_history": [
+    "Inline nested rational calculation already obtained both endpoints before the saved script.",
+    "First saved script failed at a wrong intermediate expected-value assertion after computing endpoints.",
+    "A separate inline call printed correct intermediate15/32 and57/128.",
+    "Only expected constants were changed, and the saved script was rerun; it wrote the old receipt.",
+    "Temporary saved script was then deleted; its exact historical bytes are not retained."
+  ],
+  "failed_assertion_from_observed_tool_output": "assert ra==9*F(1,16)+F(1,32) and rb==15*F(1,16)+F(1,128)",
+  "failed_command_exit_code": 1,
+  "failure_kind": "wrong_expected_constants_in_reviewer_script_not_an_input_or_model_change",
+  "same_input_used_throughout": true,
+  "new_input_or_h_search": false,
+  "old_search_count1_not_run_count": true,
+  "old_started_at_note": "Old receipt assigned start/end timestamps during receipt construction after arithmetic; not timing evidence for the full batch.",
+  "independent_scientific_review": false,
+  "model_calls": 0,
+  "training_calls": 0,
+  "media_accessed": false,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "interpretation": "One mathematical counterexample remains valid, but do not certify the original single-attempt protocol or call it a breakthrough."
+}

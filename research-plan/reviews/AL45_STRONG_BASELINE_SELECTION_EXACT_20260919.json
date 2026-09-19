@@ -1,0 +1,28 @@
+{
+  "task_id": "AL45",
+  "scope": "strong_baseline_selection_design",
+  "gate_result": "pass",
+  "external_primary_search": {
+    "attempted": true,
+    "status": "inaccessible",
+    "error": "provider gateway returned 404 not_found for search endpoint",
+    "used_as_evidence": false
+  },
+  "checks": [
+    {"name": "independent_calibration_selection_separated_from_audit", "passed": true},
+    {"name": "audit_selection_after_seeing_results_forbidden", "passed": true},
+    {"name": "fixed_baseline_set_requires_all_predeclared_comparisons", "passed": true},
+    {"name": "macro_paired_ci_seed_thresholds_unchanged", "passed": true},
+    {"name": "pooled_and_ensemble_are_distinct_estimands", "passed": true},
+    {"name": "simultaneous_selection_post_audit_not_claimed", "passed": true},
+    {"name": "failed_or_unreproduced_baseline_stays_pending", "passed": true}
+  ],
+  "real_samples_accessed": false,
+  "model_calls": 0,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "training_calls": 0,
+  "formal_scientific_review": false,
+  "scientific_innovation_admitted": false,
+  "interpretation": "Design boundary only; no method efficacy or CCF-A evidence."
+}
