@@ -1,0 +1,442 @@
+{
+  "task_id": "AL61",
+  "repository": "https://github.com/ZhendongWang6/DIRE",
+  "metadata_requests": [
+    {
+      "url": "https://api.github.com/repos/ZhendongWang6/DIRE",
+      "request_started_at": "2026-09-19T13:14:36.555093+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/ZhendongWang6/DIRE",
+      "bytes": 5234,
+      "sha256": "afe6dd96e8b3649fae8669b24dbb04bf7c890606ced04072db42d7c150eead76",
+      "completed_at": "2026-09-19T13:14:38.016460+00:00"
+    },
+    {
+      "url": "https://api.github.com/repos/ZhendongWang6/DIRE/commits/main",
+      "request_started_at": "2026-09-19T13:14:38.016460+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/ZhendongWang6/DIRE/commits/main",
+      "bytes": 8252,
+      "sha256": "ca3e78ef54b96f8d047d189e121eb7bb38e49174e7ea8dff001a916d80fe686d",
+      "completed_at": "2026-09-19T13:14:39.562038+00:00"
+    },
+    {
+      "url": "https://api.github.com/repos/ZhendongWang6/DIRE/git/trees/ad8a6deaf0c6f56daea70fc96a8fbe13b8f09023?recursive=1",
+      "request_started_at": "2026-09-19T13:14:39.562038+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/ZhendongWang6/DIRE/git/trees/ad8a6deaf0c6f56daea70fc96a8fbe13b8f09023?recursive=1",
+      "bytes": 10002,
+      "sha256": "e81a976688fc023f8c596421409fdc006589d2f63cdf2eea10864522441f3ded",
+      "completed_at": "2026-09-19T13:14:41.309181+00:00"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/README.md",
+      "retrieved_at": "2026-09-19T13:15:30.754109+00:00",
+      "status": 200,
+      "bytes": 5628,
+      "sha256": "1057cb2cb7861aee668fe27087fbb4497df005881c612fd91e58919f0cb8c6dd",
+      "git_blob_sha1": "bfd1bebe57e1f1e122f5860c9475d4f4d87314c1",
+      "inventory_match": true,
+      "line_count": 85
+    },
+    {
+      "path": "demo.py",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/demo.py",
+      "retrieved_at": "2026-09-19T13:15:32.135166+00:00",
+      "status": 200,
+      "bytes": 2160,
+      "sha256": "3c326d2b72731e2b60f8a735e9fdc110b68e0348a0fb974c3c57828dfafa4b87",
+      "git_blob_sha1": "2d3160ca24963922817e51920b3d4945e07a4945",
+      "inventory_match": true,
+      "line_count": 69
+    },
+    {
+      "path": "guided-diffusion/compute_dire.py",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/guided-diffusion/compute_dire.py",
+      "retrieved_at": "2026-09-19T13:15:33.516775+00:00",
+      "status": 200,
+      "bytes": 6116,
+      "sha256": "490c14928b2c2562bf602be93f030fa3f4d939231665f9917d8d5eca8a5eb3f0",
+      "git_blob_sha1": "7c09eb640b8e3cadefaf624c82ded7128e744d9a",
+      "inventory_match": true,
+      "line_count": 171
+    },
+    {
+      "path": "guided-diffusion/compute_dire.sh",
+      "url": "https://raw.githubusercontent.com/ZhendongWang6/DIRE/1f89fff15f0e478307cdea9abdfe06a52fe7838a/guided-diffusion/compute_dire.sh",
+      "retrieved_at": "2026-09-19T13:15:35.959677+00:00",
+      "status": 200,
+      "bytes": 991,
+      "sha256": "d6ecc9cc29b5f9cb394272c8e09c79b631cce597c08bd8b8802676bab97ac4d1",
+      "git_blob_sha1": "b654eb3d7a1e502abc7b50ce902c8e34baac4b24",
+      "inventory_match": true,
+      "line_count": 9
+    }
+  ],
+  "access_route": "Ordinary credential-free public HTTPS. Web gateway previously confirmed unsupported; no identity change.",
+  "repository_metadata": {
+    "full_name": "ZhendongWang6/DIRE",
+    "html_url": "https://github.com/ZhendongWang6/DIRE",
+    "default_branch": "main",
+    "size": 2004,
+    "pushed_at": "2024-09-26T01:09:19Z",
+    "archived": true
+  },
+  "pinned_commit": "1f89fff15f0e478307cdea9abdfe06a52fe7838a",
+  "commit_date": "2024-09-26T01:09:18Z",
+  "commit_message": "update the link of data and model",
+  "tree_sha": "ad8a6deaf0c6f56daea70fc96a8fbe13b8f09023",
+  "tree_truncated": false,
+  "file_inventory": [
+    {
+      "path": ".gitignore",
+      "type": "blob",
+      "size": 2827,
+      "sha": "5841ee5c132e5abec5f14a1c1a92a6257df9b6c0"
+    },
+    {
+      "path": "README.md",
+      "type": "blob",
+      "size": 5628,
+      "sha": "bfd1bebe57e1f1e122f5860c9475d4f4d87314c1"
+    },
+    {
+      "path": "demo.py",
+      "type": "blob",
+      "size": 2160,
+      "sha": "2d3160ca24963922817e51920b3d4945e07a4945"
+    },
+    {
+      "path": "figs",
+      "type": "tree",
+      "size": null,
+      "sha": "bce70b287412cb8150efc0ec83aea30eae48e990"
+    },
+    {
+      "path": "figs/dire.png",
+      "type": "blob",
+      "size": 861166,
+      "sha": "199dd61f54d832d1e3365d5a370fdd1e397b1d7a"
+    },
+    {
+      "path": "figs/teaser.png",
+      "type": "blob",
+      "size": 1128582,
+      "sha": "d6543eb91c5129bbb0300783b3a39a0f3e321806"
+    },
+    {
+      "path": "guided-diffusion",
+      "type": "tree",
+      "size": null,
+      "sha": "62bf9218c813932b81d29b8ae51158fb97d3dc86"
+    },
+    {
+      "path": "guided-diffusion/LICENSE",
+      "type": "blob",
+      "size": 1062,
+      "sha": "9e84fcbc4d81a1f433c90caf9f1cef373c12edae"
+    },
+    {
+      "path": "guided-diffusion/README.md",
+      "type": "blob",
+      "size": 10972,
+      "sha": "693a8b7a905f9d8226957525497cb2538a4c8e6f"
+    },
+    {
+      "path": "guided-diffusion/compute_dire.py",
+      "type": "blob",
+      "size": 6116,
+      "sha": "7c09eb640b8e3cadefaf624c82ded7128e744d9a"
+    },
+    {
+      "path": "guided-diffusion/compute_dire.sh",
+      "type": "blob",
+      "size": 991,
+      "sha": "b654eb3d7a1e502abc7b50ce902c8e34baac4b24"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion",
+      "type": "tree",
+      "size": null,
+      "sha": "d4b543cf2190a46daf892a9605a9ed99124d3227"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/__init__.py",
+      "type": "blob",
+      "size": 74,
+      "sha": "9665a0d63f695eab303318d824dad14041c7cde9"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/dist_util.py",
+      "type": "blob",
+      "size": 2766,
+      "sha": "2a099a8e71e91e9745315629ae28f489396af075"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/fp16_util.py",
+      "type": "blob",
+      "size": 7962,
+      "sha": "df3882d03bf7b7541bc096808f5d8ff781916134"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/gaussian_diffusion.py",
+      "type": "blob",
+      "size": 37247,
+      "sha": "8eab1319fda887740562e85af10df1bc57e26b0a"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/image_datasets.py",
+      "type": "blob",
+      "size": 9720,
+      "sha": "4992e723874c9583e449e1090f3bee233c783ffc"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/logger.py",
+      "type": "blob",
+      "size": 13979,
+      "sha": "b1d856dcfea6b56a2ee8d37b286887430dbfac30"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/losses.py",
+      "type": "blob",
+      "size": 2534,
+      "sha": "251e42e4f36a31bb5e1aeda874b3a45d722000a2"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/nn.py",
+      "type": "blob",
+      "size": 5020,
+      "sha": "a4cd59c2324b003626b8cf4c7581effd334908d3"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/resample.py",
+      "type": "blob",
+      "size": 5689,
+      "sha": "c82eccdcd47c468d41e7cbe02de6a731f2c9bf81"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/respace.py",
+      "type": "blob",
+      "size": 5193,
+      "sha": "b568817e1258e4bda5a5da11630794d4a9e6bdcd"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/script_util.py",
+      "type": "blob",
+      "size": 12349,
+      "sha": "2bfdad9fce28193d8abeb439f7400eca90d4f728"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/train_util.py",
+      "type": "blob",
+      "size": 10604,
+      "sha": "97c7db38de07d9318e3c802b6aa498489c9c8315"
+    },
+    {
+      "path": "guided-diffusion/guided_diffusion/unet.py",
+      "type": "blob",
+      "size": 31233,
+      "sha": "96b46930006b7c9e49948d31568474824195cf8f"
+    },
+    {
+      "path": "guided-diffusion/model-card.md",
+      "type": "blob",
+      "size": 5036,
+      "sha": "54fc09645dcffefdaa6a31e386b2af242c4d3719"
+    },
+    {
+      "path": "guided-diffusion/setup.py",
+      "type": "blob",
+      "size": 164,
+      "sha": "204ee2cc0bc1742e92a071c0cf8dc23a44a4bd59"
+    },
+    {
+      "path": "networks",
+      "type": "tree",
+      "size": null,
+      "sha": "8e760b55d1f32c25f892b53f8d5d329706ead927"
+    },
+    {
+      "path": "networks/resnet.py",
+      "type": "blob",
+      "size": 6951,
+      "sha": "c10a34d937d238e56114dd090051c5abec67ede1"
+    },
+    {
+      "path": "requirements.txt",
+      "type": "blob",
+      "size": 266,
+      "sha": "4357e7272f4cba3dfdd6ca3820079b148dcb9780"
+    },
+    {
+      "path": "test.py",
+      "type": "blob",
+      "size": 1324,
+      "sha": "9a18b714eaad2abf3607fe4084b3034e85051251"
+    },
+    {
+      "path": "test.sh",
+      "type": "blob",
+      "size": 360,
+      "sha": "e6400c9922b6d9d0d14b540ceee141a4e0a86252"
+    },
+    {
+      "path": "train.py",
+      "type": "blob",
+      "size": 3085,
+      "sha": "a2ad46e68866c160d2cdecebad40a2d46659c667"
+    },
+    {
+      "path": "train.sh",
+      "type": "blob",
+      "size": 298,
+      "sha": "ac2336f739942b38d09451a6ac71add61e976856"
+    },
+    {
+      "path": "utils",
+      "type": "tree",
+      "size": null,
+      "sha": "c877a176036425c1b3161622ad5ce29bbd937386"
+    },
+    {
+      "path": "utils/config.py",
+      "type": "blob",
+      "size": 4454,
+      "sha": "b62caffecd3bc4f8e516bcbc898d5a3beed5571c"
+    },
+    {
+      "path": "utils/datasets.py",
+      "type": "blob",
+      "size": 5279,
+      "sha": "554fc22bf94950eca22e993c82248c9c7e2a7ce1"
+    },
+    {
+      "path": "utils/earlystop.py",
+      "type": "blob",
+      "size": 1760,
+      "sha": "8c43cb978987e8c123b8173a7e13b367aaabedb9"
+    },
+    {
+      "path": "utils/eval.py",
+      "type": "blob",
+      "size": 2117,
+      "sha": "1c4cf7f8de8aa48b8297e38273fccaaf8c5d55ae"
+    },
+    {
+      "path": "utils/trainer.py",
+      "type": "blob",
+      "size": 5541,
+      "sha": "7e21c8571f3b19da824fc483baaa3ed02de32089"
+    },
+    {
+      "path": "utils/utils.py",
+      "type": "blob",
+      "size": 3208,
+      "sha": "d52ebbdba20a1b61f3c26cd7bca65a21107b965b"
+    },
+    {
+      "path": "utils/warmup.py",
+      "type": "blob",
+      "size": 3102,
+      "sha": "c193a6cfa664f6330f79f01d59bbf9f8d43272a9"
+    }
+  ],
+  "read_finished_at": "2026-09-19T21:19:00+08:00",
+  "source_files_count": 4,
+  "source_payload_bytes": 14895,
+  "source_file_limit": 4,
+  "source_byte_limit": 524288,
+  "review_report_sha256": "a63598691263c0c5e4f02de234ecd1de545f25110513eb6bafb326382fefb7c9",
+  "input_sha256": {
+    "research-plan\\AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_AUDIT_20260919.md": "55db24becc98b99b1e661c5447095e3c56b5db47f0dc1395c6186c72a65952d1",
+    "research-plan\\reviews\\AL60_DIRE_PRIMARY_METHOD_REVIEW_20260919.md": "64ffe8812f421e53cbe231a21bc48078992a351ada1bc35174db1e6692999873",
+    "research-plan\\reviews\\AL60_SOURCE_RECORD_20260919.json": "8301a5b61614822855052a8345df12d7c5e5cbfa8acffa82e4566511de046658",
+    "research-runs\\algorithm_search_20260918\\AL12_method_design.md": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+    "research-plan\\reviews\\AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md": "acf3294bfcaec67b820b5328b12089415fe59b36ae81ccaadddd666a75ab5d94"
+  },
+  "findings": [
+    {
+      "id": "separate_precomputation_and_demo",
+      "path": "demo.py",
+      "lines": [
+        40,
+        68
+      ],
+      "finding": "Read entrypoint loads classifier and file preprocessing only; no DIRE computation. README57 binds training paths to DIRE images."
+    },
+    {
+      "id": "float_before_save",
+      "path": "guided-diffusion/compute_dire.py",
+      "lines": [
+        106,
+        115,
+        143
+      ],
+      "finding": "Elementwise abs computed on float imgs/recons; dire then scaled255/2, clamped and converteduint8; written with original basename. Not difference of two saved8bit images."
+    },
+    {
+      "id": "sampler_interface_not_core",
+      "path": "guided-diffusion/compute_dire.py",
+      "lines": [
+        85,
+        104
+      ],
+      "finding": "Reverse DDIM then DDIMorancestral selected by use_ddim; both receiveclip_denoised/real_step. Internal loops/clipping behavior not read."
+    },
+    {
+      "id": "shell_config",
+      "path": "guided-diffusion/compute_dire.sh",
+      "lines": [
+        6,
+        9
+      ],
+      "finding": "ddim20,use_ddimTrue,diffusion_steps1000,unconditional,fp16 flag,4MPI processes; this is source config, not executed or paidresource approval."
+    }
+  ],
+  "evidence_kind": "Manual four-file source review plus byte/hash verification; no import or execution of inspected code",
+  "full_numerical_contract": "not_evaluated_pending_actual_core_and_loader",
+  "baseline_replication": "not_attempted",
+  "OR1_innovation_admitted": false,
+  "unread_paths": [
+    "guided-diffusion/guided_diffusion/gaussian_diffusion.py",
+    "guided-diffusion/guided_diffusion/respace.py",
+    "guided-diffusion/guided_diffusion/script_util.py",
+    "guided-diffusion/guided_diffusion/image_datasets.py",
+    "utils/utils.py",
+    "utils/datasets.py"
+  ],
+  "partial_scope_next_step": "Single terminal4-file core followupAL62; no open-ended recursive source reads",
+  "temporary_cache_cleanup": {
+    "at": "2026-09-19T21:19:00+08:00",
+    "files": [
+      {
+        "path": "tmp\\al61_README.md",
+        "absent": true
+      },
+      {
+        "path": "tmp\\al61_demo.py",
+        "absent": true
+      },
+      {
+        "path": "tmp\\al61_guided-diffusion__compute_dire.py",
+        "absent": true
+      },
+      {
+        "path": "tmp\\al61_guided-diffusion__compute_dire.sh",
+        "absent": true
+      }
+    ],
+    "source_payload_committed": false
+  },
+  "resources": {
+    "public_source_retrieval_only": true,
+    "author_code_or_toy_executed": false,
+    "dependencies_installed": false,
+    "models_weights_media_accessed": false,
+    "server_or_GPU_accessed": false,
+    "billing_statement": "No paid instance query or job performed; project cumulative usage remains unknown"
+  }
+}

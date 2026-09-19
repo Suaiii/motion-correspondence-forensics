@@ -5056,7 +5056,7 @@
         "AL12",
         "AL35"
       ],
-      "status": "ready",
+      "status": "done",
       "gate_result": "not_evaluated",
       "gate_scope": "DIRE_pinned_source_numerical_contract",
       "hypothesis": "DIRE的非零恢复残差可能依赖步数、clipping和残差存储处理；正文方法不足以绑定可用强基线的实际路径与成本。",
@@ -5091,8 +5091,70 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "entry_and_uint8_residual_paths_confirmed_core_numerical_contract_unread",
+      "next_action": "AL62 one terminal4-file core/loader followup at samecommit; no repeated entrypoint or model execution",
+      "started_at": "2026-09-19T21:13:30+08:00",
+      "dispatch_status": "completed_bounded_partial_source_review",
+      "completed_at": "2026-09-19T21:20:42+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_REVIEW_20260919.md",
+      "artifact_sha256": "a63598691263c0c5e4f02de234ecd1de545f25110513eb6bafb326382fefb7c9",
+      "source_record": "../reviews/AL61_SOURCE_RECORD_20260919.json",
+      "source_record_sha256": "55908d259f193637dc5f683651a308fabb9d55b21c1075a38b0f093c062368fb",
+      "review_scope": "Four-file inspection completed, numerical gate not evaluated because core/loader files unread; no baseline replication",
+      "evidence_kind": "static_source_inspection_only"
+    },
+    {
+      "id": "AL62",
+      "milestone": "M2",
+      "title": "DIRE核心反演/重建/时间映射的一次终结补读",
+      "assignee": "planagent",
+      "parents": [
+        "AL61",
+        "AL60"
+      ],
+      "requires_pass": [
+        "AL60"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "DIRE_terminal_core_source_audit",
+      "hypothesis": "读入口不足以判定ddim20实际调用与clip路径；固定核心实现应可闭合主要数值流程或留下终结性未知。",
+      "work": [
+        "同commit仅读gaussian_diffusion.py/respace.py/script_util.py/image_datasets.py四份",
+        "静态追踪循环/时间映射/model调用/clip/输入归一化",
+        "4份后停止该源码支路，不追加未读依赖或运行模型"
+      ],
+      "acceptance": [
+        "只读且总量<=128KiB，记录来源和Git blob/SHA256",
+        "计划调用与实际运行成本分列",
+        "未闭合项终结登记，源码审核不冒充复现或来源效果"
+      ],
+      "artifacts": [
+        "../reviews/AL62_DIRE_CORE_PATH_REVIEW_20260919.md",
+        "../reviews/AL62_SOURCE_RECORD_20260919.json"
+      ],
+      "work_order": "../AL62_DIRE_CORE_PATH_TERMINAL_AUDIT_20260919.md",
+      "work_order_sha256": "3d981c848896b1a2ab07eb0e17bdfbbecf952871de6c595317227bc30c5c6586",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T21:20:42+08:00",
+      "due_at": "2026-09-24T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
-      "next_action": "One bounded pinned-source inspection only; no execution or real-data release"
+      "next_action": "Terminal4-file source inspection only; no code/toy/model/media execution",
+      "dependency_note": "AL61 complete as partialread, no pass required; AL62 directly resolves its explicit unexaminedcore dependencies",
+      "pinned_author_commit": "1f89fff15f0e478307cdea9abdfe06a52fe7838a"
     }
   ],
   "storage_policy": {
@@ -6518,7 +6580,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T21:00:20+08:00",
+  "updated_at": "2026-09-19T21:20:42+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -7260,6 +7322,14 @@
       "plan_sha256": "9381c04f9b91d87510c1aee7dc0a6e057bc1ad955a0f281833dac6a70d9e6437",
       "reason": "Audit previously abstract-only method, preserve fixedprobe prior and uncertain numeric cost; prepare concrete source read",
       "budget_dates_thresholds_changed": false
+    },
+    {
+      "at": "2026-09-19T21:20:42+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "DIRE_entry_residual_file_contract_partial",
+      "plan_sha256": "20f65ef6306474c675d802aaf0bd14d2b30ff97ce0f699dff7107e0cc7e415a0",
+      "reason": "Record uint8 residual/source input contract and bounded unreadcore gap; single terminal followup only",
+      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
@@ -7274,20 +7344,20 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al61-planner-dire-source-20260919",
+      "id": "cc-al62-planner-dire-core-20260919",
       "task_ids": [
-        "AL61"
+        "AL62"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T21:00:20+08:00",
-      "work_order": "../AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_AUDIT_20260919.md",
-      "work_order_sha256": "55db24becc98b99b1e661c5447095e3c56b5db47f0dc1395c6186c72a65952d1",
+      "prepared_at": "2026-09-19T21:20:42+08:00",
+      "work_order": "../AL62_DIRE_CORE_PATH_TERMINAL_AUDIT_20260919.md",
+      "work_order_sha256": "3d981c848896b1a2ab07eb0e17bdfbbecf952871de6c595317227bc30c5c6586",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "9381c04f9b91d87510c1aee7dc0a6e057bc1ad955a0f281833dac6a70d9e6437",
-      "scope": "At most4 pinned public author files on DIRE call/clipping/residual contract; no code/model/media/server/GPU execution",
+      "plan_sha256": "20f65ef6306474c675d802aaf0bd14d2b30ff97ce0f699dff7107e0cc7e415a0",
+      "scope": "Terminal4 specific fixedcommit text files<=128KiB; no code/toy/model/media/server/GPU execution",
       "remote_send_required": false,
       "background_process_running": false
     },
@@ -7300,7 +7370,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T21:00:20+08:00",
+    "last_coordinator_activity_at": "2026-09-19T21:20:42+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -8377,9 +8447,33 @@
         "review": "../reviews/AL60_DIRE_PRIMARY_METHOD_REVIEW_20260919.md",
         "source_record": "../reviews/AL60_SOURCE_RECORD_20260919.json",
         "outcome": "DIRE is absolute DDIM inversion/reconstruction residual plus trained ResNet50; broad public-probe premise is prior, not pureAE or scalarMSE. Actual executable/cost unresolved."
+      },
+      {
+        "id": "cc-al61-planner-dire-source-20260919",
+        "task_ids": [
+          "AL61"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_bounded_partial_source_review",
+        "prepared_at": "2026-09-19T21:00:20+08:00",
+        "work_order": "../AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_AUDIT_20260919.md",
+        "work_order_sha256": "55db24becc98b99b1e661c5447095e3c56b5db47f0dc1395c6186c72a65952d1",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "9381c04f9b91d87510c1aee7dc0a6e057bc1ad955a0f281833dac6a70d9e6437",
+        "scope": "At most4 pinned public author files on DIRE call/clipping/residual contract; no code/model/media/server/GPU execution",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T21:13:30+08:00",
+        "gate_result": "not_evaluated",
+        "completed_at": "2026-09-19T21:20:42+08:00",
+        "review": "../reviews/AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_REVIEW_20260919.md",
+        "source_record": "../reviews/AL61_SOURCE_RECORD_20260919.json",
+        "outcome": "Float residual converted to8bit file; demo only classifies files. Full core/clipping/count contract not evaluated."
       }
     ],
-    "last_substantive_review": "../reviews/AL60_DIRE_PRIMARY_METHOD_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL61_DIRE_SOURCE_NUMERICAL_CONTRACT_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -8525,14 +8619,13 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL58",
-        "AL60"
+        "AL61"
       ],
       "executor_role": "planagent",
-      "status": "completed_failed_contract_and_independent_primary_review",
-      "finalized_at": "2026-09-19T21:00:20+08:00",
+      "status": "completed_bounded_partial_source_review",
+      "finalized_at": "2026-09-19T21:20:42+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL61",
+      "next_prepared_task_id": "AL62",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -8550,15 +8643,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T21:00:20+08:00",
+    "last_local_review_at": "2026-09-19T21:20:42+08:00",
     "prepared_independent_task_ids": [
-      "AL61",
+      "AL62",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL61",
+        "AL62",
         "AL36"
       ],
       "executor_blocked": [
@@ -8623,12 +8716,14 @@
       },
       {
         "id": "al58-execution-contract-failure",
-        "status": "prepared_pending_final_output_confirmation",
+        "status": "confirmed_final_output",
         "prepared_at": "2026-09-19T21:00:20+08:00",
         "message": "AL58限定人工审查却运行并重复小算术脚本，执行合同fail；有效数学事实单列，无真实检测增益。",
         "evidence": "../reviews/AL58_FINAL_AGGREGATION_REVIEW_20260919.md",
         "not_a_milestone_receipt": true,
-        "confirmation_required": "Check actual final on next completed turn; not claimed sent/OS delivered"
+        "confirmation_required": "Check actual final on next completed turn; not claimed sent/OS delivered",
+        "confirmed_at": "2026-09-19T21:13:30+08:00",
+        "confirmation_evidence": "Actual prior completed cvpr-2027 NOTIFY final in visible conversation says AL58 exceeded manual scope by running/repeating arithmetic, records failure, retains valid math; no OS delivery claim."
       }
     ],
     "context_updates": [
@@ -8659,9 +8754,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "9d7c602",
+      "commit": "17f0a6873433b9784d17750029f0b5aa4ced5012",
       "path": "research-plan/task-hermes/project.json",
-      "sha256": "40c11b1ae07741f8bc6221132aabf5873c1d7d74ab8842fa905fa233fb4c58f2"
+      "sha256": "7ef7ece9890754fbd235a151a35675890fd762ae8d2c20a9e0c69d17915d0ac6"
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -8672,11 +8767,11 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T21:00:20+08:00",
+    "last_progress_at": "2026-09-19T21:20:42+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T21:00:20+08:00",
+      "at": "2026-09-19T21:13:30+08:00",
       "decision": "no_remote_wait",
-      "reason": "Only planner current work and emptyadditional_dispatches; unsentAL36 remains on historical401 without recovery evidence."
+      "reason": "Only currentAL61 is local planagent; additional_dispatches empty. AL36 prepared unsent retains observed401; do not poll old legacy or infer recovery."
     },
     "research_observation_note": {
       "at": "2026-09-19T18:57:52+08:00",
@@ -8813,7 +8908,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL61",
+        "AL62",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -8854,7 +8949,9 @@
       "unregistered_recovery_estimand_proposal": "AL59 withdrawn before dispatch as duplicate with unsupported variance-matching no-go; original marked draft retained",
       "DIRE_primary_method_task": "AL60",
       "DIRE_source_contract_task": "AL61",
-      "DIRE_method_status": "One pretrained diffusion inversion/reconstruction absolute residual plus BCE ResNet50; fixed probe prior confirmed, exact OR1 equivalence and executable baseline not accepted"
+      "DIRE_method_status": "One pretrained diffusion inversion/reconstruction absolute residual plus BCE ResNet50; fixed probe prior confirmed, exact OR1 equivalence and executable baseline not accepted",
+      "DIRE_source_contract_status": "PartialAL61: float residual saveduint8 then classification; actual loop/clipping/loader unread, full gate not evaluated",
+      "DIRE_terminal_core_task": "AL62"
     }
   },
   "open_review_issues": [
