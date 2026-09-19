@@ -5181,8 +5181,8 @@
         "AL13",
         "AL35"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "public_benchmark_primary_protocol_scope",
       "hypothesis": "仅模型家族和README总量不足以保证严格未见decoder或来源控制；基准正文可能补充或明确缺失的生产组件/来源/划分信息。",
       "work": [
@@ -5216,9 +5216,73 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "Aggregate protocol confirmed; strict decoder/source/nativePTS conditions remain unverified",
+      "next_action": "AL64 independent public OpenVid-HD provenance; reconcile user-requested research task before assigning work",
+      "sample_access_authorized": false,
+      "started_at": "2026-09-19T21:36:31+08:00",
+      "dispatch_status": "completed_primary_protocol_scope_review",
+      "completed_at": "2026-09-20T00:17:48+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md",
+      "artifact_sha256": "22158083977e47f59a02884e32c6363a28b82bdea6826dcba96a68a479a86901",
+      "source_record": "../reviews/AL63_SOURCE_RECORD_20260919.json",
+      "source_record_sha256": "739974a906090f801735062674009f8515e0f33156616eb8ff5c0d546e2cad8a",
+      "review_scope": "Selected public protocol text only; no sample, component equivalence or efficacy acceptance",
+      "evidence_kind": "manual_primary_protocol_review"
+    },
+    {
+      "id": "AL64",
+      "milestone": "M1",
+      "title": "OpenVid-HD来源与时间字段公开协议审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL63",
+        "AL31",
+        "AL13"
+      ],
+      "requires_pass": [
+        "AL63",
+        "AL31",
+        "AL13"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "public_source_provenance_protocol",
+      "hypothesis": "OpenVid-HD primary source may establish provenance or explicitly leave native-time and visual-ancestry gaps.",
+      "work": [
+        "At most2 primary entry points for one public provenance source",
+        "Read source/time/compression/license/version scope only",
+        "Keep generic descriptions separate from sample-level evidence"
+      ],
+      "acceptance": [
+        "No manifest/sample/media/model access",
+        "Record exact sources and unknowns",
+        "Do not release RS02/03 or paid resources"
+      ],
+      "artifacts": [
+        "../reviews/AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md",
+        "../reviews/AL64_SOURCE_RECORD_20260919.json"
+      ],
+      "work_order": "../AL64_OPENVIDHD_PROVENANCE_PRIMARY_AUDIT_20260919.md",
+      "work_order_sha256": "b5f3764076712d621142e395b7766305fe314189f4aa98b066c1da4dc95226a5",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-20T00:17:48+08:00",
+      "due_at": "2026-09-24T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "sample_access_authorized": false,
       "hypothesis_result": "not_evaluated",
-      "next_action": "One primarypaper protocol audit to advance publicdata suitability independently of DIRE/mathreview and research401",
-      "sample_access_authorized": false
+      "next_action": "Bounded public provenance audit only"
     }
   ],
   "storage_policy": {
@@ -6644,7 +6708,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T21:29:14+08:00",
+  "updated_at": "2026-09-20T00:17:48+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -7402,6 +7466,14 @@
       "plan_sha256": "1e2da7c38915c13684ca51e1db2530cedd031063ba00dcddf20545b8ac113a04",
       "reason": "Complete bounded4-file corecall/clipping/loader audit without execution; stop recursiveDIREsourcebranch and advance independent benchmarkprotocol",
       "budget_dates_thresholds_changed": false
+    },
+    {
+      "at": "2026-09-20T00:17:48+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "bounded_benchmark_protocol_review",
+      "plan_sha256": "9d72c9cad850bf7d3e340834b831ae5b96de00c35ec1e27cfe2e58618914c43d",
+      "reason": "Finish AL63 and register AL64; preserve scientific gates and explicit pending research task setup",
+      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
@@ -7416,20 +7488,20 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al63-planner-aigvdbench-primary-20260919",
+      "id": "cc-al64-planner-openvidhd-provenance-20260920",
       "task_ids": [
-        "AL63"
+        "AL64"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T21:29:14+08:00",
-      "work_order": "../AL63_AIGVDBENCH_PROTOCOL_PRIMARY_AUDIT_20260919.md",
-      "work_order_sha256": "ed6b2740646d2da3568f6a9e6162687a9cd1539f28cf4b91456f15653b74492b",
+      "prepared_at": "2026-09-20T00:17:48+08:00",
+      "work_order": "../AL64_OPENVIDHD_PROVENANCE_PRIMARY_AUDIT_20260919.md",
+      "work_order_sha256": "b5f3764076712d621142e395b7766305fe314189f4aa98b066c1da4dc95226a5",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "1e2da7c38915c13684ca51e1db2530cedd031063ba00dcddf20545b8ac113a04",
-      "scope": "One primary benchmark protocol paper only; no samplelist/manifest/weights/media/code/server/GPU",
+      "plan_sha256": "9d72c9cad850bf7d3e340834b831ae5b96de00c35ec1e27cfe2e58618914c43d",
+      "scope": "Public provenance review; no samples/media/models/runtime/server/GPU",
       "remote_send_required": false,
       "background_process_running": false
     },
@@ -7442,7 +7514,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T21:29:14+08:00",
+    "last_coordinator_activity_at": "2026-09-20T00:17:48+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -8567,9 +8639,33 @@
         "review": "../reviews/AL62_DIRE_CORE_PATH_REVIEW_20260919.md",
         "source_record": "../reviews/AL62_SOURCE_RECORD_20260919.json",
         "outcome": "Fixedshell20+20 batchmodelcalls; predxstart clipped in bothdirections; terminalalpha convention and loader normalization bounded; no runtime/efficacy pass"
+      },
+      {
+        "id": "cc-al63-planner-aigvdbench-primary-20260919",
+        "task_ids": [
+          "AL63"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_primary_protocol_scope_review",
+        "prepared_at": "2026-09-19T21:29:14+08:00",
+        "work_order": "../AL63_AIGVDBENCH_PROTOCOL_PRIMARY_AUDIT_20260919.md",
+        "work_order_sha256": "ed6b2740646d2da3568f6a9e6162687a9cd1539f28cf4b91456f15653b74492b",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "1e2da7c38915c13684ca51e1db2530cedd031063ba00dcddf20545b8ac113a04",
+        "scope": "One primary benchmark protocol paper only; no samplelist/manifest/weights/media/code/server/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T21:36:31+08:00",
+        "gate_result": "pass",
+        "completed_at": "2026-09-20T00:17:48+08:00",
+        "review": "../reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md",
+        "source_record": "../reviews/AL63_SOURCE_RECORD_20260919.json",
+        "outcome": "Public aggregate protocol confirmed; no release of project source/decoder/time gates"
       }
     ],
-    "last_substantive_review": "../reviews/AL62_DIRE_CORE_PATH_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -8715,14 +8811,12 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL61",
-        "AL62"
+        "AL63"
       ],
       "executor_role": "planagent",
-      "status": "completed_bounded_source_reviews_no_runtime",
-      "finalized_at": "2026-09-19T21:29:14+08:00",
-      "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL63",
+      "status": "completed_primary_protocol_scope_review",
+      "finalized_at": "2026-09-20T00:17:48+08:00",
+      "next_prepared_task_id": "AL64",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -8740,15 +8834,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T21:29:14+08:00",
+    "last_local_review_at": "2026-09-20T00:17:48+08:00",
     "prepared_independent_task_ids": [
-      "AL63",
+      "AL64",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL63",
+        "AL64",
         "AL36"
       ],
       "executor_blocked": [
@@ -8864,11 +8958,11 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T21:29:14+08:00",
+    "last_progress_at": "2026-09-20T00:17:48+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T21:29:14+08:00",
-      "decision": "no_remote_wait",
-      "reason": "Current/additional only localplanner; AL36 remains prepared unsent after observed401, no recovery evidence. No legacy polling."
+      "at": "2026-09-20T00:17:48+08:00",
+      "decision": "no eligible research executor wait",
+      "reason": "Only planner is current; no additional dispatch. Earlier self-wait was invalid and delivered no research status; no retry."
     },
     "research_observation_note": {
       "at": "2026-09-19T18:57:52+08:00",
@@ -8880,6 +8974,19 @@
       "recovery_confirmed": false,
       "research_dispatch_sent": false,
       "meaning": "UI unloaded state does not establish API recovery; local planner remains actual executor"
+    },
+    "user_requested_session_setup": {
+      "recorded_at": "2026-09-20T00:17:48+08:00",
+      "first_client_id": "client-new-thread:abc82f69-4ff5-4910-b40a-c7e808ee7228",
+      "first_resolved_thread_id": "01a0ba4b-887a-7981-b313-76b2ff5fca98",
+      "first_status_observed": "archived via list_archived_threads; no assumption about why",
+      "first_title": "科研冲击新会话（续接当前主DAG）",
+      "latest_client_id": "client-new-thread:d03e6250-0fa2-41dc-b3aa-89e84cf2fc07",
+      "latest_requested_title": "科研专项冲击",
+      "latest_thread_id": null,
+      "latest_status": "creation request accepted; actual thread identity not yet observed",
+      "recreate_automatically": false,
+      "coordination_rule": "Do not claim receiving/running, assign AL63 again, or send new work until latest task identity and status are resolved."
     }
   },
   "candidate_protocols": {
@@ -9005,7 +9112,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL63",
+        "AL64",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -9050,7 +9157,10 @@
       "DIRE_source_contract_status": "AL61 limitedentry review not_evaluated preserved; AL62 staticcore pathpass only, no complete baseline runtime or sourceeffect verification",
       "DIRE_terminal_core_task": "AL62",
       "DIRE_terminal_core_status": "closed; source fixedshell20+20 batchmodelcalls with internalclipping and uint8 residual serialization, runtime/checkpoint/data still unknown",
-      "public_benchmark_protocol_review_task": "AL63"
+      "public_benchmark_protocol_review_task": "AL63",
+      "AIGVDBench_primary_review_task": "AL63",
+      "AIGVDBench_primary_review_status": "Aggregate protocol reviewed; strict decoder/source/time scope unverified",
+      "OpenVidHD_provenance_task": "AL64"
     }
   },
   "open_review_issues": [

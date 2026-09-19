@@ -1,0 +1,135 @@
+{
+  "task_id": "AL63",
+  "access_route": "Ordinary publicHTTPS without credentials; priorwebgatewayunsupported, no account/identity change",
+  "metadata_requests": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2601.11035",
+      "request_started_at": "2026-09-19T13:36:33.363829+00:00",
+      "status": 200,
+      "final_url": "https://export.arxiv.org/api/query?id_list=2601.11035",
+      "bytes": 3430,
+      "sha256": "9080d9c9329fa25739ab60144287b76786bc248f604537b8b0c6af6da1abad74",
+      "completed_at": "2026-09-19T13:36:34.918580+00:00"
+    }
+  ],
+  "full_text_version_count": 1,
+  "records": [
+    {
+      "id": "http://arxiv.org/abs/2601.11035v1",
+      "title": "Your One-Stop Solution for AI-Generated Video Detection",
+      "published": "2026-01-16T07:02:06Z",
+      "updated": "2026-01-16T07:02:06Z",
+      "authors": [
+        "Long Ma",
+        "Zihao Xue",
+        "Yan Wang",
+        "Zhiyuan Yan",
+        "Jin Xu",
+        "Xiaorui Jiang",
+        "Haiyang Yu",
+        "Yong Liao",
+        "Zhen Bi"
+      ],
+      "comment": null,
+      "journal_ref": null,
+      "abstract": "Recent advances in generative modeling can create remarkably realistic synthetic videos, making it increasingly difficult for humans to distinguish them from real ones and necessitating reliable detection methods.\n  However, two key limitations hinder the development of this field.\n  \\textbf{From the dataset perspective}, existing datasets are often limited in scale and constructed using outdated or narrowly scoped generative models, making it difficult to capture the diversity and rapid evolution of modern generative techniques. Moreover, the dataset construction process frequently prioritizes quantity over quality, neglecting essential aspects such as semantic diversity, scenario coverage, and technological representativeness.\n  \\textbf{From the benchmark perspective}, current benchmarks largely remain at the stage of dataset creation, leaving many fundamental issues and in-depth analysis yet to be systematically explored.\n  Addressing this gap, we propose AIGVDBench, a benchmark designed to be comprehensive and representative, covering \\textbf{31} state-of-the-art generation models and over \\textbf{440,000} videos. By executing more than \\textbf{1,500} evaluations on \\textbf{33} existing detectors belonging to four distinct categories. This work presents \\textbf{8 in-depth analyses} from multiple perspectives and identifies \\textbf{4 novel findings} that offer valuable insights for future research. We hope this work provides a solid foundation for advancing the field of AI-generated video detection.\n  Our benchmark is open-sourced at https://github.com/LongMa-2025/AIGVDBench.",
+      "links": [
+        {
+          "href": "https://arxiv.org/abs/2601.11035v1",
+          "rel": "alternate",
+          "type": "text/html"
+        },
+        {
+          "href": "https://arxiv.org/pdf/2601.11035v1",
+          "rel": "related",
+          "type": "application/pdf",
+          "title": "pdf"
+        }
+      ]
+    }
+  ],
+  "full_text": {
+    "url": "https://arxiv.org/pdf/2601.11035v1",
+    "request_started_at": "2026-09-19T13:37:13.106704+00:00",
+    "status": 200,
+    "final_url": "https://arxiv.org/pdf/2601.11035v1",
+    "bytes": 10037550,
+    "sha256": "5b0f1be9165bcd0852486e2fab6a032c25f39016f134f1510814f70b6efa17be",
+    "completed_at": "2026-09-19T13:40:47.074869+00:00",
+    "pages": 50
+  },
+  "reviewed_at": "2026-09-20T00:17:48+08:00",
+  "review_report_sha256": "22158083977e47f59a02884e32c6363a28b82bdea6826dcba96a68a479a86901",
+  "extracted_text_sha256": "ad7d4b570d4015b22940f6482b2aaca5a86b4c5b0b979c5c536a537779966e9c",
+  "evidence_kind": "Manual selected primary passages and metadata review; no sample manifest or experiment",
+  "innovation_or_efficacy": "not_evaluated",
+  "primary_identity_records_requested": 1,
+  "read_scope": {
+    "substantive_pages": [
+      3,
+      4,
+      5,
+      6,
+      14,
+      38,
+      39,
+      40,
+      43,
+      44,
+      46,
+      47,
+      48,
+      50
+    ],
+    "full_text_extraction": "Navigation only; not full visual or every-page review",
+    "performance_numbers_adopted": false,
+    "samples_manifests_weights_or_media_requested": false
+  },
+  "findings": [
+    {
+      "source": "p3 Table2",
+      "fact": "20 open and11 closed settings; open14k/3k/3k splits and same-prompt real pair description; closed2000 generated compared to first2000 real test videos"
+    },
+    {
+      "source": "p4-5 and p43-44",
+      "fact": "OpenVid-HD is author-declared real source; prompt balancing followed by final20000 real videos; H264 unified export"
+    },
+    {
+      "source": "p6 section3.1",
+      "fact": "First128 or shorter available range, uniform32 extracted and first8 used; sub32 behavior/rounding/nativePTS not defined in read passage"
+    },
+    {
+      "source": "p3 and p39 Table21",
+      "fact": "Versions and generation settings reported but no component weight hashes or manifest-level provenance; cross-task identical model names only suggest possible component reuse"
+    },
+    {
+      "source": "p3 vs result table headers",
+      "fact": "CogVideoX-2B versus Cogvideo x1.5 naming requires clarification; no exact revision mapping inferred"
+    },
+    {
+      "source": "p46-48 and p50",
+      "fact": "Training settings differ by method; reconstruction-based methods excluded for time/storage; closed collection and possible extraneous factors disclosed"
+    }
+  ],
+  "unresolved": [
+    "Actual sample nativePTS/timebase/ancestor grouping/processing hashes",
+    "Checkpoint/VAE identity and cross-task component equivalence",
+    "Exact dataset version and I2V/V2V visual-ancestor chain",
+    "Sub32 frame behavior and actual temporal support",
+    "Strict holdout acceptance and matched baseline comparison"
+  ],
+  "cleanup": {
+    "status": "pending named cache cleanup; no payload will be staged",
+    "pdf_absent": true,
+    "extract_absent": true,
+    "page_extracts_absent": true,
+    "final_checked_at": "2026-09-20T00:19:00+08:00"
+  },
+  "input_sha256": {
+    "research-plan/AL63_AIGVDBENCH_PROTOCOL_PRIMARY_AUDIT_20260919.md": "ed6b2740646d2da3568f6a9e6162687a9cd1539f28cf4b91456f15653b74492b",
+    "research-plan/reviews/AL31_HOLDOUT_COMPONENT_REVIEW_20260919.md": "5fd3eee3ea16df1db85b1e5cb78d9322e3f92716e48108b4bf7bc8d082b02906",
+    "research-plan/reviews/AL31_PUBLIC_SOURCE_RECORD_20260919.json": "f51caee4a44b9b18cbe1c7b18de7f2b21acd64ca2b2e892d411a2c2334d7dcaa",
+    "research-plan/reviews/AL13_COUNTERFACTUAL_PROTOCOL_20260919.md": "54c98657404d8093fff9175f6f3e71c23fac34cd509581a481c860a2913e99a3",
+    "research-plan/reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md": "acf3294bfcaec67b820b5328b12089415fe59b36ae81ccaadddd666a75ab5d94"
+  }
+}
