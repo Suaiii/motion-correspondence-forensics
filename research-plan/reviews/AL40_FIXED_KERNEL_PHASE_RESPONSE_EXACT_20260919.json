@@ -1,0 +1,25 @@
+{
+  "task_id": "AL40",
+  "gate_scope": "fixed_kernel_phase_response_math",
+  "gate_result": "pass",
+  "fixed_stride": 4,
+  "frequencies": {"omega": "pi", "alias": "3pi/2", "alias_offset": "2pi/s"},
+  "pure_sampling": {"S_s_x": "1", "S_s_alias": "1", "equal": true},
+  "kernels": {
+    "a_equal_111": {"H_omega": "1", "H_alias": "-i", "equal": false, "interpretation": "breaks this alias at the complex output"},
+    "a_diff_10m1": {"H_omega": "2", "H_alias": "2", "equal": true, "interpretation": "retains an exact alias"}
+  },
+  "checks": [
+    {"name": "pure_sampling_alias_equal", "passed": true},
+    {"name": "equal_kernel_breaks_fixed_alias", "passed": true},
+    {"name": "difference_kernel_retains_fixed_alias", "passed": true},
+    {"name": "no_frequency_or_label_scan", "passed": true},
+    {"name": "no_decoder_or_source_claim", "passed": true}
+  ],
+  "real_model_accessed": false,
+  "real_media_accessed": false,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "formal_breakthrough": false,
+  "interpretation": "A fixed finite kernel can break a selected pure-sampling alias, while another fixed kernel retains it; actual decoder response and downstream compression remain unknown."
+}

@@ -1,0 +1,240 @@
+{
+  "task_id": "AL39",
+  "created_at": "2026-09-19T07:37:37.748751+00:00",
+  "gate_result": "pass",
+  "gate_scope": "feature_containment_capacity_math",
+  "checks": [
+    {
+      "name": "fixed_selection_matrix_shape",
+      "passed": true
+    },
+    {
+      "name": "q_equals_P_r_on_12_archived_records",
+      "passed": true
+    },
+    {
+      "name": "score_identity_for_two_fixed_weights",
+      "passed": true
+    },
+    {
+      "name": "induced_regularizer_matches_candidate_on_fixed_subspace",
+      "passed": true
+    },
+    {
+      "name": "no_fitting_or_label_access",
+      "passed": true
+    }
+  ],
+  "selection_matrix": [
+    [
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0",
+      "0",
+      "0",
+      "0"
+    ],
+    [
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "0",
+      "1",
+      "0"
+    ]
+  ],
+  "fixed_weight_checks": [
+    {
+      "w": [
+        "1",
+        "-2",
+        "1/2",
+        "0"
+      ],
+      "gamma": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "-2",
+        "0",
+        "0",
+        "1/2",
+        "0",
+        "0",
+        "0",
+        "0"
+      ],
+      "beta": [
+        "1",
+        "1",
+        "-2",
+        "-2",
+        "-2",
+        "4",
+        "1/2",
+        "1/2",
+        "-1",
+        "0",
+        "0",
+        "0"
+      ]
+    },
+    {
+      "w": [
+        "1",
+        "1",
+        "-1",
+        "1/2"
+      ],
+      "gamma": [
+        "0",
+        "1",
+        "0",
+        "0",
+        "1",
+        "0",
+        "0",
+        "-1",
+        "0",
+        "0",
+        "1/2",
+        "0"
+      ],
+      "beta": [
+        "1",
+        "1",
+        "-2",
+        "1",
+        "1",
+        "-2",
+        "-1",
+        "-1",
+        "2",
+        "1/2",
+        "1/2",
+        "-1"
+      ]
+    }
+  ],
+  "field_checks": [
+    {
+      "id": "positive_inner",
+      "q_equals_Pr": true,
+      "q_hex": [
+        "0x1.fffffffff2ce5p-1",
+        "0x0.0p+0",
+        "0x1.ffffffffee686p-1",
+        "0x1.ffffffffee686p-1"
+      ]
+    },
+    {
+      "id": "negative_inner",
+      "q_equals_Pr": true,
+      "q_hex": [
+        "0x1.fffffffff2ce5p+1",
+        "0x0.0p+0",
+        "0x1.ffffffffee686p+1",
+        "0x1.ffffffffee686p+1"
+      ]
+    },
+    {
+      "id": "near_cancellation",
+      "q_equals_Pr": true,
+      "q_hex": [
+        "0x1.fffffffffee68p-57",
+        "0x0.0p+0",
+        "0x0.0p+0",
+        "0x0.0p+0"
+      ]
+    }
+  ],
+  "regularizer_checks": [
+    {
+      "w": [
+        "1",
+        "-2",
+        "1/2",
+        "0"
+      ],
+      "beta_penalty": "21/4000",
+      "gamma_penalty": "21/4000",
+      "candidate_penalty": "21/4000"
+    },
+    {
+      "w": [
+        "1",
+        "1",
+        "-1",
+        "1/2"
+      ],
+      "beta_penalty": "13/4000",
+      "gamma_penalty": "13/4000",
+      "candidate_penalty": "13/4000"
+    }
+  ],
+  "interpretation": {
+    "supported": "The four-dimensional q is a fixed coordinate selection from the frozen twelve-dimensional r on archived reference fields; the candidate score is contained by the stable linear readout class under the declared induced regularizer on the fixed subspace.",
+    "not_supported": [
+      "real model efficacy",
+      "capacity-matched generalization",
+      "new algorithm admission",
+      "source classification gain"
+    ],
+    "fairness_boundary": "A common lambda string is not an identical regularizer in gamma coordinates; training, calibration and model capacity remain untested."
+  },
+  "resources": {
+    "stdlib_fraction_only": true,
+    "real_samples_accessed": false,
+    "model_calls": 0,
+    "training_calls": 0,
+    "server_calls": 0,
+    "gpu_calls": 0,
+    "optimizer_calls": 0
+  },
+  "upstream_hashes": {
+    "AL32_inputs.json": "73d47ca47c371b2221523d40026ec5d8007bc15d6c49a7e9b6f241bfe1d0e750",
+    "AL32_evidence.json": "53124c72ddc548bc2ed69f8b7eec6bd6c398332f8e0368e4b9442727b2b66d96",
+    "AL32_config.json": "b04c03fa91dc6d21ac4091088b14a6a4a733494bb20833222a8feefce9dc3818"
+  }
+}

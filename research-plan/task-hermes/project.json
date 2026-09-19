@@ -3521,6 +3521,114 @@
       "artifact_sha256": "58662ff9f1cc0d79c3b99672eb8b5f86dc47089a2a6d6e3e5b79bfc4086104ed",
       "exact_artifact_sha256": "5ec05cf2c2dab77729c5b3db7629ef0c609584316abe9d54d29f59cab9366c1d",
       "next_action": "Retain boundary; no real execution without new candidate admission and operator/data gates"
+    },
+    {
+      "id": "AL39",
+      "milestone": "M2",
+      "title": "OR1候选四维与稳定十二维特征的包含关系审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL29",
+        "AL32"
+      ],
+      "requires_pass": [
+        "AL29",
+        "AL32"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "feature_containment_capacity_math",
+      "hypothesis": "candidate_contained_by_stable_linear_readout_on_frozen_fields",
+      "work": [
+        "固定输入与公式精确核验",
+        "不执行模型/媒体/服务器/GPU，不形成来源检测结论"
+      ],
+      "acceptance": [
+        "范围和限制写清",
+        "不产生来源指标或创新准入"
+      ],
+      "artifacts": [
+        "../reviews/AL39_FEATURE_CONTAINMENT_REVIEW_20260919.md",
+        "../reviews/AL39_FEATURE_CONTAINMENT_EXACT_20260919.json"
+      ],
+      "work_order": "../AL39_FEATURE_CONTAINMENT_CAPACITY_AUDIT_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T15:27:00+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "candidate_contained_by_stable_linear_readout_on_frozen_fields",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "dispatch_status": "completed_planner_math",
+      "completed_at": "2026-09-19T15:27:00+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL39_FEATURE_CONTAINMENT_REVIEW_20260919.md",
+      "review_scope": "限定数学/归档字段审查；无真实模型、数据、指标或独立科学复核",
+      "next_action": "保留限定结果；真实执行需独立候选准入和数据/资源门槛",
+      "artifact_sha256": "756f73e7fc6f00cb52b8237ec7720054c909180de52575f25600a6b825e27c97",
+      "exact_artifact_sha256": "ffc9fd080b12dbcb40cec87cf66a026b01f397640f9a73c8e6ff6120243aad31"
+    },
+    {
+      "id": "AL40",
+      "milestone": "M2",
+      "title": "有限解码核打破相位混叠的条件审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL38"
+      ],
+      "requires_pass": [
+        "AL38"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "fixed_kernel_phase_response_math",
+      "hypothesis": "pure_sampling_alias_and_kernel_boundary_established",
+      "work": [
+        "固定输入与公式精确核验",
+        "不执行模型/媒体/服务器/GPU，不形成来源检测结论"
+      ],
+      "acceptance": [
+        "范围和限制写清",
+        "不产生来源指标或创新准入"
+      ],
+      "artifacts": [
+        "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_REVIEW_20260919.md",
+        "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_EXACT_20260919.json"
+      ],
+      "work_order": "../AL40_FIXED_KERNEL_PHASE_RESPONSE_AUDIT_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T15:27:00+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "pure_sampling_alias_and_kernel_boundary_established",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "dispatch_status": "completed_planner_math",
+      "completed_at": "2026-09-19T15:27:00+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_REVIEW_20260919.md",
+      "review_scope": "限定数学/归档字段审查；无真实模型、数据、指标或独立科学复核",
+      "next_action": "保留限定结果；真实执行需独立候选准入和数据/资源门槛",
+      "artifact_sha256": "596a1e5e961a5aa6dad9ffe4c46bd38c23f8d1047cfc00d522d7280fb3481fc3",
+      "exact_artifact_sha256": "0ab481133e71560ce9b87f16bed461c229b3da917da3f68283f03ad5d3bd8699"
     }
   ],
   "storage_policy": {
@@ -4946,7 +5054,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T15:10:00+08:00",
+  "updated_at": "2026-09-19T15:27:00+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5628,12 +5736,12 @@
       "remote_send_required": false,
       "scope": "Planner statistical design; AL37 draft not yet complete",
       "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
-      "last_progress_at": "2026-09-19T15:06:00+08:00",
+      "last_progress_at": "2026-09-19T15:27:00+08:00",
       "first_active_recorded_at": "2026-09-19T14:18:47+08:00",
       "first_active_record_note": "Actual recording time; not claimed as first draft or process start",
-      "execution_stage": "limited_statistical_object_design_complete_formal_resampling_not_admitted",
+      "execution_stage": "AL37_limited_design_complete_AL39_AL40_math_reviews_complete",
       "background_process_running": false,
-      "remaining_work": "AL37 formal resampling fields; AL36 remains blocked until research API recovery",
+      "remaining_work": "AL37 formal resampling fields; AL36 blocked until research API recovers",
       "last_observed_status": "systemError",
       "last_observed_at": "2026-09-19T14:54:30+08:00",
       "failure_code": "401_unauthorized",
@@ -5650,7 +5758,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T15:10:00+08:00",
+    "last_coordinator_activity_at": "2026-09-19T15:27:00+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
