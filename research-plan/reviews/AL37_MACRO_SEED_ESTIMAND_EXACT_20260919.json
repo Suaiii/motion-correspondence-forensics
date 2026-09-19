@@ -1,12 +1,14 @@
 {
   "task_id": "AL37",
   "scope": "paired_macro_seed_estimand_design",
-  "status": "executed_fixed_ranking_count_only_AL37_still_in_progress",
+  "status": "executed_limited_statistical_design_audit",
   "checks": [
-    {
-      "name": "fixed_ranking_pair_counts_match_drafted_expectations",
-      "passed": true
-    }
+    {"name":"fixed_ranking_pair_counts_match_drafted_expectations","passed":true},
+    {"name":"shared_real_pooling_is_count_weighted_group_auc","passed":true},
+    {"name":"ancestor_bootstrap_unit_is_connected_cluster","passed":true},
+    {"name":"missing_class_rule_predeclared_as_invalid_resample","passed":true},
+    {"name":"deterministic_repetition_not_seed_evidence","passed":true},
+    {"name":"project_thresholds_unchanged","passed":true}
   ],
   "counterexample": {
     "baseline": {
@@ -68,5 +70,6 @@
   "prior_draft_sha256": "8591c0c049e79da27dd4f8d307962dfd6877c509cfa79f9976feb7e951741e8e",
   "report_sha256_at_check": "4662368b31cc54b3fa3ae152270ab7d2736ef07bc34df8457684423811f07d49",
   "gate_result": "not_evaluated",
-  "resampling_protocol_completed": false
+  "resampling_protocol_completed": "limited_design_only_no_real_resampling",
+  "formal_statistical_protocol_frozen": false
 }

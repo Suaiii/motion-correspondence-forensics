@@ -3443,7 +3443,7 @@
       "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "dispatch_status": "planner_work_in_progress",
-      "next_action": "Complete ancestor component bootstrap specification, missing-class and training-randomness assumptions without reopening real data or altering gates",
+      "next_action": "Freeze or defer formal resampling implementation only after actual data/randomness fields are bound; do not reopen exposed data or alter gates",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -3460,8 +3460,8 @@
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
       "hypothesis_result": "draft_in_progress",
-      "review_scope": "Drafted metric distinctions and one fixed counterexample; shared-real pooling equality and missing resampling fields remain",
-      "observed_work_at": "2026-09-19T14:18:47+08:00",
+      "review_scope": "Completed limited statistical object/design review and fixed count example; formal bootstrap code/protocol and real data remain open",
+      "observed_work_at": "2026-09-19T14:58:25+08:00",
       "execution_stage": "metric_definitions_and_fixed_count_checked_cluster_protocol_remaining",
       "partial_evidence": [
         "../reviews/AL37_MACRO_SEED_ESTIMAND_REVIEW_20260919.md",
@@ -4892,7 +4892,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T14:43:30+08:00",
+  "updated_at": "2026-09-19T14:58:25+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5566,7 +5566,7 @@
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
-      "status": "running",
+      "status": "blocked_external_research_api_auth",
       "prepared_at": "2026-09-19T14:07:03+08:00",
       "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
       "work_order_sha256": "f679b8e3ecc3af82f1bcd3adb27d5018e83e18e430d942216a9ca6468c745f25",
@@ -5574,24 +5574,30 @@
       "remote_send_required": false,
       "scope": "Planner statistical design; AL37 draft not yet complete",
       "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
-      "last_progress_at": "2026-09-19T14:18:47+08:00",
+      "last_progress_at": "2026-09-19T14:58:25+08:00",
       "first_active_recorded_at": "2026-09-19T14:18:47+08:00",
       "first_active_record_note": "Actual recording time; not claimed as first draft or process start",
-      "execution_stage": "metric_definitions_and_fixed_count_checked_cluster_protocol_remaining",
+      "execution_stage": "limited_statistical_object_design_complete_formal_resampling_not_admitted",
       "background_process_running": false,
-      "remaining_work": "Complete ancestor component bootstrap specification, missing-class and training-randomness assumptions without reopening real data or altering gates"
+      "remaining_work": "Freeze or defer formal resampling implementation only after actual data/randomness fields are bound; do not reopen exposed data or alter gates",
+      "last_observed_status": "systemError",
+      "last_observed_at": "2026-09-19T14:54:30+08:00",
+      "failure_code": "401_unauthorized",
+      "execution_artifacts_available": false,
+      "rerun_required": false,
+      "dispatch_status": "prepared_not_sent_until_state_change"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
-    "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:1",
+    "last_wait_cursor": "9b1eb3e1-2626-42ed-8ea5-ad9febccbb4e:2",
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T14:43:30+08:00",
-    "research_observed_status": "failed_usage_limit",
+    "last_coordinator_activity_at": "2026-09-19T14:58:25+08:00",
+    "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -6316,6 +6322,23 @@
         "notification_ack_rule": "Confirm only after reading the actual completed NOTIFY turn; no milestone ack or OS delivery claim",
         "notification_confirmed_at": "2026-09-19T14:43:30+08:00",
         "confirmation_evidence": "Previous completed Plan9.16 heartbeat final in current conversation includes NOTIFY for research usage limit and AL32 integration; not OS push delivery."
+      },
+      "research_task_api_auth_401": {
+        "status": "open",
+        "observed_at": "2026-09-19T14:54:30+08:00",
+        "failed_turn_id": "01a0b833-341f-7bc0-81f6-05f617d6448c",
+        "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+        "error_code": "401_unauthorized",
+        "error_message": "unexpected status 401 Unauthorized: Incorrect API key provided; /v1/responses",
+        "review": "../reviews/RESEARCH_STARTUP_AUTH_401_20260919.md",
+        "notification_state": "prepared_for_current_final_not_confirmed",
+        "local_planner_work_continues": true,
+        "no_retry_until_state_change": true,
+        "no_identity_or_model_change": true,
+        "no_purchase": true,
+        "execution_artifacts_preserved": true,
+        "supersedes_same_scope": false,
+        "separate_from_usage_limit": true
       }
     },
     "latest_authorization_at": "2026-09-18T23:24:36+08:00",
@@ -6337,10 +6360,12 @@
       "executor_role": "planagent",
       "status": "in_progress_resumable",
       "work_area": "research-plan/reviews",
-      "last_progress_at": "2026-09-19T14:18:47+08:00",
+      "last_progress_at": "2026-09-19T14:58:25+08:00",
       "background_process_running": false,
-      "completed_scope": "Metric definitions and one exact ranking count; shared-real pooled equals count-weighted macro under declared conditions",
-      "remaining_scope": "Ancestor component resampling, missing-class handling, conditional versus training randomness"
+      "completed_scope": "Macro versus pooled versus ensemble definitions, shared-real weighting identity, ancestor bootstrap unit, missing-class invalid rule, deterministic-seed boundary",
+      "remaining_scope": "No real resampling; concrete training randomness/checkpoint/data fields unknown",
+      "research_api_fault": "401_unauthorized_no_artifact",
+      "research_thread_retry": false
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -6370,6 +6395,9 @@
       ],
       "executor_blocked": [
         "AL36"
+      ],
+      "research_system_error": [
+        "cc-al37-planner-statistical-design-20260919"
       ]
     },
     "material_decision_notices": [
