@@ -1,0 +1,41 @@
+{
+  "task_id": "AL52",
+  "recorded_at": "2026-09-19T18:42:09.919031+08:00",
+  "evidence_kind": "manual_analytic_construction_no_numeric_or_model_batch",
+  "inputs_sha256": {
+    "research-plan/AL52_FINITE_PROBE_IDENTIFIABILITY_AUDIT_20260919.md": "d68c27905244ac082838cf32142ed791ef849aa2ec8890ac9b6b8f09c2293a7e",
+    "research-runs/algorithm_search_20260918/AL12_method_design.md": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+    "research-plan/reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md": "f39afd0b648e9bcba3e67a2dbcd74bd8e464adba3f7a217ff7b70c72b5c7dbf2"
+  },
+  "report": "research-plan/reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md",
+  "report_sha256": "cfc36da2b8783fdcb10f5b8d6390317e1cd022da65c2b8393790852cfba92d4a",
+  "derivation_scope": [
+    "Finite query sets tagged by probe identity",
+    "Smooth compactly supported perturbation disjoint from queried inputs",
+    "Unchanged initial outputs preserve all finite-h path inputs and outputs",
+    "C changes by t*w while J_a changes by-h*t*w and E by-t*w",
+    "Collision, h1, bounded output domain and restricted model-class exceptions"
+  ],
+  "assumptions": [
+    "Broad smooth map class on open common domain",
+    "At least one needed endpoint unqueried by the corresponding probe",
+    "Sufficient local output margin for small perturbation",
+    "No extra structural or weight-derived information used by finite-record observer"
+  ],
+  "result": "C not uniquely identified from finite soft-query record under these assumptions",
+  "not_claimed": [
+    "Unconditional lower bound for known VAE architecture/weights",
+    "Inability to estimate within all numerical tolerances",
+    "Source labels or any classifier efficacy"
+  ],
+  "future_generic_additional_endpoint_calls": 2,
+  "future_diagnostic_authorized": false,
+  "numeric_tests_executed": 0,
+  "research_code_replayed": false,
+  "model_calls": 0,
+  "real_samples_accessed": false,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "independent_scientific_review": false,
+  "innovation_admitted": false
+}

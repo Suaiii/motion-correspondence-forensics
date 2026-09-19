@@ -4477,8 +4477,8 @@
         "AL12",
         "AL51"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "finite_probe_query_identifiability_math",
       "hypothesis": "有限h软查询未覆盖完整端点时可能存在观测相同但C不同的平滑映射，须给条件构造和碰撞例外。",
       "work": [
@@ -4492,7 +4492,8 @@
         "不重跑已归档数值或改变OR1"
       ],
       "artifacts": [
-        "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md"
+        "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md",
+        "../reviews/AL52_SYMBOLIC_REVIEW_RECORD_20260919.json"
       ],
       "work_order": "../AL52_FINITE_PROBE_IDENTIFIABILITY_AUDIT_20260919.md",
       "work_order_sha256": "d68c27905244ac082838cf32142ed791ef849aa2ec8890ac9b6b8f09c2293a7e",
@@ -4511,8 +4512,69 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "C_not_uniquely_identified_from_finite_soft_query_transcript_in_declared_broad_smooth_class",
+      "next_action": "AL53 asks what credible regularity/error bounds can identify approximately; no duplicate AL52 construction or model calls",
+      "started_at": "2026-09-19T18:38:47+08:00",
+      "dispatch_status": "completed_scoped_symbolic_review",
+      "completed_at": "2026-09-19T18:44:20+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md",
+      "artifact_sha256": "cfc36da2b8783fdcb10f5b8d6390317e1cd022da65c2b8393790852cfba92d4a",
+      "symbolic_record": "../reviews/AL52_SYMBOLIC_REVIEW_RECORD_20260919.json",
+      "symbolic_record_sha256": "2b07249608d609c6ead1680039e52a1b493583d568c0ec0ad33bfcef7a1c8015",
+      "review_scope": "Manual local perturbation construction with full domain/output and collision exceptions; no model/data/numeric execution or general architecture lower bound"
+    },
+    {
+      "id": "AL53",
+      "milestone": "M2",
+      "title": "有误差与正则性先验时完整端点的部分可辨识范围",
+      "assignee": "planagent",
+      "parents": [
+        "AL16",
+        "AL51",
+        "AL52"
+      ],
+      "requires_pass": [
+        "AL16",
+        "AL51",
+        "AL52"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "endpoint_partial_identification_design",
+      "hypothesis": "有限查询的非唯一性不排除可信正则性先验下的小外包络，须区分必要集合、可实现范围与新增调用价值。",
+      "work": [
+        "由带误差查询与域内Lipschitz界构造未知端点的球交",
+        "传播端点输入误差并区分差集合和可同时达到的范围",
+        "给至多一个未执行的最小新增观测规则，未知界不填0"
+      ],
+      "acceptance": [
+        "不把外包络当精确可实现集合或实际AE认证",
+        "无数值例、重跑、样本或模型/服务器调用",
+        "明确真实常数与来源效果未证，不变更原算法或门槛"
+      ],
+      "artifacts": [
+        "../reviews/AL53_ENDPOINT_PARTIAL_IDENTIFICATION_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL53_ENDPOINT_PARTIAL_IDENTIFICATION_AUDIT_20260919.md",
+      "work_order_sha256": "aad6494060757d96407615b92d61b95f2b0f9459fb14afd5b314daa2fa0ca4b7",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T18:44:20+08:00",
+      "due_at": "2026-09-23T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
-      "next_action": "Local symbolic query-identifiability review; independent of research401 and AL45 source gap"
+      "next_action": "Local symbolic set-bound design independent of research401 and AL45 source gap"
     }
   ],
   "storage_policy": {
@@ -5938,7 +6000,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T18:32:50+08:00",
+  "updated_at": "2026-09-19T18:44:20+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -6623,6 +6685,14 @@
       "plan_sha256": "a978712b2936529dbe31669fe5a0031a53f96647b2a05da365636115ff28772e",
       "reason": "Separate original public-probe order from chord deviation; proposed6-call diagnostic only, no algorithm or resource change",
       "date_budget_or_threshold_changes": false
+    },
+    {
+      "at": "2026-09-19T18:44:20+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "finite_query_identification_addendum",
+      "plan_sha256": "69ceeabfcc3f926031a464847db4f0c89a1fa357cf674a692720d1f6c0cd8dd7",
+      "reason": "Conditional transcript-preserving construction clarifies what the proposed diagnostic adds; prepare bounded partial-identification question, no real experiment",
+      "date_budget_or_threshold_changes": false
     }
   ],
   "continuous_collaboration": {
@@ -6637,20 +6707,20 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al52-planner-query-identifiability-20260919",
+      "id": "cc-al53-planner-endpoint-bounds-20260919",
       "task_ids": [
-        "AL52"
+        "AL53"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T18:32:50+08:00",
-      "work_order": "../AL52_FINITE_PROBE_IDENTIFIABILITY_AUDIT_20260919.md",
-      "work_order_sha256": "d68c27905244ac082838cf32142ed791ef849aa2ec8890ac9b6b8f09c2293a7e",
+      "prepared_at": "2026-09-19T18:44:20+08:00",
+      "work_order": "../AL53_ENDPOINT_PARTIAL_IDENTIFICATION_AUDIT_20260919.md",
+      "work_order_sha256": "aad6494060757d96407615b92d61b95f2b0f9459fb14afd5b314daa2fa0ca4b7",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "a978712b2936529dbe31669fe5a0031a53f96647b2a05da365636115ff28772e",
-      "scope": "Symbolic finite-query identifiability only; no real R calls or code replay",
+      "plan_sha256": "69ceeabfcc3f926031a464847db4f0c89a1fa357cf674a692720d1f6c0cd8dd7",
+      "scope": "Symbolic partial-identification bounds with explicitly unknown actual model constants; no numerical/model/server work",
       "remote_send_required": false,
       "background_process_running": false
     },
@@ -6663,7 +6733,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T18:32:50+08:00",
+    "last_coordinator_activity_at": "2026-09-19T18:44:20+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -7556,9 +7626,31 @@
         "completed_at": "2026-09-19T18:32:50+08:00",
         "review": "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md",
         "outcome": "Finite-h exact decomposition with conditional curvature bounds; zero real/numeric execution"
+      },
+      {
+        "id": "cc-al52-planner-query-identifiability-20260919",
+        "task_ids": [
+          "AL52"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_symbolic_review",
+        "prepared_at": "2026-09-19T18:32:50+08:00",
+        "work_order": "../AL52_FINITE_PROBE_IDENTIFIABILITY_AUDIT_20260919.md",
+        "work_order_sha256": "d68c27905244ac082838cf32142ed791ef849aa2ec8890ac9b6b8f09c2293a7e",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "a978712b2936529dbe31669fe5a0031a53f96647b2a05da365636115ff28772e",
+        "scope": "Symbolic finite-query identifiability only; no real R calls or code replay",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T18:38:47+08:00",
+        "completed_at": "2026-09-19T18:44:20+08:00",
+        "review": "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md",
+        "outcome": "Finite transcript non-uniqueness with compensating J; model class/tolerance limitations retained"
       }
     ],
-    "last_substantive_review": "../reviews/AL51_SOFT_MIXING_DECOMPOSITION_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL52_FINITE_PROBE_IDENTIFIABILITY_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -7701,13 +7793,13 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL51"
+        "AL52"
       ],
       "executor_role": "planagent",
       "status": "completed_scoped_symbolic_review",
-      "completed_at": "2026-09-19T18:32:50+08:00",
+      "completed_at": "2026-09-19T18:44:20+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL52",
+      "next_prepared_task_id": "AL53",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -7725,15 +7817,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T18:32:50+08:00",
+    "last_local_review_at": "2026-09-19T18:44:20+08:00",
     "prepared_independent_task_ids": [
-      "AL52",
+      "AL53",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL52",
+        "AL53",
         "AL36"
       ],
       "executor_blocked": [
@@ -7814,9 +7906,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "b26c6a1b59f48320c338710dcbd21d9bbad074a1",
-      "project_sha256": "80891ed114749a4cbc2c114b6b5bc24ef4c687c46572a1242a53aa07749bc9ba",
-      "includes_current_turn_start_record": true
+      "commit": "dd3e8f994f08b2f9e47cbb77baf5fd70eb8b6ada",
+      "prior_project_sha256": "aa76587fdc55db32e733dfb670d1be1f9afab98e57b3f4c86fbc38e0e4db94f9",
+      "contains_current_turn_start_record": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -7829,9 +7921,9 @@
     },
     "last_progress_at": "2026-09-19T18:06:34+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T18:25:32+08:00",
+      "at": "2026-09-19T18:38:47+08:00",
       "action": "no_remote_wait",
-      "reason": "Current executor is planagent; additional_dispatches empty. AL36 remains queued unsent under prior401 with no recovery evidence; continue authorized local work."
+      "reason": "Only current executor is planagent; additional_dispatches empty. Research AL36 remains queued unsent under recorded401, no new recovery evidence."
     }
   },
   "candidate_protocols": {
@@ -7955,7 +8047,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL52",
+        "AL53",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -7978,7 +8070,9 @@
       "soft_path_decomposition_review_task": "AL51",
       "soft_path_decomposition_status": "K_h=C+chord_term; true contributions unmeasured",
       "proposed_decomposition_diagnostic_R_calls": 6,
-      "proposed_decomposition_diagnostic_scope": "Generic noncoincident main-h case; actual reuse must be counted; not authorized"
+      "proposed_decomposition_diagnostic_scope": "Generic noncoincident main-h case; actual reuse must be counted; not authorized",
+      "finite_query_identifiability_review_task": "AL52",
+      "finite_query_identifiability_status": "Broad smooth black-box class only; C not uniquely determined by finite soft transcript, actual known architecture not covered"
     }
   },
   "open_review_issues": [
