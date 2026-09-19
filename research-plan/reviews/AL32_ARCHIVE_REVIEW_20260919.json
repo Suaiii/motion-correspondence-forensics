@@ -1,0 +1,111 @@
+{
+  "task_id": "AL32",
+  "reviewer": "planagent",
+  "reviewed_at": "2026-09-19T05:40:18.993555+00:00",
+  "gate_result": "pass",
+  "gate_scope": "stable_readout_metric_integration_reference",
+  "manifest_files_verified": 12,
+  "historical_files_verified_in_both_roots": 118,
+  "dependencies_verified": 5,
+  "freeze_inputs_verified": 7,
+  "upstream_at_freeze_verified": 5,
+  "freeze_commit": "0685fbf17d16b1a639037924266e1257e0b3abcd",
+  "result_commit": "551b0958e8cc94e2df7294b96f710df587d0b2b0",
+  "archived_checks": 85,
+  "field_diagnostics": [
+    {
+      "id": "positive_inner",
+      "score_hex": "0x1.7ffffffff5014p+0",
+      "q_hex_reuses": 4
+    },
+    {
+      "id": "negative_inner",
+      "score_hex": "0x1.7ffffffff5014p+2",
+      "q_hex_reuses": 4
+    },
+    {
+      "id": "near_cancellation",
+      "score_hex": "0x1.fffffffffee68p-57",
+      "q_hex_reuses": 4
+    }
+  ],
+  "decimal_fixed_point_diagnostics": [
+    {
+      "panel": "aligned",
+      "point": "zero",
+      "coordinate": "beta",
+      "decimal_max_error": "2.319046813846299615494855463875478650412068E-17"
+    },
+    {
+      "panel": "aligned",
+      "point": "zero",
+      "coordinate": "gamma",
+      "decimal_max_error": "2.319046813846299615494855463875478650412068E-17"
+    },
+    {
+      "panel": "aligned",
+      "point": "embedded_w",
+      "coordinate": "beta",
+      "decimal_max_error": "5.9895211172911781640426170415981502570894755E-17"
+    },
+    {
+      "panel": "aligned",
+      "point": "embedded_w",
+      "coordinate": "gamma",
+      "decimal_max_error": "5.9895211172911781640426170415981502570894755E-17"
+    },
+    {
+      "panel": "full_rank",
+      "point": "zero",
+      "coordinate": "beta",
+      "decimal_max_error": "2.319046813846299615494855463875478650412068E-17"
+    },
+    {
+      "panel": "full_rank",
+      "point": "zero",
+      "coordinate": "gamma",
+      "decimal_max_error": "2.319046813846299615494855463875478650412068E-17"
+    },
+    {
+      "panel": "full_rank",
+      "point": "embedded_w",
+      "coordinate": "beta",
+      "decimal_max_error": "4.2577634365240567949259220059225427375261382E-17"
+    },
+    {
+      "panel": "full_rank",
+      "point": "embedded_w",
+      "coordinate": "gamma",
+      "decimal_max_error": "4.2577634365240567949259220059225427375261382E-17"
+    },
+    {
+      "panel": "symmetric",
+      "point": "zero",
+      "coordinate": "beta",
+      "decimal_max_error": "2.319046813846299615494855463875478650412068E-17"
+    },
+    {
+      "panel": "symmetric",
+      "point": "zero",
+      "coordinate": "gamma",
+      "decimal_max_error": "2.319046813846299615494855463875478650412068E-17"
+    },
+    {
+      "panel": "symmetric",
+      "point": "embedded_w",
+      "coordinate": "beta",
+      "decimal_max_error": "7.4219730201807128442748535089389591179105246E-17"
+    },
+    {
+      "panel": "symmetric",
+      "point": "embedded_w",
+      "coordinate": "gamma",
+      "decimal_max_error": "7.4219730201807128442748535089389591179105246E-17"
+    }
+  ],
+  "source_or_model_replayed": false,
+  "formal_independent_scientific_review": false,
+  "real_efficacy_or_breakthrough": false,
+  "old_AL27_gate_result": "fail",
+  "audit_source_sha256": "44dce946119f74b5a10de5727ce108b44e7bc7ab00a2f2cee220626ffcc30f1a"
+}
