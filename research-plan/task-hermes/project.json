@@ -3467,6 +3467,60 @@
         "../reviews/AL37_MACRO_SEED_ESTIMAND_REVIEW_20260919.md",
         "../reviews/AL37_MACRO_SEED_ESTIMAND_EXACT_20260919.json"
       ]
+    },
+    {
+      "id": "AL38",
+      "milestone": "M2",
+      "title": "H-P时间相位与stride混叠可辨识性审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL09",
+        "AL28"
+      ],
+      "requires_pass": [],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "phase_aliasing_identifiability_math",
+      "hypothesis": "仅凭stride或纯采样无法辨识相差采样频率的相位；有限核是否打破混叠必须由固定核响应判定。",
+      "work": [
+        "精确推导纯采样alias等价类",
+        "写明有限核频响和缓存/位置状态边界",
+        "不运行模型媒体服务器GPU，不形成来源检测结论"
+      ],
+      "acceptance": [
+        "固定s和核条件，不扫描频率或标签",
+        "保留stride不等于可见周期的边界",
+        "数学审查独立于AL37，不授权真实执行"
+      ],
+      "artifacts": [
+        "../reviews/AL38_PHASE_ALIASING_REVIEW_20260919.md",
+        "../reviews/AL38_PHASE_ALIASING_EXACT_20260919.json"
+      ],
+      "work_order": "../AL38_PHASE_ALIASING_IDENTIFIABILITY_AUDIT_20260919.md",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T15:06:00+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "pure_sampling_alias_refuted_identifiability; finite_kernel_boundary_open",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "dispatch_status": "completed_planner_math",
+      "completed_at": "2026-09-19T15:06:00+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL38_PHASE_ALIASING_REVIEW_20260919.md",
+      "review_scope": "Fixed discrete operator identifiability only; no actual decoder, model or source data",
+      "artifact_sha256": "58662ff9f1cc0d79c3b99672eb8b5f86dc47089a2a6d6e3e5b79bfc4086104ed",
+      "exact_artifact_sha256": "5ec05cf2c2dab77729c5b3db7629ef0c609584316abe9d54d29f59cab9366c1d",
+      "next_action": "Retain boundary; no real execution without new candidate admission and operator/data gates"
     }
   ],
   "storage_policy": {
@@ -4892,7 +4946,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T14:58:25+08:00",
+  "updated_at": "2026-09-19T15:10:00+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5574,12 +5628,12 @@
       "remote_send_required": false,
       "scope": "Planner statistical design; AL37 draft not yet complete",
       "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
-      "last_progress_at": "2026-09-19T14:58:25+08:00",
+      "last_progress_at": "2026-09-19T15:06:00+08:00",
       "first_active_recorded_at": "2026-09-19T14:18:47+08:00",
       "first_active_record_note": "Actual recording time; not claimed as first draft or process start",
       "execution_stage": "limited_statistical_object_design_complete_formal_resampling_not_admitted",
       "background_process_running": false,
-      "remaining_work": "Freeze or defer formal resampling implementation only after actual data/randomness fields are bound; do not reopen exposed data or alter gates",
+      "remaining_work": "AL37 formal resampling fields; AL36 remains blocked until research API recovery",
       "last_observed_status": "systemError",
       "last_observed_at": "2026-09-19T14:54:30+08:00",
       "failure_code": "401_unauthorized",
@@ -5596,7 +5650,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T14:58:25+08:00",
+    "last_coordinator_activity_at": "2026-09-19T15:10:00+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -6250,7 +6304,8 @@
     "no_repeat_work": [
       "Do not repeat completed packages or tune C on the exposed 100 records",
       "Do not repeat unchanged server/account probes or the pending budget question",
-      "AL32 already integrated after quota failure; do not rerun or resend. AL36 remains unsent until actual supported research-executor recovery."
+      "AL32 already integrated after quota failure; do not rerun or resend. AL36 remains unsent until actual supported research-executor recovery.",
+      "AL38 math review completed; do not execute or resend. AL36 still unsent until research API auth state changes."
     ],
     "last_observed_completed_turn_id": "01a0b672-2099-7ec1-aae4-2f88c81b9cce",
     "configuration_faults": {
@@ -6360,10 +6415,10 @@
       "executor_role": "planagent",
       "status": "in_progress_resumable",
       "work_area": "research-plan/reviews",
-      "last_progress_at": "2026-09-19T14:58:25+08:00",
+      "last_progress_at": "2026-09-19T15:06:00+08:00",
       "background_process_running": false,
-      "completed_scope": "Macro versus pooled versus ensemble definitions, shared-real weighting identity, ancestor bootstrap unit, missing-class invalid rule, deterministic-seed boundary",
-      "remaining_scope": "No real resampling; concrete training randomness/checkpoint/data fields unknown",
+      "completed_scope": "Macro versus pooled versus ensemble definitions, shared-real weighting identity, ancestor bootstrap unit, missing-class invalid rule, deterministic-seed boundary; AL38 pure-sampling alias and finite-kernel boundary reviewed",
+      "remaining_scope": "AL37 formal resampling fields; AL36 external research review",
       "research_api_fault": "401_unauthorized_no_artifact",
       "research_thread_retry": false
     },
@@ -6395,9 +6450,6 @@
       ],
       "executor_blocked": [
         "AL36"
-      ],
-      "research_system_error": [
-        "cc-al37-planner-statistical-design-20260919"
       ]
     },
     "material_decision_notices": [

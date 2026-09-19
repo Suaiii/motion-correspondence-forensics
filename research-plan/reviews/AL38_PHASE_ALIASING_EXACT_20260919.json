@@ -1,0 +1,19 @@
+{
+  "task_id": "AL38",
+  "gate_scope": "phase_aliasing_identifiability_math",
+  "gate_result": "pass",
+  "checks": [
+    {"name": "pure_sampling_alias_identity", "passed": true},
+    {"name": "finite_kernel_frequency_response_boundary", "passed": true},
+    {"name": "stride_not_visible_period", "passed": true},
+    {"name": "no_real_model_or_source_claim", "passed": true}
+  ],
+  "pure_sampling": {"s": 4, "frequencies": ["omega", "omega+2pi/s"], "observations_equal": true},
+  "finite_kernel": {"condition_for_alias": "H_a(omega)=H_a(omega+2pi/s)", "actual_kernel_bound": "unknown"},
+  "real_data_accessed": false,
+  "model_calls": 0,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "formal_breakthrough": false,
+  "interpretation": "Conditional discrete-operator identifiability boundary only."
+}
