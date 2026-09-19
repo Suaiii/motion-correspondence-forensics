@@ -3387,10 +3387,10 @@
         "../../research-runs/algorithm_search_20260918/AL36_handoff.md"
       ],
       "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
-      "blocker": "Primary research executor last turn failed with usage_limit; await actual supported quota recovery or user state change, no duplicate dispatch",
+      "blocker": "Latest observed research executor turn failed with401 authentication; previous usage-limit resolution unknown. Package not sent; await supported recovery evidence.",
       "dispatch_status": "prepared_not_sent",
       "execution_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
-      "next_action": "After genuine recovery, read main DAG and integrated AL32; accept one bounded review package",
+      "next_action": "After genuine supported API recovery, read main DAG and correction AL41 before independent AL36; never rerun AL32",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -3443,7 +3443,7 @@
       "work_order": "../AL37_MACRO_SEED_ESTIMAND_AUDIT_20260919.md",
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "dispatch_status": "planner_work_in_progress",
-      "next_action": "AL36 remains blocked until research API auth recovery; no formal resampling or real training admission",
+      "next_action": "AL42 quantifies discarded-draw conditioning; AL37 pass remains limited design, not formal bootstrap acceptance",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -3470,7 +3470,13 @@
       "completed_at": "2026-09-19T15:31:00+08:00",
       "reviewed_by": "planagent",
       "review": "../reviews/AL37_FINAL_REVIEW_20260919.md",
-      "artifact_sha256": "3799cbc72bb6c4dee4aa8c07607c1170cde756c2e42363cc41cdf61f44e9d26f"
+      "artifact_sha256": "3799cbc72bb6c4dee4aa8c07607c1170cde756c2e42363cc41cdf61f44e9d26f",
+      "remaining_protocol_fields": [
+        "Actual ancestor components and target weights",
+        "Fully specified missing-draw distribution treatment (AL42)",
+        "Training randomness and model identities",
+        "Real statistical implementation/review"
+      ]
     },
     {
       "id": "AL38",
@@ -3524,7 +3530,9 @@
       "review_scope": "Fixed discrete operator identifiability only; no actual decoder, model or source data",
       "artifact_sha256": "58662ff9f1cc0d79c3b99672eb8b5f86dc47089a2a6d6e3e5b79bfc4086104ed",
       "exact_artifact_sha256": "5ec05cf2c2dab77729c5b3db7629ef0c609584316abe9d54d29f59cab9366c1d",
-      "next_action": "Retain boundary; no real execution without new candidate admission and operator/data gates"
+      "next_action": "Retain boundary; no real execution without new candidate admission and operator/data gates",
+      "evidence_kind": "symbolic_derivation_only; manually authored JSON checklist is not an execution receipt",
+      "incremental_claim_boundary": "Known sampling identity; no new algorithm or actual kernel/model validation"
     },
     {
       "id": "AL39",
@@ -3579,7 +3587,20 @@
       "review_scope": "限定数学/归档字段审查；无真实模型、数据、指标或独立科学复核",
       "next_action": "保留限定结果；真实执行需独立候选准入和数据/资源门槛",
       "artifact_sha256": "756f73e7fc6f00cb52b8237ec7720054c909180de52575f25600a6b825e27c97",
-      "exact_artifact_sha256": "ffc9fd080b12dbcb40cec87cf66a026b01f397640f9a73c8e6ff6120243aad31"
+      "exact_artifact_sha256": "ffc9fd080b12dbcb40cec87cf66a026b01f397640f9a73c8e6ff6120243aad31",
+      "review_errata": {
+        "recorded_at": "2026-09-19T16:37:32+08:00",
+        "review": "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+        "actual_archive_counts": {
+          "check_categories": 5,
+          "fields": 3,
+          "fixed_weights": 2
+        },
+        "claim_15_independent_checks_withdrawn": true,
+        "numerical_result_replayed": false,
+        "incremental_information_over_AL29_AL32": "none; archival consistency only"
+      },
+      "incremental_claim_boundary": "Restatement of AL29/AL32 containment; no new methodology; count corrected byAL41"
     },
     {
       "id": "AL40",
@@ -3593,7 +3614,7 @@
         "AL38"
       ],
       "status": "done",
-      "gate_result": "pass",
+      "gate_result": "fail",
       "gate_scope": "fixed_kernel_phase_response_math",
       "hypothesis": "pure_sampling_alias_and_kernel_boundary_established",
       "work": [
@@ -3606,7 +3627,9 @@
       ],
       "artifacts": [
         "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_REVIEW_20260919.md",
-        "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_EXACT_20260919.json"
+        "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_EXACT_20260919.json",
+        "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+        "../reviews/AL41_FIXED_KERNEL_CORRECTION_20260919.json"
       ],
       "work_order": "../AL40_FIXED_KERNEL_PHASE_RESPONSE_AUDIT_20260919.md",
       "plan_version": "cvpr27-20260919-v1.5",
@@ -3614,7 +3637,7 @@
       "due_at": "2026-09-21T22:00:00+08:00",
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "pure_sampling_alias_and_kernel_boundary_established",
+      "hypothesis_result": "fixed_kernel_retained_alias_claim_refuted_by_exact_arithmetic",
       "resource_policy": {
         "local_cpu": true,
         "threads": 2,
@@ -3625,14 +3648,197 @@
         "large_downloads": false
       },
       "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "dispatch_status": "completed_planner_math",
+      "dispatch_status": "completed_with_failed_evidence_review",
       "completed_at": "2026-09-19T15:27:00+08:00",
       "reviewed_by": "planagent",
-      "review": "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_REVIEW_20260919.md",
-      "review_scope": "限定数学/归档字段审查；无真实模型、数据、指标或独立科学复核",
-      "next_action": "保留限定结果；真实执行需独立候选准入和数据/资源门槛",
-      "artifact_sha256": "596a1e5e961a5aa6dad9ffe4c46bd38c23f8d1047cfc00d522d7280fb3481fc3",
-      "exact_artifact_sha256": "0ab481133e71560ce9b87f16bed461c229b3da917da3f68283f03ad5d3bd8699"
+      "review": "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+      "review_scope": "Original arithmetic verdict withdrawn; immutable original report preserved, correction is authoritative",
+      "next_action": "Do not cite original pass or replace its fixed frequencies/kernels to repair the claim",
+      "artifact_sha256": "f4670d598e20a21f2b6663c1f10f2e4db4464d1c0d4d4ab01e6810da700829d8",
+      "exact_artifact_sha256": "0ab481133e71560ce9b87f16bed461c229b3da917da3f68283f03ad5d3bd8699",
+      "previous_gate_assessments": [
+        {
+          "gate_result": "pass",
+          "recorded_completed_at": "2026-09-19T15:27:00+08:00",
+          "review": "../reviews/AL40_FIXED_KERNEL_PHASE_RESPONSE_REVIEW_20260919.md",
+          "artifact_sha256": "596a1e5e961a5aa6dad9ffe4c46bd38c23f8d1047cfc00d522d7280fb3481fc3",
+          "exact_artifact_sha256": "0ab481133e71560ce9b87f16bed461c229b3da917da3f68283f03ad5d3bd8699",
+          "superseded_at": "2026-09-19T16:37:32+08:00",
+          "reason": "Gaussian integer recalculation contradicts stored H10m1(pi)=2"
+        }
+      ],
+      "reviewed_at": "2026-09-19T16:37:32+08:00",
+      "correction_task_id": "AL41"
+    },
+    {
+      "id": "AL41",
+      "milestone": "M2",
+      "title": "核频响归档的精确纠错审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL40"
+      ],
+      "requires_pass": [],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "correction_of_fixed_kernel_arithmetic",
+      "hypothesis": "实际高斯整数计算可能否定AL40写入的相等响应，不能以自填passed认证数学结论。",
+      "work": [
+        "按独立工作单的固定输入/符号条件完成推导",
+        "保留反例、历史字节与未知项；不改变真实实验授权"
+      ],
+      "acceptance": [
+        "产生具体推导或实际计算证据而非自填pass",
+        "如失败保留原始输入不扩大搜索",
+        "限定数学审查不作为创新准入或正式独立复核"
+      ],
+      "artifacts": [
+        "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+        "../reviews/AL41_FIXED_KERNEL_CORRECTION_20260919.json"
+      ],
+      "work_order": "../AL41_FIXED_KERNEL_CORRECTION_AUDIT_20260919.md",
+      "work_order_sha256": "797eaf397b7bcdf801d9ab1531009ba034c792ddf0ff34618f7e76e8c595acc3",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "recorded_at": "2026-09-19T16:37:32+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "AL40 fixed retained-alias assertion falsified; no actual decoder conclusion",
+      "started_at": "2026-09-19T08:32:19.337234+00:00",
+      "execution_completed_at": "2026-09-19T08:32:19.339270+00:00",
+      "completed_at": "2026-09-19T16:37:32+08:00",
+      "prepared_at_source": "Local work-order file written before arithmetic; no prior committed preregistration claimed",
+      "registration_mode": "retrospective_registration_of_planner_correction",
+      "review": "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+      "reviewed_by": "planagent",
+      "failure_parent_pass_not_required_reason": "Audit of a now failed numerical claim; no success-dependent branch",
+      "next_action": "Preserve AL40 done/fail and use AL41 correction; no alternate frequency search"
+    },
+    {
+      "id": "AL42",
+      "milestone": "M2",
+      "title": "祖先簇重抽缺类质量及区间条件审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL21",
+        "AL35",
+        "AL37"
+      ],
+      "requires_pass": [
+        "AL21",
+        "AL35",
+        "AL37"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "cluster_missing_mass_estimand_design",
+      "hypothesis": "丢弃缺类重抽会改变目标分布；必须保留其质量并检验是否会改变正下界判断。",
+      "work": [
+        "按独立工作单的固定输入/符号条件完成推导",
+        "保留反例、历史字节与未知项；不改变真实实验授权"
+      ],
+      "acceptance": [
+        "产生具体推导或实际计算证据而非自填pass",
+        "如失败保留原始输入不扩大搜索",
+        "限定数学审查不作为创新准入或正式独立复核"
+      ],
+      "artifacts": [
+        "../reviews/AL42_CLUSTER_MISSING_MASS_REVIEW_20260919.md",
+        "../reviews/AL42_CLUSTER_MISSING_MASS_EXACT_20260919.json"
+      ],
+      "work_order": "../AL42_CLUSTER_MISSING_MASS_AUDIT_20260919.md",
+      "work_order_sha256": "89ace80f45d6b3184b6280cc27e64e1c53f2af38408587b787a94e415bc53ee6",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "recorded_at": "2026-09-19T16:37:32+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "discarded_missing_class_draws_change_distribution; conditional_positive_quantile_not_sufficient",
+      "prepared_at": "2026-09-19T16:37:32+08:00",
+      "started_at": "2026-09-19T16:37:32+08:00",
+      "completed_at": "2026-09-19T16:43:16+08:00",
+      "execution_completed_at": "2026-09-19T08:40:43.984575+00:00",
+      "review": "../reviews/AL42_CLUSTER_MISSING_MASS_REVIEW_20260919.md",
+      "reviewed_by": "planagent",
+      "artifact_sha256": "ce35e9c95896bee42e1378532351a6f76fa259dd6ba8a4221015951c6816136c",
+      "review_scope": "Weighted estimand mathematics and one exact finite distribution; no actual bootstrap, CI, data acceptance or independent scientific review",
+      "next_action": "Use invalid mass and conditionality explicitly in future unexecuted protocol; continue independent AL43 energy-readout sensitivity"
+    },
+    {
+      "id": "AL43",
+      "milestone": "M2",
+      "title": "OR1能量读出局部敏感性条件审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL12",
+        "AL16",
+        "AL20",
+        "AL29"
+      ],
+      "requires_pass": [
+        "AL12",
+        "AL16",
+        "AL20",
+        "AL29"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "energy_readout_local_sensitivity_math",
+      "hypothesis": "J_K delta非零可能仍不能提供q的一阶增量，需要分开场变化与实际能量比读出敏感性。",
+      "work": [
+        "按独立工作单的固定输入/符号条件完成推导",
+        "保留反例、历史字节与未知项；不改变真实实验授权"
+      ],
+      "acceptance": [
+        "产生具体推导或实际计算证据而非自填pass",
+        "如失败保留原始输入不扩大搜索",
+        "限定数学审查不作为创新准入或正式独立复核"
+      ],
+      "artifacts": [
+        "../reviews/AL43_OR1_ENERGY_SENSITIVITY_REVIEW_20260919.md"
+      ],
+      "work_order": "../AL43_OR1_ENERGY_SENSITIVITY_AUDIT_20260919.md",
+      "work_order_sha256": "2dbad273476cd5651bd2d8277c8a741e125244a613efba5e17358e6b6c05f2d4",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "recorded_at": "2026-09-19T16:37:32+08:00",
+      "due_at": "2026-09-21T22:00:00+08:00",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads": 2,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "not_evaluated",
+      "prepared_at": "2026-09-19T16:37:32+08:00"
     }
   ],
   "storage_policy": {
@@ -5058,7 +5264,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T15:35:00+08:00",
+  "updated_at": "2026-09-19T16:43:16+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -5711,6 +5917,14 @@
         "git_revision": "a03c6bb0b7e3fa56e3b4578627724af5f3af8acb",
         "path": "research-plan/task-hermes/project.json"
       }
+    },
+    {
+      "at": "2026-09-19T16:43:16+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "AL40_evidence_correction_and_local_continuation",
+      "reason": "Correct wrong fixed-kernel response and withdraw originalpass; keep原始bytes. AL42 missing-mass design completed, AL43 new sensitivity question prepared.",
+      "plan_sha256": "76c83df0775225e054affd679d3718fb781e3d700b47f960437d6593ff8070c5",
+      "date_budget_or_scientific_threshold_changes": false
     }
   ],
   "continuous_collaboration": {
@@ -5725,28 +5939,22 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al36-research-admission-review-20260919",
+      "id": "cc-al43-planner-energy-sensitivity-20260919",
       "task_ids": [
-        "AL36"
+        "AL43"
       ],
-      "executor_role": "researchagent_next",
-      "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "executor_role": "planagent",
+      "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
-      "status": "blocked_external_research_api_auth",
-      "prepared_at": "2026-09-19T14:07:03+08:00",
-      "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
-      "work_order_sha256": "04c9d7c95877cd39e567da98f798dec7b7d1afa5c7d4ac977e9f8b21afd0c111",
+      "status": "prepared",
+      "prepared_at": "2026-09-19T16:43:16+08:00",
+      "work_order": "../AL43_OR1_ENERGY_SENSITIVITY_AUDIT_20260919.md",
+      "work_order_sha256": "2dbad273476cd5651bd2d8277c8a741e125244a613efba5e17358e6b6c05f2d4",
       "plan_version": "cvpr27-20260919-v1.5",
-      "scope": "One bounded adversarial OR1 admission review; no model/media/server/GPU; not sent while executor API is unauthorized.",
-      "remote_send_required": true,
-      "duplicate_dispatch_suppressed": true,
-      "last_observed_status": "systemError",
-      "last_observed_at": "2026-09-19T15:35:00+08:00",
-      "failure_code": "401_unauthorized",
-      "execution_artifacts_available": false,
-      "rerun_required": false,
-      "dispatch_status": "prepared_not_sent_until_state_change",
-      "blocker": "Research executor API returned 401 Unauthorized; no artifact and no retry or identity change."
+      "plan_sha256": "76c83df0775225e054affd679d3718fb781e3d700b47f960437d6593ff8070c5",
+      "scope": "New symbolic sensitivity condition for actual energy-ratio readout; no repeated archived tests, fitting, media, server or GPU",
+      "remote_send_required": false,
+      "background_process_running": false
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -5757,7 +5965,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T15:35:00+08:00",
+    "last_coordinator_activity_at": "2026-09-19T16:43:16+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -6432,12 +6640,56 @@
           "AL37": "done_pass_limited"
         },
         "review": "../reviews/AL37_FINAL_REVIEW_20260919.md"
+      },
+      {
+        "id": "cc-al42-planner-missing-mass-20260919",
+        "task_ids": [
+          "AL42"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_scoped_design",
+        "prepared_at": "2026-09-19T16:37:32+08:00",
+        "started_at": "2026-09-19T16:37:32+08:00",
+        "work_order": "../AL42_CLUSTER_MISSING_MASS_AUDIT_20260919.md",
+        "work_order_sha256": "89ace80f45d6b3184b6280cc27e64e1c53f2af38408587b787a94e415bc53ee6",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "New missing-mass mathematics; no true data resampling/model/server, independent of research401",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "completed_at": "2026-09-19T16:43:16+08:00",
+        "review": "../reviews/AL42_CLUSTER_MISSING_MASS_REVIEW_20260919.md",
+        "outcome": "Seven actual arithmetic checks of one predeclared distribution; zero bootstrap/model/server calls"
       }
     ],
-    "last_substantive_review": "../reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md",
+    "last_substantive_review": "../reviews/AL42_CLUSTER_MISSING_MASS_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
-    "queued_dispatch": null,
-    "dispatch_policy_state": "planner_math_and_protocol_active_research_executor_usage_blocked",
+    "queued_dispatch": {
+      "id": "cc-al36-research-admission-review-20260919",
+      "task_ids": [
+        "AL36"
+      ],
+      "executor_role": "researchagent_next",
+      "research_thread_id": "01a0b54a-3a46-72c0-9f2c-58bdb49c6424",
+      "host_id": "local",
+      "status": "blocked_external_research_api_auth",
+      "prepared_at": "2026-09-19T14:07:03+08:00",
+      "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
+      "work_order_sha256": "04c9d7c95877cd39e567da98f798dec7b7d1afa5c7d4ac977e9f8b21afd0c111",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "scope": "One bounded adversarial OR1 admission review; no model/media/server/GPU; not sent while executor API is unauthorized.",
+      "remote_send_required": true,
+      "duplicate_dispatch_suppressed": true,
+      "last_observed_status": "systemError",
+      "last_observed_at": "2026-09-19T15:35:00+08:00",
+      "failure_code": "401_unauthorized",
+      "execution_artifacts_available": false,
+      "rerun_required": false,
+      "dispatch_status": "prepared_not_sent_until_state_change",
+      "blocker": "Research executor API returned 401 Unauthorized; no artifact and no retry or identity change."
+    },
+    "dispatch_policy_state": "local_planner_work_prepared_external_research_auth_blocked",
     "waiting_on": [
       "Actual billing/remaining allowance or explicitly authorized batch allowance",
       "Original timestamp fields and two-real-source/ancestry acceptance"
@@ -6527,14 +6779,16 @@
         "error_code": "401_unauthorized",
         "error_message": "unexpected status 401 Unauthorized: Incorrect API key provided; /v1/responses",
         "review": "../reviews/RESEARCH_STARTUP_AUTH_401_20260919.md",
-        "notification_state": "prepared_for_current_final_not_confirmed",
+        "notification_state": "confirmed_final_output",
         "local_planner_work_continues": true,
         "no_retry_until_state_change": true,
         "no_identity_or_model_change": true,
         "no_purchase": true,
         "execution_artifacts_preserved": true,
         "supersedes_same_scope": false,
-        "separate_from_usage_limit": true
+        "separate_from_usage_limit": true,
+        "notification_confirmed_at": "2026-09-19T16:37:32+08:00",
+        "confirmation_evidence": "Completed heartbeat final for2026-09-19T06:46:15.667Z is visible in conversation; no OS push-delivery assertion"
       }
     },
     "latest_authorization_at": "2026-09-18T23:24:36+08:00",
@@ -6551,19 +6805,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL37"
+        "AL42"
       ],
       "executor_role": "planagent",
-      "status": "completed_limited_statistical_design",
+      "status": "completed_scoped_design",
+      "completed_at": "2026-09-19T16:43:16+08:00",
       "work_area": "research-plan/reviews",
-      "last_progress_at": "2026-09-19T15:06:00+08:00",
-      "background_process_running": false,
-      "completed_scope": "Macro versus pooled versus ensemble definitions, shared-real weighting identity, ancestor bootstrap unit, missing-class invalid rule, deterministic-seed boundary; AL38 pure-sampling alias and finite-kernel boundary reviewed",
-      "remaining_scope": "AL37 formal resampling fields; AL36 external research review",
-      "research_api_fault": "401_unauthorized_no_artifact",
-      "research_thread_retry": false,
-      "completed_at": "2026-09-19T15:31:00+08:00",
-      "next_prepared_task_id": null
+      "next_prepared_task_id": "AL43",
+      "background_process_running": false
     },
     "additional_dispatches": [],
     "new_session_authorization": {
@@ -6580,16 +6829,19 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T14:07:03+08:00",
-    "prepared_independent_task_ids": [],
+    "last_local_review_at": "2026-09-19T16:43:16+08:00",
+    "prepared_independent_task_ids": [
+      "AL43",
+      "AL36"
+    ],
     "active_and_prepared_work": {
       "running": [],
-      "prepared_independent": [],
-      "executor_blocked": [
+      "prepared_independent": [
+        "AL43",
         "AL36"
       ],
-      "research_system_error": [
-        "cc-al36-research-admission-review-20260919"
+      "executor_blocked": [
+        "AL36"
       ]
     },
     "material_decision_notices": [
@@ -6612,6 +6864,14 @@
         "not_a_milestone_receipt": true,
         "confirmed_at": "2026-09-19T02:42:27+08:00",
         "confirmation_evidence": "Actual NOTIFY XML in prior completed cvpr-2027 heartbeat turn triggered2026-09-18T18:22:58.901Z; no OS push claim."
+      },
+      {
+        "id": "al40-arithmetic-verdict-withdrawal",
+        "status": "prepared_for_current_final_not_confirmed",
+        "prepared_at": "2026-09-19T16:37:32+08:00",
+        "message": "AL40差分核响应误写导致原通过判定无效，已撤销并保留纠错回执。",
+        "evidence": "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+        "not_a_milestone_receipt": true
       }
     ],
     "context_updates": [
@@ -6642,9 +6902,9 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "53fb5463086047ba484f2796fcb03a0198e1822a",
-      "path": "research-plan/task-hermes/project.json",
-      "sha256": "e9d550a95c7b350dde7b8a64b835ab5c6e78309142a22430528f37cef0a579b3"
+      "git_revision": "fa32698ba3cc0e7c837e7ca493f29bea74a39dd5",
+      "project_sha256_before": "88927fdd588a4de68d5c4623e3b3105032769c5a3b9187c67b6f9265c7e3d477",
+      "prior_state_already_in_same_turn": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -6719,7 +6979,7 @@
     },
     "OR1": {
       "version": "AL12-OR1",
-      "status": "bounded_vector_numeric_and_matching_references_pass_tensor_readout_pending",
+      "status": "bounded_software_references_complete_real_mechanism_and_innovation_pending",
       "source_commit": "a4cfdeb",
       "innovation_admitted": false,
       "real_mechanism_confirmed": false,
@@ -6736,7 +6996,7 @@
       "compact_baseline_task": "AL20",
       "coverage_review_task": "AL21",
       "coverage_evaluation_review_task": "AL21",
-      "full_population_rejection_or_fallback_policy": "not_yet_frozen; accepted-only gains cannot substitute for complete-target benchmark",
+      "full_population_rejection_or_fallback_policy": "Not formally frozen; valid-only metrics or filtered bootstrap lower bounds cannot replace complete target",
       "public_probe_metadata_task": "AL22",
       "public_probe_pair_selection": "not_selected",
       "public_weight_identity_status": "remote LFS expected digests recorded; no weight payload locally/server verified",
@@ -6762,7 +7022,7 @@
       "filtered_readout_status": "OR1-readout-1 passed on7 fixed fields only; actual wrapper and AE precision pending",
       "multidimensional_head_task": "AL27",
       "stable_baseline_coordinate_task": "AL29",
-      "stable_baseline_coordinate_status": "mathematical contract passed; not implemented or fitted",
+      "stable_baseline_coordinate_status": "AL32 bounded arithmetic integration passed; real data fitting not performed",
       "stable_baseline_regularization": "lambda/6 times ||M^T gamma||^2; candidate q reused as second feature",
       "AE_precision_certificate": "unknown; coordinate changes do not certify probe accuracy",
       "multidimensional_head_status": "AL27 failed coordinate accuracy; no candidate-level scientific refutation",
@@ -6778,13 +7038,16 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL36",
-        "AL37"
+        "AL43",
+        "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
       "single_step_Gram_audit_status": "limited_fixed_counterexample_only",
       "minimum_mechanism_protocol_task": "AL35",
-      "minimum_mechanism_protocol_status": "draft_not_execution_authorized"
+      "minimum_mechanism_protocol_status": "draft_not_execution_authorized",
+      "missing_mass_review_task": "AL42",
+      "evidence_correction_reference": "../reviews/AL41_CORRECTION_REVIEW_20260919.md",
+      "formal_scientific_evidence_changed": false
     }
   },
   "open_review_issues": [

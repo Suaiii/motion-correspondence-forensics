@@ -1,0 +1,263 @@
+{
+  "task_id": "AL41",
+  "started_at": "2026-09-19T08:32:19.337234+00:00",
+  "completed_at": "2026-09-19T08:32:19.339270+00:00",
+  "source_commit_at_execution": "fa32698ba3cc0e7c837e7ca493f29bea74a39dd5",
+  "gate_scope": "correction_of_fixed_kernel_arithmetic",
+  "review_computation_result": "pass",
+  "AL40_review_verdict": "fail",
+  "old_AL40_files_preserved": true,
+  "hashes": {
+    "research-plan\\AL41_FIXED_KERNEL_CORRECTION_AUDIT_20260919.md": "797eaf397b7bcdf801d9ab1531009ba034c792ddf0ff34618f7e76e8c595acc3",
+    "research-plan\\reviews\\AL40_FIXED_KERNEL_PHASE_RESPONSE_EXACT_20260919.json": "0ab481133e71560ce9b87f16bed461c229b3da917da3f68283f03ad5d3bd8699",
+    "research-plan\\reviews\\AL40_FIXED_KERNEL_PHASE_RESPONSE_REVIEW_20260919.md": "596a1e5e961a5aa6dad9ffe4c46bd38c23f8d1047cfc00d522d7280fb3481fc3",
+    "research-plan\\reviews\\audit_al41_fixed_kernel_20260919.py": "80373d657ca6ad3a7fb7d98103c380811bca4c696545dfcab99cd0957bab6d19"
+  },
+  "tap_indexing": [
+    0,
+    1,
+    2
+  ],
+  "roots": {
+    "exp_i_pi": [
+      -1,
+      0
+    ],
+    "exp_i_3pi_over2": [
+      0,
+      -1
+    ]
+  },
+  "pure_sampling_factor_both": [
+    1,
+    0
+  ],
+  "computed_responses": [
+    {
+      "kernel": "a_equal_111",
+      "coefficients_r0_r1_r2": [
+        1,
+        1,
+        1
+      ],
+      "first_response": [
+        1,
+        0
+      ],
+      "alias_response": [
+        0,
+        -1
+      ],
+      "first_terms": [
+        {
+          "r": 0,
+          "coefficient": 1,
+          "z_power": [
+            1,
+            0
+          ],
+          "term": [
+            1,
+            0
+          ]
+        },
+        {
+          "r": 1,
+          "coefficient": 1,
+          "z_power": [
+            -1,
+            0
+          ],
+          "term": [
+            -1,
+            0
+          ]
+        },
+        {
+          "r": 2,
+          "coefficient": 1,
+          "z_power": [
+            1,
+            0
+          ],
+          "term": [
+            1,
+            0
+          ]
+        }
+      ],
+      "alias_terms": [
+        {
+          "r": 0,
+          "coefficient": 1,
+          "z_power": [
+            1,
+            0
+          ],
+          "term": [
+            1,
+            0
+          ]
+        },
+        {
+          "r": 1,
+          "coefficient": 1,
+          "z_power": [
+            0,
+            -1
+          ],
+          "term": [
+            0,
+            -1
+          ]
+        },
+        {
+          "r": 2,
+          "coefficient": 1,
+          "z_power": [
+            -1,
+            0
+          ],
+          "term": [
+            -1,
+            0
+          ]
+        }
+      ],
+      "complex_equal": false,
+      "first_power": 1,
+      "alias_power": 1,
+      "old_claim": {
+        "H_omega": "1",
+        "H_alias": "-i",
+        "equal": false,
+        "interpretation": "breaks this alias at the complex output"
+      }
+    },
+    {
+      "kernel": "a_diff_10m1",
+      "coefficients_r0_r1_r2": [
+        1,
+        0,
+        -1
+      ],
+      "first_response": [
+        0,
+        0
+      ],
+      "alias_response": [
+        2,
+        0
+      ],
+      "first_terms": [
+        {
+          "r": 0,
+          "coefficient": 1,
+          "z_power": [
+            1,
+            0
+          ],
+          "term": [
+            1,
+            0
+          ]
+        },
+        {
+          "r": 1,
+          "coefficient": 0,
+          "z_power": [
+            -1,
+            0
+          ],
+          "term": [
+            0,
+            0
+          ]
+        },
+        {
+          "r": 2,
+          "coefficient": -1,
+          "z_power": [
+            1,
+            0
+          ],
+          "term": [
+            -1,
+            0
+          ]
+        }
+      ],
+      "alias_terms": [
+        {
+          "r": 0,
+          "coefficient": 1,
+          "z_power": [
+            1,
+            0
+          ],
+          "term": [
+            1,
+            0
+          ]
+        },
+        {
+          "r": 1,
+          "coefficient": 0,
+          "z_power": [
+            0,
+            -1
+          ],
+          "term": [
+            0,
+            0
+          ]
+        },
+        {
+          "r": 2,
+          "coefficient": -1,
+          "z_power": [
+            -1,
+            0
+          ],
+          "term": [
+            1,
+            0
+          ]
+        }
+      ],
+      "complex_equal": false,
+      "first_power": 0,
+      "alias_power": 4,
+      "old_claim": {
+        "H_omega": "2",
+        "H_alias": "2",
+        "equal": true,
+        "interpretation": "retains an exact alias"
+      }
+    }
+  ],
+  "AL40_false_claims": [
+    "H_10m1(pi)=2",
+    "H_10m1(pi)=H_10m1(3pi/2)",
+    "difference kernel retains this exact complex-output alias"
+  ],
+  "correct_interpretation": "Both selected kernels distinguish the fixed known unit-amplitude complex exponentials. The111 kernel has equal power at the two frequencies; the10m1 kernel has powers0 and4. No alternate frequency or kernel selected.",
+  "AL39_report_count_note": {
+    "declared_check_categories": 5,
+    "field_records": 3,
+    "fixed_weight_vectors": 2,
+    "reported_count_15_supported_as_explicit_archive_categories": false,
+    "runtime_replayed": false,
+    "scope": "Archive count only; no new numerical evidence beyond AL29/AL32 is claimed."
+  },
+  "independent_scientific_review": false,
+  "resources": {
+    "gaussian_integer_arithmetic": true,
+    "fixed_kernel_frequency_evaluations": 4,
+    "model_calls": 0,
+    "media_access": false,
+    "training_calls": 0,
+    "server_calls": 0,
+    "gpu_calls": 0
+  }
+}

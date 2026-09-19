@@ -1,0 +1,76 @@
+{
+  "task_id": "AL42",
+  "started_at": "2026-09-19T08:40:43.983566+00:00",
+  "completed_at": "2026-09-19T08:40:43.984575+00:00",
+  "scope": "one_exact_missing_mass_distribution_not_actual_bootstrap",
+  "work_order_sha256": "89ace80f45d6b3184b6280cc27e64e1c53f2af38408587b787a94e415bc53ee6",
+  "source_sha256": "996ff3de124ae10223cd79bd1150132f2ce915205963b07c62ae61bd72d5a99a",
+  "checks": [
+    {
+      "name": "valid_only_lower_equals_one_tenth",
+      "passed": true
+    },
+    {
+      "name": "left_completed_lower_equals_minus_one",
+      "passed": true
+    },
+    {
+      "name": "right_completed_lower_equals_one_tenth",
+      "passed": true
+    },
+    {
+      "name": "lower_quantile_formula_matches_enumeration",
+      "passed": true
+    },
+    {
+      "name": "upper_quantile_formula_matches_enumeration",
+      "passed": true
+    },
+    {
+      "name": "positive_conditional_lower_does_not_force_positive_completion",
+      "passed": true
+    },
+    {
+      "name": "same_declared_work_order_bytes_after_calculation",
+      "passed": true
+    }
+  ],
+  "invalid_probability": "1/25",
+  "alpha": "1/40",
+  "valid_atom": "1/10",
+  "conditional_quantile": "1/10",
+  "extreme_completion_quantile_interval": [
+    "-1",
+    "1/10"
+  ],
+  "left_atoms": [
+    [
+      "-1",
+      "1/25"
+    ],
+    [
+      "1/10",
+      "24/25"
+    ]
+  ],
+  "right_atoms": [
+    [
+      "1/10",
+      "24/25"
+    ],
+    [
+      "1",
+      "1/25"
+    ]
+  ],
+  "random_draws_performed": 0,
+  "empirical_AUROC_evaluations": 0,
+  "model_calls": 0,
+  "server_calls": 0,
+  "gpu_calls": 0,
+  "real_samples_accessed": false,
+  "confidence_interval_measured": false,
+  "frequentist_coverage_certified": false,
+  "independent_scientific_review": false,
+  "scientific_breakthrough": false
+}
