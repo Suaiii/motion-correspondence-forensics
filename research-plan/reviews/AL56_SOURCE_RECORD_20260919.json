@@ -1,0 +1,118 @@
+{
+  "task_id": "AL56",
+  "gateway_attempt": {
+    "route": "web search exact title primary domains",
+    "result": "404 provider gateway does not support /v1/alpha/search",
+    "primary_records_retrieved": 0
+  },
+  "local_preflight_error": "bs4 absent; initial script stopped before any HTTP request; use stdlib, no dependency installed",
+  "identity_entries": [
+    {
+      "index": 1,
+      "url": "https://arxiv.org/search/?query=Recovery-based+Black-Box+Detection+of+AI-Generated+Content&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
+      "retrieved_at": "2026-09-19T11:50:25.997984+00:00",
+      "error": "<HTTPError 406: 'Not Acceptable'>"
+    },
+    {
+      "index": 2,
+      "url": "https://export.arxiv.org/api/query?search_query=ti:%22Recovery-based%20Black-Box%20Detection%20of%20AI-Generated%20Content%22&max_results=20",
+      "retrieved_at": "2026-09-19T11:50:57.630164+00:00",
+      "status": 200,
+      "final_url": "https://export.arxiv.org/api/query?search_query=ti:%22Recovery-based%20Black-Box%20Detection%20of%20AI-Generated%20Content%22&max_results=20",
+      "bytes": 2994,
+      "sha256": "e9bd3d7f1837d22da23537fdaac938bbf83b7fb2183fed69e67385a70f65697b",
+      "parsed_record": {
+        "id": "http://arxiv.org/abs/2505.01008v2",
+        "title": "Where's the liability in the Generative Era? Recovery-based Black-Box Detection of AI-Generated Content",
+        "authors": [
+          "Haoyue Bai",
+          "Yiyou Sun",
+          "Wei Cheng",
+          "Haifeng Chen"
+        ],
+        "published": "2025-05-02T05:11:35Z",
+        "updated": "2025-08-25T07:18:26Z",
+        "comment": "CVPR 2025",
+        "total_results": 1,
+        "parse_note": "Fields transcribed from successful API response visible in tool output; raw payload hash above. Official proceedings record not independently queried."
+      }
+    },
+    {
+      "index": 3,
+      "url": "https://arxiv.org/abs/search?query=Recovery-based%20Black-Box%20Detection%20of%20AI-Generated%20Content",
+      "retrieved_at": "2026-09-19T11:50:59.383811+00:00",
+      "error": "<HTTPError 406: 'Not Acceptable'>",
+      "interpretation": "Redundant invalid /abs/search endpoint returned406; adds no source evidence. No retry."
+    }
+  ],
+  "public_identity_entry_count": 3,
+  "primary_full_text_version_count": 1,
+  "primary_pdf": {
+    "url": "https://arxiv.org/pdf/2505.01008v2",
+    "bytes": 1136461,
+    "sha256": "b31cea3e0e206ab57f041bcdea69b9d7872488700841682ce6d974ed92583b8b",
+    "pages": 12,
+    "version_mark": "arXiv:2505.01008v2 [cs.LG] 25 Aug2025 on first page",
+    "cache_modified_at": "2026-09-19T11:52:14.510847+00:00",
+    "request_started_at": null,
+    "retrieval_timing_note": "Successful Invoke-WebRequest wrote the versioned PDF; exact HTTP start/status/headers not saved. mtime is cache metadata, not a fabricated HTTP timestamp.",
+    "text_extractor": "pypdf 6.10.0",
+    "read_scope": [
+      "page1 author/title/version and code link",
+      "page2 target-alignment budget paragraph",
+      "section3.1-3.3 pages3-5",
+      "section4.1 pages5-6 and protocol/caption pairing explanations",
+      "section4.3 pages7-8 score/mask and alignment dependence, no performance adoption",
+      "appendixA.1-A.2 page11 assumptions",
+      "appendixB pages11-12 score definitions",
+      "appendixC page12 implementation detail"
+    ],
+    "extraction_issue": "pdftotext absent on PATH; no text file produced. Used installed pypdf without installation. Math extraction not treated as visual proof of typesetting defects.",
+    "full_text_committed": false
+  },
+  "reviewed_at": "2026-09-19T19:58:26+08:00",
+  "method_summary": {
+    "operator": "stochastic masked conditional diffusion inpainting using one target or aligned surrogate",
+    "target_weight_access": "not required for black-box target; open surrogate weights used and LoRA trained",
+    "target_sample_exposure": "target-specific API-generated alignment data in aligned track; separate untuned/direct-target comparisons",
+    "recovery_repeats_K": "symbolic in selected methodology; actual experiment value unresolved",
+    "detection_denoising_steps": "unresolved; generator dataset step labels not counted as detector steps",
+    "native_labels": "LAION real images versus generated images; camera-origin reconstruction arms not established",
+    "original_order_commutator_equivalence": "not established by read method",
+    "theory_scope": "conditional likelihood gap and separate distance/subGaussian assumptions; no OR1 guarantee inherited"
+  },
+  "source_derived_open_questions": [
+    "How are K, mask support and score aggregation implemented?",
+    "Can PSNR/L2 ranking difference arise from nonlinear aggregation or inconsistent support/direction?",
+    "Which source revision corresponds to paper, and what target data and compute are required?"
+  ],
+  "input_sha256": {
+    "research-plan/AL56_RECOVERY_DETECTION_PRIOR_AUDIT_20260919.md": "b42463d791aff85915b82222fff9624ef695fb1088a511f908acf1d1e79a6442",
+    "research-plan/reviews/AL26_QUERY_AND_SCOPE_20260919.json": "cb318db2cf295d5f03789cee93cdd0adf5ba05b039be8fa62418595320c798e8",
+    "research-runs/algorithm_search_20260918/AL12_method_design.md": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+    "research-plan/reviews/AL13_COUNTERFACTUAL_PROTOCOL_20260919.md": "54c98657404d8093fff9175f6f3e71c23fac34cd509581a481c860a2913e99a3",
+    "research-runs/algorithm_search_20260918/AL20_method_baseline.md": "13f792220ffffcf976a90815dac3988446314f7e81d3d0215e0b67f01d6d2810",
+    "research-plan/reviews/AL29_STABLE_BASELINE_REVIEW_20260919.md": "b15bfb0f4b0be4e77dd347b8e6c69fcca708029e34a2b5a60587f5971d411b01",
+    "research-plan/reviews/AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md": "acf3294bfcaec67b820b5328b12089415fe59b36ae81ccaadddd666a75ab5d94",
+    "research-plan/reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a"
+  },
+  "review_sha256": "4822d26031b34622c062437bb01a5df044a52e79d312d642f6ba48f355f5c6e2",
+  "evidence_kind": "Manual selected-primary-text review; no author-code reproduction or independent scientific efficacy review",
+  "execution_scope": {
+    "public_metadata_and_one_paper": true,
+    "author_code_executed": false,
+    "model_weights_or_media_accessed": false,
+    "server_accessed": false,
+    "gpu_started": false,
+    "reported_paper_performance_adopted": false,
+    "OR1_innovation_admitted": false,
+    "paid_batch_authorized": false
+  },
+  "temporary_payload_cleanup": {
+    "at": "2026-09-19T19:58:26+08:00",
+    "deleted_named_path": "tmp/al56_2505.01008v2.pdf",
+    "path_absent": true,
+    "extracted_full_text_file_exists": false,
+    "repository_deliverable": "metadata and review only"
+  }
+}

@@ -4775,8 +4775,8 @@
         "AL26",
         "AL54"
       ],
-      "status": "done",
-      "gate_result": "pass",
+      "status": "ready",
+      "gate_result": "not_evaluated",
       "gate_scope": "unread_recovery_prior_review",
       "hypothesis": "AL26留下的恢复检测先例可能限制或覆盖OR1的探针/信息权限/目标，需要真正核对而非从题名推断。",
       "work": [
@@ -4790,8 +4790,7 @@
         "不重复已读先例计数，不产生算法准入"
       ],
       "artifacts": [
-        "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md",
-        "../reviews/AL56_SOURCE_RECORD_20260919.json"
+        "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md"
       ],
       "work_order": "../AL56_RECOVERY_DETECTION_PRIOR_AUDIT_20260919.md",
       "work_order_sha256": "b42463d791aff85915b82222fff9624ef695fb1088a511f908acf1d1e79a6442",
@@ -4810,73 +4809,8 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
-      "hypothesis_result": "identity_and_masked_recovery_scope_confirmed_OR1_equivalence_not_established",
-      "next_action": "AL57 inspect at most4 pinned public author files for unresolved score/cost/permission contract; AL36 remains independent unsent blocked review",
-      "started_at": "2026-09-19T19:48:29+08:00",
-      "dispatch_status": "completed_scoped_primary_review",
-      "completed_at": "2026-09-19T20:00:32+08:00",
-      "reviewed_by": "planagent",
-      "review": "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md",
-      "review_scope": "Identity and selected method/permission/label/cost limitations only; no novelty or efficacy admission",
-      "evidence_kind": "manual_primary_text_review_no_model_execution",
-      "artifact_sha256": "4822d26031b34622c062437bb01a5df044a52e79d312d642f6ba48f355f5c6e2",
-      "source_record": "../reviews/AL56_SOURCE_RECORD_20260919.json",
-      "source_record_sha256": "973764d6f69007cd5d593056cabca22459c41004b961921484c4cac9b57d4c29"
-    },
-    {
-      "id": "AL57",
-      "milestone": "M2",
-      "title": "恢复检测原作者实现的评分与成本合同审查",
-      "assignee": "planagent",
-      "parents": [
-        "AL56",
-        "AL12",
-        "AL35",
-        "AL54"
-      ],
-      "requires_pass": [
-        "AL56",
-        "AL12",
-        "AL35",
-        "AL54"
-      ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
-      "gate_scope": "pinned_prior_implementation_contract_review",
-      "hypothesis": "实际随机恢复聚合或评分支持可能解释PSNR/MSE排序差异；若关键实现权限和调用链不可核对，该比较臂不能验收。",
-      "work": [
-        "先固定作者仓库commit，只读至多4份文本和公开元数据",
-        "定位K、去噪步骤、mask支持、MAX、方向和非线性聚合顺序",
-        "核对目标样本/LoRA权限与论文版本映射，未知保持unknown"
-      ],
-      "acceptance": [
-        "不执行代码、模型、媒体或补造性能",
-        "明确已读源码行和未闭合调用链，不把当前默认branch当论文版本",
-        "有限源码合同不释放创新/真实实验/资源门槛"
-      ],
-      "artifacts": [
-        "../reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md",
-        "../reviews/AL57_SOURCE_RECORD_20260919.json"
-      ],
-      "work_order": "../AL57_RECOVERY_IMPLEMENTATION_CONTRACT_AUDIT_20260919.md",
-      "work_order_sha256": "952bc4b81d021f773cf383235b350ab83ce86eab088c029f3cab853e34811c89",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "prepared_at": "2026-09-19T20:00:32+08:00",
-      "due_at": "2026-09-24T22:00:00+08:00",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "resource_policy": {
-        "local_cpu": true,
-        "server_access": false,
-        "real_media": false,
-        "gpu": false,
-        "classifier_training": false,
-        "large_downloads": false,
-        "research_runtime_execution": false
-      },
-      "implementation_authorized": false,
-      "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
-      "next_action": "Read-only pinned author-source contract review, independent of research401"
+      "next_action": "Read-only primary-source identity/method audit, independent of research401"
     }
   ],
   "storage_policy": {
@@ -6302,7 +6236,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T20:00:32+08:00",
+  "updated_at": "2026-09-19T19:35:31+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -7004,14 +6938,6 @@
       "plan_sha256": "be0ee75bf2eb0b3d3eecdbca01dfe6423d562079f5cd5120edc410d3eaccb144",
       "reason": "Finalize endpoint outer bounds and non-admission claim matrix, deduplicateAL55, prepare previously unread recovery prior; fix stale current-plan status and save actual milestone check",
       "budget_dates_thresholds_changed": false
-    },
-    {
-      "at": "2026-09-19T20:00:32+08:00",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "type": "recovery_prior_permission_and_method_scope",
-      "plan_sha256": "e7846fa7fb9ac9a1867655a85d24ce84d968bd8869aecab9a9dcadfdb6914276",
-      "reason": "Confirm previously unread recovery prior; preserve non-admission and prepare concrete author-source contract audit",
-      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
@@ -7026,22 +6952,22 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al57-planner-recovery-source-20260919",
+      "id": "cc-al56-planner-recovery-prior-20260919",
       "task_ids": [
-        "AL57"
+        "AL56"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T20:00:32+08:00",
-      "work_order": "../AL57_RECOVERY_IMPLEMENTATION_CONTRACT_AUDIT_20260919.md",
-      "work_order_sha256": "952bc4b81d021f773cf383235b350ab83ce86eab088c029f3cab853e34811c89",
+      "prepared_at": "2026-09-19T19:32:56+08:00",
+      "work_order": "../AL56_RECOVERY_DETECTION_PRIOR_AUDIT_20260919.md",
+      "work_order_sha256": "b42463d791aff85915b82222fff9624ef695fb1088a511f908acf1d1e79a6442",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "e7846fa7fb9ac9a1867655a85d24ce84d968bd8869aecab9a9dcadfdb6914276",
-      "scope": "At most4 pinned public author text files; no author-code/model/media/server/GPU execution",
+      "scope": "Unreviewed recovery-method primary source; no model/media/server/GPU",
       "remote_send_required": false,
-      "background_process_running": false
+      "background_process_running": false,
+      "plan_sha256": "be0ee75bf2eb0b3d3eecdbca01dfe6423d562079f5cd5120edc410d3eaccb144"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -7052,7 +6978,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T20:00:32+08:00",
+    "last_coordinator_activity_at": "2026-09-19T19:35:31+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -8034,32 +7960,9 @@
         "review": "../reviews/AL55_DEDUPLICATION_DECISION_20260919.md",
         "gate_result": "not_applicable",
         "outcome": "Existing minimum-information fields reused, no new evidence count"
-      },
-      {
-        "id": "cc-al56-planner-recovery-prior-20260919",
-        "task_ids": [
-          "AL56"
-        ],
-        "executor_role": "planagent",
-        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-        "host_id": "local",
-        "status": "completed_scoped_primary_review",
-        "prepared_at": "2026-09-19T19:32:56+08:00",
-        "work_order": "../AL56_RECOVERY_DETECTION_PRIOR_AUDIT_20260919.md",
-        "work_order_sha256": "b42463d791aff85915b82222fff9624ef695fb1088a511f908acf1d1e79a6442",
-        "plan_version": "cvpr27-20260919-v1.5",
-        "scope": "Unreviewed recovery-method primary source; no model/media/server/GPU",
-        "remote_send_required": false,
-        "background_process_running": false,
-        "plan_sha256": "be0ee75bf2eb0b3d3eecdbca01dfe6423d562079f5cd5120edc410d3eaccb144",
-        "started_at": "2026-09-19T19:48:29+08:00",
-        "completed_at": "2026-09-19T20:00:32+08:00",
-        "review": "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md",
-        "source_record": "../reviews/AL56_SOURCE_RECORD_20260919.json",
-        "outcome": "Masked recovery prior verified; target-alignment permissions differ from strictly unseen target; exact OR1 equivalence not established"
       }
     ],
-    "last_substantive_review": "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -8205,13 +8108,15 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL56"
+        "AL53",
+        "AL54",
+        "AL55"
       ],
       "executor_role": "planagent",
-      "status": "completed_scoped_primary_review",
-      "finalized_at": "2026-09-19T20:00:32+08:00",
+      "status": "completed_scoped_reviews_and_deduplication",
+      "finalized_at": "2026-09-19T19:32:56+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL57",
+      "next_prepared_task_id": "AL56",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -8229,15 +8134,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T20:00:32+08:00",
+    "last_local_review_at": "2026-09-19T19:32:56+08:00",
     "prepared_independent_task_ids": [
-      "AL57",
+      "AL56",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL57",
+        "AL56",
         "AL36"
       ],
       "executor_blocked": [
@@ -8318,10 +8223,10 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "8b38305e1f20fef908ca2fb8e3f70b68e50e6422",
+      "commit": "01582ac6b4138eaae209d47233cfcb32fce4ae12",
       "path": "research-plan/task-hermes/project.json",
-      "sha256": "9513dd375a7cedeed730e0a981c0ebbfc5cc621eaf34af9f23db8f64f309d0b4",
-      "local_pre_start_copy": "snapshots/project_before_al56_start_20260919T194829.json"
+      "sha256": "f7db5ae1b6b5b9d11e73db357bff9db912b9c029218dcc4340bc9dbfd86f1bf8",
+      "includes_in_turn_draft_records": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -8332,11 +8237,11 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T20:00:32+08:00",
+    "last_progress_at": "2026-09-19T19:13:46+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T19:48:29+08:00",
-      "decision": "no_remote_wait",
-      "reason": "Only active/current executor is planagent; additional_dispatches empty. AL36 queued unsent with observed401, no new recovery evidence."
+      "at": "2026-09-19T19:35:31+08:00",
+      "action": "no_additional_remote_wait",
+      "reason": "This turn already observed cursor3; latest turn remains failed401 and no recovery output. Only planner packages were executed; no resend."
     },
     "research_observation_note": {
       "at": "2026-09-19T18:57:52+08:00",
@@ -8502,10 +8407,7 @@
       "claim_evidence_matrix_task": "AL54",
       "claim_evidence_matrix_status": "Planner no-go for formal admission on current evidence; one unproven inductive-bias hypothesis remains",
       "minimum_new_information_plan_task": "AL55",
-      "minimum_new_information_status": "AL55 deduplicated against AL13/AL35/AL54; no new gate",
-      "recovery_detection_prior_task": "AL56",
-      "recovery_detection_prior_status": "Masked recovery with target alignment confirmed; not a same-permission unseen-target comparison or proven OR1 equivalence",
-      "recovery_prior_source_contract_task": "AL57"
+      "minimum_new_information_status": "AL55 deduplicated against AL13/AL35/AL54; no new gate"
     }
   },
   "open_review_issues": [
