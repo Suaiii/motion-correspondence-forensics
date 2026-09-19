@@ -1,0 +1,111 @@
+{
+  "task_id": "AL60",
+  "gateway_attempt": {
+    "route": "web open arxiv",
+    "result": "404 provider gateway does not support /v1/alpha/search",
+    "retrieved_records": 0
+  },
+  "entries": [
+    {
+      "url": "https://export.arxiv.org/api/query?id_list=2303.09295",
+      "retrieved_at": "2026-09-19T12:50:16.824455+00:00",
+      "status": 200,
+      "final_url": "https://export.arxiv.org/api/query?id_list=2303.09295",
+      "bytes": 3204,
+      "sha256": "9f8ae6a6ea61c9568f53c194210dfe982f89c0c487c35a4f111fa9e3ea7bb9e4"
+    },
+    {
+      "url": "https://arxiv.org/abs/2303.09295",
+      "retrieved_at": "2026-09-19T12:50:18.774579+00:00",
+      "status": 200,
+      "final_url": "https://arxiv.org/abs/2303.09295",
+      "bytes": 42363,
+      "sha256": "44774cb96219241afd01594388c8b37bdb3b9a537fe419cce687db29232d96d3"
+    }
+  ],
+  "identity": {
+    "arxiv_id": "2303.09295v1",
+    "title": "DIRE for Diffusion-Generated Image Detection",
+    "authors": [
+      "Zhendong Wang",
+      "Jianmin Bao",
+      "Wengang Zhou",
+      "Weilun Wang",
+      "Hezhen Hu",
+      "Hong Chen",
+      "Houqiang Li"
+    ],
+    "published": "2023-03-16T13:15:03Z",
+    "version": "v1",
+    "comment": "A general diffusion-generated image detector",
+    "venue": "not established by queried arXiv records",
+    "record_parse_note": "Transcribed from successful official Atom response and abs page seen in tool output"
+  },
+  "primary_full_text": {
+    "url": "https://arxiv.org/pdf/2303.09295v1",
+    "bytes": 4102079,
+    "sha256": "18575519277709abc9a6f5e6a73fd409d79a8287ddcbd3408cffb250d6191767",
+    "pages": 17,
+    "text_extractor": "pypdf6.10.0",
+    "read_scope": [
+      "title/authors page1",
+      "introduction method hypothesis page2",
+      "section3.1 partial DDIM inversion context and3.2 eq9 page4",
+      "eq10 and section3.3/4.1 page5",
+      "defaultS and absolute residual/readout ablations page8",
+      "AppendixA reconstruction/model protocol andB ODE explanation page11",
+      "text navigation skim other pages; no visual image verification"
+    ],
+    "retrieved_at": null,
+    "cache_modified_at": "2026-09-19T12:51:42.154009+00:00",
+    "time_note": "Exact HTTP request start/status not recorded by Invoke-WebRequest; cache modification is local file metadata",
+    "author_code_read_or_run": false,
+    "full_payload_committed": false
+  },
+  "method_findings": {
+    "representation": "elementwise absolute DDIM inversion/reconstruction residual, eq9",
+    "default_model": "unconditional pretrained ADM on LSUN-Bedroom; ImageNet reconstructor also provided",
+    "learning": "ResNet50 trained on real/generated residual images using ordinary binary cross entropy",
+    "step_scope": "Main sections3.1/4.1 and4.5 defaultS20 in inversion, same in reconstruction. AppendixA says20 steps in total for reconstruction; no total20 network-call assertion accepted.",
+    "inference_access": "fixed public reconstruction-model parameters and trained detector; reviewed setup does not require test producer identity or its prompts/weights",
+    "source_label_scope": "real LSUN/ImageNet versus generated images; same productionD samek camera-origin reconstruction arms not tested in reviewed protocol",
+    "mechanism_scope": "AppendixB motivates finite-step inversion mismatch and asserts a source difference without a source-uniform bound; empirical/modeling rationale, not transferred OR1 theorem",
+    "exact_OR1_equivalence": "not established; read map differs but broad fixed-reconstruction-residual premise is prior art",
+    "native_results_adopted": false
+  },
+  "unresolved": [
+    "Exact checkpoint bytes, scheduler endpoints, clipping and residual storage/numerics",
+    "Number of actual network invocations and walltime/memory/profile",
+    "Source-common-support and strict decoder holdout under project protocol",
+    "Availability and validity of original executable baseline; code not read",
+    "Any proof that residual difference tracks production origin beyond numerical/processing explanations"
+  ],
+  "read_finished_at": "2026-09-19T20:56:45+08:00",
+  "identity_entry_count": 2,
+  "full_text_version_count": 1,
+  "inputs_sha256": {
+    "research-plan\\AL60_DIRE_PRIMARY_METHOD_AUDIT_20260919.md": "03fd14279ad3e39e38025679c94e6f3f4dd2af1ceb1291b701de6ffcc9a982bb",
+    "research-runs\\algorithm_search_20260918\\AL12_prior_comparison.md": "f9bd0d4f75f5108135311d7bbddb0d6039fbe0678b4e5331e801856b77270ab1",
+    "research-runs\\algorithm_search_20260918\\AL12_method_design.md": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+    "research-plan\\reviews\\AL14_RECONSTRUCTION_BASELINES_20260919.md": "ecae4d9eda7d7de21d3c77af53e85d3be31e9ff47a132b6d056e6b4ab2870094",
+    "research-plan\\reviews\\AL35_MINIMUM_MECHANISM_PROTOCOL_DRAFT_20260919.md": "acf3294bfcaec67b820b5328b12089415fe59b36ae81ccaadddd666a75ab5d94",
+    "research-plan\\reviews\\AL54_PLANNER_ADMISSION_REVIEW_20260919.md": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a"
+  },
+  "cleanup": {
+    "at": "2026-09-19T20:56:45+08:00",
+    "named_path": "tmp/al60_2303.09295v1.pdf",
+    "absent": true,
+    "extracted_fulltext_file_written": false
+  },
+  "reviewed_at": "2026-09-19T21:00:20+08:00",
+  "review_report_sha256": "64ffe8812f421e53cbe231a21bc48078992a351ada1bc35174db1e6692999873",
+  "review_kind": "Manual selected original-text method review; not reproduction or independent scientific validation",
+  "execution_scope": {
+    "source_document_reads": true,
+    "authors_code_read_or_executed": false,
+    "model_weights_or_real_media_accessed": false,
+    "server_or_GPU_accessed": false,
+    "reported_performance_adopted": false,
+    "OR1_innovation_admitted": false
+  }
+}
