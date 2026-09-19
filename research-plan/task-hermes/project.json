@@ -4840,9 +4840,9 @@
         "AL35",
         "AL54"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
-      "gate_scope": "pinned_prior_implementation_contract_review",
+      "status": "done",
+      "gate_result": "fail",
+      "gate_scope": "read_author_entrypoint_comparison_contract",
       "hypothesis": "实际随机恢复聚合或评分支持可能解释PSNR/MSE排序差异；若关键实现权限和调用链不可核对，该比较臂不能验收。",
       "work": [
         "先固定作者仓库commit，只读至多4份文本和公开元数据",
@@ -4856,7 +4856,8 @@
       ],
       "artifacts": [
         "../reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md",
-        "../reviews/AL57_SOURCE_RECORD_20260919.json"
+        "../reviews/AL57_SOURCE_RECORD_20260919.json",
+        "../reviews/AL57_SOURCE_CONTRACT_DRAFT_20260919.md"
       ],
       "work_order": "../AL57_RECOVERY_IMPLEMENTATION_CONTRACT_AUDIT_20260919.md",
       "work_order_sha256": "952bc4b81d021f773cf383235b350ab83ce86eab088c029f3cab853e34811c89",
@@ -4875,8 +4876,82 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "read_entrypoint_contract_failed_paper_metrics_and_OR1_effect_not_evaluated",
+      "next_action": "AL58 analytically separate mean-recovery and mean-error targets; AL36 independent admission review remains unsent awaiting supported recovery",
+      "started_at": "2026-09-19T20:03:43+08:00",
+      "dispatch_status": "completed_failed_source_contract",
+      "completed_at": "2026-09-19T20:19:21+08:00",
+      "reviewed_by": "planagent",
+      "review": "../reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md",
+      "source_record": "../reviews/AL57_SOURCE_RECORD_20260919.json",
+      "artifact_sha256": "0d19d2857644c66044d3fc837e4333e4fa71f18831c633f40a109d6701aa6375",
+      "source_record_sha256": "7bc281596535e5f0400f0b463d45c7d489a34a3ccc7233694b0e3724753e4e06",
+      "evidence_kind": "four_pinned_public_files_manual_contract_review_no_execution",
+      "review_scope": "Static4-file source contract fails; method prior retained, no execution, no inference that paper results are invalid",
+      "draft_assessment_history": [
+        {
+          "recorded_at": "2026-09-19T20:10:22+08:00",
+          "gate_result": "pass",
+          "review_sha256": "7522a0fb6a61baf4c9a6e409bf605a1e79d911d36d07a2e202fcbe504d559822",
+          "source_record_sha256": "ef6c68b3c77f749e7a425d277a8ad91250d53357059d15f9c9ff976888888d60",
+          "draft_path": "../reviews/AL57_SOURCE_CONTRACT_DRAFT_20260919.md",
+          "superseded_at": "2026-09-19T20:19:21+08:00",
+          "reason": "Final source review found explicit readme/parser/type-flow defects; valid mask and LoRA chain unclosed. Correct bytes and distinguish None behavior/constant-range ranking. Scopedpass withdrawn before handoff."
+        }
+      ],
+      "original_gate_scope": "pinned_prior_implementation_contract_review",
+      "finalized_at": "2026-09-19T20:19:21+08:00"
+    },
+    {
+      "id": "AL58",
+      "milestone": "M2",
+      "title": "随机恢复的平均误差与均值图像评分间隔审查",
+      "assignee": "planagent",
+      "parents": [
+        "AL56",
+        "AL57"
+      ],
+      "requires_pass": [
+        "AL56"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "conditional_recovery_aggregation_mechanism_review",
+      "hypothesis": "恢复样本与生成分布一致并不必然产生来源距离间隔；平均图像后的距离与平均逐次距离可能因恢复方差项而不同。",
+      "work": [
+        "推导固定共同支持的平均误差/均值图像误差差异",
+        "区分给定样本恒等式与条件独立期望和相关随机源限制",
+        "至多一个有限支持源分布反例，测试同分布恢复是否足够"
+      ],
+      "acceptance": [
+        "明确固定y/X/mask和条件期望对象，不改变类间探针权限",
+        "经典方差分解不计新算法，不将toy当真实效能",
+        "人工符号审查，不运行作者源码/模型/媒体/服务器或模拟"
+      ],
+      "artifacts": [
+        "../reviews/AL58_RECOVERY_AGGREGATION_GAP_REVIEW_20260919.md",
+        "../reviews/AL58_MANUAL_REVIEW_RECORD_20260919.json"
+      ],
+      "work_order": "../AL58_RECOVERY_AGGREGATION_GAP_AUDIT_20260919.md",
+      "work_order_sha256": "6c06e125f19c550e4709800bec78bda0e8379846ee8e3dac313a1fc2b2b60e3f",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-19T20:19:21+08:00",
+      "due_at": "2026-09-24T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": false,
+        "real_media": false,
+        "gpu": false,
+        "classifier_training": false,
+        "large_downloads": false,
+        "research_runtime_execution": false
+      },
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
       "hypothesis_result": "not_evaluated",
-      "next_action": "Read-only pinned author-source contract review, independent of research401"
+      "next_action": "Bounded symbolic analysis of new source-derived aggregation question; do not run or repair failed baseline",
+      "dependency_note": "AL57 done/fail supplies observed formula mismatch and negative contract result; no success branch and not required pass"
     }
   ],
   "storage_policy": {
@@ -6302,7 +6377,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T20:00:32+08:00",
+  "updated_at": "2026-09-19T20:23:14+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -7012,6 +7087,22 @@
       "plan_sha256": "e7846fa7fb9ac9a1867655a85d24ce84d968bd8869aecab9a9dcadfdb6914276",
       "reason": "Confirm previously unread recovery prior; preserve non-admission and prepare concrete author-source contract audit",
       "budget_dates_thresholds_changed": false
+    },
+    {
+      "at": "2026-09-19T20:10:22+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "pinned_recovery_source_contract_audit",
+      "plan_sha256": "aea0a18936660d6887306067bd14961925fac86f1a5e6d417f17040a3c2b41ec",
+      "reason": "Close AL57 with finite source evidence; preserve unresolved mask/LoRA/version gaps and no OR1 admission",
+      "budget_dates_thresholds_changed": false
+    },
+    {
+      "at": "2026-09-19T20:19:21+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "final_source_contract_fail_and_aggregation_followup",
+      "plan_sha256": "883862b53c013fa14e1092524de1bb5f5535c4f5581d4d438ca54ca37c3122e1",
+      "reason": "Withdraw in-turn AL57 scopedpass; preserve source findings and draft, add independent source-derived AL58; no date/resource/scientific gate change",
+      "budget_dates_thresholds_changed": false
     }
   ],
   "continuous_collaboration": {
@@ -7026,20 +7117,20 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al57-planner-recovery-source-20260919",
+      "id": "cc-al58-planner-recovery-aggregation-20260919",
       "task_ids": [
-        "AL57"
+        "AL58"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "prepared",
-      "prepared_at": "2026-09-19T20:00:32+08:00",
-      "work_order": "../AL57_RECOVERY_IMPLEMENTATION_CONTRACT_AUDIT_20260919.md",
-      "work_order_sha256": "952bc4b81d021f773cf383235b350ab83ce86eab088c029f3cab853e34811c89",
+      "prepared_at": "2026-09-19T20:19:21+08:00",
+      "work_order": "../AL58_RECOVERY_AGGREGATION_GAP_AUDIT_20260919.md",
+      "work_order_sha256": "6c06e125f19c550e4709800bec78bda0e8379846ee8e3dac313a1fc2b2b60e3f",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "e7846fa7fb9ac9a1867655a85d24ce84d968bd8869aecab9a9dcadfdb6914276",
-      "scope": "At most4 pinned public author text files; no author-code/model/media/server/GPU execution",
+      "plan_sha256": "883862b53c013fa14e1092524de1bb5f5535c4f5581d4d438ca54ca37c3122e1",
+      "scope": "New conditional aggregation/bias/variance question; one finite-support source example at most; no execution or real data",
       "remote_send_required": false,
       "background_process_running": false
     },
@@ -7052,7 +7143,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T20:00:32+08:00",
+    "last_coordinator_activity_at": "2026-09-19T20:19:21+08:00",
     "research_observed_status": "blocked_system_error_no_artifact",
     "dispatch_history": [
       {
@@ -8057,9 +8148,34 @@
         "review": "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md",
         "source_record": "../reviews/AL56_SOURCE_RECORD_20260919.json",
         "outcome": "Masked recovery prior verified; target-alignment permissions differ from strictly unseen target; exact OR1 equivalence not established"
+      },
+      {
+        "id": "cc-al57-planner-recovery-source-20260919",
+        "task_ids": [
+          "AL57"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "completed_failed_source_contract",
+        "prepared_at": "2026-09-19T20:00:32+08:00",
+        "work_order": "../AL57_RECOVERY_IMPLEMENTATION_CONTRACT_AUDIT_20260919.md",
+        "work_order_sha256": "952bc4b81d021f773cf383235b350ab83ce86eab088c029f3cab853e34811c89",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "plan_sha256": "e7846fa7fb9ac9a1867655a85d24ce84d968bd8869aecab9a9dcadfdb6914276",
+        "scope": "At most4 pinned public author text files; no author-code/model/media/server/GPU execution",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "started_at": "2026-09-19T20:03:43+08:00",
+        "completed_at": "2026-09-19T20:19:21+08:00",
+        "review": "../reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md",
+        "source_record": "../reviews/AL57_SOURCE_RECORD_20260919.json",
+        "outcome": "Pinned read entrypoint has filename/parser/type-flow defects and no validmask/LoRA loading; no baseline acceptance, paper findings unjudged",
+        "gate_result": "fail",
+        "draft_completion_recorded_at": "2026-09-19T20:10:22+08:00"
       }
     ],
-    "last_substantive_review": "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md",
+    "last_substantive_review": "../reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
       "id": "cc-al36-research-admission-review-20260919",
@@ -8205,13 +8321,14 @@
     },
     "local_execution": {
       "task_ids": [
-        "AL56"
+        "AL56",
+        "AL57"
       ],
       "executor_role": "planagent",
-      "status": "completed_scoped_primary_review",
-      "finalized_at": "2026-09-19T20:00:32+08:00",
+      "status": "completed_primary_review_and_failed_source_contract",
+      "finalized_at": "2026-09-19T20:19:21+08:00",
       "work_area": "research-plan/reviews",
-      "next_prepared_task_id": "AL57",
+      "next_prepared_task_id": "AL58",
       "background_process_running": false
     },
     "additional_dispatches": [],
@@ -8229,15 +8346,15 @@
     },
     "legacy_research_thread_id": "01a09db1-3c10-7710-b866-130d4cc44d9e",
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
-    "last_local_review_at": "2026-09-19T20:00:32+08:00",
+    "last_local_review_at": "2026-09-19T20:19:21+08:00",
     "prepared_independent_task_ids": [
-      "AL57",
+      "AL58",
       "AL36"
     ],
     "active_and_prepared_work": {
       "running": [],
       "prepared_independent": [
-        "AL57",
+        "AL58",
         "AL36"
       ],
       "executor_blocked": [
@@ -8288,6 +8405,15 @@
         "not_a_milestone_receipt": true,
         "confirmed_at": "2026-09-19T17:21:07+08:00",
         "confirmation_evidence": "Previous completed heartbeat NOTIFY final in visible conversation stated K/q/score distinction and modeling lower-bound limitation; not OS delivery"
+      },
+      {
+        "id": "recovery-prior-author-entrypoint-not-accepted",
+        "status": "prepared_pending_final_output_confirmation",
+        "prepared_at": "2026-09-19T20:19:21+08:00",
+        "message": "恢复检测先例的公开评估入口存在启动/接口错误且未接入mask与LoRA，暂不作为可复现强比较臂；保留论文先例，不据此宣称OR1优势。",
+        "evidence": "../reviews/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_REVIEW_20260919.md",
+        "not_a_milestone_receipt": true,
+        "confirmation_required": "Next completed-turn check; no notification delivery claimed yet"
       }
     ],
     "context_updates": [
@@ -8318,10 +8444,10 @@
       }
     ],
     "last_state_transition_snapshot": {
-      "commit": "8b38305e1f20fef908ca2fb8e3f70b68e50e6422",
+      "commit": "6cb533501cec840b889434b210f65fc56be66b4a",
       "path": "research-plan/task-hermes/project.json",
-      "sha256": "9513dd375a7cedeed730e0a981c0ebbfc5cc621eaf34af9f23db8f64f309d0b4",
-      "local_pre_start_copy": "snapshots/project_before_al56_start_20260919T194829.json"
+      "sha256": "bea3381f7b18925194fa773e6779881e9c647fea0754afde97f29253e29548c0",
+      "in_turn_AL57_draft_preserved_in_task_history": true
     },
     "server_endpoint_update": {
       "recorded_at": "2026-09-19T14:43:30+08:00",
@@ -8332,11 +8458,11 @@
       "scientific_or_paid_work_released": false,
       "research_thread_not_awakened": true
     },
-    "last_progress_at": "2026-09-19T20:00:32+08:00",
+    "last_progress_at": "2026-09-19T20:19:21+08:00",
     "last_poll_decision": {
-      "at": "2026-09-19T19:48:29+08:00",
+      "at": "2026-09-19T20:10:22+08:00",
       "decision": "no_remote_wait",
-      "reason": "Only active/current executor is planagent; additional_dispatches empty. AL36 queued unsent with observed401, no new recovery evidence."
+      "reason": "AL57 local source audit completed; queued AL36 remains unsent after observed401 with api_recovery_confirmed=false."
     },
     "research_observation_note": {
       "at": "2026-09-19T18:57:52+08:00",
@@ -8442,11 +8568,12 @@
       "filtered_readout_task": "AL25",
       "readout_version_under_implementation": "OR1-readout-1",
       "targeted_prior_review_task": "AL26",
-      "latest_prior_review": "../reviews/AL26_CROSS_RECONSTRUCTION_PRIOR_REVIEW_20260919.md",
+      "latest_prior_review": "../reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md",
       "additional_prior_comparisons": [
         "FIRE: native and task-adapted protocols distinct; not reproduced",
         "Beyond Generation: low-level restoration pretext/real-density reference, not reproduced",
-        "B-Free: content alignment and native label differences, not reproduced"
+        "B-Free: content alignment and native label differences, not reproduced",
+        "Recovery-based Black-Box Detection2505.01008v2: target-aligned masked recovery; four pinned author files fail comparison contract, not reproduced"
       ],
       "exact_prior_equivalence": "not established by bounded search; no novelty admission",
       "temporal_control_review_task": "AL28",
@@ -8471,7 +8598,7 @@
       "stable_baseline_integration_status": "scoped_pass_AL32_only",
       "stable_baseline_review": "../reviews/AL32_REVIEW_20260919.md",
       "next_independent_tasks": [
-        "AL56",
+        "AL58",
         "AL36"
       ],
       "single_step_Gram_audit_task": "AL34",
@@ -8505,7 +8632,8 @@
       "minimum_new_information_status": "AL55 deduplicated against AL13/AL35/AL54; no new gate",
       "recovery_detection_prior_task": "AL56",
       "recovery_detection_prior_status": "Masked recovery with target alignment confirmed; not a same-permission unseen-target comparison or proven OR1 equivalence",
-      "recovery_prior_source_contract_task": "AL57"
+      "recovery_prior_source_contract_task": "AL57",
+      "recovery_source_contract_status": "AL57 done/fail static read-entrypoint contract: mask/LoRA not wired plus parser/type-flow/readme defects. No baseline acceptance, no paper-result refutation, no OR1 admission"
     }
   },
   "open_review_issues": [

@@ -1,0 +1,587 @@
+{
+  "task_id": "AL57",
+  "metadata_requests": [
+    {
+      "url": "https://api.github.com/repos/HaoyueBaiZJU/genai-detect",
+      "at": "2026-09-19T12:04:42.638756+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/HaoyueBaiZJU/genai-detect",
+      "bytes": 5379,
+      "sha256": "9c8e3262734886aa6496dee3912279e6ea3e0e1713aa7c4c6c95b204c5dfa78c"
+    },
+    {
+      "url": "https://api.github.com/repos/HaoyueBaiZJU/genai-detect/commits/main",
+      "at": "2026-09-19T12:04:44.513100+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/HaoyueBaiZJU/genai-detect/commits/main",
+      "bytes": 5557,
+      "sha256": "40ac0eaad6bee73434d011755c16257874624aade202995fdefc07741af17796"
+    },
+    {
+      "url": "https://api.github.com/repos/HaoyueBaiZJU/genai-detect/git/trees/db5ceb1e66786039054f2bacb956611abf14b69d?recursive=1",
+      "at": "2026-09-19T12:04:46.475439+00:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/HaoyueBaiZJU/genai-detect/git/trees/db5ceb1e66786039054f2bacb956611abf14b69d?recursive=1",
+      "bytes": 14668,
+      "sha256": "fa00ee9c866c96edce29b24ba8280cd29b61d566b6d9bd3f9a48e7be41a75849"
+    }
+  ],
+  "source_files": [
+    {
+      "path": "README.md",
+      "url": "https://raw.githubusercontent.com/HaoyueBaiZJU/genai-detect/db5ceb1e66786039054f2bacb956611abf14b69d/README.md",
+      "at": "2026-09-19T12:05:29.822671+00:00",
+      "status": 200,
+      "bytes": 2952,
+      "sha256": "e9b0185606164067d822c375c5261d426bb28ccf345cd778cb9c694f30f1fd1e",
+      "git_blob_sha1": "f34b2940f7c4a067df592c8f091dc197cdfe94df",
+      "inventory_match": true,
+      "line_count": 89,
+      "link": "https://github.com/HaoyueBaiZJU/genai-detect/blob/db5ceb1e66786039054f2bacb956611abf14b69d/README.md"
+    },
+    {
+      "path": "eval_fake_vs_real.py",
+      "url": "https://raw.githubusercontent.com/HaoyueBaiZJU/genai-detect/db5ceb1e66786039054f2bacb956611abf14b69d/eval_fake_vs_real.py",
+      "at": "2026-09-19T12:05:29.823330+00:00",
+      "status": 200,
+      "bytes": 8634,
+      "sha256": "9bc975ae830276fd2700dc39e1ba4156c654526771207ac8e82ec3d8d9b4b158",
+      "git_blob_sha1": "92ebc60bfc43e63635c0f1105929024b0f722127",
+      "inventory_match": true,
+      "line_count": 258,
+      "link": "https://github.com/HaoyueBaiZJU/genai-detect/blob/db5ceb1e66786039054f2bacb956611abf14b69d/eval_fake_vs_real.py"
+    },
+    {
+      "path": "utils/metric_utils.py",
+      "url": "https://raw.githubusercontent.com/HaoyueBaiZJU/genai-detect/db5ceb1e66786039054f2bacb956611abf14b69d/utils/metric_utils.py",
+      "at": "2026-09-19T12:05:30.917090+00:00",
+      "status": 200,
+      "bytes": 9311,
+      "sha256": "30da1d18a3f02c978140655414984705a68be7d61955b8a4bd9405c6ce8c0ef1",
+      "git_blob_sha1": "5ba302b550789bd097d3463526c7af7570a26b3c",
+      "inventory_match": true,
+      "line_count": 217,
+      "link": "https://github.com/HaoyueBaiZJU/genai-detect/blob/db5ceb1e66786039054f2bacb956611abf14b69d/utils/metric_utils.py"
+    },
+    {
+      "path": "training_scripts/inpainting_lora.sh",
+      "url": "https://raw.githubusercontent.com/HaoyueBaiZJU/genai-detect/db5ceb1e66786039054f2bacb956611abf14b69d/training_scripts/inpainting_lora.sh",
+      "at": "2026-09-19T12:06:20.153288+00:00",
+      "status": 200,
+      "bytes": 1183,
+      "sha256": "5111dc82811f88afd29170e0c0b2ea4cafccdae39f532e5cbe715af0fa15d5b8",
+      "git_blob_sha1": "9f16561daa0cbcf6a6707a859b9ce7e4e7665791",
+      "inventory_match": true,
+      "line_count": 41,
+      "link": "https://github.com/HaoyueBaiZJU/genai-detect/blob/db5ceb1e66786039054f2bacb956611abf14b69d/training_scripts/inpainting_lora.sh"
+    }
+  ],
+  "repository_metadata": {
+    "full_name": "HaoyueBaiZJU/genai-detect",
+    "html_url": "https://github.com/HaoyueBaiZJU/genai-detect",
+    "default_branch": "main",
+    "size": 20983,
+    "created_at": "2025-03-12T06:21:20Z",
+    "updated_at": "2025-09-18T12:27:03Z",
+    "pushed_at": "2025-07-08T17:28:55Z",
+    "archived": false,
+    "license": null
+  },
+  "pinned_commit": "db5ceb1e66786039054f2bacb956611abf14b69d",
+  "commit_date": "2025-07-08T17:28:54Z",
+  "commit_message": "Update README.md",
+  "tree_truncated": false,
+  "file_inventory": [
+    {
+      "path": "README.md",
+      "type": "blob",
+      "size": 2952,
+      "sha": "f34b2940f7c4a067df592c8f091dc197cdfe94df"
+    },
+    {
+      "path": "ckpt",
+      "type": "tree",
+      "size": null,
+      "sha": "a8d31015cb345077b3a92f0af2ec0ec77b533ccb"
+    },
+    {
+      "path": "ckpt/psnr_list_fake_glide_100_10_lora.pt",
+      "type": "blob",
+      "size": 3680,
+      "sha": "3605d5b47d5869932b049d057c65030a58ad3950"
+    },
+    {
+      "path": "ckpt/psnr_list_laion_glide_100_10_lora.pt",
+      "type": "blob",
+      "size": 3710,
+      "sha": "8be9c6637bd269a951db98308d88a961d4c3d946"
+    },
+    {
+      "path": "eval_fake_vs_real.py",
+      "type": "blob",
+      "size": 8634,
+      "sha": "92ebc60bfc43e63635c0f1105929024b0f722127"
+    },
+    {
+      "path": "evaluate_scores.py",
+      "type": "blob",
+      "size": 710,
+      "sha": "e15fcf0f2ba735550703667bad035ed77abfef70"
+    },
+    {
+      "path": "lora_diffusion",
+      "type": "tree",
+      "size": null,
+      "sha": "00b75851daf70ed5ebcc5355eb27ddec29156bb1"
+    },
+    {
+      "path": "lora_diffusion/__init__.py",
+      "type": "blob",
+      "size": 124,
+      "sha": "286e4fecaaf7190bba2739bbc6e826a8969fece9"
+    },
+    {
+      "path": "lora_diffusion/__pycache__",
+      "type": "tree",
+      "size": null,
+      "sha": "755547d93fa1baa8e74d006f62e451cf62fcd62c"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/__init__.cpython-312.pyc",
+      "type": "blob",
+      "size": 279,
+      "sha": "c9f16b38f730a8072bc660ba780e098fbac029bc"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/__init__.cpython-39.pyc",
+      "type": "blob",
+      "size": 280,
+      "sha": "832ac79b2b93bf0d67d3cc3e8be610313046d5e5"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/dataset.cpython-312.pyc",
+      "type": "blob",
+      "size": 12388,
+      "sha": "7cedc3de5545536841e469b22a8c0c70c8c7dd41"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/dataset.cpython-39.pyc",
+      "type": "blob",
+      "size": 7496,
+      "sha": "1db3bf9a16a4bd88e998c6729bc597f7480a4c90"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/lora.cpython-312.pyc",
+      "type": "blob",
+      "size": 44935,
+      "sha": "9380ee433766cd19b256bbd58031d2bf5c9e3568"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/lora.cpython-39.pyc",
+      "type": "blob",
+      "size": 22561,
+      "sha": "9693d24afce8b7b0949aa02cf7ed51a8d4cecff7"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/lora_manager.cpython-312.pyc",
+      "type": "blob",
+      "size": 6918,
+      "sha": "175c7bddef6c04afb938ed4c76a12f448f8edc6c"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/lora_manager.cpython-39.pyc",
+      "type": "blob",
+      "size": 4608,
+      "sha": "b1569de6ee22f328656944b3f3224ac0f2293c00"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/preprocess_files.cpython-312.pyc",
+      "type": "blob",
+      "size": 14589,
+      "sha": "e485aae96c84507abde30989ee5612fbbbd7db7c"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/preprocess_files.cpython-39.pyc",
+      "type": "blob",
+      "size": 8164,
+      "sha": "2b81b7d4b386ead97c955979b147f4c84398a515"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/utils.cpython-312.pyc",
+      "type": "blob",
+      "size": 7977,
+      "sha": "a789cda24a8ba52d479918cb7897d6387bfdabe2"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/utils.cpython-39.pyc",
+      "type": "blob",
+      "size": 4944,
+      "sha": "00ed8c959aa6a8abcf43c1a06ae742e8131eed3f"
+    },
+    {
+      "path": "lora_diffusion/__pycache__/xformers_utils.cpython-312.pyc",
+      "type": "blob",
+      "size": 3342,
+      "sha": "896e190b57a8c99ac439948fda1b901eb64aae9d"
+    },
+    {
+      "path": "lora_diffusion/cli_lora_add.py",
+      "type": "blob",
+      "size": 6326,
+      "sha": "fc7f7e4ace4253ba63a1631a304cf935a23b034a"
+    },
+    {
+      "path": "lora_diffusion/cli_lora_pti.py",
+      "type": "blob",
+      "size": 33708,
+      "sha": "7de4bae1506d9959708f6af49893217810520f05"
+    },
+    {
+      "path": "lora_diffusion/cli_pt_to_safetensors.py",
+      "type": "blob",
+      "size": 2417,
+      "sha": "9a4be40d6f950bc24b771db31d9c0e00934a5e71"
+    },
+    {
+      "path": "lora_diffusion/cli_svd.py",
+      "type": "blob",
+      "size": 4417,
+      "sha": "cf52aa0b87314f86ac64f1ef7cd457a34fffabd7"
+    },
+    {
+      "path": "lora_diffusion/dataset.py",
+      "type": "blob",
+      "size": 9915,
+      "sha": "f1c28fd719e12442ecd5100da588370a0e5617bc"
+    },
+    {
+      "path": "lora_diffusion/lora.py",
+      "type": "blob",
+      "size": 34242,
+      "sha": "8753f15f7a49c145053b1b1ea0fca1c0442ef7f5"
+    },
+    {
+      "path": "lora_diffusion/lora_manager.py",
+      "type": "blob",
+      "size": 4303,
+      "sha": "9d8306e43cc6e730f7b14f2ba546584fbf81adec"
+    },
+    {
+      "path": "lora_diffusion/preprocess_files.py",
+      "type": "blob",
+      "size": 9962,
+      "sha": "bedb89f54dd8ad2b2a5b8b3f3eb69ffb763d38b4"
+    },
+    {
+      "path": "lora_diffusion/safe_open.py",
+      "type": "blob",
+      "size": 1738,
+      "sha": "77ada821b6dd22e1ea08f4c4eaf6c30a8d43161b"
+    },
+    {
+      "path": "lora_diffusion/to_ckpt_v2.py",
+      "type": "blob",
+      "size": 8589,
+      "sha": "15f3947118e3be01f7f68630a858dc95da220f2d"
+    },
+    {
+      "path": "lora_diffusion/utils.py",
+      "type": "blob",
+      "size": 6285,
+      "sha": "d8a3410df7eb5f929a4e2ae662c0a1f563a3f760"
+    },
+    {
+      "path": "lora_diffusion/xformers_utils.py",
+      "type": "blob",
+      "size": 1968,
+      "sha": "fdabf665e185147cfd0ef8662db48d05b94ea7f0"
+    },
+    {
+      "path": "requirements.txt",
+      "type": "blob",
+      "size": 122,
+      "sha": "a8987fa4672d1f3bab2b796da1a05e1365b08936"
+    },
+    {
+      "path": "scripts",
+      "type": "tree",
+      "size": null,
+      "sha": "5b6976b21d9d4a3c18f829392c7c92d9abb2ad1d"
+    },
+    {
+      "path": "scripts/lora_training_process_visualized.ipynb",
+      "type": "blob",
+      "size": 1947696,
+      "sha": "5497c24c72eb9e6bb35d9113f81171f10bae8577"
+    },
+    {
+      "path": "scripts/make_alpha_gifs.ipynb",
+      "type": "blob",
+      "size": 1432810,
+      "sha": "bc377774e284bfdb8d7b0b80e86f538964eeb0c3"
+    },
+    {
+      "path": "scripts/merge_lora_with_lora.ipynb",
+      "type": "blob",
+      "size": 1942257,
+      "sha": "c2853e6be9ac8a31eefba6438794666f8a2860ec"
+    },
+    {
+      "path": "scripts/run_img2img.ipynb",
+      "type": "blob",
+      "size": 2626166,
+      "sha": "e9a862335d2a1d271adc7253c6b365e76a9f4aa4"
+    },
+    {
+      "path": "scripts/run_inference.ipynb",
+      "type": "blob",
+      "size": 10912660,
+      "sha": "e332240d60847444f53af008b5ec758d09d79386"
+    },
+    {
+      "path": "scripts/run_inpainting_inference.ipynb",
+      "type": "blob",
+      "size": 8768701,
+      "sha": "d840290793983b534a8a93b0878dd5be02835196"
+    },
+    {
+      "path": "training_scripts",
+      "type": "tree",
+      "size": null,
+      "sha": "55503f840829ee215940c598e94bdf1e52d7181a"
+    },
+    {
+      "path": "training_scripts/inpainting_lora.sh",
+      "type": "blob",
+      "size": 1183,
+      "sha": "9f16561daa0cbcf6a6707a859b9ce7e4e7665791"
+    },
+    {
+      "path": "training_scripts/lora_pti.sh",
+      "type": "blob",
+      "size": 819,
+      "sha": "667c88100445e16b75499ac5395d516ae60b4432"
+    },
+    {
+      "path": "training_scripts/multivector_example.sh",
+      "type": "blob",
+      "size": 1021,
+      "sha": "e021ee4f0d83a6e187caa1351c35337c3e32ca54"
+    },
+    {
+      "path": "training_scripts/run_lora_db_unet_only.sh",
+      "type": "blob",
+      "size": 589,
+      "sha": "1a4605b5ed2805a91bd3f2ca63c0f4b2ed0bda90"
+    },
+    {
+      "path": "training_scripts/run_lora_db_w_text.sh",
+      "type": "blob",
+      "size": 680,
+      "sha": "bf13fcb6189130f0cfaec163b7a350440489267b"
+    },
+    {
+      "path": "training_scripts/run_lorpt.sh",
+      "type": "blob",
+      "size": 929,
+      "sha": "523e718c6225844866c43b716cf22ed37fa63fa7"
+    },
+    {
+      "path": "training_scripts/train_inpaint_lora.sh",
+      "type": "blob",
+      "size": 1336,
+      "sha": "2c5dd8ce61d1c21526a08f27606d68841e2187bc"
+    },
+    {
+      "path": "training_scripts/train_lora_dreambooth.py",
+      "type": "blob",
+      "size": 35887,
+      "sha": "a0c0544923a2e7973d8d1b1dc207b377131af645"
+    },
+    {
+      "path": "training_scripts/train_lora_pt_caption.py",
+      "type": "blob",
+      "size": 37773,
+      "sha": "ae7aafcd2735af580d1dcb186c69d4db17f210d2"
+    },
+    {
+      "path": "training_scripts/train_lora_w_ti.py",
+      "type": "blob",
+      "size": 42672,
+      "sha": "8f63280fbdd3cb6583bc415ffcaf991b887d1687"
+    },
+    {
+      "path": "training_scripts/use_face_conditioning_example.sh",
+      "type": "blob",
+      "size": 1047,
+      "sha": "27eadbc283f9e32834541d7ff94be44c6b6638de"
+    },
+    {
+      "path": "utils",
+      "type": "tree",
+      "size": null,
+      "sha": "4182fb66b20d8627eb83bdab32e86a510a92cde4"
+    },
+    {
+      "path": "utils/__pycache__",
+      "type": "tree",
+      "size": null,
+      "sha": "8f7e60292a3d69cd78a2da99af2145cbc1f89a57"
+    },
+    {
+      "path": "utils/__pycache__/metric_utils.cpython-312.pyc",
+      "type": "blob",
+      "size": 11490,
+      "sha": "9357c7fcbee2b0238143bfd75c40a7e20995ae86"
+    },
+    {
+      "path": "utils/metric_utils.py",
+      "type": "blob",
+      "size": 9311,
+      "sha": "5ba302b550789bd097d3463526c7af7570a26b3c"
+    }
+  ],
+  "temporary_source_cache_cleanup": {
+    "deleted_dir": "tmp/al57_source",
+    "path_absent": true,
+    "payloads_committed": false,
+    "absence_rechecked_at": "2026-09-19T20:17:27+08:00"
+  },
+  "source_files_sha256": {
+    "README.md": "e9b0185606164067d822c375c5261d426bb28ccf345cd778cb9c694f30f1fd1e",
+    "eval_fake_vs_real.py": "9bc975ae830276fd2700dc39e1ba4156c654526771207ac8e82ec3d8d9b4b158",
+    "utils/metric_utils.py": "30da1d18a3f02c978140655414984705a68be7d61955b8a4bd9405c6ce8c0ef1",
+    "training_scripts/inpainting_lora.sh": "5111dc82811f88afd29170e0c0b2ea4cafccdae39f532e5cbe715af0fa15d5b8"
+  },
+  "final_reviewed_at": "2026-09-19T20:17:27+08:00",
+  "source_total_bytes": 22080,
+  "repository_to_paper_mapping": "Paperv2 links author repository and pinned README names paper; exact experiment commit not established",
+  "findings": [
+    {
+      "id": "entrypoint_readme_mismatch",
+      "source": "README.md",
+      "lines": [
+        59,
+        64
+      ],
+      "finding": "README filename differs from tree entrypoint; checkpoint_folder argument not declared by read evaluator"
+    },
+    {
+      "id": "argparse_keyword",
+      "source": "eval_fake_vs_real.py",
+      "lines": [
+        245
+      ],
+      "finding": "ctype keyword is incompatible with imported standard argparse; static interface inference only"
+    },
+    {
+      "id": "missing_mask_flow",
+      "source": "eval_fake_vs_real.py",
+      "lines": [
+        195,
+        209,
+        242
+      ],
+      "finding": "Both class arms passNone; declared mask path unused; valid masked run not established, library behavior not inferred"
+    },
+    {
+      "id": "missing_lora_load",
+      "source": "eval_fake_vs_real.py",
+      "lines": [
+        14,
+        177,
+        237,
+        250
+      ],
+      "finding": "LoRA functions imported and args declared, not invoked in complete read entrypoint"
+    },
+    {
+      "id": "numpy_torch_boundary",
+      "source": "eval_fake_vs_real.py",
+      "lines": [
+        145,
+        163,
+        221
+      ],
+      "finding": "NumPy folder arrays passed directly into torch.cat; static type-flow inconsistency, no execution"
+    },
+    {
+      "id": "aggregation",
+      "source": "eval_fake_vs_real.py",
+      "lines": [
+        51,
+        52,
+        65,
+        66,
+        75,
+        81,
+        247,
+        253
+      ],
+      "finding": "Planned num_gen3 and50step pipeline requests, outputs averaged before whole-image scoring; actual execution and denoising forwards unknown"
+    },
+    {
+      "id": "score_contract",
+      "source": "eval_fake_vs_real.py",
+      "lines": [
+        44,
+        62,
+        69,
+        75,
+        81,
+        217
+      ],
+      "finding": "No explicit/255; PSNR range1 and MS-SSIM range2; L2 AUROC path not in read evaluator. FixedMAX shift alone cannot explain PSNR vs negativeMSE ranking difference"
+    },
+    {
+      "id": "training_flags",
+      "source": "training_scripts/inpainting_lora.sh",
+      "lines": [
+        4,
+        11,
+        12,
+        29,
+        30,
+        36
+      ],
+      "finding": "Target-like instance directory and LoRA/TI training flags present; exact dataset count, run completion, costs and paper mapping unverified"
+    }
+  ],
+  "unresolved": [
+    "Valid mask and LoRA-enabled paper evaluation path",
+    "Exact dependency versions and metrics implementation semantics",
+    "Paper experimentalK and random-source contract",
+    "Exact target-alignment data/weights and saved predictions",
+    "Actual network-call/runtime and API/billing costs",
+    "Cause of paper PSNR/L2 ablation difference"
+  ],
+  "review_kind": "Manual source and argument/type-flow review. No imported/executed author code, AST evaluator, model or synthetic score computation",
+  "contract_gate_result": "fail",
+  "scientific_results": "not_evaluated",
+  "actual_author_execution_status": "not_attempted",
+  "input_sha256": {
+    "research-plan/AL57_RECOVERY_IMPLEMENTATION_CONTRACT_AUDIT_20260919.md": "952bc4b81d021f773cf383235b350ab83ce86eab088c029f3cab853e34811c89",
+    "research-plan/reviews/AL56_RECOVERY_DETECTION_PRIOR_REVIEW_20260919.md": "4822d26031b34622c062437bb01a5df044a52e79d312d642f6ba48f355f5c6e2",
+    "research-plan/reviews/AL56_SOURCE_RECORD_20260919.json": "973764d6f69007cd5d593056cabca22459c41004b961921484c4cac9b57d4c29",
+    "research-plan/reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a"
+  },
+  "draft_assessment": {
+    "path": "AL57_SOURCE_CONTRACT_DRAFT_20260919.md",
+    "sha256": "7522a0fb6a61baf4c9a6e409bf605a1e79d911d36d07a2e202fcbe504d559822",
+    "status": "superseded",
+    "reason": "Incorrect22080byte total, premature scopedpass, maskNone described as successful unmasked behavior, omitted explicit entrypoint defects and fixedMAX ranking caveat"
+  },
+  "final_review_sha256": "0d19d2857644c66044d3fc837e4333e4fa71f18831c633f40a109d6701aa6375",
+  "scope": {
+    "source_files_read": 4,
+    "source_files_limit": 4,
+    "source_payload_bytes_limit": 524288,
+    "full_repository_cloned": false,
+    "media_or_checkpoint_downloaded": false,
+    "authors_code_executed": false,
+    "models_run": false,
+    "GPU_or_server": false,
+    "comparison_arm_accepted": false,
+    "OR1_innovation_admitted": false
+  }
+}
