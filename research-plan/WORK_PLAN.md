@@ -34,6 +34,7 @@
 - 第3.6节的居中三帧C分支已通过DX03离线软件验收：33项回归及独立补充检查通过；A保留参考。没有批准任何真实输入采集或训练。
 - DX04已审查100条既有MS/VC2归档记录：C的两个间隔均为0.5秒、中心误差为零，但原视频时长与来源仍不同。归档before.pts实际来自best_effort_timestamp_time，不能称为已验证原生整数PTS/time_base；详见3.7节。
 - 2026-09-18 22:51北京时间，新49714端点已实际连通：RTX4090D24GB、16核CPU配额、62GiB内存配额，原项目/数据/缓存/运行目录与Python存在；当时无GPU计算进程。已用现有用户公钥验证无人值守登录。实付与报价仍未知，详见[连接记录](artifacts/cvpr27/server_connection.json)；这些是带时间观测。
+- 2026-09-19 14:33北京时间，按用户提供的新机器切换至 `connect.westc.seetacloud.com:13340`，已有密钥登录成功。实测 RTX4090 24GB、cgroup 配额 12 核/90GiB，数据盘 50GiB、空余约 13.34GiB；原项目、数据、缓存、运行目录和项目 Python3.12.3 均存在。宿主可见 128 核/1TiB 不当作配额；上述 49714 记录仅保留历史。当前无 GPU 计算进程，未开展训练；只读 SSH/CPU 检查可能计费，实际费用/余额仍未知。见[新机核验](reviews/server_13340_readonly_20260919.json)。
 
 事实入口：[DEVLOG](../DEVLOG.md)、[实际时间间隔与局部秩组件](ACTUAL_LAG_AND_LOCAL_RANK_2026-09-17.md)、[配对一致性报告](../research-runs/sampling_consistency_pilot_v1_report.md)。
 

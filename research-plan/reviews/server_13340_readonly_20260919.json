@@ -1,0 +1,113 @@
+{
+  "observed_at": "2026-09-19T06:33:13.469009+00:00",
+  "endpoint": {
+    "host": "connect.westc.seetacloud.com",
+    "port": 13340,
+    "user": "root"
+  },
+  "inventory": {
+    "hostname": "autodl-container-a5904787c3-18485c57",
+    "os": "Linux 5.15.0-78-generic x86_64",
+    "cpu_visible": 128,
+    "ram_visible": "1.0TiB",
+    "ram_available_observed": "957GiB",
+    "disk": "50G total/37G used/14G free (74%)",
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mb": 24564,
+    "gpu_memory_used_mb": 0,
+    "gpu_utilization_percent": 0,
+    "cvpr27_root_size": "37G",
+    "cvpr27_root_present": true,
+    "active_cvpr_python_or_training_processes": false,
+    "nvidia_compute_processes": false,
+    "cpu_quota_cores": 12,
+    "ram_quota_gib": 90,
+    "project_python": "3.12.3",
+    "cpu_visible_is_not_quota": true,
+    "ram_visible_is_not_quota": true,
+    "disk_free_bytes": 14319140864
+  },
+  "read_only": true,
+  "scientific_or_budget_gate_passed": false,
+  "credentials_persisted": false,
+  "cgroup_and_path_inventory": {
+    "observed_at": "2026-09-19T06:33:13.469009+00:00",
+    "hostname": "autodl-container-a5904787c3-18485c57",
+    "visible_cpus": 128,
+    "cpu_affinity_count": 128,
+    "cpu_max": "1200000 100000",
+    "memory_max": "96636764160",
+    "cpuset_cpus_effective": "0-127",
+    "cpu_cfs_quota_us": null,
+    "cpu_cfs_period_us": null,
+    "memory_limit_in_bytes": null,
+    "invoked_python_version": "3.12.3",
+    "disk": {
+      "total_bytes": 53687091200,
+      "used_bytes": 39367950336,
+      "free_bytes": 14319140864
+    },
+    "paths": {
+      "data": {
+        "exists": true,
+        "is_dir": true
+      },
+      "cache": {
+        "exists": true,
+        "is_dir": true
+      },
+      "runs": {
+        "exists": true,
+        "is_dir": true
+      },
+      "environment/venv": {
+        "exists": true,
+        "is_dir": true
+      },
+      "cvpr27-server": {
+        "exists": true,
+        "is_dir": true
+      },
+      "releases/v0.1.3/cvpr27-server": {
+        "exists": true,
+        "is_dir": true
+      },
+      "releases/v0.1.3/cvpr27-server/run.py": {
+        "exists": true,
+        "is_dir": false
+      }
+    },
+    "project_python": {
+      "path": "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+      "exists": true,
+      "is_symlink": true,
+      "resolved_path": "/root/miniconda3/bin/python3.12",
+      "returncode": 0,
+      "version_executable_prefix": [
+        "3.12.3",
+        "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+        "/root/autodl-tmp/cvpr27/environment/venv"
+      ],
+      "stderr": ""
+    },
+    "gpu": {
+      "query_returncode": 0,
+      "inventory_csv": "NVIDIA GeForce RTX 4090, 24564, 0, 0",
+      "compute_apps_returncode": 0,
+      "compute_apps_csv": ""
+    }
+  },
+  "read_only_ssh_may_consume_existing_instance_billing": true,
+  "provider_hourly_rate": null,
+  "provider_actual_cost": null,
+  "project_cumulative_spend": null,
+  "credential_used": "existing public key; supplied password not used or persisted",
+  "remote_mutations": false,
+  "environment_packages_or_gpu_execution": false,
+  "limitations": [
+    "Directory/path existence and project Python invocation verified; full dataset integrity and model compatibility not revalidated.",
+    "The earlier process listing found no matching research training process; not a persistent live guarantee.",
+    "Default remote python3 is not on noninteractive PATH; use the verified absolute project interpreter."
+  ],
+  "snapshot_correction": "128 visible CPUs and host-visible1.0TiB RAM are not container quotas; cgroup confirms12 cores and90GiB."
+}

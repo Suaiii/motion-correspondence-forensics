@@ -25,7 +25,7 @@
 - 服务器访问阻塞时推进文献、协议、合成验证和代码准备；依赖远端数据的任务如实保留阻塞。
 - 按CONTINUOUS_RESEARCH_20260918.md持续执行已批准包内独立工作。一项被否证后完成负结果交付并继续另一项；交付完整包后发送一次实质交接请求续接，不反复空轮询。新付费批次仍独立验收，不靠扩大GPU使用率满足连续性。
 - 启动或恢复先核对project.json的当前dispatch及实际执行者。若本任务曾在系统层失败且planagent已接管CPU包，旧消息不构成重复执行授权；先读取fallback产物并承担交叉复核或下一独立项。
-- 当前服务器连接使用research-plan/artifacts/cvpr27/server_connection.json中的49714端点及本机已有密钥，口令不写入文件。实测Python为/root/autodl-tmp/cvpr27/environment/venv/bin/python，默认远端PATH没有python3；GPU24GB/CPU16核/内存62GiB，不使用旧80GiB假设。
+- 本任务保留历史；后续服务器连接仅认主工作区research-plan/artifacts/cvpr27/server_connection.json。用户2026-09-19已改为westc的13340端点，已有密钥登录；项目Python为/root/autodl-tmp/cvpr27/environment/venv/bin/python，默认远端PATH没有python3。新机GPU24GB/CPU12核/内存90GiB，以cgroup配额为准，不沿用49714的16核/62GiB历史状态。口令不写入文件。
 
 ## 科学与资源约束
 

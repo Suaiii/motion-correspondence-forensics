@@ -76,14 +76,15 @@
       "due_at": "2026-09-18T22:00:00+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
       "next_action": "只读核对现有授权账单或既有用量回复，核清付费额度；算法队列继续，不重复索要已询问信息。",
-      "blocker": "49714访问、硬件、原项目目录与无人值守公钥登录已核验；实际累计支出/计费小时、当前报价/剩余额度仍未知。此阻塞仅影响付费支路。",
+      "blocker": "13340访问、硬件、原项目目录与无人值守公钥登录已核验；实际累计支出/计费小时、当前报价/剩余额度仍未知；此阻塞仅影响付费支路。",
       "partial_evidence": [
         "../../research-runs/shared_plan_20260917/handoff_ack.md",
         "../reviews/server_49714_readonly_20260918.json",
-        "../reviews/ACCOUNT_ACCESS_CHECK_20260919.json"
+        "../reviews/ACCOUNT_ACCESS_CHECK_20260919.json",
+        "../reviews/server_13340_readonly_20260919.json"
       ],
       "gate_scope": "assets_and_budget",
-      "review_note": "asset_and_budget_review.md已核验；访问/资产部分通过材料审查，整体预算门槛未通过。"
+      "review_note": "13340访问/资产只读核验通过；整体预算门槛仍未通过，未放行付费工作。"
     },
     {
       "id": "RS01",
@@ -4757,22 +4758,48 @@
     ]
   },
   "resource_profile": {
-    "gpu": "RTX4090D24GB",
-    "cpu_quota": 16,
-    "ram_gib": 62,
+    "gpu": "RTX4090 24GB",
+    "cpu_quota": 12,
+    "ram_gib": 90,
     "disk_gb": 50,
     "hourly_cny": null,
     "materialize_workers": 12,
     "bag_batch": 64,
     "monetary_expansion_pending": false,
-    "host_port": 49714,
+    "host_port": 13340,
     "prior_instance_hourly_cny": 1.88,
-    "price_status": "49714 current rate unverified; historical 1.88 is not carried forward",
+    "price_status": "13340 current rate, cumulative actual spending, invoice and remaining quota unverified; historical 1.88 not carried forward",
     "budget_expansion_approved_at": "2026-09-17",
     "live_state_verified_by_planagent": true,
     "disk_gib": 50,
-    "live_state_verified_at": "2026-09-18T14:51:57.457358+00:00",
-    "server_connection": "../artifacts/cvpr27/server_connection.json"
+    "live_state_verified_at": "2026-09-19T06:33:13.469009+00:00",
+    "server_connection": "../artifacts/cvpr27/server_connection.json",
+    "cpu_visible_count": 128,
+    "cgroup_cpu_max": "1200000 100000",
+    "cgroup_memory_max_bytes": 96636764160,
+    "data_disk_free_bytes": 14319140864,
+    "previous_host_port": 49714,
+    "previous_resource_snapshot": {
+      "gpu": "RTX4090D24GB",
+      "cpu_quota": 16,
+      "ram_gib": 62,
+      "disk_gb": 50,
+      "hourly_cny": null,
+      "price_status": "49714 current rate unverified; historical 1.88 is not carried forward",
+      "live_state_verified_at": "2026-09-18T14:51:57.457358+00:00",
+      "host_port": 49714
+    },
+    "server_inventory_evidence": "../reviews/server_13340_readonly_20260919.json",
+    "runtime_root_freshly_verified": true,
+    "runtime_verification_scope": "Directory and run.py existence only; no module import or experimental execution",
+    "python_version": "3.12.3",
+    "paid_work_authorized": false,
+    "budget_gate_passed": false,
+    "scientific_gate_passed": false,
+    "host": "connect.westc.seetacloud.com",
+    "recorded_at": "2026-09-19T14:43:30+08:00",
+    "ram_host_visible_display": "1.0TiB (host-visible only, not quota)",
+    "runtime_config_status": "Inherited materialize_workers/bag_batch are historical settings, not newly profiled or authorized on13340"
   },
   "active_phase": "shared_cvpr27_20260917",
   "historical_plans": [
@@ -4865,7 +4892,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-19T14:18:47+08:00",
+  "updated_at": "2026-09-19T14:43:30+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -4972,7 +4999,7 @@
     "pair2_timing_only_auroc": 0.93367,
     "local_rank_status": "synthetic reference tests only; not a trained accepted detector",
     "formal_method_accepted": false,
-    "server_state": "49714 authenticated and inventoried at 2026-09-18T14:51:57Z; GPU idle, original project/data/cache/runtime paths exist. Existing user public-key login subsequently verified; billing/rate unknown.",
+    "server_state": "13340 authenticated and inventoried at 2026-09-19T06:33:13Z; RTX4090 idle, cvpr27 paths and project Python3.12.3 exist; cgroup quota 12 CPU/90GiB; billing/rate unknown.",
     "researchagent_handoff_at": "2026-09-17T18:56:17+08:00",
     "old_protocol_actual_lag_records": 28868,
     "actual_lag_report_sha256": "b50e090b7bf7efc9d5bc10e9ff9c593f9dc2b0e4da0fe94d64cf2aae27113c2a",
@@ -5055,11 +5082,12 @@
       "review": "../reviews/DX04_20260918.md",
       "frozen_analysis_plan_preserved": true
     },
-    "latest_server_access_review": "../reviews/server_49714_readonly_20260918.json",
+    "latest_server_access_review": "../reviews/server_13340_readonly_20260919.json",
     "algorithm_search_status": "H-J CPU reference and restricted structural checks produced by planagent; cross-review and H-T assigned to recovered research task; no novelty or real efficacy gate passed.",
     "new_candidate_partial_evidence": "../reviews/AL03_joint_math_evidence_20260918.json",
     "H_T_v0_hypothesis": "refuted: zero/redundant reference and unfair information assumptions; no real-data efficacy claim",
-    "H_J_cross_review": "restricted mathematics supported; helper validation issue and geometric blind spot remain; novelty/effect unknown"
+    "H_J_cross_review": "restricted mathematics supported; helper validation issue and geometric blind spot remain; novelty/effect unknown",
+    "previous_server_state": "49714 snapshot retained in server_connection_before_13340_20260919.json; not current."
   },
   "milestones": [
     {
@@ -5504,6 +5532,19 @@
       "plan_sha256": "f50a157b6f5cb26cb7ddfade5a42b72cbfed070ca569db27890ee5d5dfa45e2f",
       "reason": "AL32 archived software handoff reviewed; AL34 limited counterexample and AL35 protocol draft complete; research executor quota blocked while planner AL37 and independent AL36 prepared",
       "date_budget_or_gate_changes": false
+    },
+    {
+      "at": "2026-09-19T14:43:30+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "type": "server_endpoint_snapshot_update",
+      "plan_sha256": "d103545a9e01f485da07138a7bc1adca89d5fbaf6c11686d854ae6b958ac6f9a",
+      "reason": "User supplied new 13340 endpoint; read-only SSH, cgroup, path, interpreter and GPU inventory verified; budget/scientific gates unchanged",
+      "date_budget_or_gate_changes": false,
+      "resource_observed_at": "2026-09-19T06:33:13.469009+00:00",
+      "snapshot_before": {
+        "git_revision": "a03c6bb0b7e3fa56e3b4578627724af5f3af8acb",
+        "path": "research-plan/task-hermes/project.json"
+      }
     }
   ],
   "continuous_collaboration": {
@@ -5549,7 +5590,7 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-19T14:18:47+08:00",
+    "last_coordinator_activity_at": "2026-09-19T14:43:30+08:00",
     "research_observed_status": "failed_usage_limit",
     "dispatch_history": [
       {
@@ -6264,7 +6305,7 @@
         "reported_retry_time_raw": "Sep 24th, 2026 9:12 PM",
         "reported_timezone": null,
         "review": "../reviews/RESEARCH_USAGE_LIMIT_20260919.md",
-        "notification_state": "prepared_for_current_final_not_confirmed",
+        "notification_state": "confirmed_final_output",
         "local_planner_work_continues": true,
         "no_retry_until_state_change": true,
         "no_identity_or_model_change": true,
@@ -6272,7 +6313,9 @@
         "execution_artifacts_preserved": true,
         "pending_notice": "科研执行任务触及产品用量上限；AL32已保存产物经核验整合，计划端继续数学和协议工作。仍无预定算法突破。",
         "notification_dedup_id": "research-usage-limit-01a0b687-20260919",
-        "notification_ack_rule": "Confirm only after reading the actual completed NOTIFY turn; no milestone ack or OS delivery claim"
+        "notification_ack_rule": "Confirm only after reading the actual completed NOTIFY turn; no milestone ack or OS delivery claim",
+        "notification_confirmed_at": "2026-09-19T14:43:30+08:00",
+        "confirmation_evidence": "Previous completed Plan9.16 heartbeat final in current conversation includes NOTIFY for research usage limit and AL32 integration; not OS push delivery."
       }
     },
     "latest_authorization_at": "2026-09-18T23:24:36+08:00",
@@ -6382,6 +6425,15 @@
       "commit": "53fb5463086047ba484f2796fcb03a0198e1822a",
       "path": "research-plan/task-hermes/project.json",
       "sha256": "e9d550a95c7b350dde7b8a64b835ab5c6e78309142a22430528f37cef0a579b3"
+    },
+    "server_endpoint_update": {
+      "recorded_at": "2026-09-19T14:43:30+08:00",
+      "current_connection": "../artifacts/cvpr27/server_connection.json",
+      "host": "connect.westc.seetacloud.com",
+      "port": 13340,
+      "evidence": "../reviews/server_13340_readonly_20260919.json",
+      "scientific_or_paid_work_released": false,
+      "research_thread_not_awakened": true
     }
   },
   "candidate_protocols": {
