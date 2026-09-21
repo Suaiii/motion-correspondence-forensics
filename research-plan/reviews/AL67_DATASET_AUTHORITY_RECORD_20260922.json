@@ -1,0 +1,66 @@
+{
+  "task_id": "AL67",
+  "reviewed_at": "2026-09-22T00:56:56+08:00",
+  "status": "done",
+  "gate_result": "pass",
+  "gate_scope": "dataset_authority_contract_review",
+  "formal_data_gate": "not_evaluated",
+  "formal_training_released": false,
+  "actual_media_access": false,
+  "server_or_gpu_experiment": false,
+  "decision": "Literature and compute foundations are sufficient for continued verification, but candidate datasets remain insufficiently authoritative/effective for formal experiments because sample-level lineage, native time, labels, licences, ancestor splits and selection coverage are not closed.",
+  "report": "research-plan/reviews/AL67_DATASET_AUTHORITY_REVIEW_20260922.md",
+  "report_sha256": "20f9e575f023125fdc2cb3496350d188448d3ae52f42b804a6579dad0a19544f",
+  "input_sha256": {
+    "research-plan/AL67_DATASET_AUTHORITY_AUDIT_20260922.md": "aab25a348d84ff76716ec2c295c34dd48633da8179eeffdcd1ba2237d40662dc",
+    "research-plan/reviews/AL63_AIGVDBENCH_PROTOCOL_REVIEW_20260919.md": "22158083977e47f59a02884e32c6363a28b82bdea6826dcba96a68a479a86901",
+    "research-plan/reviews/AL63_SOURCE_RECORD_20260919.json": "739974a906090f801735062674009f8515e0f33156616eb8ff5c0d546e2cad8a",
+    "research-plan/reviews/AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md": "0a2e5c039c65984974fb91cd155a15b3721d1b7282098e23cd2499499e03dbcf",
+    "research-plan/reviews/AL64_SOURCE_RECORD_20260919.json": "d57abb8237f555d089f5eefb1cd22d819544106ac1b494fe05c88e6c3798b5e3",
+    "research-plan/reviews/AL13_COUNTERFACTUAL_PROTOCOL_20260919.md": "54c98657404d8093fff9175f6f3e71c23fac34cd509581a481c860a2913e99a3",
+    "research-plan/reviews/AL66_SELECTION_IDENTIFIABILITY_REVIEW_20260920.md": "7bc0cccfe502fc02ea4da119e085e80c4fbb134a9c004e3748a620fd76203622",
+    "research-plan/reviews/AL66_MANUAL_REVIEW_RECORD_20260920.json": "39afee8ee25f58923162a6b7f7863ce288c5eb532f68188c2c85b46bb1e4736a",
+    "research-plan/WORK_PLAN.md": "0a12e6ea0b6a1b456f635683e7e70c6a3d3eba836fa34db24560e1d4efbd6c98",
+    "research-plan/reviews/SERVER_DATA_MANIFEST_INVENTORY_20260922.json": "e437177ead211aae4c39c35ebcde1db963a25c1fe988285f0104226f9b5015f2"
+  },
+  "verified_items": [
+    "paper identity and broad pipeline descriptions",
+    "plan-level development/final separation rule",
+    "known filter/selection mechanisms at dataset-paper level",
+    "server-side historical manifests contain sample hashes, groups, labels and partial license/ancestry fields",
+    "pair2 development audits contain origin_id and sampled PTS/timing but explicitly remain external_development_only"
+  ],
+  "partial_or_missing_items": [
+    "native integer PTS/time_base on candidate manifests",
+    "ancestry_content_verified for formal candidate",
+    "decoder/codec and processing hashes",
+    "per-sample generator checkpoint/VAE/decoder/prompt/seed",
+    "license evidence beyond pending/status strings",
+    "ancestor-level split proof",
+    "selection/coverage rates and exact AIGVDBench revision"
+  ],
+  "minimum_manifest_fields": [
+    "sample_id",
+    "ancestor_id",
+    "raw_file_sha256",
+    "parent_file_sha256",
+    "native_pts",
+    "time_base",
+    "decoder_build_hash",
+    "codec_name/tag",
+    "generator/checkpoint/VAE/decoder hashes",
+    "prompt/seed",
+    "propagation_chain",
+    "pair_relation",
+    "split",
+    "licence_evidence",
+    "filter_pipeline_hash"
+  ],
+  "next_actions": [
+    "obtain/construct sample-level manifest from authorized sources",
+    "run server-side native time and decoder audit",
+    "freeze ancestor-level split and support/selection report",
+    "only then pilot mechanism set"
+  ],
+  "independent_review_boundary": "planagent contract audit is not independent scientific review"
+}

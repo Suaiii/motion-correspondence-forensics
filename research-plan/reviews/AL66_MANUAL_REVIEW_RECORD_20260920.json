@@ -1,0 +1,32 @@
+{
+  "task_id": "AL66",
+  "reviewed_at": "2026-09-22T00:51:53+08:00",
+  "status": "done",
+  "gate_result": "pass",
+  "gate_scope": "selection_identifiability_conditions",
+  "review_type": "manual_symbolic_derivation",
+  "independent_scientific_review": false,
+  "numerical_execution": false,
+  "model_media_server_gpu": false,
+  "hypothesis_result": "bounded_classic_identifiability_conditions_and_failure_cases; no_algorithm_admission",
+  "decision": "Current dataset foundation is literature-locatable but sample-level authority and temporal/lineage/licence evidence are not closed; formal training remains blocked.",
+  "report": "research-plan/reviews/AL66_SELECTION_IDENTIFIABILITY_REVIEW_20260920.md",
+  "report_sha256": "7bc0cccfe502fc02ea4da119e085e80c4fbb134a9c004e3748a620fd76203622",
+  "input_sha256": {
+    "research-plan/AL66_SELECTION_IDENTIFIABILITY_AUDIT_20260920.md": "ad528a6a3c3c2b126a353b07c33d7c8af4f0fcf15da863800ee3794b30ecb2d4",
+    "research-plan/reviews/AL65_FALLBACK_HANDOFF_20260920.md": "289e99766579ff70d2c165301920d1e2f49eb17c4d86a28c6c4ee34a839039b6",
+    "research-plan/reviews/AL64_OPENVIDHD_PROVENANCE_REVIEW_20260919.md": "0a2e5c039c65984974fb91cd155a15b3721d1b7282098e23cd2499499e03dbcf",
+    "research-plan/reviews/AL64_SOURCE_RECORD_20260919.json": "d57abb8237f555d089f5eefb1cd22d819544106ac1b494fe05c88e6c3798b5e3",
+    "research-plan/reviews/AL13_COUNTERFACTUAL_PROTOCOL_20260919.md": "54c98657404d8093fff9175f6f3e71c23fac34cd509581a481c860a2913e99a3"
+  },
+  "assumptions": [
+    "positive common support for preservation claims",
+    "selection-ratio condition or explicit bounds must be justified externally",
+    "matching Z does not imply Q-independent selection"
+  ],
+  "next_tasks": [
+    "AL67_DATASET_AUTHORITY_AUDIT",
+    "AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW"
+  ],
+  "self_review_boundary": "planagent manual derivation is not independent scientific review"
+}

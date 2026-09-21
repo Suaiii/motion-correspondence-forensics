@@ -5437,8 +5437,8 @@
         "AL65",
         "AL13"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "selection_identifiability_conditions",
       "hypothesis": "Unknown label-dependent selection may alter conditional source score ordering; nuisance matching preserves it only under explicit selection-ratio conditions or justified bounds.",
       "work": [
@@ -5473,8 +5473,149 @@
       },
       "implementation_authorized": false,
       "scientific_innovation_gate_passed": false,
+      "hypothesis_result": "bounded_classic_identifiability_conditions_and_failure_cases; no_algorithm_admission",
+      "next_action": "Data authority audit AL67; independent OR1 admission review AL36 remains blocked.",
+      "dispatch_status": "completed_local_manual",
+      "started_at": "2026-09-22T00:46:03+08:00",
+      "resumed_at": "2026-09-22T00:46:03+08:00",
+      "updated_at": "2026-09-22T01:08:58+08:00",
+      "completed_at": "2026-09-22T00:54:08+08:00",
+      "review": "../reviews/AL66_SELECTION_IDENTIFIABILITY_REVIEW_20260920.md",
+      "review_sha256": "7bc0cccfe502fc02ea4da119e085e80c4fbb134a9c004e3748a620fd76203622",
+      "record": "../reviews/AL66_MANUAL_REVIEW_RECORD_20260920.json",
+      "record_sha256": "39afee8ee25f58923162a6b7f7863ce288c5eb532f68188c2c85b46bb1e4736a"
+    },
+    {
+      "id": "AL67",
+      "title": "样本级数据权威性、时间与祖先合同审查",
+      "status": "done",
+      "assignee": "planagent",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "prepared_at": "2026-09-22T00:54:08+08:00",
+      "started_at": "2026-09-22T00:54:08+08:00",
+      "updated_at": "2026-09-22T01:08:58+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "milestone": "M2",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "parents": [
+        "AL63",
+        "AL64",
+        "AL66"
+      ],
+      "requires_pass": [
+        "AL63",
+        "AL64",
+        "AL66"
+      ],
+      "work_order": "../AL67_DATASET_AUTHORITY_AUDIT_20260922.md",
+      "work_order_sha256": "aab25a348d84ff76716ec2c295c34dd48633da8179eeffdcd1ba2237d40662dc",
+      "hypothesis": "Current literature-locatable candidate pools may lack sample-level provenance, temporal, lineage, label, licence and ancestor-split evidence required for formal experiments.",
       "hypothesis_result": "not_evaluated",
-      "next_action": "One bounded manual source-selection identifiability review, independent of AL36"
+      "gate_result": "pass",
+      "gate_scope": "dataset_authority_contract",
+      "implementation_authorized": false,
+      "scientific_innovation_gate_passed": false,
+      "dispatch_status": "completed_local_manual_contract",
+      "scope": "Existing local evidence and schemas only; no new media/download/model/server/GPU/classifier.",
+      "work": [
+        "Classify each data gate as verified/partial/missing",
+        "Bind missing fields to evidence and define minimum release manifest",
+        "Keep exposed development pools and candidate sources separate from final confirmation"
+      ],
+      "acceptance": [
+        "Report exact source hashes and evidence boundaries",
+        "Do not call candidate pool formal/authoritative without sample-level closure",
+        "Deliver explicit next access and exclusion rules"
+      ],
+      "failure_conditions": [
+        "Missing native PTS/time_base, ancestor chain, label/generator metadata, licence or ancestor-level split keeps formal data gate blocked",
+        "Do not substitute paper size, compute, literature count or development AUROC for provenance"
+      ],
+      "resource_policy": {
+        "local_cpu": false,
+        "server_access": false,
+        "gpu": false,
+        "large_downloads": false,
+        "real_media": false,
+        "model_calls": false,
+        "classifier_training": false
+      },
+      "artifacts": [
+        "../reviews/AL67_DATASET_AUTHORITY_REVIEW_20260922.md",
+        "../reviews/AL67_DATASET_AUTHORITY_RECORD_20260922.json"
+      ],
+      "completed_at": "2026-09-22T01:08:58+08:00",
+      "formal_data_gate": "not_evaluated",
+      "report": "../reviews/AL67_DATASET_AUTHORITY_REVIEW_20260922.md",
+      "record": "../reviews/AL67_DATASET_AUTHORITY_RECORD_20260922.json",
+      "report_sha256": "20f9e575f023125fdc2cb3496350d188448d3ae52f42b804a6579dad0a19544f",
+      "record_sha256": "d20a730a13b654ff64a487b660ec0d8944998eb29e9dc249d3cfab69f2b2a52e",
+      "next_action": "AL68 performs bounded server-side readiness and native-time audit; AL36 remains independent."
+    },
+    {
+      "id": "AL68",
+      "title": "现有服务器开发样本的数据可用性与原生时间核验",
+      "status": "blocked",
+      "assignee": "researchagent_window",
+      "execution_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+      "execution_worktree": "D:/SUAI/codex/worktree/a77e/脉冲神经网络",
+      "prepared_at": "2026-09-22T01:08:58+08:00",
+      "updated_at": "2026-09-22T01:10:43+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "milestone": "M2",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "parents": [
+        "AL67"
+      ],
+      "requires_pass": [
+        "AL67"
+      ],
+      "work_order": "../AL68_SERVER_DATA_READINESS_20260922.md",
+      "work_order_sha256": "8fd2374dd6a2518d25a08599b1608b4b28d749027ad88c6727de423dd049bee6",
+      "hypothesis": "Existing development files may provide enough verifiable native time and source metadata for a bounded mechanism pilot, while missing fields should keep formal claims blocked.",
+      "hypothesis_result": "not_evaluated",
+      "gate_result": "not_evaluated",
+      "gate_scope": "existing_development_data_readiness",
+      "implementation_authorized": true,
+      "scientific_innovation_gate_passed": false,
+      "dispatch_status": "blocked_startup_provider",
+      "scope": "Read-only existing manifest inventory and at most 8 existing development video probes; no download/model/training/GPU",
+      "work": [
+        "Audit manifests and status distributions",
+        "Probe native PTS/time_base/codec for frozen existing development samples",
+        "Separate public benchmark, mechanism and final-confirmation usability"
+      ],
+      "acceptance": [
+        "Input/output/code/config hashes and exact commands",
+        "Per-sample source hash check and timestamp findings",
+        "No role upgrade of development data and no efficacy claim"
+      ],
+      "failure_conditions": [
+        "Tool/file/hash failure recorded; no silent FPS synthesis",
+        "Missing native time, ancestry or legality keeps formal data gate blocked",
+        "No newly created task or experiment"
+      ],
+      "resource_policy": {
+        "local_cpu": true,
+        "server_access": true,
+        "gpu": false,
+        "large_downloads": false,
+        "real_media": true,
+        "model_calls": false,
+        "classifier_training": false,
+        "max_samples": 8,
+        "max_threads": 2,
+        "max_wall_minutes": 15
+      },
+      "artifacts": [
+        "../../research-runs/data_readiness_20260922/AL68_report.md",
+        "../../research-runs/data_readiness_20260922/AL68_evidence.json",
+        "../../research-runs/data_readiness_20260922/AL68_handoff.md"
+      ],
+      "blocker": "Existing research window message dispatch failed: Model provider codex_local_access not found; no AL68 artifact or remote execution.",
+      "dispatch_failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+      "dispatch_failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
+      "next_action": "Do not resend/create session; resume only after supported provider recovery or explicit user instruction."
     }
   ],
   "storage_policy": {
@@ -6900,7 +7041,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-20T01:38:56+08:00",
+  "updated_at": "2026-09-22T01:13:16+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -7395,12 +7536,12 @@
     "notification_policy": "milestones_only",
     "state_file": "reminder_state.json",
     "automation_id": "cvpr-2027",
-    "automation_status": "PAUSED",
+    "automation_status": "ACTIVE",
     "final_archive_task_id": "PG05",
     "legacy_automation_id": "cvpr-9-11-10",
     "legacy_automation_must_remain": "PAUSED",
     "next_planned_notification_at": "2026-09-23T19:00:00+08:00",
-    "verified_at": "2026-09-19T01:28:40+08:00",
+    "verified_at": "2026-09-22T00:46:03+08:00",
     "host_timezone": "China Standard Time",
     "configured_check_time_local": "19:00",
     "physical_heartbeat_schedule": "hourly at minutes 00,10,20,30,40,50",
@@ -7412,7 +7553,8 @@
     "coordination_target": "roles.researchagent and current active dispatches; legacy research task closed",
     "last_check_recorded_at": "2026-09-19T19:32:56+08:00",
     "paused_at": "2026-09-20T01:38:56+08:00",
-    "pause_reason": "User authorized temporary pause at research checkpoint"
+    "pause_reason": "Historical pause retained; user explicitly resumed on 2026-09-22T00:46:03+08:00",
+    "resumed_at": "2026-09-22T00:46:03+08:00"
   },
   "coordination": {
     "handoff_status": "acknowledged",
@@ -7749,7 +7891,7 @@
   "continuous_collaboration": {
     "authorized_at": "2026-09-17T19:27:21+08:00",
     "authorization": "用户要求继续与科研agent协作直到有突破性进展。",
-    "status": "paused",
+    "status": "active",
     "research_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
     "plan_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
     "dispatch_interval_minutes": 10,
@@ -7758,25 +7900,31 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al66-planner-selection-identifiability-20260920",
+      "id": "cc-resume-al68-al36-20260922",
       "task_ids": [
-        "AL66"
+        "AL68",
+        "AL36"
       ],
-      "executor_role": "planagent",
-      "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "executor_role": "researchagent_window",
+      "executor_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
       "host_id": "local",
-      "status": "paused_by_user",
-      "prepared_at": "2026-09-20T01:26:57+08:00",
-      "work_order": "../AL66_SELECTION_IDENTIFIABILITY_AUDIT_20260920.md",
-      "work_order_sha256": "ad528a6a3c3c2b126a353b07c33d7c8af4f0fcf15da863800ee3794b30ecb2d4",
+      "status": "blocked_startup_provider",
+      "prepared_at": "2026-09-22T01:08:58+08:00",
+      "work_order": "../RESEARCH_RESUME_HANDOFF_20260922.md",
+      "work_order_sha256": "40056ac26e9d125e6454bcba8f8bfd863b154a855bc5241b65d4daf9186fe774",
       "plan_version": "cvpr27-20260919-v1.5",
-      "plan_sha256": "0a12e6ea0b6a1b456f635683e7e70c6a3d3eba836fa34db24560e1d4efbd6c98",
-      "scope": "Manual conditional selection/ordering identifiability; no toy/model/media/server/GPU",
-      "remote_send_required": false,
+      "scope": "AL68 bounded existing-data readiness plus independent AL36 adversarial admission review; no new session",
+      "remote_send_required": true,
       "background_process_running": false,
-      "paused_at": "2026-09-20T01:38:56+08:00",
-      "resume_status": "prepared",
-      "pause_reason": "Explicit user-requested break; no work in flight"
+      "input": "AL68 work order and AL36 original work order; AL65/AL66/AL67 are read-only completed inputs",
+      "success_condition": "Complete both deliveries with real source/config/output hashes; failures preserved; formal data and OR1 gates remain separate",
+      "blocked_at": "2026-09-22T01:10:43+08:00",
+      "blocker": "Model provider codex_local_access not found",
+      "execution_artifacts_available": false,
+      "dispatch_failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+      "dispatch_failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
+      "plan_sha256": "05c5e60b9ab8d43792192256d53f36a5e0bc628f4740aac821dd38e4855c1e30",
+      "updated_at": "2026-09-22T01:13:16+08:00"
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -7787,8 +7935,8 @@
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
       "status": "awaiting_response"
     },
-    "last_coordinator_activity_at": "2026-09-20T01:38:56+08:00",
-    "research_observed_status": "systemError_call_output_no_research_artifact",
+    "last_coordinator_activity_at": "2026-09-22T01:13:16+08:00",
+    "research_observed_status": "systemError_missing_codex_local_access_provider_no_artifact",
     "dispatch_history": [
       {
         "id": "cc-round-1-20260917",
@@ -9045,6 +9193,45 @@
         "gate_result": "pass",
         "outcome": "Five frozen finite-support cases executed with116 checks; selection can manufacture f_Z gap, matching removes S2, zero support is unidentifiable, Q selection survives Z matching; no real efficacy.",
         "evidence": "../fallback-runtime/al65_selection_20260920/run_v1/evidence.json"
+      },
+      {
+        "id": "cc-al67-data-authority-audit-20260922",
+        "task_ids": [
+          "AL67"
+        ],
+        "status": "running_local_manual",
+        "prepared_at": "2026-09-22T00:54:08+08:00",
+        "started_at": "2026-09-22T00:54:08+08:00",
+        "executor_role": "planagent",
+        "scope": "Sample-level dataset authority contract audit; no new access or experiment",
+        "work_order": "research-plan/AL67_DATASET_AUTHORITY_AUDIT_20260922.md",
+        "work_order_sha256": "aab25a348d84ff76716ec2c295c34dd48633da8179eeffdcd1ba2237d40662dc",
+        "source_task": "AL66"
+      },
+      {
+        "id": "cc-resume-al68-al36-20260922",
+        "task_ids": [
+          "AL68",
+          "AL36"
+        ],
+        "status": "prepared_not_sent",
+        "prepared_at": "2026-09-22T01:08:58+08:00",
+        "executor_role": "researchagent_window",
+        "scope": "Resume user-authorized research window with independent server-side data readiness and OR1 adversarial review",
+        "work_order": "../RESEARCH_RESUME_HANDOFF_20260922.md",
+        "work_order_sha256": "40056ac26e9d125e6454bcba8f8bfd863b154a855bc5241b65d4daf9186fe774",
+        "source_tasks": [
+          "AL36",
+          "AL67"
+        ],
+        "do_not_repeat": [
+          "AL65",
+          "AL66"
+        ],
+        "plan_sha256": "05c5e60b9ab8d43792192256d53f36a5e0bc628f4740aac821dd38e4855c1e30",
+        "last_status": "blocked_startup_provider",
+        "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+        "failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792"
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
@@ -9467,7 +9654,26 @@
       ],
       "automation_id": "cvpr-2027",
       "automation_status_verified": "PAUSED"
-    }
+    },
+    "resume_history": [
+      {
+        "resumed_at": "2026-09-22T00:46:03+08:00",
+        "user_instruction": "开始恢复",
+        "server_receipt": "research-plan/reviews/SERVER_RESUME_READONLY_20260922.json",
+        "server_receipt_sha256": "565c143986f80d7919199f4586bd1284a121fa4db60f4503db435bb7a359c26a"
+      }
+    ],
+    "dispatch_failures": [
+      {
+        "dispatch_id": "cc-resume-al68-al36-20260922",
+        "at": "2026-09-22T01:10:43+08:00",
+        "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+        "error": "Model provider codex_local_access not found",
+        "receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+        "sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
+        "do_not_retry": true
+      }
+    ]
   },
   "candidate_protocols": {
     "A": {

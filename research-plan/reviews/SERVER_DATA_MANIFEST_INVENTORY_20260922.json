@@ -1,0 +1,488 @@
+{
+  "schema": "server_data_manifest_inventory_v1",
+  "observed_at": "2026-09-22T01:00:44+08:00",
+  "endpoint": "connect.westc.seetacloud.com:13340",
+  "scope": "read_only metadata inventory; no media bytes read, no model/GPU execution, no files modified",
+  "items": [
+    {
+      "path": "/root/autodl-tmp/cvpr27/cvpr27-server/source_manifest.json",
+      "bytes": 2344,
+      "sha256": "6d2c57a8f9f624edf5dde3d63cfb7edd8e53ba812025fb161889c84cea966d95",
+      "rows": 1,
+      "kind": "code_source_hash_manifest",
+      "fields": [
+        "relative repository files and hashes"
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/real_manifest.jsonl",
+      "bytes": 24945,
+      "sha256": "3dc92541ffe7707dddbe99dc87ad64b89dab3f7946f5eabbe9d158c008d4e804",
+      "rows": 51,
+      "kind": "real_fake_match_manifest",
+      "fields": [
+        "fake_file",
+        "real_file",
+        "query",
+        "status",
+        "source_type",
+        "vript_clip_id",
+        "vript_class_id",
+        "vript_desc",
+        "semantic_score",
+        "reason"
+      ],
+      "missing": [
+        "sample_id",
+        "raw_sha256",
+        "native_pts",
+        "time_base",
+        "ancestor_id",
+        "license",
+        "split"
+      ]
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/candidate200/manifest.jsonl",
+      "bytes": 103070,
+      "sha256": "8e8d1636e3ef7af7a411193e490ba363f1a5e6c30c3fc48e84401166cd51fd24",
+      "rows": 200,
+      "kind": "historical_candidate_manifest",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "ancestry_status": "unknown",
+        "license": "upstream-terms-pending"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/candidate200/manifest_valid.jsonl",
+      "bytes": 53270,
+      "sha256": "eb7a92e594eb25adf01c242a8bb70ad96fd6fe39a3cd9a5c0f3f94fcef01f17c",
+      "rows": 100,
+      "kind": "historical_candidate_valid_subset",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license",
+        "duration_sec"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "ancestry_status": "unknown",
+        "license": "upstream-terms-pending"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/combined_candidate130/manifest.jsonl",
+      "bytes": 135400,
+      "sha256": "eab13b368b2ed7fc6c2d4aea39eb3fafce5458f5f7c65c15287ce5d16b07af8d",
+      "rows": 230,
+      "kind": "historical_combined_candidate",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "source": "cc0_real",
+        "ancestry_status": "verified",
+        "license": "CC0-1.0"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/combined_candidate130/manifest_valid.jsonl",
+      "bytes": 77754,
+      "sha256": "3b3523dc31b92f97206de1ab9e4e57dff0eeb22cec1535556eac3dab1201a426",
+      "rows": 130,
+      "kind": "historical_combined_valid_subset",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license",
+        "duration_sec"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "source": "cc0_real",
+        "ancestry_status": "verified",
+        "license": "CC0-1.0"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/comgenvid_20/manifest.jsonl",
+      "bytes": 10468,
+      "sha256": "66b270757c988123a4388d4615e0e8c307f2c4cf236ef17d41a22e02738a61a0",
+      "rows": 21,
+      "kind": "exposed_development_manifest",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "ancestry_status": "unknown",
+        "license": "dataset-license-pending"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/mech4fps_manifest.jsonl",
+      "bytes": 124035,
+      "sha256": "ec73d01a9bd78e9f8c7d3d1e01b0dc5fa8c277566cd399b3c37d66d8ac82eb21",
+      "rows": 267,
+      "kind": "mechanism_candidate_manifest",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "source",
+        "fake",
+        "query",
+        "vript_clip_id",
+        "semantic_score",
+        "fps",
+        "frame_count",
+        "duration_sec",
+        "role",
+        "scope",
+        "ancestry_status",
+        "license"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "generator",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "source": "vript_real",
+        "ancestry_status": "unknown",
+        "license": "upstream_terms_pending"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/mech4fps_manifest_dedup.jsonl",
+      "bytes": 148828,
+      "sha256": "1f4085e20f39b643ad7929def15d0d880b985f9a76ce2a3d58b6f2d5e0aaed7c",
+      "rows": 263,
+      "kind": "mechanism_candidate_dedup_manifest",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "source": "vript_real",
+        "ancestry_status": "unknown",
+        "license": "upstream_terms_pending"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/mech4fps_manifest_fixed.jsonl",
+      "bytes": 151268,
+      "sha256": "01f844f05939ee41934f175e839afda588f7227639ee13c9c7d2a6eed3ed73bd",
+      "rows": 267,
+      "kind": "mechanism_candidate_fixed_manifest",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "source": "vript_real",
+        "ancestry_status": "unknown",
+        "license": "upstream_terms_pending"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/data/profile100/manifest.jsonl",
+      "bytes": 44100,
+      "sha256": "1e207419948d0f1c2b5edafda2df0a7154df01dba769c14791dd831613dae3cc",
+      "rows": 100,
+      "kind": "historical_profile_manifest",
+      "fields": [
+        "sample_id",
+        "path",
+        "sha256",
+        "label_fake",
+        "source",
+        "generator",
+        "task",
+        "source_group",
+        "reference_group",
+        "prompt_group",
+        "ancestry_status",
+        "role",
+        "scope",
+        "dataset_revision",
+        "license"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "prompt",
+        "seed",
+        "processing",
+        "split"
+      ],
+      "representative": {
+        "ancestry_status": "verified",
+        "license": "synthetic-generated"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/runs/pair2_origin_audit_v1/manifest.json",
+      "bytes": 159436,
+      "sha256": "d78095cd936905333ff57f494436bcb5979abfe0ccb1fb3098fc6e65c96e7b9f",
+      "rows": 200,
+      "kind": "external_development_origin_audit",
+      "fields": [
+        "sample_id",
+        "source",
+        "label_fake",
+        "raw_path",
+        "sha256",
+        "archive_member",
+        "author_index",
+        "group",
+        "origin_id",
+        "author_origin_match",
+        "author_prompt_match",
+        "metadata_lineage_join",
+        "ancestry_content_verified",
+        "exclusion_reasons",
+        "development_eligible_before_qc",
+        "role",
+        "formal_training_released"
+      ],
+      "missing": [
+        "native_pts",
+        "time_base",
+        "codec",
+        "decoder",
+        "generator",
+        "license",
+        "split"
+      ],
+      "representative": {
+        "ancestry_content_verified": false,
+        "formal_training_released": false,
+        "role": "external_development_only"
+      }
+    },
+    {
+      "path": "/root/autodl-tmp/cvpr27/runs/pair2_frozen_transfer_v2/accepted_manifest.json",
+      "bytes": 412328,
+      "sha256": "cad3bdd989c75403b67df87e96954650243b6cee3ae1e11d0c3087e1682c9235",
+      "rows": 196,
+      "kind": "external_development_frozen_transfer",
+      "fields": [
+        "sample_id",
+        "source",
+        "label_fake",
+        "raw_path",
+        "sha256",
+        "archive_member",
+        "author_index",
+        "group",
+        "origin_id",
+        "author_origin_match",
+        "author_prompt_match",
+        "metadata_lineage_join",
+        "ancestry_content_verified",
+        "exclusion_reasons",
+        "development_eligible_before_qc",
+        "role",
+        "formal_training_released",
+        "sampling.pts",
+        "sampling.indices",
+        "sampling.timing_error"
+      ],
+      "missing": [
+        "native_time_base",
+        "codec",
+        "decoder",
+        "generator",
+        "license",
+        "split"
+      ],
+      "representative": {
+        "ancestry_content_verified": false,
+        "formal_training_released": false,
+        "role": "external_development_only"
+      }
+    }
+  ],
+  "summary": {
+    "manifests_inspected": 13,
+    "sample_level_hash_fields_present_in": 9,
+    "native_pts_or_time_base_present_in": 0,
+    "ancestor_content_verified_true_in_formal_candidate": 0,
+    "formal_training_released_true_in_external_development_manifests": 0,
+    "license_evidence_is_explicit_in_some_local_manifests": true,
+    "source_manifest_is_code_hash_map_not_sample_manifest": true
+  },
+  "decision": "Local server inventory improves evidence from literature-only to manifest-level historical/development evidence, but does not close formal data gate."
+}

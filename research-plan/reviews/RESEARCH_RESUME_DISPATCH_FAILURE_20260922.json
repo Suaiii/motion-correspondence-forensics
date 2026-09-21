@@ -1,0 +1,13 @@
+{
+  "schema": "research_dispatch_failure_receipt_v1",
+  "recorded_at": "2026-09-22T01:10:43+08:00",
+  "dispatch_id": "cc-resume-al68-al36-20260922",
+  "thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+  "host_id": "local",
+  "operation": "send_message_to_thread",
+  "error": "failed to load configuration: Model provider `codex_local_access` not found",
+  "is_error": true,
+  "execution_artifacts_available": false,
+  "user_request": "开始恢复；开始安排任务进入已开机服务器",
+  "decision": "Do not retry this thread or create another session; preserve AL68 work order and keep AL36 independent until supported provider recovery."
+}

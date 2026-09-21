@@ -1,0 +1,37 @@
+{
+  "schema": "server_readonly_resume_receipt_v1",
+  "observed_at": "2026-09-22T00:46:03+08:00",
+  "remote_observed_at": "2026-09-22T00:43:44+08:00",
+  "endpoint": {
+    "host": "connect.westc.seetacloud.com",
+    "port": 13340,
+    "user": "root"
+  },
+  "status": "connected_readonly_verified",
+  "ssh_verified": true,
+  "batch_mode_auth_verified": true,
+  "auth_method": "existing_user_ed25519_key",
+  "hardware": {
+    "gpu": "NVIDIA GeForce RTX 4090",
+    "gpu_memory_mib": 24564,
+    "gpu_utilization_percent": 0,
+    "compute_processes": [],
+    "cpu_quota_cores": 12,
+    "ram_quota_gib": 90,
+    "disk_total_bytes": 53687091200,
+    "disk_used_bytes": 39368663040,
+    "disk_free_bytes": 14318428160
+  },
+  "runtime": {
+    "project_root": "/root/autodl-tmp/cvpr27",
+    "python": "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+    "python_version": "3.12.3"
+  },
+  "scope": "read_only_connection_and_resource_check",
+  "work_started": false,
+  "model_media_downloaded": false,
+  "training_started": false,
+  "billing_or_provider_lifecycle_verified": false,
+  "user_action": "explicit resume request on 2026-09-22",
+  "note": "SSH and batch key verified after pause; no GPU process or research batch was started by this check."
+}
