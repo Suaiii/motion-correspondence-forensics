@@ -1,0 +1,19 @@
+{
+  "task_id": "AL77",
+  "reviewed_at": "2026-09-22T05:54:37+08:00",
+  "inputs": {
+    "AL66_report_sha256": "fa4ddcb94eaa32a969e501f2476bd4a56a46e0d0ec1f70a19f7ec0632b5c612b",
+    "AL73_evidence_sha256": "b8201a92cf6b689cfa8fad20cd92eb21d645811cb384361dda530f3e3ab5fc77",
+    "AL75_record_sha256": "d010adb8f4f24455170ca539f55ce3583b08be3cb66c9dc0f7332f83f5158004",
+    "AL76_evidence_sha256": "b7ce7c9ec8e5109f888812f64766b4ad1d8752b89a54b9f161787400d89d9082",
+    "milestone_receipt_sha256": "57f429b25cd93bc49370e1a0625d2e0f882f1b607a5ccb37190ab9038f659cb1"
+  },
+  "findings": [
+    "AL73 request/script contract and mapping-coverage claim not reproducible as initially accepted; retained limited tree observation, status reverted to fail.",
+    "AL76 report/source-contract mismatch; retained raw G1/G2/G3/G4 counts, status reverted to fail.",
+    "AL66 formula valid but current report hash differs from old manual record hash; current/old provenance separated.",
+    "AL75 corrected: AL12 explicitly says filters operate on RGB, so projection-to-C3 is not a required bridge; real wrapper and batching remain absent.",
+    "03:01 milestone stdout was outside configured 19:00 local window; no ack or consumption of 2026-09-22 milestone."
+  ],
+  "decision": "Evidence integrity correction only; no algorithm or dataset gate released. AL78 continues as bounded CPU reducer."
+}

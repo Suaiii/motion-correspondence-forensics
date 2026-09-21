@@ -1,0 +1,14 @@
+{
+  "task_id": "AL78",
+  "dispatch_id": "cc-al77-al78-local-review-cpu-20260922",
+  "version": "al78-rgb-reducer-v1",
+  "eta": "1e-12",
+  "filter_order": ["identity", "laplacian", "sobel_x", "sobel_y"],
+  "layouts": ["BTHWC", "BCTHW"],
+  "threads": 2,
+  "max_array_bytes": 2097152,
+  "float_abs_tol": 1e-12,
+  "float_rel_tol": 1e-11,
+  "cases": ["C1_non_square", "C2_unequal_temporal_blocks", "C3_zero_fields", "C4_near_cancellation", "C5_large_interface", "C6_signed_cross_term"],
+  "no_media_model_server_gpu": true
+}

@@ -341,6 +341,8 @@ AL74进一步核对AIGVDBench/OpenVid的公开标签语义：benchmark的“real
 
 AL76对AL72的命名风险做预注册语法敏感性核验：固定11字符规则、允许root内部下划线的右解析规则、以及两条重写/宽松规则分别得到446、446、446和469个跨train/val候选root。风险在有意义的解析规则下稳定，但证据仍仅是文件名代理；没有公开祖先映射或实际媒体审计，不能写成视觉泄漏。
 
+AL77复核后撤回AL73/AL76的pass状态：AL73的请求上限、脚本回执和mapping覆盖记录不构成同一次可回放执行；AL76的执行脚本哈希与报告不一致，且G4计数有误。原始计数和公开树观察保留，不能用来增强正式数据结论。AL78在独立fallback-runtime完成RGB字段q/r归约CPU软件批次（6场景、9项检查、0失败），仅证明显式BTHWC/BCTHW接口与按总和归约的参考实现可运行，不包含真实重建器、媒体、训练或创新准入。
+
 AL67的样本级审查与服务器manifest盘点显示：候选清单已有文件SHA、来源/任务、label、source/reference/prompt group、部分ancestry/license字段；pair2开发审计已有origin_id和抽帧PTS，但明确 `ancestry_content_verified=false`、`formal_training_released=false`、`external_development_only`。AL69—AL71进一步确认公开AIGVDBench的train/val文件有完整的14,000/3,000个ID、无重复且两集合交集为0；当前服务器开发manifest与固定20个公开validation ID严格交集为0。AL72/73补充发现：按预先固定的文件名规则，446个候选root跨train/val，涉及561条train和467条val记录；作者公开仓库没有样本级来源/祖先映射文件可解释这些root。该结果只构成命名代理风险，不能直接认定视觉泄漏。ID划分通过仅支持公开文件级可复算性，不能证明视觉祖先独立、标签、原生PTS/time_base、许可或实际媒体已在服务器上。多数正式所需的祖先内容闭包、生成配置、codec/decoder、许可、选择覆盖仍缺。公开黑盒基准可在披露未知内部信息的前提下用于可比评测；机制归因和最终确认仍需更强样本级合同，不能把开发池改名为正式集。
 
 研究端源码/运行报告仍只由其维护，计划端维护DAG、科学审查与整合记录。形式上完成、手写检查表或结构校验通过均不构成CCF-A突破。下一次研究窗口恢复后先按AL68和AL36原工作单交付；在此之前不启动训练、采集、付费批次或新会话。恢复自动任务后按每日19:00规则检查里程碑，只有实际通知才登记ack。
