@@ -11,6 +11,10 @@
 
 C1 non-square BTHWC, C2 unequal temporal blocks, C3 all-zero fields, C4 near-cancellation, C5 BCTHW large interface, C6 signed cross-term all passed explicit layout/contract checks. Batch reductions are per sample and aggregate sums before ratios, so unequal temporal blocks do not average block ratios. q and r_K are assigned from the same direct K sum; signed r_S/r_J and eta behavior remain visible. Rejection checks for missing fields and invalid layout passed.
 
+## Contract correction
+
+The frozen protocol required independently implemented `Fraction` references for C1/C2/C4/C6. The executed `run_batch.py` did not implement those references; it only ran explicit-layout, zero-field and rejection checks. The raw software receipt is preserved, but the full AL78 contract is **fail / incomplete** until a new version adds the independent scalar reference. No scientific or data claim is released.
+
 No scientific efficacy, real wrapper compatibility, source provenance, or innovation claim follows. Actual probe output shapes and reconstructors remain unknown. Independent review is pending.
 
 ## Hashes

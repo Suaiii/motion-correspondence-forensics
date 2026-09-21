@@ -6129,7 +6129,7 @@
         "AL32"
       ],
       "status": "done",
-      "gate_result": "pass",
+      "gate_result": "fail",
       "gate_scope": "rgb_batch_readout_software",
       "hypothesis": "Per-sample time-block energy sums can reproduce the full RGB q/r readout without averaging ratios or recomputing probes.",
       "work": [
@@ -6169,15 +6169,16 @@
       "fallback_reason": "Known research-window configuration failure; new approved bounded CPU interface package, not AL68 media takeover",
       "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
       "independent_scientific_review": "pending",
-      "updated_at": "2026-09-22T06:00:02+08:00",
+      "updated_at": "2026-09-22T06:01:21+08:00",
       "dispatch_status": "completed_fallback_cpu_software",
       "completed_at": "2026-09-22T06:00:02+08:00",
       "evidence_record": "../../fallback-runtime/al78_rgb_reducer_20260922/run_v1/evidence.json",
       "evidence_sha256": "10a6eebd2d3cfb4001f7ad3307842995285f10aa2621d2137eb5925c36efc4e3",
       "handoff": "../../fallback-runtime/al78_rgb_reducer_20260922/HANDOFF.md",
       "handoff_sha256": "24380c199d120d80c18f967084716d8d29642578a9ae641e139d835b65730a9f",
-      "hypothesis_result": "software_interface_contract_pass_only; no_real_wrapper_or_innovation",
-      "next_action": "Independent source/data gates and separately authorized ProbeBatch evaluator remain required."
+      "hypothesis_result": "partial_layout_and_rejection_software_pass; independent_fraction_contract_missing",
+      "next_action": "New version may add independent Fraction reference; no reuse as scientific or data evidence.",
+      "integrity_correction": "AL77 post-review found protocol required independent Fraction references but run_v1 did not implement them; raw software receipt retained, full contract not passed."
     }
   ],
   "storage_policy": {
@@ -7609,7 +7610,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T06:00:02+08:00",
+  "updated_at": "2026-09-22T06:01:21+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -10683,6 +10684,13 @@
         "AL77"
       ],
       "summary": "AL77 withdrew AL73/AL76 pass due source/request/report contracts; retained observations and raw bytes. AL78 passed only software reducer scope."
+    },
+    {
+      "at": "2026-09-22T06:01:21+08:00",
+      "tasks": [
+        "AL78"
+      ],
+      "summary": "Raw 9-check reducer receipt retained; full protocol fail because independent Fraction reference was not implemented."
     }
   ]
 }
