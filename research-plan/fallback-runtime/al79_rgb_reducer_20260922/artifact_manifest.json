@@ -1,0 +1,20 @@
+{
+  "task_id": "AL79",
+  "reviewed_at": "2026-09-22T07:21:57+08:00",
+  "freeze_commit": "6847224",
+  "evidence_sha256": "ef2cc7ab7c9c886a0bb0350278ab76ec7a5a3d5ba0d61d1b5d63c646fcf13961",
+  "files": {
+    "reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679",
+    "reference.py": "dbc61b1f851950e4506121d3d1683949761be67f4afd5ef0e8f792956e8fc36f",
+    "run_batch.py": "d5f6ff486ac5b3d0dba071d591e9671afb8e7d0314a596d5cb2527cebe2aae41",
+    "config.json": "139c8bcfbd4a5113a539354a1e164abbd4615a4f7953bb4e57e2ef34da9cf620",
+    "freeze.json": "7fdf8de963ca28c3f20e3891011e005d899fdca2baa57500a87d76000f7aba43",
+    "run_v1/started.json": "36f7bb9b23cfd581ab43e460aedca081b9e741747c5b85ce7f840053e6c7374e",
+    "run_v1/evidence.json": "ef2cc7ab7c9c886a0bb0350278ab76ec7a5a3d5ba0d61d1b5d63c646fcf13961",
+    "HANDOFF.md": "fbbd9549bd455c29440b1814d9bbe78e0eecde6f6dae6296127de84e0d7e97ca"
+  },
+  "protected_unchanged": true,
+  "software_pass": true,
+  "independent_scientific_review": false,
+  "no_real_data_or_innovation_admission": true
+}

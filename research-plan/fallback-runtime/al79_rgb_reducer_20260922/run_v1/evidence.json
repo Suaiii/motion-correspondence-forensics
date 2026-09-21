@@ -1,0 +1,4745 @@
+{
+  "task_id": "AL79",
+  "version": "rgb-reducer-v2",
+  "started_at": "2026-09-22T07:19:35.105+08:00",
+  "command": [
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/run_batch.py",
+    "run"
+  ],
+  "cwd": "E:\\aNB\\TECH\\脉冲神经网络",
+  "executor_role": "planagent",
+  "freeze_sha256": "7fdf8de963ca28c3f20e3891011e005d899fdca2baa57500a87d76000f7aba43",
+  "source_inputs": {
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/config.json": "139c8bcfbd4a5113a539354a1e164abbd4615a4f7953bb4e57e2ef34da9cf620",
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679",
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/reference.py": "dbc61b1f851950e4506121d3d1683949761be67f4afd5ef0e8f792956e8fc36f",
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/run_batch.py": "d5f6ff486ac5b3d0dba071d591e9671afb8e7d0314a596d5cb2527cebe2aae41",
+    "research-plan/AL79_PER_SAMPLE_STREAMING_RGB_CPU_20260922.md": "713662ad90e6df0b03712aaf91cfa723a1be17f791f3191fc25e19b2cf44bfe2"
+  },
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "numpy": "2.3.5",
+  "thread_environment": {
+    "OMP_NUM_THREADS": "2",
+    "OPENBLAS_NUM_THREADS": "2",
+    "MKL_NUM_THREADS": "2",
+    "NUMEXPR_NUM_THREADS": "2"
+  },
+  "threads_created_by_script": 0,
+  "native_blas_calls": 0,
+  "peak_rss": null,
+  "resources_scope": "Array sizes recorded, process peak RSS not measured; no BLAS linear algebra used",
+  "calls": {
+    "reducer": 46,
+    "fraction_reference": 3,
+    "network": 0,
+    "server": 0,
+    "media": 0,
+    "models": 0,
+    "gpu": 0,
+    "optimizer": 0
+  },
+  "checks": [
+    {
+      "name": "C1/block_matches_full",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C1/explicit_layout",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C1/isolated_sample_0",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C1/isolated_sample_1",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C1/shared_q_binary",
+      "passed": true
+    },
+    {
+      "name": "C1/actual_time_slices",
+      "passed": true
+    },
+    {
+      "name": "C1/filter_call_count",
+      "passed": true,
+      "observed": 80
+    },
+    {
+      "name": "C1/work_array_cap",
+      "passed": true,
+      "observed": 2688
+    },
+    {
+      "name": "C1/fraction_0_identity",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "max_tolerance_fraction": 1.7348206951326373e-05
+    },
+    {
+      "name": "C1/fraction_0_laplacian",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C1/fraction_0_sobel_x",
+      "passed": true,
+      "max_abs_error": 5.551115123125783e-17,
+      "max_tolerance_fraction": 1.2707913744032e-05
+    },
+    {
+      "name": "C1/fraction_0_sobel_y",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "max_tolerance_fraction": 1.7864303972219815e-05
+    },
+    {
+      "name": "C1/fraction_1_identity",
+      "passed": true,
+      "max_abs_error": 4.440892098500626e-16,
+      "max_tolerance_fraction": 1.7813823235846158e-05
+    },
+    {
+      "name": "C1/fraction_1_laplacian",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16,
+      "max_tolerance_fraction": 1.3643633066904432e-05
+    },
+    {
+      "name": "C1/fraction_1_sobel_x",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C1/fraction_1_sobel_y",
+      "passed": true,
+      "max_abs_error": 2.220446049250313e-16,
+      "max_tolerance_fraction": 1.7859853133331866e-05
+    },
+    {
+      "name": "C1/sample_order",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C1/sample_signal_differs",
+      "passed": true
+    },
+    {
+      "name": "C2/block_matches_full",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C2/explicit_layout",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C2/isolated_sample_0",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C2/shared_q_binary",
+      "passed": true
+    },
+    {
+      "name": "C2/actual_time_slices",
+      "passed": true
+    },
+    {
+      "name": "C2/filter_call_count",
+      "passed": true,
+      "observed": 40
+    },
+    {
+      "name": "C2/work_array_cap",
+      "passed": true,
+      "observed": 7560
+    },
+    {
+      "name": "C2/fraction_0_identity",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C2/fraction_0_laplacian",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C2/fraction_0_sobel_x",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C2/fraction_0_sobel_y",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C2/mean_ratio_counterexample",
+      "passed": true,
+      "observed_gap": 0.3438997193620136
+    },
+    {
+      "name": "C3/block_matches_full",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C3/explicit_layout",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C3/isolated_sample_0",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C3/shared_q_binary",
+      "passed": true
+    },
+    {
+      "name": "C3/actual_time_slices",
+      "passed": true
+    },
+    {
+      "name": "C3/filter_call_count",
+      "passed": true,
+      "observed": 40
+    },
+    {
+      "name": "C3/work_array_cap",
+      "passed": true,
+      "observed": 600
+    },
+    {
+      "name": "C3/analytic_zero",
+      "passed": true
+    },
+    {
+      "name": "C3/eta_denominator",
+      "passed": true
+    },
+    {
+      "name": "C4/block_matches_full",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C4/explicit_layout",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C4/isolated_sample_0",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C4/shared_q_binary",
+      "passed": true
+    },
+    {
+      "name": "C4/actual_time_slices",
+      "passed": true
+    },
+    {
+      "name": "C4/filter_call_count",
+      "passed": true,
+      "observed": 40
+    },
+    {
+      "name": "C4/work_array_cap",
+      "passed": true,
+      "observed": 1200
+    },
+    {
+      "name": "C4/tiny_q_retained",
+      "passed": true,
+      "observed_q": 1.1102230246246014e-16,
+      "expected_q": 1.1102230246246014e-16,
+      "relative_error": 0.0
+    },
+    {
+      "name": "C4/constant_highpass_zero",
+      "passed": true
+    },
+    {
+      "name": "C5/block_matches_full",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C5/explicit_layout",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C5/isolated_sample_0",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C5/shared_q_binary",
+      "passed": true
+    },
+    {
+      "name": "C5/actual_time_slices",
+      "passed": true
+    },
+    {
+      "name": "C5/filter_call_count",
+      "passed": true,
+      "observed": 60
+    },
+    {
+      "name": "C5/work_array_cap",
+      "passed": true,
+      "observed": 258048
+    },
+    {
+      "name": "C5/no_full_time_filtered_array",
+      "passed": true
+    },
+    {
+      "name": "C6/block_matches_full",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C6/explicit_layout",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C6/isolated_sample_0",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C6/shared_q_binary",
+      "passed": true
+    },
+    {
+      "name": "C6/actual_time_slices",
+      "passed": true
+    },
+    {
+      "name": "C6/filter_call_count",
+      "passed": true,
+      "observed": 40
+    },
+    {
+      "name": "C6/work_array_cap",
+      "passed": true,
+      "observed": 3528
+    },
+    {
+      "name": "C6/fraction_0_identity",
+      "passed": true,
+      "max_abs_error": 8.881784197001252e-16,
+      "max_tolerance_fraction": 1.1505870299103382e-05
+    },
+    {
+      "name": "C6/fraction_0_laplacian",
+      "passed": true,
+      "max_abs_error": 3.552713678800501e-15,
+      "max_tolerance_fraction": 1.3301727562956242e-05
+    },
+    {
+      "name": "C6/fraction_0_sobel_x",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C6/fraction_0_sobel_y",
+      "passed": true,
+      "max_abs_error": 0.0,
+      "max_tolerance_fraction": 0.0
+    },
+    {
+      "name": "C6/opposite_field_nulls",
+      "passed": true
+    },
+    {
+      "name": "C6/signed_cross_negative",
+      "passed": true,
+      "exact": [
+        "-13191/64",
+        "-221651/512",
+        "-19121/2048",
+        "-48189/2048"
+      ]
+    },
+    {
+      "name": "reject/missing_field",
+      "passed": true,
+      "expected": "field_schema",
+      "observed": "field_schema"
+    },
+    {
+      "name": "reject/shape_mismatch",
+      "passed": true,
+      "expected": "shape_mismatch",
+      "observed": "shape_mismatch"
+    },
+    {
+      "name": "reject/wrong_channels",
+      "passed": true,
+      "expected": "domain",
+      "observed": "domain"
+    },
+    {
+      "name": "reject/empty_interior",
+      "passed": true,
+      "expected": "domain",
+      "observed": "domain"
+    },
+    {
+      "name": "reject/empty_time",
+      "passed": true,
+      "expected": "domain",
+      "observed": "domain"
+    },
+    {
+      "name": "reject/empty_batch",
+      "passed": true,
+      "expected": "domain",
+      "observed": "domain"
+    },
+    {
+      "name": "reject/unknown_layout",
+      "passed": true,
+      "expected": "layout",
+      "observed": "layout"
+    },
+    {
+      "name": "reject/float32",
+      "passed": true,
+      "expected": "dtype_or_rank",
+      "observed": "dtype_or_rank"
+    },
+    {
+      "name": "reject/nan",
+      "passed": true,
+      "expected": "nonfinite_input",
+      "observed": "nonfinite_input"
+    },
+    {
+      "name": "reject/infinity",
+      "passed": true,
+      "expected": "nonfinite_input",
+      "observed": "nonfinite_input"
+    },
+    {
+      "name": "reject/float_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/bool_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/negative_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/reversed_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/empty_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/overlap_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/gap_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/incomplete_block",
+      "passed": true,
+      "expected": "blocks",
+      "observed": "blocks"
+    },
+    {
+      "name": "reject/array_cap",
+      "passed": true,
+      "expected": "array_limit",
+      "observed": "array_limit"
+    },
+    {
+      "name": "reject/overflow",
+      "passed": true,
+      "expected": "nonfinite_intermediate",
+      "observed": "nonfinite_intermediate"
+    },
+    {
+      "name": "frozen_and_historical_unchanged",
+      "passed": true,
+      "changed": []
+    }
+  ],
+  "failures": [],
+  "cases": [
+    {
+      "id": "C1",
+      "spec": {
+        "id": "C1",
+        "kind": "grid",
+        "shape": [
+          2,
+          3,
+          7,
+          8,
+          3
+        ],
+        "blocks": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "reference": "Fraction"
+      },
+      "input_arrays": {
+        "d_a": {
+          "shape": [
+            2,
+            3,
+            7,
+            8,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 8064,
+          "sha256_c_order": "ac08bd5f5e14d821ed66ffbe26de5986625a9a8dccf0d042cf25658331bc8cb8"
+        },
+        "d_b": {
+          "shape": [
+            2,
+            3,
+            7,
+            8,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 8064,
+          "sha256_c_order": "9e698550d87eb9fd8385df491c5739394d822bcd74bf39da2c19ae3fc2c7124f"
+        },
+        "v_a": {
+          "shape": [
+            2,
+            3,
+            7,
+            8,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 8064,
+          "sha256_c_order": "62289c958ab8df00794153aac36f05fbf4845e096bbf05045df4889d586d4352"
+        },
+        "v_b": {
+          "shape": [
+            2,
+            3,
+            7,
+            8,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 8064,
+          "sha256_c_order": "897b2119eac4eff092e9b7e5ecbcf076bafaa2857ee8c1a0e164fba709c6933f"
+        }
+      },
+      "full": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          2,
+          3,
+          7,
+          8,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              2.459856537889119,
+              8.56880240803999,
+              0.3699962339321702,
+              1.1429513361971755
+            ],
+            "r12": [
+              2.335753176036581,
+              2.459856537889119,
+              1.7048656123015367,
+              8.421737260760596,
+              8.56880240803999,
+              6.399591485668919,
+              0.33682348140997925,
+              0.3699962339321702,
+              0.17346258257730762,
+              1.158775819800659,
+              1.1429513361971755,
+              0.8578655618981359
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 270,
+                "sums": {
+                  "K2": 222.3671875,
+                  "S2": 211.1484375,
+                  "SK": 154.1171875,
+                  "Va2": 62.8125,
+                  "Vb2": 27.5859375
+                },
+                "means": {
+                  "K2": 0.823582175925926,
+                  "S2": 0.78203125,
+                  "SK": 0.5708043981481481,
+                  "Va2": 0.2326388888888889,
+                  "Vb2": 0.10217013888888889
+                },
+                "Dmean": 0.33480902777877775,
+                "q": 2.459856537889119,
+                "r": [
+                  2.335753176036581,
+                  2.459856537889119,
+                  1.7048656123015367
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 270,
+                "sums": {
+                  "K2": 447.573486328125,
+                  "S2": 439.891845703125,
+                  "SK": 334.269287109375,
+                  "Va2": 37.1337890625,
+                  "Vb2": 15.09912109375
+                },
+                "means": {
+                  "K2": 1.6576795789930556,
+                  "S2": 1.6292290581597222,
+                  "SK": 1.238034396701389,
+                  "Va2": 0.13753255208333334,
+                  "Vb2": 0.05592267071759259
+                },
+                "Dmean": 0.19345522280192592,
+                "q": 8.56880240803999,
+                "r": [
+                  8.421737260760596,
+                  8.56880240803999,
+                  6.399591485668919
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 270,
+                "sums": {
+                  "K2": 11.5130615234375,
+                  "S2": 10.4808349609375,
+                  "SK": 5.3975830078125,
+                  "Va2": 28.646728515625,
+                  "Vb2": 2.469970703125
+                },
+                "means": {
+                  "K2": 0.04264096860532408,
+                  "S2": 0.03881790726273148,
+                  "SK": 0.019991048177083335,
+                  "Va2": 0.10609899450231482,
+                  "Vb2": 0.009148039641203703
+                },
+                "Dmean": 0.11524703414451852,
+                "q": 0.3699962339321702,
+                "r": [
+                  0.33682348140997925,
+                  0.3699962339321702,
+                  0.17346258257730762
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 270,
+                "sums": {
+                  "K2": 23.9110107421875,
+                  "S2": 24.2420654296875,
+                  "SK": 17.9468994140625,
+                  "Va2": 6.227783203125,
+                  "Vb2": 14.692626953125
+                },
+                "means": {
+                  "K2": 0.08855929904513889,
+                  "S2": 0.08978542751736111,
+                  "SK": 0.06646999782986111,
+                  "Va2": 0.023065863715277777,
+                  "Vb2": 0.054417136863425926
+                },
+                "Dmean": 0.07748300057970371,
+                "q": 1.1429513361971755,
+                "r": [
+                  1.158775819800659,
+                  1.1429513361971755,
+                  0.8578655618981359
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 3,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 222.3671875,
+                      "S2": 211.1484375,
+                      "SK": 154.1171875,
+                      "Va2": 62.8125,
+                      "Vb2": 27.5859375
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 447.573486328125,
+                      "S2": 439.891845703125,
+                      "SK": 334.269287109375,
+                      "Va2": 37.1337890625,
+                      "Vb2": 15.09912109375
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 11.5130615234375,
+                      "S2": 10.4808349609375,
+                      "SK": 5.3975830078125,
+                      "Va2": 28.646728515625,
+                      "Vb2": 2.469970703125
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 23.9110107421875,
+                      "S2": 24.2420654296875,
+                      "SK": 17.9468994140625,
+                      "Va2": 6.227783203125,
+                      "Vb2": 14.692626953125
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sample_index": 1,
+            "q4": [
+              2.4204278632851857,
+              8.526562227898081,
+              0.36222645118276314,
+              1.143261091047995
+            ],
+            "r12": [
+              2.3929472127939215,
+              2.4204278632851857,
+              1.7021914949074852,
+              8.526562227898081,
+              8.526562227898081,
+              6.4098380713168925,
+              0.34221022924482786,
+              0.36222645118276314,
+              0.16988454143418524,
+              1.1436839153380705,
+              1.143261091047995,
+              0.8484762175908018
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 270,
+                "sums": {
+                  "K2": 217.44140625,
+                  "S2": 214.97265625,
+                  "SK": 152.91796875,
+                  "Va2": 62.8125,
+                  "Vb2": 27.0234375
+                },
+                "means": {
+                  "K2": 0.8053385416666666,
+                  "S2": 0.7961950231481482,
+                  "SK": 0.5663628472222222,
+                  "Va2": 0.2326388888888889,
+                  "Vb2": 0.10008680555555556
+                },
+                "Dmean": 0.3327256944454444,
+                "q": 2.4204278632851857,
+                "r": [
+                  2.3929472127939215,
+                  2.4204278632851857,
+                  1.7021914949074852
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 270,
+                "sums": {
+                  "K2": 442.359130859375,
+                  "S2": 442.359130859375,
+                  "SK": 332.543212890625,
+                  "Va2": 37.1337890625,
+                  "Vb2": 14.746337890625
+                },
+                "means": {
+                  "K2": 1.6383671513310185,
+                  "S2": 1.6383671513310185,
+                  "SK": 1.231641529224537,
+                  "Va2": 0.13753255208333334,
+                  "Vb2": 0.05461606626157407
+                },
+                "Dmean": 0.19214861834590743,
+                "q": 8.526562227898081,
+                "r": [
+                  8.526562227898081,
+                  8.526562227898081,
+                  6.4098380713168925
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 270,
+                "sums": {
+                  "K2": 11.25738525390625,
+                  "S2": 10.63531494140625,
+                  "SK": 5.27972412109375,
+                  "Va2": 28.646728515625,
+                  "Vb2": 2.43157958984375
+                },
+                "means": {
+                  "K2": 0.04169401945891204,
+                  "S2": 0.03939005533854167,
+                  "SK": 0.019554533781828705,
+                  "Va2": 0.10609899450231482,
+                  "Vb2": 0.00900585033275463
+                },
+                "Dmean": 0.11510484483606945,
+                "q": 0.36222645118276314,
+                "r": [
+                  0.34221022924482786,
+                  0.36222645118276314,
+                  0.16988454143418524
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 270,
+                "sums": {
+                  "K2": 23.76446533203125,
+                  "S2": 23.77325439453125,
+                  "SK": 17.63690185546875,
+                  "Va2": 6.227783203125,
+                  "Vb2": 14.55877685546875
+                },
+                "means": {
+                  "K2": 0.08801653826678241,
+                  "S2": 0.08804909035011574,
+                  "SK": 0.06532185872395833,
+                  "Va2": 0.023065863715277777,
+                  "Vb2": 0.05392139576099537
+                },
+                "Dmean": 0.07698725947727315,
+                "q": 1.143261091047995,
+                "r": [
+                  1.1436839153380705,
+                  1.143261091047995,
+                  0.8484762175908018
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 3,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 217.44140625,
+                      "S2": 214.97265625,
+                      "SK": 152.91796875,
+                      "Va2": 62.8125,
+                      "Vb2": 27.0234375
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 442.359130859375,
+                      "S2": 442.359130859375,
+                      "SK": 332.543212890625,
+                      "Va2": 37.1337890625,
+                      "Vb2": 14.746337890625
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 11.25738525390625,
+                      "S2": 10.63531494140625,
+                      "SK": 5.27972412109375,
+                      "Va2": 28.646728515625,
+                      "Vb2": 2.43157958984375
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 270,
+                    "sums": {
+                      "K2": 23.76446533203125,
+                      "S2": 23.77325439453125,
+                      "SK": 17.63690185546875,
+                      "Va2": 6.227783203125,
+                      "Vb2": 14.55877685546875
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 4032,
+          "filter_calls": 40,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                3
+              ],
+              "shape": [
+                3,
+                7,
+                8,
+                3
+              ]
+            },
+            {
+              "sample": 1,
+              "span": [
+                0,
+                3
+              ],
+              "shape": [
+                3,
+                7,
+                8,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "blocked": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          2,
+          3,
+          7,
+          8,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              2.459856537889119,
+              8.56880240803999,
+              0.3699962339321702,
+              1.1429513361971755
+            ],
+            "r12": [
+              2.335753176036581,
+              2.459856537889119,
+              1.7048656123015367,
+              8.421737260760596,
+              8.56880240803999,
+              6.399591485668919,
+              0.33682348140997925,
+              0.3699962339321702,
+              0.17346258257730762,
+              1.158775819800659,
+              1.1429513361971755,
+              0.8578655618981359
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 270,
+                "sums": {
+                  "K2": 222.3671875,
+                  "S2": 211.1484375,
+                  "SK": 154.1171875,
+                  "Va2": 62.8125,
+                  "Vb2": 27.5859375
+                },
+                "means": {
+                  "K2": 0.823582175925926,
+                  "S2": 0.78203125,
+                  "SK": 0.5708043981481481,
+                  "Va2": 0.2326388888888889,
+                  "Vb2": 0.10217013888888889
+                },
+                "Dmean": 0.33480902777877775,
+                "q": 2.459856537889119,
+                "r": [
+                  2.335753176036581,
+                  2.459856537889119,
+                  1.7048656123015367
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 270,
+                "sums": {
+                  "K2": 447.573486328125,
+                  "S2": 439.891845703125,
+                  "SK": 334.269287109375,
+                  "Va2": 37.1337890625,
+                  "Vb2": 15.09912109375
+                },
+                "means": {
+                  "K2": 1.6576795789930556,
+                  "S2": 1.6292290581597222,
+                  "SK": 1.238034396701389,
+                  "Va2": 0.13753255208333334,
+                  "Vb2": 0.05592267071759259
+                },
+                "Dmean": 0.19345522280192592,
+                "q": 8.56880240803999,
+                "r": [
+                  8.421737260760596,
+                  8.56880240803999,
+                  6.399591485668919
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 270,
+                "sums": {
+                  "K2": 11.5130615234375,
+                  "S2": 10.4808349609375,
+                  "SK": 5.3975830078125,
+                  "Va2": 28.646728515625,
+                  "Vb2": 2.469970703125
+                },
+                "means": {
+                  "K2": 0.04264096860532408,
+                  "S2": 0.03881790726273148,
+                  "SK": 0.019991048177083335,
+                  "Va2": 0.10609899450231482,
+                  "Vb2": 0.009148039641203703
+                },
+                "Dmean": 0.11524703414451852,
+                "q": 0.3699962339321702,
+                "r": [
+                  0.33682348140997925,
+                  0.3699962339321702,
+                  0.17346258257730762
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 270,
+                "sums": {
+                  "K2": 23.9110107421875,
+                  "S2": 24.2420654296875,
+                  "SK": 17.9468994140625,
+                  "Va2": 6.227783203125,
+                  "Vb2": 14.692626953125
+                },
+                "means": {
+                  "K2": 0.08855929904513889,
+                  "S2": 0.08978542751736111,
+                  "SK": 0.06646999782986111,
+                  "Va2": 0.023065863715277777,
+                  "Vb2": 0.054417136863425926
+                },
+                "Dmean": 0.07748300057970371,
+                "q": 1.1429513361971755,
+                "r": [
+                  1.158775819800659,
+                  1.1429513361971755,
+                  0.8578655618981359
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 1,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 77.109375,
+                      "S2": 67.453125,
+                      "SK": 51.65625,
+                      "Va2": 20.78125,
+                      "Vb2": 9.1328125
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 151.81201171875,
+                      "S2": 142.42333984375,
+                      "SK": 112.21630859375,
+                      "Va2": 12.3779296875,
+                      "Vb2": 5.009521484375
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 4.212646484375,
+                      "S2": 3.281005859375,
+                      "SK": 1.718017578125,
+                      "Va2": 9.589111328125,
+                      "Vb2": 0.8226318359375
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 8.645263671875,
+                      "S2": 7.345458984375,
+                      "SK": 6.012451171875,
+                      "Va2": 2.082275390625,
+                      "Vb2": 4.9051513671875
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 1,
+                "end": 3,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 145.2578125,
+                      "S2": 143.6953125,
+                      "SK": 102.4609375,
+                      "Va2": 42.03125,
+                      "Vb2": 18.453125
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 295.761474609375,
+                      "S2": 297.468505859375,
+                      "SK": 222.052978515625,
+                      "Va2": 24.755859375,
+                      "Vb2": 10.089599609375
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 7.3004150390625,
+                      "S2": 7.1998291015625,
+                      "SK": 3.6795654296875,
+                      "Va2": 19.0576171875,
+                      "Vb2": 1.6473388671875
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 15.2657470703125,
+                      "S2": 16.8966064453125,
+                      "SK": 11.9344482421875,
+                      "Va2": 4.1455078125,
+                      "Vb2": 9.7874755859375
+                    }
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "sample_index": 1,
+            "q4": [
+              2.4204278632851857,
+              8.526562227898081,
+              0.36222645118276314,
+              1.143261091047995
+            ],
+            "r12": [
+              2.3929472127939215,
+              2.4204278632851857,
+              1.7021914949074852,
+              8.526562227898081,
+              8.526562227898081,
+              6.4098380713168925,
+              0.34221022924482786,
+              0.36222645118276314,
+              0.16988454143418524,
+              1.1436839153380705,
+              1.143261091047995,
+              0.8484762175908018
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 270,
+                "sums": {
+                  "K2": 217.44140625,
+                  "S2": 214.97265625,
+                  "SK": 152.91796875,
+                  "Va2": 62.8125,
+                  "Vb2": 27.0234375
+                },
+                "means": {
+                  "K2": 0.8053385416666666,
+                  "S2": 0.7961950231481482,
+                  "SK": 0.5663628472222222,
+                  "Va2": 0.2326388888888889,
+                  "Vb2": 0.10008680555555556
+                },
+                "Dmean": 0.3327256944454444,
+                "q": 2.4204278632851857,
+                "r": [
+                  2.3929472127939215,
+                  2.4204278632851857,
+                  1.7021914949074852
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 270,
+                "sums": {
+                  "K2": 442.359130859375,
+                  "S2": 442.359130859375,
+                  "SK": 332.543212890625,
+                  "Va2": 37.1337890625,
+                  "Vb2": 14.746337890625
+                },
+                "means": {
+                  "K2": 1.6383671513310185,
+                  "S2": 1.6383671513310185,
+                  "SK": 1.231641529224537,
+                  "Va2": 0.13753255208333334,
+                  "Vb2": 0.05461606626157407
+                },
+                "Dmean": 0.19214861834590743,
+                "q": 8.526562227898081,
+                "r": [
+                  8.526562227898081,
+                  8.526562227898081,
+                  6.4098380713168925
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 270,
+                "sums": {
+                  "K2": 11.25738525390625,
+                  "S2": 10.63531494140625,
+                  "SK": 5.27972412109375,
+                  "Va2": 28.646728515625,
+                  "Vb2": 2.43157958984375
+                },
+                "means": {
+                  "K2": 0.04169401945891204,
+                  "S2": 0.03939005533854167,
+                  "SK": 0.019554533781828705,
+                  "Va2": 0.10609899450231482,
+                  "Vb2": 0.00900585033275463
+                },
+                "Dmean": 0.11510484483606945,
+                "q": 0.36222645118276314,
+                "r": [
+                  0.34221022924482786,
+                  0.36222645118276314,
+                  0.16988454143418524
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 270,
+                "sums": {
+                  "K2": 23.76446533203125,
+                  "S2": 23.77325439453125,
+                  "SK": 17.63690185546875,
+                  "Va2": 6.227783203125,
+                  "Vb2": 14.55877685546875
+                },
+                "means": {
+                  "K2": 0.08801653826678241,
+                  "S2": 0.08804909035011574,
+                  "SK": 0.06532185872395833,
+                  "Va2": 0.023065863715277777,
+                  "Vb2": 0.05392139576099537
+                },
+                "Dmean": 0.07698725947727315,
+                "q": 1.143261091047995,
+                "r": [
+                  1.1436839153380705,
+                  1.143261091047995,
+                  0.8484762175908018
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 1,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 74.79296875,
+                      "S2": 68.41796875,
+                      "SK": 50.98828125,
+                      "Va2": 21.015625,
+                      "Vb2": 9.3203125
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 146.528564453125,
+                      "S2": 148.235595703125,
+                      "SK": 111.951904296875,
+                      "Va2": 12.3779296875,
+                      "Vb2": 5.080078125
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 4.6278076171875,
+                      "S2": 2.7684326171875,
+                      "SK": 1.7667236328125,
+                      "Va2": 9.52880859375,
+                      "Vb2": 0.82470703125
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 90,
+                    "sums": {
+                      "K2": 9.9232177734375,
+                      "S2": 6.1185302734375,
+                      "SK": 5.9869384765625,
+                      "Va2": 2.07275390625,
+                      "Vb2": 4.88232421875
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 1,
+                "end": 3,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 142.6484375,
+                      "S2": 146.5546875,
+                      "SK": 101.9296875,
+                      "Va2": 41.796875,
+                      "Vb2": 17.703125
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 295.83056640625,
+                      "S2": 294.12353515625,
+                      "SK": 220.59130859375,
+                      "Va2": 24.755859375,
+                      "Vb2": 9.666259765625
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 6.62957763671875,
+                      "S2": 7.86688232421875,
+                      "SK": 3.51300048828125,
+                      "Va2": 19.117919921875,
+                      "Vb2": 1.60687255859375
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 180,
+                    "sums": {
+                      "K2": 13.84124755859375,
+                      "S2": 17.65472412109375,
+                      "SK": 11.64996337890625,
+                      "Va2": 4.155029296875,
+                      "Vb2": 9.67645263671875
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 2688,
+          "filter_calls": 80,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                1
+              ],
+              "shape": [
+                1,
+                7,
+                8,
+                3
+              ]
+            },
+            {
+              "sample": 0,
+              "span": [
+                1,
+                3
+              ],
+              "shape": [
+                2,
+                7,
+                8,
+                3
+              ]
+            },
+            {
+              "sample": 1,
+              "span": [
+                0,
+                1
+              ],
+              "shape": [
+                1,
+                7,
+                8,
+                3
+              ]
+            },
+            {
+              "sample": 1,
+              "span": [
+                1,
+                3
+              ],
+              "shape": [
+                2,
+                7,
+                8,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "rational_reference": [
+        {
+          "sample_index": 0,
+          "filters": [
+            {
+              "filter": "identity",
+              "elements": 270,
+              "sums": {
+                "K2": "28463/128",
+                "S2": "27027/128",
+                "SK": "19727/128",
+                "Va2": "1005/16",
+                "Vb2": "3531/128",
+                "AB": "-359/128"
+              },
+              "Dmean": "74605230180280824836538901757/222829207071368449481842360320",
+              "q": "550554489659059043194590199808/223815690540842474509616705271",
+              "r": [
+                "15841763940230100705349730304/6782293652752802257867172887",
+                "550554489659059043194590199808/223815690540842474509616705271",
+                "381575674296604635670859743232/223815690540842474509616705271"
+              ]
+            },
+            {
+              "filter": "laplacian",
+              "elements": 270,
+              "sums": {
+                "K2": "1833261/4096",
+                "S2": "1801797/4096",
+                "SK": "1369167/4096",
+                "Va2": "38025/1024",
+                "Vb2": "30923/2048",
+                "AB": "-3933/2048"
+              },
+              "Dmean": "129322421702304214327057870583/668487621214105348445527080960",
+              "q": "1108138278496267347725509459968/129322421702304214327057870583",
+              "r": [
+                "1089119457502090001549031899136/129322421702304214327057870583",
+                "1108138278496267347725509459968/129322421702304214327057870583",
+                "827610668832151491622465437696/129322421702304214327057870583"
+              ]
+            },
+            {
+              "filter": "sobel_x",
+              "elements": 270,
+              "sums": {
+                "K2": "94315/8192",
+                "S2": "85859/8192",
+                "SK": "44217/8192",
+                "Va2": "117337/4096",
+                "Vb2": "10117/4096",
+                "AB": "-1057/4096"
+              },
+              "Dmean": "77041215707249961037714583287/668487621214105348445527080960",
+              "q": "28504959669238437653103247360/77041215707249961037714583287",
+              "r": [
+                "1128230021155352677294538752/3349618074228259175552807969",
+                "28504959669238437653103247360/77041215707249961037714583287",
+                "13363768241475014554495746048/77041215707249961037714583287"
+              ]
+            },
+            {
+              "filter": "sobel_y",
+              "elements": 270,
+              "sums": {
+                "K2": "195879/8192",
+                "S2": "198591/8192",
+                "SK": "147021/8192",
+                "Va2": "25509/4096",
+                "Vb2": "60181/4096",
+                "AB": "339/4096"
+              },
+              "Dmean": "10359285348411454922300043211/133697524242821069689105416192",
+              "q": "59200795155073487028067762176/51796426742057274611500216055",
+              "r": [
+                "60020446860772205608518549504/51796426742057274611500216055",
+                "59200795155073487028067762176/51796426742057274611500216055",
+                "44434370731390598973619175424/51796426742057274611500216055"
+              ]
+            }
+          ]
+        },
+        {
+          "sample_index": 1,
+          "filters": [
+            {
+              "filter": "identity",
+              "elements": 270,
+              "sums": {
+                "K2": "55665/256",
+                "S2": "55033/256",
+                "SK": "39147/256",
+                "Va2": "1005/16",
+                "Vb2": "3459/128",
+                "AB": "-79/128"
+              },
+              "Dmean": "74141002665548807233451730173/222829207071368449481842360320",
+              "q": "179452948663595554693384765440/74141002665548807233451730173",
+              "r": [
+                "532246517046815098972839870464/222423007996646421700355190519",
+                "179452948663595554693384765440/74141002665548807233451730173",
+                "126202184161210368805927124992/74141002665548807233451730173"
+              ]
+            },
+            {
+              "filter": "laplacian",
+              "elements": 270,
+              "sums": {
+                "K2": "1811903/4096",
+                "S2": "1811903/4096",
+                "SK": "1362097/4096",
+                "Va2": "38025/1024",
+                "Vb2": "60401/4096",
+                "AB": "0"
+              },
+              "Dmean": "128448972797632644748332658423/668487621214105348445527080960",
+              "q": "1095228159668602722768822206464/128448972797632644748332658423",
+              "r": [
+                "1095228159668602722768822206464/128448972797632644748332658423",
+                "1095228159668602722768822206464/128448972797632644748332658423",
+                "823337116059813777489879105536/128448972797632644748332658423"
+              ]
+            },
+            {
+              "filter": "sobel_x",
+              "elements": 270,
+              "sums": {
+                "K2": "184441/16384",
+                "S2": "174249/16384",
+                "SK": "86503/16384",
+                "Va2": "117337/4096",
+                "Vb2": "39839/16384",
+                "AB": "-637/4096"
+              },
+              "Dmean": "25648721304894253606284436733/222829207071368449481842360320",
+              "q": "27871935886942727451497725952/76946163914682760818853310199",
+              "r": [
+                "8777254797584563294307352576/25648721304894253606284436733",
+                "27871935886942727451497725952/76946163914682760818853310199",
+                "13071963771765533437451042816/76946163914682760818853310199"
+              ]
+            },
+            {
+              "filter": "sobel_y",
+              "elements": 270,
+              "sums": {
+                "K2": "389357/16384",
+                "S2": "389501/16384",
+                "SK": "288963/16384",
+                "Va2": "25509/4096",
+                "Vb2": "238531/16384",
+                "AB": "9/4096"
+              },
+              "Dmean": "51465029951755414388983885559/668487621214105348445527080960",
+              "q": "58837966293461646447009071104/51465029951755414388983885559",
+              "r": [
+                "58859726958214709772153782272/51465029951755414388983885559",
+                "58837966293461646447009071104/51465029951755414388983885559",
+                "43666853951662761276327591936/51465029951755414388983885559"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "C2",
+      "spec": {
+        "id": "C2",
+        "kind": "time_constants",
+        "shape": [
+          1,
+          7,
+          9,
+          7,
+          3
+        ],
+        "blocks": [
+          [
+            0,
+            2
+          ],
+          [
+            2,
+            7
+          ]
+        ],
+        "reference": "Fraction"
+      },
+      "input_arrays": {
+        "d_a": {
+          "shape": [
+            1,
+            7,
+            9,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 10584,
+          "sha256_c_order": "c6f112fb57c5d33abd8a68887542e1bdea70c59311f61a775af8ca0fcb7edf21"
+        },
+        "d_b": {
+          "shape": [
+            1,
+            7,
+            9,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 10584,
+          "sha256_c_order": "5653245968f2b72cba85fe001ef4ec413bd57ea73e3dc471930505746c268076"
+        },
+        "v_a": {
+          "shape": [
+            1,
+            7,
+            9,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 10584,
+          "sha256_c_order": "4b71e112921bf972fa5f90f210883e282939e8d0ea2eed64ad619a9f10499bad"
+        },
+        "v_b": {
+          "shape": [
+            1,
+            7,
+            9,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 10584,
+          "sha256_c_order": "eac476c83ffecfe82f779ce1d6b44d6e5504b6bd1195e8a195a009383e57d6c6"
+        }
+      },
+      "full": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          7,
+          9,
+          7,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              0.025603511338697846,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "r12": [
+              0.025603511338697846,
+              0.025603511338697846,
+              0.025603511338697846,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 735,
+                "sums": {
+                  "K2": 14700.0,
+                  "S2": 14700.0,
+                  "SK": 14700.0,
+                  "Va2": 573405.0,
+                  "Vb2": 735.0
+                },
+                "means": {
+                  "K2": 20.0,
+                  "S2": 20.0,
+                  "SK": 20.0,
+                  "Va2": 780.1428571428571,
+                  "Vb2": 1.0
+                },
+                "Dmean": 781.1428571428581,
+                "q": 0.025603511338697846,
+                "r": [
+                  0.025603511338697846,
+                  0.025603511338697846,
+                  0.025603511338697846
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 735,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 735,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 735,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 7,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 735,
+                    "sums": {
+                      "K2": 14700.0,
+                      "S2": 14700.0,
+                      "SK": 14700.0,
+                      "Va2": 573405.0,
+                      "Vb2": 735.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 735,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 735,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 735,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 10584,
+          "filter_calls": 20,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                7
+              ],
+              "shape": [
+                7,
+                9,
+                7,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "blocked": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          7,
+          9,
+          7,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              0.025603511338697846,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "r12": [
+              0.025603511338697846,
+              0.025603511338697846,
+              0.025603511338697846,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 735,
+                "sums": {
+                  "K2": 14700.0,
+                  "S2": 14700.0,
+                  "SK": 14700.0,
+                  "Va2": 573405.0,
+                  "Vb2": 735.0
+                },
+                "means": {
+                  "K2": 20.0,
+                  "S2": 20.0,
+                  "SK": 20.0,
+                  "Va2": 780.1428571428571,
+                  "Vb2": 1.0
+                },
+                "Dmean": 781.1428571428581,
+                "q": 0.025603511338697846,
+                "r": [
+                  0.025603511338697846,
+                  0.025603511338697846,
+                  0.025603511338697846
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 735,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 735,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 735,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 2,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 210,
+                    "sums": {
+                      "K2": 525.0,
+                      "S2": 525.0,
+                      "SK": 525.0,
+                      "Va2": 525.0,
+                      "Vb2": 210.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 210,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 210,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 210,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 2,
+                "end": 7,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 525,
+                    "sums": {
+                      "K2": 14175.0,
+                      "S2": 14175.0,
+                      "SK": 14175.0,
+                      "Va2": 572880.0,
+                      "Vb2": 525.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 525,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 525,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 525,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 7560,
+          "filter_calls": 40,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                2
+              ],
+              "shape": [
+                2,
+                9,
+                7,
+                3
+              ]
+            },
+            {
+              "sample": 0,
+              "span": [
+                2,
+                7
+              ],
+              "shape": [
+                5,
+                9,
+                7,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "rational_reference": [
+        {
+          "sample_index": 0,
+          "filters": [
+            {
+              "filter": "identity",
+              "elements": 735,
+              "sums": {
+                "K2": "14700",
+                "S2": "14700",
+                "SK": "14700",
+                "Va2": "573405",
+                "Vb2": "735",
+                "AB": "0"
+              },
+              "Dmean": "27076224539249872034914745017975/34662321099990647697175478272",
+              "q": "138649284399962590788701913088/5415244907849974406982949003595",
+              "r": [
+                "138649284399962590788701913088/5415244907849974406982949003595",
+                "138649284399962590788701913088/5415244907849974406982949003595",
+                "138649284399962590788701913088/5415244907849974406982949003595"
+              ]
+            },
+            {
+              "filter": "laplacian",
+              "elements": 735,
+              "sums": {
+                "K2": "0",
+                "S2": "0",
+                "SK": "0",
+                "Va2": "0",
+                "Vb2": "0",
+                "AB": "0"
+              },
+              "Dmean": "4951760157141521/4951760157141521099596496896",
+              "q": "0",
+              "r": [
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "filter": "sobel_x",
+              "elements": 735,
+              "sums": {
+                "K2": "0",
+                "S2": "0",
+                "SK": "0",
+                "Va2": "0",
+                "Vb2": "0",
+                "AB": "0"
+              },
+              "Dmean": "4951760157141521/4951760157141521099596496896",
+              "q": "0",
+              "r": [
+                "0",
+                "0",
+                "0"
+              ]
+            },
+            {
+              "filter": "sobel_y",
+              "elements": 735,
+              "sums": {
+                "K2": "0",
+                "S2": "0",
+                "SK": "0",
+                "Va2": "0",
+                "Vb2": "0",
+                "AB": "0"
+              },
+              "Dmean": "4951760157141521/4951760157141521099596496896",
+              "q": "0",
+              "r": [
+                "0",
+                "0",
+                "0"
+              ]
+            }
+          ]
+        }
+      ],
+      "mean_of_block_ratios_negative_control": {
+        "block_ratios": [
+          0.7142857142855101,
+          0.024720747115912815
+        ],
+        "equal_mean": 0.36950323070071145,
+        "correct": 0.025603511338697846,
+        "gap": 0.3438997193620136
+      }
+    },
+    {
+      "id": "C3",
+      "spec": {
+        "id": "C3",
+        "kind": "zero",
+        "shape": [
+          1,
+          2,
+          5,
+          5,
+          3
+        ],
+        "blocks": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            2
+          ]
+        ],
+        "reference": "analytic"
+      },
+      "input_arrays": {
+        "d_a": {
+          "shape": [
+            1,
+            2,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1200,
+          "sha256_c_order": "655a3ef0465a9f30fddf25f4dde0c19a05c6f9069b83961800c1944165955273"
+        },
+        "d_b": {
+          "shape": [
+            1,
+            2,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1200,
+          "sha256_c_order": "655a3ef0465a9f30fddf25f4dde0c19a05c6f9069b83961800c1944165955273"
+        },
+        "v_a": {
+          "shape": [
+            1,
+            2,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1200,
+          "sha256_c_order": "655a3ef0465a9f30fddf25f4dde0c19a05c6f9069b83961800c1944165955273"
+        },
+        "v_b": {
+          "shape": [
+            1,
+            2,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1200,
+          "sha256_c_order": "655a3ef0465a9f30fddf25f4dde0c19a05c6f9069b83961800c1944165955273"
+        }
+      },
+      "full": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          2,
+          5,
+          5,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "r12": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 2,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 1200,
+          "filter_calls": 20,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                2
+              ],
+              "shape": [
+                2,
+                5,
+                5,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "blocked": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          2,
+          5,
+          5,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "r12": [
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 54,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 1,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 1,
+                "end": 2,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 600,
+          "filter_calls": 40,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                1
+              ],
+              "shape": [
+                1,
+                5,
+                5,
+                3
+              ]
+            },
+            {
+              "sample": 0,
+              "span": [
+                1,
+                2
+              ],
+              "shape": [
+                1,
+                5,
+                5,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      }
+    },
+    {
+      "id": "C4",
+      "spec": {
+        "id": "C4",
+        "kind": "cancellation",
+        "shape": [
+          1,
+          3,
+          5,
+          5,
+          3
+        ],
+        "blocks": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            3
+          ]
+        ],
+        "reference": "analytic"
+      },
+      "input_arrays": {
+        "d_a": {
+          "shape": [
+            1,
+            3,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1800,
+          "sha256_c_order": "39503975da8ecde4ca3e66183506c471ee10f9fc43d08d10026ce7dc4862cdae"
+        },
+        "d_b": {
+          "shape": [
+            1,
+            3,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1800,
+          "sha256_c_order": "7ee8d56fd2fe05a023ba78fd7137758370e6450cee711a2c437ed20455afa1cc"
+        },
+        "v_a": {
+          "shape": [
+            1,
+            3,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1800,
+          "sha256_c_order": "39503975da8ecde4ca3e66183506c471ee10f9fc43d08d10026ce7dc4862cdae"
+        },
+        "v_b": {
+          "shape": [
+            1,
+            3,
+            5,
+            5,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 1800,
+          "sha256_c_order": "39503975da8ecde4ca3e66183506c471ee10f9fc43d08d10026ce7dc4862cdae"
+        }
+      },
+      "full": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          3,
+          5,
+          5,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              1.1102230246246014e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "r12": [
+              1.9999999701966775,
+              1.1102230246246014e-16,
+              1.4901161082817903e-08,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 81,
+                "sums": {
+                  "K2": 1.7985612998927536e-14,
+                  "S2": 323.9999951720238,
+                  "SK": 2.4139880954177073e-06,
+                  "Va2": 81.0,
+                  "Vb2": 81.0
+                },
+                "means": {
+                  "K2": 2.220446049250313e-16,
+                  "S2": 3.9999999403953552,
+                  "SK": 2.9802322165650708e-08,
+                  "Va2": 1.0,
+                  "Vb2": 1.0
+                },
+                "Dmean": 2.000000000001,
+                "q": 1.1102230246246014e-16,
+                "r": [
+                  1.9999999701966775,
+                  1.1102230246246014e-16,
+                  1.4901161082817903e-08
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 81,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 81,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 81,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 3,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 81,
+                    "sums": {
+                      "K2": 1.7985612998927536e-14,
+                      "S2": 323.9999951720238,
+                      "SK": 2.4139880954177073e-06,
+                      "Va2": 81.0,
+                      "Vb2": 81.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 81,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 81,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 81,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 1800,
+          "filter_calls": 20,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                3
+              ],
+              "shape": [
+                3,
+                5,
+                5,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "blocked": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          3,
+          5,
+          5,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              1.1102230246246014e-16,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "r12": [
+              1.9999999701966775,
+              1.1102230246246014e-16,
+              1.4901161082817903e-08,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 81,
+                "sums": {
+                  "K2": 1.7985612998927536e-14,
+                  "S2": 323.9999951720238,
+                  "SK": 2.4139880954177073e-06,
+                  "Va2": 81.0,
+                  "Vb2": 81.0
+                },
+                "means": {
+                  "K2": 2.220446049250313e-16,
+                  "S2": 3.9999999403953552,
+                  "SK": 2.9802322165650708e-08,
+                  "Va2": 1.0,
+                  "Vb2": 1.0
+                },
+                "Dmean": 2.000000000001,
+                "q": 1.1102230246246014e-16,
+                "r": [
+                  1.9999999701966775,
+                  1.1102230246246014e-16,
+                  1.4901161082817903e-08
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 81,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 81,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 81,
+                "sums": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "means": {
+                  "K2": 0.0,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.0,
+                  "Vb2": 0.0
+                },
+                "Dmean": 1e-12,
+                "q": 0.0,
+                "r": [
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 1,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 5.995204332975845e-15,
+                      "S2": 107.99999839067459,
+                      "SK": 8.046626984725691e-07,
+                      "Va2": 27.0,
+                      "Vb2": 27.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 27,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 1,
+                "end": 3,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 1.199040866595169e-14,
+                      "S2": 215.99999678134918,
+                      "SK": 1.6093253969451382e-06,
+                      "Va2": 54.0,
+                      "Vb2": 54.0
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 54,
+                    "sums": {
+                      "K2": 0.0,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 0.0,
+                      "Vb2": 0.0
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 1200,
+          "filter_calls": 40,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                1
+              ],
+              "shape": [
+                1,
+                5,
+                5,
+                3
+              ]
+            },
+            {
+              "sample": 0,
+              "span": [
+                1,
+                3
+              ],
+              "shape": [
+                2,
+                5,
+                5,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      }
+    },
+    {
+      "id": "C5",
+      "spec": {
+        "id": "C5",
+        "kind": "grid",
+        "shape": [
+          1,
+          17,
+          32,
+          48,
+          3
+        ],
+        "blocks": [
+          [
+            0,
+            5
+          ],
+          [
+            5,
+            12
+          ],
+          [
+            12,
+            17
+          ]
+        ],
+        "reference": "layout_and_block_equivalence"
+      },
+      "input_arrays": {
+        "d_a": {
+          "shape": [
+            1,
+            17,
+            32,
+            48,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 626688,
+          "sha256_c_order": "cfaf27c20260a257643085ce59d4843f56234f6fda437bc83433881c03745ad9"
+        },
+        "d_b": {
+          "shape": [
+            1,
+            17,
+            32,
+            48,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 626688,
+          "sha256_c_order": "c26e7e09bfccbaccc05e7202e83781c9de35686e3f0567d45e7d5682316d2211"
+        },
+        "v_a": {
+          "shape": [
+            1,
+            17,
+            32,
+            48,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 626688,
+          "sha256_c_order": "872b00463cf38d374b7852d35186ba92f799b7bb45ad58d01963551dec649307"
+        },
+        "v_b": {
+          "shape": [
+            1,
+            17,
+            32,
+            48,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 626688,
+          "sha256_c_order": "c79baabd23d0a0337efd481933014c003af1d99cfded6a84a71531178dc4f1ee"
+        }
+      },
+      "full": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          17,
+          32,
+          48,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              2.576235131516475,
+              9.290814492482559,
+              0.3617802440333792,
+              1.183624576967796
+            ],
+            "r12": [
+              2.574711690130603,
+              2.576235131516475,
+              1.8253394702003625,
+              9.28827532293816,
+              9.290814492482559,
+              6.979633132440485,
+              0.3613980925561701,
+              0.3617802440333792,
+              0.17474462671160823,
+              1.1803849129704715,
+              1.183624576967796,
+              0.8770798500654784
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 70380,
+                "sums": {
+                  "K2": 56650.60546875,
+                  "S2": 56617.10546875,
+                  "SK": 40138.64453125,
+                  "Va2": 15391.5625,
+                  "Vb2": 6598.125
+                },
+                "means": {
+                  "K2": 0.8049247722186701,
+                  "S2": 0.8044487847222223,
+                  "SK": 0.5703132215295539,
+                  "Va2": 0.21869227763569196,
+                  "Vb2": 0.09375
+                },
+                "Dmean": 0.31244227763669197,
+                "q": 2.576235131516475,
+                "r": [
+                  2.574711690130603,
+                  2.576235131516475,
+                  1.8253394702003625
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 70380,
+                "sums": {
+                  "K2": 115551.42041015625,
+                  "S2": 115519.84033203125,
+                  "SK": 86806.86962890625,
+                  "Va2": 8931.9140625,
+                  "Vb2": 3505.25390625
+                },
+                "means": {
+                  "K2": 1.6418218302096654,
+                  "S2": 1.6413731220805805,
+                  "SK": 1.2334025238548771,
+                  "Va2": 0.12690983322676896,
+                  "Vb2": 0.0498046875
+                },
+                "Dmean": 0.17671452072776897,
+                "q": 9.290814492482559,
+                "r": [
+                  9.28827532293816,
+                  9.290814492482559,
+                  6.979633132440485
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 70380,
+                "sums": {
+                  "K2": 2828.0613403320312,
+                  "S2": 2825.0740356445312,
+                  "SK": 1365.9909057617188,
+                  "Va2": 7215.677978515625,
+                  "Vb2": 601.3916015625
+                },
+                "means": {
+                  "K2": 0.040182741408525596,
+                  "S2": 0.040140296044963504,
+                  "SK": 0.019408793773255453,
+                  "Va2": 0.10252455212440502,
+                  "Vb2": 0.008544921875
+                },
+                "Dmean": 0.11106947400040502,
+                "q": 0.3617802440333792,
+                "r": [
+                  0.3613980925561701,
+                  0.3617802440333792,
+                  0.17474462671160823
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 70380,
+                "sums": {
+                  "K2": 6202.813781738281,
+                  "S2": 6185.836242675781,
+                  "SK": 4596.358581542969,
+                  "Va2": 1580.627197265625,
+                  "Vb2": 3659.8974609375
+                },
+                "means": {
+                  "K2": 0.08813318814632397,
+                  "S2": 0.08789196139067607,
+                  "SK": 0.06530773773149998,
+                  "Va2": 0.02245847111772698,
+                  "Vb2": 0.052001953125
+                },
+                "Dmean": 0.07446042424372698,
+                "q": 1.183624576967796,
+                "r": [
+                  1.1803849129704715,
+                  1.183624576967796,
+                  0.8770798500654784
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 17,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 70380,
+                    "sums": {
+                      "K2": 56650.60546875,
+                      "S2": 56617.10546875,
+                      "SK": 40138.64453125,
+                      "Va2": 15391.5625,
+                      "Vb2": 6598.125
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 70380,
+                    "sums": {
+                      "K2": 115551.42041015625,
+                      "S2": 115519.84033203125,
+                      "SK": 86806.86962890625,
+                      "Va2": 8931.9140625,
+                      "Vb2": 3505.25390625
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 70380,
+                    "sums": {
+                      "K2": 2828.0613403320312,
+                      "S2": 2825.0740356445312,
+                      "SK": 1365.9909057617188,
+                      "Va2": 7215.677978515625,
+                      "Vb2": 601.3916015625
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 70380,
+                    "sums": {
+                      "K2": 6202.813781738281,
+                      "S2": 6185.836242675781,
+                      "SK": 4596.358581542969,
+                      "Va2": 1580.627197265625,
+                      "Vb2": 3659.8974609375
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 626688,
+          "filter_calls": 20,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                17
+              ],
+              "shape": [
+                17,
+                32,
+                48,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "blocked": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          17,
+          32,
+          48,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              2.576235131516475,
+              9.290814492482559,
+              0.3617802440333792,
+              1.183624576967796
+            ],
+            "r12": [
+              2.574711690130603,
+              2.576235131516475,
+              1.8253394702003625,
+              9.28827532293816,
+              9.290814492482559,
+              6.979633132440485,
+              0.3613980925561701,
+              0.3617802440333792,
+              0.17474462671160823,
+              1.1803849129704715,
+              1.183624576967796,
+              0.8770798500654784
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 70380,
+                "sums": {
+                  "K2": 56650.60546875,
+                  "S2": 56617.10546875,
+                  "SK": 40138.64453125,
+                  "Va2": 15391.5625,
+                  "Vb2": 6598.125
+                },
+                "means": {
+                  "K2": 0.8049247722186701,
+                  "S2": 0.8044487847222223,
+                  "SK": 0.5703132215295539,
+                  "Va2": 0.21869227763569196,
+                  "Vb2": 0.09375
+                },
+                "Dmean": 0.31244227763669197,
+                "q": 2.576235131516475,
+                "r": [
+                  2.574711690130603,
+                  2.576235131516475,
+                  1.8253394702003625
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 70380,
+                "sums": {
+                  "K2": 115551.42041015625,
+                  "S2": 115519.84033203125,
+                  "SK": 86806.86962890625,
+                  "Va2": 8931.9140625,
+                  "Vb2": 3505.25390625
+                },
+                "means": {
+                  "K2": 1.6418218302096654,
+                  "S2": 1.6413731220805805,
+                  "SK": 1.2334025238548771,
+                  "Va2": 0.12690983322676896,
+                  "Vb2": 0.0498046875
+                },
+                "Dmean": 0.17671452072776897,
+                "q": 9.290814492482559,
+                "r": [
+                  9.28827532293816,
+                  9.290814492482559,
+                  6.979633132440485
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 70380,
+                "sums": {
+                  "K2": 2828.0613403320312,
+                  "S2": 2825.0740356445312,
+                  "SK": 1365.9909057617188,
+                  "Va2": 7215.677978515625,
+                  "Vb2": 601.3916015625
+                },
+                "means": {
+                  "K2": 0.040182741408525596,
+                  "S2": 0.040140296044963504,
+                  "SK": 0.019408793773255453,
+                  "Va2": 0.10252455212440502,
+                  "Vb2": 0.008544921875
+                },
+                "Dmean": 0.11106947400040502,
+                "q": 0.3617802440333792,
+                "r": [
+                  0.3613980925561701,
+                  0.3617802440333792,
+                  0.17474462671160823
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 70380,
+                "sums": {
+                  "K2": 6202.813781738281,
+                  "S2": 6185.836242675781,
+                  "SK": 4596.358581542969,
+                  "Va2": 1580.627197265625,
+                  "Vb2": 3659.8974609375
+                },
+                "means": {
+                  "K2": 0.08813318814632397,
+                  "S2": 0.08789196139067607,
+                  "SK": 0.06530773773149998,
+                  "Va2": 0.02245847111772698,
+                  "Vb2": 0.052001953125
+                },
+                "Dmean": 0.07446042424372698,
+                "q": 1.183624576967796,
+                "r": [
+                  1.1803849129704715,
+                  1.183624576967796,
+                  0.8770798500654784
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 5,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 16670.4609375,
+                      "S2": 16643.5234375,
+                      "SK": 11805.5078125,
+                      "Va2": 4523.75,
+                      "Vb2": 1945.640625
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 33993.365966796875,
+                      "S2": 33968.614013671875,
+                      "SK": 25531.510009765625,
+                      "Va2": 2624.2861328125,
+                      "Vb2": 1035.06591796875
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 832.8661499023438,
+                      "S2": 829.7953491210938,
+                      "SK": 401.77471923828125,
+                      "Va2": 2121.303466796875,
+                      "Vb2": 177.2874755859375
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 1827.8012084960938,
+                      "S2": 1815.9540405273438,
+                      "SK": 1351.8528442382812,
+                      "Va2": 464.707763671875,
+                      "Vb2": 1078.0916748046875
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 5,
+                "end": 12,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 28980,
+                    "sums": {
+                      "K2": 23302.8828125,
+                      "S2": 23336.8828125,
+                      "SK": 16527.6171875,
+                      "Va2": 6344.53125,
+                      "Vb2": 2716.02734375
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 28980,
+                    "sums": {
+                      "K2": 47565.379638671875,
+                      "S2": 47582.449951171875,
+                      "SK": 35743.585205078125,
+                      "Va2": 3683.5068359375,
+                      "Vb2": 1442.4599609375
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 28980,
+                    "sums": {
+                      "K2": 1161.896484375,
+                      "S2": 1165.8671875,
+                      "SK": 562.4658203125,
+                      "Va2": 2973.1376953125,
+                      "Vb2": 247.54193115234375
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 28980,
+                    "sums": {
+                      "K2": 2538.396728515625,
+                      "S2": 2562.759033203125,
+                      "SK": 1892.644775390625,
+                      "Va2": 651.2021484375,
+                      "Vb2": 1506.6349487304688
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 12,
+                "end": 17,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 16677.26171875,
+                      "S2": 16636.69921875,
+                      "SK": 11805.51953125,
+                      "Va2": 4523.28125,
+                      "Vb2": 1936.45703125
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 33992.6748046875,
+                      "S2": 33968.7763671875,
+                      "SK": 25531.7744140625,
+                      "Va2": 2624.12109375,
+                      "Vb2": 1027.72802734375
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 833.2987060546875,
+                      "S2": 829.4114990234375,
+                      "SK": 401.7503662109375,
+                      "Va2": 2121.23681640625,
+                      "Vb2": 176.56219482421875
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 20700,
+                    "sums": {
+                      "K2": 1836.6158447265625,
+                      "S2": 1807.1231689453125,
+                      "SK": 1351.8609619140625,
+                      "Va2": 464.71728515625,
+                      "Vb2": 1075.1708374023438
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 258048,
+          "filter_calls": 60,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                5
+              ],
+              "shape": [
+                5,
+                32,
+                48,
+                3
+              ]
+            },
+            {
+              "sample": 0,
+              "span": [
+                5,
+                12
+              ],
+              "shape": [
+                7,
+                32,
+                48,
+                3
+              ]
+            },
+            {
+              "sample": 0,
+              "span": [
+                12,
+                17
+              ],
+              "shape": [
+                5,
+                32,
+                48,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      }
+    },
+    {
+      "id": "C6",
+      "spec": {
+        "id": "C6",
+        "kind": "opposite",
+        "shape": [
+          1,
+          4,
+          7,
+          7,
+          3
+        ],
+        "blocks": [
+          [
+            0,
+            1
+          ],
+          [
+            1,
+            4
+          ]
+        ],
+        "reference": "Fraction"
+      },
+      "input_arrays": {
+        "d_a": {
+          "shape": [
+            1,
+            4,
+            7,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 4704,
+          "sha256_c_order": "ff65104b8a565ee0279b2d60dc3fab39313129eb54775dd7e53bc495860b229b"
+        },
+        "d_b": {
+          "shape": [
+            1,
+            4,
+            7,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 4704,
+          "sha256_c_order": "a7fbb68cbc14403d8e45cd1bf75c590f608fa423d370da74b219009dea7c1b39"
+        },
+        "v_a": {
+          "shape": [
+            1,
+            4,
+            7,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 4704,
+          "sha256_c_order": "4628a8b1a4e58b82871c785cf5a43f7205c92c4a0892736d006963a84000a952"
+        },
+        "v_b": {
+          "shape": [
+            1,
+            4,
+            7,
+            7,
+            3
+          ],
+          "dtype": "<f8",
+          "bytes": 4704,
+          "sha256_c_order": "9159dceeb21b6864ab42d4f619c51a1126b71d1dfbd6d1391883fb2bc9aa9862"
+        }
+      },
+      "full": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          4,
+          7,
+          7,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              7.61935018048429,
+              26.608663682861724,
+              1.0056026414014612,
+              3.97731299854905
+            ],
+            "r12": [
+              0.0,
+              7.61935018048429,
+              0.0,
+              0.0,
+              26.608663682861724,
+              0.0,
+              0.0,
+              1.0056026414014612,
+              0.0,
+              0.0,
+              3.97731299854905,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 300,
+                "sums": {
+                  "K2": 824.4375,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 77.8125,
+                  "Vb2": 30.390625
+                },
+                "means": {
+                  "K2": 2.748125,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.259375,
+                  "Vb2": 0.10130208333333333
+                },
+                "Dmean": 0.36067708333433335,
+                "q": 7.61935018048429,
+                "r": [
+                  0.0,
+                  7.61935018048429,
+                  0.0
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 300,
+                "sums": {
+                  "K2": 1731.6484375,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 48.3564453125,
+                  "Vb2": 16.721923828125
+                },
+                "means": {
+                  "K2": 5.772161458333334,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.16118815104166667,
+                  "Vb2": 0.05573974609375
+                },
+                "Dmean": 0.21692789713641666,
+                "q": 26.608663682861724,
+                "r": [
+                  0.0,
+                  26.608663682861724,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 300,
+                "sums": {
+                  "K2": 37.345703125,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 34.393798828125,
+                  "Vb2": 2.74383544921875
+                },
+                "means": {
+                  "K2": 0.12448567708333333,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.11464599609375,
+                  "Vb2": 0.0091461181640625
+                },
+                "Dmean": 0.1237921142588125,
+                "q": 1.0056026414014612,
+                "r": [
+                  0.0,
+                  1.0056026414014612,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 300,
+                "sums": {
+                  "K2": 94.119140625,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 7.394775390625,
+                  "Vb2": 16.26922607421875
+                },
+                "means": {
+                  "K2": 0.31373046875,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.024649251302083335,
+                  "Vb2": 0.054230753580729166
+                },
+                "Dmean": 0.0788800048838125,
+                "q": 3.97731299854905,
+                "r": [
+                  0.0,
+                  3.97731299854905,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 4,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 300,
+                    "sums": {
+                      "K2": 824.4375,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 77.8125,
+                      "Vb2": 30.390625
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 300,
+                    "sums": {
+                      "K2": 1731.6484375,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 48.3564453125,
+                      "Vb2": 16.721923828125
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 300,
+                    "sums": {
+                      "K2": 37.345703125,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 34.393798828125,
+                      "Vb2": 2.74383544921875
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 300,
+                    "sums": {
+                      "K2": 94.119140625,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 7.394775390625,
+                      "Vb2": 16.26922607421875
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 4704,
+          "filter_calls": 20,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                4
+              ],
+              "shape": [
+                4,
+                7,
+                7,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "blocked": {
+        "version": "rgb-reducer-v2",
+        "canonical_shape": [
+          1,
+          4,
+          7,
+          7,
+          3
+        ],
+        "layout_received": "BTHWC",
+        "samples": [
+          {
+            "sample_index": 0,
+            "q4": [
+              7.61935018048429,
+              26.608663682861724,
+              1.0056026414014612,
+              3.97731299854905
+            ],
+            "r12": [
+              0.0,
+              7.61935018048429,
+              0.0,
+              0.0,
+              26.608663682861724,
+              0.0,
+              0.0,
+              1.0056026414014612,
+              0.0,
+              0.0,
+              3.97731299854905,
+              0.0
+            ],
+            "filters": [
+              {
+                "filter": "identity",
+                "elements": 300,
+                "sums": {
+                  "K2": 824.4375,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 77.8125,
+                  "Vb2": 30.390625
+                },
+                "means": {
+                  "K2": 2.748125,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.259375,
+                  "Vb2": 0.10130208333333333
+                },
+                "Dmean": 0.36067708333433335,
+                "q": 7.61935018048429,
+                "r": [
+                  0.0,
+                  7.61935018048429,
+                  0.0
+                ]
+              },
+              {
+                "filter": "laplacian",
+                "elements": 300,
+                "sums": {
+                  "K2": 1731.6484375,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 48.3564453125,
+                  "Vb2": 16.721923828125
+                },
+                "means": {
+                  "K2": 5.772161458333334,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.16118815104166667,
+                  "Vb2": 0.05573974609375
+                },
+                "Dmean": 0.21692789713641666,
+                "q": 26.608663682861724,
+                "r": [
+                  0.0,
+                  26.608663682861724,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_x",
+                "elements": 300,
+                "sums": {
+                  "K2": 37.345703125,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 34.393798828125,
+                  "Vb2": 2.74383544921875
+                },
+                "means": {
+                  "K2": 0.12448567708333333,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.11464599609375,
+                  "Vb2": 0.0091461181640625
+                },
+                "Dmean": 0.1237921142588125,
+                "q": 1.0056026414014612,
+                "r": [
+                  0.0,
+                  1.0056026414014612,
+                  0.0
+                ]
+              },
+              {
+                "filter": "sobel_y",
+                "elements": 300,
+                "sums": {
+                  "K2": 94.119140625,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 7.394775390625,
+                  "Vb2": 16.26922607421875
+                },
+                "means": {
+                  "K2": 0.31373046875,
+                  "S2": 0.0,
+                  "SK": 0.0,
+                  "Va2": 0.024649251302083335,
+                  "Vb2": 0.054230753580729166
+                },
+                "Dmean": 0.0788800048838125,
+                "q": 3.97731299854905,
+                "r": [
+                  0.0,
+                  3.97731299854905,
+                  0.0
+                ]
+              }
+            ],
+            "blocks": [
+              {
+                "start": 0,
+                "end": 1,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 75,
+                    "sums": {
+                      "K2": 208.6875,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 18.046875,
+                      "Vb2": 7.55859375
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 75,
+                    "sums": {
+                      "K2": 440.14453125,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 11.3876953125,
+                      "Vb2": 4.162841796875
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 75,
+                    "sums": {
+                      "K2": 8.314453125,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 8.4453125,
+                      "Vb2": 0.6851806640625
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 75,
+                    "sums": {
+                      "K2": 24.080078125,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 1.83203125,
+                      "Vb2": 4.0914306640625
+                    }
+                  }
+                ]
+              },
+              {
+                "start": 1,
+                "end": 4,
+                "filters": [
+                  {
+                    "filter": "identity",
+                    "elements": 225,
+                    "sums": {
+                      "K2": 615.75,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 59.765625,
+                      "Vb2": 22.83203125
+                    }
+                  },
+                  {
+                    "filter": "laplacian",
+                    "elements": 225,
+                    "sums": {
+                      "K2": 1291.50390625,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 36.96875,
+                      "Vb2": 12.55908203125
+                    }
+                  },
+                  {
+                    "filter": "sobel_x",
+                    "elements": 225,
+                    "sums": {
+                      "K2": 29.03125,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 25.948486328125,
+                      "Vb2": 2.05865478515625
+                    }
+                  },
+                  {
+                    "filter": "sobel_y",
+                    "elements": 225,
+                    "sums": {
+                      "K2": 70.0390625,
+                      "S2": 0.0,
+                      "SK": 0.0,
+                      "Va2": 5.562744140625,
+                      "Vb2": 12.17779541015625
+                    }
+                  }
+                ]
+              }
+            ]
+          }
+        ],
+        "metrics": {
+          "max_work_array_bytes": 3528,
+          "filter_calls": 40,
+          "filtered_input_shapes": [
+            {
+              "sample": 0,
+              "span": [
+                0,
+                1
+              ],
+              "shape": [
+                1,
+                7,
+                7,
+                3
+              ]
+            },
+            {
+              "sample": 0,
+              "span": [
+                1,
+                4
+              ],
+              "shape": [
+                3,
+                7,
+                7,
+                3
+              ]
+            }
+          ]
+        },
+        "eta": 1e-12
+      },
+      "rational_reference": [
+        {
+          "sample_index": 0,
+          "filters": [
+            {
+              "filter": "identity",
+              "elements": 300,
+              "sums": {
+                "K2": "13191/16",
+                "S2": "0",
+                "SK": "0",
+                "Va2": "1245/16",
+                "Vb2": "1945/64",
+                "AB": "-13191/64"
+              },
+              "Dmean": "5357959232546891782769196595/14855280471424563298789490688",
+              "q": "1020604191138340700387146727424/133948980813672294569229914875",
+              "r": [
+                "0",
+                "1020604191138340700387146727424/133948980813672294569229914875",
+                "0"
+              ]
+            },
+            {
+              "filter": "laplacian",
+              "elements": 300,
+              "sums": {
+                "K2": "221651/128",
+                "S2": "0",
+                "SK": "0",
+                "Va2": "49517/1024",
+                "Vb2": "68493/4096",
+                "AB": "-221651/512"
+              },
+              "Dmean": "80563118850945173871498859259/371382011785614082469737267200",
+              "q": "2143676934747217369622388932608/80563118850945173871498859259",
+              "r": [
+                "0",
+                "2143676934747217369622388932608/80563118850945173871498859259",
+                "0"
+              ]
+            },
+            {
+              "filter": "sobel_x",
+              "elements": 300,
+              "sums": {
+                "K2": "19121/512",
+                "S2": "0",
+                "SK": "0",
+                "Va2": "140877/4096",
+                "Vb2": "44955/16384",
+                "AB": "-19121/2048"
+              },
+              "Dmean": "15324721478877462994121120681/123794003928538027489912422400",
+              "q": "46231741193702648899113582592/45974164436632388982363362043",
+              "r": [
+                "0",
+                "46231741193702648899113582592/45974164436632388982363362043",
+                "0"
+              ]
+            },
+            {
+              "filter": "sobel_y",
+              "elements": 300,
+              "sums": {
+                "K2": "48189/512",
+                "S2": "0",
+                "SK": "0",
+                "Va2": "30289/4096",
+                "Vb2": "266555/16384",
+                "AB": "-48189/2048"
+              },
+              "Dmean": "9764871634469783419647417257/123794003928538027489912422400",
+              "q": "38837950880939576866610610176/9764871634469783419647417257",
+              "r": [
+                "0",
+                "38837950880939576866610610176/9764871634469783419647417257",
+                "0"
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "max_input_array_bytes": 626688,
+  "scope": "software_only_synthetic_rgb_fields",
+  "independent_scientific_review": false,
+  "finished_at": "2026-09-22T07:19:35.515+08:00",
+  "wall_seconds": 0.4106683999998495,
+  "process_cpu_seconds": 0.390625,
+  "software_pass": true
+}
