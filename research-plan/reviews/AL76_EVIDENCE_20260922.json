@@ -1,0 +1,570 @@
+{
+  "task_id": "AL76",
+  "reviewed_at": "2026-09-22T03:45:47.301+08:00",
+  "source_script_sha256": "34ac96af4ac2ba5724354482643df957e19d76b8a50ea03d76098559b31c512a",
+  "requests": [
+    {
+      "split": "train",
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/train.jsonl",
+      "status": 200,
+      "bytes": 8610190,
+      "sha256": "46fcf59f24b742af7c6c3e9d4907b9c9dba451c6c8ca1dcd7016949202d07012"
+    },
+    {
+      "split": "val",
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/val.jsonl",
+      "status": 200,
+      "bytes": 1846793,
+      "sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f"
+    }
+  ],
+  "AL71_record_sha256": "4478319f344f416705eadf30eaa1643acd703dcd993423d09032f9579dfc3050",
+  "parser_definitions": {
+    "G1": "AL72 11-char root",
+    "G2": "right parse final range and numeric scene; root preceding segments",
+    "G3": "G2 root length 11 allowed chars",
+    "G4": "first token of G2 root"
+  },
+  "results": {
+    "G1_AL72": {
+      "train": {
+        "rows": 14000,
+        "valid_rows": 13997,
+        "unknown_rows": 3,
+        "root_count": 12952,
+        "shared_root_rows": 561
+      },
+      "val": {
+        "rows": 3000,
+        "valid_rows": 2999,
+        "unknown_rows": 1,
+        "root_count": 2951,
+        "shared_root_rows": 467
+      },
+      "shared_roots": 446,
+      "shared_root_digest": "8958c4aadadcb92840b614e649cd397f7a0d0043f778d6c843e47806085c00e3",
+      "witnesses": [
+        {
+          "root": "-96ZdwBoT3Y",
+          "train": [
+            "-96ZdwBoT3Y_177_0to114.mp4"
+          ],
+          "val": [
+            "-96ZdwBoT3Y_297_0to110.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-Kbq8GHp7Z0",
+          "train": [
+            "-Kbq8GHp7Z0_39_0to175.mp4"
+          ],
+          "val": [
+            "-Kbq8GHp7Z0_7_22to220.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ShNuJOAYSA",
+          "train": [
+            "-ShNuJOAYSA_109_0to268.mp4"
+          ],
+          "val": [
+            "-ShNuJOAYSA_117_105to375.mp4",
+            "-ShNuJOAYSA_55_43to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-VgxU81e2sc",
+          "train": [
+            "-VgxU81e2sc_45_0to109.mp4"
+          ],
+          "val": [
+            "-VgxU81e2sc_49_0to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-X4FMivXgxY",
+          "train": [
+            "-X4FMivXgxY_102_226to335.mp4"
+          ],
+          "val": [
+            "-X4FMivXgxY_33_64to173.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-YEwPnVOTpw",
+          "train": [
+            "-YEwPnVOTpw_27_0to268.mp4"
+          ],
+          "val": [
+            "-YEwPnVOTpw_14_0to108.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ZdZ2by9hIc",
+          "train": [
+            "-ZdZ2by9hIc_4_0to169.mp4"
+          ],
+          "val": [
+            "-ZdZ2by9hIc_1_0to224.mp4",
+            "-ZdZ2by9hIc_4_500to660.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-evyEcg7-uQ",
+          "train": [
+            "-evyEcg7-uQ_43_222to394.mp4"
+          ],
+          "val": [
+            "-evyEcg7-uQ_43_85to222.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-g50xK-gyyM",
+          "train": [
+            "-g50xK-gyyM_144_103to204.mp4",
+            "-g50xK-gyyM_196_83to258.mp4"
+          ],
+          "val": [
+            "-g50xK-gyyM_363_0to137.mp4"
+          ],
+          "train_count": 3,
+          "val_count": 1
+        },
+        {
+          "root": "073BMGVWan0",
+          "train": [
+            "073BMGVWan0_11_54to213.mp4"
+          ],
+          "val": [
+            "073BMGVWan0_175_0to201.mp4",
+            "073BMGVWan0_235_42to199.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        }
+      ]
+    },
+    "G2_right_parse": {
+      "train": {
+        "rows": 14000,
+        "valid_rows": 13997,
+        "unknown_rows": 3,
+        "root_count": 12952,
+        "shared_root_rows": 561
+      },
+      "val": {
+        "rows": 3000,
+        "valid_rows": 2999,
+        "unknown_rows": 1,
+        "root_count": 2951,
+        "shared_root_rows": 467
+      },
+      "shared_roots": 446,
+      "shared_root_digest": "8958c4aadadcb92840b614e649cd397f7a0d0043f778d6c843e47806085c00e3",
+      "witnesses": [
+        {
+          "root": "-96ZdwBoT3Y",
+          "train": [
+            "-96ZdwBoT3Y_177_0to114.mp4"
+          ],
+          "val": [
+            "-96ZdwBoT3Y_297_0to110.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-Kbq8GHp7Z0",
+          "train": [
+            "-Kbq8GHp7Z0_39_0to175.mp4"
+          ],
+          "val": [
+            "-Kbq8GHp7Z0_7_22to220.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ShNuJOAYSA",
+          "train": [
+            "-ShNuJOAYSA_109_0to268.mp4"
+          ],
+          "val": [
+            "-ShNuJOAYSA_117_105to375.mp4",
+            "-ShNuJOAYSA_55_43to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-VgxU81e2sc",
+          "train": [
+            "-VgxU81e2sc_45_0to109.mp4"
+          ],
+          "val": [
+            "-VgxU81e2sc_49_0to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-X4FMivXgxY",
+          "train": [
+            "-X4FMivXgxY_102_226to335.mp4"
+          ],
+          "val": [
+            "-X4FMivXgxY_33_64to173.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-YEwPnVOTpw",
+          "train": [
+            "-YEwPnVOTpw_27_0to268.mp4"
+          ],
+          "val": [
+            "-YEwPnVOTpw_14_0to108.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ZdZ2by9hIc",
+          "train": [
+            "-ZdZ2by9hIc_4_0to169.mp4"
+          ],
+          "val": [
+            "-ZdZ2by9hIc_1_0to224.mp4",
+            "-ZdZ2by9hIc_4_500to660.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-evyEcg7-uQ",
+          "train": [
+            "-evyEcg7-uQ_43_222to394.mp4"
+          ],
+          "val": [
+            "-evyEcg7-uQ_43_85to222.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-g50xK-gyyM",
+          "train": [
+            "-g50xK-gyyM_144_103to204.mp4",
+            "-g50xK-gyyM_196_83to258.mp4"
+          ],
+          "val": [
+            "-g50xK-gyyM_363_0to137.mp4"
+          ],
+          "train_count": 3,
+          "val_count": 1
+        },
+        {
+          "root": "073BMGVWan0",
+          "train": [
+            "073BMGVWan0_11_54to213.mp4"
+          ],
+          "val": [
+            "073BMGVWan0_175_0to201.mp4",
+            "073BMGVWan0_235_42to199.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        }
+      ]
+    },
+    "G3_right_parse_11char": {
+      "train": {
+        "rows": 14000,
+        "valid_rows": 13997,
+        "unknown_rows": 3,
+        "root_count": 12952,
+        "shared_root_rows": 561
+      },
+      "val": {
+        "rows": 3000,
+        "valid_rows": 2999,
+        "unknown_rows": 1,
+        "root_count": 2951,
+        "shared_root_rows": 467
+      },
+      "shared_roots": 446,
+      "shared_root_digest": "8958c4aadadcb92840b614e649cd397f7a0d0043f778d6c843e47806085c00e3",
+      "witnesses": [
+        {
+          "root": "-96ZdwBoT3Y",
+          "train": [
+            "-96ZdwBoT3Y_177_0to114.mp4"
+          ],
+          "val": [
+            "-96ZdwBoT3Y_297_0to110.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-Kbq8GHp7Z0",
+          "train": [
+            "-Kbq8GHp7Z0_39_0to175.mp4"
+          ],
+          "val": [
+            "-Kbq8GHp7Z0_7_22to220.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ShNuJOAYSA",
+          "train": [
+            "-ShNuJOAYSA_109_0to268.mp4"
+          ],
+          "val": [
+            "-ShNuJOAYSA_117_105to375.mp4",
+            "-ShNuJOAYSA_55_43to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-VgxU81e2sc",
+          "train": [
+            "-VgxU81e2sc_45_0to109.mp4"
+          ],
+          "val": [
+            "-VgxU81e2sc_49_0to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-X4FMivXgxY",
+          "train": [
+            "-X4FMivXgxY_102_226to335.mp4"
+          ],
+          "val": [
+            "-X4FMivXgxY_33_64to173.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-YEwPnVOTpw",
+          "train": [
+            "-YEwPnVOTpw_27_0to268.mp4"
+          ],
+          "val": [
+            "-YEwPnVOTpw_14_0to108.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ZdZ2by9hIc",
+          "train": [
+            "-ZdZ2by9hIc_4_0to169.mp4"
+          ],
+          "val": [
+            "-ZdZ2by9hIc_1_0to224.mp4",
+            "-ZdZ2by9hIc_4_500to660.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-evyEcg7-uQ",
+          "train": [
+            "-evyEcg7-uQ_43_222to394.mp4"
+          ],
+          "val": [
+            "-evyEcg7-uQ_43_85to222.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-g50xK-gyyM",
+          "train": [
+            "-g50xK-gyyM_144_103to204.mp4",
+            "-g50xK-gyyM_196_83to258.mp4"
+          ],
+          "val": [
+            "-g50xK-gyyM_363_0to137.mp4"
+          ],
+          "train_count": 3,
+          "val_count": 1
+        },
+        {
+          "root": "073BMGVWan0",
+          "train": [
+            "073BMGVWan0_11_54to213.mp4"
+          ],
+          "val": [
+            "073BMGVWan0_175_0to201.mp4",
+            "073BMGVWan0_235_42to199.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        }
+      ]
+    },
+    "G4_first_token_upper_bound": {
+      "train": {
+        "rows": 14000,
+        "valid_rows": 13759,
+        "unknown_rows": 241,
+        "root_count": 12593,
+        "shared_root_rows": 663
+      },
+      "val": {
+        "rows": 3000,
+        "valid_rows": 2950,
+        "unknown_rows": 50,
+        "root_count": 2890,
+        "shared_root_rows": 503
+      },
+      "shared_roots": 469,
+      "shared_root_digest": "af433aba5b452292a2d3f26be1800c0880a9cc37c413f607990de9153d2afb94",
+      "witnesses": [
+        {
+          "root": "-96ZdwBoT3Y",
+          "train": [
+            "-96ZdwBoT3Y_177_0to114.mp4"
+          ],
+          "val": [
+            "-96ZdwBoT3Y_297_0to110.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-Kbq8GHp7Z0",
+          "train": [
+            "-Kbq8GHp7Z0_39_0to175.mp4"
+          ],
+          "val": [
+            "-Kbq8GHp7Z0_7_22to220.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ShNuJOAYSA",
+          "train": [
+            "-ShNuJOAYSA_109_0to268.mp4"
+          ],
+          "val": [
+            "-ShNuJOAYSA_117_105to375.mp4",
+            "-ShNuJOAYSA_55_43to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-VgxU81e2sc",
+          "train": [
+            "-VgxU81e2sc_45_0to109.mp4"
+          ],
+          "val": [
+            "-VgxU81e2sc_49_0to174.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-X4FMivXgxY",
+          "train": [
+            "-X4FMivXgxY_102_226to335.mp4"
+          ],
+          "val": [
+            "-X4FMivXgxY_33_64to173.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-YEwPnVOTpw",
+          "train": [
+            "-YEwPnVOTpw_27_0to268.mp4"
+          ],
+          "val": [
+            "-YEwPnVOTpw_14_0to108.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-ZdZ2by9hIc",
+          "train": [
+            "-ZdZ2by9hIc_4_0to169.mp4"
+          ],
+          "val": [
+            "-ZdZ2by9hIc_1_0to224.mp4",
+            "-ZdZ2by9hIc_4_500to660.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 2
+        },
+        {
+          "root": "-evyEcg7-uQ",
+          "train": [
+            "-evyEcg7-uQ_43_222to394.mp4"
+          ],
+          "val": [
+            "-evyEcg7-uQ_43_85to222.mp4"
+          ],
+          "train_count": 1,
+          "val_count": 1
+        },
+        {
+          "root": "-g50xK-gyyM",
+          "train": [
+            "-g50xK-gyyM_144_103to204.mp4",
+            "-g50xK-gyyM_196_83to258.mp4"
+          ],
+          "val": [
+            "-g50xK-gyyM_363_0to137.mp4"
+          ],
+          "train_count": 3,
+          "val_count": 1
+        },
+        {
+          "root": "0",
+          "train": [
+            "0_R_9L63gHs_6_93to211.mp4",
+            "0_ajU5BeR38_24_91to262.mp4"
+          ],
+          "val": [
+            "0_Eezov7oQw_35_67to171.mp4",
+            "0_KI6mIn6eI_215_98to205.mp4"
+          ],
+          "train_count": 2,
+          "val_count": 2
+        }
+      ]
+    }
+  },
+  "scope": "Metadata-only; no test/media/model/server/GPU",
+  "conclusion": "G1 and G3 reproduce AL72 exactly; G2 also reproduces 446 shared roots; G4 is a deliberately broader upper-bound heuristic with 469 shared roots. The risk is stable under the two meaningful parsers, but remains naming-only evidence.",
+  "parser_script_sha256": "a148d5f49e3e55345ad33ec8e47a4b75913bcb696f23b4e8196af716c6a67604"
+}
