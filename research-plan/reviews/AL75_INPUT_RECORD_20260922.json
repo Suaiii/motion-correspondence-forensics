@@ -1,0 +1,105 @@
+{
+  "task_id": "AL75",
+  "reviewed_at": "2026-09-22T03:38:20+08:00",
+  "review_type": "manual_interface_contract_review",
+  "independent_scientific_review": false,
+  "execution": {
+    "numerical": false,
+    "model": false,
+    "media": false,
+    "server": false,
+    "GPU": false,
+    "training": false
+  },
+  "inputs": {
+    "research-runtime/algorithm_candidates/or1_filtered_readout/readout.py": {
+      "sha256": "c189fc469f38ca576f91e220f11a9bfe897941a6331950758c6506b20e68a53b",
+      "bytes": 5732
+    },
+    "research-runtime/algorithm_candidates/or1_stable_baseline_reference/kernels.py": {
+      "sha256": "3ee0b2696de3e402d8fb1a83f58a9da8df08d7cb5201cca21155ab04306a70e4",
+      "bytes": 3603
+    },
+    "research-runtime/algorithm_candidates/or1_stable_baseline_reference/run.py": {
+      "sha256": "437f0f7f8648084dc906efb8f604ecb0f7fa722901890714f2f01873fc8c63db",
+      "bytes": 15362
+    },
+    "research-runs/algorithm_search_20260918/AL12_method_design.md": {
+      "sha256": "51aa9734e311a2d2ab35372bffbf3173f42233c9b3874cb17d4224c9e8f52a23",
+      "bytes": 18437
+    },
+    "research-runs/algorithm_search_20260918/AL12_cpu_preregistration.json": {
+      "sha256": "91e856957b34beb14c3f098ce7f078594cb0529268367ec120f3eb1da2f78292",
+      "bytes": 4056
+    },
+    "research-runs/algorithm_search_20260918/AL25_readout_spec.json": {
+      "sha256": "088109738d233171fb7d34f4f7ccf3057abf5a1778e3e8061e0d2e9fc69abd94",
+      "bytes": 1599
+    },
+    "research-runs/algorithm_search_20260918/AL32_config.json": {
+      "sha256": "b04c03fa91dc6d21ac4091088b14a6a4a733494bb20833222a8feefce9dc3818",
+      "bytes": 4954
+    },
+    "research-runs/algorithm_search_20260918/AL32_report.md": {
+      "sha256": "d0a7905b4a1204a1f0c768a3c26c71fdafd874dd0ca6f6ca316af35f892f7c20",
+      "bytes": 6951
+    },
+    "research-runs/algorithm_search_20260918/AL32_handoff.md": {
+      "sha256": "b97fe9abdf0d590e818fd1111954ce36b63fad4a57808db1b51c2e5374e7f01e",
+      "bytes": 2571
+    },
+    "research-plan/reviews/AL54_PLANNER_ADMISSION_REVIEW_20260919.md": {
+      "sha256": "d97d6814cb784954e18a7c64aeb9994eced3237a0bc01dae40239d2c9d0d592a",
+      "bytes": 4358
+    }
+  },
+  "findings": [
+    {
+      "id": "F1",
+      "component": "or1_filtered_readout.readout.compute",
+      "fact": "Accepts exactly float64 THWC arrays d_a,d_b,v_a,v_b, T 1..2, H/W 3..5, C=3; returns q4_direct plus compact/z diagnostics and no classifier."
+    },
+    {
+      "id": "F2",
+      "component": "AL25 spec",
+      "fact": "Real wrapper is pending and input contract is tiny synthetic THWC; no BCTHW or 17-frame media/probe interface is bound."
+    },
+    {
+      "id": "F3",
+      "component": "or1_stable_baseline_reference",
+      "fact": "Stable r_K path reuses archived q and stable four_term_score; fixed_objective is a 12-dimensional abstract arithmetic function. AL32 explicitly did not call AE, probe, optimizer or real classifier."
+    },
+    {
+      "id": "F4",
+      "component": "AL12",
+      "fact": "Intended real OR1 requires fixed public reconstructors R_a/R_b, h=1/8 and four complete AE calls per sample before q; identities/weights/wrapper and output projection to C=3 are not frozen."
+    },
+    {
+      "id": "F5",
+      "component": "fair comparison",
+      "fact": "q is contained in the same-call stable r descriptor; a fair comparison must fit q-only and r/full heads on the same probe outputs, same pairing/selection/calibration and same regularization budget. The current artifacts do not implement this evaluator."
+    },
+    {
+      "id": "F6",
+      "component": "data",
+      "fact": "AL67/AL69-AL73 evidence leaves native time, ancestry, labels, licensing and split/source risks open; no real sample can be released by this review."
+    }
+  ],
+  "minimum_bridge_task": {
+    "title": "Freeze one ProbeBatch adapter and paired q-vs-r evaluator after AL36/data gates",
+    "inputs": [
+      "frozen R_a/R_b identities and weights",
+      "one authorized sample manifest with roles/splits",
+      "same four-call output tensors",
+      "pre-registered matching/calibration and five-seed evaluator"
+    ],
+    "outputs": [
+      "adapter schema/hash",
+      "q-only and r/full heads with identical fit budget",
+      "static/capacity/augmentation/source/sampling controls",
+      "failure/no-go receipt"
+    ],
+    "resource_not_authorized_here": "Any model/media/server/GPU run remains a separate gate."
+  },
+  "decision": "Current artifacts support software arithmetic only; no fair real-data paired baseline is executable yet, and OR1 remains not admitted."
+}

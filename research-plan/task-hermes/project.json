@@ -5904,6 +5904,101 @@
       "report_sha256": "0ca0a54fc0ed6b72e7def9bc121939fb23e6b66fe3e2df8b7cd1722b17ad2888",
       "record_sha256": "b8201a92cf6b689cfa8fad20cd92eb21d645811cb384361dda530f3e3ab5fc77",
       "next_action": "Retain shared-root risk; next source/ancestor audit requires authorized mapping or media evidence. AL36/AL68 remain independent blocked follow-ups."
+    },
+    {
+      "id": "AL74",
+      "milestone": "M2",
+      "title": "上游文件身份与负类标签语义",
+      "assignee": "planagent",
+      "parents": [
+        "AL72"
+      ],
+      "requires_pass": [
+        "AL72"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "primary_source_review",
+      "hypothesis": "Explicit upstream identity/label definitions may limit camera-origin claims",
+      "work": [
+        "Pin upstream author release metadata",
+        "Read naming, source and label definitions",
+        "Separate declared release terms from sample provenance"
+      ],
+      "acceptance": [
+        "Exact source/input hashes and scope",
+        "No media/model/training/GPU or independent-review impersonation",
+        "Concrete evidence or a bounded unresolved gap; no novelty claim"
+      ],
+      "artifacts": [
+        "../reviews/AL74_UPSTREAM_IDENTITY_LABEL_REVIEW_20260922.md",
+        "../reviews/AL74_SOURCE_RECORD_20260922.json"
+      ],
+      "work_order": "../AL74_UPSTREAM_IDENTITY_LABEL_AUDIT_20260922.md",
+      "work_order_sha256": "b72e723b2716493bb1d2917a1032d7aad905554d1d8bd590e1be56a31d5e7857",
+      "prepared_at": "2026-09-22T03:33:43+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "scientific_innovation_gate_passed": false,
+      "started_at": "2026-09-22T03:33:43+08:00",
+      "completed_at": "2026-09-22T03:39:28+08:00",
+      "updated_at": "2026-09-22T03:39:28+08:00",
+      "dispatch_status": "completed_local_review",
+      "report": "../reviews/AL74_UPSTREAM_IDENTITY_LABEL_REVIEW_20260922.md",
+      "record": "../reviews/AL74_SOURCE_RECORD_20260922.json",
+      "report_sha256": "12a3010af8cb319361675cd37004f35c38cd8af991a2a5feabd76c953f7fe8f0",
+      "record_sha256": "c6040a09118c869ff94ca119a779c4e97957823a808d95fe727b3b30ab20d72b",
+      "next_action": "Public benchmark label semantics documented; keep camera-origin and license claims blocked; AL36/AL68 remain independent."
+    },
+    {
+      "id": "AL75",
+      "milestone": "M2",
+      "title": "OR1强匹配基线的可执行性缺口",
+      "assignee": "planagent",
+      "parents": [
+        "AL32",
+        "AL35",
+        "AL54"
+      ],
+      "requires_pass": [
+        "AL32",
+        "AL35",
+        "AL54"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "matched_baseline_interface_review",
+      "hypothesis": "Existing scalar same-call baseline modules may require a concrete tensor bridge before fair real-data use",
+      "work": [
+        "Inspect existing concrete interfaces and contracts",
+        "Identify tensor-wrapper and paired-head integration gap",
+        "One minimum implementation recommendation or deduplication"
+      ],
+      "acceptance": [
+        "Exact source/input hashes and scope",
+        "No media/model/training/GPU or independent-review impersonation",
+        "Concrete evidence or a bounded unresolved gap; no novelty claim"
+      ],
+      "artifacts": [
+        "../reviews/AL75_PAIRED_BASELINE_EXECUTABILITY_REVIEW_20260922.md",
+        "../reviews/AL75_INPUT_RECORD_20260922.json"
+      ],
+      "work_order": "../AL75_PAIRED_BASELINE_EXECUTABILITY_20260922.md",
+      "work_order_sha256": "66e08e3c1ac6a374242f2b125b516e347f37e44483a2321c16a00548b0d21c26",
+      "prepared_at": "2026-09-22T03:33:43+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "scientific_innovation_gate_passed": false,
+      "completed_at": "2026-09-22T03:39:28+08:00",
+      "updated_at": "2026-09-22T03:39:28+08:00",
+      "dispatch_status": "completed_local_review",
+      "report": "../reviews/AL75_PAIRED_BASELINE_EXECUTABILITY_REVIEW_20260922.md",
+      "record": "../reviews/AL75_INPUT_RECORD_20260922.json",
+      "report_sha256": "6aa544c6282ba67cc21bc228906bef8289c754cacd4d3d23318332229d9cf1d3",
+      "record_sha256": "d010adb8f4f24455170ca539f55ce3583b08be3cb66c9dc0f7332f83f5158004",
+      "next_action": "Require a new ProbeBatch/q-vs-r evaluator task only after data and AL36 gates; no real run released."
     }
   ],
   "storage_policy": {
@@ -7335,7 +7430,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T03:22:55+08:00",
+  "updated_at": "2026-09-22T03:39:28+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -8204,7 +8299,7 @@
       "status": "superseded_by_user_managed_billing",
       "resolution": "User explicitly said billing need not be managed by assistant; do not repeat billing questions."
     },
-    "last_coordinator_activity_at": "2026-09-22T03:22:55+08:00",
+    "last_coordinator_activity_at": "2026-09-22T03:39:28+08:00",
     "research_observed_status": "systemError_missing_codex_local_access_provider_no_artifact",
     "dispatch_history": [
       {
@@ -9624,6 +9719,28 @@
         "remote_send_required": false,
         "background_process_running": false,
         "archived_at": "2026-09-22T03:22:55+08:00"
+      },
+      {
+        "id": "cc-al74-al75-local-evidence-20260922",
+        "task_ids": [
+          "AL74",
+          "AL75"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T03:33:43+08:00",
+        "started_at": "2026-09-22T03:33:43+08:00",
+        "work_orders": [
+          "../AL74_UPSTREAM_IDENTITY_LABEL_AUDIT_20260922.md",
+          "../AL75_PAIRED_BASELINE_EXECUTABILITY_20260922.md"
+        ],
+        "plan_version": "cvpr27-20260919-v1.5",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "scope": "Primary upstream metadata plus independent local paired-baseline interface review",
+        "archived_at": "2026-09-22T03:39:28+08:00"
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
@@ -9973,9 +10090,9 @@
     },
     "last_progress_at": "2026-09-20T01:35:16+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T03:22:55+08:00",
+      "at": "2026-09-22T03:39:28+08:00",
       "decision": "no remote wait",
-      "reason": "AL73 completed public mapping audit; no supported recovery for external research window."
+      "reason": "AL74/AL75 local evidence package complete; queued AL36/AL68 remains blocked and is not resent."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",
