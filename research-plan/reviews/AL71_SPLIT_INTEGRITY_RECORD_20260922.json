@@ -1,0 +1,42 @@
+{
+  "task_id": "AL71",
+  "at": "2026-09-22T01:49:12+08:00",
+  "files": {
+    "train": {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/train.jsonl",
+      "bytes": 8610190,
+      "sha256": "46fcf59f24b742af7c6c3e9d4907b9c9dba451c6c8ca1dcd7016949202d07012",
+      "line_count": 14000,
+      "parsed_id_rows": 14000,
+      "parse_error_lines": [],
+      "missing_id_rows": 0,
+      "prompt_field_rows": 14000,
+      "duplicate_id_occurrences": 0,
+      "unique_ids": 14000,
+      "first_id": "35yussxyr2w_130_0to150.mp4",
+      "last_id": "magictime_7191480235102113080.mp4",
+      "sorted_id_digest": "af7376476b9c2821d012769d31e25ee19d892ed6b0347fd24516e7da7f3c0829"
+    },
+    "val": {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/val.jsonl",
+      "bytes": 1846793,
+      "sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+      "line_count": 3000,
+      "parsed_id_rows": 3000,
+      "parse_error_lines": [],
+      "missing_id_rows": 0,
+      "prompt_field_rows": 3000,
+      "duplicate_id_occurrences": 0,
+      "unique_ids": 3000,
+      "first_id": "DDXP5Kfm7JU_58_44to181.mp4",
+      "last_id": "magictime_7180571818497985847_0023.mp4",
+      "sorted_id_digest": "3d5e5b190913042f6676563ab0beb477cd56acc92b6c463a2cad3cb01110320b"
+    }
+  },
+  "exact_intersection_count": 0,
+  "intersection_ids": [],
+  "train_minus_val_count": 14000,
+  "val_minus_train_count": 3000,
+  "scope": "Full train/val metadata only; test/media/models/predictions not accessed.",
+  "interpretation": "ID-level split integrity passed for train/val; this does not prove visual ancestor independence, label/source provenance, native time, licence or test integrity."
+}

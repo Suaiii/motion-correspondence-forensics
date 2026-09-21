@@ -335,8 +335,8 @@ planagent 更新前检查并发变化，保留历史快照；researchagent 通�
 
 ## 9. 当前执行与补充队列
 
-用户已于2026-09-22恢复：AL65完成，AL66/AL67完成限定范围审查，正式算法与数据门仍未通过。AL68和AL36已组成唯一恢复包 `cc-resume-al68-al36-20260922`，但现有科研窗口的消息发送因缺少 `codex_local_access` 模型提供方失败，暂无研究端代码/证据产物；该错误已写入 `reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json`，不重复发送、不创建新会话、不改变账户或模型。cvpr-2027自动任务已恢复为ACTIVE；服务器13340只读连通已核验，未启动训练或GPU作业。
+用户已于2026-09-22恢复：AL65完成，AL66/AL67完成限定范围审查，AL69完成公开基准发布元数据核验，AL70完成公开 validation ID 与服务器开发 manifest 的严格交叉核验，AL71完成公开 train/val ID 划分完整性核验；正式算法与数据门仍未通过。AL68和AL36已组成唯一恢复包 `cc-resume-al68-al36-20260922`，但现有科研窗口的消息发送因缺少 `codex_local_access` 模型提供方失败，暂无研究端代码/证据产物；该错误已写入 `reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json`，不重复发送、不创建新会话、不改变账户或模型。cvpr-2027自动任务已恢复为ACTIVE；服务器13340只读连通已核验，未启动训练或GPU作业。
 
-AL67的样本级审查与服务器manifest盘点显示：候选清单已有文件SHA、来源/任务、label、source/reference/prompt group、部分ancestry/license字段；pair2开发审计已有origin_id和抽帧PTS，但明确 `ancestry_content_verified=false`、`formal_training_released=false`、`external_development_only`。多数正式所需的原生PTS/time_base、祖先内容闭包、生成配置、codec/decoder、许可、split和选择覆盖仍缺。公开黑盒基准可在披露未知内部信息的前提下用于可比评测；机制归因和最终确认仍需更强样本级合同，不能把开发池改名为正式集。
+AL67的样本级审查与服务器manifest盘点显示：候选清单已有文件SHA、来源/任务、label、source/reference/prompt group、部分ancestry/license字段；pair2开发审计已有origin_id和抽帧PTS，但明确 `ancestry_content_verified=false`、`formal_training_released=false`、`external_development_only`。AL69—AL71进一步确认公开AIGVDBench的train/val文件有完整的14,000/3,000个ID、无重复且两集合交集为0；当前服务器开发manifest与固定20个公开validation ID严格交集为0。ID划分通过仅支持公开文件级可复算性，不能证明视觉祖先独立、标签、原生PTS/time_base、许可或实际媒体已在服务器上。多数正式所需的祖先内容闭包、生成配置、codec/decoder、许可、选择覆盖仍缺。公开黑盒基准可在披露未知内部信息的前提下用于可比评测；机制归因和最终确认仍需更强样本级合同，不能把开发池改名为正式集。
 
 研究端源码/运行报告仍只由其维护，计划端维护DAG、科学审查与整合记录。形式上完成、手写检查表或结构校验通过均不构成CCF-A突破。下一次研究窗口恢复后先按AL68和AL36原工作单交付；在此之前不启动训练、采集、付费批次或新会话。恢复自动任务后按每日19:00规则检查里程碑，只有实际通知才登记ack。

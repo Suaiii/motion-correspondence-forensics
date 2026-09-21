@@ -5616,6 +5616,181 @@
       "dispatch_failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
       "dispatch_failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
       "next_action": "Do not resend/create session; resume only after supported provider recovery or explicit user instruction."
+    },
+    {
+      "id": "AL69",
+      "milestone": "M2",
+      "title": "公开基准发布字段与标签语义核验",
+      "assignee": "planagent",
+      "parents": [
+        "AL63",
+        "AL64"
+      ],
+      "requires_pass": [
+        "AL63",
+        "AL64"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "public_release_metadata_and_label_semantics",
+      "hypothesis": "Official release manifests may already permit comparable black-box evaluation while not supporting camera-origin or decoder-causal claims.",
+      "work": [
+        "Pin author release revisions and review README/data card/schema",
+        "Audit only bounded train/validation metadata when separately available",
+        "Distinguish missing internal model information from missing benchmark evidence"
+      ],
+      "acceptance": [
+        "Actual public request records, source hashes and exact scope",
+        "No test-set contents/media/models/predictions accessed",
+        "No authority or independence inferred from dataset name, caption, filename or status flag"
+      ],
+      "artifacts": [
+        "../reviews/AL69_PUBLIC_RELEASE_REVIEW_20260922.md",
+        "../reviews/AL69_SOURCE_RECORD_20260922.json"
+      ],
+      "work_order": "../AL69_PUBLIC_RELEASE_METADATA_AUDIT_20260922.md",
+      "work_order_sha256": "bd42f03656ce0319292b767b3c025b2bf40fd97ba52634a183e995b251dd9705",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-22T01:33:59+08:00",
+      "started_at": "2026-09-22T01:33:59+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "metadata_parsing_authorized": true,
+      "scientific_innovation_gate_passed": false,
+      "resource_policy": {
+        "server_access": false,
+        "gpu": false,
+        "model_execution": false,
+        "media_download": false,
+        "public_text_bytes_max": 25165824,
+        "max_train_or_validation_manifests": 2,
+        "sealed_test_access": false
+      },
+      "completed_at": "2026-09-22T01:42:20+08:00",
+      "updated_at": "2026-09-22T01:42:20+08:00",
+      "dispatch_status": "completed_local_public_metadata",
+      "report": "../reviews/AL69_PUBLIC_RELEASE_REVIEW_20260922.md",
+      "record": "../reviews/AL69_SOURCE_RECORD_20260922.json",
+      "report_sha256": "fab63fdbf5f2b14251e81588dc0e71797a295426df2dc8b7e4cf38564d734f06",
+      "record_sha256": "db24a2e01ef21b1b550116b85c82d95cdb96c48a057766a4ac513c01b1318ad7",
+      "next_action": "AL70 crosswalks public Video_id against existing server manifests; AL68 and AL36 remain independent."
+    },
+    {
+      "id": "AL70",
+      "milestone": "M2",
+      "title": "公开Video_id与现有服务器文件交叉核验",
+      "assignee": "planagent",
+      "parents": [
+        "AL69"
+      ],
+      "requires_pass": [
+        "AL69"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "public_id_server_manifest_crosswalk",
+      "hypothesis": "Public benchmark IDs may not overlap the existing development pool; explicit crosswalk prevents accidental reuse claims.",
+      "work": [
+        "Read fixed first20 valid public validation IDs",
+        "Compare strict basenames against existing server manifest/path/archive fields",
+        "Record exact matches and nonmatches without opening media"
+      ],
+      "acceptance": [
+        "Public and server input hashes, fixed selection rule and exact command",
+        "Per-ID match status and reason",
+        "No inference of labels, ancestors, license, PTS or generator from a basename match"
+      ],
+      "artifacts": [
+        "../reviews/AL70_PUBLIC_ID_CROSSWALK_REVIEW_20260922.md",
+        "../reviews/AL70_CROSSWALK_RECORD_20260922.json"
+      ],
+      "work_order": "../AL70_PUBLIC_ID_CROSSWALK_20260922.md",
+      "work_order_sha256": "2fba63ad38d38deac5530e79e2d792450e70cf22d63f42f26e38efbb4010c3c0",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-22T01:42:20+08:00",
+      "started_at": "2026-09-22T01:42:20+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "metadata_parsing_authorized": true,
+      "scientific_innovation_gate_passed": false,
+      "resource_policy": {
+        "server_access": true,
+        "gpu": false,
+        "model_execution": false,
+        "media_read": false,
+        "large_downloads": false,
+        "public_text_bytes_max": 8388608,
+        "max_public_ids": 20,
+        "max_manifests": 13
+      },
+      "completed_at": "2026-09-22T01:47:39+08:00",
+      "updated_at": "2026-09-22T01:47:39+08:00",
+      "dispatch_status": "completed_local_crosswalk",
+      "report": "../reviews/AL70_PUBLIC_ID_CROSSWALK_REVIEW_20260922.md",
+      "record": "../reviews/AL70_CROSSWALK_RECORD_20260922.json",
+      "report_sha256": "6514a2a7aa81ac599f63bbe3bc9c5281842c95009fcadb08483a02efbba666ae",
+      "record_sha256": "744a99bdf674986829fce598f2d21886c3e49094cd6161e3e2bd8baabecd141f",
+      "next_action": "AL71 audits full public train/val ID split integrity; AL68 and AL36 remain independent."
+    },
+    {
+      "id": "AL71",
+      "milestone": "M2",
+      "title": "AIGVDBench公开train/val清单划分完整性审计",
+      "assignee": "planagent",
+      "parents": [
+        "AL69",
+        "AL70"
+      ],
+      "requires_pass": [
+        "AL69",
+        "AL70"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "public_split_id_integrity",
+      "hypothesis": "Public train/validation metadata may contain duplicate or cross-split IDs that affect benchmark comparability even when the repository publishes split files.",
+      "work": [
+        "Read bounded full train and val jsonl metadata",
+        "Count parse errors, duplicates and exact ID intersection",
+        "Keep ID-level integrity separate from visual-ancestor independence"
+      ],
+      "acceptance": [
+        "Input URL response hashes and exact bytes",
+        "Explicit lower/upper counts and errors",
+        "No test/media/model access and no silent repair"
+      ],
+      "artifacts": [
+        "../reviews/AL71_SPLIT_INTEGRITY_REVIEW_20260922.md",
+        "../reviews/AL71_SPLIT_INTEGRITY_RECORD_20260922.json"
+      ],
+      "work_order": "../AL71_PUBLIC_SPLIT_INTEGRITY_AUDIT_20260922.md",
+      "work_order_sha256": "b6ccdb2b2d0b9f3ee9da282716f03fa9a7a2111a84d8c765a60d2cf1a83095dd",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-22T01:47:39+08:00",
+      "started_at": "2026-09-22T01:47:39+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "implementation_authorized": false,
+      "metadata_parsing_authorized": true,
+      "scientific_innovation_gate_passed": false,
+      "resource_policy": {
+        "server_access": false,
+        "gpu": false,
+        "model_execution": false,
+        "media_download": false,
+        "public_text_bytes_max": 25165824,
+        "max_manifests": 2
+      },
+      "completed_at": "2026-09-22T01:49:54+08:00",
+      "updated_at": "2026-09-22T01:49:54+08:00",
+      "dispatch_status": "completed_local_public_split_audit",
+      "report": "../reviews/AL71_SPLIT_INTEGRITY_REVIEW_20260922.md",
+      "record": "../reviews/AL71_SPLIT_INTEGRITY_RECORD_20260922.json",
+      "report_sha256": "dfef286b90d5cf728a5f193049568e986bb86f66c3f7200703b0fb064765511d",
+      "record_sha256": "4478319f344f416705eadf30eaa1643acd703dcd993423d09032f9579dfc3050",
+      "next_action": "Retain public split as ID-level evidence only; AL68/AL36 remain independent blocked follow-ups."
     }
   ],
   "storage_policy": {
@@ -6871,6 +7046,12 @@
       "reserved_gpu_hours": 23,
       "status": "reserved_only_not_actual_spend",
       "evidence": "../../research-runs/shared_plan_20260917/budget_snapshot.json"
+    },
+    "current_instance_billing_handled_by_user": true,
+    "current_instance_authorization_20260922": {
+      "instruction": "开始恢复 你不用管计费的事情",
+      "scope": "Use existing powered-on instance for specifically scoped approved work; no new purchase/rental/top-up; unknown actual costs remain null",
+      "recorded_at": "2026-09-22T01:33:59+08:00"
     }
   },
   "study_scale": {
@@ -7041,7 +7222,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T01:13:16+08:00",
+  "updated_at": "2026-09-22T01:49:54+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -7899,33 +8080,7 @@
     "budget_caps_unchanged": true,
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
-    "current_dispatch": {
-      "id": "cc-resume-al68-al36-20260922",
-      "task_ids": [
-        "AL68",
-        "AL36"
-      ],
-      "executor_role": "researchagent_window",
-      "executor_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
-      "host_id": "local",
-      "status": "blocked_startup_provider",
-      "prepared_at": "2026-09-22T01:08:58+08:00",
-      "work_order": "../RESEARCH_RESUME_HANDOFF_20260922.md",
-      "work_order_sha256": "40056ac26e9d125e6454bcba8f8bfd863b154a855bc5241b65d4daf9186fe774",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "scope": "AL68 bounded existing-data readiness plus independent AL36 adversarial admission review; no new session",
-      "remote_send_required": true,
-      "background_process_running": false,
-      "input": "AL68 work order and AL36 original work order; AL65/AL66/AL67 are read-only completed inputs",
-      "success_condition": "Complete both deliveries with real source/config/output hashes; failures preserved; formal data and OR1 gates remain separate",
-      "blocked_at": "2026-09-22T01:10:43+08:00",
-      "blocker": "Model provider codex_local_access not found",
-      "execution_artifacts_available": false,
-      "dispatch_failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
-      "dispatch_failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
-      "plan_sha256": "05c5e60b9ab8d43792192256d53f36a5e0bc628f4740aac821dd38e4855c1e30",
-      "updated_at": "2026-09-22T01:13:16+08:00"
-    },
+    "current_dispatch": null,
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
@@ -7933,9 +8088,10 @@
     "user_input_request": {
       "asked_once_at": "2026-09-17T19:36:00+08:00",
       "question": "本项目累计实际已花费和已用计费GPU小时，允许保守上限。",
-      "status": "awaiting_response"
+      "status": "superseded_by_user_managed_billing",
+      "resolution": "User explicitly said billing need not be managed by assistant; do not repeat billing questions."
     },
-    "last_coordinator_activity_at": "2026-09-22T01:13:16+08:00",
+    "last_coordinator_activity_at": "2026-09-22T01:49:54+08:00",
     "research_observed_status": "systemError_missing_codex_local_access_provider_no_artifact",
     "dispatch_history": [
       {
@@ -9232,24 +9388,124 @@
         "last_status": "blocked_startup_provider",
         "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
         "failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792"
+      },
+      {
+        "id": "cc-resume-al68-al36-20260922",
+        "task_ids": [
+          "AL68",
+          "AL36"
+        ],
+        "executor_role": "researchagent_window",
+        "executor_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+        "host_id": "local",
+        "status": "blocked_startup_provider",
+        "prepared_at": "2026-09-22T01:08:58+08:00",
+        "work_order": "../RESEARCH_RESUME_HANDOFF_20260922.md",
+        "work_order_sha256": "40056ac26e9d125e6454bcba8f8bfd863b154a855bc5241b65d4daf9186fe774",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "scope": "AL68 bounded existing-data readiness plus independent AL36 adversarial admission review; no new session",
+        "remote_send_required": true,
+        "background_process_running": false,
+        "input": "AL68 work order and AL36 original work order; AL65/AL66/AL67 are read-only completed inputs",
+        "success_condition": "Complete both deliveries with real source/config/output hashes; failures preserved; formal data and OR1 gates remain separate",
+        "blocked_at": "2026-09-22T01:10:43+08:00",
+        "blocker": "Model provider codex_local_access not found",
+        "execution_artifacts_available": false,
+        "dispatch_failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+        "dispatch_failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
+        "plan_sha256": "05c5e60b9ab8d43792192256d53f36a5e0bc628f4740aac821dd38e4855c1e30",
+        "updated_at": "2026-09-22T01:13:16+08:00",
+        "archived_at": "2026-09-22T01:33:59+08:00"
+      },
+      {
+        "id": "cc-al69-public-release-review-20260922",
+        "task_ids": [
+          "AL69"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T01:33:59+08:00",
+        "started_at": "2026-09-22T01:33:59+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_order": "../AL69_PUBLIC_RELEASE_METADATA_AUDIT_20260922.md",
+        "work_order_sha256": "bd42f03656ce0319292b767b3c025b2bf40fd97ba52634a183e995b251dd9705",
+        "scope": "Bounded public metadata/source review only; no media/server/model/GPU or test contents",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "archived_at": "2026-09-22T01:42:20+08:00"
+      },
+      {
+        "id": "cc-al70-public-id-crosswalk-20260922",
+        "task_ids": [
+          "AL70"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T01:42:20+08:00",
+        "started_at": "2026-09-22T01:42:20+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_order": "../AL70_PUBLIC_ID_CROSSWALK_20260922.md",
+        "work_order_sha256": "2fba63ad38d38deac5530e79e2d792450e70cf22d63f42f26e38efbb4010c3c0",
+        "scope": "Strict public validation ID to existing server manifest/path crosswalk; no media/model/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "archived_at": "2026-09-22T01:47:39+08:00"
+      },
+      {
+        "id": "cc-al71-public-split-integrity-20260922",
+        "task_ids": [
+          "AL71"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T01:47:39+08:00",
+        "started_at": "2026-09-22T01:47:39+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_order": "../AL71_PUBLIC_SPLIT_INTEGRITY_AUDIT_20260922.md",
+        "work_order_sha256": "b6ccdb2b2d0b9f3ee9da282716f03fa9a7a2111a84d8c765a60d2cf1a83095dd",
+        "scope": "Bounded full public train/val ID integrity; no test/media/model/GPU",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "archived_at": "2026-09-22T01:49:54+08:00"
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
     "last_cursor_reset_observed_at": "2026-09-18T22:27:00+08:00",
     "queued_dispatch": {
-      "id": "cc-al36-new-window-recovery-review-20260920",
+      "id": "cc-resume-al68-al36-20260922",
       "task_ids": [
+        "AL68",
         "AL36"
       ],
       "executor_role": "researchagent_window",
       "executor_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
       "host_id": "local",
-      "status": "blocked_after_startup_failure",
-      "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
+      "status": "blocked_startup_provider",
+      "prepared_at": "2026-09-22T01:08:58+08:00",
+      "work_order": "../RESEARCH_RESUME_HANDOFF_20260922.md",
+      "work_order_sha256": "40056ac26e9d125e6454bcba8f8bfd863b154a855bc5241b65d4daf9186fe774",
       "plan_version": "cvpr27-20260919-v1.5",
-      "last_wait_cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
+      "scope": "AL68 bounded existing-data readiness plus independent AL36 adversarial admission review; no new session",
+      "remote_send_required": true,
+      "background_process_running": false,
+      "input": "AL68 work order and AL36 original work order; AL65/AL66/AL67 are read-only completed inputs",
+      "success_condition": "Complete both deliveries with real source/config/output hashes; failures preserved; formal data and OR1 gates remain separate",
+      "blocked_at": "2026-09-22T01:10:43+08:00",
+      "blocker": "Model provider codex_local_access not found",
+      "execution_artifacts_available": false,
+      "dispatch_failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+      "dispatch_failure_sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
+      "plan_sha256": "05c5e60b9ab8d43792192256d53f36a5e0bc628f4740aac821dd38e4855c1e30",
+      "updated_at": "2026-09-22T01:13:16+08:00",
+      "archived_at": "2026-09-22T01:33:59+08:00",
       "do_not_resend": true,
-      "blocker": "Tool-call output protocol failed; independent review has no artifact."
+      "last_planagent_review": "2026-09-22T01:49:54+08:00"
     },
     "dispatch_policy_state": "paused_by_user_no_automatic_dispatch_or_server_start",
     "waiting_on": [
@@ -9566,9 +9822,9 @@
     },
     "last_progress_at": "2026-09-20T01:35:16+08:00",
     "last_poll_decision": {
-      "at": "2026-09-20T01:22:06+08:00",
-      "decision": "no remote wait",
-      "reason": "AL65 fallback CPU control complete; AL36 remains queued blocked after research startup protocol failure."
+      "at": "2026-09-22T01:49:54+08:00",
+      "decision": "no current remote wait",
+      "reason": "AL71 complete; AL68 and AL36 remain queued/blocked after recorded research-window startup failure; no duplicate send."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",
@@ -9653,7 +9909,9 @@
         "AL36"
       ],
       "automation_id": "cvpr-2027",
-      "automation_status_verified": "PAUSED"
+      "automation_status_verified": "ACTIVE",
+      "active": false,
+      "superseded_by": "Explicit user resume request on 2026-09-22; prior pause record retained"
     },
     "resume_history": [
       {
@@ -9672,6 +9930,23 @@
         "receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
         "sha256": "848b72fd6786639a0d50993475ef720927ed0f489923a0cd72510f20c1f67792",
         "do_not_retry": true
+      }
+    ],
+    "queued_dispatch_history": [
+      {
+        "id": "cc-al36-new-window-recovery-review-20260920",
+        "task_ids": [
+          "AL36"
+        ],
+        "executor_role": "researchagent_window",
+        "executor_thread_id": "01a0ba9d-c4e1-7b52-abc8-e47f32c282fb",
+        "host_id": "local",
+        "status": "blocked_after_startup_failure",
+        "work_order": "../AL36_OR1_ADMISSION_ADVERSARIAL_REVIEW_20260919.md",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "last_wait_cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
+        "do_not_resend": true,
+        "blocker": "Tool-call output protocol failed; independent review has no artifact."
       }
     ]
   },

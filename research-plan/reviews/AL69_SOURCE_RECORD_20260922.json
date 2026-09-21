@@ -1,0 +1,189 @@
+{
+  "title": "AIGVDBench",
+  "observed_at": "2026-09-22T01:35:52+08:00",
+  "entry_points": [
+    "GitHub LongMa-2025/AIGVDBench",
+    "Hugging Face AIGVDBench/AIGVDBench"
+  ],
+  "github": {
+    "repo_url": "https://api.github.com/repos/LongMa-2025/AIGVDBench",
+    "default_branch": "main",
+    "repo_fields": {
+      "full_name": "LongMa-2025/AIGVDBench",
+      "default_branch": "main",
+      "license": null,
+      "html_url": "https://github.com/LongMa-2025/AIGVDBench",
+      "created_at": "2026-01-04T08:28:30Z",
+      "updated_at": "2026-08-28T11:50:32Z",
+      "pushed_at": "2026-03-26T12:29:11Z",
+      "size": 5657,
+      "archived": false
+    },
+    "readme_text_bytes": 5674,
+    "readme_sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962",
+    "data_splits_metadata_type": "list",
+    "data_splits_names": [
+      "test.jsonl",
+      "train.jsonl",
+      "val.jsonl"
+    ],
+    "selected_train_validation": [
+      {
+        "name": "train.jsonl",
+        "declared_size": 8610190
+      },
+      {
+        "name": "val.jsonl",
+        "declared_size": 1846793
+      }
+    ]
+  },
+  "huggingface": {
+    "url": "https://huggingface.co/datasets/AIGVDBench/AIGVDBench",
+    "page_sha256": "9807f571f5e41a5f82cd30941faf9243ab06aa8e0f41f1018e716eb2d5ab8d10",
+    "page_bytes": 340344,
+    "visible_term_counts": {
+      "license": 2,
+      "train": 5,
+      "validation": 1,
+      "test": 3,
+      "label": 0,
+      "source": 0,
+      "video": 28,
+      "dataset": 8
+    }
+  },
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/LongMa-2025/AIGVDBench",
+      "started_at": "2026-09-22T01:35:52.358+08:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/LongMa-2025/AIGVDBench",
+      "bytes_read": 5217,
+      "truncated": false,
+      "sha256": "096d12c18dae253f8b657e54254a6e74458b6dbc642ce43557caea2688e6048f",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/README.md",
+      "started_at": "2026-09-22T01:35:53.586+08:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/README.md",
+      "bytes_read": 5674,
+      "truncated": false,
+      "sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962",
+      "content_type": "text/plain; charset=utf-8"
+    },
+    {
+      "url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/contents/data_splits?ref=main",
+      "started_at": "2026-09-22T01:35:54.136+08:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/contents/data_splits?ref=main",
+      "bytes_read": 2539,
+      "truncated": false,
+      "sha256": "1a58d3d8c377cef5bcd6423d546de8d5504031dc7ba5184920f937345b0a9ad6",
+      "content_type": "application/json; charset=utf-8"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/train.jsonl",
+      "started_at": "2026-09-22T01:35:55.089+08:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/train.jsonl",
+      "bytes_read": 8388608,
+      "truncated": true,
+      "sha256": "45ef0cecea44c6e120fc7b0372d81dd9b7c69f951b6549654e0729ab1d658a92",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "train_or_validation_split_metadata",
+      "name": "train.jsonl",
+      "declared_size": 8610190,
+      "read_for_schema_only": true,
+      "schema_retrieval_sha256": "45ef0cecea44c6e120fc7b0372d81dd9b7c69f951b6549654e0729ab1d658a92",
+      "schema_retrieval_bytes": 8388608,
+      "hash_matches_initial_request": true,
+      "top_level_keys": [
+        "Video_Prompts",
+        "Video_id"
+      ],
+      "sample_records": [
+        {
+          "Video_id": "35yussxyr2w_130_0to150.mp4",
+          "Video_Prompts": " shot in a realistic style, capturing the everyday moments of friendship and shared meals."
+        },
+        {
+          "Video_id": "14t09NovlQk_32_112to229.mp4",
+          "Video_Prompts": " likely to be a still life or a product display, showcasing the different liquids in the glasses."
+        }
+      ],
+      "fields_presence": {
+        "Video_Prompts": 13651,
+        "Video_id": 13651
+      },
+      "parsed_rows_in_prefix": 13651,
+      "parse_errors_in_prefix": 1,
+      "read_is_prefix_only": true,
+      "declared_size_exceeds_read_limit": true
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/val.jsonl",
+      "started_at": "2026-09-22T01:35:56.512+08:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/val.jsonl",
+      "bytes_read": 1846793,
+      "truncated": false,
+      "sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+      "content_type": "text/plain; charset=utf-8",
+      "role": "train_or_validation_split_metadata",
+      "name": "val.jsonl",
+      "declared_size": 1846793,
+      "read_for_schema_only": true,
+      "schema_retrieval_sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+      "schema_retrieval_bytes": 1846793,
+      "hash_matches_initial_request": true,
+      "top_level_keys": [
+        "Video_Prompts",
+        "Video_id"
+      ],
+      "sample_records": [
+        {
+          "Video_id": "DDXP5Kfm7JU_58_44to181.mp4",
+          "Video_Prompts": " a close-up view of a person enjoying a slice of pizza. The pizza is generously topped with melted cheese and tomato sauce, and the person is using a fork to lift a bite of the pizza from the plate. The plate is white with a red rim, and there is a small bowl of sauce on the side. The person is seated at a table, and the focus is on the pizza and the action of eating it. The style of the video is realistic and it captures the details of the pizza and the person's action with precision."
+        },
+        {
+          "Video_id": "DbQ4-iGeIvY_9_18to541.mp4",
+          "Video_Prompts": " a lively scene at a car show. A man in a gray t-shirt stands in the foreground, gesturing towards the camera. Behind him, a white BMW sports car is parked, its sleek design and shiny exterior drawing attention. The car show is bustling with people, some of whom are walking around, while others are standing near their vehicles. The parking lot is filled with various cars, including a red sports car and a white truck. In the background, a building under construction can be seen, adding an urban touch to the scene. The overall atmosphere is vibrant and energetic, with the man in the gray t-shirt appearing to be the center of attention."
+        }
+      ],
+      "fields_presence": {
+        "Video_Prompts": 3000,
+        "Video_id": 3000
+      },
+      "parsed_rows_full_file": 3000,
+      "parse_errors_full_file": 0,
+      "read_is_prefix_only": false
+    },
+    {
+      "url": "https://huggingface.co/datasets/AIGVDBench/AIGVDBench",
+      "started_at": "2026-09-22T01:35:58.230+08:00",
+      "status": 200,
+      "final_url": "https://huggingface.co/datasets/AIGVDBench/AIGVDBench",
+      "bytes_read": 340344,
+      "truncated": false,
+      "sha256": "9807f571f5e41a5f82cd30941faf9243ab06aa8e0f41f1018e716eb2d5ab8d10",
+      "content_type": "text/html; charset=utf-8"
+    }
+  ],
+  "scope": "Public repository/data-card metadata only; no test contents, video, images, weights, predictions, SSH or GPU.",
+  "scope_note": "train.jsonl was intentionally capped at 8 MiB (declared 8,610,190 bytes), so its parsed row count is a lower bound; val.jsonl was fully read. No test.jsonl contents were requested.",
+  "review_sha256": "fab63fdbf5f2b14251e81588dc0e71797a295426df2dc8b7e4cf38564d734f06",
+  "reviewed_at": "2026-09-22T01:40:03+08:00",
+  "decision": "Public train/val/test split metadata supports bounded black-box evaluation planning; source/label/time/ancestor/licence evidence remains insufficient for OR1 mechanism or final confirmation.",
+  "scope_decision": "done_pass_public_release_metadata_only",
+  "not_accessed": [
+    "test.jsonl contents",
+    "video/image media",
+    "model weights",
+    "predictions",
+    "server files"
+  ],
+  "record_version": "AL69-v1"
+}

@@ -1,0 +1,159 @@
+{
+  "task_id": "AL70",
+  "recorded_at": "2026-09-22T01:45:39+08:00",
+  "public_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/main/data_splits/val.jsonl",
+  "public_response_bytes": 1846793,
+  "public_response_sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+  "selection_rule": "first20 valid rows in val.jsonl file order; no outcome filtering",
+  "selected_ids": [
+    {
+      "video_id": "DDXP5Kfm7JU_58_44to181.mp4",
+      "prompt_sha256": "91ae0f3b7db623cb1206f1efe09d889f368f54b0086432dd1a5c5202b1a62119"
+    },
+    {
+      "video_id": "DbQ4-iGeIvY_9_18to541.mp4",
+      "prompt_sha256": "bb0bee252b565908231853b84c639cdbeceba29afba93ebd4cb756fd39e001c0"
+    },
+    {
+      "video_id": "2KVuVFPflHw_6_0to153.mp4",
+      "prompt_sha256": "d8e7b826be74fc0db7124348717aaf354598292a2b79be41b8e19491e2bfc03f"
+    },
+    {
+      "video_id": "0cwZaoxq-ns_37_76to220.mp4",
+      "prompt_sha256": "737ff818d093affa2eab7d9f5dd506334cadb7fc008bda3d5a2574efab35ae8d"
+    },
+    {
+      "video_id": "7b45kZqiElw_1_0to1380.mp4",
+      "prompt_sha256": "6ecb11c8e865e3ac2fc1b0ce41f522b84693561747e59d28526097ab531b8741"
+    },
+    {
+      "video_id": "8Q3hCQcjcaE_8_40to269.mp4",
+      "prompt_sha256": "7032bcbb0ce6e67588d40148d89e209c4351ffa566e020f2de2ba920d0ec93e8"
+    },
+    {
+      "video_id": "5Am56XUAR_s_8_0to103.mp4",
+      "prompt_sha256": "bfaa4c95aba0096bffdb858033c1253d5bbc4f66d67f11f88545ba091ef4cf4b"
+    },
+    {
+      "video_id": "5AsT7gp-hpw_10_0to217.mp4",
+      "prompt_sha256": "80ac53abec8d6e1046c4f50036a3a2242f95eb5398d973a8a68c33c881a176b8"
+    },
+    {
+      "video_id": "0djH1r5wIFU_10_96to234.mp4",
+      "prompt_sha256": "ebbe84603652f20dc571bf2b4e2d6235892b05edc19fe07e906174ab431cc6ac"
+    },
+    {
+      "video_id": "9EaBkkI9K4o_9_0to123.mp4",
+      "prompt_sha256": "6348baa2e13dec2fe295c9533f6a36e893f1f97b32e8b19688c2bc6dad464e81"
+    },
+    {
+      "video_id": "DcywmdMpj6A_2_0to102.mp4",
+      "prompt_sha256": "d08d3365ed70ed1afe77accf7daff2eeba47de2b64bee240661e184134a346c0"
+    },
+    {
+      "video_id": "7E643ff_yH0_54_0to116.mp4",
+      "prompt_sha256": "64a099de6acd9a8e35a605b07eb46cd32224343f169b109a07a063a2a9c3dce8"
+    },
+    {
+      "video_id": "9cGb6C9Mcys_15_0to244.mp4",
+      "prompt_sha256": "a55aeb176b2052506bc017482868d3e80f257407a96c166c38b818cde05ae566"
+    },
+    {
+      "video_id": "CTq6Qdz_w50_64_142to262.mp4",
+      "prompt_sha256": "1dd8b8f1285cf81af5089d7b23503650e3a1008de906f87511a25f311e72a764"
+    },
+    {
+      "video_id": "5_TuTPMuses_9_0to569.mp4",
+      "prompt_sha256": "dbd926612d402c49a62cc4fc4e0b47a1cbde989d1d26208299dcf2d87eb9ff83"
+    },
+    {
+      "video_id": "18EdZ1n57_0_21_29to210.mp4",
+      "prompt_sha256": "2df2c20e40efdd974152f79e29b68bebcac852e3798f73a684c4a29572ca3f2f"
+    },
+    {
+      "video_id": "5D6gacvJ-pI_6_0to146.mp4",
+      "prompt_sha256": "6613fcb42f6e639fec19d2dd1588b13e565299a1a5bdf6c414c157caadc1fd93"
+    },
+    {
+      "video_id": "-2vuOMVbZ6k_14_0to115.mp4",
+      "prompt_sha256": "03f5a2ecb703c49f431615e0282bec6cdcd9354d2515e4080323af0b45b18739"
+    },
+    {
+      "video_id": "5DN9Ie1JjWw_43_0to128.mp4",
+      "prompt_sha256": "07985212e2ac167858e9e2fcb62216d8d277df3b4c0f5720e1e6be335c11815"
+    },
+    {
+      "video_id": "2k4F80NXcF8_40_0to165.mp4",
+      "prompt_sha256": "372b961719c014dd85aa3507b46fa2d17a76810ada079082ea30172d96e6e962"
+    }
+  ],
+  "server_endpoint": "connect.westc.seetacloud.com:13340",
+  "server_manifest_summary": [
+    {
+      "path": "candidate200/manifest.jsonl",
+      "bytes": 103070,
+      "sha256": "8e8d1636e3ef7af7a411193e490ba363f1a5e6c30c3fc48e84401166cd51fd24"
+    },
+    {
+      "path": "candidate200/manifest_valid.jsonl",
+      "bytes": 53270,
+      "sha256": "eb7a92e594eb25adf01c242a8bb70ad96fd6fe39a3cd9a5c0f3f94fcef01f17c"
+    },
+    {
+      "path": "combined_candidate130/manifest.jsonl",
+      "bytes": 135400,
+      "sha256": "eab13b368b2ed7fc6c2d4aea39eb3fafce5458f5f7c65c15287ce5d16b07af8d"
+    },
+    {
+      "path": "combined_candidate130/manifest_valid.jsonl",
+      "bytes": 77754,
+      "sha256": "3b3523dc31b92f97206de1ab9e4e57dff0eeb22cec1535556eac3dab1201a426"
+    },
+    {
+      "path": "comgenvid_20/manifest.jsonl",
+      "bytes": 10468,
+      "sha256": "66b270757c988123a4388d4615e0e8c307f2c4cf236ef17d41a22e02738a61a0"
+    },
+    {
+      "path": "mech4fps_manifest.jsonl",
+      "bytes": 124035,
+      "sha256": "ec73d01a9bd78e9f8c7d3d1e01b0dc5fa8c277566cd399b3c37d66d8ac82eb21"
+    },
+    {
+      "path": "mech4fps_manifest_dedup.jsonl",
+      "bytes": 148828,
+      "sha256": "1f4085e20f39b643ad7929def15d0d880b985f9a76ce2a3d58b6f2d5e0aaed7c"
+    },
+    {
+      "path": "mech4fps_manifest_fixed.jsonl",
+      "bytes": 151268,
+      "sha256": "01f844f05939ee41934f175e839afda588f7227639ee13c9c7d2a6eed3ed73bd"
+    },
+    {
+      "path": "profile100/manifest.jsonl",
+      "bytes": 44100,
+      "sha256": "1e207419948d0f1c2b5edafda2df0a7154df01dba769c14791dd831613dae3cc"
+    },
+    {
+      "path": "real_manifest.jsonl",
+      "bytes": 24945,
+      "sha256": "3dc92541ffe7707dddbe99dc87ad64b89dab3f7946f5eabbe9d158c008d4e804"
+    },
+    {
+      "path": "runs/pair2_origin_audit_v1/manifest.json",
+      "bytes": 159436,
+      "sha256": "d78095cd936905333ff57f494436bcb5979abfe0ccb1fb3098fc6e65c96e7b9f"
+    },
+    {
+      "path": "runs/pair2_frozen_transfer_v2/accepted_manifest.json",
+      "bytes": 412328,
+      "sha256": "cad3bdd989c75403b67df87e96954650243b6cee3ae1e11d0c3087e1682c9235"
+    }
+  ],
+  "matching_rule": "exact basename/value match only across path, raw_path, archive_member, fake_file, real_file and sample_id; no semantic or fuzzy match",
+  "match_count": 0,
+  "matched_ids": [],
+  "media_read": false,
+  "models_or_gpu": false,
+  "conclusion": "The selected public validation IDs have zero exact metadata matches in the inspected existing server manifests. Public benchmark metadata and local development pool are separate; do not claim the server already contains AIGVDBench validation media. This does not prove no file exists elsewhere on the server and does not prove labels, ancestors, licence or timestamps."
+}
