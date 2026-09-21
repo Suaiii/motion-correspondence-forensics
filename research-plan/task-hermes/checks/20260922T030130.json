@@ -1,0 +1,13 @@
+{
+  "schema_version": 1,
+  "automation_id": "cvpr-2027",
+  "plan_version": "cvpr27-20260919-v1.5",
+  "checked_at": "2026-09-22T03:01:30.522253+08:00",
+  "timezone": "Asia/Shanghai",
+  "command": "C:/Users/ZHUyi/.cache/codex-runtimes/codex-primary-runtime/dependencies/python/python.exe -X utf8 research-plan/task-hermes/milestones.py check",
+  "notifications": [],
+  "quiet": true,
+  "should_pause": false,
+  "next_planned_notification_at": "2026-09-23T19:00:00+08:00",
+  "provenance": "Captured from actual milestones.py check stdout in the 2026-09-22 19:00+ local-day milestone branch; no acknowledgement because no notification was emitted."
+}
