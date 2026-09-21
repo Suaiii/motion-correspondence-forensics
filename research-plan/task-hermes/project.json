@@ -5791,6 +5791,119 @@
       "report_sha256": "dfef286b90d5cf728a5f193049568e986bb86f66c3f7200703b0fb064765511d",
       "record_sha256": "4478319f344f416705eadf30eaa1643acd703dcd993423d09032f9579dfc3050",
       "next_action": "Retain public split as ID-level evidence only; AL68/AL36 remain independent blocked follow-ups."
+    },
+    {
+      "id": "AL72",
+      "title": "文件ID互斥后的候选父来源交叉审查",
+      "milestone": "M2",
+      "assignee": "planagent",
+      "parents": [
+        "AL71"
+      ],
+      "requires_pass": [
+        "AL71"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "candidate_root_metadata_audit",
+      "hypothesis": "Distinct public train/val clip IDs may share filename-derived candidate parent identifiers; exact ID disjointness does not certify parent independence.",
+      "work": [
+        "Pin repository commit and bind train/val hashes",
+        "Apply one prespecified filename grammar",
+        "Count cross-split candidate roots, coverage and explicit witnesses"
+      ],
+      "acceptance": [
+        "Computed raw evidence with source/config hashes",
+        "Unknown identifiers kept separate; no automatic ancestor/camera inference",
+        "No test/media/model/server/GPU access"
+      ],
+      "artifacts": [
+        "../reviews/AL72_CANDIDATE_ROOT_SPLIT_REVIEW_20260922.md",
+        "../reviews/AL72_EVIDENCE_20260922.json",
+        "../reviews/al72_candidate_roots.py"
+      ],
+      "work_order": "../AL72_CANDIDATE_ROOT_SPLIT_AUDIT_20260922.md",
+      "work_order_sha256": "f0b124e860029d947e89b0c3d933bb99a5e448e7e305e17ee90ec6958963a45b",
+      "prepared_at": "2026-09-22T03:13:41+08:00",
+      "started_at": "2026-09-22T03:13:41+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "scientific_innovation_gate_passed": false,
+      "resource_policy": {
+        "public_text_max_bytes": 25165824,
+        "file_max_bytes": 12582912,
+        "metadata_parsing": true,
+        "server_access": false,
+        "media": false,
+        "model": false,
+        "GPU": false
+      },
+      "completed_at": "2026-09-22T03:16:58+08:00",
+      "updated_at": "2026-09-22T03:16:58+08:00",
+      "dispatch_status": "completed_local_candidate_root_audit",
+      "report": "../reviews/AL72_CANDIDATE_ROOT_SPLIT_REVIEW_20260922.md",
+      "record": "../reviews/AL72_EVIDENCE_20260922.json",
+      "report_sha256": "cdb3256c043216741f5eb5ac8c559c58aa576fa2083b9af33d3b5caca65ff38b",
+      "record_sha256": "2748dcef7a7c77e42a33ffc008047b9ff85d19d8b7f71ff3b24c030f048cd7e3",
+      "next_action": "Prepare AL73 source/ancestor mapping follow-up from concrete shared-root evidence; AL36/AL68 remain blocked and are not resent."
+    },
+    {
+      "id": "AL73",
+      "title": "公开候选root的来源映射核验",
+      "milestone": "M2",
+      "assignee": "planagent",
+      "parents": [
+        "AL72"
+      ],
+      "requires_pass": [
+        "AL72"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "public_root_mapping_metadata_audit",
+      "hypothesis": "The author release may provide explicit source/generator mapping that explains filename-derived cross-split root overlap; if absent, overlap remains an unverified risk.",
+      "work": [
+        "Pin repository tree and bounded mapping-like files",
+        "Match explicit fields to AL72 candidate roots and IDs",
+        "Separate mapping evidence from aggregate model/source claims"
+      ],
+      "acceptance": [
+        "Actual GitHub request, input and output hashes",
+        "Computed mapping coverage/conflicts/missingness",
+        "No test/media/model/weights or ancestry inference from names"
+      ],
+      "artifacts": [
+        "../reviews/AL73_PUBLIC_ROOT_MAPPING_REVIEW_20260922.md",
+        "../reviews/AL73_EVIDENCE_20260922.json",
+        "../reviews/al73_public_root_mapping.py"
+      ],
+      "work_order": "../AL73_PUBLIC_ROOT_MAPPING_AUDIT_20260922.md",
+      "work_order_sha256": "6969fed683edc47b615bd7eff7ab2509dd7802443554673a174cb67eaf991d86",
+      "prepared_at": "2026-09-22T03:17:59+08:00",
+      "started_at": "2026-09-22T03:17:59+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "scientific_innovation_gate_passed": false,
+      "resource_policy": {
+        "public_requests_max": 4,
+        "public_bytes_max": 25165824,
+        "file_bytes_max": 4194304,
+        "test_access": false,
+        "media": false,
+        "model": false,
+        "server": false,
+        "gpu": false
+      },
+      "completed_at": "2026-09-22T03:22:55+08:00",
+      "updated_at": "2026-09-22T03:22:55+08:00",
+      "dispatch_status": "completed_local_public_mapping_audit",
+      "report": "../reviews/AL73_PUBLIC_ROOT_MAPPING_REVIEW_20260922.md",
+      "record": "../reviews/AL73_EVIDENCE_20260922.json",
+      "report_sha256": "0ca0a54fc0ed6b72e7def9bc121939fb23e6b66fe3e2df8b7cd1722b17ad2888",
+      "record_sha256": "b8201a92cf6b689cfa8fad20cd92eb21d645811cb384361dda530f3e3ab5fc77",
+      "next_action": "Retain shared-root risk; next source/ancestor audit requires authorized mapping or media evidence. AL36/AL68 remain independent blocked follow-ups."
     }
   ],
   "storage_policy": {
@@ -7222,7 +7335,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T03:01:30.522253+08:00",
+  "updated_at": "2026-09-22T03:22:55+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -8091,7 +8204,7 @@
       "status": "superseded_by_user_managed_billing",
       "resolution": "User explicitly said billing need not be managed by assistant; do not repeat billing questions."
     },
-    "last_coordinator_activity_at": "2026-09-22T01:49:54+08:00",
+    "last_coordinator_activity_at": "2026-09-22T03:22:55+08:00",
     "research_observed_status": "systemError_missing_codex_local_access_provider_no_artifact",
     "dispatch_history": [
       {
@@ -9473,6 +9586,44 @@
         "remote_send_required": false,
         "background_process_running": false,
         "archived_at": "2026-09-22T01:49:54+08:00"
+      },
+      {
+        "id": "cc-al72-root-split-review-20260922",
+        "task_ids": [
+          "AL72"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T03:13:41+08:00",
+        "started_at": "2026-09-22T03:13:41+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_order": "../AL72_CANDIDATE_ROOT_SPLIT_AUDIT_20260922.md",
+        "work_order_sha256": "f0b124e860029d947e89b0c3d933bb99a5e448e7e305e17ee90ec6958963a45b",
+        "scope": "Pinned public train/val candidate root audit only",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "archived_at": "2026-09-22T03:16:58+08:00"
+      },
+      {
+        "id": "cc-al73-public-root-mapping-20260922",
+        "task_ids": [
+          "AL73"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T03:17:59+08:00",
+        "started_at": "2026-09-22T03:17:59+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_order": "../AL73_PUBLIC_ROOT_MAPPING_AUDIT_20260922.md",
+        "work_order_sha256": "6969fed683edc47b615bd7eff7ab2509dd7802443554673a174cb67eaf991d86",
+        "scope": "Bounded public source/root mapping metadata only",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "archived_at": "2026-09-22T03:22:55+08:00"
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
@@ -9822,9 +9973,9 @@
     },
     "last_progress_at": "2026-09-20T01:35:16+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T01:49:54+08:00",
-      "decision": "no current remote wait",
-      "reason": "AL71 complete; AL68 and AL36 remain queued/blocked after recorded research-window startup failure; no duplicate send."
+      "at": "2026-09-22T03:22:55+08:00",
+      "decision": "no remote wait",
+      "reason": "AL73 completed public mapping audit; no supported recovery for external research window."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",

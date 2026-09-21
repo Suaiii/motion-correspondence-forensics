@@ -1,0 +1,321 @@
+{
+  "task_id": "AL72",
+  "started_at": "2026-09-22T03:15:29.819+08:00",
+  "executor": "planagent",
+  "source_sha256": "ee35220aefeebb163381cecff9fa2bac3f6d040002ab93f2e38d14c4dc6677be",
+  "work_order_sha256": "f0b124e860029d947e89b0c3d933bb99a5e448e7e305e17ee90ec6958963a45b",
+  "prior_record_sha256": "4478319f344f416705eadf30eaa1643acd703dcd993423d09032f9579dfc3050",
+  "config": {
+    "filename_pattern": "^(?P<root>[A-Za-z0-9_-]{11})_(?P<scene>[0-9]+)_(?P<start>[0-9]+)to(?P<end>[0-9]+)\\.mp4$",
+    "case_sensitive": true,
+    "valid_interval": "end > start; units and semantic meaning unverified",
+    "max_requests": 4,
+    "max_file_bytes": 12582912,
+    "max_total_bytes": 25165824,
+    "witness_limit": 10,
+    "unknown_policy": "retain unmatched identifiers; do not infer a parent",
+    "test_media_model_ssh_access": false
+  },
+  "config_sha256": "1e7463b0254e1cdc8143dc02ba1ecd4148864c2246558d0628befaa542f8e72c",
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/commits/main",
+      "started_at": "2026-09-22T03:15:29.820+08:00",
+      "byte_cap": 1048576,
+      "status": 200,
+      "final_url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/commits/main",
+      "content_length_header": "5438",
+      "bytes_read": 5438,
+      "sha256": "4c53200016b00d0cb460cfed0f7f2777fb5708da41f246a40152d768e391f0a1",
+      "finished_at": "2026-09-22T03:15:30.934+08:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/README.md",
+      "started_at": "2026-09-22T03:15:30.934+08:00",
+      "byte_cap": 1048576,
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/README.md",
+      "content_length_header": "5674",
+      "bytes_read": 5674,
+      "sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962",
+      "finished_at": "2026-09-22T03:15:31.441+08:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/data_splits/train.jsonl",
+      "started_at": "2026-09-22T03:15:31.441+08:00",
+      "byte_cap": 12582912,
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/data_splits/train.jsonl",
+      "content_length_header": "8610190",
+      "bytes_read": 8610190,
+      "sha256": "46fcf59f24b742af7c6c3e9d4907b9c9dba451c6c8ca1dcd7016949202d07012",
+      "finished_at": "2026-09-22T03:15:32.597+08:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/data_splits/val.jsonl",
+      "started_at": "2026-09-22T03:15:32.751+08:00",
+      "byte_cap": 12582912,
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/data_splits/val.jsonl",
+      "content_length_header": "1846793",
+      "bytes_read": 1846793,
+      "sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+      "finished_at": "2026-09-22T03:15:33.674+08:00"
+    }
+  ],
+  "scope": "public train/val metadata only",
+  "independent_scientific_review": false,
+  "git_revision": "e38c75abda3d319c0c3072c77594f6eeef1c028f",
+  "commit_date": "2026-03-26T12:29:11Z",
+  "readme_sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962",
+  "readme_public_split_section_present": true,
+  "status": "completed_metadata_calculation",
+  "splits": {
+    "train": {
+      "bytes": 8610190,
+      "sha256": "46fcf59f24b742af7c6c3e9d4907b9c9dba451c6c8ca1dcd7016949202d07012",
+      "matches_AL71_sha256": true,
+      "line_count": 14000,
+      "blank_lines": 0,
+      "parse_errors": [],
+      "missing_id": 0,
+      "id_rows": 14000,
+      "unique_ids": 14000,
+      "duplicate_id_occurrences": 0,
+      "field_presence": {
+        "Video_id": 14000,
+        "Video_Prompts": 14000
+      },
+      "grammar_valid_rows": 13997,
+      "grammar_unknown_rows": 3,
+      "invalid_interval_rows": 0,
+      "grammar_coverage_fraction": [
+        13997,
+        14000
+      ],
+      "candidate_roots": 12952,
+      "unknown_examples": [
+        "magictime_7136539298299530527_0022.mp4",
+        "magictime_7074427242935291140_0005.mp4",
+        "magictime_7191480235102113080.mp4"
+      ],
+      "candidate_roots_digest": "825d519452efd639d27ce603a848cc34ca2b974b6dcd22f6aaf3696272265d7c",
+      "all_ids_sha256": "af7376476b9c2821d012769d31e25ee19d892ed6b0347fd24516e7da7f3c0829"
+    },
+    "val": {
+      "bytes": 1846793,
+      "sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+      "matches_AL71_sha256": true,
+      "line_count": 3000,
+      "blank_lines": 0,
+      "parse_errors": [],
+      "missing_id": 0,
+      "id_rows": 3000,
+      "unique_ids": 3000,
+      "duplicate_id_occurrences": 0,
+      "field_presence": {
+        "Video_id": 3000,
+        "Video_Prompts": 3000
+      },
+      "grammar_valid_rows": 2999,
+      "grammar_unknown_rows": 1,
+      "invalid_interval_rows": 0,
+      "grammar_coverage_fraction": [
+        2999,
+        3000
+      ],
+      "candidate_roots": 2951,
+      "unknown_examples": [
+        "magictime_7180571818497985847_0023.mp4"
+      ],
+      "candidate_roots_digest": "f60271f1d3d16e96154c0719c5151fe5cb0feddd6a4834585e323771e5aa67e4",
+      "all_ids_sha256": "3d5e5b190913042f6676563ab0beb477cd56acc92b6c463a2cad3cb01110320b"
+    }
+  },
+  "exact_id_intersection": 0,
+  "shared_candidate_roots": 446,
+  "shared_root_digest": "a35aff473ff9d744bec4d228b7e7f54e301b75306c9bac08f7902da974fe4e23",
+  "rows_with_shared_candidate_root": {
+    "train": 561,
+    "val": 467
+  },
+  "witnesses": [
+    {
+      "candidate_root": "-96ZdwBoT3Y",
+      "train": {
+        "id": "-96ZdwBoT3Y_177_0to114.mp4",
+        "scene": 177,
+        "start": 0,
+        "end": 114
+      },
+      "val": {
+        "id": "-96ZdwBoT3Y_297_0to110.mp4",
+        "scene": 297,
+        "start": 0,
+        "end": 110
+      },
+      "train_rows": 1,
+      "val_rows": 1
+    },
+    {
+      "candidate_root": "-Kbq8GHp7Z0",
+      "train": {
+        "id": "-Kbq8GHp7Z0_39_0to175.mp4",
+        "scene": 39,
+        "start": 0,
+        "end": 175
+      },
+      "val": {
+        "id": "-Kbq8GHp7Z0_7_22to220.mp4",
+        "scene": 7,
+        "start": 22,
+        "end": 220
+      },
+      "train_rows": 1,
+      "val_rows": 1
+    },
+    {
+      "candidate_root": "-ShNuJOAYSA",
+      "train": {
+        "id": "-ShNuJOAYSA_109_0to268.mp4",
+        "scene": 109,
+        "start": 0,
+        "end": 268
+      },
+      "val": {
+        "id": "-ShNuJOAYSA_117_105to375.mp4",
+        "scene": 117,
+        "start": 105,
+        "end": 375
+      },
+      "train_rows": 1,
+      "val_rows": 2
+    },
+    {
+      "candidate_root": "-VgxU81e2sc",
+      "train": {
+        "id": "-VgxU81e2sc_45_0to109.mp4",
+        "scene": 45,
+        "start": 0,
+        "end": 109
+      },
+      "val": {
+        "id": "-VgxU81e2sc_49_0to174.mp4",
+        "scene": 49,
+        "start": 0,
+        "end": 174
+      },
+      "train_rows": 1,
+      "val_rows": 1
+    },
+    {
+      "candidate_root": "-X4FMivXgxY",
+      "train": {
+        "id": "-X4FMivXgxY_102_226to335.mp4",
+        "scene": 102,
+        "start": 226,
+        "end": 335
+      },
+      "val": {
+        "id": "-X4FMivXgxY_33_64to173.mp4",
+        "scene": 33,
+        "start": 64,
+        "end": 173
+      },
+      "train_rows": 1,
+      "val_rows": 1
+    },
+    {
+      "candidate_root": "-YEwPnVOTpw",
+      "train": {
+        "id": "-YEwPnVOTpw_27_0to268.mp4",
+        "scene": 27,
+        "start": 0,
+        "end": 268
+      },
+      "val": {
+        "id": "-YEwPnVOTpw_14_0to108.mp4",
+        "scene": 14,
+        "start": 0,
+        "end": 108
+      },
+      "train_rows": 1,
+      "val_rows": 1
+    },
+    {
+      "candidate_root": "-ZdZ2by9hIc",
+      "train": {
+        "id": "-ZdZ2by9hIc_4_0to169.mp4",
+        "scene": 4,
+        "start": 0,
+        "end": 169
+      },
+      "val": {
+        "id": "-ZdZ2by9hIc_1_0to224.mp4",
+        "scene": 1,
+        "start": 0,
+        "end": 224
+      },
+      "train_rows": 1,
+      "val_rows": 2
+    },
+    {
+      "candidate_root": "-evyEcg7-uQ",
+      "train": {
+        "id": "-evyEcg7-uQ_43_222to394.mp4",
+        "scene": 43,
+        "start": 222,
+        "end": 394
+      },
+      "val": {
+        "id": "-evyEcg7-uQ_43_85to222.mp4",
+        "scene": 43,
+        "start": 85,
+        "end": 222
+      },
+      "train_rows": 1,
+      "val_rows": 1
+    },
+    {
+      "candidate_root": "-g50xK-gyyM",
+      "train": {
+        "id": "-g50xK-gyyM_144_103to204.mp4",
+        "scene": 144,
+        "start": 103,
+        "end": 204
+      },
+      "val": {
+        "id": "-g50xK-gyyM_363_0to137.mp4",
+        "scene": 363,
+        "start": 0,
+        "end": 137
+      },
+      "train_rows": 3,
+      "val_rows": 1
+    },
+    {
+      "candidate_root": "073BMGVWan0",
+      "train": {
+        "id": "073BMGVWan0_11_54to213.mp4",
+        "scene": 11,
+        "start": 54,
+        "end": 213
+      },
+      "val": {
+        "id": "073BMGVWan0_175_0to201.mp4",
+        "scene": 175,
+        "start": 0,
+        "end": 201
+      },
+      "train_rows": 1,
+      "val_rows": 2
+    }
+  ],
+  "second_path_counts_agree": true,
+  "limitation": "Root semantics and visual ancestry remain unverified; filenames alone do not establish leakage or label correctness.",
+  "finished_at": "2026-09-22T03:15:33.720+08:00",
+  "total_http_body_bytes_read": 10468095,
+  "wall_seconds": 3.9010938000028546,
+  "process_cpu_seconds": 0.25,
+  "python": "3.12.14"
+}

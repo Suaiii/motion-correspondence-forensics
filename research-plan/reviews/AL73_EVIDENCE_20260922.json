@@ -1,0 +1,121 @@
+{
+  "task_id": "AL73",
+  "started_at": "2026-09-22T03:20:31.595+08:00",
+  "source_sha256": "a6318e0309c041e26306b5963ff4e227c82352b471fc094e6debf0465b00b6c1",
+  "work_order_sha256": "6969fed683edc47b615bd7eff7ab2509dd7802443554673a174cb67eaf991d86",
+  "AL72_evidence_sha256": "2748dcef7a7c77e42a33ffc008047b9ff85d19d8b7f71ff3b24c030f048cd7e3",
+  "scope": "bounded GitHub tree and mapping-like text metadata; no test/media/model/weights",
+  "requests": [
+    {
+      "url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/commits/main",
+      "started_at": "2026-09-22T03:21:52.774+08:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/commits/main",
+      "content_length": "5438",
+      "bytes": 5438,
+      "sha256": "4c53200016b00d0cb460cfed0f7f2777fb5708da41f246a40152d768e391f0a1",
+      "finished_at": "2026-09-22T03:21:53.786+08:00"
+    },
+    {
+      "url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/git/trees/e38c75abda3d319c0c3072c77594f6eeef1c028f?recursive=1",
+      "started_at": "2026-09-22T03:21:53.787+08:00",
+      "status": 200,
+      "final_url": "https://api.github.com/repos/LongMa-2025/AIGVDBench/git/trees/e38c75abda3d319c0c3072c77594f6eeef1c028f?recursive=1",
+      "content_length": "1775",
+      "bytes": 1775,
+      "sha256": "13e053ec667b771057e2811b71456790ec63f115ca6f6945607aa38e3f5a2d1c",
+      "finished_at": "2026-09-22T03:21:54.804+08:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/README.md",
+      "started_at": "2026-09-22T03:21:54.804+08:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/README.md",
+      "content_length": "5674",
+      "bytes": 5674,
+      "sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962",
+      "finished_at": "2026-09-22T03:21:55.042+08:00"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/data_splits/val.jsonl",
+      "started_at": "2026-09-22T03:21:55.042+08:00",
+      "status": 200,
+      "final_url": "https://raw.githubusercontent.com/LongMa-2025/AIGVDBench/e38c75abda3d319c0c3072c77594f6eeef1c028f/data_splits/val.jsonl",
+      "content_length": "1846793",
+      "bytes": 1846793,
+      "sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+      "finished_at": "2026-09-22T03:21:55.326+08:00"
+    }
+  ],
+  "selection": {
+    "max_requests": 4,
+    "max_total_body_bytes": 25165824,
+    "max_selected_files": 5,
+    "max_file_bytes": 4194304,
+    "terms": "(source|origin|metadata|lineage|ancestor|mapping|label|model|generator|split|readme)"
+  },
+  "revision": "e38c75abda3d319c0c3072c77594f6eeef1c028f",
+  "commit_date": "2026-03-26T12:29:11Z",
+  "tree_truncated": false,
+  "tree_entry_count": 7,
+  "candidate_files": [
+    {
+      "path": "README.md",
+      "size": 5674,
+      "sha": "205aea1c7b956dec3f05bbaa7ccc94e31847fbcd"
+    },
+    {
+      "path": "data_splits/val.jsonl",
+      "size": 1846793,
+      "sha": "fc6c09df6893504cdd8758789e431dd3be2f420b"
+    }
+  ],
+  "status": "completed",
+  "selected_files": [
+    {
+      "path": "README.md",
+      "declared_size": 5674,
+      "bytes": 5674,
+      "sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962",
+      "top_keys": [],
+      "rows": 0,
+      "parse_errors": 0,
+      "mapping_hits": 0,
+      "root_hits": 0,
+      "text_terms": {
+        "source": 18,
+        "origin": 0,
+        "lineage": 0,
+        "ancestor": 0,
+        "generator": 0,
+        "model": 30,
+        "label": 0,
+        "split": 5
+      },
+      "request_sha256": "cf5f379b56d490a1aad05f77a683846a70ac9ef3415d262a2939fd9dfa7a9962"
+    },
+    {
+      "path": "data_splits/val.jsonl",
+      "declared_size": 1846793,
+      "bytes": 1846793,
+      "sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+      "top_keys": [
+        "Video_Prompts",
+        "Video_id"
+      ],
+      "rows": 3000,
+      "parse_errors": 0,
+      "mapping_hits": 3000,
+      "root_hits": 13,
+      "request_sha256": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f"
+    }
+  ],
+  "root_witness_basis": "AL72 witnesses only; no complete root set inferred",
+  "conclusion": "No verified visual-ancestor mapping is inferred from path names or aggregate fields; explicit fields remain schema evidence only.",
+  "finished_at": "2026-09-22T03:20:34.762+08:00",
+  "total_http_body_bytes_read": 1859680,
+  "record_sha256": "d9a7340b5345efac80280984ba4476f45d110266fb4c301cea7f67a94e9e405c",
+  "previous_record_sha256": "cc7edf02df0082161b2b88e03a3f3b712559d1f42a42584a36bacef4b9bcd590",
+  "repair_reason": "Original AL73 first-pass record omitted request receipt entries; same bounded public requests were repeated and now recorded.",
+  "repaired_at": "2026-09-22T03:21:55.497+08:00"
+}
