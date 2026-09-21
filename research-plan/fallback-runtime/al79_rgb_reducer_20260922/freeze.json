@@ -1,0 +1,21 @@
+{
+  "task_id": "AL79",
+  "frozen_at": "2026-09-22T07:19:22.978+08:00",
+  "source_inputs": {
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/config.json": "139c8bcfbd4a5113a539354a1e164abbd4615a4f7953bb4e57e2ef34da9cf620",
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679",
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/reference.py": "dbc61b1f851950e4506121d3d1683949761be67f4afd5ef0e8f792956e8fc36f",
+    "research-plan/fallback-runtime/al79_rgb_reducer_20260922/run_batch.py": "d5f6ff486ac5b3d0dba071d591e9671afb8e7d0314a596d5cb2527cebe2aae41",
+    "research-plan/AL79_PER_SAMPLE_STREAMING_RGB_CPU_20260922.md": "713662ad90e6df0b03712aaf91cfa723a1be17f791f3191fc25e19b2cf44bfe2"
+  },
+  "protected": {
+    "research-plan/fallback-runtime/al78_rgb_reducer_20260922/config.json": "ac47232dcae8d25d5ff8d276dd0edb3205a6ae9330ec9257796b96475e0255c9",
+    "research-plan/fallback-runtime/al78_rgb_reducer_20260922/HANDOFF.md": "0808a9e65dc7f341bdd9c21927833bb2913a3b387ea5848d4f798f6207bd003c",
+    "research-plan/fallback-runtime/al78_rgb_reducer_20260922/PROTOCOL.md": "964bd065067810f03e6e19739afb0f67f4fdac8e813b21df70402b208dca9480",
+    "research-plan/fallback-runtime/al78_rgb_reducer_20260922/reducer.py": "444852c59aef4af22968415d2809ae13aa7dcf9bf0025b23fb508fe36a896f05",
+    "research-plan/fallback-runtime/al78_rgb_reducer_20260922/run_batch.py": "f0795c9ac00fa2b0ef9afde02ae2d76ad0cdeb2e07eacd31c393f816961dc592",
+    "research-plan/fallback-runtime/al78_rgb_reducer_20260922/run_v1/evidence.json": "10a6eebd2d3cfb4001f7ad3307842995285f10aa2621d2137eb5925c36efc4e3",
+    "research-runtime/algorithm_candidates/or1_filtered_readout/readout.py": "c189fc469f38ca576f91e220f11a9bfe897941a6331950758c6506b20e68a53b",
+    "research-runtime/algorithm_candidates/or1_stable_baseline_reference/kernels.py": "3ee0b2696de3e402d8fb1a83f58a9da8df08d7cb5201cca21155ab04306a70e4"
+  }
+}
