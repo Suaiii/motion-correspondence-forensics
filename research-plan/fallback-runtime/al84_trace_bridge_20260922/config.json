@@ -1,0 +1,14 @@
+{
+  "task_id": "AL84",
+  "version": "precomputed-four-call-rgb-bridge-v1",
+  "stage": "OR1",
+  "h": 0.125,
+  "shape": [1, 2, 5, 5, 3],
+  "layout": "BTHWC",
+  "time_slots": [0, 1],
+  "expected_roles": ["Ra_x", "Rb_x", "Ra_Pb", "Rb_Pa"],
+  "invalid_cases": ["wrong_sample", "wrong_probe", "wrong_stage", "wrong_layout", "wrong_shape", "wrong_time_slots", "duplicate_role", "missing_role"],
+  "max_array_bytes": 2097152,
+  "al79_blocks": [[0, 1], [1, 2]],
+  "network_media_models_server_gpu": false
+}

@@ -6563,7 +6563,7 @@
       "handoff": "../fallback-runtime/al83_shared_auc_20260922/HANDOFF.md",
       "handoff_sha256": "a6cad16619234e0471ed4a9f4ec9469c2db2ad267c2bb525ab52ff438ff93552",
       "execution_attempts": 5,
-      "next_action": "Preserve all failures; do not use as real evaluator. Continue independent AL84 package."
+      "next_action": "Preserve all failures; do not use as real evaluator. AL84 completed as separate software-only bridge; continue AL36/AL68 blocked follow-ups."
     },
     {
       "id": "AL84",
@@ -6578,8 +6578,8 @@
         "AL15",
         "AL79"
       ],
-      "status": "ready",
-      "gate_result": "not_evaluated",
+      "status": "done",
+      "gate_result": "pass",
       "gate_scope": "precomputed_probe_trace_bridge_software",
       "hypothesis": "A precomputed four-call identity bridge can reject mismatched records before RGB reduction",
       "work": [
@@ -6594,8 +6594,14 @@
       ],
       "artifacts": [
         "../fallback-runtime/al84_trace_bridge_20260922/bridge.py",
+        "../fallback-runtime/al84_trace_bridge_20260922/reference.py",
         "../fallback-runtime/al84_trace_bridge_20260922/config.json",
+        "../fallback-runtime/al84_trace_bridge_20260922/input.json",
+        "../fallback-runtime/al84_trace_bridge_20260922/freeze.json",
+        "../fallback-runtime/al84_trace_bridge_20260922/freeze_v1.json",
+        "../fallback-runtime/al84_trace_bridge_20260922/run_v0_startup_error.json",
         "../fallback-runtime/al84_trace_bridge_20260922/run_v1/evidence.json",
+        "../reviews/AL84_REVIEW_20260922.md",
         "../fallback-runtime/al84_trace_bridge_20260922/HANDOFF.md"
       ],
       "work_order": "../AL84_FOUR_CALL_TRACE_RGB_BRIDGE_20260922.md",
@@ -6619,7 +6625,42 @@
         "server": false,
         "gpu": false,
         "bootstrap": false
-      }
+      },
+      "hypothesis_result": "software_contract_supported_precomputed_only",
+      "dispatch_status": "completed_fallback_software",
+      "started_at": "2026-09-22T09:35:22+08:00",
+      "completed_at": "2026-09-22T09:46:49+08:00",
+      "updated_at": "2026-09-22T09:46:49+08:00",
+      "execution_attempts": 2,
+      "evidence_record": "../fallback-runtime/al84_trace_bridge_20260922/run_v1/evidence.json",
+      "evidence_sha256": "d124146a90f8c7dc4ed26aa8601a7d95269783be23635cb8c4629cb14fe0e55e",
+      "handoff": "../fallback-runtime/al84_trace_bridge_20260922/HANDOFF.md",
+      "handoff_sha256": "1065395b09943ed8ecbd8aa272174f0293bfd659429633f50dab4df3db206e51",
+      "freeze": "../fallback-runtime/al84_trace_bridge_20260922/freeze.json",
+      "source_sha256": {
+        "bridge.py": "25272f3db510d361672491de5eedce0d30898af0f0f46ea2babf957d57cbaaf9",
+        "reference.py": "d6656fadc940d5be0d0c9dd5fa1e61da4ff121a6c6bd7ac93204bcb439407cd4",
+        "run_batch.py": "1bac5b808333475ec595b8a1cd39337e0b8b39f1dabc1e59a1742cc74bde0f3b",
+        "config.json": "49fa652d80f82cdd0983dd314df4d8e65bca8add377b418e581025a8b32e58e9",
+        "input.json": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
+        "al79_reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679"
+      },
+      "measured_resources": {
+        "wall_seconds": 0.014186499996867497,
+        "network": 0,
+        "media": 0,
+        "server": 0,
+        "models": 0,
+        "gpu": 0,
+        "valid_call_count": 4,
+        "invalid_cases": 8
+      },
+      "next_action": "Preserve software-only bridge result; AL36 adversarial review and AL68 existing-data readiness remain separate blocked follow-ups; real probe and efficacy gates stay closed.",
+      "review": "../reviews/AL84_REVIEW_20260922.md",
+      "review_sha256": "472e2612cb80e72f91f20104ff2d6c9c57389ef9ac92f5ed4a64cc4635f3e63d",
+      "reviewed_by": "planagent",
+      "reviewed_at": "2026-09-22T09:48:14+08:00",
+      "review_scope": "source, hash, derivation, bounded rejection and alternative-explanation review; not independent scientific replication"
     }
   ],
   "storage_policy": {
@@ -8926,7 +8967,7 @@
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
-      "status": "al83_failed_al84_prepared",
+      "status": "al83_failed_al84_done",
       "prepared_at": "2026-09-22T09:15:08+08:00",
       "started_at": "2026-09-22T09:15:08+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
@@ -8937,7 +8978,9 @@
       "remote_send_required": false,
       "background_process_running": false,
       "scope": "Local independent shared-negative statistic and precomputed RGB trace bridge; no model/media/server",
-      "updated_at": "2026-09-22T09:29:56+08:00"
+      "updated_at": "2026-09-22T09:46:49+08:00",
+      "completed_at": "2026-09-22T09:46:49+08:00",
+      "next_action": "AL83 fail preserved; AL84 software pass scoped; AL36 and AL68 remain independent blocked follow-ups."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -10858,11 +10901,11 @@
       "paused_at": "2026-09-20T01:35:16+08:00",
       "pause_receipt": "../reviews/SERVER_SHUTDOWN_PAUSE_20260920.json"
     },
-    "last_progress_at": "2026-09-22T07:23:20+08:00",
+    "last_progress_at": "2026-09-22T09:48:14+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T09:29:56+08:00",
+      "at": "2026-09-22T09:48:14+08:00",
       "decision": "no remote wait",
-      "reason": "AL83 ended fail; independent AL84 remains prepared. External package still blocked, no resend."
+      "reason": "AL84 reviewed and archived as scoped software pass; provider-blocked AL68/AL36 package remains unsent."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",

@@ -1,0 +1,109 @@
+{
+  "task_id": "AL84",
+  "version": "precomputed-four-call-rgb-bridge-v1",
+  "software_pass": true,
+  "input_sha256": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
+  "config_sha256": "49fa652d80f82cdd0983dd314df4d8e65bca8add377b418e581025a8b32e58e9",
+  "source_sha256": {
+    "bridge.py": "25272f3db510d361672491de5eedce0d30898af0f0f46ea2babf957d57cbaaf9",
+    "reference.py": "d6656fadc940d5be0d0c9dd5fa1e61da4ff121a6c6bd7ac93204bcb439407cd4",
+    "run_batch.py": "1bac5b808333475ec595b8a1cd39337e0b8b39f1dabc1e59a1742cc74bde0f3b",
+    "config.json": "49fa652d80f82cdd0983dd314df4d8e65bca8add377b418e581025a8b32e58e9",
+    "input.json": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
+    "al79_reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679"
+  },
+  "reference_checks": {
+    "reference_d_a": true,
+    "reference_d_b": true,
+    "reference_v_a": true,
+    "reference_v_b": true,
+    "reference_K": true
+  },
+  "valid_case": {
+    "passed": true,
+    "checks": {
+      "reference_d_a": true,
+      "reference_d_b": true,
+      "reference_v_a": true,
+      "reference_v_b": true,
+      "reference_K": true
+    },
+    "reducer": {
+      "version": "rgb-reducer-v2",
+      "samples": 1,
+      "filter_calls": 40,
+      "q4": [
+        2.7471450017868068e-05,
+        0.0004018802263892977,
+        8.563027509734324e-05,
+        8.56306072081969e-05
+      ]
+    }
+  },
+  "invalid_cases": [
+    {
+      "id": "wrong_sample",
+      "passed": true,
+      "error": "call_identity"
+    },
+    {
+      "id": "wrong_probe",
+      "passed": true,
+      "error": "role_binding"
+    },
+    {
+      "id": "wrong_stage",
+      "passed": true,
+      "error": "stage"
+    },
+    {
+      "id": "wrong_layout",
+      "passed": true,
+      "error": "support_contract"
+    },
+    {
+      "id": "wrong_shape",
+      "passed": true,
+      "error": "call_identity"
+    },
+    {
+      "id": "wrong_time_slots",
+      "passed": true,
+      "error": "call_identity"
+    },
+    {
+      "id": "duplicate_role",
+      "passed": true,
+      "error": "duplicate_role"
+    },
+    {
+      "id": "missing_role",
+      "passed": true,
+      "error": "call_count"
+    }
+  ],
+  "derived_field_sha256": {
+    "d_a": "ec1661505bece360ad36c32d0fac2b18c829051b881a4003ca6811530b250a49",
+    "d_b": "22fb1ab8abee7156b35d9f6a33f1685c3d3aeed942b0a41c9cb5094be1ad7a59",
+    "v_a": "c86a6e678426e88c94a9f2153aa2ad263859d0cf919bd6ddbc2e1120a1bc873b",
+    "v_b": "4103206ac1c86fd60505eb11fea0d5fe28c28c751147ae16d92e9e26979f080a"
+  },
+  "call_roles": [
+    "Ra_x",
+    "Rb_x",
+    "Ra_Pb",
+    "Rb_Pa"
+  ],
+  "call_count": 4,
+  "reducer_scope": "one bounded AL79 call only",
+  "resources": {
+    "network": 0,
+    "media": 0,
+    "server": 0,
+    "gpu": 0,
+    "models": 0,
+    "wall_seconds": 0.014186499996867497
+  },
+  "scientific_breakthrough": false,
+  "scope": "precomputed mock identity and RGB reducer bridge; no real probe, weights, media or efficacy"
+}

@@ -1,0 +1,16 @@
+{
+  "task_id": "AL84",
+  "run": "startup_v0",
+  "status": "failed_before_batch",
+  "observed_at": "2026-09-22T09:35:22+08:00",
+  "error": "FileNotFoundError: AL79 reducer path used ROOT.parents[3], resolving outside workspace",
+  "source_sha256": {
+    "bridge.py": "25272f3db510d361672491de5eedce0d30898af0f0f46ea2babf957d57cbaaf9",
+    "reference.py": "d6656fadc940d5be0d0c9dd5fa1e61da4ff121a6c6bd7ac93204bcb439407cd4",
+    "run_batch.py": "6c41ac150297bd86e88a27454336be0fde1018095df57e9a04ef1d529a596663",
+    "config.json": "49fa652d80f82cdd0983dd314df4d8e65bca8add377b418e581025a8b32e58e9",
+    "input.json": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
+    "al79_reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679"
+  },
+  "scientific_breakthrough": false
+}
