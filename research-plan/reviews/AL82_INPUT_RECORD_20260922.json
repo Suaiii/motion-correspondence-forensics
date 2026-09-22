@@ -1,0 +1,95 @@
+{
+  "task_id": "AL82",
+  "reviewed_at": "2026-09-22T08:12:02+08:00",
+  "source_hashes": {
+    "AL45_work_order": {
+      "path": "research-plan/AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
+      "sha256": "3b31d2d4de984f4dfa83d6cff995ad067b16e41ff82ee2803f7bccd84f7bbb18",
+      "bytes": 1574
+    },
+    "AL45_review": {
+      "path": "research-plan/reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md",
+      "sha256": "855f6acfe3eac5e8719c703887c1fccc9aecfddce66a0e325f4efbbcfd9043f9",
+      "bytes": 6739
+    },
+    "AL45_record": {
+      "path": "research-plan/reviews/AL45_BASELINE_SELECTION_PRIMARY_RECORD_20260919.json",
+      "sha256": "faddb3a4044f34bdc4721407bcd305c46418282710851ea6bf7514b0875a75c8",
+      "bytes": 897
+    },
+    "AL45_jmlr_continuation": {
+      "path": "research-plan/reviews/AL45_JMLR_CONTINUATION_20260922.md",
+      "sha256": "84288a497748d183fd89da4e17ed948a50f5b57b2be3fe697a543fff55577dea",
+      "bytes": 2042
+    },
+    "AL45_jmlr_record": {
+      "path": "research-plan/reviews/AL45_JMLR_CONTINUATION_RECORD_20260922.json",
+      "sha256": "d2654766128454576210394b0ab7aa5122328ec388ce784f56abf8c83d8b917a",
+      "bytes": 1050
+    },
+    "AL37_review": {
+      "path": "research-plan/reviews/AL37_MACRO_SEED_ESTIMAND_REVIEW_20260919.md",
+      "sha256": "9698541987c0a6bcfd49b383378631937cf6349157bfb0daee9b2494b4c943ab",
+      "bytes": 4674
+    },
+    "AL42_review": {
+      "path": "research-plan/reviews/AL42_CLUSTER_MISSING_MASS_REVIEW_20260919.md",
+      "sha256": "ce35e9c95896bee42e1378532351a6f76fa259dd6ba8a4221015951c6816136c",
+      "bytes": 6226
+    },
+    "AL81_evidence": {
+      "path": "research-plan/fallback-runtime/al81_paired_auc_20260922/run_v1/evidence.json",
+      "sha256": "b4d37bc49db8f31af4b0316ed7784b6969c72dd859976fe7bce0de1b8d8b8de2",
+      "bytes": 2598
+    }
+  },
+  "scope": "local evidence reconciliation; no network/model/numeric execution",
+  "claims": [
+    {
+      "claim": "Cawley-Talbot full JMLR text supports model-selection/evaluation selection bias and recommends selection as part of fitting/in each trial.",
+      "source": "AL45_JMLR_CONTINUATION_RECORD sections 1,5.2,5.2.1,5.3,6; report lines summary",
+      "status": "source_supported_scope_limited",
+      "does_not_support": [
+        "project cluster bootstrap coverage",
+        "AIGVDBench/OR1 efficacy",
+        "IUT theorem for this project"
+      ]
+    },
+    {
+      "claim": "Selecting one baseline on calibration can make the audit comparator fixed conditional on calibration, but does not make it the unknown population-strongest baseline.",
+      "source": "AL45_SELECTION_PROOF_AND_LIMITS manual derivation",
+      "status": "conditional_manual_derivation",
+      "external_primary_verification": "not_complete"
+    },
+    {
+      "claim": "For a prespecified finite baseline set, a simultaneous all-baselines superiority decision can use an intersection rejection event if each component test is valid.",
+      "source": "AL45_SELECTION_PROOF_AND_LIMITS manual derivation",
+      "status": "conditional_manual_derivation",
+      "external_primary_verification": "IUT source unavailable"
+    },
+    {
+      "claim": "AL37/42 define generator-macro, shared-cluster weighting and invalid missing-class handling, but no real CI/bootstrap is frozen or executed.",
+      "source": "AL37/AL42 reviews",
+      "status": "design_only"
+    },
+    {
+      "claim": "AL81 computes a synthetic paired-macro point estimand with Fraction reference; no CI, bootstrap, real predictions or baseline selection ran.",
+      "source": "AL81 run_v1/evidence.json",
+      "status": "software_pass_only"
+    },
+    {
+      "claim": "The four layers must stay separate: fixed-model point estimate; model-selection procedure risk; fixed baseline set decision; cluster/bootstrap interval validity.",
+      "source": "AL45 JMLR + AL45 limits + AL37/42 + AL81 evidence",
+      "status": "reconciliation_decision"
+    }
+  ],
+  "status": "completed_scope",
+  "AL45_gate": "blocked_not_evaluated",
+  "AL81_gate": "pass_software_only",
+  "formal_data_gate": "not_evaluated",
+  "next_actions": [
+    "AL45 requires a readable IUT/cluster CI primary methodology or remains blocked",
+    "A future evaluator must freeze selection procedure and model identities before audit",
+    "Do not call AL81 point estimator a confidence interval or efficacy result"
+  ]
+}

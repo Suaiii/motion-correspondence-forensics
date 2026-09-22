@@ -1,0 +1,18 @@
+{
+  "task_id": "AL81",
+  "reviewed_at": "2026-09-22T08:09:20+08:00",
+  "evidence_sha256": "b4d37bc49db8f31af4b0316ed7784b6969c72dd859976fe7bce0de1b8d8b8de2",
+  "files": {
+    "core.py": "b277aa55a83748b93873e004ca5c3e39152e3cae6b0f235266e88c4a41fe70cb",
+    "reference.py": "e3699a83c8ec9dd1cd7481e7fdc2a69ed96ca2d3715c3a84864aa79afa8972f5",
+    "run_batch.py": "a7eb01d1b733b0c428c60ee0ee85ce0ec2c96c3ff57f26ef643c4561970b94e5",
+    "config.json": "09195037c6090ed278d8c0cf5383621e4b18f2d97e1645d7fda54918fb892c91",
+    "freeze.json": "a587341f69573bc64dff1237cf4d2c8b8302186aeb18ebefe8e4124a1a896ceb",
+    "PROTOCOL.md": "b5adcc87fee4a2423f1d68f351011cdeb5cfe693d4ab88d4068536ecd62bab24",
+    "run_v1/evidence.json": "b4d37bc49db8f31af4b0316ed7784b6969c72dd859976fe7bce0de1b8d8b8de2",
+    "HANDOFF.md": "1c8d5ab7e79f4e2c8147cbac9506252c6cc37a74b78b779064886a71f7075fa5"
+  },
+  "software_pass": true,
+  "independent_scientific_review": false,
+  "no_real_efficacy": true
+}

@@ -3980,13 +3980,13 @@
       "prepared_at": "2026-09-19T17:14:10+08:00",
       "hypothesis_result": "conditional_selection_and_IUT_algebra_written_external_methodology_verification_incomplete",
       "started_at": "2026-09-19T17:21:07+08:00",
-      "dispatch_status": "partial_design_delivered_primary_IUT_source_unavailable",
+      "dispatch_status": "partial_primary_pdf_read_IUT_still_unavailable",
       "reviewed_by": "planagent",
       "review": "../reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md",
       "review_scope": "Partial design with conditional set-inclusion proofs; not completed external source verification",
       "artifact_sha256": "855f6acfe3eac5e8719c703887c1fccc9aecfddce66a0e325f4efbbcfd9043f9",
       "primary_source_record": "../reviews/AL45_BASELINE_SELECTION_PRIMARY_RECORD_20260919.json",
-      "next_action": "Resume only unresolved primary methodology/CI scope when source access changes; independent local AL46 can proceed",
+      "next_action": "Keep AL45 blocked until IUT/cluster interval primary methodology is available; do not use old manual pass.",
       "superseded_in_turn_assessment": {
         "status": "done",
         "gate_result": "pass",
@@ -4010,7 +4010,19 @@
           "sha256": "572f14167adeb903628edaa550a1447e8b319bd8c37d2f17474e72d2e5b405f1",
           "role": "superseded_draft_with_selection_direction_and_bound_overstatements"
         }
-      ]
+      ],
+      "continuation_history": [
+        {
+          "at": "2026-09-22T08:04:28+08:00",
+          "prior_status": "blocked",
+          "prior_gate_result": "not_evaluated",
+          "basis": "Official JMLR PDF now successfully readable via web tool; same Cawley/Talbot primary entry as original contract. Euclid still requires security check, no bypass attempted.",
+          "scope": "Read selected full-text selection/evaluation sections only; no new primary identity beyond original3, no numeric/real experiment."
+        }
+      ],
+      "updated_at": "2026-09-22T08:09:39+08:00",
+      "resumed_at": "2026-09-22T08:04:28+08:00",
+      "integrity_correction": "JMLR full PDF sections 1,5.2,5.2.1,5.3,6 read; Cawley/Talbot supports model-selection bias and internal selection principles. Project IUT/cluster CI methodology remains unverified; Euclid security blocked."
     },
     {
       "id": "AL46",
@@ -6334,6 +6346,131 @@
       "record_sha256": "1f925be8d39c7e980bf243f71cc51b20cbd7896b4679f1bd55123d1bd15801fc",
       "hypothesis_result": "no_identifiable_Ra_Rb_AE_assets_in_bounded_inventory; DINO_RAFT_Bag_not_reconstructor",
       "next_action": "Obtain authorized R_a/R_b identities and wrapper/weight hashes before a new compatibility task; do not start model/GPU."
+    },
+    {
+      "id": "AL81",
+      "milestone": "M2",
+      "title": "固定祖先权重的配对macro-AUROC计算原语",
+      "assignee": "planagent",
+      "parents": [
+        "AL37",
+        "AL42"
+      ],
+      "requires_pass": [
+        "AL37",
+        "AL42"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "paired_macro_auc_point_estimator_software",
+      "hypothesis": "A shared-ancestor weighted rank implementation can reproduce the prescribed paired generator-macro point estimand exactly, preserving ties and invalid support.",
+      "work": [
+        "Implement rank-weighted AUROC and paired macro on explicit synthetic scores",
+        "Compare exact numerator/denominator against pairwise Fraction reference",
+        "Reject malformed score/identity/weight inputs and preserve invalid groups"
+      ],
+      "acceptance": [
+        "One frozen standard-library CPU batch",
+        "No confidence intervals, real predictions or model selection",
+        "Exact reference agreement; no dropping invalid groups"
+      ],
+      "artifacts": [
+        "../fallback-runtime/al81_paired_auc_20260922/core.py",
+        "../fallback-runtime/al81_paired_auc_20260922/reference.py",
+        "../fallback-runtime/al81_paired_auc_20260922/config.json",
+        "../fallback-runtime/al81_paired_auc_20260922/freeze.json",
+        "../fallback-runtime/al81_paired_auc_20260922/run_v1/evidence.json",
+        "../fallback-runtime/al81_paired_auc_20260922/HANDOFF.md"
+      ],
+      "work_order": "../AL81_PAIRED_MACRO_AUC_PRIMITIVE_20260922.md",
+      "work_order_sha256": "382ef03fdafcb4738db4823c0d1238a3efc451d1e57146f7a6062dc4147db0c1",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-22T08:07:06+08:00",
+      "started_at": "2026-09-22T08:07:06+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "implementation_authorized": true,
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "execution_area": "research-plan/fallback-runtime/al81_paired_auc_20260922",
+      "fallback_reason": "Confirmed existing research-window provider failure; new approved CPU point-estimator package",
+      "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+      "scientific_innovation_gate_passed": false,
+      "resource_policy": {
+        "threads": 1,
+        "network": false,
+        "server": false,
+        "media": false,
+        "model": false,
+        "gpu": false,
+        "bootstrap": false
+      },
+      "completed_at": "2026-09-22T08:09:39+08:00",
+      "updated_at": "2026-09-22T08:09:39+08:00",
+      "dispatch_status": "completed_fallback_cpu_software",
+      "evidence_record": "../fallback-runtime/al81_paired_auc_20260922/run_v1/evidence.json",
+      "evidence_sha256": "b4d37bc49db8f31af4b0316ed7784b6969c72dd859976fe7bce0de1b8d8b8de2",
+      "handoff": "../fallback-runtime/al81_paired_auc_20260922/HANDOFF.md",
+      "handoff_sha256": "1c8d5ab7e79f4e2c8147cbac9506252c6cc37a74b78b779064886a71f7075fa5",
+      "artifact_manifest": "../fallback-runtime/al81_paired_auc_20260922/artifact_manifest.json",
+      "artifact_manifest_sha256": "5493e7496af6867d7aa79d96f9c5bfb4a086968820ef7a068e33e32cfe5118c4",
+      "hypothesis_result": "synthetic_paired_macro_point_estimator_software_supported; no_CI_or_efficacy",
+      "independent_scientific_review": "pending",
+      "next_action": "Keep AL45 methodology blocked; future CI/source gates separate from this point estimator."
+    },
+    {
+      "id": "AL82",
+      "title": "主方法学来源状态与统计分层归档",
+      "milestone": "M2",
+      "assignee": "planagent",
+      "parents": [
+        "AL81"
+      ],
+      "requires_pass": [
+        "AL81"
+      ],
+      "status": "done",
+      "gate_result": "pass",
+      "gate_scope": "method_source_reconciliation",
+      "hypothesis": "Separate source-supported selection-bias principles from unverified IUT/cluster-CI claims and fixed point-estimator software.",
+      "work": [
+        "Read AL45/AL81 evidence and JMLR continuation receipt",
+        "Build claim-to-source/status matrix",
+        "Keep blocked methodology and software pass separate"
+      ],
+      "acceptance": [
+        "No new source search or numerical execution",
+        "Each claim bound to file/hash/section scope",
+        "AL45 remains blocked and no efficacy gate released"
+      ],
+      "artifacts": [
+        "../reviews/AL82_METHOD_SOURCE_RECONCILIATION_20260922.md",
+        "../reviews/AL82_INPUT_RECORD_20260922.json"
+      ],
+      "work_order": "../AL82_PRIMARY_SOURCE_METHOD_RECONCILIATION_20260922.md",
+      "work_order_sha256": "f1d40fe4e5605f67e9b36ee5a69d8fc8f8ab1d81157c75e6eaba00be622c4c1e",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "prepared_at": "2026-09-22T08:11:17+08:00",
+      "started_at": "2026-09-22T08:11:17+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "scientific_innovation_gate_passed": false,
+      "implementation_authorized": false,
+      "resource_policy": {
+        "local_cpu": false,
+        "network": false,
+        "model": false,
+        "media": false,
+        "server": false,
+        "gpu": false
+      },
+      "completed_at": "2026-09-22T08:12:17+08:00",
+      "updated_at": "2026-09-22T08:12:17+08:00",
+      "dispatch_status": "completed_local_source_reconciliation",
+      "report": "../reviews/AL82_METHOD_SOURCE_RECONCILIATION_20260922.md",
+      "record": "../reviews/AL82_INPUT_RECORD_20260922.json",
+      "report_sha256": "b15f7b4dadb7fd20657d805634d5b7acdf88841f32e1bbd804b2fb6ea5d41339",
+      "record_sha256": "ccdcb6100b2b91c4008b34bd8012b3f2d3f284e6a34e01430ea5f59dc2f3af6f",
+      "hypothesis_result": "method_source_layers_separated; AL45_stays_blocked_AL81_software_only",
+      "next_action": "Keep AL45 blocked until IUT/cluster-CI primary methodology; no efficacy or CI release."
     }
   ],
   "storage_policy": {
@@ -7765,7 +7902,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T07:25:43+08:00",
+  "updated_at": "2026-09-22T08:12:26+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -8642,7 +8779,7 @@
       "status": "superseded_by_user_managed_billing",
       "resolution": "User explicitly said billing need not be managed by assistant; do not repeat billing questions."
     },
-    "last_coordinator_activity_at": "2026-09-22T07:25:43+08:00",
+    "last_coordinator_activity_at": "2026-09-22T08:12:17+08:00",
     "research_observed_status": "systemError_missing_codex_local_access_provider_no_artifact",
     "dispatch_history": [
       {
@@ -10165,6 +10302,45 @@
         "remote_send_required": false,
         "background_process_running": false,
         "archived_at": "2026-09-22T07:25:43+08:00"
+      },
+      {
+        "id": "cc-al45-al81-local-statistics-20260922",
+        "task_ids": [
+          "AL45",
+          "AL81"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T08:04:28+08:00",
+        "started_at": "2026-09-22T08:04:28+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_order": "../AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
+        "scope": "Existing methodology full-text continuation plus independent CPU paired-AUC point estimator",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "updated_at": "2026-09-22T08:07:06+08:00",
+        "archived_at": "2026-09-22T08:09:39+08:00"
+      },
+      {
+        "id": "cc-al82-method-source-reconciliation-20260922",
+        "task_ids": [
+          "AL82"
+        ],
+        "executor_role": "planagent",
+        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+        "host_id": "local",
+        "status": "running",
+        "prepared_at": "2026-09-22T08:11:17+08:00",
+        "started_at": "2026-09-22T08:11:17+08:00",
+        "plan_version": "cvpr27-20260919-v1.5",
+        "work_order": "../AL82_PRIMARY_SOURCE_METHOD_RECONCILIATION_20260922.md",
+        "work_order_sha256": "f1d40fe4e5605f67e9b36ee5a69d8fc8f8ab1d81157c75e6eaba00be622c4c1e",
+        "scope": "Bounded local/JMLR method-source reconciliation; no new search or numerical run",
+        "remote_send_required": false,
+        "background_process_running": false,
+        "archived_at": "2026-09-22T08:12:17+08:00"
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
@@ -10514,9 +10690,9 @@
     },
     "last_progress_at": "2026-09-22T07:23:20+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T07:25:43+08:00",
+      "at": "2026-09-22T08:12:17+08:00",
       "decision": "no remote wait",
-      "reason": "AL80 asset inventory complete; external AL36/AL68 package remains blocked with no recovery evidence."
+      "reason": "AL82 complete; AL45 remains blocked and external AL36/AL68 package remains blocked, no resend."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",
@@ -10885,6 +11061,15 @@
         "AL78"
       ],
       "summary": "Raw 9-check reducer receipt retained; full protocol fail because independent Fraction reference was not implemented."
+    },
+    {
+      "at": "2026-09-22T08:12:26+08:00",
+      "tasks": [
+        "AL45",
+        "AL81",
+        "AL82"
+      ],
+      "summary": "JMLR PDF full selected sections were read; AL45 remains blocked for IUT/cluster CI. AL81 synthetic paired macro point estimator is software-only; AL82 reconciled source/statistical layers."
     }
   ]
 }

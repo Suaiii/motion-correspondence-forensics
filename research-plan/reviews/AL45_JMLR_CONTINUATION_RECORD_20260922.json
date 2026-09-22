@@ -1,0 +1,34 @@
+{
+  "task_id": "AL45",
+  "continuation_at": "2026-09-22T08:07:22.175+08:00",
+  "entry": {
+    "url": "https://www.jmlr.org/papers/volume11/cawley10a/cawley10a.pdf",
+    "status": 200,
+    "bytes": 759286,
+    "sha256": "db01ac8fabef3064a0297bfcf64fb9791bf35c4d03be7a51f5862260adfca206",
+    "content_type": "application/pdf",
+    "scope": "Full primary PDF read only selected sections 1,5.2,5.2.1,5.3,6; no file committed"
+  },
+  "sections": [
+    "1",
+    "5.2",
+    "5.2.1",
+    "5.3",
+    "6"
+  ],
+  "read_text_hash_sha256": "db01ac8fabef3064a0297bfcf64fb9791bf35c4d03be7a51f5862260adfca206",
+  "other_primary_status": "Project Euclid requested PDF remains security-check HTML; no bypass",
+  "execution": {
+    "numeric": false,
+    "bootstrap": false,
+    "model": false,
+    "media": false,
+    "server": false,
+    "gpu": false
+  },
+  "boundaries": [
+    "JMLR documents model-selection/assessment bias and internal selection principles",
+    "does not prove project cluster bootstrap coverage",
+    "does not prove OR1 or real efficacy"
+  ]
+}

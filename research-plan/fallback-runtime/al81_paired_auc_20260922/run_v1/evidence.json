@@ -1,0 +1,106 @@
+{
+  "task_id": "AL81",
+  "version": "paired-auc-v1",
+  "freeze_sha256": "a587341f69573bc64dff1237cf4d2c8b8302186aeb18ebefe8e4124a1a896ceb",
+  "source_sha256": {
+    "config.json": "09195037c6090ed278d8c0cf5383621e4b18f2d97e1645d7fda54918fb892c91",
+    "core.py": "b277aa55a83748b93873e004ca5c3e39152e3cae6b0f235266e88c4a41fe70cb",
+    "reference.py": "e3699a83c8ec9dd1cd7481e7fdc2a69ed96ca2d3715c3a84864aa79afa8972f5",
+    "run_batch.py": "a7eb01d1b733b0c428c60ee0ee85ce0ec2c96c3ff57f26ef643c4561970b94e5"
+  },
+  "rows": [
+    {
+      "weight": "all_one",
+      "candidate": "15/16",
+      "baseline": "11/16",
+      "invalid": false
+    },
+    {
+      "weight": "ancestor_A_double",
+      "candidate": "15/16",
+      "baseline": "11/16",
+      "invalid": false
+    },
+    {
+      "weight": "g2_positive_zero",
+      "candidate": null,
+      "baseline": null,
+      "invalid": true
+    },
+    {
+      "weight": "all_zero",
+      "candidate": null,
+      "baseline": null,
+      "invalid": true
+    }
+  ],
+  "checks": [
+    {
+      "name": "all_one/candidate_reference",
+      "passed": true,
+      "observed": "15/16",
+      "reference": "15/16"
+    },
+    {
+      "name": "all_one/baseline_reference",
+      "passed": true,
+      "observed": "11/16",
+      "reference": "11/16"
+    },
+    {
+      "name": "ancestor_A_double/candidate_reference",
+      "passed": true,
+      "observed": "15/16",
+      "reference": "15/16"
+    },
+    {
+      "name": "ancestor_A_double/baseline_reference",
+      "passed": true,
+      "observed": "11/16",
+      "reference": "11/16"
+    },
+    {
+      "name": "g2_positive_zero/candidate_reference",
+      "passed": true,
+      "observed": null,
+      "reference": null
+    },
+    {
+      "name": "g2_positive_zero/baseline_reference",
+      "passed": true,
+      "observed": null,
+      "reference": null
+    },
+    {
+      "name": "all_zero/candidate_reference",
+      "passed": true,
+      "observed": null,
+      "reference": null
+    },
+    {
+      "name": "all_zero/baseline_reference",
+      "passed": true,
+      "observed": null,
+      "reference": null
+    },
+    {
+      "name": "identity_reindex",
+      "passed": true
+    },
+    {
+      "name": "all_zero_invalid",
+      "passed": true
+    }
+  ],
+  "failures": [],
+  "software_pass": true,
+  "scope": "synthetic point estimand only; no CI/bootstrap/model/media/server/GPU",
+  "resources": {
+    "network": 0,
+    "models": 0,
+    "media": 0,
+    "server": 0,
+    "gpu": 0,
+    "threads": 1
+  }
+}

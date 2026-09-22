@@ -1,0 +1,12 @@
+{
+  "task_id":"AL81",
+  "version":"paired-auc-v1",
+  "threads":1,
+  "methods":["candidate","baseline"],
+  "seeds":[17,29],
+  "generators":["g1","g2"],
+  "tie_value":"1/2",
+  "invalid_policy":"null_for_group_and_macro; never drop missing groups",
+  "weights":["all_one","ancestor_A_double","g2_positive_zero","all_zero"],
+  "no_ci_bootstrap_model_media_server_gpu":true
+}
