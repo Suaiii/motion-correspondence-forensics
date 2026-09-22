@@ -1,0 +1,14 @@
+{
+  "task_id": "AL83",
+  "version": "v2",
+  "frozen_at": "2026-09-22T09:24:21.630+08:00",
+  "source_sha256": {
+    "config.json": "1acad0d2abc216b597e52529f189af98e16f6c0797ccc750ac9df19e2637aafb",
+    "core.py": "9966c5003ae92de074791b17545b3b9373b52df2dbd784693b8aac898ddfa860",
+    "reference.py": "b7e3cb9d41f3f46ef9bce6cebd360b03086e21ab7b343989e9738ef866a8b067",
+    "run_batch.py": "b403cef63af4081b5e4e8d0ec2373152d7d563dc4eb4dd8043a70f69026a6860"
+  },
+  "config_sha256": "1acad0d2abc216b597e52529f189af98e16f6c0797ccc750ac9df19e2637aafb",
+  "records_hash": "61d5fbf3346894b3775ae6b0a6cab8b75197af50c6063c7416e3c11c127c078b",
+  "previous_failed_run": "run_v1"
+}

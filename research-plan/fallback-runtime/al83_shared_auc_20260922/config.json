@@ -1,0 +1,13 @@
+{
+  "task_id": "AL83",
+  "version": "shared-negative-paired-macro-v5",
+  "methods": ["candidate", "baseline"],
+  "score_tags": ["diagnostic_a", "diagnostic_b"],
+  "generators": ["g1", "g2"],
+  "seeds": [17, 29],
+  "weight_schemes": ["all_one", "ancestor_A_double", "ancestor_C_zero", "all_zero"],
+  "tie_value": "1/2",
+  "invalid_policy": "null_for_any_missing_generator_support_or_zero_denominator; never_drop_groups",
+  "threads": 1,
+  "network_media_models_server_gpu": false
+}

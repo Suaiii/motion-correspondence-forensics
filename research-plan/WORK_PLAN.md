@@ -347,6 +347,8 @@ AL79已在独立fallback-runtime完成新的逐样本、真实时间块RGB归约
 
 AL80对13340服务器既有资产做只读盘点：找到DINO、RAFT和旧Bag/ResponseBag检测路径及机制配置，未找到可识别的R_a/R_b自动编码器权重或wrapper。模型/媒体未加载，正式数据与OR1准入不变；下一真实兼容性任务必须先绑定重建器身份、权重/commit哈希、shape/dtype、缓存重置和四次调用回执。
 
+AL81完整点估计验收已撤回为fail：旧实现使用分组负类而非共享负类，没有祖先键/score-tag均值和排序算法合同；AL82依赖其pass，转blocked/not_evaluated，方法学来源讨论保留但不能引用其对AL81实现的错误陈述。AL83新尝试的v1--v4执行失败、v5仍有4项失败且合同缺项，最终done/fail；原始run/freezes保留，不作为真实评估器。AL84四调用输出身份桥接是独立的已准备CPU任务，继续不等待科研窗口恢复，不触碰模型/媒体/服务器/GPU。
+
 AL79已在独立fallback-runtime完成新实现，先冻结源码/config/独立Fraction参考于6847224，再执行一次正式批次，90项检查通过。输出逐样本q4/r12；17帧按5/7/5真实切块，整段/分块/两布局与独立标量参考一致；平均块比值的错误实现被固定反例区分。该结果仅为CPU软件验收，没有读取媒体、模型、服务器或GPU，不恢复AL78的pass。接续AL80仅只读盘点已有服务器AE配置/权重路径元数据，以确定模型兼容性工作的具体资产缺口；AL36与AL68保持各自独立门槛。
 
 AL67的样本级审查与服务器manifest盘点显示：候选清单已有文件SHA、来源/任务、label、source/reference/prompt group、部分ancestry/license字段；pair2开发审计已有origin_id和抽帧PTS，但明确 `ancestry_content_verified=false`、`formal_training_released=false`、`external_development_only`。AL69—AL71进一步确认公开AIGVDBench的train/val文件有完整的14,000/3,000个ID、无重复且两集合交集为0；当前服务器开发manifest与固定20个公开validation ID严格交集为0。AL72/73补充发现：按预先固定的文件名规则，446个候选root跨train/val，涉及561条train和467条val记录；作者公开仓库没有样本级来源/祖先映射文件可解释这些root。该结果只构成命名代理风险，不能直接认定视觉泄漏。ID划分通过仅支持公开文件级可复算性，不能证明视觉祖先独立、标签、原生PTS/time_base、许可或实际媒体已在服务器上。多数正式所需的祖先内容闭包、生成配置、codec/decoder、许可、选择覆盖仍缺。公开黑盒基准可在披露未知内部信息的前提下用于可比评测；机制归因和最终确认仍需更强样本级合同，不能把开发池改名为正式集。

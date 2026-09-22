@@ -1,0 +1,136 @@
+{
+  "task_id": "AL83",
+  "version": "shared-negative-paired-macro-v5",
+  "freeze_sha256": "6837d5a4bdd189f55a47067891209c309d2793c70e355b8d08f29b97823bb4a2",
+  "source_sha256": {
+    "config.json": "d44b3a4dcc2ef38241a4fa1feacec771bcbfe51ad9f1b2b64e0ac3e9fdd550ca",
+    "core.py": "61bb5faf3ec83c37fac7d089351c9dda6d5bb28a9c7eb212a00f891057ca3d4a",
+    "reference.py": "b7e3cb9d41f3f46ef9bce6cebd360b03086e21ab7b343989e9738ef866a8b067",
+    "run_batch.py": "55760e8229326163bba5fbb782515b678588ffcd9db9b60a5aee84867664d9c5"
+  },
+  "record_hash": "61d5fbf3346894b3775ae6b0a6cab8b75197af50c6063c7416e3c11c127c078b",
+  "rows": [
+    {
+      "scheme": "all_one",
+      "actual": "{'candidate': {'diagnostic_a': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}}, 'baseline': {'diagnostic_a': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}}, 'baseline': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}}}",
+      "deltas": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "scheme": "ancestor_A_double",
+      "actual": "{'candidate': {'diagnostic_a': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}}, 'baseline': {'diagnostic_a': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}, 'diagnostic_b': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}}, 'baseline': {'diagnostic_a': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}, 'diagnostic_b': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}}}",
+      "deltas": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "scheme": "ancestor_C_zero",
+      "actual": "{'candidate': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}}, 'baseline': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}}, 'baseline': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}}}",
+      "deltas": [
+        null,
+        null
+      ]
+    },
+    {
+      "scheme": "all_zero",
+      "actual": "{'candidate': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}}, 'baseline': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': None, 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': None, 'g2': None}, 'macro': None}}, 'baseline': {'diagnostic_a': {'groups': {'g1': None, 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': None, 'g2': None}, 'macro': None}}}",
+      "deltas": [
+        null,
+        null
+      ]
+    }
+  ],
+  "checks": [
+    {
+      "name": "all_one/reference",
+      "passed": true,
+      "actual": "{'candidate': {'diagnostic_a': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}}, 'baseline': {'diagnostic_a': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(23, 24), 'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}}, 'baseline': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': Fraction(1, 1)}, 'macro': Fraction(23, 24)}}}",
+      "deltas": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "ancestor_A_double/reference",
+      "passed": true,
+      "actual": "{'candidate': {'diagnostic_a': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}}, 'baseline': {'diagnostic_a': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}, 'diagnostic_b': {'macro': Fraction(47, 48), 'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}, 'diagnostic_b': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}}, 'baseline': {'diagnostic_a': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}, 'diagnostic_b': {'groups': {'g1': Fraction(23, 24), 'g2': Fraction(1, 1)}, 'macro': Fraction(47, 48)}}}",
+      "deltas": [
+        "0",
+        "0"
+      ]
+    },
+    {
+      "name": "ancestor_C_zero/reference",
+      "passed": false,
+      "actual": "{'candidate': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}}, 'baseline': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': Fraction(11, 12), 'g2': <object object at 0x00000274238F84C0>}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}}, 'baseline': {'diagnostic_a': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': Fraction(11, 12), 'g2': None}, 'macro': None}}}",
+      "deltas": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "all_zero/reference",
+      "passed": false,
+      "actual": "{'candidate': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}}, 'baseline': {'diagnostic_a': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}, 'diagnostic_b': {'macro': <object object at 0x00000274238F84C0>, 'groups': {'g1': <object object at 0x00000274238F84C0>, 'g2': <object object at 0x00000274238F84C0>}}}}",
+      "oracle": "{'candidate': {'diagnostic_a': {'groups': {'g1': None, 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': None, 'g2': None}, 'macro': None}}, 'baseline': {'diagnostic_a': {'groups': {'g1': None, 'g2': None}, 'macro': None}, 'diagnostic_b': {'groups': {'g1': None, 'g2': None}, 'macro': None}}}",
+      "deltas": [
+        null,
+        null
+      ]
+    },
+    {
+      "name": "all_one_expected_tag_a",
+      "passed": false,
+      "observed": "0"
+    },
+    {
+      "name": "all_one_expected_tag_b",
+      "passed": true,
+      "observed": "0"
+    },
+    {
+      "name": "shared_ancestor_weight_changes_pair_denominator",
+      "passed": false
+    },
+    {
+      "name": "missing_score_rejected",
+      "passed": true,
+      "error": "score_keys"
+    },
+    {
+      "name": "missing_generator_group_is_invalid",
+      "passed": true
+    }
+  ],
+  "failures": [
+    "ancestor_C_zero/reference",
+    "all_zero/reference",
+    "all_one_expected_tag_a",
+    "shared_ancestor_weight_changes_pair_denominator"
+  ],
+  "software_pass": false,
+  "previous_failed_runs": [
+    "run_v1",
+    "run_v2",
+    "run_v3",
+    "run_v4"
+  ],
+  "scope": "synthetic shared-negative ancestor-weighted point estimand only; no CI/bootstrap/model/media/server/GPU",
+  "resources": {
+    "threads": 1,
+    "network": 0,
+    "media": 0,
+    "server": 0,
+    "gpu": 0
+  }
+}

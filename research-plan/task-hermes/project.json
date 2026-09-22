@@ -6361,7 +6361,7 @@
         "AL42"
       ],
       "status": "done",
-      "gate_result": "pass",
+      "gate_result": "fail",
       "gate_scope": "paired_macro_auc_point_estimator_software",
       "hypothesis": "A shared-ancestor weighted rank implementation can reproduce the prescribed paired generator-macro point estimand exactly, preserving ties and invalid support.",
       "work": [
@@ -6404,17 +6404,26 @@
         "bootstrap": false
       },
       "completed_at": "2026-09-22T08:09:39+08:00",
-      "updated_at": "2026-09-22T08:09:39+08:00",
-      "dispatch_status": "completed_fallback_cpu_software",
+      "updated_at": "2026-09-22T09:15:08+08:00",
+      "dispatch_status": "completed_failed_full_estimand_contract",
       "evidence_record": "../fallback-runtime/al81_paired_auc_20260922/run_v1/evidence.json",
       "evidence_sha256": "b4d37bc49db8f31af4b0316ed7784b6969c72dd859976fe7bce0de1b8d8b8de2",
       "handoff": "../fallback-runtime/al81_paired_auc_20260922/HANDOFF.md",
       "handoff_sha256": "1c8d5ab7e79f4e2c8147cbac9506252c6cc37a74b78b779064886a71f7075fa5",
       "artifact_manifest": "../fallback-runtime/al81_paired_auc_20260922/artifact_manifest.json",
       "artifact_manifest_sha256": "5493e7496af6867d7aa79d96f9c5bfb4a086968820ef7a068e33e32cfe5118c4",
-      "hypothesis_result": "synthetic_paired_macro_point_estimator_software_supported; no_CI_or_efficacy",
+      "hypothesis_result": "old_group_specific_pairwise_fixture_only; shared_negative_ancestor_tag_contract_not_implemented",
       "independent_scientific_review": "pending",
-      "next_action": "Keep AL45 methodology blocked; future CI/source gates separate from this point estimator."
+      "next_action": "Preserve failed AL81; independent AL83 implements fixed shared-negative contract from AL37/42.",
+      "acceptance_history": [
+        {
+          "gate_result": "pass",
+          "status": "done",
+          "corrected_at": "2026-09-22T09:15:08+08:00",
+          "reason": "Source-contract audit: group-specific negatives, no ancestor mapping/tags/paired aggregation, quadratic duplicate reference, required rejection checks absent."
+        }
+      ],
+      "review_correction": "../reviews/AL81_CONTRACT_REVIEW_CORRECTION_20260922.md"
     },
     {
       "id": "AL82",
@@ -6427,8 +6436,8 @@
       "requires_pass": [
         "AL81"
       ],
-      "status": "done",
-      "gate_result": "pass",
+      "status": "blocked",
+      "gate_result": "not_evaluated",
       "gate_scope": "method_source_reconciliation",
       "hypothesis": "Separate source-supported selection-bias principles from unverified IUT/cluster-CI claims and fixed point-estimator software.",
       "work": [
@@ -6463,14 +6472,154 @@
         "gpu": false
       },
       "completed_at": "2026-09-22T08:12:17+08:00",
-      "updated_at": "2026-09-22T08:12:17+08:00",
+      "updated_at": "2026-09-22T09:15:08+08:00",
       "dispatch_status": "completed_local_source_reconciliation",
       "report": "../reviews/AL82_METHOD_SOURCE_RECONCILIATION_20260922.md",
       "record": "../reviews/AL82_INPUT_RECORD_20260922.json",
       "report_sha256": "b15f7b4dadb7fd20657d805634d5b7acdf88841f32e1bbd804b2fb6ea5d41339",
       "record_sha256": "ccdcb6100b2b91c4008b34bd8012b3f2d3f284e6a34e01430ea5f59dc2f3af6f",
       "hypothesis_result": "method_source_layers_separated; AL45_stays_blocked_AL81_software_only",
-      "next_action": "Keep AL45 blocked until IUT/cluster-CI primary methodology; no efficacy or CI release."
+      "next_action": "Do not release AL82 or remove its requires_pass to conceal invalid dependency; use source text only within its actual scope.",
+      "acceptance_history": [
+        {
+          "status": "done",
+          "gate_result": "pass",
+          "corrected_at": "2026-09-22T09:15:08+08:00",
+          "reason": "AL81 pass revoked; AL82 implementation claims are inaccurate."
+        }
+      ],
+      "blocker": "Requires AL81 pass, now failed. JMLR/source layering preserved but shared-ancestor point-estimator assertions must not be used.",
+      "review_correction": "../reviews/AL81_CONTRACT_REVIEW_CORRECTION_20260922.md"
+    },
+    {
+      "id": "AL83",
+      "milestone": "M2",
+      "title": "共享负类与祖先权重的完整配对macro点估计",
+      "assignee": "planagent",
+      "parents": [
+        "AL81",
+        "AL37",
+        "AL42"
+      ],
+      "requires_pass": [
+        "AL37",
+        "AL42"
+      ],
+      "status": "done",
+      "gate_result": "fail",
+      "gate_scope": "shared_negative_paired_macro_software",
+      "hypothesis": "Validated shared-negative/ancestor semantics and paired score-tag summaries are reproducible exactly",
+      "work": [
+        "Implement validated ancestor-weighted shared-negative rank AUROC",
+        "Aggregate fixed generator/tag paired differences",
+        "Verify exact cells against independent pairwise Fraction and reject malformed inputs"
+      ],
+      "acceptance": [
+        "Config/input/source hashes frozen before one batch",
+        "Preserve historical failures; no overwrite",
+        "No media/models/server/GPU/CI or independent-scientific-review claim"
+      ],
+      "artifacts": [
+        "../fallback-runtime/al83_shared_auc_20260922/core.py",
+        "../fallback-runtime/al83_shared_auc_20260922/reference.py",
+        "../fallback-runtime/al83_shared_auc_20260922/config.json",
+        "../fallback-runtime/al83_shared_auc_20260922/freeze.json",
+        "../fallback-runtime/al83_shared_auc_20260922/freeze_v2.json",
+        "../fallback-runtime/al83_shared_auc_20260922/freeze_v3.json",
+        "../fallback-runtime/al83_shared_auc_20260922/freeze_v4.json",
+        "../fallback-runtime/al83_shared_auc_20260922/freeze_v5.json",
+        "../fallback-runtime/al83_shared_auc_20260922/run_v5/evidence.json",
+        "../fallback-runtime/al83_shared_auc_20260922/HANDOFF.md"
+      ],
+      "work_order": "../AL83_SHARED_NEGATIVE_PAIRED_AUC_CPU_20260922.md",
+      "work_order_sha256": "c6af1f4488664858dd3c0570c218875b52117b32020085b111e017201a637e6e",
+      "prepared_at": "2026-09-22T09:15:08+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "implementation_authorized": true,
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "execution_area": "research-plan/fallback-runtime/al83_shared_auc_20260922",
+      "fallback_reason": "Known missing provider before execution; new bounded CPU package in isolated path",
+      "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+      "scientific_innovation_gate_passed": false,
+      "independent_scientific_review": "pending",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads_max": 1,
+        "network": false,
+        "media": false,
+        "models": false,
+        "server": false,
+        "gpu": false,
+        "bootstrap": false
+      },
+      "started_at": "2026-09-22T09:15:08+08:00",
+      "updated_at": "2026-09-22T09:29:56+08:00",
+      "completed_at": "2026-09-22T09:29:56+08:00",
+      "dispatch_status": "completed_failed_software_contract",
+      "hypothesis_result": "shared_negative_ancestor_tag_contract_incomplete_and_v5_checks_failed",
+      "evidence_record": "../fallback-runtime/al83_shared_auc_20260922/run_v5/evidence.json",
+      "evidence_sha256": "138aaaca757a5650ef6c96e685cbe45b3a8d4206a8a0429edc9f1cfae1668585",
+      "handoff": "../fallback-runtime/al83_shared_auc_20260922/HANDOFF.md",
+      "handoff_sha256": "a6cad16619234e0471ed4a9f4ec9469c2db2ad267c2bb525ab52ff438ff93552",
+      "execution_attempts": 5,
+      "next_action": "Preserve all failures; do not use as real evaluator. Continue independent AL84 package."
+    },
+    {
+      "id": "AL84",
+      "milestone": "M2",
+      "title": "四调用输出到RGB归约的身份桥接",
+      "assignee": "planagent",
+      "parents": [
+        "AL15",
+        "AL79"
+      ],
+      "requires_pass": [
+        "AL15",
+        "AL79"
+      ],
+      "status": "ready",
+      "gate_result": "not_evaluated",
+      "gate_scope": "precomputed_probe_trace_bridge_software",
+      "hypothesis": "A precomputed four-call identity bridge can reject mismatched records before RGB reduction",
+      "work": [
+        "Bind precomputed four-call tensor identities",
+        "Derive canonical response fields from archived operator contract",
+        "Freeze bounded identity-mismatch cases without invoking models"
+      ],
+      "acceptance": [
+        "Config/input/source hashes frozen before one batch",
+        "Preserve historical failures; no overwrite",
+        "No media/models/server/GPU/CI or independent-scientific-review claim"
+      ],
+      "artifacts": [
+        "../fallback-runtime/al84_trace_bridge_20260922/bridge.py",
+        "../fallback-runtime/al84_trace_bridge_20260922/config.json",
+        "../fallback-runtime/al84_trace_bridge_20260922/run_v1/evidence.json",
+        "../fallback-runtime/al84_trace_bridge_20260922/HANDOFF.md"
+      ],
+      "work_order": "../AL84_FOUR_CALL_TRACE_RGB_BRIDGE_20260922.md",
+      "work_order_sha256": "8643662b9792c2612ed1fd6416d2b98140e07aa79693b5007cc97adc6aff3244",
+      "prepared_at": "2026-09-22T09:15:08+08:00",
+      "due_at": "2026-09-22T22:00:00+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "implementation_authorized": true,
+      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "execution_area": "research-plan/fallback-runtime/al84_trace_bridge_20260922",
+      "fallback_reason": "Known missing provider before execution; new bounded CPU package in isolated path",
+      "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
+      "scientific_innovation_gate_passed": false,
+      "independent_scientific_review": "pending",
+      "resource_policy": {
+        "local_cpu": true,
+        "threads_max": 2,
+        "network": false,
+        "media": false,
+        "models": false,
+        "server": false,
+        "gpu": false,
+        "bootstrap": false
+      }
     }
   ],
   "storage_policy": {
@@ -7902,7 +8051,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T08:12:26+08:00",
+  "updated_at": "2026-09-22T09:29:56+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -8768,7 +8917,28 @@
     "budget_caps_unchanged": true,
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
-    "current_dispatch": null,
+    "current_dispatch": {
+      "id": "cc-al83-al84-cpu-estimator-bridge-20260922",
+      "task_ids": [
+        "AL83",
+        "AL84"
+      ],
+      "executor_role": "planagent",
+      "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
+      "host_id": "local",
+      "status": "al83_failed_al84_prepared",
+      "prepared_at": "2026-09-22T09:15:08+08:00",
+      "started_at": "2026-09-22T09:15:08+08:00",
+      "plan_version": "cvpr27-20260919-v1.5",
+      "work_orders": [
+        "../AL83_SHARED_NEGATIVE_PAIRED_AUC_CPU_20260922.md",
+        "../AL84_FOUR_CALL_TRACE_RGB_BRIDGE_20260922.md"
+      ],
+      "remote_send_required": false,
+      "background_process_running": false,
+      "scope": "Local independent shared-negative statistic and precomputed RGB trace bridge; no model/media/server",
+      "updated_at": "2026-09-22T09:29:56+08:00"
+    },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
     "single_heartbeat_limit_verified": true,
@@ -8779,7 +8949,7 @@
       "status": "superseded_by_user_managed_billing",
       "resolution": "User explicitly said billing need not be managed by assistant; do not repeat billing questions."
     },
-    "last_coordinator_activity_at": "2026-09-22T08:12:17+08:00",
+    "last_coordinator_activity_at": "2026-09-22T09:29:56+08:00",
     "research_observed_status": "systemError_missing_codex_local_access_provider_no_artifact",
     "dispatch_history": [
       {
@@ -10690,9 +10860,9 @@
     },
     "last_progress_at": "2026-09-22T07:23:20+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T08:12:17+08:00",
+      "at": "2026-09-22T09:29:56+08:00",
       "decision": "no remote wait",
-      "reason": "AL82 complete; AL45 remains blocked and external AL36/AL68 package remains blocked, no resend."
+      "reason": "AL83 ended fail; independent AL84 remains prepared. External package still blocked, no resend."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",
@@ -11070,6 +11240,14 @@
         "AL82"
       ],
       "summary": "JMLR PDF full selected sections were read; AL45 remains blocked for IUT/cluster CI. AL81 synthetic paired macro point estimator is software-only; AL82 reconciled source/statistical layers."
+    },
+    {
+      "at": "2026-09-22T09:15:08+08:00",
+      "tasks": [
+        "AL81",
+        "AL82"
+      ],
+      "summary": "AL81 contract pass withdrawn on source review; dependent AL82 blocked. Old bytes retained; new AL83 independent of failed gate."
     }
   ]
 }
