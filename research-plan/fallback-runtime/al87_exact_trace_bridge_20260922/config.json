@@ -1,0 +1,34 @@
+{
+  "task_id": "AL87",
+  "version": "exact-byte-four-call-rgb-bridge-v3",
+  "stage": "OR1",
+  "shape": [
+    1,
+    2,
+    5,
+    5,
+    3
+  ],
+  "invalid_cases": [
+    "wrong_sample",
+    "wrong_probe",
+    "wrong_stage",
+    "wrong_layout",
+    "wrong_shape",
+    "wrong_time_slots",
+    "duplicate_role",
+    "missing_role",
+    "ulp_base_input"
+  ],
+  "al79_blocks": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "network_media_models_server_gpu": false
+}

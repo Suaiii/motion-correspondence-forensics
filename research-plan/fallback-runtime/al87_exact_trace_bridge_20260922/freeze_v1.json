@@ -1,0 +1,13 @@
+{
+  "task_id": "AL87",
+  "version": "v1",
+  "frozen_at": "2026-09-22T10:52:10+08:00",
+  "source_sha256": {
+    "exact_bridge.py": "8a67c3aac6e93b8e6221c0c39e9d5c3e51675d33d0ce4fd53591089dce5a1d54",
+    "reference.py": "d6656fadc940d5be0d0c9dd5fa1e61da4ff121a6c6bd7ac93204bcb439407cd4",
+    "run_batch.py": "cc2447add28d821a4b522e11c89548854d3537e89c662775983c513278b84752",
+    "config.json": "f8acdef1f060a620ce89cef95781ccdfaa854e333a7b1ac0ab6e6f7675b606f8",
+    "input.json": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
+    "al79_reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679"
+  }
+}

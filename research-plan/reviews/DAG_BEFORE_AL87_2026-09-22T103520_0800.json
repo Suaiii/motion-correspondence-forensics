@@ -2,7 +2,7 @@
   "schema_version": "0.5",
   "project": "cvpr2027-operator-controlled-video-forensics",
   "main_thread": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-  "updated": "2026-09-22T11:13:22+08:00",
+  "updated": "2026-09-22T10:19:37+08:00",
   "goal": "在项目累计6000元和初始累计180 GPU小时约束内，由用户主导、双角色协作验证未知生成器与传播退化下的视频取证算法；证据满足门槛后冲刺CVPR 2027一作投稿，证据不足允许延期。",
   "canonical_plan": "WORK_PLAN.md",
   "status_values": [
@@ -6816,107 +6816,6 @@
       "review_sha256": "4a460aea2b3e9722947635316f9d6fb5d78339cc36810a3ee77d92f07c5147c5",
       "review_scope": "static adversarial source review; no numeric batch or independent scientific replication",
       "next_action": "Keep AL84 fail; prepare an exact-byte identity repair only if it provides new information and preserve all old output."
-    },
-    {
-      "id": "AL87",
-      "milestone": "M2",
-      "title": "四调用记录精确身份桥接修复",
-      "assignee": "planagent",
-      "parents": [
-        "AL84",
-        "AL86",
-        "AL15",
-        "AL79"
-      ],
-      "requires_pass": [
-        "AL15",
-        "AL79"
-      ],
-      "status": "done",
-      "gate_result": "pass",
-      "gate_scope": "exact_trace_identity_bridge_software",
-      "hypothesis": "Exact cross-call float64 byte identity prevents the one-ULP record mismatch while preserving the AL15-to-AL79 arithmetic contract.",
-      "work": [
-        "Implement isolated exact-byte identity checks",
-        "Freeze one valid and one ULP attack input with source hashes",
-        "Run one bounded reducer bridge and preserve failures"
-      ],
-      "acceptance": [
-        "Attack is rejected by exact identity code",
-        "Valid trace matches independent reference and one AL79 reducer call",
-        "No model/media/server/GPU/CI or independent-scientific-review claim"
-      ],
-      "artifacts": [
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/exact_bridge.py",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/reference.py",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/run_batch.py",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/config.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/input.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/freeze.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/freeze_v1.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/freeze_v2.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/run_v1/evidence.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/run_v2_failure.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/run_v3/evidence.json",
-        "../fallback-runtime/al87_exact_trace_bridge_20260922/HANDOFF.md",
-        "../reviews/AL87_REVIEW_20260922.md"
-      ],
-      "work_order": "../AL87_EXACT_TRACE_IDENTITY_REPAIR_20260922.md",
-      "work_order_sha256": "0ae0e0cd9cf5c96ee2704ad3607f85e78a6ba020947b2c5ddd80c440d9861fc6",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "prepared_at": "2026-09-22T10:35:20+08:00",
-      "started_at": "2026-09-22T10:35:20+08:00",
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "implementation_authorized": true,
-      "fallback_reason": "AL84/AL86 local identity failure; targeted new software repair, not a resend or session creation",
-      "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
-      "scientific_innovation_gate_passed": false,
-      "resource_policy": {
-        "local_cpu": true,
-        "threads_max": 1,
-        "network": false,
-        "media": false,
-        "server": false,
-        "gpu": false,
-        "models": false,
-        "ci": false
-      },
-      "hypothesis_result": "exact_byte_identity_bridge_supported_precomputed_only",
-      "dispatch_status": "completed_fallback_software",
-      "completed_at": "2026-09-22T11:13:22+08:00",
-      "updated_at": "2026-09-22T11:13:22+08:00",
-      "execution_attempts": 3,
-      "execution_area": "research-plan/fallback-runtime/al87_exact_trace_bridge_20260922",
-      "evidence_record": "../fallback-runtime/al87_exact_trace_bridge_20260922/run_v3/evidence.json",
-      "evidence_sha256": "6074aac7d8d3e534a457921485c9c6744fb359e06ef30111a6121b094cd9cc23",
-      "handoff": "../fallback-runtime/al87_exact_trace_bridge_20260922/HANDOFF.md",
-      "handoff_sha256": "c373e3c7e4cbf4d27e1a2c0f0bc4b1d1fa254175593a7129c99c5e8dc5dfa23d",
-      "freeze": "../fallback-runtime/al87_exact_trace_bridge_20260922/freeze.json",
-      "source_sha256": {
-        "exact_bridge.py": "5c5c90f812a1aed3ee653b80320d57ffd97a08c9da7fb5c637241a2624960414",
-        "reference.py": "d6656fadc940d5be0d0c9dd5fa1e61da4ff121a6c6bd7ac93204bcb439407cd4",
-        "run_batch.py": "621f1503820ea94c7e816948d126fda731af989d4feee48259861baf47c27d5e",
-        "config.json": "48a18843c7807c88e88fc6e59affc1cfc68735cc43d128d74308d6b6209f2c35",
-        "input.json": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
-        "al79_reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679"
-      },
-      "measured_resources": {
-        "network": 0,
-        "media": 0,
-        "server": 0,
-        "gpu": 0,
-        "models": 0,
-        "threads": 1,
-        "valid_call_count": 4,
-        "invalid_cases": 9
-      },
-      "review": "../reviews/AL87_REVIEW_20260922.md",
-      "review_sha256": "91788e3faaadfb0f68f2db5eb7d920fa4a6f3929107b6ba75fc2de99584a30a4",
-      "reviewed_by": "planagent",
-      "reviewed_at": "2026-09-22T11:13:22+08:00",
-      "review_scope": "source/hash/formula/adversarial identity review; not independent scientific replication",
-      "next_action": "Retain exact-byte bridge as software-only contract. Real probe, decoder, source, efficacy and innovation gates remain closed; AL36/AL68 remain separate blocked follow-ups."
     }
   ],
   "storage_policy": {
@@ -8348,7 +8247,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T11:13:22+08:00",
+  "updated_at": "2026-09-22T10:19:37+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -9215,26 +9114,28 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al87-exact-identity-20260922",
+      "id": "cc-al85-al86-estimator-identity-20260922",
       "task_ids": [
-        "AL87"
+        "AL85",
+        "AL86"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
-      "status": "completed_scoped_software_pass",
-      "prepared_at": "2026-09-22T10:35:20+08:00",
-      "started_at": "2026-09-22T10:35:20+08:00",
-      "completed_at": "2026-09-22T11:13:22+08:00",
-      "updated_at": "2026-09-22T11:13:22+08:00",
+      "status": "al85_software_pass_al84_al86_identity_fail",
+      "started_at": "2026-09-22T10:08:35+08:00",
+      "prepared_at": "2026-09-22T10:08:35+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
       "remote_send_required": false,
       "background_process_running": false,
       "work_orders": [
-        "../AL87_EXACT_TRACE_IDENTITY_REPAIR_20260922.md"
+        "../AL85_SHARED_ANCESTOR_ESTIMATOR_REPAIR_20260922.md",
+        "../AL86_TRACE_IDENTITY_ADVERSARIAL_AUDIT_20260922.md"
       ],
-      "scope": "Targeted exact-byte precomputed trace identity repair; no real models/media/server/GPU.",
-      "next_action": "AL87 exact-byte software pass retained; AL36/AL68 provider-blocked package remains unsent."
+      "scope": "Independent fixed-point estimator repair and static trace-identity audit; no real models/data/CI.",
+      "completed_at": "2026-09-22T10:19:37+08:00",
+      "updated_at": "2026-09-22T10:19:37+08:00",
+      "next_action": "AL85 scoped software point estimator pass; AL84 and AL86 identity bridge fail; AL36/AL68 remain separate provider-blocked follow-ups."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -10832,49 +10733,6 @@
         "updated_at": "2026-09-22T09:46:49+08:00",
         "completed_at": "2026-09-22T09:46:49+08:00",
         "next_action": "AL83 fail preserved; AL84 software pass scoped; AL36 and AL68 remain independent blocked follow-ups."
-      },
-      {
-        "id": "cc-al85-al86-estimator-identity-20260922",
-        "task_ids": [
-          "AL85",
-          "AL86"
-        ],
-        "executor_role": "planagent",
-        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-        "host_id": "local",
-        "status": "al85_software_pass_al84_al86_identity_fail",
-        "started_at": "2026-09-22T10:08:35+08:00",
-        "prepared_at": "2026-09-22T10:08:35+08:00",
-        "plan_version": "cvpr27-20260919-v1.5",
-        "remote_send_required": false,
-        "background_process_running": false,
-        "work_orders": [
-          "../AL85_SHARED_ANCESTOR_ESTIMATOR_REPAIR_20260922.md",
-          "../AL86_TRACE_IDENTITY_ADVERSARIAL_AUDIT_20260922.md"
-        ],
-        "scope": "Independent fixed-point estimator repair and static trace-identity audit; no real models/data/CI.",
-        "completed_at": "2026-09-22T10:19:37+08:00",
-        "updated_at": "2026-09-22T10:19:37+08:00",
-        "next_action": "AL85 scoped software point estimator pass; AL84 and AL86 identity bridge fail; AL36/AL68 remain separate provider-blocked follow-ups."
-      },
-      {
-        "id": "cc-al87-exact-identity-20260922",
-        "task_ids": [
-          "AL87"
-        ],
-        "executor_role": "planagent",
-        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-        "host_id": "local",
-        "status": "local_work_started",
-        "prepared_at": "2026-09-22T10:35:20+08:00",
-        "started_at": "2026-09-22T10:35:20+08:00",
-        "plan_version": "cvpr27-20260919-v1.5",
-        "remote_send_required": false,
-        "background_process_running": false,
-        "work_orders": [
-          "../AL87_EXACT_TRACE_IDENTITY_REPAIR_20260922.md"
-        ],
-        "scope": "Targeted exact-byte precomputed trace identity repair; no real models/media/server/GPU."
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
@@ -11223,11 +11081,11 @@
       "paused_at": "2026-09-20T01:35:16+08:00",
       "pause_receipt": "../reviews/SERVER_SHUTDOWN_PAUSE_20260920.json"
     },
-    "last_progress_at": "2026-09-22T11:13:22+08:00",
+    "last_progress_at": "2026-09-22T10:19:37+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T11:13:22+08:00",
+      "at": "2026-09-22T10:19:37+08:00",
       "decision": "no remote wait",
-      "reason": "AL87 completed targeted exact-byte repair; AL36/AL68 package remains provider-blocked and is not resent."
+      "reason": "AL85/AL86 local package completed; external AL36/AL68 package remains provider-blocked and is not resent."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",

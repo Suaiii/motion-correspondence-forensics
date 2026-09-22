@@ -1,0 +1,8 @@
+{
+  "task_id": "AL87",
+  "run": "run_v2",
+  "status": "failed_after_strict_identity_before_evidence",
+  "error": "BridgeInputError:k_consistency",
+  "reason": "Exact identity comparator was also applied to floating-point arithmetic consistency; this repair separates arithmetic tolerance from identity bytes.",
+  "scientific_breakthrough": false
+}

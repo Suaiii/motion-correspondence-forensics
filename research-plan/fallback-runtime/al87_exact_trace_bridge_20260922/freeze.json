@@ -1,0 +1,21 @@
+{
+  "task_id": "AL87",
+  "version": "v3",
+  "frozen_at": "2026-09-22T10:57:40+08:00",
+  "previous_freezes": [
+    "freeze_v1.json",
+    "freeze_v2.json"
+  ],
+  "previous_failures": [
+    "run_v1/evidence.json",
+    "run_v2_failure.json"
+  ],
+  "source_sha256": {
+    "exact_bridge.py": "5c5c90f812a1aed3ee653b80320d57ffd97a08c9da7fb5c637241a2624960414",
+    "reference.py": "d6656fadc940d5be0d0c9dd5fa1e61da4ff121a6c6bd7ac93204bcb439407cd4",
+    "run_batch.py": "621f1503820ea94c7e816948d126fda731af989d4feee48259861baf47c27d5e",
+    "config.json": "48a18843c7807c88e88fc6e59affc1cfc68735cc43d128d74308d6b6209f2c35",
+    "input.json": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
+    "al79_reducer.py": "f15575026b8de1723aa0122569fde70d1b9596c0e92aab8508862f838a8fd679"
+  }
+}
