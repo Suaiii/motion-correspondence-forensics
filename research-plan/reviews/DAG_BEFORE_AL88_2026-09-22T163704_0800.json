@@ -2,7 +2,7 @@
   "schema_version": "0.5",
   "project": "cvpr2027-operator-controlled-video-forensics",
   "main_thread": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-  "updated": "2026-09-22T16:40:23+08:00",
+  "updated": "2026-09-22T11:13:22+08:00",
   "goal": "在项目累计6000元和初始累计180 GPU小时约束内，由用户主导、双角色协作验证未知生成器与传播退化下的视频取证算法；证据满足门槛后冲刺CVPR 2027一作投稿，证据不足允许延期。",
   "canonical_plan": "WORK_PLAN.md",
   "status_values": [
@@ -6679,7 +6679,7 @@
         "AL42"
       ],
       "status": "done",
-      "gate_result": "fail",
+      "gate_result": "pass",
       "gate_scope": "shared_ancestor_paired_point_estimator_software",
       "hypothesis": "An explicit reproducible contract can detect the previously missed failure without changing the scientific claim or old evidence.",
       "work": [
@@ -6721,10 +6721,10 @@
         "network": false,
         "bootstrap": false
       },
-      "hypothesis_result": "software_contract_incomplete_invalid_suite_short_circuited",
+      "hypothesis_result": "software_point_estimand_contract_supported",
       "dispatch_status": "completed_fallback_software",
       "completed_at": "2026-09-22T10:19:37+08:00",
-      "updated_at": "2026-09-22T16:40:23+08:00",
+      "updated_at": "2026-09-22T10:19:37+08:00",
       "execution_area": "research-plan/fallback-runtime/al85_estimator_20260922",
       "execution_attempts": 1,
       "evidence_record": "../fallback-runtime/al85_estimator_20260922/run_v1/evidence.json",
@@ -6747,12 +6747,9 @@
         "threads": 1,
         "checks": 21
       },
-      "review": "../reviews/AL85_REVIEW_CORRECTION_20260922.md",
-      "review_sha256": "fb989ee9b2ad9190a8431ec3469d16815e1965e749a4090574c2a00ded2dab84",
-      "review_scope": "source and runner-control-flow correction; valid-cell diagnostic retained, full rejection contract not accepted",
-      "next_action": "Keep AL85 fail; use AL88 only for its corrected malformed-input software scope; no efficacy or innovation release.",
-      "reviewed_by": "planagent",
-      "reviewed_at": "2026-09-22T16:40:23+08:00"
+      "review": "../reviews/AL85_REVIEW_20260922.md",
+      "review_sha256": "6880c1005cfc777e5f42558738356b93a9c60ad4d46e23b3d71b5f4d305d3eae",
+      "review_scope": "source/hash/algorithm/reference/expected review; not independent scientific replication"
     },
     {
       "id": "AL86",
@@ -6920,99 +6917,6 @@
       "reviewed_at": "2026-09-22T11:13:22+08:00",
       "review_scope": "source/hash/formula/adversarial identity review; not independent scientific replication",
       "next_action": "Retain exact-byte bridge as software-only contract. Real probe, decoder, source, efficacy and innovation gates remain closed; AL36/AL68 remain separate blocked follow-ups."
-    },
-    {
-      "id": "AL88",
-      "milestone": "M2",
-      "title": "共享祖先点估计器拒绝测试修复",
-      "assignee": "planagent",
-      "parents": [
-        "AL85",
-        "AL37",
-        "AL42"
-      ],
-      "requires_pass": [
-        "AL37",
-        "AL42"
-      ],
-      "status": "done",
-      "gate_result": "pass",
-      "gate_scope": "shared_ancestor_estimator_rejection_software",
-      "hypothesis": "Using one frozen ancestor-weight scheme per malformed case reveals the intended rejection codes without changing AL85 valid-cell estimands.",
-      "work": [
-        "Freeze repaired runner and preserve AL85 failure",
-        "Run valid cells plus corrected malformed input suite",
-        "Review hashes, errors and alternative explanations"
-      ],
-      "acceptance": [
-        "Each malformed case reaches its intended validation layer",
-        "Valid cells still match independent Fraction reference",
-        "No efficacy, CI, model/media/server/GPU or independent-review claim"
-      ],
-      "artifacts": [
-        "../fallback-runtime/al88_estimator_rejection_20260922/core.py",
-        "../fallback-runtime/al88_estimator_rejection_20260922/reference.py",
-        "../fallback-runtime/al88_estimator_rejection_20260922/config.json",
-        "../fallback-runtime/al88_estimator_rejection_20260922/freeze.json",
-        "../fallback-runtime/al88_estimator_rejection_20260922/run_v2/evidence.json",
-        "../fallback-runtime/al88_estimator_rejection_20260922/HANDOFF.md",
-        "../reviews/AL88_REVIEW_20260922.md",
-        "../reviews/AL85_REVIEW_CORRECTION_20260922.md"
-      ],
-      "work_order": "../AL88_SHARED_ESTIMATOR_REJECTION_REPAIR_20260922.md",
-      "work_order_sha256": "59c496cdd277bf36fe85dd6976eb004e51cdfa5e0f747b6f686af948685f49ba",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "prepared_at": "2026-09-22T16:37:04+08:00",
-      "started_at": "2026-09-22T16:37:04+08:00",
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "implementation_authorized": true,
-      "fallback_reason": "AL85 acceptance correction discovered by planagent review; targeted local software repair, no remote resend",
-      "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
-      "scientific_innovation_gate_passed": false,
-      "resource_policy": {
-        "local_cpu": true,
-        "threads_max": 1,
-        "network": false,
-        "media": false,
-        "server": false,
-        "gpu": false,
-        "models": false,
-        "bootstrap": false,
-        "ci": false
-      },
-      "hypothesis_result": "corrected_rejection_suite_supported_software_only",
-      "dispatch_status": "completed_fallback_software",
-      "completed_at": "2026-09-22T16:40:23+08:00",
-      "updated_at": "2026-09-22T16:40:23+08:00",
-      "execution_attempts": 1,
-      "execution_area": "research-plan/fallback-runtime/al88_estimator_rejection_20260922",
-      "evidence_record": "../fallback-runtime/al88_estimator_rejection_20260922/run_v2/evidence.json",
-      "evidence_sha256": "1e0ce01638ae2e695f405d2d47e7e75c8daf63ee3b15858a78fbe3d86cba7756",
-      "handoff": "../fallback-runtime/al88_estimator_rejection_20260922/HANDOFF.md",
-      "handoff_sha256": "fb9ca863ea94ea60bb410fc7b8b6594820039520c1ac78c213e871d23eea4123",
-      "freeze": "../fallback-runtime/al88_estimator_rejection_20260922/freeze.json",
-      "source_sha256": {
-        "core.py": "a2b3a34652d9a92658c3160ebff2a0050e28693852a6032d1f932ed952a4f374",
-        "reference.py": "1c0d52f8cbec0e6cdc3ac6ab4c996222d940bd74fd4a0458d645353d6c905141",
-        "run_batch.py": "7a605106b8d17b981a3fc8ffff2bb1c89c70fb385c9483276ebb7d6cf5cc596e",
-        "config.json": "a6558f591d4a0f2c5761d1aed93bd35cc20a14153b5e56d768341a4afcdde3ba"
-      },
-      "measured_resources": {
-        "network": 0,
-        "media": 0,
-        "server": 0,
-        "gpu": 0,
-        "models": 0,
-        "threads": 1,
-        "checks": 21
-      },
-      "review": "../reviews/AL88_REVIEW_20260922.md",
-      "review_sha256": "b7e9acf2cba0f65f10143303340a663809142d70ca383c50a86a01b5bdef9ff2",
-      "reviewed_by": "planagent",
-      "reviewed_at": "2026-09-22T16:40:23+08:00",
-      "review_scope": "source/hash/runner validation layer and alternative explanation review; not independent scientific replication",
-      "next_action": "Retain as software-only corrected rejection contract; AL36/AL68 remain separate blocked follow-ups."
     }
   ],
   "storage_policy": {
@@ -8444,7 +8348,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T16:40:23+08:00",
+  "updated_at": "2026-09-22T11:13:22+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -9311,26 +9215,26 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al88-estimator-rejection-20260922",
+      "id": "cc-al87-exact-identity-20260922",
       "task_ids": [
-        "AL88"
+        "AL87"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
       "status": "completed_scoped_software_pass",
-      "prepared_at": "2026-09-22T16:37:04+08:00",
-      "started_at": "2026-09-22T16:37:04+08:00",
-      "completed_at": "2026-09-22T16:40:23+08:00",
-      "updated_at": "2026-09-22T16:40:23+08:00",
+      "prepared_at": "2026-09-22T10:35:20+08:00",
+      "started_at": "2026-09-22T10:35:20+08:00",
+      "completed_at": "2026-09-22T11:13:22+08:00",
+      "updated_at": "2026-09-22T11:13:22+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
       "remote_send_required": false,
       "background_process_running": false,
       "work_orders": [
-        "../AL88_SHARED_ESTIMATOR_REJECTION_REPAIR_20260922.md"
+        "../AL87_EXACT_TRACE_IDENTITY_REPAIR_20260922.md"
       ],
-      "scope": "Targeted invalid-suite repair for AL85 shared estimator; no real models/data/CI.",
-      "next_action": "AL88 corrected rejection suite pass scoped; AL85 original full contract fail retained; AL36/AL68 remain provider-blocked and unsent."
+      "scope": "Targeted exact-byte precomputed trace identity repair; no real models/media/server/GPU.",
+      "next_action": "AL87 exact-byte software pass retained; AL36/AL68 provider-blocked package remains unsent."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -10971,47 +10875,6 @@
           "../AL87_EXACT_TRACE_IDENTITY_REPAIR_20260922.md"
         ],
         "scope": "Targeted exact-byte precomputed trace identity repair; no real models/media/server/GPU."
-      },
-      {
-        "id": "cc-al87-exact-identity-20260922",
-        "task_ids": [
-          "AL87"
-        ],
-        "executor_role": "planagent",
-        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-        "host_id": "local",
-        "status": "completed_scoped_software_pass",
-        "prepared_at": "2026-09-22T10:35:20+08:00",
-        "started_at": "2026-09-22T10:35:20+08:00",
-        "completed_at": "2026-09-22T11:13:22+08:00",
-        "updated_at": "2026-09-22T11:13:22+08:00",
-        "plan_version": "cvpr27-20260919-v1.5",
-        "remote_send_required": false,
-        "background_process_running": false,
-        "work_orders": [
-          "../AL87_EXACT_TRACE_IDENTITY_REPAIR_20260922.md"
-        ],
-        "scope": "Targeted exact-byte precomputed trace identity repair; no real models/media/server/GPU.",
-        "next_action": "AL87 exact-byte software pass retained; AL36/AL68 provider-blocked package remains unsent."
-      },
-      {
-        "id": "cc-al88-estimator-rejection-20260922",
-        "task_ids": [
-          "AL88"
-        ],
-        "executor_role": "planagent",
-        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-        "host_id": "local",
-        "status": "local_work_started",
-        "prepared_at": "2026-09-22T16:37:04+08:00",
-        "started_at": "2026-09-22T16:37:04+08:00",
-        "plan_version": "cvpr27-20260919-v1.5",
-        "remote_send_required": false,
-        "background_process_running": false,
-        "work_orders": [
-          "../AL88_SHARED_ESTIMATOR_REJECTION_REPAIR_20260922.md"
-        ],
-        "scope": "Targeted invalid-suite repair for AL85 shared estimator; no real models/data/CI."
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
@@ -11360,11 +11223,11 @@
       "paused_at": "2026-09-20T01:35:16+08:00",
       "pause_receipt": "../reviews/SERVER_SHUTDOWN_PAUSE_20260920.json"
     },
-    "last_progress_at": "2026-09-22T16:40:23+08:00",
+    "last_progress_at": "2026-09-22T11:13:22+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T16:40:23+08:00",
+      "at": "2026-09-22T11:13:22+08:00",
       "decision": "no remote wait",
-      "reason": "AL88 completed targeted rejection repair; AL36/AL68 package remains provider-blocked and is not resent."
+      "reason": "AL87 completed targeted exact-byte repair; AL36/AL68 package remains provider-blocked and is not resent."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",
