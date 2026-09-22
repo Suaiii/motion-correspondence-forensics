@@ -1,0 +1,12 @@
+{
+  "task_id": "AL85",
+  "version": "v1",
+  "frozen_at": "2026-09-22T10:12:00+08:00",
+  "source_sha256": {
+    "core.py": "a2b3a34652d9a92658c3160ebff2a0050e28693852a6032d1f932ed952a4f374",
+    "reference.py": "1c0d52f8cbec0e6cdc3ac6ab4c996222d940bd74fd4a0458d645353d6c905141",
+    "run_batch.py": "0137ea13cdbc00b9e55ad2913ac534675667d178f8ee00b987106fbcfd8cc028",
+    "config.json": "97f431f0d4ab1aee864cd1ab1b136fc3a28d9620d8efa2b8842b3f2589be0ba3"
+  },
+  "input_binding": "config.json contains complete records/scores/weights/expected"
+}

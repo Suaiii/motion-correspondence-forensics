@@ -2,7 +2,7 @@
   "schema_version": "0.5",
   "project": "cvpr2027-operator-controlled-video-forensics",
   "main_thread": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-  "updated": "2026-09-22T10:19:37+08:00",
+  "updated": "2026-09-20",
   "goal": "在项目累计6000元和初始累计180 GPU小时约束内，由用户主导、双角色协作验证未知生成器与传播退化下的视频取证算法；证据满足门槛后冲刺CVPR 2027一作投稿，证据不足允许延期。",
   "canonical_plan": "WORK_PLAN.md",
   "status_values": [
@@ -3958,8 +3958,7 @@
       "artifacts": [
         "../reviews/AL45_SELECTION_PROOF_AND_LIMITS_20260919.md",
         "../reviews/AL45_SOURCE_AND_REVIEW_LIMITS_20260919.json",
-        "../reviews/AL45_BASELINE_SELECTION_PRIMARY_RECORD_20260919.json",
-        "../reviews/AL45_ACCESS_CONTINUATION_FAILURE_20260922.json"
+        "../reviews/AL45_BASELINE_SELECTION_PRIMARY_RECORD_20260919.json"
       ],
       "work_order": "../AL45_STRONG_BASELINE_SELECTION_AUDIT_20260919.md",
       "work_order_sha256": "3b31d2d4de984f4dfa83d6cff995ad067b16e41ff82ee2803f7bccd84f7bbb18",
@@ -3987,7 +3986,7 @@
       "review_scope": "Partial design with conditional set-inclusion proofs; not completed external source verification",
       "artifact_sha256": "855f6acfe3eac5e8719c703887c1fccc9aecfddce66a0e325f4efbbcfd9043f9",
       "primary_source_record": "../reviews/AL45_BASELINE_SELECTION_PRIMARY_RECORD_20260919.json",
-      "next_action": "No further access retries without a new accessible primary source. Retain conditional math and not_evaluated methodology gate.",
+      "next_action": "Keep AL45 blocked until IUT/cluster interval primary methodology is available; do not use old manual pass.",
       "superseded_in_turn_assessment": {
         "status": "done",
         "gate_result": "pass",
@@ -4021,10 +4020,9 @@
           "scope": "Read selected full-text selection/evaluation sections only; no new primary identity beyond original3, no numeric/real experiment."
         }
       ],
-      "updated_at": "2026-09-22T10:19:37+08:00",
+      "updated_at": "2026-09-22T08:09:39+08:00",
       "resumed_at": "2026-09-22T08:04:28+08:00",
-      "integrity_correction": "JMLR full PDF sections 1,5.2,5.2.1,5.3,6 read; Cawley/Talbot supports model-selection bias and internal selection principles. Project IUT/cluster CI methodology remains unverified; Euclid security blocked.",
-      "access_continuation_receipt": "../reviews/AL45_ACCESS_CONTINUATION_FAILURE_20260922.json"
+      "integrity_correction": "JMLR full PDF sections 1,5.2,5.2.1,5.3,6 read; Cawley/Talbot supports model-selection bias and internal selection principles. Project IUT/cluster CI methodology remains unverified; Euclid security blocked."
     },
     {
       "id": "AL46",
@@ -6581,7 +6579,7 @@
         "AL79"
       ],
       "status": "done",
-      "gate_result": "fail",
+      "gate_result": "pass",
       "gate_scope": "precomputed_probe_trace_bridge_software",
       "hypothesis": "A precomputed four-call identity bridge can reject mismatched records before RGB reduction",
       "work": [
@@ -6628,11 +6626,11 @@
         "gpu": false,
         "bootstrap": false
       },
-      "hypothesis_result": "trace_identity_contract_incomplete",
+      "hypothesis_result": "software_contract_supported_precomputed_only",
       "dispatch_status": "completed_fallback_software",
       "started_at": "2026-09-22T09:35:22+08:00",
       "completed_at": "2026-09-22T09:46:49+08:00",
-      "updated_at": "2026-09-22T10:19:37+08:00",
+      "updated_at": "2026-09-22T09:46:49+08:00",
       "execution_attempts": 2,
       "evidence_record": "../fallback-runtime/al84_trace_bridge_20260922/run_v1/evidence.json",
       "evidence_sha256": "d124146a90f8c7dc4ed26aa8601a7d95269783be23635cb8c4629cb14fe0e55e",
@@ -6657,165 +6655,12 @@
         "valid_call_count": 4,
         "invalid_cases": 8
       },
-      "next_action": "Original algebra output retained as historical diagnostic; strict identity bridge rejected after AL86 static adversarial review. Any exact-byte repair must be a new package.",
-      "review": "../reviews/AL86_TRACE_IDENTITY_REVIEW_20260922.md",
-      "review_sha256": "4a460aea2b3e9722947635316f9d6fb5d78339cc36810a3ee77d92f07c5147c5",
+      "next_action": "Preserve software-only bridge result; AL36 adversarial review and AL68 existing-data readiness remain separate blocked follow-ups; real probe and efficacy gates stay closed.",
+      "review": "../reviews/AL84_REVIEW_20260922.md",
+      "review_sha256": "472e2612cb80e72f91f20104ff2d6c9c57389ef9ac92f5ed4a64cc4635f3e63d",
       "reviewed_by": "planagent",
-      "reviewed_at": "2026-09-22T10:19:37+08:00",
-      "review_scope": "static adversarial review of identity comparison; prior batch not rerun"
-    },
-    {
-      "id": "AL85",
-      "milestone": "M2",
-      "title": "共享祖先配对点估计修复",
-      "assignee": "planagent",
-      "parents": [
-        "AL83",
-        "AL37",
-        "AL42"
-      ],
-      "requires_pass": [
-        "AL37",
-        "AL42"
-      ],
-      "status": "done",
-      "gate_result": "pass",
-      "gate_scope": "shared_ancestor_paired_point_estimator_software",
-      "hypothesis": "An explicit reproducible contract can detect the previously missed failure without changing the scientific claim or old evidence.",
-      "work": [
-        "Read exact input contract and prior failure",
-        "Implement or statically review only the specified bounded cases",
-        "Preserve source/input hashes, failures and a scoped handoff"
-      ],
-      "acceptance": [
-        "Exact planned output/rejection coverage",
-        "Real timestamps and unchanged prior artifacts",
-        "No efficacy or independent-scientific-review claim"
-      ],
-      "artifacts": [
-        "../fallback-runtime/al85_estimator_20260922/core.py",
-        "../fallback-runtime/al85_estimator_20260922/reference.py",
-        "../fallback-runtime/al85_estimator_20260922/config.json",
-        "../fallback-runtime/al85_estimator_20260922/freeze.json",
-        "../fallback-runtime/al85_estimator_20260922/run_v1/evidence.json",
-        "../fallback-runtime/al85_estimator_20260922/HANDOFF.md"
-      ],
-      "work_order": "../AL85_SHARED_ANCESTOR_ESTIMATOR_REPAIR_20260922.md",
-      "work_order_sha256": "673d1695569e0c6aad1583d9f0a6fd5cc2482f2124b3d1f1a0d623a8cfce7a96",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "prepared_at": "2026-09-22T10:08:35+08:00",
-      "started_at": "2026-09-22T10:08:35+08:00",
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "implementation_authorized": true,
-      "fallback_reason": "Existing research window missing-provider startup failure; not a duplicate remote dispatch",
-      "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
-      "scientific_innovation_gate_passed": false,
-      "resource_policy": {
-        "local_cpu": true,
-        "threads_max": 1,
-        "model": false,
-        "media": false,
-        "server": false,
-        "gpu": false,
-        "network": false,
-        "bootstrap": false
-      },
-      "hypothesis_result": "software_point_estimand_contract_supported",
-      "dispatch_status": "completed_fallback_software",
-      "completed_at": "2026-09-22T10:19:37+08:00",
-      "updated_at": "2026-09-22T10:19:37+08:00",
-      "execution_area": "research-plan/fallback-runtime/al85_estimator_20260922",
-      "execution_attempts": 1,
-      "evidence_record": "../fallback-runtime/al85_estimator_20260922/run_v1/evidence.json",
-      "evidence_sha256": "515146ee59bd4af853c36328c141c93d68d98530f9a2cce344e49c9c2f8f873e",
-      "handoff": "../fallback-runtime/al85_estimator_20260922/HANDOFF.md",
-      "handoff_sha256": "0877f37ed0ce0f2307e210b91f6df2bfe72b0555a6370e7bc9756971d74cc83e",
-      "freeze": "../fallback-runtime/al85_estimator_20260922/freeze.json",
-      "source_sha256": {
-        "core.py": "a2b3a34652d9a92658c3160ebff2a0050e28693852a6032d1f932ed952a4f374",
-        "reference.py": "1c0d52f8cbec0e6cdc3ac6ab4c996222d940bd74fd4a0458d645353d6c905141",
-        "run_batch.py": "0137ea13cdbc00b9e55ad2913ac534675667d178f8ee00b987106fbcfd8cc028",
-        "config.json": "97f431f0d4ab1aee864cd1ab1b136fc3a28d9620d8efa2b8842b3f2589be0ba3"
-      },
-      "measured_resources": {
-        "network": 0,
-        "media": 0,
-        "server": 0,
-        "gpu": 0,
-        "models": 0,
-        "threads": 1,
-        "checks": 21
-      },
-      "review": "../reviews/AL85_REVIEW_20260922.md",
-      "review_sha256": "6880c1005cfc777e5f42558738356b93a9c60ad4d46e23b3d71b5f4d305d3eae",
-      "review_scope": "source/hash/algorithm/reference/expected review; not independent scientific replication"
-    },
-    {
-      "id": "AL86",
-      "milestone": "M2",
-      "title": "四调用记录身份的定点反方审查",
-      "assignee": "planagent",
-      "parents": [
-        "AL84",
-        "AL20"
-      ],
-      "requires_pass": [
-        "AL20"
-      ],
-      "status": "done",
-      "gate_result": "fail",
-      "gate_scope": "trace_identity_static_review",
-      "hypothesis": "An explicit reproducible contract can detect the previously missed failure without changing the scientific claim or old evidence.",
-      "work": [
-        "Read exact input contract and prior failure",
-        "Implement or statically review only the specified bounded cases",
-        "Preserve source/input hashes, failures and a scoped handoff"
-      ],
-      "acceptance": [
-        "Exact planned output/rejection coverage",
-        "Real timestamps and unchanged prior artifacts",
-        "No efficacy or independent-scientific-review claim"
-      ],
-      "artifacts": [
-        "../reviews/AL86_TRACE_IDENTITY_REVIEW_20260922.md",
-        "../reviews/AL86_TRACE_IDENTITY_REVIEW_20260922.json"
-      ],
-      "work_order": "../AL86_TRACE_IDENTITY_ADVERSARIAL_AUDIT_20260922.md",
-      "work_order_sha256": "95d20e1b8726b4d8c6a4c92bcb22efeaeb0c6ba2298ef9a47e64ae5ba9c24696",
-      "plan_version": "cvpr27-20260919-v1.5",
-      "prepared_at": "2026-09-22T10:08:35+08:00",
-      "started_at": "2026-09-22T10:08:35+08:00",
-      "due_at": "2026-09-22T22:00:00+08:00",
-      "execution_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-      "implementation_authorized": false,
-      "fallback_reason": "Existing research window missing-provider startup failure; not a duplicate remote dispatch",
-      "failure_receipt": "../reviews/RESEARCH_RESUME_DISPATCH_FAILURE_20260922.json",
-      "scientific_innovation_gate_passed": false,
-      "resource_policy": {
-        "local_cpu": true,
-        "threads_max": 1,
-        "model": false,
-        "media": false,
-        "server": false,
-        "gpu": false,
-        "network": false,
-        "bootstrap": false
-      },
-      "hypothesis_result": "strict_identity_not_supported_by_existing_bridge",
-      "dispatch_status": "completed_static_fail",
-      "completed_at": "2026-09-22T10:19:37+08:00",
-      "updated_at": "2026-09-22T10:19:37+08:00",
-      "execution_area": "research-plan/reviews",
-      "execution_attempts": 0,
-      "evidence_record": "../reviews/AL86_TRACE_IDENTITY_REVIEW_20260922.json",
-      "evidence_sha256": "b4a8a9fe8ca5584b86ed61da5765292f1b2e84c46c79d238230408bc8180b664",
-      "handoff": "../reviews/AL86_TRACE_IDENTITY_REVIEW_20260922.md",
-      "handoff_sha256": "4a460aea2b3e9722947635316f9d6fb5d78339cc36810a3ee77d92f07c5147c5",
-      "review": "../reviews/AL86_TRACE_IDENTITY_REVIEW_20260922.md",
-      "review_sha256": "4a460aea2b3e9722947635316f9d6fb5d78339cc36810a3ee77d92f07c5147c5",
-      "review_scope": "static adversarial source review; no numeric batch or independent scientific replication",
-      "next_action": "Keep AL84 fail; prepare an exact-byte identity repair only if it provides new information and preserve all old output."
+      "reviewed_at": "2026-09-22T09:48:14+08:00",
+      "review_scope": "source, hash, derivation, bounded rejection and alternative-explanation review; not independent scientific replication"
     }
   ],
   "storage_policy": {
@@ -8247,7 +8092,7 @@
     }
   },
   "plan_version": "cvpr27-20260919-v1.5",
-  "updated_at": "2026-09-22T10:19:37+08:00",
+  "updated_at": "2026-09-22T09:29:56+08:00",
   "timezone": "Asia/Shanghai",
   "roles": {
     "planagent": {
@@ -9114,28 +8959,28 @@
     "formal_gates_unchanged": true,
     "automation_id": "cvpr-2027",
     "current_dispatch": {
-      "id": "cc-al85-al86-estimator-identity-20260922",
+      "id": "cc-al83-al84-cpu-estimator-bridge-20260922",
       "task_ids": [
-        "AL85",
-        "AL86"
+        "AL83",
+        "AL84"
       ],
       "executor_role": "planagent",
       "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
       "host_id": "local",
-      "status": "al85_software_pass_al84_al86_identity_fail",
-      "started_at": "2026-09-22T10:08:35+08:00",
-      "prepared_at": "2026-09-22T10:08:35+08:00",
+      "status": "al83_failed_al84_done",
+      "prepared_at": "2026-09-22T09:15:08+08:00",
+      "started_at": "2026-09-22T09:15:08+08:00",
       "plan_version": "cvpr27-20260919-v1.5",
+      "work_orders": [
+        "../AL83_SHARED_NEGATIVE_PAIRED_AUC_CPU_20260922.md",
+        "../AL84_FOUR_CALL_TRACE_RGB_BRIDGE_20260922.md"
+      ],
       "remote_send_required": false,
       "background_process_running": false,
-      "work_orders": [
-        "../AL85_SHARED_ANCESTOR_ESTIMATOR_REPAIR_20260922.md",
-        "../AL86_TRACE_IDENTITY_ADVERSARIAL_AUDIT_20260922.md"
-      ],
-      "scope": "Independent fixed-point estimator repair and static trace-identity audit; no real models/data/CI.",
-      "completed_at": "2026-09-22T10:19:37+08:00",
-      "updated_at": "2026-09-22T10:19:37+08:00",
-      "next_action": "AL85 scoped software point estimator pass; AL84 and AL86 identity bridge fail; AL36/AL68 remain separate provider-blocked follow-ups."
+      "scope": "Local independent shared-negative statistic and precomputed RGB trace bridge; no model/media/server",
+      "updated_at": "2026-09-22T09:46:49+08:00",
+      "completed_at": "2026-09-22T09:46:49+08:00",
+      "next_action": "AL83 fail preserved; AL84 software pass scoped; AL36 and AL68 remain independent blocked follow-ups."
     },
     "breakthrough_status": "not_established",
     "runbook": "COLLABORATION_RUNBOOK_2026-09-17.md",
@@ -10709,30 +10554,6 @@
         "remote_send_required": false,
         "background_process_running": false,
         "archived_at": "2026-09-22T08:12:17+08:00"
-      },
-      {
-        "id": "cc-al83-al84-cpu-estimator-bridge-20260922",
-        "task_ids": [
-          "AL83",
-          "AL84"
-        ],
-        "executor_role": "planagent",
-        "executor_thread_id": "01a0aea6-38cb-77e1-8f1f-aba2a8dce36b",
-        "host_id": "local",
-        "status": "al83_failed_al84_done",
-        "prepared_at": "2026-09-22T09:15:08+08:00",
-        "started_at": "2026-09-22T09:15:08+08:00",
-        "plan_version": "cvpr27-20260919-v1.5",
-        "work_orders": [
-          "../AL83_SHARED_NEGATIVE_PAIRED_AUC_CPU_20260922.md",
-          "../AL84_FOUR_CALL_TRACE_RGB_BRIDGE_20260922.md"
-        ],
-        "remote_send_required": false,
-        "background_process_running": false,
-        "scope": "Local independent shared-negative statistic and precomputed RGB trace bridge; no model/media/server",
-        "updated_at": "2026-09-22T09:46:49+08:00",
-        "completed_at": "2026-09-22T09:46:49+08:00",
-        "next_action": "AL83 fail preserved; AL84 software pass scoped; AL36 and AL68 remain independent blocked follow-ups."
       }
     ],
     "last_substantive_review": "../reviews/AL65_FALLBACK_HANDOFF_20260920.md",
@@ -10767,7 +10588,7 @@
       "do_not_resend": true,
       "last_planagent_review": "2026-09-22T01:49:54+08:00"
     },
-    "dispatch_policy_state": "active_with_scientific_resource_and_no_duplicate_gates",
+    "dispatch_policy_state": "paused_by_user_no_automatic_dispatch_or_server_start",
     "waiting_on": [
       "Actual billing/remaining allowance or explicitly authorized batch allowance",
       "Original timestamp fields and two-real-source/ancestry acceptance"
@@ -10943,26 +10764,25 @@
     "legacy_last_wait_cursor": "cfb1fd92-e995-4943-bd39-34a12ae0d2e4:6",
     "last_local_review_at": "2026-09-20T01:22:06+08:00",
     "prepared_independent_task_ids": [
-      "AL36",
-      "AL68"
+      "AL66",
+      "AL36"
     ],
     "active_and_prepared_work": {
-      "running": [
-        "AL85",
-        "AL86"
-      ],
+      "running": [],
       "prepared_independent": [
-        "AL36",
-        "AL68"
+        "AL66",
+        "AL36"
       ],
       "executor_blocked": [
-        "AL36",
-        "AL68"
+        "AL36"
       ],
       "source_blocked": [
         "AL45"
       ],
-      "user_paused": []
+      "user_paused": [
+        "AL66",
+        "AL36"
+      ]
     },
     "material_decision_notices": [
       {
@@ -11081,11 +10901,11 @@
       "paused_at": "2026-09-20T01:35:16+08:00",
       "pause_receipt": "../reviews/SERVER_SHUTDOWN_PAUSE_20260920.json"
     },
-    "last_progress_at": "2026-09-22T10:19:37+08:00",
+    "last_progress_at": "2026-09-22T09:48:14+08:00",
     "last_poll_decision": {
-      "at": "2026-09-22T10:19:37+08:00",
+      "at": "2026-09-22T09:48:14+08:00",
       "decision": "no remote wait",
-      "reason": "AL85/AL86 local package completed; external AL36/AL68 package remains provider-blocked and is not resent."
+      "reason": "AL84 reviewed and archived as scoped software pass; provider-blocked AL68/AL36 package remains unsent."
     },
     "research_observation_note": {
       "recorded_at": "2026-09-20T01:05:25+08:00",
@@ -11208,28 +11028,6 @@
         "last_wait_cursor": "6266bfba-1e72-42c6-9a7b-73fd2ca08dff:1",
         "do_not_resend": true,
         "blocker": "Tool-call output protocol failed; independent review has no artifact."
-      }
-    ],
-    "active_and_prepared_work_history": [
-      {
-        "at": "2026-09-22T10:08:35+08:00",
-        "superseded_stale_view": {
-          "running": [],
-          "prepared_independent": [
-            "AL66",
-            "AL36"
-          ],
-          "executor_blocked": [
-            "AL36"
-          ],
-          "source_blocked": [
-            "AL45"
-          ],
-          "user_paused": [
-            "AL66",
-            "AL36"
-          ]
-        }
       }
     ]
   },

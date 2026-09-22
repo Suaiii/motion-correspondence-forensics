@@ -1,0 +1,34 @@
+{
+  "task_id": "AL45",
+  "recorded_at": "2026-09-22T10:08:35+08:00",
+  "observation": "read-only retrieval attempts; no primary full text obtained",
+  "search": {
+    "queries": 2,
+    "purpose": "same Berger-Hsu paper public primary location"
+  },
+  "attempts": [
+    {
+      "url": "https://www.public.asu.edu/~rlberge1/papers/statsci96.pdf",
+      "tool": "web.open",
+      "result": "not accessible"
+    },
+    {
+      "url": "https://www.public.asu.edu/~rlberge1/papers/statsci96.pdf",
+      "tool": "urllib read-only",
+      "result": "redirect to ASU access login, HTML, not PDF",
+      "status": 200,
+      "bytes": 38646,
+      "html_sha256": "dd9b45d9dcead832aa7432e642711deb89542c41f69c003bfec7dca00c8c8d07",
+      "redirect_query_not_retained": true
+    },
+    {
+      "url": "https://downloads.regulations.gov/FDA-2017-D-5525-0003/attachment_1.pdf",
+      "tool": "web.open",
+      "result": "403 Forbidden; stopped"
+    }
+  ],
+  "scope_note": "Two alternate locations beyond original URLs were attempted during continuation. This does not retrospectively fit the original three-entry acquisition contract; no new methodology acceptance. No authentication, challenge bypass, or further retry.",
+  "full_payload_saved": false,
+  "numeric_or_bootstrap_run": false,
+  "gate_result": "not_evaluated"
+}

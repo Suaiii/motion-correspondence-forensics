@@ -1,0 +1,41 @@
+{
+  "task_id": "AL86",
+  "version": "trace-identity-adversarial-static-v1",
+  "status": "completed_static_fail",
+  "source_sha256": {
+    "bridge.py": "25272f3db510d361672491de5eedce0d30898af0f0f46ea2babf957d57cbaaf9",
+    "reference.py": "d6656fadc940d5be0d0c9dd5fa1e61da4ff121a6c6bd7ac93204bcb439407cd4",
+    "run_batch.py": "1bac5b808333475ec595b8a1cd39337e0b8b39f1dabc1e59a1742cc74bde0f3b",
+    "config.json": "49fa652d80f82cdd0983dd314df4d8e65bca8add377b418e581025a8b32e58e9",
+    "input.json": "03820573383fbfc462d45375ba1d3facbe65bc33b3a3247c31adf88f3090827a",
+    "freeze.json": "253f3f62c18d75c6bfde33f0c05d4b070c9e149d5b4f021783c434d9c73493c7",
+    "run_v1/evidence.json": "d124146a90f8c7dc4ed26aa8601a7d95269783be23635cb8c4629cb14fe0e55e"
+  },
+  "checks": [
+    {
+      "name": "same_uses_allclose",
+      "passed": true,
+      "finding": "rtol=1e-12, atol=1e-12; exact shared-byte identity not enforced"
+    },
+    {
+      "name": "hash_is_per_row_only",
+      "passed": true,
+      "finding": "row hashes do not compare Ra_x.input to Rb_x.input"
+    }
+  ],
+  "attack_case": {
+    "description": "Rb_x input differs by one float64 ULP and its own row hash is updated",
+    "executed": false,
+    "predicted_control_flow": "accepted by _same if values are within allclose tolerance"
+  },
+  "resources": {
+    "network": 0,
+    "media": 0,
+    "server": 0,
+    "gpu": 0,
+    "model": 0,
+    "numeric_batch": 0
+  },
+  "scientific_breakthrough": false,
+  "scope": "static review of precomputed mock bridge only; no real probe or efficacy"
+}

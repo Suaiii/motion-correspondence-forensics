@@ -1,0 +1,572 @@
+{
+  "task_id": "AL85",
+  "version": "shared-negative-ancestor-estimator-v1",
+  "software_pass": true,
+  "source_sha256": {
+    "core.py": "a2b3a34652d9a92658c3160ebff2a0050e28693852a6032d1f932ed952a4f374",
+    "reference.py": "1c0d52f8cbec0e6cdc3ac6ab4c996222d940bd74fd4a0458d645353d6c905141",
+    "run_batch.py": "0137ea13cdbc00b9e55ad2913ac534675667d178f8ee00b987106fbcfd8cc028",
+    "config.json": "97f431f0d4ab1aee864cd1ab1b136fc3a28d9620d8efa2b8842b3f2589be0ba3"
+  },
+  "config_sha256": "97f431f0d4ab1aee864cd1ab1b136fc3a28d9620d8efa2b8842b3f2589be0ba3",
+  "weights": {
+    "all_one": {
+      "A": 1,
+      "B": 1,
+      "C": 1,
+      "D": 1
+    },
+    "ancestor_A_double": {
+      "A": 2,
+      "B": 1,
+      "C": 1,
+      "D": 1
+    },
+    "ancestor_B_zero": {
+      "A": 1,
+      "B": 0,
+      "C": 1,
+      "D": 1
+    },
+    "all_zero": {
+      "A": 0,
+      "B": 0,
+      "C": 0,
+      "D": 0
+    }
+  },
+  "rows": [
+    {
+      "name": "all_one",
+      "result": {
+        "valid": true,
+        "cells": {
+          "candidate": {
+            "diagnostic_a": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 2,
+                "negative_weight": 3,
+                "two_U": 11,
+                "denominator": 12,
+                "auc": "11/12"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 3,
+                "two_U": 6,
+                "denominator": 6,
+                "auc": "1"
+              },
+              "macro": "23/24"
+            },
+            "diagnostic_b": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 2,
+                "negative_weight": 3,
+                "two_U": 6,
+                "denominator": 12,
+                "auc": "1/2"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 3,
+                "two_U": 6,
+                "denominator": 6,
+                "auc": "1"
+              },
+              "macro": "3/4"
+            }
+          },
+          "baseline": {
+            "diagnostic_a": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 2,
+                "negative_weight": 3,
+                "two_U": 6,
+                "denominator": 12,
+                "auc": "1/2"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 3,
+                "two_U": 5,
+                "denominator": 6,
+                "auc": "5/6"
+              },
+              "macro": "2/3"
+            },
+            "diagnostic_b": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 2,
+                "negative_weight": 3,
+                "two_U": 6,
+                "denominator": 12,
+                "auc": "1/2"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 3,
+                "two_U": 6,
+                "denominator": 6,
+                "auc": "1"
+              },
+              "macro": "3/4"
+            }
+          }
+        },
+        "deltas": {
+          "diagnostic_a": "7/24",
+          "diagnostic_b": "0"
+        },
+        "mean_delta": "7/48"
+      },
+      "reference": {
+        "valid": true,
+        "methods": {
+          "candidate": {
+            "diagnostic_a": {
+              "cells": {
+                "g1": {
+                  "two_U": 11,
+                  "denominator": 12,
+                  "auc": "11/12"
+                },
+                "g2": {
+                  "two_U": 6,
+                  "denominator": 6,
+                  "auc": "1"
+                }
+              },
+              "macro": "23/24"
+            },
+            "diagnostic_b": {
+              "cells": {
+                "g1": {
+                  "two_U": 6,
+                  "denominator": 12,
+                  "auc": "1/2"
+                },
+                "g2": {
+                  "two_U": 6,
+                  "denominator": 6,
+                  "auc": "1"
+                }
+              },
+              "macro": "3/4"
+            }
+          },
+          "baseline": {
+            "diagnostic_a": {
+              "cells": {
+                "g1": {
+                  "two_U": 6,
+                  "denominator": 12,
+                  "auc": "1/2"
+                },
+                "g2": {
+                  "two_U": 5,
+                  "denominator": 6,
+                  "auc": "5/6"
+                }
+              },
+              "macro": "2/3"
+            },
+            "diagnostic_b": {
+              "cells": {
+                "g1": {
+                  "two_U": 6,
+                  "denominator": 12,
+                  "auc": "1/2"
+                },
+                "g2": {
+                  "two_U": 6,
+                  "denominator": 6,
+                  "auc": "1"
+                }
+              },
+              "macro": "3/4"
+            }
+          }
+        },
+        "deltas": {
+          "diagnostic_a": "7/24",
+          "diagnostic_b": "0"
+        },
+        "mean_delta": "7/48"
+      }
+    },
+    {
+      "name": "ancestor_A_double",
+      "result": {
+        "valid": true,
+        "cells": {
+          "candidate": {
+            "diagnostic_a": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 3,
+                "negative_weight": 4,
+                "two_U": 23,
+                "denominator": 24,
+                "auc": "23/24"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 4,
+                "two_U": 8,
+                "denominator": 8,
+                "auc": "1"
+              },
+              "macro": "47/48"
+            },
+            "diagnostic_b": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 3,
+                "negative_weight": 4,
+                "two_U": 15,
+                "denominator": 24,
+                "auc": "5/8"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 4,
+                "two_U": 8,
+                "denominator": 8,
+                "auc": "1"
+              },
+              "macro": "13/16"
+            }
+          },
+          "baseline": {
+            "diagnostic_a": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 3,
+                "negative_weight": 4,
+                "two_U": 15,
+                "denominator": 24,
+                "auc": "5/8"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 4,
+                "two_U": 7,
+                "denominator": 8,
+                "auc": "7/8"
+              },
+              "macro": "3/4"
+            },
+            "diagnostic_b": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 3,
+                "negative_weight": 4,
+                "two_U": 15,
+                "denominator": 24,
+                "auc": "5/8"
+              },
+              "g2": {
+                "valid": true,
+                "generator": "g2",
+                "positive_weight": 1,
+                "negative_weight": 4,
+                "two_U": 8,
+                "denominator": 8,
+                "auc": "1"
+              },
+              "macro": "13/16"
+            }
+          }
+        },
+        "deltas": {
+          "diagnostic_a": "11/48",
+          "diagnostic_b": "0"
+        },
+        "mean_delta": "11/96"
+      },
+      "reference": {
+        "valid": true,
+        "methods": {
+          "candidate": {
+            "diagnostic_a": {
+              "cells": {
+                "g1": {
+                  "two_U": 23,
+                  "denominator": 24,
+                  "auc": "23/24"
+                },
+                "g2": {
+                  "two_U": 8,
+                  "denominator": 8,
+                  "auc": "1"
+                }
+              },
+              "macro": "47/48"
+            },
+            "diagnostic_b": {
+              "cells": {
+                "g1": {
+                  "two_U": 15,
+                  "denominator": 24,
+                  "auc": "5/8"
+                },
+                "g2": {
+                  "two_U": 8,
+                  "denominator": 8,
+                  "auc": "1"
+                }
+              },
+              "macro": "13/16"
+            }
+          },
+          "baseline": {
+            "diagnostic_a": {
+              "cells": {
+                "g1": {
+                  "two_U": 15,
+                  "denominator": 24,
+                  "auc": "5/8"
+                },
+                "g2": {
+                  "two_U": 7,
+                  "denominator": 8,
+                  "auc": "7/8"
+                }
+              },
+              "macro": "3/4"
+            },
+            "diagnostic_b": {
+              "cells": {
+                "g1": {
+                  "two_U": 15,
+                  "denominator": 24,
+                  "auc": "5/8"
+                },
+                "g2": {
+                  "two_U": 8,
+                  "denominator": 8,
+                  "auc": "1"
+                }
+              },
+              "macro": "13/16"
+            }
+          }
+        },
+        "deltas": {
+          "diagnostic_a": "11/48",
+          "diagnostic_b": "0"
+        },
+        "mean_delta": "11/96"
+      }
+    },
+    {
+      "name": "ancestor_B_zero",
+      "result": {
+        "valid": false,
+        "reason": "zero_class_weight",
+        "cells": {
+          "candidate": {
+            "diagnostic_a": {
+              "g1": {
+                "valid": true,
+                "generator": "g1",
+                "positive_weight": 2,
+                "negative_weight": 2,
+                "two_U": 7,
+                "denominator": 8,
+                "auc": "7/8"
+              },
+              "g2": {
+                "valid": false,
+                "reason": "zero_class_weight",
+                "two_U": null,
+                "denominator": null,
+                "auc": null
+              }
+            }
+          }
+        }
+      },
+      "reference": {
+        "valid": false,
+        "reason": "zero_class_weight"
+      }
+    },
+    {
+      "name": "all_zero",
+      "result": {
+        "valid": false,
+        "reason": "zero_class_weight",
+        "cells": {
+          "candidate": {
+            "diagnostic_a": {
+              "g1": {
+                "valid": false,
+                "reason": "zero_class_weight",
+                "two_U": null,
+                "denominator": null,
+                "auc": null
+              }
+            }
+          }
+        }
+      },
+      "reference": {
+        "valid": false,
+        "reason": "zero_class_weight"
+      }
+    }
+  ],
+  "checks": [
+    {
+      "name": "all_one/reference",
+      "passed": true
+    },
+    {
+      "name": "all_one/analytic_expected",
+      "passed": true,
+      "observed": "7/48",
+      "expected": {
+        "tag_a": "7/24",
+        "tag_b": "0",
+        "mean": "7/48"
+      }
+    },
+    {
+      "name": "ancestor_A_double/reference",
+      "passed": true
+    },
+    {
+      "name": "ancestor_A_double/analytic_expected",
+      "passed": true,
+      "observed": "11/96",
+      "expected": {
+        "tag_a": "11/48",
+        "tag_b": "0",
+        "mean": "11/96"
+      }
+    },
+    {
+      "name": "ancestor_B_zero/reference",
+      "passed": true
+    },
+    {
+      "name": "ancestor_B_zero/analytic_expected",
+      "passed": true,
+      "observed": null,
+      "expected": "invalid"
+    },
+    {
+      "name": "all_zero/reference",
+      "passed": true
+    },
+    {
+      "name": "all_zero/analytic_expected",
+      "passed": true,
+      "observed": null,
+      "expected": "invalid"
+    },
+    {
+      "name": "record_order_invariance",
+      "passed": true
+    },
+    {
+      "name": "tag_change_is_visible",
+      "passed": true
+    },
+    {
+      "name": "duplicate_id",
+      "passed": true,
+      "error": "sample_id"
+    },
+    {
+      "name": "missing_ancestor",
+      "passed": true,
+      "error": "record_schema"
+    },
+    {
+      "name": "label_bool",
+      "passed": true,
+      "error": "label"
+    },
+    {
+      "name": "negative_generator",
+      "passed": true,
+      "error": "negative_generator"
+    },
+    {
+      "name": "missing_method",
+      "passed": true,
+      "error": "weight_keys"
+    },
+    {
+      "name": "missing_tag",
+      "passed": true,
+      "error": "weight_keys"
+    },
+    {
+      "name": "missing_score",
+      "passed": true,
+      "error": "weight_keys"
+    },
+    {
+      "name": "nan_score",
+      "passed": true,
+      "error": "weight_keys"
+    },
+    {
+      "name": "weight_bool",
+      "passed": true,
+      "error": "weight_keys"
+    },
+    {
+      "name": "weight_fraction",
+      "passed": true,
+      "error": "weight_keys"
+    },
+    {
+      "name": "weight_extra",
+      "passed": true,
+      "error": "weight_keys"
+    }
+  ],
+  "failures": [],
+  "scope": "synthetic point estimand only; no CI/bootstrap/model/media/server/GPU",
+  "resources": {
+    "network": 0,
+    "media": 0,
+    "server": 0,
+    "gpu": 0,
+    "models": 0,
+    "threads": 1,
+    "wall_seconds": 0.005988900004012976
+  },
+  "scientific_breakthrough": false
+}
