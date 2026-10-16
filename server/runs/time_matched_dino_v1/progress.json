@@ -1,0 +1,7 @@
+{
+  "requested": 28674,
+  "completed": 28674,
+  "this_attempt_seconds": 725.7288828119636,
+  "cuda_forward_seconds": 6.573849234580997,
+  "peak_gpu_allocated_gib": 1.2965831756591797
+}

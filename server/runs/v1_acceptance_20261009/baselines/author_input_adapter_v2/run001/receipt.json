@@ -1,0 +1,31 @@
+{
+  "status": "pass_current_author_input_corrections",
+  "actual_D3": 12,
+  "actual_ReStraV": 12,
+  "actual_Native448p": 3,
+  "D4_exact_index_and_tensor_matches": 27,
+  "errors": [],
+  "OC_5pass_7exclude_not_repeated": {
+    "runtime_repeated_by_C5": false,
+    "D4_actual_entries": 5,
+    "fixed_exclusions": 7,
+    "source_D4_parity_SHA": "ac048e88693a26b0c89e2700ff5f27eceffc220e421ff3dd214a4738af1633bf",
+    "stride_or_tolerance_changed": false
+  },
+  "CPU_affinity": [
+    0,
+    1
+  ],
+  "new_real_inputs": 0,
+  "weights_or_environment_downloaded": false,
+  "model_encoder_head_calls": 0,
+  "GPU_started": false,
+  "same_pixel_tolerance": 1e-06,
+  "index_tolerance": 0,
+  "wall_seconds": 44.51455099135637,
+  "historical_author_environment_accepted": false,
+  "720p_runtime": "pending",
+  "STREAM_runtime": "pending",
+  "independent_scientific_review": false,
+  "scientific_gate_passed": false
+}

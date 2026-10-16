@@ -1,0 +1,2 @@
+nohup: ignoring input
+{"status": "pass", "replayed_heads": 60, "main_models_refitted": false, "script_sha256": "4dee888e18eafba97488b0d60e23a9b8daceb910f120869e36ba0a8565092c97", "parent_report_sha256": "6b70dcf3a81f07fb314c2e954881e1bcf7f3bd3f120a7b9dd295125f641c5b16", "epoch_selection_verified": true, "head_parameter_counts_verified": true, "shuffled_control_ancestor_weights_preserved": true, "scope": "mechanical integrity and inference replay, not independent scientific replication"}

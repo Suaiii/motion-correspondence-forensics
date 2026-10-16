@@ -1,0 +1,801 @@
+{
+  "version": "1",
+  "pip_version": "24.0",
+  "install": [
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/88/40/dc7f804abd0ea167ea8d4d9b3f5455321aaf671d040fcef647e9e952e714/py7zr-1.1.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=17934a35089e026dec6c72ee275d9b841e646881ef822d618e805c3006661d9a",
+          "hashes": {
+            "sha256": "17934a35089e026dec6c72ee275d9b841e646881ef822d618e805c3006661d9a"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": true,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "py7zr",
+        "version": "1.1.3",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Pure python 7-zip library",
+        "description": "======================================\n|logo| py7zr -- a 7z library on python\n======================================\n\n.. |logo| image:: logo.svg\n    :width: 80pt\n    :height: 80pt\n    :target: https://pypi.org/project/py7zr\n\n.. image:: https://readthedocs.org/projects/py7zr/badge/?version=latest\n  :target: https://py7zr.readthedocs.io/en/latest/?badge=latest\n\n.. image:: https://badge.fury.io/py/py7zr.svg\n  :target: https://badge.fury.io/py/py7zr\n\n.. image:: https://img.shields.io/pypi/dd/py7zr\n  :target: https://pypi.org/project/py7zr\n\n.. image:: https://img.shields.io/conda/vn/conda-forge/py7zr\n  :target: https://anaconda.org/conda-forge/py7zr\n\n.. image:: https://github.com/miurahr/py7zr/workflows/Run%20Tox%20tests/badge.svg\n  :target: https://github.com/miurahr/py7zr/actions\n\n.. image:: https://dev.azure.com/miurahr/github/_apis/build/status/miurahr.py7zr?branchName=master\n  :target: https://dev.azure.com/miurahr/github/_build/latest?definitionId=14&branchName=master\n\n.. image:: https://coveralls.io/repos/github/miurahr/py7zr/badge.svg?branch=master\n  :target: https://coveralls.io/github/miurahr/py7zr?branch=master\n\n.. image:: https://img.shields.io/pypi/l/py7zr\n  :target: https://www.gnu.org/licenses/old-licenses/lgpl-2.1.en.html\n  \n.. image:: https://raw.githubusercontent.com/vshymanskyy/StandWithUkraine/main/badges/StandWithUkraine.svg\n  :target: https://github.com/vshymanskyy/StandWithUkraine/blob/main/docs/README.md\n  \n.. image:: https://snyk.io/advisor/python/py7zr/badge.svg\n  :target: https://snyk.io/advisor/python/py7zr\n  :alt: py7zr\n  \n.. image:: https://app.codacy.com/project/badge/Grade/d9d82e1c1708470a921a3a974ea0eedd\n  :target: https://app.codacy.com/gh/miurahr/py7zr/dashboard\n  :alt: Codacy\n\n\npy7zr is a library and utility to support 7zip archive compression, decompression,\nencryption and decryption written by Python programming language.\n\nIncompatible change\n===================\n\nThere is incompatible change between v1.0.0-rc1 to v1.0.0-rc2.\nI abandon methods ``read`` and ``readall``.\nWhen you want to extract the archive to memory, you need to use\n``extract`` method with ``factory`` argument. The ``factory`` takes a factory class, as of the GoF design pattern,\nthat provides object implements ``Py7zIO`` interface as a call back instance.\n``SevenZipFile`` extract and write uncompressed data into your ``Py7zIO`` object.\n\nDiscussion Forum\n================\n\nYou are welcome to join discussions on project forum/builtin-board at\nhttps://github.com/miurahr/py7zr/discussions\n\nYou can see announcements of new releases, questions and answers, and\nnew feature ideas. When you doubt for usage of py7zr library with unclear\nmanuals, please feel easy to raise question on forum.\n\nCompression algorithms\n======================\n\n``py7zr`` supports algorithms and filters which `lzma module`_ and `liblzma`_ support,\nand supports BZip2 and Deflate that are implemented in python core libraries,\nIt also supports ZStandard, Brotli and PPMd with third party libraries.\n\n``py7zr`` is also able to encrypt and decrypt data using 3rd party encryption library.\n\n\nSupported algorithms\n--------------------\n\n* compress\n    * LZMA2\n    * LZMA\n    * Bzip2\n    * Deflate\n    * Copy\n    * ZStandard\n    * Brotli\n    * PPMd\n    * Enhanced Deflate (Experimental)\n\n* crypt\n    * 7zAES\n\n* Filters\n    * Delta\n    * BCJ(X86,ARMT,ARM,PPC,SPARC,IA64)\n\n.. note::\n  * A feature handling symbolic link is basically compatible with ``p7zip`` implementation,\n    but not work with original 7-zip because the original does not implement the feature.\n  * ``py7zr`` try checking symbolic links strictly and raise ValueError when bad link is requested,\n    but it does **not** guarantee to block all the bad cases.\n  * ZStandard and Brotli is not default methods of 7-zip, so these archives are considered\n    not to be compatible with original 7-zip on windows/p7zip on linux/mac.\n  * Enhanced Deflate is also known as ``DEFLATE64`` :sup:`TM` that is a registered trademark of ``PKWARE, Inc.``\n  * Enhanced Deflate is tested only on CPython. It is disabled on PyPy.\n\nNot supported algorithms\n------------------------\n\n* BCJ2 (Standard `lzma module`_ does not provide).\n\n\nInstall\n=======\n\nYou can install py7zr as usual other libraries using pip.\n\n.. code-block:: shell\n\n    $ pip install py7zr\n\nOR, alternatively using conda:\n\n.. code-block:: shell\n\n    $ conda install -c conda-forge py7zr\n\nDocuments\n=========\n\nUser manuals\n------------\n\n* `User Guide`_ for latest version.\n\n* `API Guide`_ for latest version.\n\n* `Manual`_ for stable version.\n\nDeveloper guide\n---------------\n\n* `Contribution guidelines`_ for this project.\n\n* `Contribution guidelines(html)`_  for this project.\n\n* `7z file specification`_ that py7zr stand on.\n\n\n.. _`User Guide`: https://py7zr.readthedocs.io/en/latest/user_guide.html\n\n.. _`API Guide` : https://py7zr.readthedocs.io/en/latest/api.html\n\n.. _`Manual` : https://py7zr.readthedocs.io/en/stable/\n\n.. _`Contribution guidelines(html)` : https://py7zr.readthedocs.io/en/latest/contribution.html\n\n.. _`Contribution guidelines` : docs/contribution.rst\n\n.. _`7z file specification` : https://py7zr.readthedocs.io/en/latest/archive_format.html\n\n\nCLI Usage\n=========\n\nYou can run command script py7zr like as follows;\n\n* List archive contents\n\n.. code-block:: shell\n\n    $ py7zr l test.7z\n\n* Extract archive\n\n.. code-block:: shell\n\n    $ py7zr x test.7z\n\n* Extract archive with password\n\n.. code-block:: shell\n\n    $ py7zr x -P test.7z\n      password?: ****\n\n* Create and compress to archive\n\n.. code-block:: shell\n\n    $ py7zr c target.7z test_dir\n\n* Create multi-volume archive\n\n.. code-block:: shell\n\n    $ py7zr c -v 500k target.7z test_dir\n\n* Test archive\n\n.. code-block:: shell\n\n    $ py7zr t test.7z\n\n* Append files to archive\n\n.. code-block:: shell\n\n    $ py7zr a test.7z test_dir\n\n* Show information\n\n.. code-block:: shell\n\n    $ py7zr i\n\n* Show version\n\n.. code-block:: shell\n\n    $ py7zr --version\n\n\nSevenZipFile Class Usage\n========================\n\npy7zr is a library which can use in your python application.\n\nDecompression/Decryption\n------------------------\n\nHere is a code snippet how to decompress some file in your application.\n\n.. code-block:: python\n\n    import py7zr\n\n    archive = py7zr.SevenZipFile('sample.7z', mode='r')\n    archive.extractall(path=\"/tmp\")\n    archive.close()\n\n\n\nYou can also use 'with' block because py7zr provide context manager(v0.6 and later).\n\n.. code-block:: python\n\n    import py7zr\n\n    with py7zr.SevenZipFile('sample.7z', mode='r') as z:\n        z.extractall()\n\n    with py7zr.SevenZipFile('target.7z', 'w') as z:\n        z.writeall('./base_dir')\n\n\n``py7zr`` also supports extraction of single or selected files by 'extract(targets=['file path'])'.\nNote: if you specify only a file but not a parent directory, it will fail.\n\n.. code-block:: python\n\n    import py7zr\n    import re\n\n    filter_pattern = re.compile(r'<your/target/file_and_directories/regex/expression>')\n    with py7zr.SevenZipFile('archive.7z', 'r') as archive:\n        allfiles = archive.getnames()\n        selective_files = [f for f in allfiles if filter_pattern.match(f)]\n        archive.extract(targets=selective_files)\n\n\npy7zr support an extraction of password protected archive.(v0.6 and later)\n\n.. code-block:: python\n\n    import py7zr\n\n    with py7zr.SevenZipFile('encrypted.7z', mode='r', password='secret') as z:\n        z.extractall()\n\nCompression/Encryption\n----------------------\n\nHere is a code snippet how to produce archive.\n\n.. code-block:: python\n\n    import py7zr\n\n    with py7zr.SevenZipFile('target.7z', 'w') as archive:\n        archive.writeall('/path/to/base_dir', 'base')\n\n\nTo create encrypted archive, please pass a password.\n\n.. code-block:: python\n\n    import py7zr\n\n    with py7zr.SevenZipFile('target.7z', 'w', password='secret') as archive:\n        archive.writeall('/path/to/base_dir', 'base')\n\n\nTo create archive with algorithms such as zstandard, you can call with custom filter.\n\n.. code-block:: python\n\n    import py7zr\n\n    my_filters = [{\"id\": py7zr.FILTER_ZSTD}]\n    another_filters = [{\"id\": py7zr.FILTER_ARM}, {\"id\": py7zr.FILTER_LZMA2, \"preset\": 7}]\n    with py7zr.SevenZipFile('target.7z', 'w', filters=my_filters) as archive:\n        archive.writeall('/path/to/base_dir', 'base')\n\n\nshutil helper\n=============\n\npy7zr also support `shutil`  interface.\n\n.. code-block:: python\n\n    from py7zr import pack_7zarchive, unpack_7zarchive\n    import shutil\n\n    # register file format at first.\n    shutil.register_archive_format('7zip', pack_7zarchive, description='7zip archive')\n    shutil.register_unpack_format('7zip', ['.7z'], unpack_7zarchive)\n\n    # extraction\n    shutil.unpack_archive('test.7z', '/tmp')\n\n    # compression\n    shutil.make_archive('target', '7zip', 'src')\n\n\nRequirements\n============\n\n`py7zr` uses a python3 standard `lzma module`_ for extraction and compression.\nThe standard lzma module uses `liblzma`_ that support core compression algorithm of 7zip.\n\nMinimum required version is Python 3.10.\n\n``py7zr`` tested on Linux, macOS, Windows and Ubuntu aarch64.\n\nIt hopefully works on M1 Mac too.\n\nRecommended versions are:\n\n- CPython 3.10.0 and later.\n- PyPy3.10-7.3.17 and later.\n\nFollowing fixes are included in these versions, and it is not fixed on python3.6.\n\n- `BPO-21872`_: LZMA library sometimes fails to decompress a file\n- `PyPy3-3090`_: lzma.LZMADecomporessor.decompress does not respect max_length\n- `PyPy3-3242`_: '_lzma_cffi' has no function named 'lzma_stream_encoder'\n\nFollowing improvements are included in CPython 3.10\n\n- `BPO-41486`_: Faster bz2/lzma/zlib via new output buffering\n\n.. _`lzma module`: https://docs.python.org/3/library/lzma.html\n.. _`liblzma`: https://tukaani.org/xz/\n.. _`BPO-21872`: https://bugs.python.org/issue21872\n.. _`BPO-41486`: https://bugs.python.org/issue41486\n.. _`PyPy3-3090`: https://foss.heptapod.net/pypy/pypy/-/issues/3090\n.. _`PyPy3-3242`: https://foss.heptapod.net/pypy/pypy/-/issues/3242\n\n\n\nDependencies\n============\n\nThere are several dependencies to support algorithms and CLI expressions.\n\n===================== ===============================\nPackage               Purpose\n===================== ===============================\n`PyCryptodomex`_      7zAES encryption\n`backports.zstd`      ZStandard compression for Python before 3.14\n`PyPPMd`_             PPMd compression\n`Brotli`_             Brotli compression (CPython)\n`BrotliCFFI`_         Brotli compression (PyPy)\n`inflate64`_          Enhanced deflate compression\n`pybcj`_              BCJ filters\n`multivolumefile`_    Multi-volume archive read/write\n`texttable`_          CLI formatter\n===================== ===============================\n\n\n.. _`Pycryptodomex` : https://www.pycryptodome.org/en/latest/index.html\n.. _`backports.zstd` : https://pypi.org/project/backports.zstd\n.. _`PyPPMd` : https://pypi.org/project/pyppmd\n.. _`Brotli` : https://pypi.org/project/brotli\n.. _`BrotliCFFI` : https://pypi.org/project/brotlicffi\n.. _`inflate64` : https://pypi.org/project/inflate64\n.. _`pybcj` : https://pypi.org/project/pybcj\n.. _`multivolumefile` : https://pypi.org/project/multivolumefile\n.. _`texttable` : https://pypi.org/project/texttable\n\n\nPerformance\n===========\n\nYou can find a compression and decompression benchmark results at\n[Github issue](https://github.com/miurahr/py7zr/issues/297) and [wiki page](https://github.com/miurahr/py7zr/wiki/Benchmarks)\n\npy7zr works well, but slower than ``7-zip`` and ``p7zip`` C/C++ implementation by several reasons.\nWhen compression/decompression **speed** is important, it is recommended to use these\nalternatives through ``subprocess.run`` python interface.\n\npy7zr consumes some memory to decompress and compress data. It requires about 300MiB - 700MiB free memory to work well at least.\n\n\nUse Cases\n=========\n\n- `PyTorch`_  Open-source deep learning framework.\n- `aqtinstall`_ Another (unofficial) Qt (aqt) CLI Installer on multi-platforms.\n- PreNLP_ Preprocessing Library for Natural Language Processing\n- mlox_  a tool for sorting and analyzing Morrowind plugin load order\n\n.. _`PyTorch`: https://pytorch.org/\n.. _aqtinstall: https://github.com/miurahr/aqtinstall\n.. _PreNLP: https://github.com/lyeoni/prenlp\n.. _mlox: https://github.com/mlox/mlox\n\nSecurity\n========\n\nPlease find a `Security Policy`_ of this project.\n\nVersion 0.20.0, 0.19.0, 0.18.10 or before has a `vulnerability for path traversal`_  attack.\nDetails are on \"CVE-2022-44900: path traversal vulnerability in py7zr\" `disclose article`_ .\n\nAffected versions  are vulnerable to Directory Traversal due to insufficient checks in the 'py7zr.py' and 'helpers.py' files\n\nYou are recommend to update immediately to version 0.20.2 or later\n\n.. _`vulnerability for path traversal`: https://security.snyk.io/vuln/SNYK-PYTHON-PY7ZR-3092461\n\nI really appreciate Mr. Matteo Cosentino for notification and corporation on security improvement.\n\n.. _`disclose article`: https://lessonsec.com/cve/cve-2022-44900/\n\n.. _`Security Policy` : https://py7zr.readthedocs.io/en/latest/SECURITY.html\n\nLicense\n=======\n\n* Copyright (C) 2019-2024 Hiroshi Miura\n\n* pylzma Copyright (c) 2004-2015 by Joachim Bauch\n* 7-Zip Copyright (C) 1999-2010 Igor Pavlov\n* LZMA SDK Copyright (C) 1999-2010 Igor Pavlov\n\nThis library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Lesser General Public\nLicense as published by the Free Software Foundation; either\nversion 2.1 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA\n\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "compression",
+          "7zip",
+          "lzma",
+          "zstandard",
+          "ppmd",
+          "lzma2",
+          "bcj",
+          "archive"
+        ],
+        "author_email": "Hiroshi Miura <miurahr@linux.com>",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "texttable",
+          "pycryptodomex>=3.20.0",
+          "brotli>=1.2.0; platform_python_implementation == \"CPython\"",
+          "brotlicffi>=1.2.0.0; platform_python_implementation == \"PyPy\"",
+          "psutil; sys_platform != \"cygwin\"",
+          "backports.zstd>=1.0.0; python_version < \"3.14\"",
+          "pyppmd>=1.3.1",
+          "pybcj>=1.0.6",
+          "multivolumefile>=0.2.3",
+          "inflate64>=1.0.4",
+          "pytest; extra == \"test\"",
+          "pytest-benchmark; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "pytest-remotedata; extra == \"test\"",
+          "pytest-timeout; extra == \"test\"",
+          "py-cpuinfo; extra == \"test\"",
+          "coverage[toml]>=7.10.7; extra == \"test\"",
+          "coveralls>=4.0.2; extra == \"test\"",
+          "requests; extra == \"test\"",
+          "pytest-httpserver; extra == \"test\"",
+          "sphinx>=8.0.0; extra == \"docs\"",
+          "sphinx-py3doc-enhanced-theme; extra == \"docs\"",
+          "sphinx-a4doc; extra == \"docs\"",
+          "docutils; extra == \"docs\"",
+          "mypy>=1.17.0; extra == \"check\"",
+          "mypy_extensions>=1.1.0; extra == \"check\"",
+          "lxml; extra == \"check\"",
+          "types-psutil; extra == \"check\"",
+          "check-manifest; extra == \"check\"",
+          "flake8<8; extra == \"check\"",
+          "flake8-black>=0.3.6; extra == \"check\"",
+          "flake8-deprecated; extra == \"check\"",
+          "flake8-isort; extra == \"check\"",
+          "isort>=7.0.0; extra == \"check\"",
+          "pygments; extra == \"check\"",
+          "readme-renderer; extra == \"check\"",
+          "twine; extra == \"check\"",
+          "black>=25.1.0; extra == \"check\"",
+          "pylint; extra == \"check\"",
+          "pytest; extra == \"debug\"",
+          "pytest-leaks; extra == \"debug\"",
+          "pytest-profiling; extra == \"debug\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://py7zr.readthedocs.io/",
+          "Documentation, https://py7zr.readthedocs.io/en/stable/",
+          "Bug Tracker, https://github.com/miurahr/py7zr/issues",
+          "Source, https://github.com/miurahr/py7zr",
+          "Changelog, https://py7zr.readthedocs.io/en/latest/Changelog.html"
+        ],
+        "provides_extra": [
+          "test",
+          "docs",
+          "check",
+          "debug"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/1e/40/121917bd2671bc3f1507c25503c0554f0b52483edcca4e6210e6d22228df/backports_zstd-1.7.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=470895d0bcddc850766e593d1b26764fb138c2feed149f515a2627ef9587d54c",
+          "hashes": {
+            "sha256": "470895d0bcddc850766e593d1b26764fb138c2feed149f515a2627ef9587d54c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "backports.zstd",
+        "version": "1.7.0",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "Backport of compression.zstd",
+        "description": "<div align=\"center\" size=\"15px\">\n\n# backports.zstd\n\nBackport of [PEP-784 “adding Zstandard to the standard library”][PEP-784]\n\n[![GitHub build status](https://img.shields.io/github/actions/workflow/status/rogdham/backports.zstd/build.yml?branch=master)](https://github.com/rogdham/backports.zstd/actions?query=branch:master)\n[![Release on PyPI](https://img.shields.io/pypi/v/backports.zstd)](https://pypi.org/project/backports.zstd/)\n\n---\n\n[📖 PEP-784][PEP-784]&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;[📃 Changelog](./CHANGELOG.md)\n\n[PEP-784]: https://peps.python.org/pep-0784/\n\n</div>\n\n---\n\n## Install\n\nAdd the following dependency to your project:\n\n```\nbackports.zstd ; python_version<'3.14'\n```\n\n…or just run `pip install backports.zstd`.\n\n## Usage\n\nWhen importing a module needing Zstandard support, use a conditional import based on the\nversion of Python. See below for examples.\n\n### zstd\n\n```python\nimport sys\n\nif sys.version_info >= (3, 14):\n    from compression import zstd\nelse:\n    from backports import zstd\n\n\n# use the zstd module, for example:\nzstd.compress(b\"Hello, world!\")\n```\n\nRefer to the [official Python documentation][doc-zstd] for usage of the module.\n\n[doc-zstd]: https://docs.python.org/3.14/library/compression.zstd.html\n\n### tarfile\n\n```python\nimport sys\n\nif sys.version_info >= (3, 14):\n    import tarfile\nelse:\n    from backports.zstd import tarfile\n\n\n# use the tarfile module, for example:\nwith tarfile.open(\"archive.tar.zst\") as tar:\n    tar.list()\n```\n\nThis `tarfile` modules is backported from Python 3.14 and includes Zstandard-specific\nfeatures such as: explicit modes for opening files (e.g. `r:zstd`), specific arguments\n(e.g. `zstd_dict`)… refer to the [official Python documentation][doc-tarfile] for more\ninfo.\n\n[doc-tarfile]: https://docs.python.org/3.14/library/tarfile.html\n\nMoreover, the CLI is available as well: `python -m backports.zstd.tarfile`.\n\n### zipfile\n\n```python\nimport sys\n\nif sys.version_info >= (3, 14):\n    import zipfile\nelse:\n    from backports.zstd import zipfile\n\n\n# use the zipfile module, for example:\nwith zipfile.ZipFile(\"archive.zip\", \"w\") as zf:\n    zf.writestr(\"hello.txt\", \"Hi!\", zipfile.ZIP_ZSTANDARD)\n```\n\nThis `zipfile` modules is backported from Python 3.14 and includes Zstandard-specific\nfeatures such as the constant `ZIP_ZSTANDARD` to be used for `compress_type`… refer to\nthe [official Python documentation][doc-zipfile] for more info.\n\n[doc-zipfile]: https://docs.python.org/3.14/library/zipfile.html\n\nMoreover, the CLI is available as well: `python -m backports.zstd.zipfile`.\n\n### shutil\n\n```python\nimport shutil\nimport sys\n\nif sys.version_info < (3, 14):\n    from backports.zstd import register_shutil\n    register_shutil()\n\n# use the shutil module, for example\nshutil.unpack_archive('archive.tar.zst')\n```\n\nCalling the `register_shutil` function allows to create zstd'ed tar files using the\n`\"zstdtar\"` format, as well as unpack them.\n\nIt also overrides support for unpacking zip files, enabling the unpacking of zip\narchives that use Zstandard for compression.\n\nAlternatively, call `register_shutil(tar=False)` or `register_shutil(zip=False)` to\nchoose which archiving support to register.\n\n## FAQ\n\n### Who are you?\n\nThis project is created and maintained by [Rogdham](https://github.com/rogdham)\n(maintainer of [`pyzstd`](https://github.com/rogdham/pyzstd), who helped with [PEP-784]\nand integration of Zstandard into the standard library), with help from\n[Emma Smith](https://github.com/emmatyping) (author of [PEP-784], who did most of the\nwork of porting `pyzstd` into the standard library).\n\n### How is this backport constructed?\n\nThe aim is to be as close as possible to the upstream code of\n[CPython](https://github.com/python/cpython).\n\nThe runtime code comes from CPython 3.14, with minor changes to support older versions\nof Python. For PyPy users, the C code has been ported to CFFI.\n\nDuring the build phase, the project uses [`zstd`](https://github.com/facebook/zstd)\n(canonical implementation of Zstandard) as well as\n[`pythoncapi-compat`](https://github.com/python/pythoncapi-compat) (which handles some\nof the compatibility with older Python versions).\n\nTests come from CPython 3.14, with minor changes to support older versions of Python.\nAdditional tests have been written specifically for `backports.zstd`.\n\nThe type hints for the standard library have been contributed to\n[`typeshed`](https://github.com/python/typeshed) and also backported to\n`backports.zstd`.\n\n### Why can this library not be installed with Python 3.14?\n\nThis is [on purpose](https://github.com/Rogdham/backports.zstd/issues/50). For Python\n3.14 and later, use the `compression.zstd` module from the standard library.\n\nIf you want your code to be compatible with multiple Python versions, condition the\nusage of this library based on the Python version:\n\n- [During install](#install);\n- [When importing at runtime](#usage).\n\n### Can I use the libzstd version installed on my system?\n\nThe wheels distributed on PyPI include a static version of `libzstd` for ease of\ninstallation and reproducibility.\n\nIf you want to use `libzstd` installed on your system, pass the `--system-zstd` argument\nto the build backend. For example:\n\n```sh\npython -m pip install --config-settings=--build-option=--system-zstd ...\npython -m build --wheel --config-setting=--build-option=--system-zstd ...\n```\n\nIf you run the test suite, set the environment variable\n`BACKPORTSZSTD_SKIP_EXTENSION_TEST=1` to skip tests that may fail when using the system\nlibrary.\n\n### I found a bug\n\nIf you encounter any issues, please open a\n[GitHub issue](https://github.com/Rogdham/backports.zstd/issues/new) with a minimal\nreproducible example.\n\nWe will check if the issue is with `backports.zstd` or CPython. We have already reported\nand fixed a few issues in CPython this way!\n",
+        "description_content_type": "text/markdown",
+        "keywords": [
+          "backport",
+          "backports",
+          "pep-784",
+          "zstd"
+        ],
+        "author_email": "Rogdham <contact@rogdham.net>",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Intended Audience :: Developers",
+          "Topic :: System :: Archiving :: Compression",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_python": "<3.14,>=3.10",
+        "project_url": [
+          "Homepage, https://github.com/rogdham/backports.zstd",
+          "Source, https://github.com/rogdham/backports.zstd"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/03/a7/03aa61fbc3c5cbf99b44d158665f9b0dd3d8059be16c460208d9e385c837/brotli-1.2.0-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=072e7624b1fc4d601036ab3f4f27942ef772887e876beff0301d261210bca97f",
+          "hashes": {
+            "sha256": "072e7624b1fc4d601036ab3f4f27942ef772887e876beff0301d261210bca97f"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "brotli",
+        "version": "1.2.0",
+        "dynamic": [
+          "author",
+          "classifier",
+          "description",
+          "description-content-type",
+          "home-page",
+          "license",
+          "license-file",
+          "platform",
+          "summary"
+        ],
+        "platform": [
+          "Posix",
+          "MacOS X",
+          "Windows"
+        ],
+        "summary": "Python bindings for the Brotli compression library",
+        "description": "<p align=\"center\">\n  <img src=\"https://github.com/google/brotli/actions/workflows/build_test.yml/badge.svg\" alt=\"GitHub Actions Build Status\" href=\"https://github.com/google/brotli/actions?query=branch%3Amaster\">\n  <img src=\"https://oss-fuzz-build-logs.storage.googleapis.com/badges/brotli.svg\" alt=\"Fuzzing Status\" href=\"https://oss-fuzz-build-logs.storage.googleapis.com/index.html#brotli\">\n</p>\n<p align=\"center\"><img src=\"https://brotli.org/brotli.svg\" alt=\"Brotli\" width=\"64\"></p>\n\n### Introduction\n\nBrotli is a generic-purpose lossless compression algorithm that compresses data\nusing a combination of a modern variant of the LZ77 algorithm, Huffman coding\nand 2nd order context modeling, with a compression ratio comparable to the best\ncurrently available general-purpose compression methods. It is similar in speed\nwith deflate but offers more dense compression.\n\nThe specification of the Brotli Compressed Data Format is defined in\n[RFC 7932](https://datatracker.ietf.org/doc/html/rfc7932).\n\nBrotli is open-sourced under the MIT License, see the LICENSE file.\n\n> **Please note:** brotli is a \"stream\" format; it does not contain\n> meta-information, like checksums or uncompressed data length. It is possible\n> to modify \"raw\" ranges of the compressed stream and the decoder will not\n> notice that.\n\n### Installation\n\nIn most Linux distributions, installing `brotli` is just a matter of using\nthe package management system. For example in Debian-based distributions:\n`apt install brotli` will install `brotli`. On MacOS, you can use\n[Homebrew](https://brew.sh/): `brew install brotli`.\n\n[![brotli packaging status](https://repology.org/badge/vertical-allrepos/brotli.svg?exclude_unsupported=1&columns=3&exclude_sources=modules,site&header=brotli%20packaging%20status)](https://repology.org/project/brotli/versions)\n\nOf course you can also build brotli from sources.\n\n### Build instructions\n\n#### Vcpkg\n\nYou can download and install brotli using the\n[vcpkg](https://github.com/Microsoft/vcpkg/) dependency manager:\n\n    git clone https://github.com/Microsoft/vcpkg.git\n    cd vcpkg\n    ./bootstrap-vcpkg.sh\n    ./vcpkg integrate install\n    ./vcpkg install brotli\n\nThe brotli port in vcpkg is kept up to date by Microsoft team members and\ncommunity contributors. If the version is out of date, please [create an issue\nor pull request](https://github.com/Microsoft/vcpkg) on the vcpkg repository.\n\n#### Bazel\n\nSee [Bazel](https://www.bazel.build/)\n\n#### CMake\n\nThe basic commands to build and install brotli are:\n\n    $ mkdir out && cd out\n    $ cmake -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX=./installed ..\n    $ cmake --build . --config Release --target install\n\nYou can use other [CMake](https://cmake.org/) configuration.\n\n#### Python\n\nTo install the latest release of the Python module, run the following:\n\n    $ pip install brotli\n\nTo install the tip-of-the-tree version, run:\n\n    $ pip install --upgrade git+https://github.com/google/brotli\n\nSee the [Python readme](python/README.md) for more details on installing\nfrom source, development, and testing.\n\n### Contributing\n\nWe glad to answer/library related questions in\n[brotli mailing list](https://groups.google.com/g/brotli).\n\nRegular issues / feature requests should be reported in\n[issue tracker](https://github.com/google/brotli/issues).\n\nFor reporting vulnerability please read [SECURITY](SECURITY.md).\n\nFor contributing changes please read [CONTRIBUTING](CONTRIBUTING.md).\n\n### Benchmarks\n* [Squash Compression Benchmark](https://quixdb.github.io/squash-benchmark/) / [Unstable Squash Compression Benchmark](https://quixdb.github.io/squash-benchmark/unstable/)\n* [Large Text Compression Benchmark](https://mattmahoney.net/dc/text.html)\n* [Lzturbo Benchmark](https://sites.google.com/site/powturbo/home/benchmark)\n\n### Related projects\n> **Disclaimer:** Brotli authors take no responsibility for the third party projects mentioned in this section.\n\nIndependent [decoder](https://github.com/madler/brotli) implementation\nby Mark Adler, based entirely on format specification.\n\nJavaScript port of brotli [decoder](https://github.com/devongovett/brotli.js).\nCould be used directly via `npm install brotli`\n\nHand ported [decoder / encoder](https://github.com/dominikhlbg/BrotliHaxe)\nin haxe by Dominik Homberger.\nOutput source code: JavaScript, PHP, Python, Java and C#\n\n7Zip [plugin](https://github.com/mcmilk/7-Zip-Zstd)\n\nDart compression framework with\n[fast FFI-based Brotli implementation](https://pub.dev/documentation/es_compression/latest/brotli/)\nwith ready-to-use prebuilt binaries for Win/Linux/Mac\n",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/google/brotli",
+        "author": "The Brotli Authors",
+        "license": "MIT",
+        "classifier": [
+          "Development Status :: 4 - Beta",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: C",
+          "Programming Language :: C++",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.3",
+          "Programming Language :: Python :: 3.4",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Unix Shell",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: System :: Archiving",
+          "Topic :: System :: Archiving :: Compression",
+          "Topic :: Text Processing :: Fonts",
+          "Topic :: Utilities"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/37/00/1a2351a85d36b26c5b2b8cfbb37ad86084c98f592dd7590f8577d8b33993/inflate64-1.0.4-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=62d1aac3aba094ae42e27ce7581b414c90f218248be0953b6aeb11a127225e5d",
+          "hashes": {
+            "sha256": "62d1aac3aba094ae42e27ce7581b414c90f218248be0953b6aeb11a127225e5d"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "inflate64",
+        "version": "1.0.4",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "deflate64 compression/decompression library",
+        "description": "inflate64\n=========\n\n.. image:: https://badge.fury.io/py/inflate64.svg\n    :target: https://badge.fury.io/py/inflate64\n\n.. image:: https://github.com/miurahr/inflate64/actions/workflows/run-tox-tests.yml/badge.svg?branch=main\n    :target: https://github.com/miurahr/inflate64/actions/workflows/run-tox-tests.yml\n\n.. image:: https://ci.codeberg.org/api/badges/12505/status.svg\n    :target: https://ci.codeberg.org/repos/12505\n\n\nThe ``inflate64`` is a python package to provide ``Deflater`` and ``Inflater`` class to compress and\ndecompress with Enhanced Deflate compression algorithm.\n\nThe project is in ``Production/Stable`` status.\n\nHow to use\n----------\n\nYou can install it with ``pip`` command as usual.\n\n.. code-block::\n\n  pip install inflate64\n\n\nYou can extract compressed data by instantiating ``Inflater`` class and call ``inflate`` method.\n\n.. code-block:: python\n\n  import inflate64\n  decompressor = inflate64.Inflater()\n  extracted = decompressor.inflate(data)\n\n\nYou can also compress data by instantiating ``Deflater`` class and call ``deflate`` method.\n\n.. code-block:: python\n\n  import inflate64\n  compressor = inflate64.Deflater()\n  compressed = compressor.deflate(data)\n  compressed += compressor.flush()\n\n\nLicense\n-------\n\nThis library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Lesser General Public\nLicense as published by the Free Software Foundation; either\nversion 2.1 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA\n\n.. note::\n   Please note that Enhanced Deflate algorithm is also known as `DEFLATE64` :sup:`TM`\n   that is a registered trademark of `PKWARE, Inc.`\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "deflate64",
+          "compression"
+        ],
+        "author_email": "Hiroshi Miura <miurahr@linux.com>",
+        "license": "LGPL-2.1-or-later",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "pytest; extra == \"test\"",
+          "sphinx>=5.0; extra == \"docs\"",
+          "sphinx_rtd_theme; extra == \"docs\"",
+          "docutils; extra == \"docs\"",
+          "mypy>=1.10.0; extra == \"check\"",
+          "mypy_extensions>=0.4.1; extra == \"check\"",
+          "check-manifest; extra == \"check\"",
+          "flake8; extra == \"check\"",
+          "flake8-black; extra == \"check\"",
+          "flake8-deprecated; extra == \"check\"",
+          "flake8-isort; extra == \"check\"",
+          "pygments; extra == \"check\"",
+          "readme-renderer; extra == \"check\"",
+          "twine; extra == \"check\""
+        ],
+        "requires_python": ">=3.9",
+        "project_url": [
+          "Source, https://github.com/miurahr/inflate64",
+          "Homepage, https://inflate64.readthedocs.io/",
+          "Documentation, https://inflate64.readthedocs.io/en/stable/",
+          "Bug Tracker, https://github.com/miurahr/inflate64/issues",
+          "Changelog, https://inflate64.readthedocs.io/en/latest/changelog.html"
+        ],
+        "provides_extra": [
+          "test",
+          "docs",
+          "check"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/22/31/ec5f46fd4c83185b806aa9c736e228cb780f13990a9cf4da0beb70025fcc/multivolumefile-0.2.3-py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=237f4353b60af1703087cf7725755a1f6fcaeeea48421e1896940cd1c920d678",
+          "hashes": {
+            "sha256": "237f4353b60af1703087cf7725755a1f6fcaeeea48421e1896940cd1c920d678"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "multivolumefile",
+        "version": "0.2.3",
+        "platform": [
+          "UNKNOWN"
+        ],
+        "summary": "multi volume file wrapper library",
+        "description": "===============\nmultivolumefile\n===============\n\n.. image:: https://coveralls.io/repos/github/miurahr/multivolume/badge.svg?branch=master\n  :target: https://coveralls.io/github/miurahr/multivolume?branch=master\n\n.. image:: https://github.com/miurahr/multivolume/workflows/Run%20Tox%20tests/badge.svg\n  :target: https://github.com/miurahr/multivolume/actions\n\nMultiVolumefile is a python library to provide a file-object wrapping multiple files\nas virtually like as a single file. It inherit io.RawIOBase class and support some of\nits standard methods.\n\nSee API details at `python library reference`_\n\n.. _`python library reference`: https://docs.python.org/3/library/io.html\n\nStatus\n======\n\nmultivolumefile module is under active development and considered as ***Alpha*** state.\nIt is not good idea to use it on production systems, but it may work well in a limited range\nof usage. Please check limitations and passed test cases.\n\n\nInstall\n=======\n\nYou can install it as usual public libraries, you can use pip command\n\n```\npip install multivolumefile\n```\n\nYou are also able to add it to your setup.py/cfg as dependency.\n\nUsages\n------\n\n- For reading multi-volume files, that has names `archive.7z.0001`, `archive.7z.0002` and so on,\n  you can call multivolumefile as follows;\n\n.. code-block::\n\n    with multivolumefile.open('archive.7z', 'rb') as vol:\n        data = vol.read(100)\n        vol.seek(500)\n\n- For writing multi-volue files, that has names `archive.7z.0001`, `archive.7z.0002` and so on,\n  you can call multivolumefile as follows;\n\n\n.. code-block::\n\n    data = b'abcdefg'\n    with multivolumefile.open('archive.7z', 'wb') as vol:\n        size = vol.write(data)\n        vol.seek(0)\n\nyou will see file `archive.7z.001` are written.\n\nLimitations and known issues\n============================\n\n- fileno() is not supported and when call it, you will get RuntimeError exception.\n- There are several non-implemented functions such as truncate() and writeline() that will raise NotimplementedError\n- There are several non-implemented functions such as readlines(), readline() and readall().\n- Text mode is not implemented.\n- ***Caution***: When globbing existent volumes, it glob all files other than 4-digit extensions, it may break your data.\n\n\nContribution\n============\n\nYou are welcome to contribute the project, as usual on github projects, Pull-Requests are always welcome.\n\nLicense\n=======\n\nMultivolume is licensed under GNU Lesser General Public license version 2.1 or later.\n\n=========\nChangeLog\n=========\n\nAll notable changes to this project will be documented in this file.\n\n`Unreleased`_\n=============\n\nAdded\n-----\n\nChanged\n-------\n\nFixed\n-----\n\nDeprecated\n----------\n\nRemoved\n-------\n\nSecurity\n--------\n\n`v0.2.3`_\n=========\n\nAdded\n-----\n* implement readall()\n\nChnaged\n-------\n* lint with black\n\n\n`v0.2.2`_\n=========\n\nAdded\n-----\n\n* Add py.typed file for type hinting.\n\n\n`v0.2.1`_\n=========\n\nAdded\n-----\n\n* Add `name` property that indicate basename of volumes\n* Add `stat()` that return `stat_result` which has as mostly same methods as `os.stat_result` class\n  except for platform dependent methods.\n\n\n`v0.2.0`_\n=========\n\nAdded\n-----\n\n* Type hint information bundled.\n\nFixed\n-----\n\n* Seek() returns current position.\n\nChanged\n-------\n\n* Explanation of unsupported methods an modes in README\n\n`v0.1.4`_\n=========\n\nFixed\n-----\n\n* Fix append mode bug.\n\n`v0.1.3`_\n=========\n\nFixed\n-----\n\n* Fix added volume size become wrong\n\n`v0.1.2`_\n=========\n\nFixed\n-----\n\n* Fix append mode (#1)\n\n`v0.1.1`_\n=========\n\nFixed\n-----\n\n* Fin NotImplementedError when writing boudning of target files\n\n`v0.1.0`_\n=========\n\n* ***API changed***\n\nAdded\n-----\n\n* Add mode 'x', 'xb' and 'xt'\n* Add mode 'a', 'ab' and 'at'\n* Support flush()\n\nChanged\n-------\n\n* Change API: file argument of 'r' and 'rb' now single basename instead of list of files\n\n`v0.0.5`_\n=========\n\n* Support context manager\n* Support read functions.\n\n.. History links\n.. _Unreleased: https://github.com/miurahr/py7zr/compare/v0.2.2...HEAD\n.. _v0.2.2: https://github.com/miurahr/py7zr/compare/v0.2.1...v0.2.2\n.. _v0.2.1: https://github.com/miurahr/py7zr/compare/v0.2.0...v0.2.1\n.. _v0.2.0: https://github.com/miurahr/py7zr/compare/v0.1.4...v0.2.0\n.. _v0.1.4: https://github.com/miurahr/py7zr/compare/v0.1.3...v0.1.4\n.. _v0.1.3: https://github.com/miurahr/py7zr/compare/v0.1.2...v0.1.3\n.. _v0.1.2: https://github.com/miurahr/py7zr/compare/v0.1.1...v0.1.2\n.. _v0.1.1: https://github.com/miurahr/py7zr/compare/v0.1.0...v0.1.1\n.. _v0.1.0: https://github.com/miurahr/py7zr/compare/v0.0.5...v0.1.0\n.. _v0.0.5: https://github.com/miurahr/py7zr/compare/v0.0.1...v0.0.5\n\n\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "multivolume",
+          "file"
+        ],
+        "home_page": "https://github.com/miurahr/multivolume",
+        "author": "Hiroshi Miura",
+        "author_email": "miurahr@linux.com",
+        "license": "LGPL-2.1+",
+        "classifier": [
+          "Development Status :: 3 - Alpha",
+          "Environment :: Console",
+          "License :: OSI Approved :: GNU Lesser General Public License v2 or later (LGPLv2+)",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3 :: Only",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "check-manifest ; extra == 'check'",
+          "flake8 ; extra == 'check'",
+          "flake8-black ; extra == 'check'",
+          "readme-renderer ; extra == 'check'",
+          "pygments ; extra == 'check'",
+          "isort (>=5.0.3) ; extra == 'check'",
+          "twine ; extra == 'check'",
+          "pytest ; extra == 'test'",
+          "pytest-cov ; extra == 'test'",
+          "pyannotate ; extra == 'test'",
+          "coverage[toml] (>=5.2) ; extra == 'test'",
+          "coveralls (>=2.1.1) ; extra == 'test'",
+          "hypothesis ; extra == 'test'",
+          "mypy ; extra == 'type'",
+          "mypy-extensions ; extra == 'type'"
+        ],
+        "requires_python": ">=3.6",
+        "provides_extra": [
+          "check",
+          "test",
+          "type"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/76/59/5629811698e6cfaea6cf159cf86fa471904ceb60448dc8b80233bba2e392/pybcj-1.0.8-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=a50b58f9b9d9978c55e3219b6816a1021a778b028a810b36aa754407591cb5ae",
+          "hashes": {
+            "sha256": "a50b58f9b9d9978c55e3219b6816a1021a778b028a810b36aa754407591cb5ae"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pybcj",
+        "version": "1.0.8",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "bcj filter library",
+        "description": "=======================================\nBCJ(Branch-Call-Jump) filter for python\n=======================================\n\n.. image:: https://badge.fury.io/py/pybcj.svg\n  :target: https://badge.fury.io/py/pybcj\n\n.. image:: https://img.shields.io/conda/vn/conda-forge/pybcj\n  :target: https://anaconda.org/conda-forge/pybcj\n\n.. image:: https://coveralls.io/repos/github/miurahr/pybcj/badge.svg?branch=main\n  :target: https://coveralls.io/github/miurahr/pybcj?branch=main\n\n\nIn data compression, BCJ, short for Branch-Call-Jump, refers to a technique that improves the compression of\nmachine code of executable binaries by replacing relative branch addresses with absolute ones.\nThis allows a LZMA compressor to identify duplicate targets and archive higher compression rate.\n\nBCJ is used in 7-zip compression utility as default filter for executable binaries.\n\npybcj is a python bindings with BCJ implementation by C language.\nThe C codes are derived from p7zip, portable 7-zip implementation.\npybcj support Intel/Amd x86/x86_64, Arm/Arm64, ArmThumb, Sparc, PPC, and IA64.\n\n\nDevelopment status\n==================\n\nA development status is considered as ``Beta`` state.\n\n\nInstallation\n============\n\nAs usual, you can install pybcj using python standard pip command.\n\n.. code-block::\n\n    pip install pybcj\n\nAlternatively, one can also use conda:\n\n.. code-block::\n\n    conda install -c conda-forge pybcj\n\nWARNING\n-------\n\n* When use it on MSYS2/Mingw64 environment, please set environment variable\n  `SETUPTOOLS_USE_DISTUTILS=stdlib` to install.\n\nLicense\n=======\n\n- SPDX-License-Identifier: LGPL-2.1-or-later\n- SPDX-URL: https://spdx.org/licenses/LGPL-2.1-or-later.html\n\n* Copyright (C) 2020-2025 Hiroshi Miura\n* Copyright (C) 1999-2010 Igor Pavlov\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "lzma",
+          "bcj"
+        ],
+        "author_email": "Hiroshi Miura <miurahr@linux.com>",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "pytest>=6.0; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "hypothesis; extra == \"test\"",
+          "coverage[toml]>=5.2; extra == \"test\"",
+          "mypy>=1.10.0; extra == \"check\"",
+          "check-manifest; extra == \"check\"",
+          "flake8<8; extra == \"check\"",
+          "flake8-black; extra == \"check\"",
+          "flake8-colors; extra == \"check\"",
+          "flake8-isort; extra == \"check\"",
+          "flake8-pyi; extra == \"check\"",
+          "flake8-typing-imports; extra == \"check\"",
+          "readme-renderer; extra == \"check\"",
+          "pygments; extra == \"check\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Homepage, https://pypi.org/project/pybcj",
+          "Bug Tracker, https://github.com/miurahr/pybcj/issues",
+          "Source, https://github.com/miurahr/pybcj",
+          "Changelog, https://github.com/miurahr/pybcj/blob/main/Changelog.rst"
+        ],
+        "provides_extra": [
+          "test",
+          "check"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/c8/a9/8862616a85cf450d2822dbd4fff1fcaba90877907a6ff5bc2672cafe42f8/pycryptodomex-3.23.0-cp37-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=f489c4765093fb60e2edafdf223397bc716491b2b69fe74367b70d6999257a5c",
+          "hashes": {
+            "sha256": "f489c4765093fb60e2edafdf223397bc716491b2b69fe74367b70d6999257a5c"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "pycryptodomex",
+        "version": "3.23.0",
+        "platform": [
+          "Posix; MacOS X; Windows"
+        ],
+        "summary": "Cryptographic library for Python",
+        "description": "\nPyCryptodome\n============\n\nPyCryptodome is a self-contained Python package of low-level\ncryptographic primitives.\n\nIt supports Python 2.7, Python 3.7 and newer, and PyPy.\n\nYou can install it with::\n\n    pip install pycryptodomex\n\nAll modules are installed under the ``Cryptodome`` package.\n\nCheck the pycryptodome_ project for the equivalent library that\nworks under the ``Crypto`` package.\n\nPyCryptodome is a fork of PyCrypto. It brings several enhancements\nwith respect to the last official version of PyCrypto (2.6.1),\nfor instance:\n\n* Authenticated encryption modes (GCM, CCM, EAX, SIV, OCB, KW, KWP)\n* Hybrid Public Key Encryption (HPKE)\n* Accelerated AES on Intel platforms via AES-NI\n* First class support for PyPy\n* Elliptic curves cryptography (NIST P-curves; Ed25519, Ed448, Curve25519)\n* Better and more compact API (`nonce` and `iv` attributes for ciphers,\n  automatic generation of random nonces and IVs, simplified CTR cipher mode,\n  and more)\n* SHA-3 (including SHAKE XOFs) and BLAKE2 hash algorithms\n* Salsa20 and ChaCha20 stream ciphers\n* scrypt and HKDF\n* Deterministic (EC)DSA and EdDSA\n* Password-protected PKCS#8 key containers\n* Shamir's Secret Sharing scheme\n* Random numbers get sourced directly from the OS (and not from a CSPRNG in userspace)\n* Simplified install process, including better support for Windows\n* Cleaner RSA and DSA key generation (largely based on FIPS 186-4)\n* Major clean ups and simplification of the code base\n\nPyCryptodome is not a wrapper to a separate C library like *OpenSSL*.\nTo the largest possible extent, algorithms are implemented in pure Python.\nOnly the pieces that are extremely critical to performance (e.g. block ciphers)\nare implemented as C extensions.\n\nFor more information, see the `homepage`_.\n\nAll the code can be downloaded from `GitHub`_.\n\n.. _pycryptodome: https://pypi.python.org/pypi/pycryptodome\n.. _`homepage`: http://www.pycryptodome.org\n.. _GitHub: https://github.com/Legrandin/pycryptodome\n",
+        "home_page": "https://www.pycryptodome.org",
+        "author": "Helder Eijs",
+        "author_email": "helderijs@gmail.com",
+        "license": "BSD, Public Domain",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "License :: OSI Approved :: BSD License",
+          "License :: Public Domain",
+          "Intended Audience :: Developers",
+          "Operating System :: Unix",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: MacOS :: MacOS X",
+          "Topic :: Security :: Cryptography",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13"
+        ],
+        "requires_python": ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*, !=3.5.*, !=3.6.*",
+        "project_url": [
+          "Source, https://github.com/Legrandin/pycryptodome/",
+          "Changelog, https://www.pycryptodome.org/src/changelog"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/88/d7/fe32c2a4f8539365e6292aed25545830a5e718a510cdb4caddd6fd8d8056/pyppmd-1.3.1-cp312-cp312-manylinux2014_x86_64.manylinux_2_17_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=1bd6d179ad39b6191ca0cbe62fb9592f33f49277b4384ad7bc5eb0e6ca27ebee",
+          "hashes": {
+            "sha256": "1bd6d179ad39b6191ca0cbe62fb9592f33f49277b4384ad7bc5eb0e6ca27ebee"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.4",
+        "name": "pyppmd",
+        "version": "1.3.1",
+        "dynamic": [
+          "license-file"
+        ],
+        "summary": "PPMd compression/decompression library",
+        "description": "PyPPMd\n======\n\n\n.. image:: https://badge.fury.io/py/pyppmd.svg\n  :target: https://badge.fury.io/py/pyppmd\n\n.. image:: https://img.shields.io/conda/vn/conda-forge/pyppmd\n  :target: https://anaconda.org/conda-forge/pyppmd\n\n.. image:: https://readthedocs.org/projects/pyppmd/badge/?version=latest\n  :target: https://pyppmd.readthedocs.io/en/latest/?badge=latest\n\n.. image:: https://dev.azure.com/miurahr/CodeBerg/_apis/build/status%2FCodeBerg-pyppmd-CI?branchName=main\n  :target: https://dev.azure.com/miurahr/CodeBerg/_build/latest?definitionId=29&branchName=main\n\nIntroduction\n------------\n\n``pyppmd`` module provides classes and functions for compressing and decompressing text data,\nusing PPM(Prediction by partial matching) compression algorithm which has several variations of implementations.\nPPMd is the implementation by Dmitry Shkarin.\nPyPPMD use Igor Pavlov's range coder introduced in 7-zip.\n\nThe API is similar to Python's bz2/lzma/zlib module.\n\nSome parts of th codes are derived from ``7-zip``, ``pyzstd`` and ``ppmd-cffi``.\n\n\nDevelopment status\n------------------\n\nA project status is considered as ``Stable``.\n\nExtra input byte\n----------------\n\n``PPMd`` algorithm and implementation is designed to use ``Extra`` input byte.\nThe encoder will omit a last null (b\"\\0\") byte when last byte is b\"\\0\".\nYou may need to provide an extra null byte when you don't get expected size of\nextracted data.\n\nYou can do like as:\n\n.. code-block::\n\n    dec = pyppmd.Ppmd7Decoder(max_order=6, mem_size=16 << 10)\n    result = dec.decode(compressed, length)\n    if len(result) < length:\n        if dec.needs_input:\n            # ppmd need an extra null byte\n            result += dec.decode(b\"\\0\", length - len(result))\n        else:\n            result += dec.decode(b\"\", length - len(result))\n\n\n.. warning::\n   When use it on MSYS2/MINGW64 environment, you should set environment variable ``SETUPTOOLS_USE_DISTUTILS=stdlib``\n\nCopyright and License\n---------------------\n\nSome codes are derived from p7zip/7zip and pyzstd project.\nDetails are shown in LicenseNotices.rst\n\n- SPDX-License-Identifier: LGPL-2.1-or-later\n- SPDX-URL: https://spdx.org/licenses/LGPL-2.1-or-later.html\n\nPyPPMd is licensed under GNU Lesser General Public License v2.1 or later.\n\n- Copyright (C) 2020-2023 Hiroshi Miura\n- Copyright (C) 2020-2021 Ma Lin\n- Copyright (C) 2010-2012 Lockless Inc.\n- Copyright (C) 1999-2017 Igor Pavlov\n\nThis library is free software; you can redistribute it and/or\nmodify it under the terms of the GNU Lesser General Public\nLicense as published by the Free Software Foundation; either\nversion 2.1 of the License, or (at your option) any later version.\n\nThis library is distributed in the hope that it will be useful,\nbut WITHOUT ANY WARRANTY; without even the implied warranty of\nMERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the GNU\nLesser General Public License for more details.\n\nYou should have received a copy of the GNU Lesser General Public\nLicense along with this library; if not, write to the Free Software\nFoundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA\n",
+        "description_content_type": "text/x-rst",
+        "author_email": "Hiroshi Miura <miurahr@linux.com>",
+        "license": "LGPL-2.1-or-later",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: POSIX :: Linux",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.10",
+          "Programming Language :: Python :: 3.11",
+          "Programming Language :: Python :: 3.12",
+          "Programming Language :: Python :: 3.13",
+          "Programming Language :: Python :: 3.14",
+          "Programming Language :: Python :: 3 :: Only",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Topic :: Software Development :: Libraries :: Python Modules"
+        ],
+        "requires_dist": [
+          "pytest>=6.0; extra == \"test\"",
+          "pytest-benchmark; extra == \"test\"",
+          "pytest-cov; extra == \"test\"",
+          "pytest-timeout; extra == \"test\"",
+          "hypothesis; extra == \"test\"",
+          "coverage[toml]>=5.2; extra == \"test\"",
+          "mypy>=1.10.0; extra == \"check\"",
+          "check-manifest; extra == \"check\"",
+          "flake8; extra == \"check\"",
+          "flake8-isort; extra == \"check\"",
+          "flake8-black; extra == \"check\"",
+          "readme-renderer; extra == \"check\"",
+          "pygments; extra == \"check\"",
+          "sphinx; extra == \"docs\"",
+          "sphinx_rtd_theme; extra == \"docs\"",
+          "atheris; extra == \"fuzzer\"",
+          "hypothesis; extra == \"fuzzer\""
+        ],
+        "requires_python": ">=3.10",
+        "project_url": [
+          "Source, https://github.com/miurahr/pyppmd",
+          "Homepage, https://pyppmd.readthedocs.io/",
+          "Documentation, https://pyppmd.readthedocs.io/en/stable/",
+          "Bug Tracker, https://github.com/miurahr/pyppmd/issues",
+          "Changelog, https://pyppmd.readthedocs.io/en/latest/changelog.html"
+        ],
+        "provides_extra": [
+          "test",
+          "check",
+          "docs",
+          "fuzzer"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/b5/70/5d8df3b09e25bce090399cf48e452d25c935ab72dad19406c77f4e828045/psutil-7.2.2-cp36-abi3-manylinux2010_x86_64.manylinux_2_12_x86_64.manylinux_2_28_x86_64.whl",
+        "archive_info": {
+          "hash": "sha256=076a2d2f923fd4821644f5ba89f059523da90dc9014e85f8e45a5774ca5bc6f9",
+          "hashes": {
+            "sha256": "076a2d2f923fd4821644f5ba89f059523da90dc9014e85f8e45a5774ca5bc6f9"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "psutil",
+        "version": "7.2.2",
+        "platform": [
+          "Platform Independent"
+        ],
+        "summary": "Cross-platform lib for process and system monitoring.",
+        "description": "|  |downloads| |stars| |forks| |contributors| |packages|\n|  |version| |license| |stackoverflow| |twitter| |tidelift|\n|  |github-actions-wheels| |github-actions-bsd|\n\n.. |downloads| image:: https://img.shields.io/pypi/dm/psutil.svg\n    :target: https://clickpy.clickhouse.com/dashboard/psutil\n    :alt: Downloads\n\n.. |stars| image:: https://img.shields.io/github/stars/giampaolo/psutil.svg\n    :target: https://github.com/giampaolo/psutil/stargazers\n    :alt: Github stars\n\n.. |forks| image:: https://img.shields.io/github/forks/giampaolo/psutil.svg\n    :target: https://github.com/giampaolo/psutil/network/members\n    :alt: Github forks\n\n.. |contributors| image:: https://img.shields.io/github/contributors/giampaolo/psutil.svg\n    :target: https://github.com/giampaolo/psutil/graphs/contributors\n    :alt: Contributors\n\n.. |stackoverflow| image:: https://img.shields.io/badge/stackoverflow-Ask%20questions-blue.svg\n    :target: https://stackoverflow.com/questions/tagged/psutil\n    :alt: Stackoverflow\n\n.. |github-actions-wheels| image:: https://img.shields.io/github/actions/workflow/status/giampaolo/psutil/.github/workflows/build.yml.svg?label=Linux%2C%20macOS%2C%20Windows\n    :target: https://github.com/giampaolo/psutil/actions?query=workflow%3Abuild\n    :alt: Linux, macOS, Windows\n\n.. |github-actions-bsd| image:: https://img.shields.io/github/actions/workflow/status/giampaolo/psutil/.github/workflows/bsd.yml.svg?label=FreeBSD,%20NetBSD,%20OpenBSD\n    :target: https://github.com/giampaolo/psutil/actions?query=workflow%3Absd-tests\n    :alt: FreeBSD, NetBSD, OpenBSD\n\n.. |version| image:: https://img.shields.io/pypi/v/psutil.svg?label=pypi\n    :target: https://pypi.org/project/psutil\n    :alt: Latest version\n\n.. |packages| image:: https://repology.org/badge/tiny-repos/python:psutil.svg\n    :target: https://repology.org/metapackage/python:psutil/versions\n    :alt: Binary packages\n\n.. |license| image:: https://img.shields.io/pypi/l/psutil.svg\n    :target: https://github.com/giampaolo/psutil/blob/master/LICENSE\n    :alt: License\n\n.. |twitter| image:: https://img.shields.io/twitter/follow/grodola?style=flat\n    :target: https://twitter.com/grodola\n    :alt: Twitter Follow\n\n.. |tidelift| image:: https://tidelift.com/badges/github/giampaolo/psutil?style=flat\n    :target: https://tidelift.com/subscription/pkg/pypi-psutil?utm_source=pypi-psutil&utm_medium=referral&utm_campaign=readme\n    :alt: Tidelift\n\n-----\n\nQuick links\n===========\n\n- `Home page <https://github.com/giampaolo/psutil>`_\n- `Install <https://github.com/giampaolo/psutil/blob/master/INSTALL.rst>`_\n- `Documentation <http://psutil.readthedocs.io>`_\n- `Download <https://pypi.org/project/psutil/#files>`_\n- `Forum <http://groups.google.com/group/psutil/topics>`_\n- `StackOverflow <https://stackoverflow.com/questions/tagged/psutil>`_\n- `Blog <https://gmpy.dev/tags/psutil>`_\n- `What's new <https://github.com/giampaolo/psutil/blob/master/HISTORY.rst>`_\n\n\nSummary\n=======\n\npsutil (process and system utilities) is a cross-platform library for\nretrieving information on **running processes** and **system utilization**\n(CPU, memory, disks, network, sensors) in Python.\nIt is useful mainly for **system monitoring**, **profiling and limiting process\nresources** and **management of running processes**.\nIt implements many functionalities offered by classic UNIX command line tools\nsuch as *ps, top, iotop, lsof, netstat, ifconfig, free* and others.\npsutil currently supports the following platforms:\n\n- **Linux**\n- **Windows**\n- **macOS**\n- **FreeBSD, OpenBSD**, **NetBSD**\n- **Sun Solaris**\n- **AIX**\n\nSupported Python versions are cPython 3.6+ and `PyPy <https://pypy.org/>`__.\nLatest psutil version supporting Python 2.7 is\n`psutil 6.1.1 <https://pypi.org/project/psutil/6.1.1/>`__.\n\nExample usages\n==============\n\nThis represents pretty much the whole psutil API.\n\nCPU\n---\n\n.. code-block:: python\n\n    >>> import psutil\n    >>>\n    >>> psutil.cpu_times()\n    scputimes(user=3961.46, nice=169.729, system=2150.659, idle=16900.540, iowait=629.59, irq=0.0, softirq=19.42, steal=0.0, guest=0, guest_nice=0.0)\n    >>>\n    >>> for x in range(3):\n    ...     psutil.cpu_percent(interval=1)\n    ...\n    4.0\n    5.9\n    3.8\n    >>>\n    >>> for x in range(3):\n    ...     psutil.cpu_percent(interval=1, percpu=True)\n    ...\n    [4.0, 6.9, 3.7, 9.2]\n    [7.0, 8.5, 2.4, 2.1]\n    [1.2, 9.0, 9.9, 7.2]\n    >>>\n    >>> for x in range(3):\n    ...     psutil.cpu_times_percent(interval=1, percpu=False)\n    ...\n    scputimes(user=1.5, nice=0.0, system=0.5, idle=96.5, iowait=1.5, irq=0.0, softirq=0.0, steal=0.0, guest=0.0, guest_nice=0.0)\n    scputimes(user=1.0, nice=0.0, system=0.0, idle=99.0, iowait=0.0, irq=0.0, softirq=0.0, steal=0.0, guest=0.0, guest_nice=0.0)\n    scputimes(user=2.0, nice=0.0, system=0.0, idle=98.0, iowait=0.0, irq=0.0, softirq=0.0, steal=0.0, guest=0.0, guest_nice=0.0)\n    >>>\n    >>> psutil.cpu_count()\n    4\n    >>> psutil.cpu_count(logical=False)\n    2\n    >>>\n    >>> psutil.cpu_stats()\n    scpustats(ctx_switches=20455687, interrupts=6598984, soft_interrupts=2134212, syscalls=0)\n    >>>\n    >>> psutil.cpu_freq()\n    scpufreq(current=931.42925, min=800.0, max=3500.0)\n    >>>\n    >>> psutil.getloadavg()  # also on Windows (emulated)\n    (3.14, 3.89, 4.67)\n\nMemory\n------\n\n.. code-block:: python\n\n    >>> psutil.virtual_memory()\n    svmem(total=10367352832, available=6472179712, percent=37.6, used=8186245120, free=2181107712, active=4748992512, inactive=2758115328, buffers=790724608, cached=3500347392, shared=787554304)\n    >>> psutil.swap_memory()\n    sswap(total=2097147904, used=296128512, free=1801019392, percent=14.1, sin=304193536, sout=677842944)\n    >>>\n\nDisks\n-----\n\n.. code-block:: python\n\n    >>> psutil.disk_partitions()\n    [sdiskpart(device='/dev/sda1', mountpoint='/', fstype='ext4', opts='rw,nosuid'),\n     sdiskpart(device='/dev/sda2', mountpoint='/home', fstype='ext', opts='rw')]\n    >>>\n    >>> psutil.disk_usage('/')\n    sdiskusage(total=21378641920, used=4809781248, free=15482871808, percent=22.5)\n    >>>\n    >>> psutil.disk_io_counters(perdisk=False)\n    sdiskio(read_count=719566, write_count=1082197, read_bytes=18626220032, write_bytes=24081764352, read_time=5023392, write_time=63199568, read_merged_count=619166, write_merged_count=812396, busy_time=4523412)\n    >>>\n\nNetwork\n-------\n\n.. code-block:: python\n\n    >>> psutil.net_io_counters(pernic=True)\n    {'eth0': netio(bytes_sent=485291293, bytes_recv=6004858642, packets_sent=3251564, packets_recv=4787798, errin=0, errout=0, dropin=0, dropout=0),\n     'lo': netio(bytes_sent=2838627, bytes_recv=2838627, packets_sent=30567, packets_recv=30567, errin=0, errout=0, dropin=0, dropout=0)}\n    >>>\n    >>> psutil.net_connections(kind='tcp')\n    [sconn(fd=115, family=<AddressFamily.AF_INET: 2>, type=<SocketType.SOCK_STREAM: 1>, laddr=addr(ip='10.0.0.1', port=48776), raddr=addr(ip='93.186.135.91', port=80), status='ESTABLISHED', pid=1254),\n     sconn(fd=117, family=<AddressFamily.AF_INET: 2>, type=<SocketType.SOCK_STREAM: 1>, laddr=addr(ip='10.0.0.1', port=43761), raddr=addr(ip='72.14.234.100', port=80), status='CLOSING', pid=2987),\n     ...]\n    >>>\n    >>> psutil.net_if_addrs()\n    {'lo': [snicaddr(family=<AddressFamily.AF_INET: 2>, address='127.0.0.1', netmask='255.0.0.0', broadcast='127.0.0.1', ptp=None),\n            snicaddr(family=<AddressFamily.AF_INET6: 10>, address='::1', netmask='ffff:ffff:ffff:ffff:ffff:ffff:ffff:ffff', broadcast=None, ptp=None),\n            snicaddr(family=<AddressFamily.AF_LINK: 17>, address='00:00:00:00:00:00', netmask=None, broadcast='00:00:00:00:00:00', ptp=None)],\n     'wlan0': [snicaddr(family=<AddressFamily.AF_INET: 2>, address='192.168.1.3', netmask='255.255.255.0', broadcast='192.168.1.255', ptp=None),\n               snicaddr(family=<AddressFamily.AF_INET6: 10>, address='fe80::c685:8ff:fe45:641%wlan0', netmask='ffff:ffff:ffff:ffff::', broadcast=None, ptp=None),\n               snicaddr(family=<AddressFamily.AF_LINK: 17>, address='c4:85:08:45:06:41', netmask=None, broadcast='ff:ff:ff:ff:ff:ff', ptp=None)]}\n    >>>\n    >>> psutil.net_if_stats()\n    {'lo': snicstats(isup=True, duplex=<NicDuplex.NIC_DUPLEX_UNKNOWN: 0>, speed=0, mtu=65536, flags='up,loopback,running'),\n     'wlan0': snicstats(isup=True, duplex=<NicDuplex.NIC_DUPLEX_FULL: 2>, speed=100, mtu=1500, flags='up,broadcast,running,multicast')}\n    >>>\n\nSensors\n-------\n\n.. code-block:: python\n\n    >>> import psutil\n    >>> psutil.sensors_temperatures()\n    {'acpitz': [shwtemp(label='', current=47.0, high=103.0, critical=103.0)],\n     'asus': [shwtemp(label='', current=47.0, high=None, critical=None)],\n     'coretemp': [shwtemp(label='Physical id 0', current=52.0, high=100.0, critical=100.0),\n                  shwtemp(label='Core 0', current=45.0, high=100.0, critical=100.0)]}\n    >>>\n    >>> psutil.sensors_fans()\n    {'asus': [sfan(label='cpu_fan', current=3200)]}\n    >>>\n    >>> psutil.sensors_battery()\n    sbattery(percent=93, secsleft=16628, power_plugged=False)\n    >>>\n\nOther system info\n-----------------\n\n.. code-block:: python\n\n    >>> import psutil\n    >>> psutil.users()\n    [suser(name='giampaolo', terminal='pts/2', host='localhost', started=1340737536.0, pid=1352),\n     suser(name='giampaolo', terminal='pts/3', host='localhost', started=1340737792.0, pid=1788)]\n    >>>\n    >>> psutil.boot_time()\n    1365519115.0\n    >>>\n\nProcess management\n------------------\n\n.. code-block:: python\n\n    >>> import psutil\n    >>> psutil.pids()\n    [1, 2, 3, 4, 5, 6, 7, 46, 48, 50, 51, 178, 182, 222, 223, 224, 268, 1215,\n     1216, 1220, 1221, 1243, 1244, 1301, 1601, 2237, 2355, 2637, 2774, 3932,\n     4176, 4177, 4185, 4187, 4189, 4225, 4243, 4245, 4263, 4282, 4306, 4311,\n     4312, 4313, 4314, 4337, 4339, 4357, 4358, 4363, 4383, 4395, 4408, 4433,\n     4443, 4445, 4446, 5167, 5234, 5235, 5252, 5318, 5424, 5644, 6987, 7054,\n     7055, 7071]\n    >>>\n    >>> p = psutil.Process(7055)\n    >>> p\n    psutil.Process(pid=7055, name='python3', status='running', started='09:04:44')\n    >>> p.pid\n    7055\n    >>> p.name()\n    'python3'\n    >>> p.exe()\n    '/usr/bin/python3'\n    >>> p.cwd()\n    '/home/giampaolo'\n    >>> p.cmdline()\n    ['/usr/bin/python3', 'main.py']\n    >>>\n    >>> p.ppid()\n    7054\n    >>> p.parent()\n    psutil.Process(pid=4699, name='bash', status='sleeping', started='09:06:44')\n    >>> p.parents()\n    [psutil.Process(pid=4699, name='bash', started='09:06:44'),\n     psutil.Process(pid=4689, name='gnome-terminal-server', status='sleeping', started='0:06:44'),\n     psutil.Process(pid=1, name='systemd', status='sleeping', started='05:56:55')]\n    >>> p.children(recursive=True)\n    [psutil.Process(pid=29835, name='python3', status='sleeping', started='11:45:38'),\n     psutil.Process(pid=29836, name='python3', status='waking', started='11:43:39')]\n    >>>\n    >>> p.status()\n    'running'\n    >>> p.create_time()\n    1267551141.5019531\n    >>> p.terminal()\n    '/dev/pts/0'\n    >>>\n    >>> p.username()\n    'giampaolo'\n    >>> p.uids()\n    puids(real=1000, effective=1000, saved=1000)\n    >>> p.gids()\n    pgids(real=1000, effective=1000, saved=1000)\n    >>>\n    >>> p.cpu_times()\n    pcputimes(user=1.02, system=0.31, children_user=0.32, children_system=0.1, iowait=0.0)\n    >>> p.cpu_percent(interval=1.0)\n    12.1\n    >>> p.cpu_affinity()\n    [0, 1, 2, 3]\n    >>> p.cpu_affinity([0, 1])  # set\n    >>> p.cpu_num()\n    1\n    >>>\n    >>> p.memory_info()\n    pmem(rss=10915840, vms=67608576, shared=3313664, text=2310144, lib=0, data=7262208, dirty=0)\n    >>> p.memory_full_info()  # \"real\" USS memory usage (Linux, macOS, Win only)\n    pfullmem(rss=10199040, vms=52133888, shared=3887104, text=2867200, lib=0, data=5967872, dirty=0, uss=6545408, pss=6872064, swap=0)\n    >>> p.memory_percent()\n    0.7823\n    >>> p.memory_maps()\n    [pmmap_grouped(path='/lib/x8664-linux-gnu/libutil-2.15.so', rss=32768, size=2125824, pss=32768, shared_clean=0, shared_dirty=0, private_clean=20480, private_dirty=12288, referenced=32768, anonymous=12288, swap=0),\n     pmmap_grouped(path='/lib/x8664-linux-gnu/libc-2.15.so', rss=3821568, size=3842048, pss=3821568, shared_clean=0, shared_dirty=0, private_clean=0, private_dirty=3821568, referenced=3575808, anonymous=3821568, swap=0),\n     pmmap_grouped(path='[heap]',  rss=32768, size=139264, pss=32768, shared_clean=0, shared_dirty=0, private_clean=0, private_dirty=32768, referenced=32768, anonymous=32768, swap=0),\n     pmmap_grouped(path='[stack]', rss=2465792, size=2494464, pss=2465792, shared_clean=0, shared_dirty=0, private_clean=0, private_dirty=2465792, referenced=2277376, anonymous=2465792, swap=0),\n     ...]\n    >>>\n    >>> p.io_counters()\n    pio(read_count=478001, write_count=59371, read_bytes=700416, write_bytes=69632, read_chars=456232, write_chars=517543)\n    >>>\n    >>> p.open_files()\n    [popenfile(path='/home/giampaolo/monit.py', fd=3, position=0, mode='r', flags=32768),\n     popenfile(path='/var/log/monit.log', fd=4, position=235542, mode='a', flags=33793)]\n    >>>\n    >>> p.net_connections(kind='tcp')\n    [pconn(fd=115, family=<AddressFamily.AF_INET: 2>, type=<SocketType.SOCK_STREAM: 1>, laddr=addr(ip='10.0.0.1', port=48776), raddr=addr(ip='93.186.135.91', port=80), status='ESTABLISHED'),\n     pconn(fd=117, family=<AddressFamily.AF_INET: 2>, type=<SocketType.SOCK_STREAM: 1>, laddr=addr(ip='10.0.0.1', port=43761), raddr=addr(ip='72.14.234.100', port=80), status='CLOSING')]\n    >>>\n    >>> p.threads()\n    [pthread(id=5234, user_time=22.5, system_time=9.2891),\n     pthread(id=5237, user_time=0.0707, system_time=1.1)]\n    >>>\n    >>> p.num_threads()\n    4\n    >>> p.num_fds()\n    8\n    >>> p.num_ctx_switches()\n    pctxsw(voluntary=78, involuntary=19)\n    >>>\n    >>> p.nice()\n    0\n    >>> p.nice(10)  # set\n    >>>\n    >>> p.ionice(psutil.IOPRIO_CLASS_IDLE)  # IO priority (Win and Linux only)\n    >>> p.ionice()\n    pionice(ioclass=<IOPriority.IOPRIO_CLASS_IDLE: 3>, value=0)\n    >>>\n    >>> p.rlimit(psutil.RLIMIT_NOFILE, (5, 5))  # set resource limits (Linux only)\n    >>> p.rlimit(psutil.RLIMIT_NOFILE)\n    (5, 5)\n    >>>\n    >>> p.environ()\n    {'LC_PAPER': 'it_IT.UTF-8', 'SHELL': '/bin/bash', 'GREP_OPTIONS': '--color=auto',\n    'XDG_CONFIG_DIRS': '/etc/xdg/xdg-ubuntu:/usr/share/upstart/xdg:/etc/xdg',\n     ...}\n    >>>\n    >>> p.as_dict()\n    {'status': 'running', 'num_ctx_switches': pctxsw(voluntary=63, involuntary=1), 'pid': 5457, ...}\n    >>> p.is_running()\n    True\n    >>> p.suspend()\n    >>> p.resume()\n    >>>\n    >>> p.terminate()\n    >>> p.kill()\n    >>> p.wait(timeout=3)\n    <Exitcode.EX_OK: 0>\n    >>>\n    >>> psutil.test()\n    USER         PID %CPU %MEM     VSZ     RSS TTY        START    TIME  COMMAND\n    root           1  0.0  0.0   24584    2240            Jun17   00:00  init\n    root           2  0.0  0.0       0       0            Jun17   00:00  kthreadd\n    ...\n    giampaolo  31475  0.0  0.0   20760    3024 /dev/pts/0 Jun19   00:00  python2.4\n    giampaolo  31721  0.0  2.2  773060  181896            00:04   10:30  chrome\n    root       31763  0.0  0.0       0       0            00:05   00:00  kworker/0:1\n    >>>\n\nFurther process APIs\n--------------------\n\n.. code-block:: python\n\n    >>> import psutil\n    >>> for proc in psutil.process_iter(['pid', 'name']):\n    ...     print(proc.info)\n    ...\n    {'pid': 1, 'name': 'systemd'}\n    {'pid': 2, 'name': 'kthreadd'}\n    {'pid': 3, 'name': 'ksoftirqd/0'}\n    ...\n    >>>\n    >>> psutil.pid_exists(3)\n    True\n    >>>\n    >>> def on_terminate(proc):\n    ...     print(\"process {} terminated\".format(proc))\n    ...\n    >>> # waits for multiple processes to terminate\n    >>> gone, alive = psutil.wait_procs(procs_list, timeout=3, callback=on_terminate)\n    >>>\n\nHeap info\n---------\n\n.. code-block:: python\n\n    >>> import psutil\n    >>> psutil.heap_info()\n    pheap(heap_used=5177792, mmap_used=819200)\n    >>> psutil.heap_trim()\n\nSee also `psleak <https://github.com/giampaolo/psleak>`__\n\nWindows services\n----------------\n\n.. code-block:: python\n\n    >>> list(psutil.win_service_iter())\n    [<WindowsService(name='AeLookupSvc', display_name='Application Experience') at 38850096>,\n     <WindowsService(name='ALG', display_name='Application Layer Gateway Service') at 38850128>,\n     <WindowsService(name='APNMCP', display_name='Ask Update Service') at 38850160>,\n     <WindowsService(name='AppIDSvc', display_name='Application Identity') at 38850192>,\n     ...]\n    >>> s = psutil.win_service_get('alg')\n    >>> s.as_dict()\n    {'binpath': 'C:\\\\Windows\\\\System32\\\\alg.exe',\n     'description': 'Provides support for 3rd party protocol plug-ins for Internet Connection Sharing',\n     'display_name': 'Application Layer Gateway Service',\n     'name': 'alg',\n     'pid': None,\n     'start_type': 'manual',\n     'status': 'stopped',\n     'username': 'NT AUTHORITY\\\\LocalService'}\n\nProjects using psutil\n=====================\n\nHere's some I find particularly interesting:\n\n- https://github.com/giampaolo/psleak\n- https://github.com/google/grr\n- https://github.com/facebook/osquery/\n- https://github.com/nicolargo/glances\n- https://github.com/aristocratos/bpytop\n- https://github.com/Jahaja/psdash\n- https://github.com/ajenti/ajenti\n- https://github.com/home-assistant/home-assistant/\n\nPortings\n========\n\n- Go: https://github.com/shirou/gopsutil\n- C: https://github.com/hamon-in/cpslib\n- Rust: https://github.com/rust-psutil/rust-psutil\n- Nim: https://github.com/johnscillieri/psutil-nim\n\n\n\n",
+        "description_content_type": "text/x-rst",
+        "keywords": [
+          "ps",
+          "top",
+          "kill",
+          "free",
+          "lsof",
+          "netstat",
+          "nice",
+          "tty",
+          "ionice",
+          "uptime",
+          "taskmgr",
+          "process",
+          "df",
+          "iotop",
+          "iostat",
+          "ifconfig",
+          "taskset",
+          "who",
+          "pidof",
+          "pmap",
+          "smem",
+          "pstree",
+          "monitoring",
+          "ulimit",
+          "prlimit",
+          "smem",
+          "performance",
+          "metrics",
+          "agent",
+          "observability"
+        ],
+        "home_page": "https://github.com/giampaolo/psutil",
+        "author": "Giampaolo Rodola",
+        "author_email": "g.rodola@gmail.com",
+        "license": "BSD-3-Clause",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: Information Technology",
+          "Intended Audience :: System Administrators",
+          "Operating System :: MacOS :: MacOS X",
+          "Operating System :: Microsoft :: Windows :: Windows 10",
+          "Operating System :: Microsoft :: Windows :: Windows 11",
+          "Operating System :: Microsoft :: Windows :: Windows 7",
+          "Operating System :: Microsoft :: Windows :: Windows 8",
+          "Operating System :: Microsoft :: Windows :: Windows 8.1",
+          "Operating System :: Microsoft :: Windows :: Windows Server 2003",
+          "Operating System :: Microsoft :: Windows :: Windows Server 2008",
+          "Operating System :: Microsoft :: Windows :: Windows Vista",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: Microsoft",
+          "Operating System :: OS Independent",
+          "Operating System :: POSIX :: AIX",
+          "Operating System :: POSIX :: BSD :: FreeBSD",
+          "Operating System :: POSIX :: BSD :: NetBSD",
+          "Operating System :: POSIX :: BSD :: OpenBSD",
+          "Operating System :: POSIX :: BSD",
+          "Operating System :: POSIX :: Linux",
+          "Operating System :: POSIX :: SunOS/Solaris",
+          "Operating System :: POSIX",
+          "Programming Language :: C",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: Implementation :: CPython",
+          "Programming Language :: Python :: Implementation :: PyPy",
+          "Programming Language :: Python",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Software Development :: Libraries",
+          "Topic :: System :: Benchmark",
+          "Topic :: System :: Hardware",
+          "Topic :: System :: Monitoring",
+          "Topic :: System :: Networking :: Monitoring :: Hardware Watchdog",
+          "Topic :: System :: Networking :: Monitoring",
+          "Topic :: System :: Networking",
+          "Topic :: System :: Operating System",
+          "Topic :: System :: Systems Administration",
+          "Topic :: Utilities"
+        ],
+        "requires_dist": [
+          "psleak ; extra == 'dev'",
+          "pytest ; extra == 'dev'",
+          "pytest-instafail ; extra == 'dev'",
+          "pytest-xdist ; extra == 'dev'",
+          "setuptools ; extra == 'dev'",
+          "abi3audit ; extra == 'dev'",
+          "black ; extra == 'dev'",
+          "check-manifest ; extra == 'dev'",
+          "coverage ; extra == 'dev'",
+          "packaging ; extra == 'dev'",
+          "pylint ; extra == 'dev'",
+          "pyperf ; extra == 'dev'",
+          "pypinfo ; extra == 'dev'",
+          "pytest-cov ; extra == 'dev'",
+          "requests ; extra == 'dev'",
+          "rstcheck ; extra == 'dev'",
+          "ruff ; extra == 'dev'",
+          "sphinx ; extra == 'dev'",
+          "sphinx-rtd-theme ; extra == 'dev'",
+          "toml-sort ; extra == 'dev'",
+          "twine ; extra == 'dev'",
+          "validate-pyproject[all] ; extra == 'dev'",
+          "virtualenv ; extra == 'dev'",
+          "vulture ; extra == 'dev'",
+          "wheel ; extra == 'dev'",
+          "colorama ; (os_name == \"nt\") and extra == 'dev'",
+          "pyreadline3 ; (os_name == \"nt\") and extra == 'dev'",
+          "pywin32 ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'dev'",
+          "wheel ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'dev'",
+          "wmi ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'dev'",
+          "psleak ; extra == 'test'",
+          "pytest ; extra == 'test'",
+          "pytest-instafail ; extra == 'test'",
+          "pytest-xdist ; extra == 'test'",
+          "setuptools ; extra == 'test'",
+          "pywin32 ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'test'",
+          "wheel ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'test'",
+          "wmi ; (os_name == \"nt\" and implementation_name != \"pypy\") and extra == 'test'"
+        ],
+        "requires_python": ">=3.6",
+        "provides_extra": [
+          "dev",
+          "test"
+        ]
+      }
+    },
+    {
+      "download_info": {
+        "url": "https://files.pythonhosted.org/packages/24/99/4772b8e00a136f3e01236de33b0efda31ee7077203ba5967fcc76da94d65/texttable-1.7.0-py2.py3-none-any.whl",
+        "archive_info": {
+          "hash": "sha256=72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917",
+          "hashes": {
+            "sha256": "72227d592c82b3d7f672731ae73e4d1f88cd8e2ef5b075a7a7f01a23a3743917"
+          }
+        }
+      },
+      "is_direct": false,
+      "is_yanked": false,
+      "requested": false,
+      "metadata": {
+        "metadata_version": "2.1",
+        "name": "texttable",
+        "version": "1.7.0",
+        "platform": [
+          "any"
+        ],
+        "summary": "module to create simple ASCII tables",
+        "description": "# texttable\n\nPython module to create simple ASCII tables\n\n## Availability\n\nThis module is available on [PyPI](https://pypi.org/project/texttable/), and has been packaged for several Linux/Unix platforms\n([Debian](https://packages.debian.org/search?&searchon=names&keywords=python-texttable+),\n[FreeBSD](https://www.freebsd.org/cgi/ports.cgi?query=texttable&stype=all), Fedora, Suse...).\n\n## Dependencies\n\nIf available, [cjkwrap](https://github.com/fgallaire/cjkwrap) library is used instead of textwrap, for a better wrapping of CJK text.\n\nIf available, [wcwidth](https://github.com/jquast/wcwidth) library is used for a better rendering (basic emoji support).\n\n## Documentation\n\n```\nNAME\n    texttable - module to create simple ASCII tables\n\nFILE\n    /usr/local/lib/python2.7/dist-packages/texttable.py\n\nDESCRIPTION\n\n    Example:\n\n        table = Texttable()\n        table.set_cols_align([\"l\", \"r\", \"c\"])\n        table.set_cols_valign([\"t\", \"m\", \"b\"])\n        table.add_rows([[\"Name\", \"Age\", \"Nickname\"],\n                        [\"Mr\\nXavier\\nHuon\", 32, \"Xav'\"],\n                        [\"Mr\\nBaptiste\\nClement\", 1, \"Baby\"],\n                        [\"Mme\\nLouise\\nBourgeau\", 28, \"Lou\\n\\nLoue\"]])\n        print(table.draw())\n        print()\n\n        table = Texttable()\n        table.set_deco(Texttable.HEADER)\n        table.set_cols_dtype(['t',  # text\n                              'f',  # float (decimal)\n                              'e',  # float (exponent)\n                              'i',  # integer\n                              'a']) # automatic\n        table.set_cols_align([\"l\", \"r\", \"r\", \"r\", \"l\"])\n        table.add_rows([[\"text\",    \"float\", \"exp\", \"int\", \"auto\"],\n                        [\"abcd\",    \"67\",    654,   89,    128.001],\n                        [\"efghijk\", 67.5434, .654,  89.6,  12800000000000000000000.00023],\n                        [\"lmn\",     5e-78,   5e-78, 89.4,  .000000000000128],\n                        [\"opqrstu\", .023,    5e+78, 92.,   12800000000000000000000]])\n        print(table.draw())\n\n    Result:\n\n        +----------+-----+----------+\n        |   Name   | Age | Nickname |\n        +==========+=====+==========+\n        | Mr       |     |          |\n        | Xavier   |  32 |          |\n        | Huon     |     |   Xav'   |\n        +----------+-----+----------+\n        | Mr       |     |          |\n        | Baptiste |   1 |          |\n        | Clement  |     |   Baby   |\n        +----------+-----+----------+\n        | Mme      |     |   Lou    |\n        | Louise   |  28 |          |\n        | Bourgeau |     |   Loue   |\n        +----------+-----+----------+\n\n         text     float       exp      int     auto\n        ==============================================\n        abcd      67.000   6.540e+02    89   128.001\n        efghijk   67.543   6.540e-01    90   1.280e+22\n        lmn        0.000   5.000e-78    89   0.000\n        opqrstu    0.023   5.000e+78    92   1.280e+22\n\nCLASSES\n    class Texttable\n     |  Methods defined here:\n     |\n     |  __init__(self, max_width=80)\n     |      Constructor\n     |\n     |      - max_width is an integer, specifying the maximum width of the table\n     |      - if set to 0, size is unlimited, therefore cells won't be wrapped\n     |\n     |  add_row(self, array)\n     |      Add a row in the rows stack\n     |\n     |      - cells can contain newlines and tabs\n     |\n     |  add_rows(self, rows, header=True)\n     |      Add several rows in the rows stack\n     |\n     |      - The 'rows' argument can be either an iterator returning arrays,\n     |        or a by-dimensional array\n     |      - 'header' specifies if the first row should be used as the header\n     |        of the table\n     |\n     |  draw(self)\n     |      Draw the table\n     |\n     |      - the table is returned as a whole string\n     |\n     |  header(self, array)\n     |      Specify the header of the table\n     |\n     |  reset(self)\n     |      Reset the instance\n     |\n     |      - reset rows and header\n     |\n     |  set_chars(self, array)\n     |      Set the characters used to draw lines between rows and columns\n     |\n     |      - the array should contain 4 fields:\n     |\n     |          [horizontal, vertical, corner, header]\n     |\n     |      - default is set to:\n     |\n     |          ['-', '|', '+', '=']\n     |\n     |  set_cols_align(self, array)\n     |      Set the desired columns alignment\n     |\n     |      - the elements of the array should be either \"l\", \"c\" or \"r\":\n     |\n     |          * \"l\": column flushed left\n     |          * \"c\": column centered\n     |          * \"r\": column flushed right\n     |\n     |  set_cols_dtype(self, array)\n     |      Set the desired columns datatype for the cols.\n     |\n     |      - the elements of the array should be either a callable or any of\n     |        \"a\", \"t\", \"f\", \"e\" or \"i\":\n     |\n     |          * \"a\": automatic (try to use the most appropriate datatype)\n     |          * \"t\": treat as text\n     |          * \"f\": treat as float in decimal format\n     |          * \"e\": treat as float in exponential format\n     |          * \"i\": treat as int\n     |          * \"b\": treat as boolean\n     |          * a callable: should return formatted string for any value given\n     |\n     |      - by default, automatic datatyping is used for each column\n     |\n     |  set_cols_valign(self, array)\n     |      Set the desired columns vertical alignment\n     |\n     |      - the elements of the array should be either \"t\", \"m\" or \"b\":\n     |\n     |          * \"t\": column aligned on the top of the cell\n     |          * \"m\": column aligned on the middle of the cell\n     |          * \"b\": column aligned on the bottom of the cell\n     |\n     |  set_cols_width(self, array)\n     |      Set the desired columns width\n     |\n     |      - the elements of the array should be integers, specifying the\n     |        width of each column. For example:\n     |\n     |              [10, 20, 5]\n     |\n     |  set_deco(self, deco)\n     |      Set the table decoration\n     |\n     |      - 'deco' can be a combination of:\n     |\n     |          Texttable.BORDER: Border around the table\n     |          Texttable.HEADER: Horizontal line below the header\n     |          Texttable.HLINES: Horizontal lines between rows\n     |          Texttable.VLINES: Vertical lines between columns\n     |\n     |         All of them are enabled by default\n     |\n     |      - example:\n     |\n     |          Texttable.BORDER | Texttable.HEADER\n     |\n     |  set_header_align(self, array)\n     |      Set the desired header alignment\n     |\n     |      - the elements of the array should be either \"l\", \"c\" or \"r\":\n     |\n     |          * \"l\": column flushed left\n     |          * \"c\": column centered\n     |          * \"r\": column flushed right\n     |\n     |  set_max_width(self, max_width)\n     |      Set the maximum width of the table\n     |\n     |      - max_width is an integer, specifying the maximum width of the table\n     |      - if set to 0, size is unlimited, therefore cells won't be wrapped\n     |\n     |  set_precision(self, width)\n     |      Set the desired precision for float/exponential formats\n     |\n     |      - width must be an integer >= 0\n     |\n     |      - default value is set to 3\n     |\n     |  ----------------------------------------------------------------------\n     |  Data and other attributes defined here:\n     |\n     |  BORDER = 1\n     |\n     |  HEADER = 2\n     |\n     |  HLINES = 4\n     |\n     |  VLINES = 8\n\nDATA\n    __all__ = ['Texttable', 'ArraySizeError']\n    __author__ = 'Gerome Fournier <jef(at)foutaise.org>'\n    __credits__ = 'Jeff Kowalczyk:\\n    - textwrap improved import\\n ...at...\n    __license__ = 'MIT'\n    __version__ = '1.7.0'\n\nVERSION\n    1.7.0\n\nAUTHOR\n    Gerome Fournier <jef(at)foutaise.org>\n\nCREDITS\n    Jeff Kowalczyk:\n        - textwrap improved import\n        - comment concerning header output\n\n    Anonymous:\n        - add_rows method, for adding rows in one go\n\n    Sergey Simonenko:\n        - redefined len() function to deal with non-ASCII characters\n\n    Roger Lew:\n        - columns datatype specifications\n\n    Brian Peterson:\n        - better handling of unicode errors\n\n    Frank Sachsenheim:\n        - add Python 2/3-compatibility\n\n    Maximilian Hils:\n        - fix minor bug for Python 3 compatibility\n\n    frinkelpi:\n        - preserve empty lines\n```\n\n## Forks\n\n* [latextable](https://github.com/JAEarly/latextable) is a fork of texttable that provide a LaTeX backend.\n",
+        "description_content_type": "text/markdown",
+        "home_page": "https://github.com/foutaise/texttable/",
+        "download_url": "https://github.com/foutaise/texttable/archive/v1.7.0.tar.gz",
+        "author": "Gerome Fournier",
+        "author_email": "jef@foutaise.org",
+        "license": "MIT",
+        "classifier": [
+          "Development Status :: 5 - Production/Stable",
+          "Environment :: Console",
+          "Intended Audience :: Developers",
+          "Intended Audience :: End Users/Desktop",
+          "License :: OSI Approved :: MIT License",
+          "Operating System :: Microsoft :: Windows",
+          "Operating System :: POSIX",
+          "Operating System :: MacOS",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+          "Topic :: Text Processing",
+          "Topic :: Utilities",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2",
+          "Programming Language :: Python :: 2.7",
+          "Programming Language :: Python :: 3",
+          "Programming Language :: Python :: 3.5",
+          "Programming Language :: Python :: 3.6",
+          "Programming Language :: Python :: 3.7",
+          "Programming Language :: Python :: 3.8",
+          "Programming Language :: Python :: 3.9"
+        ]
+      }
+    }
+  ],
+  "environment": {
+    "implementation_name": "cpython",
+    "implementation_version": "3.12.3",
+    "os_name": "posix",
+    "platform_machine": "x86_64",
+    "platform_release": "5.15.0-60-generic",
+    "platform_system": "Linux",
+    "platform_version": "#66-Ubuntu SMP Fri Jan 20 14:29:49 UTC 2023",
+    "python_full_version": "3.12.3",
+    "platform_python_implementation": "CPython",
+    "python_version": "3.12",
+    "sys_platform": "linux"
+  }
+}

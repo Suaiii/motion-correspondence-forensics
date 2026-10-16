@@ -1,0 +1,48 @@
+split,fake_file,real_file,query,semantic_score,vript_clip_id
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Paper Airplanes.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Paper Airplanes.mp4,Paper Airplanes,0.5,-n3CDfw5J4k-Scene-043
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Man on the cloud.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Man on the cloud.mp4,Man on the cloud,0.75,-3yHyzZNWkM-Scene-013
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Mitten astronaut.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Mitten astronaut.mp4,Mitten astronaut,0.5,-XQ_CuIwDlc-Scene-007
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Chameleon.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Chameleon.mp4,Chameleon,1.0,-CLU35KDfkI-Scene-014
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Happy cat.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Happy cat.mp4,Happy cat,0.5,-OmQkHMRnyM-Scene-097
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Chair archaeology.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Chair archaeology.mp4,Chair archaeology,0.5,-Tznlx878UU-Scene-574
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Petri dish Pandas.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Petri dish Pandas.mp4,Petri dish Pandas,0.6666666666666666,-x_AkXpqlwE-Scene-021
+train,E:\AAGenvid\Dataset\OpenAI_Sora\SUV in dust.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_SUV in dust.mp4,SUV in dust,0.6666666666666666,-10AyOGp5Zg-Scene-043
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Close up of woman_s eye.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Close up of woman_s eye.mp4,Close up of woman s eye,1.0,-5KaI1YrlbQ-Scene-061
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Backward jogger.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Backward jogger.mp4,Backward jogger,0.5,-alqtU2K164-Scene-054
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Snow dogs.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Snow dogs.mp4,Snow dogs,0.5,-zl5yBgXzeo-Scene-006
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Basketball explosion.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Basketball explosion.mp4,Basketball explosion,0.5,-88rSTjPdW8-Scene-020
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Train Window.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Train Window.mp4,Train Window,1.0,-86f57UZrm0-Scene-001
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Octopus and crab.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Octopus and crab.mp4,Octopus and crab,0.6666666666666666,-aid2jMEbXw-Scene-058
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Chinese New Year Dragon.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Chinese New Year Dragon.mp4,Chinese New Year Dragon,0.75,-9h6DfWz8vI-Scene-044
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Robot video game.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Robot video game.mp4,Robot video game,0.6666666666666666,-FMRUGGgHyI-Scene-023
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Otter on a surfboard.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Otter on a surfboard.mp4,Otter on a surfboard,0.6666666666666666,-38OjjGT-xo-Scene-009
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Zen garden gnome.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Zen garden gnome.mp4,Zen garden gnome,0.6666666666666666,0H3TUnUfAIU-Scene-007
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Flower blooming.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Flower blooming.mp4,Flower blooming,1.0,3k5KVWjYssw-Scene-069
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Photorealistic train.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Photorealistic train.mp4,Photorealistic train,0.5,-OdWi5yyDRg-Scene-004
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Wolves.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Wolves.mp4,Wolves,1.0,073BMGVWan0-Scene-215
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Puppy cloning.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Puppy cloning.mp4,Puppy cloning,0.5,-JpO7VfMO8U-Scene-006
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Sora _ OpenAI -  - 2024-05-20 18-08-46.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Sora _ OpenAI - - 2024-05-20 18-08-46.mp4,Sora OpenAI - - 2024-05-20 18-08-46,0.125,04dXPkQov_k-Scene-035
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Monster with melting candle.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Monster with melting candle.mp4,Monster with melting candle,0.5,-RIoTZ5XPuA-Scene-013
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Grandma birthday.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Grandma birthday.mp4,Grandma birthday,0.5,-9Ykp-dH4Uc-Scene-042
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Italian pup.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Italian pup.mp4,Italian pup,0.5,-MvwZfAiaiY-Scene-023
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Tiny construction.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Tiny construction.mp4,Tiny construction,0.5,-OdWi5yyDRg-Scene-026
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Victoria crowned pigeon.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Victoria crowned pigeon.mp4,Victoria crowned pigeon,0.3333333333333333,-pbPgOKDy-Y-Scene-159
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Amalfi Coast.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Amalfi Coast.mp4,Amalfi Coast,0.5,-0fnGi9g4ho-Scene-008
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Gold Rush.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Gold Rush.mp4,Gold Rush,0.5,-G0mzsDRrKw-Scene-040
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Dogs downtown.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Dogs downtown.mp4,Dogs downtown,0.5,-DvrJYKZetE-Scene-121
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Tokyo walk.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Tokyo walk.mp4,Tokyo walk,0.5,-T2cGKwkMLo-Scene-003
+train,E:\AAGenvid\Dataset\OpenAI_Sora\CloseUp Man in Glasses.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_CloseUp Man in Glasses.mp4,CloseUp Man in Glasses,0.75,-3u2xpZF2h4-Scene-076
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Stack of TVs.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Stack of TVs.mp4,Stack of TVs,0.6666666666666666,-SkiRHoThA4-Scene-015
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Vlogger corgi.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Vlogger corgi.mp4,Vlogger corgi,0.5,-GjfYhMc7BM-Scene-084
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Art museum.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Art museum.mp4,Art museum,1.0,-3RVvCTsULs-Scene-038
+train,E:\AAGenvid\Dataset\OpenAI_Sora\Origami undersea creatures.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Origami undersea creatures.mp4,Origami undersea creatures,0.3333333333333333,-T8OEzoW-Aw-Scene-117
+val,E:\AAGenvid\Dataset\OpenAI_Sora\Big eyed fluff ball.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Big eyed fluff ball.mp4,Big eyed fluff ball,0.25,-A8LKuncijo-Scene-201
+val,E:\AAGenvid\Dataset\OpenAI_Sora\Ships in coffee.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Ships in coffee.mp4,Ships in coffee,0.6666666666666666,-SadVBnJyH0-Scene-044
+val,E:\AAGenvid\Dataset\OpenAI_Sora\Big Sur.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Big Sur.mp4,Big Sur,0.5,--xGjsA5tpg-Scene-003
+val,E:\AAGenvid\Dataset\OpenAI_Sora\Cat on the bed.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Cat on the bed.mp4,Cat on the bed,1.0,01g-CKYlOyw-Scene-047
+test,E:\AAGenvid\Dataset\OpenAI_Sora\Cloud man.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Cloud man.mp4,Cloud man,0.5,-fLq8sN-H0U-Scene-064
+test,E:\AAGenvid\Dataset\OpenAI_Sora\Dancing kangaroo.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Dancing kangaroo.mp4,Dancing kangaroo,0.5,-lPLx75i-1M-Scene-030
+test,E:\AAGenvid\Dataset\OpenAI_Sora\Figure Status Update - OpenAI Speech-to-Speech Reasoning.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Figure Status Update - OpenAI Speech-to-Speech Reasoning.mp4,Figure Status Update - OpenAI Speech-to-Speech Reasoning,0.2857142857142857,-AxBXLwxZNU-Scene-082
+test,E:\AAGenvid\Dataset\OpenAI_Sora\Aquarium NYC.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Aquarium NYC.mp4,Aquarium NYC,0.5,-KS-yI8VTf0-Scene-019
+test,E:\AAGenvid\Dataset\OpenAI_Sora\Birds over river.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Birds over river.mp4,Birds over river,0.6666666666666666,-4exm90cQrw-Scene-069
+test,E:\AAGenvid\Dataset\OpenAI_Sora\Tokyo in the snow.mp4,E:\AAGenvid\Dataset\RoboVid-SM\raw_data\real\real_Tokyo in the snow.mp4,Tokyo in the snow,0.75,-Kt3_Bdokb8-Scene-004

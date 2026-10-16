@@ -1,0 +1,12 @@
+{
+  "protocol_tracks": ["author_native", "matched_training"],
+  "required": [
+    {"name":"DINOv2 ViT-S/14 mean CLS + LR/MLP", "adapter":"forensics.backbones.dinov2/dino_features", "status":"local_weight_adapter_implemented; feature-head experiment_pending"},
+    {"name":"aligned residual bag", "adapter":"forensics.pipeline", "status":"implemented_and_synthetic_tested; new_data_experiment_pending"},
+    {"name":"D3", "repository":"https://github.com/Zig-HS/D3", "status":"native_reproduction_pending"},
+    {"name":"ReStraV", "repository":"https://github.com/ChristianInterno/ReStraV", "status":"repository_from_local_vendored_readme; native_reproduction_pending"},
+    {"name":"WaveRep", "repository":"https://github.com/grip-unina/WaveRep-SyntheticVideoDetection", "status":"native_reproduction_pending"},
+    {"name":"RIFT", "repository":"https://github.com/Litsay/RIFT", "status":"native_reproduction_pending"}
+  ],
+  "rules": ["Do not label feature probes as original published models", "Record pretrained generator/source overlap", "No final-set calibration", "Do not replace an unavailable strong baseline with an unreported weak reimplementation"]
+}

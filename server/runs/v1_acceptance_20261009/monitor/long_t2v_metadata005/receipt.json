@@ -1,0 +1,71 @@
+{
+  "started_at": "2026-10-08T21:06:20.308328+00:00",
+  "url": "https://huggingface.co/api/datasets/Vchitect/VBench_sampled_video",
+  "hypothesis": "Previous address allocation error might be IPv6 path dependent",
+  "dns_default_resolver": [
+    [
+      2,
+      "199.59.149.230"
+    ],
+    [
+      10,
+      "2a03:2880:f127:283:face:b00c:0:25de"
+    ]
+  ],
+  "ipv6_routes": [
+    "00000000000000000000000000000000 00 00000000000000000000000000000000 00 00000000000000000000000000000000 ffffffff 00000001 00000000 00200200       lo",
+    "00000000000000000000000000000000 00 00000000000000000000000000000000 00 00000000000000000000000000000000 ffffffff 00000001 00000000 00200200       lo"
+  ],
+  "ipv4_only": true,
+  "TLS_verification": true,
+  "credentials_supplied": false,
+  "proxy_or_DNS_override": false,
+  "media_downloaded": false,
+  "finished_at": "2026-10-08T21:06:24.354913+00:00",
+  "exit_code": 28,
+  "stderr": "curl: (28) Failed to connect to huggingface.co port 443 after 4013 ms: Connection timed out\n",
+  "curl_transfer": {
+    "content_type": null,
+    "errormsg": "Failed to connect to huggingface.co port 443 after 4013 ms: Connection timed out",
+    "exitcode": 28,
+    "filename_effective": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/monitor/long_t2v_metadata005/body.bin",
+    "ftp_entry_path": null,
+    "http_code": 0,
+    "http_connect": 0,
+    "http_version": "0",
+    "local_ip": "",
+    "local_port": 0,
+    "method": "GET",
+    "num_connects": 0,
+    "num_headers": 0,
+    "num_redirects": 0,
+    "proxy_ssl_verify_result": 0,
+    "redirect_url": null,
+    "referer": null,
+    "remote_ip": "",
+    "remote_port": 0,
+    "response_code": 0,
+    "scheme": null,
+    "size_download": 0,
+    "size_header": 0,
+    "size_request": 0,
+    "size_upload": 0,
+    "speed_download": 0,
+    "speed_upload": 0,
+    "ssl_verify_result": 0,
+    "time_appconnect": 0.0,
+    "time_connect": 0.0,
+    "time_namelookup": 0.023588,
+    "time_pretransfer": 0.0,
+    "time_redirect": 0.0,
+    "time_starttransfer": 0.0,
+    "time_total": 4.013389,
+    "url": "https://huggingface.co/api/datasets/Vchitect/VBench_sampled_video",
+    "url_effective": "https://huggingface.co/api/datasets/Vchitect/VBench_sampled_video",
+    "urlnum": 0,
+    "curl_version": "libcurl/7.81.0 OpenSSL/3.0.2 zlib/1.2.11 brotli/1.0.9 zstd/1.4.8 libidn2/2.3.2 libpsl/0.21.0 (+libidn2/2.3.2) libssh/0.9.6/openssl/zlib nghttp2/1.43.0 librtmp/2.3 OpenLDAP/2.5.18"
+  },
+  "body_bytes": 0,
+  "body_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "headers": ""
+}

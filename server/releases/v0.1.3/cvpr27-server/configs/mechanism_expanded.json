@@ -1,0 +1,53 @@
+{
+  "stage": "mechanism",
+  "seeds": [
+    17,
+    29,
+    43,
+    59,
+    71
+  ],
+  "arms": [
+    "raw",
+    "correct",
+    "wrong",
+    "fractional",
+    "self_warp"
+  ],
+  "sampling": {
+    "frames": 16,
+    "fps": 8,
+    "window_sec": 2,
+    "size": 224
+  },
+  "controls": {
+    "support": "interior",
+    "margin": 16,
+    "flow_bound": 12,
+    "kernel": "linear"
+  },
+  "conditions": [
+    "clean",
+    "h264_23"
+  ],
+  "training": {
+    "epochs": 40,
+    "batch_size": 64,
+    "lr": 0.001,
+    "weight_decay": 0.0001,
+    "conditions": [
+      "clean"
+    ]
+  },
+  "minimum_per_class": 30,
+  "minimum_retained_total": 16200,
+  "cpu_threads": 2,
+  "workers": 8,
+  "max_cache_gib": 320,
+  "max_fit_seconds": 28800,
+  "bootstrap_replicates": 5000,
+  "protocol_note": "Expanded prospective mechanism protocol: target 18000 new clips; all five arms and five seeds; 4/5 positive seeds required. Materialize one arm at a time. Batch64 measured on the 49601-parameter bag model only; not a DINO batch setting. No new-data results exist yet.",
+  "materialize_workers": 12,
+  "materialized_dtype": "float32",
+  "positive_seed_fraction": 0.6666666666666666
+}

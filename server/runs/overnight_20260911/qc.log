@@ -1,0 +1,21 @@
+QC 50 /1000
+QC 100 /1000
+QC 150 /1000
+QC 200 /1000
+QC 250 /1000
+QC 300 /1000
+QC 350 /1000
+QC 400 /1000
+QC 450 /1000
+QC 500 /1000
+QC 550 /1000
+QC 600 /1000
+QC 650 /1000
+QC 700 /1000
+QC 750 /1000
+QC 800 /1000
+QC 850 /1000
+QC 900 /1000
+QC 950 /1000
+QC 1000 /1000
+{"complete": true, "requested": 1000, "completed": 1000, "counts": {"ms": {"ok": 500}, "vc2": {"excluded": 500}}, "failure_reasons": {"short_video": 500}, "wall_seconds_this_attempt": 101.56027271598577, "classification_metrics_computed": false, "scope": "two generated sources; no real/fake accuracy or generalization conclusion"}

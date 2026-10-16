@@ -1,0 +1,3 @@
+{"guard_pid": 1487, "observed_utc": "2026-09-10T15:13:15.164880+00:00", "deadline": "2026-09-11T10:00:00+08:00", "phase": "running", "stopped_registered_jobs": [], "shutdown_command": "/usr/bin/shutdown", "dry_run": false}
+{"guard_pid": 6867, "observed_utc": "2026-09-10T15:50:58.724077+00:00", "deadline": "2026-09-11T10:00:00+08:00", "phase": "running", "stopped_registered_jobs": [], "shutdown_command": "/usr/bin/shutdown", "dry_run": false}
+{"guard_pid": 6867, "observed_utc": "2026-09-10T19:54:15.049366+00:00", "deadline": "2026-09-11T10:00:00+08:00", "phase": "shutdown", "stopped_registered_jobs": [], "shutdown_command": "/usr/bin/shutdown", "dry_run": false}

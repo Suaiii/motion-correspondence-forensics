@@ -1,0 +1,46 @@
+{
+  "dispatch_id": "v1-monitor-20261009-B3-conditioned-i2v",
+  "execution_status": "completed",
+  "software_data_QC_result": "pass",
+  "selection_sha256": "d42ccc6891874de36b3fdb9df4706ff6b8d602cff001ff227891d187c7b374c0",
+  "manifest_sha256": "0ca1b3c5e45f3a0f2b1410cd6dc6e41e7ae93fee350484b8451e9602e9ffd2b1",
+  "origin_condition_groups": 49,
+  "unique_original_image_bytes": 49,
+  "unique_original_decoded_pixels": 49,
+  "fixed_probe_outputs": 12,
+  "primary_expansion_outputs": 98,
+  "unique_total_output_files": 106,
+  "probe_outputs_reused_as_primary": 4,
+  "observed_families": 6,
+  "primary_families": [
+    "HunyuanVideo-I2V",
+    "Wan2.2-I2V-A14B (w:o prompt-optimized)"
+  ],
+  "full_image_decodes": 98,
+  "actual_condition_request_verified": 0,
+  "primary_all_four_known_C2_time_candidates": 98,
+  "full_author_method_runtime_passed": false,
+  "STREAM_qualification": "unknown",
+  "scientific_gate_passed": false,
+  "failure_records": [],
+  "scope": "development evidence; pure fake video package no AUROC, original still images are not real-video controls",
+  "namespace_bytes": 340674161,
+  "disk_free_bytes": 32490385408,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "RAM_limit_bytes": 4294967296,
+  "GPU_jobs": 0,
+  "local_media_bytes_written": 0,
+  "finalize_wall_clock_seconds": 33.02108074724674,
+  "billing_actual_cny": null,
+  "historical_GPU_hours": null,
+  "independent_review": "pending A",
+  "known_gaps": [
+    "actual generation crop/input/request/seed/checkpoint unknown",
+    "dataset/underlying per-item rights unresolved",
+    "old visual source ancestry and pretraining exposure unknown",
+    "Drive listing covers only49 mapped parents outof355 metadata entries"
+  ]
+}

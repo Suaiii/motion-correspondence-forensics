@@ -1,0 +1,13 @@
+{
+  "checked_receipt_rows": 72,
+  "frozen_expected": 72,
+  "known_keys": 72,
+  "row_failures": [],
+  "missing_frozen_members": [],
+  "parent_publication_links": 24,
+  "metadata_consistency_only": true,
+  "fresh_media_rehash_or_decode": false,
+  "publisherSHA_unknown_preserved": true,
+  "scientific_gate_passed": false,
+  "independent_review": "caller identity decides independence; current builder check not an independent scientific review"
+}

@@ -1,0 +1,219 @@
+{
+  "input": {
+    "media_id": "diagnostic_static_mpeg4_raw",
+    "path": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/compressed_input_v1/run_001/diagnostics/static.m4v",
+    "sha256": "07a228fbe0fc6fb5325ea358410edddda1a47d4c500729891cceaf7f257de852",
+    "bytes": 6764,
+    "variant": "mpeg4_raw",
+    "diagnostic": true,
+    "generator": null,
+    "label": null,
+    "selection_role": "synthetic_fixture",
+    "expected_shift_right_pixels_per_frame": 0,
+    "timestamp_provenance": "raw elementary demux timing; not original container PTS"
+  },
+  "status": "completed",
+  "parsed_frames": 16,
+  "packet_count": 16,
+  "stream_metadata": {
+    "codec_name": "mpeg4",
+    "profile": "Simple Profile",
+    "codec_tag_string": "[0][0][0][0]",
+    "width": 64,
+    "height": 64,
+    "has_b_frames": 0,
+    "avg_frame_rate": "0/0",
+    "time_base": "1/1200000",
+    "disposition": {
+      "default": 0,
+      "dub": 0,
+      "original": 0,
+      "comment": 0,
+      "lyrics": 0,
+      "karaoke": 0,
+      "forced": 0,
+      "hearing_impaired": 0,
+      "visual_impaired": 0,
+      "clean_effects": 0,
+      "attached_pic": 0,
+      "timed_thumbnails": 0
+    }
+  },
+  "frames_with_mv": 14,
+  "mv_frame_coverage": 0.875,
+  "actual_exported_mv_count": 224,
+  "source_direction_counts": {
+    "-1": 224
+  },
+  "motion_scale_counts": {
+    "2": 224
+  },
+  "picture_type_counts": {
+    "I": 2,
+    "P": 14
+  },
+  "side_data_type_counts": {
+    "MOTION_VECTORS": 14
+  },
+  "median_dx_pixels": 0.0,
+  "median_dy_pixels": 0.0,
+  "interior_diagnostic_median_dx_pixels": 0.0,
+  "nonzero_motion_fraction": 0.0,
+  "max_integer_coordinate_minus_fractional_motion_error_pixels": 0.0,
+  "coordinate_error_at_least_one_pixel_records": 0,
+  "PyAV_system_timestamp_alignment": true,
+  "native_container_timestamp_accepted": false,
+  "exact_reference_ids_available": false,
+  "prediction_residual_available": false,
+  "transform_residual_coefficients_available": false,
+  "prediction_residual_unavailable_evidence": "all observed frame-side-data types enumerated, no residual plane or coefficient output; decoded frame planes not substituted",
+  "numeric_relative_path": "run_001/numeric/diagnostic_static_mpeg4_raw_coded_mv.npz",
+  "numeric_sha256": "f627b68819f67d5f5fe60f839a6474bbb105c165cd963fe3ba24362bfca169b8",
+  "numeric_bytes": 688,
+  "semantic_mv_sha256": "452d323578615f5ea3da3c7c91a26f7092b0275b39ff288e4ec61de009e63c3b",
+  "frame_mapping_relative_path": "run_001/metadata/diagnostic_static_mpeg4_raw_frame_mapping.json",
+  "frame_mapping_sha256": "819b70212a97a55adee23dbc4288a58cd04bdc219ca9c46bcc86b74f711b4c84",
+  "first_ten_coded_vectors": [
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 8,
+      "src_y": 8,
+      "dst_x": 8,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 24,
+      "src_y": 8,
+      "dst_x": 24,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 40,
+      "src_y": 8,
+      "dst_x": 40,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 56,
+      "src_y": 8,
+      "dst_x": 56,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 8,
+      "src_y": 24,
+      "dst_x": 8,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 24,
+      "src_y": 24,
+      "dst_x": 24,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 40,
+      "src_y": 24,
+      "dst_x": 40,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 56,
+      "src_y": 24,
+      "dst_x": 56,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 8,
+      "src_y": 40,
+      "dst_x": 8,
+      "dst_y": 40,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 24,
+      "src_y": 40,
+      "dst_x": 24,
+      "dst_y": 40,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 2
+    }
+  ],
+  "wall_seconds": 0.09694857150316238,
+  "resources_before": {
+    "namespace_bytes": 161854846,
+    "free_bytes": 32947576832,
+    "peak_parent_rss_bytes": 64548864
+  },
+  "resources_after": {
+    "namespace_bytes": 161882927,
+    "free_bytes": 32947539968,
+    "peak_parent_rss_bytes": 64835584
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "paired": [
+    {
+      "seed": 11,
+      "candidate_auc": 0.9506172839506173,
+      "strongest_baseline_auc": 0.9523809523809523,
+      "delta": -0.0017636684303350414
+    },
+    {
+      "seed": 23,
+      "candidate_auc": 0.9453125,
+      "strongest_baseline_auc": 0.962890625,
+      "delta": -0.017578125
+    },
+    {
+      "seed": 37,
+      "candidate_auc": 0.9409722222222222,
+      "strongest_baseline_auc": 0.9427083333333334,
+      "delta": -0.0017361111111111605
+    },
+    {
+      "seed": 53,
+      "candidate_auc": 0.8871527777777778,
+      "strongest_baseline_auc": 0.9079861111111112,
+      "delta": -0.02083333333333337
+    }
+  ],
+  "mean_delta": -0.010477809468694893,
+  "descriptive_95_ci": [
+    -0.024587357994962783,
+    0.003631739057572995
+  ],
+  "positive_seed_count": 0,
+  "n_seeds": 4,
+  "source_counts": {
+    "vript_real": 80,
+    "opensora": 80
+  },
+  "fake_generators": [
+    "opensora"
+  ],
+  "formal_gate": false,
+  "status": "no_go_pilot_gate"
+}

@@ -1,0 +1,7 @@
+{
+  "requested_utc": "2026-09-10T19:54:10.061429+00:00",
+  "reason": "All qualified night jobs completed; final local backup verified. Second real-source and formal-training gates unresolved.",
+  "local_checkpoint_sha256": "3cbbc87ff5bccba1368170b06e7adaa2ffa2aa341f94f8514d6b1cd72bfa9bf2",
+  "local_entries_verified": 5465,
+  "action": "request independent guard to invoke AutoDL shutdown; preserve instance and data disk"
+}

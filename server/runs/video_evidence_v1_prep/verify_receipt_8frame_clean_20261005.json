@@ -1,0 +1,30 @@
+{
+  "selection_sha256": "e5657809350af3edb6e0c0a50665f07441c85390f3c5baee6828d7c9f3d10016",
+  "manifest_sha256": "0687ca7b63d95776d341a3702a13ec96594fa9f323ca41c1714fd7d57f557d47",
+  "rows": 4435,
+  "role_counts": {
+    "fit": 3193,
+    "calibration": 399,
+    "in_domain_audit": 400,
+    "held_generator_audit": 7,
+    "external_holdout": 436
+  },
+  "generator_counts": {
+    "fit:real": 1599,
+    "fit:OpenSora": 794,
+    "fit:T2V-Zero": 800,
+    "calibration:real": 200,
+    "calibration:OpenSora": 95,
+    "calibration:T2V-Zero": 104,
+    "in_domain_audit:real": 200,
+    "in_domain_audit:OpenSora": 101,
+    "in_domain_audit:T2V-Zero": 99,
+    "held_generator_audit:OpenAI-Sora": 7,
+    "external_holdout:kling": 111,
+    "external_holdout:sora": 107,
+    "external_holdout:real_dvf": 109,
+    "external_holdout:real_youtube": 109
+  },
+  "native_8_frame_exclusions": [],
+  "verified": true
+}

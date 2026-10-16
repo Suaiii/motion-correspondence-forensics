@@ -1,0 +1,14 @@
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+{"requested": 28674, "completed": 27520, "this_attempt_seconds": 45.27339122444391, "cuda_forward_seconds": 0.9454211959838867, "peak_gpu_allocated_gib": 1.2965831756591797}
+{"requested": 28674, "completed": 27680, "this_attempt_seconds": 131.90926296263933, "cuda_forward_seconds": 1.7258696441650392, "peak_gpu_allocated_gib": 1.2965831756591797}
+{"requested": 28674, "completed": 27840, "this_attempt_seconds": 239.74202116578817, "cuda_forward_seconds": 2.5068202362060545, "peak_gpu_allocated_gib": 1.2965831756591797}
+{"requested": 28674, "completed": 28000, "this_attempt_seconds": 328.5350497663021, "cuda_forward_seconds": 3.2874324264526367, "peak_gpu_allocated_gib": 1.2965831756591797}
+{"requested": 28674, "completed": 28160, "this_attempt_seconds": 432.2963472083211, "cuda_forward_seconds": 4.067483154296875, "peak_gpu_allocated_gib": 1.2965831756591797}
+{"requested": 28674, "completed": 28320, "this_attempt_seconds": 494.53518825024366, "cuda_forward_seconds": 4.847382957458498, "peak_gpu_allocated_gib": 1.2965831756591797}
+{"requested": 28674, "completed": 28480, "this_attempt_seconds": 581.4059136286378, "cuda_forward_seconds": 5.6235060348510775, "peak_gpu_allocated_gib": 1.2965831756591797}
+{"requested": 28674, "completed": 28640, "this_attempt_seconds": 682.6077343076468, "cuda_forward_seconds": 6.403206069946293, "peak_gpu_allocated_gib": 1.2965831756591797}

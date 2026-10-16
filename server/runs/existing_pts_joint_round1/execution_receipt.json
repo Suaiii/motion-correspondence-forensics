@@ -1,0 +1,11 @@
+{
+  "report_sha256": "0b81cf16ad18925c755ffc1406d806e3edff5ab28f0da9ec9fca1898f49f41e7",
+  "source_sha256": {
+    "scripts/existing_pts_joint_audit.py": "ab8588e5d54203eb5381814c765086be76e79b643ba1da173773714b770e0984",
+    "forensics/mechanism_sampling.py": "17f4ec6489c382abc9c1d73e6c2bf46137e2687c540b90f00eee3a841b3412e0",
+    "forensics/composability.py": "d19a3485a75dd6d683141b565fe2e05ce8217c710414eb555c9773afba8d7d98"
+  },
+  "deployment_archive_sha256": "3cd880ad15d948ba151b94218042d22f5c9be53fffe99a20556521af605ccf74",
+  "raw_media_read": false,
+  "new_ffprobe_invoked": false
+}

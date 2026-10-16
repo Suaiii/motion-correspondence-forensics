@@ -1,0 +1,45 @@
+{
+  "version": "public_descriptive_benchmark/1.0_B7_overlay",
+  "full_references": 14206,
+  "full_unique_SHA": 13734,
+  "original_A8_public_refs": 9114,
+  "original_A8_public_unique_SHA": 9046,
+  "B7_temporary_risk_closure_refs": 404,
+  "newly_deferred_public_refs": 244,
+  "already_blocked_in_closure": 160,
+  "public_refs": 8870,
+  "public_unique_SHA": 8803,
+  "cohort_cells": 432,
+  "dual_class_cells": 47,
+  "single_or_empty_cells": 385,
+  "same_real_reuse_is_not_new_sample": true,
+  "roles_unchanged": true,
+  "original_quality4800_and_ambiguity_exclusions_retained": true,
+  "metadata_candidate_not_model_execution": true,
+  "Native720_actual_fixed3_independently_replayed_only": true,
+  "Native720_whole_support_pending_preserved": true,
+  "STREAM": "unsupported",
+  "full_v1_or_mechanism": "not_accepted",
+  "GPU_or_model_authorized": false,
+  "resource": {
+    "ledger_029_SHA256": "c68e7e164abe43dedcd8503349b56887693d13c71fdca9c401c5778691cd180f",
+    "reservations": {
+      "A10_prepared": {
+        "cap": 134217728,
+        "used": 12062720
+      },
+      "C9_prepared": {
+        "cap": 1342177280,
+        "used": 538996736
+      }
+    },
+    "free": 22768209920,
+    "required": 22400172032,
+    "margin": 368037888,
+    "CPU": [
+      2,
+      3
+    ],
+    "RSS_KiB": 166092
+  }
+}

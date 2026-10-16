@@ -1,0 +1,46 @@
+{
+  "scope": "fit-only native-PTS decode and spatial primitives; zero encoder/head calls",
+  "status": "completed",
+  "samples": 12,
+  "methods_attempted": 36,
+  "passed": 29,
+  "qualification_rejections": 7,
+  "failures": [],
+  "by_method": {
+    "d3": {
+      "CPU_native_plan_decode_and_spatial_pass": 12,
+      "qualification_rejected_no_decode": 0,
+      "failed_preserved": 0
+    },
+    "restrav": {
+      "CPU_native_plan_decode_and_spatial_pass": 12,
+      "qualification_rejected_no_decode": 0,
+      "failed_preserved": 0
+    },
+    "overcoherence": {
+      "CPU_native_plan_decode_and_spatial_pass": 5,
+      "qualification_rejected_no_decode": 7,
+      "failed_preserved": 0
+    }
+  },
+  "wall_seconds": 16.584656722843647,
+  "affinity": [
+    0,
+    1
+  ],
+  "torch_threads": 2,
+  "cv2_threads": 1,
+  "numpy": "2.3.2",
+  "torch": "2.8.0+cu128",
+  "opencv": "4.12.0",
+  "selection_sha256": "35bf2e01103d4ed6667a2716dba7c67bbc3dd1b16079ae45cd1deb44b1e6ad3e",
+  "decoder_code_sha256": "d5b7c7c18660c44a591cd98edde4878106203134d7ea9f4221c2855e8d71372d",
+  "full_reference_sampler_parity_pending": true,
+  "GPU_started": false,
+  "encoder_calls": 0,
+  "head_calls": 0,
+  "method_scores": 0,
+  "data_gate_passed": false,
+  "scientific_gate_passed": false,
+  "total_C2_disk_bytes": 341199524
+}

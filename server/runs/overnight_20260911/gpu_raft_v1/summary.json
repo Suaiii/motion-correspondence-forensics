@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "requested": 1000,
+  "completed": 1000,
+  "statuses": {
+    "ok": 1000
+  },
+  "wall_seconds_this_attempt": 88.26074057072401,
+  "peak_gpu_allocated_gib": 0.029824256896972656,
+  "classification_metrics_computed": false
+}

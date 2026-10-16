@@ -1,0 +1,17 @@
+{
+  "observed_utc": "2026-09-10T19:14:35.998936+00:00",
+  "partial": true,
+  "records": 1348,
+  "download_statuses": {
+    "ok": 1348
+  },
+  "download_failures": {},
+  "strict_2s": {
+    "ok": 1315,
+    "not_eligible_or_error": 33
+  },
+  "native16": {
+    "ok": 1334,
+    "not_eligible_or_error": 14
+  }
+}

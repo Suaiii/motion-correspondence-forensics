@@ -1,0 +1,21 @@
+validated features 2000
+validated features 4000
+validated features 6000
+validated features 8000
+validated features 10000
+validated features 12000
+validated features 14000
+validated features 16000
+validated features 18000
+validated features 20000
+validated features 22000
+validated features 24000
+validated features 26000
+validated features 28000
+ms semantic {'n': 3012, 'auc': 0.8434783403149255, 'bce': 2.0149872443976076}
+ms semantic_delta {'n': 3012, 'auc': 0.9259886528192081, 'bce': 0.9465817017364665}
+ms semantic_velocity {'n': 3012, 'auc': 0.868079887076365, 'bce': 1.5276116955879622}
+vc2 semantic {'n': 3012, 'auc': 0.852218273346459, 'bce': 1.5720998370736843}
+vc2 semantic_delta {'n': 3012, 'auc': 0.901959261610989, 'bce': 1.0672456417721756}
+vc2 semantic_velocity {'n': 3012, 'auc': 0.8900719020232151, 'bce': 0.9527684675083223}
+COMPLETE 38.902868777513504

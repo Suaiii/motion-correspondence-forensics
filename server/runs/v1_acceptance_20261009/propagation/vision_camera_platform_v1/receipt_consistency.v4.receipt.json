@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "/root/miniconda3/bin/python",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/propagation/vision_camera_platform_v1/review_manifest.py"
+  ],
+  "exit_code": 0,
+  "wall_seconds": 0.14093654602766037,
+  "stdout_sha256": "bd99febf700c12da56e41b316b7003f03317097d89cfae27d2002b01bfcb062c",
+  "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+}

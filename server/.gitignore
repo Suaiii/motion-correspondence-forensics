@@ -1,0 +1,32 @@
+# --- python / environment ---
+__pycache__/
+*.py[cod]
+environment/
+cache/
+models/
+
+# --- never commit media & large binaries (external storage / LFS instead) ---
+*.mp4 *.mov *.avi *.webm *.3gp *.mkv
+*.rar *.zip *.tar.gz *.7z
+*.npy *.npz *.parquet *.pickle
+*.pt *.pth *.safetensors *.bin *.onnx *.pb
+*.so *.so.* *.whl *.egg
+*.jpg *.png *.jpeg
+*.sqlite
+*.wav *.ogg *.flac
+
+# --- bulk dataset surface & third-party sources stay off-repo ---
+incoming/transfer-v1/
+data/video_evidence_v1/Dataset/
+data/video_evidence_v1/runs/
+data/video_evidence_v1/operational_20261008/
+data/video_evidence_v1/research-runs/
+data/video_evidence_expansion_20261008/
+data/hdvg_prefix100_v1/
+data/hdvg_prefix100_v2/
+data/releases/
+**/sources/**
+**/site-packages/**
+**/*.libs/
+**/dependencies/**
+**/cpu_deps/**

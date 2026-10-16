@@ -1,0 +1,190 @@
+nohup: ignoring input
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Processed 196 / 196
+{
+  "counts": {
+    "cogvideo": 98,
+    "hd_vg_130m": 98
+  },
+  "qc_statuses": {
+    "ok": 196
+  },
+  "seconds": 111.21305213868618,
+  "aggregates": [
+    {
+      "training_holdout": "ms",
+      "arm": "semantic_duplicate",
+      "ensemble_auc": 0.775926697209496,
+      "ci95": [
+        0.7083919689732759,
+        0.8367605984083255
+      ],
+      "seed_auc_mean": 0.7751353602665556
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "time_std",
+      "ensemble_auc": 0.8225739275301959,
+      "ci95": [
+        0.762149238014481,
+        0.876501525352409
+      ],
+      "seed_auc_mean": 0.821282798833819,
+      "gain_over_semantic": 0.04664723032069984,
+      "gain_ci95": [
+        0.020940876694577372,
+        0.0744177072773814
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "time_delta",
+      "ensemble_auc": 0.8446480633069555,
+      "ci95": [
+        0.7875615530303031,
+        0.8952156739108253
+      ],
+      "seed_auc_mean": 0.8426697209496042,
+      "gain_over_semantic": 0.06872136609745949,
+      "gain_ci95": [
+        0.03996106751094993,
+        0.10172502043237748
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "two_view_erm",
+      "ensemble_auc": 0.8617242815493545,
+      "ci95": [
+        0.8089048971861472,
+        0.9084777649464237
+      ],
+      "seed_auc_mean": 0.8607455226988755,
+      "gain_over_semantic": 0.08579758433985851,
+      "gain_ci95": [
+        0.05685501807378336,
+        0.11989843749999997
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "paired_consistency",
+      "ensemble_auc": 0.8186172428154935,
+      "ci95": [
+        0.7581102192134108,
+        0.8730782705762622
+      ],
+      "seed_auc_mean": 0.8167430237401083,
+      "gain_over_semantic": 0.0426905456059975,
+      "gain_ci95": [
+        0.020101388873509325,
+        0.06753207331042388
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "shuffled_consistency",
+      "ensemble_auc": 0.8587047063723449,
+      "ci95": [
+        0.8048205986862099,
+        0.9064670928030304
+      ],
+      "seed_auc_mean": 0.8515201999167014,
+      "gain_over_semantic": 0.08277800916284883,
+      "gain_ci95": [
+        0.052841709927073544,
+        0.11808180144238142
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "semantic_duplicate",
+      "ensemble_auc": 0.8867138692211578,
+      "ci95": [
+        0.8430216546846011,
+        0.926563073551234
+      ],
+      "seed_auc_mean": 0.8856934610578925
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "time_std",
+      "ensemble_auc": 0.8605789254477301,
+      "ci95": [
+        0.8102443321283528,
+        0.9055624999999999
+      ],
+      "seed_auc_mean": 0.8587463556851311,
+      "gain_over_semantic": -0.026134943773427732,
+      "gain_ci95": [
+        -0.04644170800696004,
+        -0.008383404754616769
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "time_delta",
+      "ensemble_auc": 0.8948354852144939,
+      "ci95": [
+        0.8530729955052921,
+        0.9331282994064973
+      ],
+      "seed_auc_mean": 0.8946688879633486,
+      "gain_over_semantic": 0.008121615993336051,
+      "gain_ci95": [
+        -0.010313917233560163,
+        0.026851020594117047
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "two_view_erm",
+      "ensemble_auc": 0.90847563515202,
+      "ci95": [
+        0.8704451415055244,
+        0.9433548005104474
+      ],
+      "seed_auc_mean": 0.9064972927946687,
+      "gain_over_semantic": 0.02176176593086221,
+      "gain_ci95": [
+        0.0029974871134020643,
+        0.04239553630182056
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "paired_consistency",
+      "ensemble_auc": 0.90847563515202,
+      "ci95": [
+        0.870230364873222,
+        0.9427629718234982
+      ],
+      "seed_auc_mean": 0.9086422324031653,
+      "gain_over_semantic": 0.02176176593086221,
+      "gain_ci95": [
+        0.009050496370797068,
+        0.035757781900639045
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "shuffled_consistency",
+      "ensemble_auc": 0.9336734693877551,
+      "ci95": [
+        0.9013817155552475,
+        0.9608887982251036
+      ],
+      "seed_auc_mean": 0.9286963765097875,
+      "gain_over_semantic": 0.04695960016659728,
+      "gain_ci95": [
+        0.028684438174925973,
+        0.0665908763915232
+      ]
+    }
+  ]
+}

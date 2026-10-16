@@ -1,0 +1,373 @@
+{
+  "status": "pass",
+  "replayed_heads": 60,
+  "main_models_refitted": false,
+  "script_sha256": "4dee888e18eafba97488b0d60e23a9b8daceb910f120869e36ba0a8565092c97",
+  "parent_report_sha256": "6b70dcf3a81f07fb314c2e954881e1bcf7f3bd3f120a7b9dd295125f641c5b16",
+  "epoch_selection_verified": true,
+  "head_parameter_counts_verified": true,
+  "shuffled_control_ancestor_weights_preserved": true,
+  "details": [
+    {
+      "held_generator": "ms",
+      "seed": 17,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 17,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 17,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 17,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 17,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 17,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 29,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 29,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 29,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 29,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 29,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 29,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 43,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 43,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 43,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 43,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 43,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 43,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 59,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 59,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 59,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 59,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 59,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 59,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 71,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 71,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 71,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 71,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 71,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "seed": 71,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 17,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 17,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 17,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 17,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 17,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 17,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 29,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 29,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 29,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 29,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 29,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 29,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 43,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 43,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 43,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 43,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 43,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 43,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 59,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 59,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 59,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 59,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 59,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 59,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 71,
+      "arm": "semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 71,
+      "arm": "time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 71,
+      "arm": "time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 71,
+      "arm": "two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 71,
+      "arm": "paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "seed": 71,
+      "arm": "shuffled_consistency",
+      "max_logit_error": 0.0
+    }
+  ],
+  "scope": "mechanical integrity and inference replay, not independent scientific replication"
+}

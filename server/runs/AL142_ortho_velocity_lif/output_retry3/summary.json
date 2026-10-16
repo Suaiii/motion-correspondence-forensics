@@ -1,0 +1,46 @@
+{
+  "paired": [
+    {
+      "seed": 11,
+      "candidate_auc": 0.7808641975308642,
+      "strongest_baseline_auc": 0.8734567901234568,
+      "delta": -0.09259259259259256
+    },
+    {
+      "seed": 23,
+      "candidate_auc": 0.5246913580246914,
+      "strongest_baseline_auc": 0.6419753086419753,
+      "delta": -0.11728395061728392
+    },
+    {
+      "seed": 37,
+      "candidate_auc": 0.8425925925925926,
+      "strongest_baseline_auc": 0.8611111111111112,
+      "delta": -0.0185185185185186
+    },
+    {
+      "seed": 53,
+      "candidate_auc": 0.6018518518518519,
+      "strongest_baseline_auc": 0.7098765432098766,
+      "delta": -0.10802469135802473
+    },
+    {
+      "seed": 71,
+      "candidate_auc": 0.7592592592592593,
+      "strongest_baseline_auc": 0.7685185185185185,
+      "delta": -0.00925925925925919
+    }
+  ],
+  "mean_delta": -0.0691358024691358,
+  "descriptive_95_ci": [
+    -0.13282706998909521,
+    -0.005444534949176377
+  ],
+  "positive_seed_count": 0,
+  "n_seeds": 5,
+  "pair_count": 61,
+  "status": "no_go_ortho_velocity_lif_pilot_gate",
+  "formal_gate": false,
+  "input_feature_sha256": "3c781b55443704d3e022a518601c9b40ce387a9916418bd44717d4e4dda43872",
+  "source_manifest_sha256": "28e1cd0a27f39bf9e11ac60eff0e9daf2c56afee8e30068d99c2463e3b5554ad"
+}

@@ -1,0 +1,20 @@
+{
+  "purpose": "Prefer GPU input pipeline when CPU quota is contended; preserve all QC work",
+  "cpu_qc_nice": 10,
+  "pids": [
+    7109,
+    7198,
+    7199,
+    7202,
+    7203,
+    7204,
+    7205,
+    7206,
+    7207,
+    7208,
+    7209,
+    7210,
+    7211,
+    7212
+  ]
+}

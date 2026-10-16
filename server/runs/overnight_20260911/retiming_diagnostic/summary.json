@@ -1,0 +1,10 @@
+{
+  "requested": 100,
+  "completed": 100,
+  "ok": 100,
+  "identical_decoded_frames": 100,
+  "eligibility_flipped_with_identical_frames": 100,
+  "wall_seconds": 4.9491045624017715,
+  "classification_metrics_computed": false,
+  "meaning": "Selection can depend on playback timing despite identical frames. This does not prove time is irrelevant or that source bias is removed."
+}

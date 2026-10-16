@@ -1,0 +1,22 @@
+{
+  "B5_used_bytes": 187930710,
+  "B5_allocated_bytes": 188100608,
+  "free_bytes": 26885951488,
+  "required_free_bytes": 26341093376,
+  "margin_bytes": 544858112,
+  "other_reservations": {
+    "C5": {
+      "used_allocated": 7815168,
+      "remaining": 529055744,
+      "quota": 536870912
+    },
+    "A6": {
+      "used_allocated": 38100992,
+      "remaining": 230334464,
+      "quota": 268435456
+    }
+  },
+  "terminal_packages": [
+    "D6 no additional growth; occupied bytes retained"
+  ]
+}

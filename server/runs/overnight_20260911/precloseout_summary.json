@@ -1,0 +1,20 @@
+{
+  "observed_utc": "2026-09-10T19:49:55.360290+00:00",
+  "deadline": "2026-09-11T10:00:00+08:00",
+  "phase": "backing_up_before_early_shutdown",
+  "generated_native_qc": {
+    "requested": 27002,
+    "ok": 27000
+  },
+  "vript": {
+    "downloaded": 1746,
+    "strict_2s_ok": 1703,
+    "native16_features_ok": 1727
+  },
+  "formal_training_started": false,
+  "new_classification_metrics": false,
+  "raw_permission_updates": 29849,
+  "disk_free_bytes": 17680420864,
+  "reason": "All currently qualified QC and frozen-feature work complete; second independent real source and protocol acceptance unresolved",
+  "actual_provider_bill_verified": false
+}

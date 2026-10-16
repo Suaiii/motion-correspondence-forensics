@@ -1,0 +1,153 @@
+{
+  "profiles": {
+    "short_l2": {
+      "desc": "720p landscape, bitrate 1200k, fps30, light noise",
+      "filters": "scale=1280:-2,fps=30,noise=alls=6:allf=t",
+      "bitrate": "1200k",
+      "audio_bitrate": "64k"
+    },
+    "portrait_l2": {
+      "desc": "720x1280 portrait, bitrate 1000k, fps30, light noise",
+      "filters": "scale=720:-2,pad=720:1280:(ow-iw)/2:(oh-ih)/2:black,fps=30,noise=alls=8:allf=t",
+      "bitrate": "1000k",
+      "audio_bitrate": "64k"
+    },
+    "wechat_l2": {
+      "desc": "WeChat L2: 720p landscape, fps25, light noise, moderate bitrate",
+      "filters": "scale=1280:-2,fps=25,noise=alls=6:allf=t",
+      "bitrate": "1000k",
+      "audio_bitrate": "64k"
+    },
+    "wechat_l3": {
+      "desc": "WeChat L3: 480p landscape, fps20, heavy noise, low bitrate + crf",
+      "filters": "scale=854:-2,fps=20,noise=alls=12:allf=t",
+      "bitrate": "500k",
+      "crf": 35,
+      "audio_bitrate": "48k"
+    },
+    "douyin_l2": {
+      "desc": "Douyin L2: 9:16 portrait 720p, fps30, light noise",
+      "filters": "scale=720:-2,pad=720:1280:(ow-iw)/2:(oh-ih)/2:black,fps=30,noise=alls=6:allf=t",
+      "bitrate": "1200k",
+      "audio_bitrate": "64k"
+    },
+    "douyin_l3": {
+      "desc": "Douyin L3: 9:16 portrait 540p, fps24, heavy noise, low bitrate + crf",
+      "filters": "scale=540:-2,pad=540:960:(ow-iw)/2:(oh-ih)/2:black,fps=24,noise=alls=12:allf=t",
+      "bitrate": "600k",
+      "crf": 35,
+      "audio_bitrate": "48k"
+    },
+    "geo_only": {
+      "desc": "Geometry-only ablation: 9:16 portrait 540p, fps24, light noise, moderate bitrate (no CRF)",
+      "filters": "scale=540:-2,pad=540:960:(ow-iw)/2:(oh-ih)/2:black,fps=24,noise=alls=6:allf=t",
+      "bitrate": "1200k",
+      "audio_bitrate": "64k"
+    },
+    "codec_pure": {
+      "desc": "Pure codec ablation: no rescale, no fps change, no noise, H.264 1000k only",
+      "filters": "",
+      "bitrate": "1000k",
+      "audio_bitrate": "64k"
+    },
+    "wechat_chain_v1": {
+      "desc": "WeChat-style multi-stage chain: upload normalization -> platform transcode -> forward chain",
+      "stages": [
+        {
+          "name": "upload_normalize",
+          "filters": "scale='if(gt(iw,1280),1280,iw)':-2,fps=25",
+          "encoder": "libx264",
+          "bitrate": "2200k",
+          "audio_bitrate": "96k",
+          "output_args": ["-preset", "medium", "-g", "50", "-keyint_min", "50", "-bf", "2", "-movflags", "+faststart"]
+        },
+        {
+          "name": "platform_transcode",
+          "filters": "scale=1280:-2,fps=25",
+          "encoder": "libx264",
+          "bitrate": "1000k",
+          "audio_bitrate": "64k",
+          "output_args": ["-preset", "medium", "-g", "50", "-keyint_min", "50", "-bf", "2", "-movflags", "+faststart"]
+        },
+        {
+          "name": "forward_chain",
+          "filters": "scale=854:-2,fps=20,noise=alls=10:allf=t",
+          "encoder": "libx264",
+          "bitrate": "500k",
+          "crf": 34,
+          "audio_bitrate": "48k",
+          "output_args": ["-preset", "medium", "-g", "40", "-keyint_min", "40", "-bf", "2", "-movflags", "+faststart"]
+        }
+      ]
+    },
+    "douyin_chain_v1": {
+      "desc": "Douyin-style multi-stage chain: portrait reframing -> platform transcode -> redistributed low-tier stream",
+      "stages": [
+        {
+          "name": "portrait_reframe",
+          "filters": "scale=720:-2,pad=720:1280:(ow-iw)/2:(oh-ih)/2:black,fps=30",
+          "encoder": "libx264",
+          "bitrate": "2500k",
+          "audio_bitrate": "96k",
+          "output_args": ["-preset", "medium", "-g", "60", "-keyint_min", "60", "-bf", "2", "-movflags", "+faststart"]
+        },
+        {
+          "name": "platform_transcode",
+          "filters": "scale=720:1280,fps=30",
+          "encoder": "libx264",
+          "bitrate": "1200k",
+          "audio_bitrate": "64k",
+          "output_args": ["-preset", "medium", "-g", "60", "-keyint_min", "60", "-bf", "2", "-movflags", "+faststart"]
+        },
+        {
+          "name": "redistribute_low_tier",
+          "filters": "scale=540:960,fps=24,noise=alls=12:allf=t",
+          "encoder": "libx264",
+          "bitrate": "600k",
+          "crf": 35,
+          "audio_bitrate": "48k",
+          "output_args": ["-preset", "medium", "-g", "48", "-keyint_min", "48", "-bf", "2", "-movflags", "+faststart"]
+        }
+      ]
+    },
+    "wechat_reshare_recapture_v1": {
+      "desc": "WeChat-like share chain plus terminal recapture proxy",
+      "stages": [
+        {
+          "name": "upload_normalize",
+          "filters": "scale='if(gt(iw,1280),1280,iw)':-2,fps=25",
+          "encoder": "libx264",
+          "bitrate": "2200k",
+          "audio_bitrate": "96k",
+          "output_args": ["-preset", "medium", "-g", "50", "-keyint_min", "50", "-bf", "2", "-movflags", "+faststart"]
+        },
+        {
+          "name": "wechat_transcode",
+          "filters": "scale=1280:-2,fps=25",
+          "encoder": "libx264",
+          "bitrate": "1000k",
+          "audio_bitrate": "64k",
+          "output_args": ["-preset", "medium", "-g", "50", "-keyint_min", "50", "-bf", "2", "-movflags", "+faststart"]
+        },
+        {
+          "name": "forward_compress",
+          "filters": "scale=854:-2,fps=20",
+          "encoder": "libx264",
+          "bitrate": "500k",
+          "crf": 34,
+          "audio_bitrate": "48k",
+          "output_args": ["-preset", "medium", "-g", "40", "-keyint_min", "40", "-bf", "2", "-movflags", "+faststart"]
+        },
+        {
+          "name": "recapture_proxy",
+          "filters": "scale=848:-2,fps=20,eq=contrast=1.03:brightness=0.01:saturation=0.92,noise=alls=14:allf=t",
+          "encoder": "libx264",
+          "bitrate": "450k",
+          "crf": 36,
+          "audio_bitrate": "48k",
+          "output_args": ["-preset", "medium", "-g", "40", "-keyint_min", "40", "-bf", "2", "-movflags", "+faststart"]
+        }
+      ]
+    }
+  }
+}

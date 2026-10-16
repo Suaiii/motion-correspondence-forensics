@@ -1,0 +1,14 @@
+{
+  "valid": true,
+  "errors": [],
+  "counts": {
+    "profile/vript_real/0": 80,
+    "profile/opensora/1": 80,
+    "profile/t2vz/1": 80,
+    "profile/openai_sora/1": 5,
+    "profile/videoOSN_raw/0": 10,
+    "profile/videoOSN_raw/1": 8
+  },
+  "n": 263,
+  "manifest_hash": "17df51aa353b626ebde06df50f2adf3c5eb489a05869654503fe8f8adfe03132"
+}

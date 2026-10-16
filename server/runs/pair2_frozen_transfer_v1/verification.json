@@ -1,0 +1,279 @@
+{
+  "status": "pass",
+  "script_sha256": "65f2c6af230ba7846e240881cf4a24ecb9ecf3e35fc0222a61757c2e36216976",
+  "report_sha256": "4d055e7ddcf956b74f2340e32e8b9efcfb0574b1a7c8a902a8c69c801fa398db",
+  "replayed_heads": 60,
+  "main_models_refitted": false,
+  "raw_and_feature_hashes_verified": true,
+  "checkpoint_and_metric_replay": [
+    {
+      "model": "ms_17_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_29_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_43_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_59_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_71_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_17_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_29_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_43_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_59_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_71_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_17_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_29_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_43_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_59_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_71_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_17_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_29_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_43_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_59_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_71_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_17_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_29_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_43_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_59_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_71_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_17_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_29_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_43_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_59_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "ms_71_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_17_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_29_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_43_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_59_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_71_semantic_duplicate",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_17_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_29_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_43_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_59_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_71_time_std",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_17_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_29_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_43_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_59_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_71_time_delta",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_17_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_29_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_43_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_59_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_71_two_view_erm",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_17_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_29_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_43_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_59_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_71_paired_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_17_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_29_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_43_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_59_shuffled_consistency",
+      "max_logit_error": 0.0
+    },
+    {
+      "model": "vc2_71_shuffled_consistency",
+      "max_logit_error": 0.0
+    }
+  ],
+  "timing_probe_transfer": [
+    {
+      "training_holdout": "ms",
+      "probe": "time_interval",
+      "auc": 0.9329896907216495,
+      "fit_performed": false
+    },
+    {
+      "training_holdout": "ms",
+      "probe": "time_interval_and_jitter",
+      "auc": 0.020618556701030966,
+      "fit_performed": false
+    },
+    {
+      "training_holdout": "vc2",
+      "probe": "time_interval",
+      "auc": 0.9329896907216495,
+      "fit_performed": false
+    },
+    {
+      "training_holdout": "vc2",
+      "probe": "time_interval_and_jitter",
+      "auc": 0.0,
+      "fit_performed": false
+    }
+  ],
+  "timing_prediction_scope": "frozen old timing heads; new labels used only to measure AUROC",
+  "formal_claim_released": false,
+  "scope": "mechanical replay, not independent scientific replication"
+}

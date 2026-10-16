@@ -1,0 +1,19 @@
+{
+  "pid": 6201,
+  "start_ticks": "4203963043",
+  "command": [
+    "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+    "/root/autodl-tmp/cvpr27/incoming/night20260911/retime_qc.py",
+    "--run-dir",
+    "/root/autodl-tmp/cvpr27/runs/overnight_20260911/retiming_diagnostic",
+    "--parent-run",
+    "/root/autodl-tmp/cvpr27/runs/overnight_20260911",
+    "--selection",
+    "/root/autodl-tmp/cvpr27/incoming/night20260911/night_qc_selection_20260911.json",
+    "--workers",
+    "12",
+    "--deadline",
+    "2026-09-11T09:40:00+08:00"
+  ],
+  "started_utc": "2026-09-10T15:37:23.897728+00:00"
+}

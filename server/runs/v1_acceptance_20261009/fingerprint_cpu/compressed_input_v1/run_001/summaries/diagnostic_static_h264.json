@@ -1,0 +1,227 @@
+{
+  "input": {
+    "media_id": "diagnostic_static_h264",
+    "path": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/compressed_input_v1/run_001/diagnostics/static.mp4",
+    "sha256": "64e1ed0b511c754db3c5aa6e9f49460dae5623d85fe10a2d2b78ff5b58de6c70",
+    "bytes": 7436,
+    "variant": "h264",
+    "diagnostic": true,
+    "generator": null,
+    "label": null,
+    "selection_role": "synthetic_fixture",
+    "expected_shift_right_pixels_per_frame": 0,
+    "timestamp_provenance": "MP4 synthetic container PTS"
+  },
+  "status": "completed",
+  "parsed_frames": 16,
+  "packet_count": 16,
+  "stream_metadata": {
+    "codec_name": "h264",
+    "profile": "High",
+    "codec_tag_string": "avc1",
+    "width": 64,
+    "height": 64,
+    "has_b_frames": 0,
+    "avg_frame_rate": "8/1",
+    "time_base": "1/16384",
+    "bit_rate": "26260",
+    "nb_frames": "16",
+    "disposition": {
+      "default": 1,
+      "dub": 0,
+      "original": 0,
+      "comment": 0,
+      "lyrics": 0,
+      "karaoke": 0,
+      "forced": 0,
+      "hearing_impaired": 0,
+      "visual_impaired": 0,
+      "clean_effects": 0,
+      "attached_pic": 0,
+      "timed_thumbnails": 0
+    },
+    "tags": {
+      "language": "und",
+      "handler_name": "VideoHandler",
+      "vendor_id": "[0][0][0][0]"
+    }
+  },
+  "frames_with_mv": 14,
+  "mv_frame_coverage": 0.875,
+  "actual_exported_mv_count": 224,
+  "source_direction_counts": {
+    "-1": 224
+  },
+  "motion_scale_counts": {
+    "4": 224
+  },
+  "picture_type_counts": {
+    "I": 2,
+    "P": 14
+  },
+  "side_data_type_counts": {
+    "SEI_UNREGISTERED": 1,
+    "MOTION_VECTORS": 14
+  },
+  "median_dx_pixels": 0.0,
+  "median_dy_pixels": 0.0,
+  "interior_diagnostic_median_dx_pixels": 0.0,
+  "nonzero_motion_fraction": 0.0,
+  "max_integer_coordinate_minus_fractional_motion_error_pixels": 0.0,
+  "coordinate_error_at_least_one_pixel_records": 0,
+  "PyAV_system_timestamp_alignment": true,
+  "native_container_timestamp_accepted": true,
+  "exact_reference_ids_available": false,
+  "prediction_residual_available": false,
+  "transform_residual_coefficients_available": false,
+  "prediction_residual_unavailable_evidence": "all observed frame-side-data types enumerated, no residual plane or coefficient output; decoded frame planes not substituted",
+  "numeric_relative_path": "run_001/numeric/diagnostic_static_h264_coded_mv.npz",
+  "numeric_sha256": "c20535332679081561319d7ab8713750ba915d15a4ba70e8b962d0aab2c2805e",
+  "numeric_bytes": 689,
+  "semantic_mv_sha256": "d43ffb9e53cc3fd8b12d8cb4f28b047946aea13adf33069b9f233afe67512db5",
+  "frame_mapping_relative_path": "run_001/metadata/diagnostic_static_h264_frame_mapping.json",
+  "frame_mapping_sha256": "35478e290b9a36942df431e04b391bb70292e4629af2ec8d343efdade5b32df3",
+  "first_ten_coded_vectors": [
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 8,
+      "src_y": 8,
+      "dst_x": 8,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 24,
+      "src_y": 8,
+      "dst_x": 24,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 40,
+      "src_y": 8,
+      "dst_x": 40,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 56,
+      "src_y": 8,
+      "dst_x": 56,
+      "dst_y": 8,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 8,
+      "src_y": 24,
+      "dst_x": 8,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 24,
+      "src_y": 24,
+      "dst_x": 24,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 40,
+      "src_y": 24,
+      "dst_x": 40,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 56,
+      "src_y": 24,
+      "dst_x": 56,
+      "dst_y": 24,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 8,
+      "src_y": 40,
+      "dst_x": 8,
+      "dst_y": 40,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    },
+    {
+      "source": -1,
+      "w": 16,
+      "h": 16,
+      "src_x": 24,
+      "src_y": 40,
+      "dst_x": 24,
+      "dst_y": 40,
+      "flags": 0,
+      "motion_x": 0,
+      "motion_y": 0,
+      "motion_scale": 4
+    }
+  ],
+  "wall_seconds": 0.10857469588518143,
+  "resources_before": {
+    "namespace_bytes": 161821281,
+    "free_bytes": 32947621888,
+    "peak_parent_rss_bytes": 55721984
+  },
+  "resources_after": {
+    "namespace_bytes": 161849539,
+    "free_bytes": 32947585024,
+    "peak_parent_rss_bytes": 64352256
+  }
+}

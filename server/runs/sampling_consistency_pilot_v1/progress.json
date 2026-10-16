@@ -1,0 +1,18 @@
+{
+  "completed": 60,
+  "total": 60,
+  "latest": {
+    "held_generator": "vc2",
+    "seed": 71,
+    "arm": "shuffled_consistency",
+    "selected_epoch": 40,
+    "calibration_bce": 0.23429502546787262,
+    "auc": 0.9118669736999347,
+    "audit_bce": 0.4936514178594627,
+    "n": 3010,
+    "parameters": 393729,
+    "training_seconds": 2.4489130675792694,
+    "view_probability_mae": 0.01010777335613966
+  },
+  "elapsed_seconds": 112.22274001687765
+}

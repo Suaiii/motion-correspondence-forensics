@@ -1,0 +1,388 @@
+{
+  "status": "pass",
+  "script_sha256": "8d6a4da3f47481b291452d5491dec38440982deeead57ab8b7df1f250d2b1f66",
+  "parent_artifact_index_sha256": "eba1d7cf121f50bd420f32fecd3ffe35364a321948cad60b05ce5e21388d48fe",
+  "seconds": 34.675241850316525,
+  "replay": [
+    {
+      "held_generator": "ms",
+      "arm": "native_semantic",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 3.3306690738754696e-16
+    },
+    {
+      "held_generator": "ms",
+      "arm": "native_semantic",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 2.0816681711721685e-17
+    },
+    {
+      "held_generator": "ms",
+      "arm": "native_delta",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "arm": "native_delta",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "arm": "native_velocity",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 2.498001805406602e-16
+    },
+    {
+      "held_generator": "ms",
+      "arm": "native_velocity",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 1.6653345369377348e-16
+    },
+    {
+      "held_generator": "ms",
+      "arm": "time_semantic",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "held_generator": "ms",
+      "arm": "time_semantic",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 1.5612511283791264e-17
+    },
+    {
+      "held_generator": "ms",
+      "arm": "time_delta",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "ms",
+      "arm": "time_delta",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 1.1102230246251565e-16
+    },
+    {
+      "held_generator": "ms",
+      "arm": "time_velocity",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 3.3306690738754696e-16
+    },
+    {
+      "held_generator": "ms",
+      "arm": "time_velocity",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 3.122502256758253e-17
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "native_semantic",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "native_semantic",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 7.216449660063518e-16
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "native_delta",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "native_delta",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 3.885780586188048e-16
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "native_velocity",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "native_velocity",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 1.734723475976807e-17
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "time_semantic",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "time_semantic",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 3.3306690738754696e-16
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "time_delta",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "time_delta",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 4.440892098500626e-16
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "time_velocity",
+      "cohort": "in_domain_audit",
+      "max_probability_error": 0.0
+    },
+    {
+      "held_generator": "vc2",
+      "arm": "time_velocity",
+      "cohort": "held_generator_audit",
+      "max_probability_error": 0.0
+    }
+  ],
+  "comparisons": [
+    {
+      "held_generator": "ms",
+      "comparison": "time_delta_minus_semantic",
+      "delta": 0.0004251583427558048,
+      "ci95": [
+        -0.011488180598071373,
+        0.01157315481279247
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    },
+    {
+      "held_generator": "ms",
+      "comparison": "time_velocity_minus_semantic",
+      "delta": 0.003649467288087349,
+      "ci95": [
+        -0.008354045439085194,
+        0.014753310489690552
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    },
+    {
+      "held_generator": "ms",
+      "comparison": "native_delta_minus_semantic",
+      "delta": 0.0786106284989383,
+      "ci95": [
+        0.06277649655736646,
+        0.09443427511651638
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    },
+    {
+      "held_generator": "ms",
+      "comparison": "delta_gain_time_minus_native",
+      "delta": -0.07818547015618249,
+      "ci95": [
+        -0.0931247012400836,
+        -0.06388070171809945
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    },
+    {
+      "held_generator": "vc2",
+      "comparison": "time_delta_minus_semantic",
+      "delta": 0.007174834303154021,
+      "ci95": [
+        -0.0044459497347930695,
+        0.018758100990044463
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    },
+    {
+      "held_generator": "vc2",
+      "comparison": "time_velocity_minus_semantic",
+      "delta": 0.007983784230991997,
+      "ci95": [
+        -0.0035763860161973854,
+        0.01942534104593545
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    },
+    {
+      "held_generator": "vc2",
+      "comparison": "native_delta_minus_semantic",
+      "delta": 0.05134074257926324,
+      "ci95": [
+        0.03623776807957132,
+        0.06599434194681145
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    },
+    {
+      "held_generator": "vc2",
+      "comparison": "delta_gain_time_minus_native",
+      "delta": -0.04416590827610922,
+      "ci95": [
+        -0.05792417588226101,
+        -0.03116545668900476
+      ],
+      "replicates": 2000,
+      "n": 3010,
+      "groups": 3010
+    }
+  ],
+  "timing_probes": [
+    {
+      "held_generator": "ms",
+      "probe": "native_interval",
+      "auc": 1.0,
+      "selected_C": 10.0,
+      "calibration_bce": 0.0002654958434577179,
+      "selected_converged": true,
+      "source_medians": {
+        "vript": {
+          "median_dt": 0.03336700000000015
+        },
+        "ms": {
+          "median_dt": 0.125
+        },
+        "vc2": {
+          "median_dt": 0.09999999999999998
+        }
+      }
+    },
+    {
+      "held_generator": "ms",
+      "probe": "time_interval",
+      "auc": 0.7839506172839507,
+      "selected_C": 10.0,
+      "calibration_bce": 0.0001762418346459238,
+      "selected_converged": true,
+      "source_medians": {
+        "vript": {
+          "time_median_dt": 0.13333300000000037
+        },
+        "ms": {
+          "time_median_dt": 0.125
+        },
+        "vc2": {
+          "time_median_dt": 0.10000000000000003
+        }
+      }
+    },
+    {
+      "held_generator": "ms",
+      "probe": "time_interval_and_jitter",
+      "auc": 0.0,
+      "selected_C": 10.0,
+      "calibration_bce": 0.0002611458865432035,
+      "selected_converged": true,
+      "source_medians": {
+        "vript": {
+          "time_median_dt": 0.13333300000000037,
+          "time_dt_std": 0.015058495171043232,
+          "time_max_timing_error": 0.01668299999999956
+        },
+        "ms": {
+          "time_median_dt": 0.125,
+          "time_dt_std": 0.0,
+          "time_max_timing_error": 0.0
+        },
+        "vc2": {
+          "time_median_dt": 0.10000000000000003,
+          "time_dt_std": 0.04517539514526254,
+          "time_max_timing_error": 0.050000000000000044
+        }
+      }
+    },
+    {
+      "held_generator": "vc2",
+      "probe": "native_interval",
+      "auc": 1.0,
+      "selected_C": 10.0,
+      "calibration_bce": 0.00031159858237669516,
+      "selected_converged": true,
+      "source_medians": {
+        "vript": {
+          "median_dt": 0.03336700000000015
+        },
+        "ms": {
+          "median_dt": 0.125
+        },
+        "vc2": {
+          "median_dt": 0.09999999999999998
+        }
+      }
+    },
+    {
+      "held_generator": "vc2",
+      "probe": "time_interval",
+      "auc": 1.0,
+      "selected_C": 10.0,
+      "calibration_bce": 0.5074116813713833,
+      "selected_converged": true,
+      "source_medians": {
+        "vript": {
+          "time_median_dt": 0.13333300000000037
+        },
+        "ms": {
+          "time_median_dt": 0.125
+        },
+        "vc2": {
+          "time_median_dt": 0.10000000000000003
+        }
+      }
+    },
+    {
+      "held_generator": "vc2",
+      "probe": "time_interval_and_jitter",
+      "auc": 0.0030864197530864335,
+      "selected_C": 10.0,
+      "calibration_bce": 0.01648225859271875,
+      "selected_converged": true,
+      "source_medians": {
+        "vript": {
+          "time_median_dt": 0.13333300000000037,
+          "time_dt_std": 0.015058495171043232,
+          "time_max_timing_error": 0.01668299999999956
+        },
+        "ms": {
+          "time_median_dt": 0.125,
+          "time_dt_std": 0.0,
+          "time_max_timing_error": 0.0
+        },
+        "vc2": {
+          "time_median_dt": 0.10000000000000003,
+          "time_dt_std": 0.04517539514526254,
+          "time_max_timing_error": 0.050000000000000044
+        }
+      }
+    }
+  ],
+  "bootstrap": "paired source/label-stratified ancestor-proxy cluster percentile bootstrap; fixed trained heads",
+  "seed": 20260917,
+  "main_heads_refitted": false,
+  "formal_claim_released": false,
+  "limits": [
+    "One real source, exposed development data and unverified ancestry proxies.",
+    "Intervals are conditional on frozen heads; no training-seed uncertainty or multiplicity correction.",
+    "Available timing information does not prove a feature classifier uses it.",
+    "Nearest-frame time grids can retain source-dependent intervals and jitter."
+  ]
+}

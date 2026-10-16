@@ -1,0 +1,17 @@
+{
+  "observed_utc": "2026-09-10T17:32:30.128591+00:00",
+  "sm_utilization_percent_samples": [
+    0,
+    0,
+    0,
+    0,
+    52,
+    52,
+    0,
+    0,
+    37,
+    0
+  ],
+  "mean_sm_percent": 14.1,
+  "scope": "10 samples after CPU QC completion; not whole-run GPU utilization"
+}

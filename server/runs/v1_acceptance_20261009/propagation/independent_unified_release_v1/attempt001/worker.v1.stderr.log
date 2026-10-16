@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/propagation/independent_unified_release_v1/recompute.py", line 236, in <module>
+    if __name__=='__main__':raise SystemExit(main())
+                                             ^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/propagation/independent_unified_release_v1/recompute.py", line 184, in main
+    emit('METHOD_ROLE_LABEL_MATRIX.jsonl',({'method':k[0],'track':k[1],'role':k[2],'label':k[3],'generator':k[4],'safe_candidate_refs':n} for k,n in sorted(support_safe_counts.items())))
+                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: '<' not supported between instances of 'NoneType' and 'str'

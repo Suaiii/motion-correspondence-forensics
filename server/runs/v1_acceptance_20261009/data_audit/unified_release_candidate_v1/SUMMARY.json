@@ -1,0 +1,315 @@
+{
+  "version": "unified_release_candidate/1.0",
+  "reference_rows": 14206,
+  "existing_reference_rows": 14134,
+  "pending_reference_rows": 72,
+  "unique_existing_SHA256": 13662,
+  "duplicate_byte_alias_groups": 472,
+  "extra_byte_alias_references": 472,
+  "native_original_rows": 8998,
+  "old_derived_rows": 4800,
+  "accepted_propagation_v2_rows": 336,
+  "B5_fixed_pending_rows": 72,
+  "pool_counts": {
+    "old_native": 7436,
+    "old_derived": 4800,
+    "new_SVD": 256,
+    "new_conditioned_I2V": 106,
+    "new_KoNViD": 1200,
+    "propagation_v2": 336,
+    "B5_pending": 72
+  },
+  "candidate_role_counts": {
+    "fit": 7064,
+    "calibration": 1505,
+    "quarantine_processing_receipt_conflict_component": 280,
+    "in_domain_audit": 1459,
+    "exclude_clean_quality_and_candidate_descendants": 53,
+    "held_generator_audit": 3713,
+    "quarantine_fixed_probe_parent_all_families": 12,
+    "quarantine_held_family_on_fit_parent": 32,
+    "quarantine_fit_family_on_held_parent": 8,
+    "quarantine_held_family_on_calibration_parent": 6,
+    "quarantine_ambiguous_condition": 2,
+    "pending_B5_control": 72
+  },
+  "public_candidate_refs": 9114,
+  "public_candidate_unique_SHA": 9046,
+  "conservative_role_groups": 7790,
+  "true_independent_ancestors": "unknown",
+  "new_role_conflict_groups": 0,
+  "generator_holdout_violation_refs": [],
+  "visual626_current_role_counts": {
+    "same_role": 325,
+    "cross_role": 288,
+    "excluded_or_pending_endpoint": 13
+  },
+  "visual_evidence_counts": {
+    "single_anchor_similarity_only": 529,
+    "reproducible_multi_anchor_similarity": 96,
+    "exact_anchor_pixel_reuse": 1
+  },
+  "baseline_support_rows": 170472,
+  "baseline_counts": [
+    {
+      "method": "d3",
+      "track": "matched_physical_time",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "d3",
+      "track": "matched_physical_time",
+      "status": "physical_ineligible",
+      "refs": 4562
+    },
+    {
+      "method": "d3",
+      "track": "matched_physical_time",
+      "status": "physical_metadata_candidate",
+      "refs": 4552
+    },
+    {
+      "method": "d3",
+      "track": "native_reference_metadata_recipe",
+      "status": "actual_input_inherited_D7_scope",
+      "refs": 12
+    },
+    {
+      "method": "d3",
+      "track": "native_reference_metadata_recipe",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "d3",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_ineligible",
+      "refs": 2999
+    },
+    {
+      "method": "d3",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_metadata_candidate",
+      "refs": 6103
+    },
+    {
+      "method": "native720p",
+      "track": "matched_physical_time",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "native720p",
+      "track": "matched_physical_time",
+      "status": "pending_method_contract",
+      "refs": 9114
+    },
+    {
+      "method": "native720p",
+      "track": "native_reference_metadata_recipe",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "native720p",
+      "track": "native_reference_metadata_recipe",
+      "status": "pending_method_contract",
+      "refs": 9114
+    },
+    {
+      "method": "native_scale",
+      "track": "matched_physical_time",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "native_scale",
+      "track": "matched_physical_time",
+      "status": "physical_ineligible",
+      "refs": 5701
+    },
+    {
+      "method": "native_scale",
+      "track": "matched_physical_time",
+      "status": "physical_metadata_candidate",
+      "refs": 3413
+    },
+    {
+      "method": "native_scale",
+      "track": "native_reference_metadata_recipe",
+      "status": "actual_input_inherited_D7_scope",
+      "refs": 3
+    },
+    {
+      "method": "native_scale",
+      "track": "native_reference_metadata_recipe",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "native_scale",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_ineligible",
+      "refs": 2999
+    },
+    {
+      "method": "native_scale",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_metadata_candidate",
+      "refs": 6112
+    },
+    {
+      "method": "overcoherence",
+      "track": "matched_physical_time",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "overcoherence",
+      "track": "matched_physical_time",
+      "status": "physical_ineligible",
+      "refs": 6748
+    },
+    {
+      "method": "overcoherence",
+      "track": "matched_physical_time",
+      "status": "physical_metadata_candidate",
+      "refs": 2366
+    },
+    {
+      "method": "overcoherence",
+      "track": "native_reference_metadata_recipe",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "overcoherence",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_ineligible",
+      "refs": 6685
+    },
+    {
+      "method": "overcoherence",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_metadata_candidate",
+      "refs": 2429
+    },
+    {
+      "method": "restrav",
+      "track": "matched_physical_time",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "restrav",
+      "track": "matched_physical_time",
+      "status": "physical_ineligible",
+      "refs": 5556
+    },
+    {
+      "method": "restrav",
+      "track": "matched_physical_time",
+      "status": "physical_metadata_candidate",
+      "refs": 3558
+    },
+    {
+      "method": "restrav",
+      "track": "native_reference_metadata_recipe",
+      "status": "actual_input_inherited_D7_scope",
+      "refs": 12
+    },
+    {
+      "method": "restrav",
+      "track": "native_reference_metadata_recipe",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "restrav",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_ineligible",
+      "refs": 2999
+    },
+    {
+      "method": "restrav",
+      "track": "native_reference_metadata_recipe",
+      "status": "physical_metadata_candidate",
+      "refs": 6103
+    },
+    {
+      "method": "stream",
+      "track": "matched_physical_time",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "stream",
+      "track": "matched_physical_time",
+      "status": "pending_method_contract",
+      "refs": 9114
+    },
+    {
+      "method": "stream",
+      "track": "native_reference_metadata_recipe",
+      "status": "blocked_data",
+      "refs": 5092
+    },
+    {
+      "method": "stream",
+      "track": "native_reference_metadata_recipe",
+      "status": "pending_method_contract",
+      "refs": 9114
+    }
+  ],
+  "original14_retained": true,
+  "ambiguous_condition_root_ids": [
+    "414e6166d3a4646489a915b4bdddac51a8d22921016ef88be2afd8019dd317ff"
+  ],
+  "ambiguous_root_native_refs": 2,
+  "B5_device_count": 8,
+  "B5_brand_count": 8,
+  "B5_declared_capture_groups": 24,
+  "B5_acquisition_family_count_proposed_not_accepted": 1,
+  "published_real_release_labels": [
+    "DVF",
+    "KoNViD_Flickr",
+    "OpenVid-HD via AIGVDBench",
+    "VISION_camera_to_platform",
+    "Vript",
+    "YouTube_collection"
+  ],
+  "certified_independent_real_acquisition_families": "unknown",
+  "B5_final_consumed": false,
+  "full_requested_v1": "NOT_COMPLETE",
+  "independent_release_acceptance": "pending",
+  "mechanism_gate": "FAIL_preserved",
+  "model_execution_authorized": false,
+  "resource": {
+    "caps": {
+      "B5": {
+        "cap": 4294967296,
+        "allocated": 3495964672,
+        "remaining": 799002624
+      },
+      "D9": {
+        "cap": 67108864,
+        "allocated": 4861952,
+        "remaining": 62246912
+      },
+      "A8": {
+        "cap": 134217728,
+        "allocated": 73416704,
+        "remaining": 60801024
+      }
+    },
+    "free": 23349530624,
+    "reserve": 22396887040,
+    "margin": 952643584,
+    "CPU": [
+      2,
+      3
+    ],
+    "RSS_KiB": 333728
+  }
+}

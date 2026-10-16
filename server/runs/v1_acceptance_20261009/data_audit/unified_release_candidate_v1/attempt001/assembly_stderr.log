@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/data_audit/unified_release_candidate_v1/assemble.py", line 224, in <module>
+    if i%500==0:db.commit();dump(R/'ASSEMBLY_PROGRESS.json',{'metadata_rows':i,'target':len(records),'support_rows':supportrows,'resource':resources()})
+                                                                                                                                           ^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/data_audit/unified_release_candidate_v1/assemble.py", line 33, in resources
+    assert free>=need and caps['A8']['allocated']<128*1024**2
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

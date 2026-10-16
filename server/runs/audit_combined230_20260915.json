@@ -1,0 +1,11 @@
+{
+  "valid": true,
+  "errors": [],
+  "counts": {
+    "profile/cc0_real/0": 30,
+    "profile/ms/1": 100,
+    "profile/vc2/1": 100
+  },
+  "n": 230,
+  "manifest_hash": "e1ca574d3c0b183e50eee3232b01a7af5baaabf08c5b7727b5373675aeee3e51"
+}

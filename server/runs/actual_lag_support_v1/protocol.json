@@ -1,0 +1,24 @@
+{
+  "script_sha256": "7f73361ef0409a0e32de60715917d4d02f27d0e1379769b5a6040936c1e2d278",
+  "core_sha256": "3bff1008f380015111410b356f9594db1438bbc423a64cf0406ce70e684647fe",
+  "parent_manifest_sha256": "7374a07350e2b96c1b374f5a4b847861797727aed9a16340cf6c7bd1d75c60a8",
+  "external_manifest_sha256": "cad3bdd989c75403b67df87e96954650243b6cee3ae1e11d0c3087e1682c9235",
+  "views": [
+    "all_adjacent",
+    "half_second"
+  ],
+  "quanta_seconds": [
+    0.001,
+    0.002,
+    0.005
+  ],
+  "half_second_indices": [
+    0,
+    4
+  ],
+  "half_second_target": 0.5,
+  "half_second_tolerance": 0.002,
+  "classification_performed": false,
+  "final_access": false,
+  "scope": "descriptive support census; not a confirmatory cohort or algorithm result"
+}

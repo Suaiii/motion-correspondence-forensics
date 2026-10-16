@@ -1,0 +1,14 @@
+{
+  "status": "A10_only_overlay_and_query_checks_passed",
+  "full_references_and_SHA_unchanged": true,
+  "full_roles_unchanged": true,
+  "B7_per_ref_overlay_inherited_exactly": 14206,
+  "risk404_public244_applied": true,
+  "public_refs": 8870,
+  "public_unique_SHA": 8803,
+  "two_dual_class_examples_match_frozen_B7_cells": true,
+  "one_hold_exclusion_example": true,
+  "single_class_metric_undefined_preserved": true,
+  "support_or_risk_recalculated": false,
+  "new_scientific_or_media_model_experiment": false
+}

@@ -1,0 +1,725 @@
+{
+  "scope": "synthetic_validation",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-5.15.0-60-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "numpy": "2.2.6",
+    "opencv": "4.12.0",
+    "cpu_count": 16.0,
+    "cuda": true,
+    "host_cpu_count": 192,
+    "cpu_quota_cores": 16.0,
+    "memory_limit_bytes": 85899345920,
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "vram_bytes": 25262096384
+  },
+  "attempted": 100,
+  "completed": 100,
+  "wall_seconds": 77.47284363210201,
+  "peak_allocated_bytes": 41904128,
+  "records": [
+    {
+      "sample_id": "P0097",
+      "decode_seconds": 0.14669149369001389,
+      "flow_and_controls_seconds": 0.7781362533569336,
+      "inference_seconds": 0.4094831869006157,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0002",
+      "decode_seconds": 0.11916663497686386,
+      "flow_and_controls_seconds": 0.7489528208971024,
+      "inference_seconds": 0.005542285740375519,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0082",
+      "decode_seconds": 0.12191644310951233,
+      "flow_and_controls_seconds": 0.662615530192852,
+      "inference_seconds": 0.004482738673686981,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0095",
+      "decode_seconds": 0.11185559630393982,
+      "flow_and_controls_seconds": 0.6590015739202499,
+      "inference_seconds": 0.005791991949081421,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0047",
+      "decode_seconds": 0.11034725606441498,
+      "flow_and_controls_seconds": 0.6991735324263573,
+      "inference_seconds": 0.004842899739742279,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0080",
+      "decode_seconds": 0.10859085619449615,
+      "flow_and_controls_seconds": 0.6673695519566536,
+      "inference_seconds": 0.0063094571232795715,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0019",
+      "decode_seconds": 0.11324362456798553,
+      "flow_and_controls_seconds": 0.71181371062994,
+      "inference_seconds": 0.00553961843252182,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0050",
+      "decode_seconds": 0.10549094527959824,
+      "flow_and_controls_seconds": 0.7038009911775589,
+      "inference_seconds": 0.005604654550552368,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0089",
+      "decode_seconds": 0.1108042299747467,
+      "flow_and_controls_seconds": 0.7104173824191093,
+      "inference_seconds": 0.0058532655239105225,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0055",
+      "decode_seconds": 0.12227267771959305,
+      "flow_and_controls_seconds": 0.6708430498838425,
+      "inference_seconds": 0.005112767219543457,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0048",
+      "decode_seconds": 0.11110881716012955,
+      "flow_and_controls_seconds": 0.6706134527921677,
+      "inference_seconds": 0.005256004631519318,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0046",
+      "decode_seconds": 0.10731399804353714,
+      "flow_and_controls_seconds": 0.6587233021855354,
+      "inference_seconds": 0.005071654915809631,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0012",
+      "decode_seconds": 0.11016141623258591,
+      "flow_and_controls_seconds": 0.7477069795131683,
+      "inference_seconds": 0.005331888794898987,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0021",
+      "decode_seconds": 0.11314063519239426,
+      "flow_and_controls_seconds": 0.7286422252655029,
+      "inference_seconds": 0.0053730309009552,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0063",
+      "decode_seconds": 0.11176623404026031,
+      "flow_and_controls_seconds": 0.683191604912281,
+      "inference_seconds": 0.004937618970870972,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0062",
+      "decode_seconds": 0.11396002769470215,
+      "flow_and_controls_seconds": 0.6829661577939987,
+      "inference_seconds": 0.0043769776821136475,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0075",
+      "decode_seconds": 0.11278043687343597,
+      "flow_and_controls_seconds": 0.6436447352170944,
+      "inference_seconds": 0.004591271281242371,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0071",
+      "decode_seconds": 0.11029800027608871,
+      "flow_and_controls_seconds": 0.6607693880796432,
+      "inference_seconds": 0.0049055591225624084,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0001",
+      "decode_seconds": 0.11211290955543518,
+      "flow_and_controls_seconds": 0.7214096486568451,
+      "inference_seconds": 0.004955358803272247,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0056",
+      "decode_seconds": 0.10656788945198059,
+      "flow_and_controls_seconds": 0.6548701301217079,
+      "inference_seconds": 0.00441945344209671,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0070",
+      "decode_seconds": 0.10866600275039673,
+      "flow_and_controls_seconds": 0.6703952550888062,
+      "inference_seconds": 0.0050527602434158325,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0068",
+      "decode_seconds": 0.09909959137439728,
+      "flow_and_controls_seconds": 0.692440815269947,
+      "inference_seconds": 0.005433887243270874,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0084",
+      "decode_seconds": 0.10361512750387192,
+      "flow_and_controls_seconds": 0.6783493459224701,
+      "inference_seconds": 0.005540408194065094,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0061",
+      "decode_seconds": 0.10541629046201706,
+      "flow_and_controls_seconds": 0.6951289027929306,
+      "inference_seconds": 0.00475677102804184,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0064",
+      "decode_seconds": 0.10992638766765594,
+      "flow_and_controls_seconds": 0.6930895373225212,
+      "inference_seconds": 0.005662798881530762,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0017",
+      "decode_seconds": 0.11238876730203629,
+      "flow_and_controls_seconds": 0.6721822023391724,
+      "inference_seconds": 0.006475701928138733,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0018",
+      "decode_seconds": 0.10653486102819443,
+      "flow_and_controls_seconds": 0.6840697750449181,
+      "inference_seconds": 0.0049868375062942505,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0073",
+      "decode_seconds": 0.11237189918756485,
+      "flow_and_controls_seconds": 0.6463712528347969,
+      "inference_seconds": 0.00500892847776413,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0010",
+      "decode_seconds": 0.10766080021858215,
+      "flow_and_controls_seconds": 0.7197679951786995,
+      "inference_seconds": 0.00459694117307663,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0098",
+      "decode_seconds": 0.1156555712223053,
+      "flow_and_controls_seconds": 0.651230588555336,
+      "inference_seconds": 0.005726918578147888,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0065",
+      "decode_seconds": 0.11342082172632217,
+      "flow_and_controls_seconds": 0.6929574981331825,
+      "inference_seconds": 0.007685847580432892,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0015",
+      "decode_seconds": 0.10368875414133072,
+      "flow_and_controls_seconds": 0.6905722469091415,
+      "inference_seconds": 0.0062683820724487305,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0042",
+      "decode_seconds": 0.11917416751384735,
+      "flow_and_controls_seconds": 0.7268938273191452,
+      "inference_seconds": 0.005232162773609161,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0053",
+      "decode_seconds": 0.10077928006649017,
+      "flow_and_controls_seconds": 0.7173089683055878,
+      "inference_seconds": 0.008498065173625946,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0023",
+      "decode_seconds": 0.106464684009552,
+      "flow_and_controls_seconds": 0.7319746762514114,
+      "inference_seconds": 0.005565114319324493,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0059",
+      "decode_seconds": 0.107870914041996,
+      "flow_and_controls_seconds": 0.6962253153324127,
+      "inference_seconds": 0.005657278001308441,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0014",
+      "decode_seconds": 0.10863781720399857,
+      "flow_and_controls_seconds": 0.7354498580098152,
+      "inference_seconds": 0.005168318748474121,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0005",
+      "decode_seconds": 0.10182206332683563,
+      "flow_and_controls_seconds": 0.6714741736650467,
+      "inference_seconds": 0.0049935802817344666,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0028",
+      "decode_seconds": 0.11856503039598465,
+      "flow_and_controls_seconds": 0.7456292062997818,
+      "inference_seconds": 0.005411557853221893,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0087",
+      "decode_seconds": 0.10553712397813797,
+      "flow_and_controls_seconds": 0.6500004306435585,
+      "inference_seconds": 0.005415856838226318,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0069",
+      "decode_seconds": 0.10600778460502625,
+      "flow_and_controls_seconds": 0.7225659042596817,
+      "inference_seconds": 0.005409806966781616,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0035",
+      "decode_seconds": 0.11164622008800507,
+      "flow_and_controls_seconds": 0.6555295884609222,
+      "inference_seconds": 0.005908682942390442,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0013",
+      "decode_seconds": 0.10717714577913284,
+      "flow_and_controls_seconds": 0.7164819836616516,
+      "inference_seconds": 0.007789410650730133,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0088",
+      "decode_seconds": 0.1099913939833641,
+      "flow_and_controls_seconds": 0.6453560441732407,
+      "inference_seconds": 0.005613088607788086,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0037",
+      "decode_seconds": 0.11336737126111984,
+      "flow_and_controls_seconds": 0.7284525036811829,
+      "inference_seconds": 0.0045196861028671265,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0076",
+      "decode_seconds": 0.11198661476373672,
+      "flow_and_controls_seconds": 0.6547127813100815,
+      "inference_seconds": 0.005048960447311401,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0060",
+      "decode_seconds": 0.11134473234415054,
+      "flow_and_controls_seconds": 0.6800341755151749,
+      "inference_seconds": 0.0049386173486709595,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0004",
+      "decode_seconds": 0.11036893725395203,
+      "flow_and_controls_seconds": 0.6861079856753349,
+      "inference_seconds": 0.004773370921611786,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0016",
+      "decode_seconds": 0.10492534935474396,
+      "flow_and_controls_seconds": 0.6651359498500824,
+      "inference_seconds": 0.004636876285076141,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0058",
+      "decode_seconds": 0.11001395434141159,
+      "flow_and_controls_seconds": 0.6129814460873604,
+      "inference_seconds": 0.005008690059185028,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0040",
+      "decode_seconds": 0.1106291115283966,
+      "flow_and_controls_seconds": 0.7050118520855904,
+      "inference_seconds": 0.004397280514240265,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0078",
+      "decode_seconds": 0.10265221446752548,
+      "flow_and_controls_seconds": 0.6315195858478546,
+      "inference_seconds": 0.004572272300720215,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0091",
+      "decode_seconds": 0.1101178526878357,
+      "flow_and_controls_seconds": 0.6686845794320107,
+      "inference_seconds": 0.004916384816169739,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0039",
+      "decode_seconds": 0.11566628515720367,
+      "flow_and_controls_seconds": 0.6915137469768524,
+      "inference_seconds": 0.006175048649311066,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0067",
+      "decode_seconds": 0.10588061064481735,
+      "flow_and_controls_seconds": 0.7296532616019249,
+      "inference_seconds": 0.008709989488124847,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0020",
+      "decode_seconds": 0.10166867822408676,
+      "flow_and_controls_seconds": 0.6603611633181572,
+      "inference_seconds": 0.005530230700969696,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0009",
+      "decode_seconds": 0.11156994104385376,
+      "flow_and_controls_seconds": 0.7434932366013527,
+      "inference_seconds": 0.005240961909294128,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0034",
+      "decode_seconds": 0.11066216975450516,
+      "flow_and_controls_seconds": 0.6880881488323212,
+      "inference_seconds": 0.005688786506652832,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0066",
+      "decode_seconds": 0.11625989526510239,
+      "flow_and_controls_seconds": 0.7344792112708092,
+      "inference_seconds": 0.005426198244094849,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0007",
+      "decode_seconds": 0.10760549455881119,
+      "flow_and_controls_seconds": 0.7123672515153885,
+      "inference_seconds": 0.005248494446277618,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0041",
+      "decode_seconds": 0.1078963503241539,
+      "flow_and_controls_seconds": 0.6866955384612083,
+      "inference_seconds": 0.005455039441585541,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0077",
+      "decode_seconds": 0.11214777082204819,
+      "flow_and_controls_seconds": 0.7096189558506012,
+      "inference_seconds": 0.006236426532268524,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0074",
+      "decode_seconds": 0.10841552168130875,
+      "flow_and_controls_seconds": 0.6766404882073402,
+      "inference_seconds": 0.007043339312076569,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0057",
+      "decode_seconds": 0.11182796955108643,
+      "flow_and_controls_seconds": 0.6928897053003311,
+      "inference_seconds": 0.0049414560198783875,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0024",
+      "decode_seconds": 0.11520411819219589,
+      "flow_and_controls_seconds": 0.7149738520383835,
+      "inference_seconds": 0.0058171674609184265,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0032",
+      "decode_seconds": 0.1101100891828537,
+      "flow_and_controls_seconds": 0.6857241913676262,
+      "inference_seconds": 0.005264453589916229,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0079",
+      "decode_seconds": 0.1125047504901886,
+      "flow_and_controls_seconds": 0.7007333114743233,
+      "inference_seconds": 0.005294233560562134,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0093",
+      "decode_seconds": 0.11481726169586182,
+      "flow_and_controls_seconds": 0.6884456798434258,
+      "inference_seconds": 0.004681289196014404,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0011",
+      "decode_seconds": 0.10960432142019272,
+      "flow_and_controls_seconds": 0.6787450388073921,
+      "inference_seconds": 0.005759470164775848,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0072",
+      "decode_seconds": 0.10333717614412308,
+      "flow_and_controls_seconds": 0.6595356538891792,
+      "inference_seconds": 0.004489682614803314,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0036",
+      "decode_seconds": 0.101881243288517,
+      "flow_and_controls_seconds": 0.6667924299836159,
+      "inference_seconds": 0.0045981258153915405,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0096",
+      "decode_seconds": 0.10228745639324188,
+      "flow_and_controls_seconds": 0.6276235356926918,
+      "inference_seconds": 0.00492444634437561,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0025",
+      "decode_seconds": 0.10302799195051193,
+      "flow_and_controls_seconds": 0.6783574149012566,
+      "inference_seconds": 0.004895851016044617,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0099",
+      "decode_seconds": 0.11569935828447342,
+      "flow_and_controls_seconds": 0.6720617488026619,
+      "inference_seconds": 0.00459444522857666,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0044",
+      "decode_seconds": 0.1117546558380127,
+      "flow_and_controls_seconds": 0.6725760474801064,
+      "inference_seconds": 0.004824906587600708,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0033",
+      "decode_seconds": 0.10123356431722641,
+      "flow_and_controls_seconds": 0.6242180094122887,
+      "inference_seconds": 0.005232170224189758,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0027",
+      "decode_seconds": 0.10243576020002365,
+      "flow_and_controls_seconds": 0.6874278411269188,
+      "inference_seconds": 0.006335854530334473,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0092",
+      "decode_seconds": 0.10480014979839325,
+      "flow_and_controls_seconds": 0.6643801406025887,
+      "inference_seconds": 0.004536516964435577,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0026",
+      "decode_seconds": 0.11390156298875809,
+      "flow_and_controls_seconds": 0.6737545058131218,
+      "inference_seconds": 0.004222452640533447,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0094",
+      "decode_seconds": 0.10141279548406601,
+      "flow_and_controls_seconds": 0.645892433822155,
+      "inference_seconds": 0.004975311458110809,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0090",
+      "decode_seconds": 0.0932566449046135,
+      "flow_and_controls_seconds": 0.6731846481561661,
+      "inference_seconds": 0.0049449726939201355,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0054",
+      "decode_seconds": 0.1016647145152092,
+      "flow_and_controls_seconds": 0.5201222226023674,
+      "inference_seconds": 0.0025257542729377747,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0000",
+      "decode_seconds": 0.08207569271326065,
+      "flow_and_controls_seconds": 0.5503789633512497,
+      "inference_seconds": 0.0030303671956062317,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0081",
+      "decode_seconds": 0.0833757221698761,
+      "flow_and_controls_seconds": 0.5093812718987465,
+      "inference_seconds": 0.0024809464812278748,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0085",
+      "decode_seconds": 0.08226613700389862,
+      "flow_and_controls_seconds": 0.5638097673654556,
+      "inference_seconds": 0.002568848431110382,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0031",
+      "decode_seconds": 0.08959589153528214,
+      "flow_and_controls_seconds": 0.5168667286634445,
+      "inference_seconds": 0.002414397895336151,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0008",
+      "decode_seconds": 0.08087814599275589,
+      "flow_and_controls_seconds": 0.5496520325541496,
+      "inference_seconds": 0.0027510076761245728,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0022",
+      "decode_seconds": 0.08334965258836746,
+      "flow_and_controls_seconds": 0.5201302617788315,
+      "inference_seconds": 0.0026626884937286377,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0051",
+      "decode_seconds": 0.0853300467133522,
+      "flow_and_controls_seconds": 0.5889433771371841,
+      "inference_seconds": 0.00414690375328064,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0003",
+      "decode_seconds": 0.09718328714370728,
+      "flow_and_controls_seconds": 0.5486743599176407,
+      "inference_seconds": 0.0028583407402038574,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0049",
+      "decode_seconds": 0.08745012432336807,
+      "flow_and_controls_seconds": 0.6483493000268936,
+      "inference_seconds": 0.004053756594657898,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0029",
+      "decode_seconds": 0.09712529927492142,
+      "flow_and_controls_seconds": 0.5742780417203903,
+      "inference_seconds": 0.0033097267150878906,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0052",
+      "decode_seconds": 0.08332327753305435,
+      "flow_and_controls_seconds": 0.5434071570634842,
+      "inference_seconds": 0.002624601125717163,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0030",
+      "decode_seconds": 0.09155146777629852,
+      "flow_and_controls_seconds": 0.5629235506057739,
+      "inference_seconds": 0.00254058837890625,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0038",
+      "decode_seconds": 0.0920727327466011,
+      "flow_and_controls_seconds": 0.5442454889416695,
+      "inference_seconds": 0.0024129673838615417,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0006",
+      "decode_seconds": 0.08788240700960159,
+      "flow_and_controls_seconds": 0.509266622364521,
+      "inference_seconds": 0.0023953765630722046,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0086",
+      "decode_seconds": 0.08769241720438004,
+      "flow_and_controls_seconds": 0.5447966530919075,
+      "inference_seconds": 0.002665877342224121,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0083",
+      "decode_seconds": 0.08802005648612976,
+      "flow_and_controls_seconds": 0.5170915573835373,
+      "inference_seconds": 0.0024227723479270935,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0043",
+      "decode_seconds": 0.09619437903165817,
+      "flow_and_controls_seconds": 0.546660341322422,
+      "inference_seconds": 0.0024834349751472473,
+      "cache_uncompressed_bytes": 8429568
+    },
+    {
+      "sample_id": "P0045",
+      "decode_seconds": 0.08564795553684235,
+      "flow_and_controls_seconds": 0.5039469003677368,
+      "inference_seconds": 0.0027529895305633545,
+      "cache_uncompressed_bytes": 8429568
+    }
+  ],
+  "actual_provider_cost_cny": null,
+  "note": "Inference profile includes decode, flow and all controls. Not a training throughput or cloud billing receipt."
+}

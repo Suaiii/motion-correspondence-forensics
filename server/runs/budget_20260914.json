@@ -1,0 +1,85 @@
+{
+  "cap_cny": 3000,
+  "gpu_hour_cap": 180,
+  "category_caps": {
+    "storage": 500,
+    "profile": 200,
+    "mechanism": 1000,
+    "method": 1000,
+    "recovery": 300
+  },
+  "entries": [
+    {
+      "id": "/root/autodl-tmp/cvpr27/runs/reservation_profile_20260914.json",
+      "category": "profile",
+      "reserved_cny": 0.94,
+      "reserved_gpu_hours": 0.5,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-provided 2026-09-14",
+      "status": "reserved",
+      "created": "2026-09-14T10:07:00.730058+00:00",
+      "run_id": "profile_comgenvid20_20260914",
+      "started_utc": "2026-09-14T10:22:14.997457+00:00"
+    },
+    {
+      "id": "/root/autodl-tmp/cvpr27/runs/reservation_profile20_20260914.json",
+      "category": "profile",
+      "reserved_cny": 0.94,
+      "reserved_gpu_hours": 0.5,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-provided 2026-09-14",
+      "status": "reserved",
+      "created": "2026-09-14T11:41:41.449183+00:00",
+      "run_id": "profile_comgenvid20b_20260914",
+      "started_utc": "2026-09-14T11:41:44.018646+00:00"
+    },
+    {
+      "id": "/root/autodl-tmp/cvpr27/runs/reservation_candidate200_20260915.json",
+      "category": "profile",
+      "reserved_cny": 3.76,
+      "reserved_gpu_hours": 2.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-provided 2026-09-15",
+      "status": "reserved",
+      "created": "2026-09-14T17:36:16.541105+00:00",
+      "run_id": "profile_candidate200_20260915",
+      "started_utc": "2026-09-14T17:38:09.075627+00:00"
+    },
+    {
+      "id": "/root/autodl-tmp/cvpr27/runs/reservation_candidate200b_20260915.json",
+      "category": "profile",
+      "reserved_cny": 3.76,
+      "reserved_gpu_hours": 2.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-provided 2026-09-15",
+      "status": "reserved",
+      "created": "2026-09-14T17:39:35.777268+00:00",
+      "run_id": "profile_candidate200b_20260915",
+      "started_utc": "2026-09-14T17:39:38.386123+00:00"
+    },
+    {
+      "id": "/root/autodl-tmp/cvpr27/runs/reservation_combined230_20260915.json",
+      "category": "profile",
+      "reserved_cny": 1.88,
+      "reserved_gpu_hours": 1.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-provided 2026-09-15",
+      "status": "reserved",
+      "created": "2026-09-14T18:10:42.435634+00:00",
+      "run_id": "profile_combined230_20260915",
+      "started_utc": "2026-09-14T18:10:45.041568+00:00"
+    },
+    {
+      "id": "/root/autodl-tmp/cvpr27/runs/reservation_mech4fps_20260916.json",
+      "category": "profile",
+      "reserved_cny": 1.88,
+      "reserved_gpu_hours": 1.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-provided 2026-09-16",
+      "status": "reserved",
+      "created": "2026-09-15T17:46:52.204962+00:00",
+      "run_id": "profile_mech4fps_20260916",
+      "started_utc": "2026-09-15T17:46:54.911155+00:00"
+    }
+  ]
+}

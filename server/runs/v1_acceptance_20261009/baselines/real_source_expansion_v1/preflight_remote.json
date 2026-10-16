@@ -1,0 +1,46 @@
+{
+  "responses": [
+    {
+      "name": "page",
+      "url": "https://database.mmsp-kn.de/konvid-1k-database.html",
+      "method": "HEAD",
+      "started_at": "2026-10-08T19:41:24.523361+00:00",
+      "status": "failed",
+      "error_type": "HTTPError",
+      "error": "HTTP Error 403: Forbidden",
+      "wall_seconds": 1.2432458102703094
+    },
+    {
+      "name": "videos",
+      "url": "https://datasets.vqa.mmsp-kn.de/archives/KoNViD_1k_videos.zip",
+      "method": "HEAD",
+      "started_at": "2026-10-08T19:41:25.766590+00:00",
+      "status": "failed",
+      "error_type": "URLError",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>",
+      "wall_seconds": 1.2798069640994072
+    },
+    {
+      "name": "metadata",
+      "url": "https://datasets.vqa.mmsp-kn.de/archives/KoNViD_1k_metadata.zip",
+      "method": "HEAD",
+      "started_at": "2026-10-08T19:41:27.046400+00:00",
+      "status": "failed",
+      "error_type": "URLError",
+      "error": "<urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: certificate has expired (_ssl.c:1000)>",
+      "wall_seconds": 0.47958991676568985
+    }
+  ],
+  "free_bytes": 32206639104,
+  "disk_reserve_bytes": 21474836480,
+  "other_package_reserve_bytes": 2147483648,
+  "C4_limit_bytes": 6442450944,
+  "RAM_limit_bytes": 4294967296,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "GPU_started": false,
+  "cost_CNY": null,
+  "allowable_new_bytes_by_disk": 8584318976
+}

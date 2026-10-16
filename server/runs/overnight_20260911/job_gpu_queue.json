@@ -1,0 +1,11 @@
+{
+  "pid": 50780,
+  "start_ticks": "4204476259",
+  "command": [
+    "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+    "/root/autodl-tmp/cvpr27/incoming/gpunight20260911/gpu_night_queue.py",
+    "--run-dir",
+    "/root/autodl-tmp/cvpr27/runs/overnight_20260911"
+  ],
+  "started_utc": "2026-09-10T17:02:56.051903+00:00"
+}

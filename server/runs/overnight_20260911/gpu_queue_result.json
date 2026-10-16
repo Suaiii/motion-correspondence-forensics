@@ -1,0 +1,4 @@
+{
+  "raft": "completed",
+  "dino": "CalledProcessError: Command '['curl', '-fL', '--retry', '2', '--connect-timeout', '20', '--max-time', '600', '-o', '/root/autodl-tmp/cvpr27/models/dinov2_vitb14_pretrain.pth.part', 'https://dl.fbaipublicfiles.com/dinov2/dinov2_vitb14/dinov2_vitb14_pretrain.pth']' died with <Signals.SIGTERM: 15>."
+}

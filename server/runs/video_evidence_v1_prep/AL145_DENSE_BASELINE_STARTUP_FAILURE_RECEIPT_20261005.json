@@ -1,0 +1,14 @@
+{
+  "status": "failed_before_adapter_train",
+  "task": "AL145",
+  "remote_pid": 19648,
+  "started_at": "2026-10-05T03:13:13+08:00",
+  "output_dir": "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/AL145_dense_baseline_quality_excluded_20261005",
+  "error": "UnboundLocalError: cannot access local variable b where it is not associated with a value",
+  "cause": "wrapper sha() used an undefined sentinel variable in iter(lambda:f.read(...), b)",
+  "training_started": false,
+  "metrics_written": false,
+  "original_wrapper_sha256": "af2890c65fe9cd580df43dfb00c89288f507a27019636d3137e52ba86e7ff07c",
+  "repair": "replace sentinel with b\"\" and update hash; rerun same AL145 baseline only",
+  "scope": "startup wrapper repair; no scientific result"
+}

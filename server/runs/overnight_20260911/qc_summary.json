@@ -1,0 +1,19 @@
+{
+  "complete": true,
+  "requested": 1000,
+  "completed": 1000,
+  "counts": {
+    "ms": {
+      "ok": 500
+    },
+    "vc2": {
+      "excluded": 500
+    }
+  },
+  "failure_reasons": {
+    "short_video": 500
+  },
+  "wall_seconds_this_attempt": 101.56027271598577,
+  "classification_metrics_computed": false,
+  "scope": "two generated sources; no real/fake accuracy or generalization conclusion"
+}

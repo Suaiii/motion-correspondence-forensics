@@ -1,0 +1,37 @@
+{
+  "arm": "correct",
+  "seed": 17,
+  "checkpoint": "epoch_001.pt",
+  "checkpoint_sha256": "53277ec0d77f35063ed1d2e1eb02c5f9aa64938b7b33c90baacd76cc25f046f8",
+  "params": 49601,
+  "threshold": 0.5,
+  "threshold_calibration_fpr01": 0.5052435398101808,
+  "calibration": [
+    {
+      "sample_id": "s7",
+      "prob_fake": 0.5052435398101807
+    },
+    {
+      "sample_id": "s8",
+      "prob_fake": 0.5052435398101807
+    },
+    {
+      "sample_id": "s9",
+      "prob_fake": 0.5052435398101807
+    },
+    {
+      "sample_id": "s10",
+      "prob_fake": 0.5052435398101807
+    },
+    {
+      "sample_id": "s11",
+      "prob_fake": 0.5052435398101807
+    },
+    {
+      "sample_id": "s12",
+      "prob_fake": 0.5052435398101807
+    }
+  ],
+  "seconds": 2.0632505025714636,
+  "peak_allocated_bytes": 71603712
+}

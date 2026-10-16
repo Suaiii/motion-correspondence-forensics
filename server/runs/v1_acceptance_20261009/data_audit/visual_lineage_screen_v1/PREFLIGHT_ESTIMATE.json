@@ -1,0 +1,17 @@
+{
+  "fixed24_wall_seconds": 7.190633051097393,
+  "fixed24_CPU_seconds": 10.596252999999997,
+  "estimated_8998_wall_seconds": 2695.8881747405976,
+  "estimated_8998_CPU_seconds": 3972.7118539166654,
+  "fixed24_statuses": {
+    "success": 24
+  },
+  "estimate_scope": "linear first24 estimate; differing durations/resolution/load may change cost",
+  "resource": {
+    "allocated": 34893824,
+    "logical": 34638777,
+    "free": 26890342400,
+    "peak_parent_RSS_KiB": 132956,
+    "peak_child_RSS_KiB": 132956
+  }
+}

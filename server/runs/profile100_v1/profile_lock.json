@@ -1,0 +1,8 @@
+{
+  "scope": "historical performance-only; not scientific detector validation",
+  "input_archive_sha256": "92cf3cbda8b0a2e68fbe3af483e232a5f4d0a2c1cdf328be91a7af881b9c6eee",
+  "source_manifest_sha256": "57d0787f4a9eb8520cdf8fade22f7803c019e22cefe119fe1defad1cc5800cf0",
+  "gpu_rate_cny": 1.88,
+  "allocated_gpu_hours": 4,
+  "created_utc": "2026-09-09T18:43:47.735893+00:00"
+}
