@@ -1,0 +1,190 @@
+[
+ {
+  "pool": "AAGenvid_RoboVidSM_v02",
+  "n": 4000,
+  "n_fake": 2000,
+  "generators": {
+   "real": 2000,
+   "OpenAI-Sora": 7,
+   "OpenSora": 990,
+   "T2V-Zero": 1003
+  },
+  "univariate_auc": {
+   "fps": 0.9968,
+   "frames": 0.996,
+   "duration": 0.9804,
+   "width": 0.998,
+   "height": 0.9977,
+   "aspect": 0.9955,
+   "pixels": 0.998,
+   "file_size": 0.9481,
+   "bitrate": 0.6344,
+   "tb_den": 0.5073
+  },
+  "gbdt_all_meta_cv_auc": 0.9996,
+  "per_generator_gbdt_cv_auc": {
+   "OpenAI-Sora": {
+    "n_fake": 7,
+    "auc": null
+   },
+   "OpenSora": {
+    "n_fake": 990,
+    "auc": 0.9998
+   },
+   "T2V-Zero": {
+    "n_fake": 1003,
+    "auc": 0.9996
+   }
+  },
+  "medians": {
+   "real": {
+    "fps": 29.97,
+    "frames": 188.5,
+    "duration": 6.907,
+    "width": 1280.0,
+    "height": 720.0,
+    "aspect": 1.778,
+    "pixels": 921600.0,
+    "file_size": 1405383.5,
+    "bitrate": 1541159.806,
+    "tb_den": 24000.0
+   },
+   "fake": {
+    "fps": 4.0,
+    "frames": 8.0,
+    "duration": 2.0,
+    "width": 512.0,
+    "height": 512.0,
+    "aspect": 1.0,
+    "pixels": 262144.0,
+    "file_size": 257398.5,
+    "bitrate": 1029594.0,
+    "tb_den": 16384.0
+   }
+  }
+ },
+ {
+  "pool": "AEGIS_HardTest",
+  "n": 436,
+  "n_fake": 218,
+  "generators": {
+   "kling": 111,
+   "sora": 107,
+   "real_dvf": 109,
+   "real_youtube": 109
+  },
+  "univariate_auc": {
+   "fps": 0.6042,
+   "frames": 0.5967,
+   "duration": 0.8541,
+   "width": 0.6568,
+   "height": 0.5135,
+   "aspect": 0.5322,
+   "pixels": 0.6182,
+   "file_size": 0.7255,
+   "bitrate": 0.7231,
+   "tb_den": 0.6309
+  },
+  "gbdt_all_meta_cv_auc": 0.9998,
+  "per_generator_gbdt_cv_auc": {
+   "kling": {
+    "n_fake": 111,
+    "auc": 0.9998
+   },
+   "sora": {
+    "n_fake": 107,
+    "auc": 0.9996
+   }
+  },
+  "medians": {
+   "real": {
+    "fps": 29.97,
+    "frames": 149.0,
+    "duration": 4.981,
+    "width": 1280.0,
+    "height": 720.0,
+    "aspect": 1.778,
+    "pixels": 921600.0,
+    "file_size": 5256059.5,
+    "bitrate": 8434023.848,
+    "tb_den": 15360.0
+   },
+   "fake": {
+    "fps": 24.0,
+    "frames": 121.0,
+    "duration": 5.042,
+    "width": 854.0,
+    "height": 720.0,
+    "aspect": 1.778,
+    "pixels": 921600.0,
+    "file_size": 1390256.0,
+    "bitrate": 1960865.851,
+    "tb_den": 12288.0
+   }
+  }
+ },
+ {
+  "pool": "AIGVDBench_ext",
+  "n": 2999,
+  "n_fake": 1500,
+  "generators": {
+   "Luma": 500,
+   "Pika": 500,
+   "Vidu": 500,
+   "real": 1499
+  },
+  "univariate_auc": {
+   "fps": 0.7482,
+   "frames": 0.8317,
+   "duration": 0.7762,
+   "width": 0.992,
+   "height": 0.9597,
+   "aspect": 0.6179,
+   "pixels": 0.9836,
+   "file_size": 0.8816,
+   "bitrate": 0.8467,
+   "tb_den": 0.6628
+  },
+  "gbdt_all_meta_cv_auc": 1.0,
+  "per_generator_gbdt_cv_auc": {
+   "Luma": {
+    "n_fake": 500,
+    "auc": 0.9997
+   },
+   "Pika": {
+    "n_fake": 500,
+    "auc": 1.0
+   },
+   "Vidu": {
+    "n_fake": 500,
+    "auc": 1.0
+   }
+  },
+  "medians": {
+   "real": {
+    "fps": 29.97,
+    "frames": 154.0,
+    "duration": 5.714,
+    "width": 1920.0,
+    "height": 1080.0,
+    "aspect": 1.778,
+    "pixels": 2073600.0,
+    "file_size": 3029171.0,
+    "bitrate": 3970581.56,
+    "tb_den": 11988.0
+   },
+   "fake": {
+    "fps": 24.0,
+    "frames": 121.0,
+    "duration": 5.042,
+    "width": 1280.0,
+    "height": 720.0,
+    "aspect": 1.778,
+    "pixels": 921600.0,
+    "file_size": 658575.5,
+    "bitrate": 1463038.964,
+    "tb_den": 12288.0
+   }
+  }
+ }
+]
