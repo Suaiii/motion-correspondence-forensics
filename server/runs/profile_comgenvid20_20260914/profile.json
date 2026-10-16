@@ -1,0 +1,24 @@
+{
+  "scope": "server_profile",
+  "environment": {
+    "python": "3.12.3",
+    "platform": "Linux-5.15.0-60-generic-x86_64-with-glibc2.35",
+    "torch": "2.8.0+cu128",
+    "numpy": "2.2.6",
+    "opencv": "4.12.0",
+    "cpu_count": 16.0,
+    "cuda": true,
+    "host_cpu_count": 192,
+    "cpu_quota_cores": 16.0,
+    "memory_limit_bytes": 85899345920,
+    "gpu": "NVIDIA GeForce RTX 4090 D",
+    "vram_bytes": 25262096384
+  },
+  "attempted": 0,
+  "completed": 0,
+  "wall_seconds": 0.0005606859922409058,
+  "peak_allocated_bytes": 203776,
+  "records": [],
+  "actual_provider_cost_cny": null,
+  "note": "Inference profile includes decode, flow and all controls. Not a training throughput or cloud billing receipt."
+}

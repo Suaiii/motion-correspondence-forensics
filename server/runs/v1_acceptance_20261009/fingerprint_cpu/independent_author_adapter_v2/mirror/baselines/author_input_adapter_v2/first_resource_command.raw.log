@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/author_input_adapter_v2/startup_remote.py", line 17, in <module>
+    locks={n:hashlib.sha256((D4/n).read_bytes()).hexdigest() for n in files}
+                            ^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/pathlib.py", line 1019, in read_bytes
+    with self.open(mode='rb') as f:
+         ^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/pathlib.py", line 1013, in open
+    return io.open(self, mode, buffering, encoding, errors, newline)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+FileNotFoundError: [Errno 2] No such file or directory: '/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1/parity.jsonl'

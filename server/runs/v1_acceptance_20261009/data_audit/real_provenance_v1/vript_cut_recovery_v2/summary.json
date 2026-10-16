@@ -1,0 +1,15 @@
+{
+  "archives": 1095,
+  "complete_archives": 1095,
+  "failed_archives": [],
+  "source_ids_found": 828,
+  "source_ids_missing": [],
+  "cut_metadata_files": 828,
+  "clip_records": 2000,
+  "byte_matched_clip_records": 2000,
+  "metadata_bytes_received_new": 48664797,
+  "no_video_payload_requested": true,
+  "wall_seconds": 1072.0324782654643,
+  "independent_review": "pending",
+  "mechanism_gate": "FAIL_preserved"
+}

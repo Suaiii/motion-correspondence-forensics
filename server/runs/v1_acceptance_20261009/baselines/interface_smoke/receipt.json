@@ -1,0 +1,85 @@
+{
+  "status": "passed",
+  "checks": [
+    {
+      "name": "CLI_matches_function_metric_object",
+      "pass": true
+    },
+    {
+      "name": "adapter_exports_fake_positive_schema_row",
+      "pass": true
+    },
+    {
+      "name": "JSON_schema_validates_fixture_and_adapter_rows",
+      "pass": true
+    }
+  ],
+  "processes": [
+    {
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluation.py",
+        "calibrate",
+        "--predictions",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\remote_smoke\\calibration_fixture.jsonl",
+        "--output",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\interface_smoke\\threshold_lock.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\interface_smoke\\\\threshold_lock.json\", \"scientific_gate_passed\": false}\n",
+      "stderr": "",
+      "wall_seconds": 0.11881949999951757
+    },
+    {
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluation.py",
+        "evaluate",
+        "--predictions",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\remote_smoke\\audit_fixture.jsonl",
+        "--threshold-lock",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\interface_smoke\\threshold_lock.json",
+        "--bootstrap",
+        "200",
+        "--output",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\interface_smoke\\metrics.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\interface_smoke\\\\metrics.json\", \"scientific_gate_passed\": false}\n",
+      "stderr": "",
+      "wall_seconds": 0.13449599999876227
+    },
+    {
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\offline_adapters.py",
+        "--method",
+        "d3",
+        "--embeddings",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\remote_smoke\\embedding_fixture.npy",
+        "--feature-lock",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\interface_smoke\\feature_lock.json",
+        "--prediction-template",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\interface_smoke\\prediction_template.json",
+        "--output",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\interface_smoke\\adapter_output.json"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "wall_seconds": 0.29452329999912763
+    }
+  ],
+  "jsonschema": "passed",
+  "wall_seconds": 2.3585266999943997,
+  "gpu_started": false,
+  "fixture": true,
+  "real_media_read": false,
+  "scientific_gate_passed": false,
+  "code_sha256": {
+    "evaluation.py": "a3fb408e8c84a9ec959331f2e575904652a87607c9a2f7308594bc6cade9b8d2",
+    "offline_adapters.py": "8889819b6401b8857c7dfb30e0fd36e6ac4a36063ce3a60ba1308d3e3108c820",
+    "interface_smoke.py": "98661d53ca46e141d8933c5673f73b42be0b3d0f7ee718edde7eaab5880a4667",
+    "prediction_schema.json": "279df250d558a2c56fb5caa758d152394aaeb603ad1c3dbd3bc26b504f17c627"
+  }
+}

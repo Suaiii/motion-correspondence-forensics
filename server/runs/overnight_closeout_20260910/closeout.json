@@ -1,0 +1,59 @@
+{
+  "observed_utc": "2026-09-10T02:39:32.121666+00:00",
+  "planned_deadline_utc": "2026-09-09T22:00:00+00:00",
+  "deadline_already_passed": true,
+  "new_experiments_started": false,
+  "formal_training_started": false,
+  "stopped_project_processes": [],
+  "files": [
+    {
+      "path": "GenVidBench/Pair1/ms.rar",
+      "expected_bytes": 2750170191,
+      "complete_file_exists": true,
+      "partial_bytes": 0,
+      "actual_bytes": 2750170191,
+      "download_receipt": {
+        "sha256": "27359fa0ff7aa94802bcbed73701fcfedeb0b49a4e8767e0480d67f639d1e70d",
+        "revision": "701cafb6f999d7ea0cbf3c354df6177311a4d824",
+        "repo": "jian-0/GenVidBench",
+        "path": "GenVidBench/Pair1/ms.rar",
+        "bytes": 2750170191
+      },
+      "receipt_matches_pinned_sha256": true
+    },
+    {
+      "path": "GenVidBench/Pair1/vc2.rar",
+      "expected_bytes": 8441750517,
+      "complete_file_exists": true,
+      "partial_bytes": 0,
+      "actual_bytes": 8441750517,
+      "download_receipt": {
+        "sha256": "e9d68507e10c882e834146451e2d0ede5befaebfa8e7d36a977d3fe672531589",
+        "revision": "701cafb6f999d7ea0cbf3c354df6177311a4d824",
+        "repo": "jian-0/GenVidBench",
+        "path": "GenVidBench/Pair1/vc2.rar",
+        "bytes": 8441750517
+      },
+      "receipt_matches_pinned_sha256": true
+    }
+  ],
+  "download_status": {
+    "attempts": [
+      {
+        "attempt": 1,
+        "exit_code": 1,
+        "time_utc": "2026-09-09T20:29:44.201901+00:00"
+      },
+      {
+        "attempt": 2,
+        "exit_code": 0,
+        "time_utc": "2026-09-09T20:42:46.694735+00:00"
+      }
+    ],
+    "complete": true,
+    "scientific_training_started": false,
+    "budget_reservation": "data-acquisition-20260910"
+  },
+  "previous_profile_complete": true,
+  "original_video_files_preserved": true
+}

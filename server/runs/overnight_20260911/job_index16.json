@@ -1,0 +1,19 @@
+{
+  "pid": 3963,
+  "start_ticks": "4203913827",
+  "command": [
+    "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+    "/root/autodl-tmp/cvpr27/incoming/night20260911/night_qc_index16.py",
+    "--run-dir",
+    "/root/autodl-tmp/cvpr27/runs/overnight_20260911/index16_diagnostic",
+    "--selection",
+    "/root/autodl-tmp/cvpr27/incoming/night20260911/night_qc_selection_20260911.json",
+    "--archive-root",
+    "/root/autodl-tmp/cvpr27/data/releases/jian-0/GenVidBench/GenVidBench/Pair1",
+    "--deadline",
+    "2026-09-11T10:00:00+08:00",
+    "--workers",
+    "12"
+  ],
+  "started_utc": "2026-09-10T15:29:11.730581+00:00"
+}

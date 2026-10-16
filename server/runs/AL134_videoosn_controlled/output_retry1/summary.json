@@ -1,0 +1,45 @@
+{
+  "paired": [
+    {
+      "seed": 11,
+      "candidate_auc": 0.6,
+      "strongest_baseline_auc": 0.8,
+      "delta": -0.20000000000000007
+    },
+    {
+      "seed": 23,
+      "candidate_auc": 1.0,
+      "strongest_baseline_auc": 1.0,
+      "delta": 0.0
+    },
+    {
+      "seed": 37,
+      "candidate_auc": 0.75,
+      "strongest_baseline_auc": 0.75,
+      "delta": 0.0
+    },
+    {
+      "seed": 53,
+      "candidate_auc": 0.4,
+      "strongest_baseline_auc": 0.6,
+      "delta": -0.19999999999999996
+    }
+  ],
+  "mean_delta": -0.1,
+  "descriptive_95_ci": [
+    -0.2602724347270401,
+    0.06027243472704011
+  ],
+  "positive_seed_count": 0,
+  "n_seeds": 4,
+  "source_counts": {
+    "videoOSN_raw": 20
+  },
+  "fake_generators": [
+    "videoOSN_fake"
+  ],
+  "formal_gate": false,
+  "status": "controlled_pilot_not_formal",
+  "source_control": "constant source videoOSN_raw; source-only predictor is undefined/constant",
+  "n_rows": 20
+}

@@ -1,0 +1,11 @@
+{
+  "scope": "Development content-similarity triage only; no verified ancestry or classifier fitting",
+  "neighbor_count": 5,
+  "candidate_cosine_min": 0.98,
+  "pooling": "mean of 16 frozen CLS features; L2 normalize",
+  "device": "cuda",
+  "block_rows": 1024,
+  "model_lock_sha256": "182631cca4dd90a78cc83dadb6a6a81dbcef33a52a99dfda1dcb492afdc36de8",
+  "script_sha256": "00b0205a5b66a3bb1512548633c88db55278d33158773b7ece12e1ad933663e2",
+  "selection_sha256": "8689e6b5bd0a434ef4c28000054d5fd276709798f8d22343c847e4aeccece5c4"
+}

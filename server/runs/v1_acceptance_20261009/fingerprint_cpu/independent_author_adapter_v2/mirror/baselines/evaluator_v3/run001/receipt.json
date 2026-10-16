@@ -1,0 +1,281 @@
+{
+  "status": "pass",
+  "checks": [
+    {
+      "case": "original_D5_repeat_last_rewind",
+      "pass": true,
+      "details": "repeat_last_order_rewind"
+    },
+    {
+      "case": "legal_repeat_last_suffix",
+      "pass": true,
+      "details": {
+        "contract_version": "admission/3.0",
+        "prediction_schema_sha256": "96c042cda2c0fc6bd0b280cd1d15bb7c19e37e4f22441cd224a28e16e45bf866",
+        "n_rows": 2,
+        "n_input_slots": 8,
+        "sum_unique_native_frames_per_video": 6,
+        "reference_policy_records": [
+          {
+            "status": "known_repeat_last_suffix_verified",
+            "strategy": "author_repeat_last"
+          },
+          {
+            "status": "known_repeat_last_suffix_verified",
+            "strategy": "author_repeat_last"
+          }
+        ],
+        "synthetic_identity": true,
+        "scientific_gate_passed": false
+      }
+    },
+    {
+      "case": "repeat_last_internal_duplication",
+      "pass": true,
+      "details": "repeat_last_internal_repeat_not_suffix"
+    },
+    {
+      "case": "legitimate_monotonic_FPS_repeats",
+      "pass": true,
+      "details": null
+    },
+    {
+      "case": "FPS_name_does_not_hide_rewind",
+      "pass": true,
+      "details": "fps_resampling_order_rewind"
+    },
+    {
+      "case": "explicit_order_control_identity",
+      "pass": true,
+      "details": null
+    },
+    {
+      "case": "control_cannot_reuse_identity_processing",
+      "pass": true,
+      "details": "temporal_control_processing_identity_missing"
+    },
+    {
+      "case": "actual_C5_27_scoreless_records_admitted",
+      "pass": true,
+      "details": {
+        "methods": {
+          "d3": 12,
+          "restrav": 12,
+          "native_scale": 3
+        }
+      }
+    },
+    {
+      "case": "staged_internal_repeat_then_last_pad",
+      "pass": true,
+      "details": null
+    },
+    {
+      "case": "staged_repeat_last_back_to_first_rejected",
+      "pass": true,
+      "details": "repeat_last_stage_not_prefix_plus_last_suffix"
+    },
+    {
+      "case": "CLI_library_D5_original",
+      "pass": true,
+      "details": {
+        "case": "D5_original",
+        "argv": [
+          "E:\\anaconda\\python.exe",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+          "evaluate",
+          "--predictions",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\D5_original.jsonl",
+          "--bootstrap",
+          "0",
+          "--output",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\D5_original.actual.json"
+        ],
+        "exit_code": 2,
+        "stdout": "",
+        "stderr": "{\"status\": \"rejected\", \"error_type\": \"ValueError\", \"error\": \"repeat_last_order_rewind\"}\n"
+      }
+    },
+    {
+      "case": "CLI_library_legal_tail",
+      "pass": true,
+      "details": {
+        "case": "legal_tail",
+        "argv": [
+          "E:\\anaconda\\python.exe",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+          "evaluate",
+          "--predictions",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_tail.jsonl",
+          "--bootstrap",
+          "0",
+          "--output",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_tail.actual.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\evaluator_v3\\\\run001\\\\legal_tail.actual.json\", \"scientific_gate_passed\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "CLI_library_legal_FPS",
+      "pass": true,
+      "details": {
+        "case": "legal_FPS",
+        "argv": [
+          "E:\\anaconda\\python.exe",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+          "evaluate",
+          "--predictions",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_FPS.jsonl",
+          "--bootstrap",
+          "0",
+          "--output",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_FPS.actual.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\evaluator_v3\\\\run001\\\\legal_FPS.actual.json\", \"scientific_gate_passed\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "CLI_library_explicit_control",
+      "pass": true,
+      "details": {
+        "case": "explicit_control",
+        "argv": [
+          "E:\\anaconda\\python.exe",
+          "-I",
+          "-B",
+          "-X",
+          "utf8",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+          "evaluate",
+          "--predictions",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\explicit_control.jsonl",
+          "--bootstrap",
+          "0",
+          "--output",
+          "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\explicit_control.actual.json"
+        ],
+        "exit_code": 0,
+        "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\evaluator_v3\\\\run001\\\\explicit_control.actual.json\", \"scientific_gate_passed\": false}\n",
+        "stderr": ""
+      }
+    },
+    {
+      "case": "arithmetic_and_support_logic_byte_unchanged",
+      "pass": true,
+      "details": {
+        "arithmetic_v1.py": true,
+        "support.py": true,
+        "support_schema_v2.json": true
+      }
+    }
+  ],
+  "CLI": [
+    {
+      "case": "D5_original",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+        "evaluate",
+        "--predictions",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\D5_original.jsonl",
+        "--bootstrap",
+        "0",
+        "--output",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\D5_original.actual.json"
+      ],
+      "exit_code": 2,
+      "stdout": "",
+      "stderr": "{\"status\": \"rejected\", \"error_type\": \"ValueError\", \"error\": \"repeat_last_order_rewind\"}\n"
+    },
+    {
+      "case": "legal_tail",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+        "evaluate",
+        "--predictions",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_tail.jsonl",
+        "--bootstrap",
+        "0",
+        "--output",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_tail.actual.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\evaluator_v3\\\\run001\\\\legal_tail.actual.json\", \"scientific_gate_passed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "case": "legal_FPS",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+        "evaluate",
+        "--predictions",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_FPS.jsonl",
+        "--bootstrap",
+        "0",
+        "--output",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\legal_FPS.actual.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\evaluator_v3\\\\run001\\\\legal_FPS.actual.json\", \"scientific_gate_passed\": false}\n",
+      "stderr": ""
+    },
+    {
+      "case": "explicit_control",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-I",
+        "-B",
+        "-X",
+        "utf8",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\evaluation.py",
+        "evaluate",
+        "--predictions",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\explicit_control.jsonl",
+        "--bootstrap",
+        "0",
+        "--output",
+        "E:\\aNB\\TECH\\\u8109\u51b2\u795e\u7ecf\u7f51\u7edc\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\evaluator_v3\\run001\\explicit_control.actual.json"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"output\": \"E:\\\\aNB\\\\TECH\\\\\\u8109\\u51b2\\u795e\\u7ecf\\u7f51\\u7edc\\\\research-runs\\\\V1_ACCEPTANCE_20261009\\\\baselines\\\\evaluator_v3\\\\run001\\\\explicit_control.actual.json\", \"scientific_gate_passed\": false}\n",
+      "stderr": ""
+    }
+  ],
+  "wall_seconds": 1.5358400999975856,
+  "original_D5_input_sha256": "d622460c5767b800f5f3be16f4406dc82448c0cc4d1e170f5edddf21d3031264",
+  "input_scores_changed": false,
+  "model_encoder_head_calls": 0,
+  "GPU": false,
+  "independent_review": false,
+  "scientific_gate_passed": false
+}

@@ -1,0 +1,45 @@
+{
+  "version": "C10_first_actual_D3_CPU/1.0",
+  "method": "D3",
+  "encoder_type": "XCLIP-16",
+  "loss_type": "l2",
+  "track": "native_reference",
+  "seed": 0,
+  "batch_size": 1,
+  "dtype": "float32",
+  "device": "cpu",
+  "threads": 2,
+  "CPU_affinity": [
+    4,
+    5
+  ],
+  "group_RSS_cap_bytes": 4294967296,
+  "output_cap_bytes": 33554432,
+  "namespace_cap_bytes": 134217728,
+  "selection_rule": "all12 original D4 fit rows; A10 conservative gate applied; no additions/exclusions found",
+  "expected_samples": 12,
+  "class_counts": {
+    "real": 4,
+    "fake": 8
+  },
+  "generators": {
+    "real": 4,
+    "OpenSora": 4,
+    "T2V-Zero": 4
+  },
+  "source_role": "fit",
+  "fit_or_training_steps": 0,
+  "score_raw": "author adjacent L2 first-difference sample_std",
+  "score_fake": "-score_raw",
+  "input_route": "unchanged author FPS8 JPEG/BGR prepared reader; first8/16 per originalrecord, no video re-decode",
+  "native_time_field": "pkt_pts",
+  "prepared_JPEG_files": 199,
+  "success_acceptance": "12 real model consumption/prediction records with fixeddenominator, input/key/shape checks, timings and memory",
+  "benchmark_metrics_or_threshold_tuning": false,
+  "generalization_or_mechanism_acceptance": false,
+  "GPU_authorized": false,
+  "original_video_preparation_cost_measured_here": false,
+  "automatic_restart_on_observation_timeout": false,
+  "original_failure_preservation": true,
+  "successful_members_automatically_repeated": false
+}

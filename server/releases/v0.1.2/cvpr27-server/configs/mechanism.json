@@ -1,0 +1,17 @@
+{
+  "stage": "mechanism",
+  "seeds": [17, 29, 43],
+  "arms": ["raw", "correct", "wrong", "fractional", "self_warp"],
+  "sampling": {"frames": 16, "fps": 8, "window_sec": 2, "size": 224},
+  "controls": {"support": "interior", "margin": 16, "flow_bound": 12, "kernel": "linear"},
+  "conditions": ["clean", "h264_23"],
+  "training": {"epochs": 20, "batch_size": 8, "lr": 0.001, "weight_decay": 0.0001, "conditions": ["clean"]},
+  "minimum_per_class": 30,
+  "minimum_retained_total": 5400,
+  "cpu_threads": 4,
+  "workers": 4,
+  "max_cache_gib": 80,
+  "max_fit_seconds": 14400,
+  "bootstrap_replicates": 2000,
+  "protocol_note": "Development mechanism only; train clean; two real sources and four fake generators required after QC. Common-support and estimator studies require separately frozen runs."
+}

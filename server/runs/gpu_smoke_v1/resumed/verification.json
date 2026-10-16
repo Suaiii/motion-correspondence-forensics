@@ -1,0 +1,8 @@
+{
+  "verdict": "passed",
+  "metric_groups": 2,
+  "method": "saved-prediction and pairwise metric recomputation",
+  "independent_scientific_review": false,
+  "checkpoint_inference_replayed": false,
+  "code_hash": "dfa2958428074c61a885732d21a915f567368fcd0c8f03771b1f1fc7f28c03cf"
+}

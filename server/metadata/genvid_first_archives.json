@@ -1,0 +1,33 @@
+{
+  "repo": "jian-0/GenVidBench",
+  "revision": "701cafb6f999d7ea0cbf3c354df6177311a4d824",
+  "files": [
+    {
+      "type": "file",
+      "oid": "e1db4069639b35bdc3e6e97ec0ce9f06a56622b7",
+      "size": 2750170191,
+      "lfs": {
+        "oid": "27359fa0ff7aa94802bcbed73701fcfedeb0b49a4e8767e0480d67f639d1e70d",
+        "size": 2750170191,
+        "pointerSize": 135
+      },
+      "xetHash": "118888d4218e0ae6fa8920f75b35f3bceea6d63299275feade5b3b2c1d943560",
+      "path": "GenVidBench/Pair1/ms.rar"
+    },
+    {
+      "type": "file",
+      "oid": "09d2a51cacc995ac50d9abfba769ab9d470313da",
+      "size": 8441750517,
+      "lfs": {
+        "oid": "e9d68507e10c882e834146451e2d0ede5befaebfa8e7d36a977d3fe672531589",
+        "size": 8441750517,
+        "pointerSize": 135
+      },
+      "xetHash": "95a3257bb090ca88e26f5b1b93917cdafbd436492030cc446cc31a14e5713d1e",
+      "path": "GenVidBench/Pair1/vc2.rar"
+    }
+  ],
+  "total_bytes": 11191920708,
+  "catalog_sha256": "ab67059b781a9a73f7186b32afd3f8da0e2c1d0096f3b992b5c827f69712fd5e",
+  "warning": "Archive-level downloads only; member selection and provenance audit still required"
+}

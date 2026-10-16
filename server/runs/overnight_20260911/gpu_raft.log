@@ -1,0 +1,12 @@
+{"completed": 80, "requested": 1000, "elapsed_sec": 14.713234528899193, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 160, "requested": 1000, "elapsed_sec": 19.909243151545525, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 240, "requested": 1000, "elapsed_sec": 24.730669163167477, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 320, "requested": 1000, "elapsed_sec": 29.77221892029047, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 400, "requested": 1000, "elapsed_sec": 34.54644702374935, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 480, "requested": 1000, "elapsed_sec": 38.517795853316784, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 560, "requested": 1000, "elapsed_sec": 44.49389886111021, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 640, "requested": 1000, "elapsed_sec": 51.9406922608614, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 720, "requested": 1000, "elapsed_sec": 59.87883149087429, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 800, "requested": 1000, "elapsed_sec": 68.11954766511917, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 880, "requested": 1000, "elapsed_sec": 76.56781203299761, "peak_gpu_allocated_gib": 0.029824256896972656}
+{"completed": 960, "requested": 1000, "elapsed_sec": 83.53145273774862, "peak_gpu_allocated_gib": 0.029824256896972656}

@@ -1,0 +1,14 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/AL142_ortho_velocity_lif/AL142_ortho_velocity_lif.py", line 141, in <module>
+    ap=argparse.ArgumentParser(); ap.add_argument("--run-dir",type=Path,required=True); ap.add_argument("--device",default="cuda:0"); args=ap.parse_args(); run(args)
+                                                                                                                                                            ^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL142_ortho_velocity_lif/AL142_ortho_velocity_lif.py", line 124, in run
+    br["auc_"+kind]=evaluate(raw,sem,mu_v,sd_v,test,y_np,"cuda",kind,False,seed)
+                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL142_ortho_velocity_lif/AL142_ortho_velocity_lif.py", line 96, in evaluate
+    return auc(y[test],p)
+           ^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL142_ortho_velocity_lif/AL142_ortho_velocity_lif.py", line 73, in auc
+    pos=score[y==1]; neg=score[y==0]
+        ~~~~~^^^^^^
+IndexError: boolean index did not match indexed array along axis 0; size of axis is 122 but size of corresponding boolean axis is 36

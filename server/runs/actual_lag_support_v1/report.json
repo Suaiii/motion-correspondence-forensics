@@ -1,0 +1,895 @@
+{
+  "complete": true,
+  "rows": 28868,
+  "audits": [
+    {
+      "view": "all_adjacent",
+      "quantum_seconds": 0.001,
+      "target_lag_seconds": null,
+      "tolerance_seconds": null,
+      "counts": {
+        "vc2": 13501,
+        "ms": 13499,
+        "vript": 1672,
+        "cogvideo": 98,
+        "hd_vg_130m": 98
+      },
+      "lag_eligible_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 98,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 1672
+      },
+      "bins": 41,
+      "mixed_class_bins": 1,
+      "all_source_common_bins": 0,
+      "all_source_supported_counts": {
+        "cogvideo": 0,
+        "hd_vg_130m": 0,
+        "ms": 0,
+        "vc2": 0,
+        "vript": 0
+      },
+      "real_fake_source_pairs": [
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "hd_vg_130m": 2,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "hd_vg_130m": 2,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.02040816326530612,
+          "largest_within_bin_mean_timing_difference": 6.250000000007638e-05
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "hd_vg_130m": 2,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "hd_vg_130m": 2,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.02040816326530612,
+          "largest_within_bin_mean_timing_difference": 6.250000000007638e-05
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "vc2",
+          "common_bins": 0,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "hd_vg_130m": 0,
+            "vc2": 0
+          },
+          "supported_groups": {
+            "hd_vg_130m": 0,
+            "vc2": 0
+          },
+          "discrete_overlap_coefficient": 0,
+          "largest_within_bin_mean_timing_difference": null
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 1672,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "vript": 172,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "vript": 172,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.10287081339712918,
+          "largest_within_bin_mean_timing_difference": 8.9389534884049e-05
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 1672,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "vript": 172,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "vript": 172,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.10287081339712918,
+          "largest_within_bin_mean_timing_difference": 8.9389534884049e-05
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "vc2",
+          "common_bins": 0,
+          "eligible_counts": {
+            "vript": 1672,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "vript": 0,
+            "vc2": 0
+          },
+          "supported_groups": {
+            "vript": 0,
+            "vc2": 0
+          },
+          "discrete_overlap_coefficient": 0,
+          "largest_within_bin_mean_timing_difference": null
+        }
+      ],
+      "classifier_scores_used": false,
+      "interpretation": "Descriptive overlap of observed timing only. Quantization is not timing removal; no detector or causal claim."
+    },
+    {
+      "view": "all_adjacent",
+      "quantum_seconds": 0.002,
+      "target_lag_seconds": null,
+      "tolerance_seconds": null,
+      "counts": {
+        "vc2": 13501,
+        "ms": 13499,
+        "vript": 1672,
+        "cogvideo": 98,
+        "hd_vg_130m": 98
+      },
+      "lag_eligible_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 98,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 1672
+      },
+      "bins": 39,
+      "mixed_class_bins": 1,
+      "all_source_common_bins": 0,
+      "all_source_supported_counts": {
+        "cogvideo": 0,
+        "hd_vg_130m": 0,
+        "ms": 0,
+        "vc2": 0,
+        "vript": 0
+      },
+      "real_fake_source_pairs": [
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "hd_vg_130m": 2,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "hd_vg_130m": 2,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.02040816326530612,
+          "largest_within_bin_mean_timing_difference": 6.250000000007638e-05
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "hd_vg_130m": 2,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "hd_vg_130m": 2,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.02040816326530612,
+          "largest_within_bin_mean_timing_difference": 6.250000000007638e-05
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "vc2",
+          "common_bins": 0,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "hd_vg_130m": 0,
+            "vc2": 0
+          },
+          "supported_groups": {
+            "hd_vg_130m": 0,
+            "vc2": 0
+          },
+          "discrete_overlap_coefficient": 0,
+          "largest_within_bin_mean_timing_difference": null
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 1672,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "vript": 170,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "vript": 170,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.10167464114832536,
+          "largest_within_bin_mean_timing_difference": 9.044117647091787e-05
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 1672,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "vript": 170,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "vript": 170,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.10167464114832536,
+          "largest_within_bin_mean_timing_difference": 9.044117647091787e-05
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "vc2",
+          "common_bins": 0,
+          "eligible_counts": {
+            "vript": 1672,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "vript": 0,
+            "vc2": 0
+          },
+          "supported_groups": {
+            "vript": 0,
+            "vc2": 0
+          },
+          "discrete_overlap_coefficient": 0,
+          "largest_within_bin_mean_timing_difference": null
+        }
+      ],
+      "classifier_scores_used": false,
+      "interpretation": "Descriptive overlap of observed timing only. Quantization is not timing removal; no detector or causal claim."
+    },
+    {
+      "view": "all_adjacent",
+      "quantum_seconds": 0.005,
+      "target_lag_seconds": null,
+      "tolerance_seconds": null,
+      "counts": {
+        "vc2": 13501,
+        "ms": 13499,
+        "vript": 1672,
+        "cogvideo": 98,
+        "hd_vg_130m": 98
+      },
+      "lag_eligible_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 98,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 1672
+      },
+      "bins": 34,
+      "mixed_class_bins": 1,
+      "all_source_common_bins": 0,
+      "all_source_supported_counts": {
+        "cogvideo": 0,
+        "hd_vg_130m": 0,
+        "ms": 0,
+        "vc2": 0,
+        "vript": 0
+      },
+      "real_fake_source_pairs": [
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "hd_vg_130m": 2,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "hd_vg_130m": 2,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.02040816326530612,
+          "largest_within_bin_mean_timing_difference": 6.250000000007638e-05
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "hd_vg_130m": 2,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "hd_vg_130m": 2,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.02040816326530612,
+          "largest_within_bin_mean_timing_difference": 6.250000000007638e-05
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "vc2",
+          "common_bins": 0,
+          "eligible_counts": {
+            "hd_vg_130m": 98,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "hd_vg_130m": 0,
+            "vc2": 0
+          },
+          "supported_groups": {
+            "hd_vg_130m": 0,
+            "vc2": 0
+          },
+          "discrete_overlap_coefficient": 0,
+          "largest_within_bin_mean_timing_difference": null
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 1672,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "vript": 172,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "vript": 172,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.10287081339712918,
+          "largest_within_bin_mean_timing_difference": 8.9389534884049e-05
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 1672,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "vript": 172,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "vript": 172,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.10287081339712918,
+          "largest_within_bin_mean_timing_difference": 8.9389534884049e-05
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "vc2",
+          "common_bins": 0,
+          "eligible_counts": {
+            "vript": 1672,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "vript": 0,
+            "vc2": 0
+          },
+          "supported_groups": {
+            "vript": 0,
+            "vc2": 0
+          },
+          "discrete_overlap_coefficient": 0,
+          "largest_within_bin_mean_timing_difference": null
+        }
+      ],
+      "classifier_scores_used": false,
+      "interpretation": "Descriptive overlap of observed timing only. Quantization is not timing removal; no detector or causal claim."
+    },
+    {
+      "view": "half_second",
+      "quantum_seconds": 0.001,
+      "target_lag_seconds": 0.5,
+      "tolerance_seconds": 0.002,
+      "counts": {
+        "vc2": 13501,
+        "ms": 13499,
+        "vript": 1672,
+        "cogvideo": 98,
+        "hd_vg_130m": 98
+      },
+      "lag_eligible_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 83,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 998
+      },
+      "bins": 2,
+      "mixed_class_bins": 1,
+      "all_source_common_bins": 1,
+      "all_source_supported_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 63,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 661
+      },
+      "real_fake_source_pairs": [
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "hd_vg_130m": 63,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "hd_vg_130m": 63,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.7590361445783133,
+          "largest_within_bin_mean_timing_difference": 0.00017460317460293862
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "hd_vg_130m": 63,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "hd_vg_130m": 63,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.7590361445783133,
+          "largest_within_bin_mean_timing_difference": 0.00017460317460293862
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "vc2",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "hd_vg_130m": 63,
+            "vc2": 13501
+          },
+          "supported_groups": {
+            "hd_vg_130m": 63,
+            "vc2": 13501
+          },
+          "discrete_overlap_coefficient": 0.7590361445783133,
+          "largest_within_bin_mean_timing_difference": 0.00017460317460293862
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "vript": 661,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "vript": 661,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 0.6623246492985972,
+          "largest_within_bin_mean_timing_difference": 0.00028819969742799323
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "vript": 661,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "vript": 661,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 0.6623246492985972,
+          "largest_within_bin_mean_timing_difference": 0.00028819969742799323
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "vc2",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "vript": 661,
+            "vc2": 13501
+          },
+          "supported_groups": {
+            "vript": 661,
+            "vc2": 13501
+          },
+          "discrete_overlap_coefficient": 0.6623246492985972,
+          "largest_within_bin_mean_timing_difference": 0.00028819969742799323
+        }
+      ],
+      "classifier_scores_used": false,
+      "interpretation": "Descriptive overlap of observed timing only. Quantization is not timing removal; no detector or causal claim."
+    },
+    {
+      "view": "half_second",
+      "quantum_seconds": 0.002,
+      "target_lag_seconds": 0.5,
+      "tolerance_seconds": 0.002,
+      "counts": {
+        "vc2": 13501,
+        "ms": 13499,
+        "vript": 1672,
+        "cogvideo": 98,
+        "hd_vg_130m": 98
+      },
+      "lag_eligible_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 83,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 998
+      },
+      "bins": 1,
+      "mixed_class_bins": 1,
+      "all_source_common_bins": 1,
+      "all_source_supported_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 83,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 998
+      },
+      "real_fake_source_pairs": [
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "hd_vg_130m": 83,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "hd_vg_130m": 83,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00025301204819294654
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "hd_vg_130m": 83,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "hd_vg_130m": 83,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00025301204819294654
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "vc2",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "hd_vg_130m": 83,
+            "vc2": 13501
+          },
+          "supported_groups": {
+            "hd_vg_130m": 83,
+            "vc2": 13501
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00025301204819294654
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "vript": 998,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "vript": 998,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00036008617234462026
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "vript": 998,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "vript": 998,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00036008617234462026
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "vc2",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "vript": 998,
+            "vc2": 13501
+          },
+          "supported_groups": {
+            "vript": 998,
+            "vc2": 13501
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00036008617234462026
+        }
+      ],
+      "classifier_scores_used": false,
+      "interpretation": "Descriptive overlap of observed timing only. Quantization is not timing removal; no detector or causal claim."
+    },
+    {
+      "view": "half_second",
+      "quantum_seconds": 0.005,
+      "target_lag_seconds": 0.5,
+      "tolerance_seconds": 0.002,
+      "counts": {
+        "vc2": 13501,
+        "ms": 13499,
+        "vript": 1672,
+        "cogvideo": 98,
+        "hd_vg_130m": 98
+      },
+      "lag_eligible_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 83,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 998
+      },
+      "bins": 1,
+      "mixed_class_bins": 1,
+      "all_source_common_bins": 1,
+      "all_source_supported_counts": {
+        "cogvideo": 98,
+        "hd_vg_130m": 83,
+        "ms": 13499,
+        "vc2": 13501,
+        "vript": 998
+      },
+      "real_fake_source_pairs": [
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "hd_vg_130m": 83,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "hd_vg_130m": 83,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00025301204819294654
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "hd_vg_130m": 83,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "hd_vg_130m": 83,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00025301204819294654
+        },
+        {
+          "real_source": "hd_vg_130m",
+          "fake_source": "vc2",
+          "common_bins": 1,
+          "eligible_counts": {
+            "hd_vg_130m": 83,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "hd_vg_130m": 83,
+            "vc2": 13501
+          },
+          "supported_groups": {
+            "hd_vg_130m": 83,
+            "vc2": 13501
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00025301204819294654
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "cogvideo",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "cogvideo": 98
+          },
+          "supported_counts": {
+            "vript": 998,
+            "cogvideo": 98
+          },
+          "supported_groups": {
+            "vript": 998,
+            "cogvideo": 98
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00036008617234462026
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "ms",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "ms": 13499
+          },
+          "supported_counts": {
+            "vript": 998,
+            "ms": 13499
+          },
+          "supported_groups": {
+            "vript": 998,
+            "ms": 13499
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00036008617234462026
+        },
+        {
+          "real_source": "vript",
+          "fake_source": "vc2",
+          "common_bins": 1,
+          "eligible_counts": {
+            "vript": 998,
+            "vc2": 13501
+          },
+          "supported_counts": {
+            "vript": 998,
+            "vc2": 13501
+          },
+          "supported_groups": {
+            "vript": 998,
+            "vc2": 13501
+          },
+          "discrete_overlap_coefficient": 1.0,
+          "largest_within_bin_mean_timing_difference": 0.00036008617234462026
+        }
+      ],
+      "classifier_scores_used": false,
+      "interpretation": "Descriptive overlap of observed timing only. Quantization is not timing removal; no detector or causal claim."
+    }
+  ],
+  "formal_claim_released": false
+}

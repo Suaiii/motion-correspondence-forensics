@@ -1,0 +1,23 @@
+{
+  "status": "failed",
+  "returncode": 1,
+  "command": [
+    "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+    "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/video_evidence_dense_adapter.py",
+    "train",
+    "--selection",
+    "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/selection_dense_holdout_v1_8frame_quality_excluded_20261005.json",
+    "--manifest",
+    "/srv/video_evidence_v1/v1_manifest.jsonl",
+    "--features",
+    "/srv/video_evidence_v1/runs/dino_features",
+    "--output",
+    "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/AL145_dense_baseline_quality_excluded_retry1_20261005"
+  ],
+  "selection_sha256": "c58634da5e9fa6bfe9f26aa1e66fbfc05b20d2c69a00d0b694a81005b0ccc9c3",
+  "manifest_sha256": "0687ca7b63d95776d341a3702a13ec96594fa9f323ca41c1714fd7d57f557d47",
+  "adapter_sha256": "80ea991be93062911c0d67ed7163fd50e12cb15e80f6455f580f2822407e9a54",
+  "features_lock_sha256": "e902b549ab279eff14f4c45506de3ba6ad4d8584ee3c76bde78fa101b4e878ed",
+  "formal_gate_passed": false,
+  "scope": "strong dense baseline gate; no mechanism acceptance"
+}

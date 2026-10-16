@@ -1,0 +1,21 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003/AL132_temporal_event_snn.py", line 311, in <module>
+    main()
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003/AL132_temporal_event_snn.py", line 297, in main
+    result = fit_eval(x, rows, args.device if torch.cuda.is_available() else "cpu", args.run_dir / "results.json")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003/AL132_temporal_event_snn.py", line 223, in fit_eval
+    train_model(model, xn, y, train, seed)
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003/AL132_temporal_event_snn.py", line 202, in train_model
+    loss = loss_fn(model(x[b]), y[b])
+                   ^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1773, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1784, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003/AL132_temporal_event_snn.py", line 156, in forward
+    vf = self.alpha_fast * uf + (1 - self.alpha_fast) * z
+         ~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~
+RuntimeError: The size of tensor a (16) must match the size of tensor b (8) at non-singleton dimension 1

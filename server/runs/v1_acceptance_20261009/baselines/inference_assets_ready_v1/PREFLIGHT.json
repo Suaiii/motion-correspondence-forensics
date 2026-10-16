@@ -1,0 +1,33 @@
+{
+  "server_unix": 1791518337.1567402,
+  "free_bytes": 22752288768,
+  "required_bytes": 22384324608,
+  "margin_bytes": 367964160,
+  "reservations": {
+    "A10_prepared": {
+      "logical_bytes": 12065532,
+      "allocated_bytes": 12140544,
+      "charged_bytes": 12140544,
+      "remaining": 122077184,
+      "cap": 134217728
+    },
+    "C9_prepared": {
+      "logical_bytes": 554729034,
+      "allocated_bytes": 554766336,
+      "charged_bytes": 554766336,
+      "remaining": 787410944,
+      "cap": 1342177280
+    }
+  },
+  "peak_self_RSS_bytes": 16703488,
+  "private_group": 104048,
+  "current_group_RSS_bytes": 16699392,
+  "group_members": {
+    "104048": 16699392
+  },
+  "CPU_affinity": [
+    4,
+    5
+  ],
+  "accounting": "onefile_stat; charged=max(logical,allocated) perfile; complete_snapshot_beforeguard"
+}

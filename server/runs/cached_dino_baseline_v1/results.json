@@ -1,0 +1,284 @@
+{
+  "complete": true,
+  "scope": "exposed native16 cache exploratory baseline; not confirmatory",
+  "formal_gate_passed": false,
+  "results": [
+    {
+      "held_generator": "ms",
+      "fit_generator": "vc2",
+      "arm": "semantic",
+      "selected_C": 0.1,
+      "selected_converged": true,
+      "trials": [
+        {
+          "C": 0.1,
+          "calibration_bce": 0.0703224239416058,
+          "converged": true
+        },
+        {
+          "C": 1.0,
+          "calibration_bce": 0.09755335934255004,
+          "converged": true
+        },
+        {
+          "C": 10.0,
+          "calibration_bce": 0.14958113009745652,
+          "converged": true
+        }
+      ],
+      "metrics": {
+        "fit": {
+          "n": 9091,
+          "auc": 0.9999773237625869,
+          "bce": 0.015561572907608984
+        },
+        "calibration": {
+          "n": 3072,
+          "auc": 0.9929423277137073,
+          "bce": 0.0703224239416058
+        },
+        "in_domain_audit": {
+          "n": 3012,
+          "auc": 0.9877985829728335,
+          "bce": 0.08204558585825433
+        },
+        "held_generator_audit": {
+          "n": 3012,
+          "auc": 0.8434783403149255,
+          "bce": 2.0149872443976076
+        }
+      }
+    },
+    {
+      "held_generator": "ms",
+      "fit_generator": "vc2",
+      "arm": "semantic_delta",
+      "selected_C": 0.1,
+      "selected_converged": true,
+      "trials": [
+        {
+          "C": 0.1,
+          "calibration_bce": 0.048041471454579515,
+          "converged": true
+        },
+        {
+          "C": 1.0,
+          "calibration_bce": 0.0617184643662369,
+          "converged": true
+        },
+        {
+          "C": 10.0,
+          "calibration_bce": 0.09263302149170695,
+          "converged": true
+        }
+      ],
+      "metrics": {
+        "fit": {
+          "n": 9091,
+          "auc": 1.0,
+          "bce": 0.007524318345392033
+        },
+        "calibration": {
+          "n": 3072,
+          "auc": 0.9963695101407959,
+          "bce": 0.048041471454579515
+        },
+        "in_domain_audit": {
+          "n": 3012,
+          "auc": 0.993523564586198,
+          "bce": 0.047804393222534644
+        },
+        "held_generator_audit": {
+          "n": 3012,
+          "auc": 0.9259886528192081,
+          "bce": 0.9465817017364665
+        }
+      }
+    },
+    {
+      "held_generator": "ms",
+      "fit_generator": "vc2",
+      "arm": "semantic_velocity",
+      "selected_C": 0.1,
+      "selected_converged": true,
+      "trials": [
+        {
+          "C": 0.1,
+          "calibration_bce": 0.06198620091458298,
+          "converged": true
+        },
+        {
+          "C": 1.0,
+          "calibration_bce": 0.08018599006571796,
+          "converged": true
+        },
+        {
+          "C": 10.0,
+          "calibration_bce": 0.131572086391582,
+          "converged": true
+        }
+      ],
+      "metrics": {
+        "fit": {
+          "n": 9091,
+          "auc": 1.0,
+          "bce": 0.009160119853304304
+        },
+        "calibration": {
+          "n": 3072,
+          "auc": 0.9912678340832621,
+          "bce": 0.06198620091458298
+        },
+        "in_domain_audit": {
+          "n": 3012,
+          "auc": 0.9880304144644578,
+          "bce": 0.07204686273374422
+        },
+        "held_generator_audit": {
+          "n": 3012,
+          "auc": 0.868079887076365,
+          "bce": 1.5276116955879622
+        }
+      }
+    },
+    {
+      "held_generator": "vc2",
+      "fit_generator": "ms",
+      "arm": "semantic",
+      "selected_C": 0.1,
+      "selected_converged": true,
+      "trials": [
+        {
+          "C": 0.1,
+          "calibration_bce": 0.12058955238782539,
+          "converged": true
+        },
+        {
+          "C": 1.0,
+          "calibration_bce": 0.21035381005227477,
+          "converged": true
+        },
+        {
+          "C": 10.0,
+          "calibration_bce": 0.343542036770066,
+          "converged": true
+        }
+      ],
+      "metrics": {
+        "fit": {
+          "n": 9090,
+          "auc": 0.9998325146237412,
+          "bce": 0.028677087534222198
+        },
+        "calibration": {
+          "n": 3071,
+          "auc": 0.9802731122956406,
+          "bce": 0.12058955238782539
+        },
+        "in_domain_audit": {
+          "n": 3012,
+          "auc": 0.9818486220301587,
+          "bce": 0.11979252765280306
+        },
+        "held_generator_audit": {
+          "n": 3012,
+          "auc": 0.852218273346459,
+          "bce": 1.5720998370736843
+        }
+      }
+    },
+    {
+      "held_generator": "vc2",
+      "fit_generator": "ms",
+      "arm": "semantic_delta",
+      "selected_C": 0.1,
+      "selected_converged": true,
+      "trials": [
+        {
+          "C": 0.1,
+          "calibration_bce": 0.08926105382354063,
+          "converged": true
+        },
+        {
+          "C": 1.0,
+          "calibration_bce": 0.11899085323344763,
+          "converged": true
+        },
+        {
+          "C": 10.0,
+          "calibration_bce": 0.22027217115557746,
+          "converged": true
+        }
+      ],
+      "metrics": {
+        "fit": {
+          "n": 9090,
+          "auc": 1.0,
+          "bce": 0.011614340456216007
+        },
+        "calibration": {
+          "n": 3071,
+          "auc": 0.9879256204811873,
+          "bce": 0.08926105382354063
+        },
+        "in_domain_audit": {
+          "n": 3012,
+          "auc": 0.9895961335532115,
+          "bce": 0.08060167399506553
+        },
+        "held_generator_audit": {
+          "n": 3012,
+          "auc": 0.901959261610989,
+          "bce": 1.0672456417721756
+        }
+      }
+    },
+    {
+      "held_generator": "vc2",
+      "fit_generator": "ms",
+      "arm": "semantic_velocity",
+      "selected_C": 0.1,
+      "selected_converged": true,
+      "trials": [
+        {
+          "C": 0.1,
+          "calibration_bce": 0.10065842320040234,
+          "converged": true
+        },
+        {
+          "C": 1.0,
+          "calibration_bce": 0.1467051830125221,
+          "converged": true
+        },
+        {
+          "C": 10.0,
+          "calibration_bce": 0.22638485682039639,
+          "converged": true
+        }
+      ],
+      "metrics": {
+        "fit": {
+          "n": 9090,
+          "auc": 1.0,
+          "bce": 0.011479336403617391
+        },
+        "calibration": {
+          "n": 3071,
+          "auc": 0.9794238269245813,
+          "bce": 0.10065842320040234
+        },
+        "in_domain_audit": {
+          "n": 3012,
+          "auc": 0.9815368486448707,
+          "bce": 0.09597706193778309
+        },
+        "held_generator_audit": {
+          "n": 3012,
+          "auc": 0.8900719020232151,
+          "bce": 0.9527684675083223
+        }
+      }
+    }
+  ],
+  "wall_seconds": 38.865509770810604
+}

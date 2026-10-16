@@ -1,0 +1,7 @@
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+{"completed": 16, "requested": 16, "wall_seconds": 39.294361628592014, "cuda_forward_seconds": 0.1521629180908203, "peak_gpu_allocated_gib": 1.8178963661193848}

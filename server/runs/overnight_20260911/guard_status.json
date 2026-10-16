@@ -1,0 +1,9 @@
+{
+  "guard_pid": 6867,
+  "observed_utc": "2026-09-10T19:56:06.814930+00:00",
+  "deadline": "2026-09-11T10:00:00+08:00",
+  "phase": "shutdown",
+  "stopped_registered_jobs": [],
+  "shutdown_command": "/usr/bin/shutdown",
+  "dry_run": false
+}

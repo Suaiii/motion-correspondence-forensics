@@ -1,0 +1,28 @@
+{
+  "checked_unix_time": 1791494438.330468,
+  "free_bytes": 27120152576,
+  "other_reservations": {
+    "C5": {
+      "namespace": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/author_input_adapter_v2",
+      "used": 4903,
+      "full_quota": 536870912,
+      "remaining_reservation": 536866009
+    },
+    "D6": {
+      "namespace": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/konvid_independent_v1",
+      "used": 1084369,
+      "full_quota": 134217728,
+      "remaining_reservation": 133133359
+    }
+  },
+  "B5_full_reservation": 4294967296,
+  "required_free_before_start": 26439803144,
+  "margin_bytes": 680349432,
+  "start_allowed": true,
+  "CPU_max": "1800000 100000",
+  "memory_max": "64424509440",
+  "CPU_affinity": [
+    0,
+    1
+  ]
+}

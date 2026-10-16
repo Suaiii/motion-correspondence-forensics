@@ -1,0 +1,17 @@
+{
+  "valid": false,
+  "errors": [
+    "M0264: duplicate bytes, including same-role duplicates",
+    "M0266: duplicate bytes, including same-role duplicates"
+  ],
+  "counts": {
+    "profile/vript_real/0": 80,
+    "profile/opensora/1": 80,
+    "profile/t2vz/1": 80,
+    "profile/openai_sora/1": 7,
+    "profile/videoOSN_raw/0": 10,
+    "profile/videoOSN_raw/1": 10
+  },
+  "n": 267,
+  "manifest_hash": "ad98e23c1b65df90568bfc825d98dd3aadac850b726697b8e2ac706f504f523c"
+}

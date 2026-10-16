@@ -1,0 +1,11 @@
+{
+  "complete": true,
+  "requested": 16,
+  "completed": 16,
+  "statuses": {
+    "ok": 16
+  },
+  "wall_seconds": 40.0852305740118,
+  "cuda_forward_seconds": 0.1521629180908203,
+  "classification_metrics_computed": false
+}

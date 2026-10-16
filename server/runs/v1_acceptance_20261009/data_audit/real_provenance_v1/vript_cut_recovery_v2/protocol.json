@@ -1,0 +1,22 @@
+{
+  "revision": "acc278efb0ee249d646eef8a6b023595ca7efb93",
+  "archive_directory_count": 1095,
+  "selected_assets": 2000,
+  "selected_origins": 828,
+  "code_sha256": "ee2fdac06a04b93aead928598dbb8ca91abf2f6195395f7d164c01bed8007c5e",
+  "range_parser_sha256": "40dd4ae19b3db6cdfa41a997b7ae27da703736ce2ebd001461ef98bee929c490",
+  "archive_tree_sha256": "356d602ce908fc54f0b3633d345f5531a121eea9c909213b0c238fddf0a329df",
+  "CPU_threads": "one event loop plus one DNS executor",
+  "CPU_affinity": [
+    0,
+    1
+  ],
+  "HTTP_sockets": 6,
+  "memory_cap_bytes": 4294967296,
+  "metadata_disk_cap_bytes": 536870912,
+  "requested_payloads": "ZIP metadata and cut JSON only",
+  "no_video_payload": true,
+  "new_retry_count": 0,
+  "inherited_original_version": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/data_audit/real_provenance_v1/vript_cut_recovery",
+  "transport_upgrade_receipt_sha256": "da62a17493e7a670f49fd9074b7ffc33798dc918f84fd0455b2d9706ecd0fa09"
+}

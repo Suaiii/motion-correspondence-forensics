@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/AL145_dense_dino_baseline.py", line 33, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/AL145_dense_dino_baseline.py", line 26, in main
+    'command':cmd,'selection_sha256':sha(a.selection),'manifest_sha256':sha(a.manifest),
+                                     ^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/AL145_dense_dino_baseline.py", line 13, in sha
+    for b in iter(lambda:f.read(1024*1024),b): h.update(b)
+                                           ^
+UnboundLocalError: cannot access local variable 'b' where it is not associated with a value

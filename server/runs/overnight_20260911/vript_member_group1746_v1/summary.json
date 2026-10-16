@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "requested": 1746,
+  "download_statuses": {
+    "ok": 1746
+  },
+  "strict_2s_statuses": {
+    "ok": 1703,
+    "not_eligible_or_error": 43
+  },
+  "native16_statuses": {
+    "ok": 1727,
+    "not_eligible_or_error": 19
+  },
+  "classification_metrics_computed": false
+}

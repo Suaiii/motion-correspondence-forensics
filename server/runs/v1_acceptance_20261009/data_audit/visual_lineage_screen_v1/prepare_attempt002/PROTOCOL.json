@@ -1,0 +1,56 @@
+{
+  "version": "A6-fixed-v1",
+  "anchors": "[0, floor((N-1)/2), N-1] native decoded indices; duplicates explicitly retained",
+  "pixel": "ffmpeg -noautorotate; no temporal/spatial resampling before full native RGB24 SHA; first video stream; select then showinfo",
+  "decoder_threads": 2,
+  "filter_threads": 1,
+  "views": [
+    "full",
+    "center_square_floor_offsets"
+  ],
+  "dHash": "Pillow RGB.convert(L), resize((9,8),BOX), row-major adjacent horizontal left>right, first bit most significant",
+  "low_information": "9x8 grayscale population stddev<=5 OR dHash popcount<4 OR >60; each view evaluated separately",
+  "single_anchor": "any anchor, any view combination, Hamming<=4, both informative; singleton is not video ancestry",
+  "multi_anchor": "corresponding first/middle/last, fixed view pair, all Hamming<=8, at least 2 informative corresponding pairs and 3 distinct native indices per video",
+  "exact_RGB": "dimensions+RGB SHA group regardless low information; low-information groups are group lists, not ancestry pair expansion",
+  "search": "lossless pigeonhole 5 disjoint bit blocks for single distance4; 9 blocks on middle hash for distance8 then all3 distances; no cross-pool/role restrictions",
+  "low_information_pair_scope": "single-anchor search excludes low-information views by declared rule; multi uses all middle hashes but needs2informative anchors",
+  "per_file_timeout_seconds": 90,
+  "batch_wall_limit_seconds": 7200,
+  "negative_interpretation": "no candidate is not proof of global independence; known edges retained; no fuzzy merge",
+  "selection_salt": "A6-v1-8998-20261009-preflight-fixed",
+  "source_locks": {
+    "old_real": [
+      "data_audit/real_provenance_v2/real_provenance_overlay.jsonl",
+      "161ec789a52a28c69a8c4da007d9740b22ccc017d322106bd30d386d8503ada1",
+      3718,
+      "existing_sha256"
+    ],
+    "old_fake": [
+      "propagation/metadata_repair_v2/B2_mode_overlay.v2.jsonl",
+      "61b7e66be543b11d27adb77e4d80c8202593e8358f703bd3f5bef62690523677",
+      3718,
+      "output_sha256"
+    ],
+    "new_SVD": [
+      "propagation/mode_provenance_v1/manifest.jsonl",
+      "0e599d9f2465d3916e6a35d8c85b32faba3489254b0675421342385979d2b0e2",
+      256,
+      "sha256"
+    ],
+    "new_conditioned_I2V": [
+      "propagation/conditioned_i2v_v1/manifest.jsonl",
+      "0ca1b3c5e45f3a0f2b1410cd6dc6e41e7ae93fee350484b8451e9602e9ffd2b1",
+      106,
+      "sha256"
+    ],
+    "new_KoNViD": [
+      "baselines/real_source_expansion_v1/manifest.jsonl",
+      "fa27684c9f5da9a5a0e82317b85d7bb84edf93fbfd9b08a22f2c342477c60c45",
+      1200,
+      "sha256"
+    ]
+  },
+  "code_SHA256": "b06537486041e6affa61549e42cc6a928ee2b32fd0617112b7b852fa03601950",
+  "scientific_gate_passed": false
+}

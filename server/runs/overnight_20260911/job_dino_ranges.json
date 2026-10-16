@@ -1,0 +1,11 @@
+{
+  "pid": 54439,
+  "start_ticks": "4204499924",
+  "command": [
+    "/root/autodl-tmp/cvpr27/environment/venv/bin/python",
+    "/root/autodl-tmp/cvpr27/incoming/gpunight20260911/dino_range_launch.py",
+    "--run-dir",
+    "/root/autodl-tmp/cvpr27/runs/overnight_20260911"
+  ],
+  "started_utc": "2026-09-10T17:06:52.701422+00:00"
+}

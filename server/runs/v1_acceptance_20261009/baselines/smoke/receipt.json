@@ -1,0 +1,176 @@
+{
+  "status": "passed",
+  "scope": "synthetic CPU arithmetic and evaluator contracts only",
+  "checks": [
+    {
+      "name": "restrav_21D_matches_author_functions",
+      "pass": true,
+      "detail": {
+        "max_error": 1.2789769243681803e-13,
+        "source_sha256": "63cad8a7e59f609d246e50f21a3ce89afe8b342ac1514cf93f60c675639f9885"
+      }
+    },
+    {
+      "name": "restrav_zero_motion_author_semantics",
+      "pass": true,
+      "detail": {
+        "zero_delta_angles_degrees": 90.0
+      }
+    },
+    {
+      "name": "d3_arithmetic_matches_author_forward_without_encoder",
+      "pass": true,
+      "detail": {
+        "max_error": 0.0,
+        "raw_positive": "real",
+        "fake_transform": "negate"
+      }
+    },
+    {
+      "name": "overcoherence_ST_matches_author_criterion",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "overcoherence_burst_branch",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "stream_optical_flow_rejected",
+      "pass": true,
+      "detail": "optical_flow_is_not_compressed_domain_MV"
+    },
+    {
+      "name": "stream_RGB_residual_rejected",
+      "pass": true,
+      "detail": "RGB_difference_is_not_codec_residual"
+    },
+    {
+      "name": "old8x768_cache_not_restrav",
+      "pass": true,
+      "detail": "ReStraV_all_tokens_required_8x768_cache_incompatible"
+    },
+    {
+      "name": "oldDINO_not_D3_XCLIP",
+      "pass": true,
+      "detail": "D3_XCLIP_identity_required"
+    },
+    {
+      "name": "calibration_threshold_empirical_FPR_locked",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "single_class_cells_undefined",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "generator_macro_has_real_controls",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "ancestor_cluster_bootstrap_same_source_joint_labels",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "old7fake_only_AUROC_and_macro_undefined",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AUROC_tie_midrank_exact",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AP_ties_grouped",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AUROC_direction",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "AUROC_positive_affine_invariant",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "duplicate_bytes_rejected",
+      "pass": true,
+      "detail": "duplicate_bytes_in_evaluation_unit"
+    },
+    {
+      "name": "threshold_tamper_rejected",
+      "pass": true,
+      "detail": "threshold_lock_hash_changed"
+    },
+    {
+      "name": "calibration_ancestor_overlap_rejected",
+      "pass": true,
+      "detail": "calibration_audit_overlap"
+    },
+    {
+      "name": "matched_repeat_rejected",
+      "pass": true,
+      "detail": "matched_frames_must_be_unique_ordered"
+    },
+    {
+      "name": "best_effort_not_native_PTS",
+      "pass": true,
+      "detail": "native_pts_required_not_best_effort"
+    },
+    {
+      "name": "final_confirmation_sealed",
+      "pass": true,
+      "detail": "evaluation_requires_audit_role_final_remains_sealed"
+    },
+    {
+      "name": "cross_role_ancestry_detector",
+      "pass": true,
+      "detail": null
+    },
+    {
+      "name": "existing_local_head_actual_CPU_forward_fixture",
+      "pass": true,
+      "detail": {
+        "score_raw": 0.9917312264442444,
+        "score_fake": 0.008268773555755615,
+        "score_transform": "one_minus",
+        "identity": "existing_local_restrav_head_history_only",
+        "checkpoint_sha256": "705e0189f4af252428236382624ad11743646f33af2da11cf56903a0874f302c",
+        "mean_sha256": "a634789f04571caef10f274726cb92b2fb6394e9f6e0c68314be863ddac016de",
+        "std_sha256": "a4366ab6f54e789295445b4d44d6629081416c3261433cd3fc7b4f65786a0b99",
+        "head_training_provenance": "legacy normalization-before-split; not accepted for new formal audit"
+      }
+    }
+  ],
+  "n_checks": 26,
+  "n_passed": 26,
+  "started_utc": "2026-10-08T17:23:22.824007+00:00",
+  "finished_utc": "2026-10-08T17:23:22.921827+00:00",
+  "wall_seconds": 0.09782238304615021,
+  "process_cpu_seconds": 0.09764097300000008,
+  "python": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+  "platform": "Linux-5.15.0-94-generic-x86_64-with-glibc2.35",
+  "numpy": "2.3.2",
+  "torch": "2.8.0+cu128",
+  "cpu_threads": 2,
+  "cuda_visible_devices": "",
+  "gpu_started": false,
+  "real_media_read": false,
+  "weights_downloaded": false,
+  "data_gate_passed": false,
+  "scientific_gate_passed": false,
+  "code_sha256": {
+    "cpu_smoke.py": "bfd1882329fac45a1e139a4814c93dd25326db6bc65f0d9d5ea24ffe78d76faa",
+    "evaluation.py": "a3fb408e8c84a9ec959331f2e575904652a87607c9a2f7308594bc6cade9b8d2",
+    "offline_adapters.py": "310a6ede8ec4132466c1cef3eb28c3e5d9d2dc55ca3f72cb62b4fca16a50edf2"
+  }
+}

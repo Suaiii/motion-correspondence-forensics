@@ -1,0 +1,197 @@
+nohup: ignoring input
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/swiglu_ffn.py:51: UserWarning: xFormers is not available (SwiGLU)
+  warnings.warn("xFormers is not available (SwiGLU)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/attention.py:33: UserWarning: xFormers is not available (Attention)
+  warnings.warn("xFormers is not available (Attention)")
+/root/autodl-tmp/cvpr27/models/dinov2-7764ea0f912e53c92e82eb78a2a1631e92725fc8/dinov2/layers/block.py:40: UserWarning: xFormers is not available (Block)
+  warnings.warn("xFormers is not available (Block)")
+Processed 32 / 196
+Processed 64 / 196
+Processed 96 / 196
+Processed 128 / 196
+Processed 160 / 196
+Processed 192 / 196
+Processed 196 / 196
+{
+  "counts": {
+    "cogvideo": 98,
+    "hd_vg_130m": 97
+  },
+  "qc_statuses": {
+    "qc_excluded_or_error": 1,
+    "ok": 195
+  },
+  "seconds": 92.51323974877596,
+  "aggregates": [
+    {
+      "training_holdout": "ms",
+      "arm": "semantic_duplicate",
+      "ensemble_auc": 0.7815064169997896,
+      "ci95": [
+        0.7172875256417,
+        0.8410764493238719
+      ],
+      "seed_auc_mean": 0.7804754891647381
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "time_std",
+      "ensemble_auc": 0.8262150220913107,
+      "ci95": [
+        0.7675228802861351,
+        0.8811225642569627
+      ],
+      "seed_auc_mean": 0.824784346728382,
+      "gain_over_semantic": 0.04470860509152108,
+      "gain_ci95": [
+        0.01955512298407424,
+        0.07291891305491263
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "time_delta",
+      "ensemble_auc": 0.8473595623816537,
+      "ci95": [
+        0.7922477557382956,
+        0.8969408579758433
+      ],
+      "seed_auc_mean": 0.845402903429413,
+      "gain_over_semantic": 0.06585314538186404,
+      "gain_ci95": [
+        0.03700480113122549,
+        0.09915510977118126
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "two_view_erm",
+      "ensemble_auc": 0.8632442667788764,
+      "ci95": [
+        0.8116878458453015,
+        0.9094070421631633
+      ],
+      "seed_auc_mean": 0.8622764569745425,
+      "gain_over_semantic": 0.08173784977908682,
+      "gain_ci95": [
+        0.05277031890544412,
+        0.11587820172175566
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "paired_consistency",
+      "ensemble_auc": 0.8212707763517779,
+      "ci95": [
+        0.7628399301825993,
+        0.874610772143909
+      ],
+      "seed_auc_mean": 0.8193141173995372,
+      "gain_over_semantic": 0.0397643593519883,
+      "gain_ci95": [
+        0.017907902957101256,
+        0.06522352652730144
+      ]
+    },
+    {
+      "training_holdout": "ms",
+      "arm": "shuffled_consistency",
+      "ensemble_auc": 0.8601935619608667,
+      "ci95": [
+        0.8069789979918444,
+        0.9074631132474384
+      ],
+      "seed_auc_mean": 0.8532716179255206,
+      "gain_over_semantic": 0.0786871449610771,
+      "gain_ci95": [
+        0.04860958199069117,
+        0.11298582474226802
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "semantic_duplicate",
+      "ensemble_auc": 0.8901746265516516,
+      "ci95": [
+        0.8474402735987108,
+        0.9294176527691724
+      ],
+      "seed_auc_mean": 0.8891436987165999
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "time_std",
+      "ensemble_auc": 0.8655585945718494,
+      "ci95": [
+        0.8159014519478295,
+        0.911340206185567
+      ],
+      "seed_auc_mean": 0.8640648011782032,
+      "gain_over_semantic": -0.024616031979802222,
+      "gain_ci95": [
+        -0.044353185959638525,
+        -0.007212430426716277
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "time_delta",
+      "ensemble_auc": 0.8979591836734694,
+      "ci95": [
+        0.8557535739323064,
+        0.9347715838229231
+      ],
+      "seed_auc_mean": 0.8978960656427519,
+      "gain_over_semantic": 0.007784557121817803,
+      "gain_ci95": [
+        -0.010526405177345568,
+        0.02672862647089437
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "two_view_erm",
+      "ensemble_auc": 0.9105827898169577,
+      "ci95": [
+        0.8728056832825679,
+        0.9445636684982229
+      ],
+      "seed_auc_mean": 0.908668209551862,
+      "gain_over_semantic": 0.020408163265306145,
+      "gain_ci95": [
+        0.001717336419103721,
+        0.04037865771113201
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "paired_consistency",
+      "ensemble_auc": 0.9125815274563434,
+      "ci95": [
+        0.8737512719465607,
+        0.9464469924763095
+      ],
+      "seed_auc_mean": 0.9127498422049232,
+      "gain_over_semantic": 0.022406900904691773,
+      "gain_ci95": [
+        0.009267817622782384,
+        0.03628277737725521
+      ]
+    },
+    {
+      "training_holdout": "vc2",
+      "arm": "shuffled_consistency",
+      "ensemble_auc": 0.9376183463075952,
+      "ci95": [
+        0.9061025327033461,
+        0.964028776781331
+      ],
+      "seed_auc_mean": 0.9326109825373449,
+      "gain_over_semantic": 0.047443719755943636,
+      "gain_ci95": [
+        0.028778534609720078,
+        0.06716676947254999
+      ]
+    }
+  ]
+}

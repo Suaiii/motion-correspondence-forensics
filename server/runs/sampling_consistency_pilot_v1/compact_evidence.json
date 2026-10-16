@@ -1,0 +1,435 @@
+{
+  "protocol": {
+    "scope": "exposed one-real-source development pilot; formal training gate remains closed",
+    "script_sha256": "0ef1f74ee968d835037874ab9bfaf7231236c2c5cd24f09fe960b754f2e25a8d",
+    "parent_manifest_sha256": "7374a07350e2b96c1b374f5a4b847861797727aed9a16340cf6c7bd1d75c60a8",
+    "time_lock_sha256": "88518c2dc4dd1d74cdf09f5707e67f5fa7b42aad3f42d725ac2dd215bacb8a1a",
+    "arms": [
+      "semantic_duplicate",
+      "time_std",
+      "time_delta",
+      "two_view_erm",
+      "paired_consistency",
+      "shuffled_consistency"
+    ],
+    "seeds": [
+      17,
+      29,
+      43,
+      59,
+      71
+    ],
+    "holdouts": [
+      "ms",
+      "vc2"
+    ],
+    "model": "1536 -> Linear256 -> GELU -> Dropout0.1 -> Linear1, all arms same parameter count",
+    "epochs": 40,
+    "batch_size": 1024,
+    "optimizer": "AdamW lr=0.001 weight_decay=0.01",
+    "selection": "minimum unweighted time-view calibration BCE over 40 epochs; earliest wins ties",
+    "standardization": "fit only; for two-view arms mean/std fitted on both fit views",
+    "consistency": "1.0 * class/ancestor weighted squared logit difference, alongside mean BCE of two views",
+    "shuffle": "fixed within source/label fit-only permutation; no calibration/audit pairing shuffle",
+    "split": "reuse frozen ancestor-proxy split; whole held generator excluded from fitting and calibration",
+    "semantic_control": "duplicate semantic 768-vector to match input dimensions and head parameter count",
+    "std_control": "concatenate mean and unordered per-coordinate frame standard deviation",
+    "final_access": false,
+    "formal_training_released": false,
+    "walltime_cap": null,
+    "torch": "2.8.0+cu128",
+    "numpy": "2.2.6",
+    "device": "NVIDIA GeForce RTX 4090 D",
+    "limitations": [
+      "Views differ in coverage and sampling, not only FPS.",
+      "Timing/source metadata still separate labels; this is a nuisance-response experiment.",
+      "Paired consistency and invariant representations have prior art; no novelty claim.",
+      "Same architecture does not imply equal training FLOPs: two-view arms process two views.",
+      "One real source and exposed proxy-grouped data cannot establish formal generalization."
+    ]
+  },
+  "verification": {
+    "status": "pass",
+    "replayed_heads": 60,
+    "main_models_refitted": false,
+    "script_sha256": "4dee888e18eafba97488b0d60e23a9b8daceb910f120869e36ba0a8565092c97",
+    "parent_report_sha256": "6b70dcf3a81f07fb314c2e954881e1bcf7f3bd3f120a7b9dd295125f641c5b16",
+    "epoch_selection_verified": true,
+    "head_parameter_counts_verified": true,
+    "shuffled_control_ancestor_weights_preserved": true,
+    "details": [
+      {
+        "held_generator": "ms",
+        "seed": 17,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 17,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 17,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 17,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 17,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 17,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 29,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 29,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 29,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 29,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 29,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 29,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 43,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 43,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 43,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 43,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 43,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 43,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 59,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 59,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 59,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 59,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 59,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 59,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 71,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 71,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 71,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 71,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 71,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "ms",
+        "seed": 71,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 17,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 17,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 17,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 17,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 17,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 17,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 29,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 29,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 29,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 29,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 29,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 29,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 43,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 43,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 43,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 43,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 43,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 43,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 59,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 59,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 59,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 59,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 59,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 59,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 71,
+        "arm": "semantic_duplicate",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 71,
+        "arm": "time_std",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 71,
+        "arm": "time_delta",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 71,
+        "arm": "two_view_erm",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 71,
+        "arm": "paired_consistency",
+        "max_logit_error": 0.0
+      },
+      {
+        "held_generator": "vc2",
+        "seed": 71,
+        "arm": "shuffled_consistency",
+        "max_logit_error": 0.0
+      }
+    ],
+    "scope": "mechanical integrity and inference replay, not independent scientific replication"
+  },
+  "report_sha256": "6b70dcf3a81f07fb314c2e954881e1bcf7f3bd3f120a7b9dd295125f641c5b16",
+  "artifact_index": {
+    "protocol.json": "e5f313628f9993fcf590d084be976d729b0bd9c84443cc201d45847afffbcbd4",
+    "progress.json": "c78b9560008d7e12f16e67384a00f61857fc7a4ea59ed7d493f8414a1adb962b",
+    "report.json": "6b70dcf3a81f07fb314c2e954881e1bcf7f3bd3f120a7b9dd295125f641c5b16"
+  },
+  "code_sha256": {
+    "sampling_consistency_pilot.py": "0ef1f74ee968d835037874ab9bfaf7231236c2c5cd24f09fe960b754f2e25a8d",
+    "verify_sampling_consistency.py": "4dee888e18eafba97488b0d60e23a9b8daceb910f120869e36ba0a8565092c97",
+    "verify_paired_time.py": "8d6a4da3f47481b291452d5491dec38440982deeead57ab8b7df1f250d2b1f66"
+  }
+}

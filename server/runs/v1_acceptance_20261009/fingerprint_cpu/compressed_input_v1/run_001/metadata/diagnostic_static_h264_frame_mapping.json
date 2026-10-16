@@ -1,0 +1,528 @@
+[
+  {
+    "display_ordinal": 0,
+    "frame_pts": 0,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "0",
+    "picture_type": "I",
+    "key_frame": true,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 0,
+    "side_data_types": [
+      "SEI_UNREGISTERED"
+    ],
+    "matched_packet_index_by_unique_pts": 0,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 0,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 0,
+    "system_packet_pos": "48",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 0,
+      "seconds": "0"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 1,
+    "frame_pts": 2048,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "1/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 1,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 1,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 2048,
+    "system_packet_pos": "3465",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 2048,
+      "seconds": "1/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 2,
+    "frame_pts": 4096,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "1/4",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 2,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 2,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 4096,
+    "system_packet_pos": "3476",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 4096,
+      "seconds": "1/4"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 3,
+    "frame_pts": 6144,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "3/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 3,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 3,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 6144,
+    "system_packet_pos": "3487",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 6144,
+      "seconds": "3/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 4,
+    "frame_pts": 8192,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "1/2",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 4,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 4,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 8192,
+    "system_packet_pos": "3498",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 8192,
+      "seconds": "1/2"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 5,
+    "frame_pts": 10240,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "5/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 5,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 5,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 10240,
+    "system_packet_pos": "3509",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 10240,
+      "seconds": "5/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 6,
+    "frame_pts": 12288,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "3/4",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 6,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 6,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 12288,
+    "system_packet_pos": "3520",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 12288,
+      "seconds": "3/4"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 7,
+    "frame_pts": 14336,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "7/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 0,
+    "display_keyframe_group_index": 0,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 7,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 7,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 14336,
+    "system_packet_pos": "3531",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 14336,
+      "seconds": "7/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 8,
+    "frame_pts": 16384,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "1",
+    "picture_type": "I",
+    "key_frame": true,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 0,
+    "side_data_types": [],
+    "matched_packet_index_by_unique_pts": 8,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 8,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 16384,
+    "system_packet_pos": "3542",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 16384,
+      "seconds": "1"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 9,
+    "frame_pts": 18432,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "9/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 9,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 9,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 18432,
+    "system_packet_pos": "6530",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 18432,
+      "seconds": "9/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 10,
+    "frame_pts": 20480,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "5/4",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 10,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 10,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 20480,
+    "system_packet_pos": "6542",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 20480,
+      "seconds": "5/4"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 11,
+    "frame_pts": 22528,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "11/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 11,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 11,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 22528,
+    "system_packet_pos": "6554",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 22528,
+      "seconds": "11/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 12,
+    "frame_pts": 24576,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "3/2",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 12,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 12,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 24576,
+    "system_packet_pos": "6566",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 24576,
+      "seconds": "3/2"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 13,
+    "frame_pts": 26624,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "13/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 13,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 13,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 26624,
+    "system_packet_pos": "6578",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 26624,
+      "seconds": "13/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 14,
+    "frame_pts": 28672,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "7/4",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 14,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 14,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 28672,
+    "system_packet_pos": "6590",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 28672,
+      "seconds": "7/4"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  },
+  {
+    "display_ordinal": 15,
+    "frame_pts": 30720,
+    "pts_field": "PyAV AVFrame.pts",
+    "time_base": [
+      1,
+      16384
+    ],
+    "physical_seconds": "15/8",
+    "picture_type": "P",
+    "key_frame": false,
+    "display_I_group_index": 1,
+    "display_keyframe_group_index": 1,
+    "mv_count": 16,
+    "side_data_types": [
+      "MOTION_VECTORS"
+    ],
+    "matched_packet_index_by_unique_pts": 15,
+    "packet_mapping_reason": "unique matching native packet PTS",
+    "system_coded_picture_number": 15,
+    "system_display_picture_number_field": 0,
+    "system_packet_dts": 30720,
+    "system_packet_pos": "6602",
+    "system_timestamp": {
+      "field": "pkt_pts",
+      "integer": 30720,
+      "seconds": "15/8"
+    },
+    "exact_reference_frame_ids": null,
+    "reference_id_reason": "AVMotionVector.source is past/future direction, not actual reference index",
+    "prediction_residual": null,
+    "residual_reason": "not exported by this PyAV/FFmpeg frame-side-data path"
+  }
+]

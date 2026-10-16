@@ -1,0 +1,122 @@
+{
+  "official_publisher_members": 1200,
+  "processed_unique_Flickr_IDs": 1200,
+  "verified_media_files": 1200,
+  "unique_file_SHA256": 1200,
+  "publisher_Flickr_parent_IDs": 1200,
+  "verified_camera_independent_ancestors": null,
+  "native_integer_PTS_and_full_decode_pass": 1200,
+  "native4second_support": 1200,
+  "native_PTS_field_counts": {
+    "pts": 0,
+    "pkt_pts": 270051
+  },
+  "FPS_distribution": {
+    "25/1": 61,
+    "2997/100": 147,
+    "2997/125": 24,
+    "24/1": 188,
+    "24000/1001": 108,
+    "30000/1001": 672
+  },
+  "resolution_distribution": [
+    {
+      "width": 960,
+      "height": 540,
+      "files": 1200
+    }
+  ],
+  "audio_present": 1161,
+  "audio_absent": 39,
+  "AV_detection_scores": 0,
+  "failure_count": 0,
+  "C2_qualification": [
+    {
+      "method": "d3",
+      "track": "matched_processing",
+      "status": "temporal_ready",
+      "files": 1200
+    },
+    {
+      "method": "d3",
+      "track": "native_reference",
+      "status": "recipe_ready_frame_map_adapter",
+      "files": 1200
+    },
+    {
+      "method": "native_scale",
+      "track": "matched_processing",
+      "status": "temporal_ready_processor_pending",
+      "files": 1200
+    },
+    {
+      "method": "native_scale",
+      "track": "native_reference",
+      "status": "temporal_ready_processor_pending",
+      "files": 1200
+    },
+    {
+      "method": "overcoherence",
+      "track": "matched_processing",
+      "status": "ineligible",
+      "files": 819
+    },
+    {
+      "method": "overcoherence",
+      "track": "matched_processing",
+      "status": "temporal_ready_processor_pending",
+      "files": 381
+    },
+    {
+      "method": "overcoherence",
+      "track": "native_reference",
+      "status": "ineligible",
+      "files": 819
+    },
+    {
+      "method": "overcoherence",
+      "track": "native_reference",
+      "status": "temporal_ready_processor_pending",
+      "files": 381
+    },
+    {
+      "method": "restrav",
+      "track": "matched_processing",
+      "status": "temporal_ready",
+      "files": 1200
+    },
+    {
+      "method": "restrav",
+      "track": "native_reference",
+      "status": "recipe_ready_frame_map_adapter",
+      "files": 1200
+    },
+    {
+      "method": "stream",
+      "track": "matched_processing",
+      "status": "unknown",
+      "files": 1200
+    },
+    {
+      "method": "stream",
+      "track": "native_reference",
+      "status": "unknown",
+      "files": 1200
+    }
+  ],
+  "full_archive_sha256": "3528bf99b4d8bad23ced543a45c9a338a14ff567cd6e1bfa2be967c3daed5def",
+  "publisher_archive_SHA_available": false,
+  "archive_SHA_is_self_receipt_only": true,
+  "full_archive_directory_lock_matches": true,
+  "metadata_join_mismatches": 0,
+  "C4_added_bytes": 4900396519,
+  "disk_free_bytes": 27123531776,
+  "current_TLS_certificate_date_valid": false,
+  "CA_hostname_signature_and_peerpin_checked": true,
+  "source_family_and_lineage_acceptance": "pending_independent_review",
+  "development_evidence_only": true,
+  "GPU_used": false,
+  "model_scores": 0,
+  "scientific_gate_passed": false,
+  "wall_seconds": 0.5104365274310112
+}

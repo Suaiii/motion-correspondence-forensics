@@ -1,0 +1,8 @@
+{
+  "time_utc": "2026-09-10T19:56:07.412747+00:00",
+  "command": [
+    "/bin/bash",
+    "/usr/bin/shutdown"
+  ],
+  "reason": "Provider shutdown script is executable shell text without a shebang; direct exec raised errno 8"
+}

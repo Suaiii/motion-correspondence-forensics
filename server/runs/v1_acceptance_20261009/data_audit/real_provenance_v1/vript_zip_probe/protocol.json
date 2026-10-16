@@ -1,0 +1,23 @@
+{
+  "hypothesis": "metadata insertion order groups every10 correspond to creator clip ZIP numbering; never accepted without actual cut member match",
+  "tasks": [
+    [
+      "--2IG_rxfUM",
+      123
+    ],
+    [
+      "--4M68p_Loc",
+      261
+    ],
+    [
+      "--5Uy5YZMjA",
+      504
+    ],
+    [
+      "--C66yU3LjM",
+      718
+    ]
+  ],
+  "no_video_payload": true,
+  "max_cpu_threads": 2
+}

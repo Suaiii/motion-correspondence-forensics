@@ -1,0 +1,355 @@
+{
+  "dispatch_id": "v1-acceptance-20261009",
+  "window": "A",
+  "matrix": [
+    {
+      "criterion": "frozen_manifests_and_catalogs",
+      "scope": "software_data",
+      "status": "PASS",
+      "observed": {
+        "files": 12236,
+        "unique_file_sha256": 11836
+      },
+      "requirement": "both frozen hashes and full catalog reconciliation",
+      "evidence": "run002/input_lock.json",
+      "repair": null
+    },
+    {
+      "criterion": "independent_live_bytes_and_native_time",
+      "scope": "data_integrity",
+      "status": "PASS",
+      "observed": {
+        "ffprobe_version": "ffprobe version 4.4.2-0ubuntu0.22.04.1 Copyright (c) 2007-2021 the FFmpeg developers",
+        "replayed": 110,
+        "file_sha_matches": 110,
+        "file_size_matches": 110,
+        "native_complete": 110,
+        "archive_pts_sequences_present": 110,
+        "archive_pts_exact_matches": 110,
+        "time_base_matches": 110,
+        "stderr_ids": [
+          "extension:media/OpenVidHD/6964d102d71cb27946c76f29bde4123f119d98aa51f0a66f2fc28f3ba172402f.mp4"
+        ],
+        "unexpected_failures": [],
+        "near_duplicate_screen_files": 37,
+        "near_duplicate_decoded_files": 37,
+        "near_duplicate_candidate_pairs": 0,
+        "independent_ancestry_verified_by_screen": false,
+        "screen_pair_comparisons": 666
+      },
+      "requirement": "fixed strata/sentinels all match bytes, native integer PTS and rational time_base",
+      "evidence": "run001/replay_raw; run002/live_replay.jsonl",
+      "repair": null
+    },
+    {
+      "criterion": "full_archived_integer_PTS_and_rational_time_base",
+      "scope": "metadata",
+      "status": "PASS",
+      "observed": 12236,
+      "requirement": "complete valid archived sequence and hash for every manifest row",
+      "evidence": "run002/timestamp_archive_audit.jsonl",
+      "repair": null
+    },
+    {
+      "criterion": "fresh_native_time_for_every_asset",
+      "scope": "data_integrity",
+      "status": "UNKNOWN",
+      "observed": {
+        "fresh": 110,
+        "total": 12236
+      },
+      "requirement": "cannot generalize 110 live replays to every file",
+      "evidence": "run002/live_replay.jsonl",
+      "repair": "extend frozen replay only if concrete drift/sampling risk warrants full collection"
+    },
+    {
+      "criterion": "extension_member_release_mapping",
+      "scope": "public_release_provenance",
+      "status": "PASS",
+      "observed": {
+        "member_matches": 3000,
+        "CRC_replay_matches": 9
+      },
+      "requirement": "3000 plan/member records consistent; bounded fresh CRC checks",
+      "evidence": "upstream_membership_audit.jsonl; membership_crc_replay.jsonl",
+      "repair": null
+    },
+    {
+      "criterion": "full_upstream_ZIP_LFS_checksum",
+      "scope": "public_release_integrity",
+      "status": "UNKNOWN",
+      "observed": false,
+      "requirement": "complete archive digest verified",
+      "evidence": "pinned inventory locks",
+      "repair": "requires full archive stream or equivalent authenticated upstream member attestation; no large download authorized in this packet"
+    },
+    {
+      "criterion": "AEGIS_per_item_release_labels",
+      "scope": "public_release_provenance",
+      "status": "PASS",
+      "observed": 436,
+      "requirement": "436 acquired paths agree with publisher mapping",
+      "evidence": "run002/aegis_mapping_audit.jsonl",
+      "repair": null
+    },
+    {
+      "criterion": "at_least_3_independent_real_acquisition_families",
+      "scope": "mechanism_data",
+      "status": "UNKNOWN",
+      "observed": {
+        "nominal_cohorts": {
+          "Vript": 2000,
+          "DVF": 109,
+          "YouTube_collection": 109,
+          "OpenVid-HD via AIGVDBench": 1500
+        },
+        "certified_independent_families": null
+      },
+      "requirement": "at least 3 sample-mapped acquisition families",
+      "evidence": "source_registry.json; asset_audit.jsonl",
+      "repair": "collect item URL/origin/trim/selection history; map DVF and OpenVid upstream branches; certify independence"
+    },
+    {
+      "criterion": "at_least_4_release_generator_families",
+      "scope": "descriptive_benchmark",
+      "status": "PASS",
+      "observed": {
+        "Sora": 114,
+        "OpenSora": 990,
+        "T2V-Zero": 1003,
+        "Kling": 111,
+        "Luma": 500,
+        "Pika": 500,
+        "Vidu": 500
+      },
+      "requirement": "at least 4 canonical release/label families; aliases merged",
+      "evidence": "run002/asset_audit.jsonl",
+      "repair": null
+    },
+    {
+      "criterion": "generator_version_and_architecture_lineage",
+      "scope": "mechanism_data",
+      "status": "UNKNOWN",
+      "observed": {
+        "sample_generation_receipts": 0
+      },
+      "requirement": "exact versions, derivatives, generation receipts and shared components identified",
+      "evidence": "source_registry.json",
+      "repair": "bind each output to model/version/request/prompt or image hashes; merge related families"
+    },
+    {
+      "criterion": "T2V_I2V_acquired_sample_mode_coverage",
+      "scope": "mechanism_data",
+      "status": "FAIL",
+      "observed": {
+        "verified_T2V": 0,
+        "verified_I2V": 0,
+        "clean_fake_unknown_mode": 3718
+      },
+      "requirement": "both modes must have acquired sample-level mode and conditioning evidence",
+      "evidence": "source_mode_coverage.csv; source_registry.json",
+      "repair": "recover per-item logs/official keyed task manifest; otherwise acquire a small permitted mapped I2V subset under separate collection authority"
+    },
+    {
+      "criterion": "sample_camera_and_generation_provenance",
+      "scope": "mechanism_data",
+      "status": "FAIL",
+      "observed": {
+        "complete": 0,
+        "clean_files": 7436
+      },
+      "requirement": "item-level source/process/rights and fake conditioning chain",
+      "evidence": "run002/asset_audit.jsonl",
+      "repair": "see evidence_remediation.json"
+    },
+    {
+      "criterion": "sample_rights_and_upstream_terms",
+      "scope": "research_use",
+      "status": "UNKNOWN",
+      "observed": {
+        "RoboVid_not_verified": 8800,
+        "AEGIS_custom_academic_release": 436,
+        "AIGVDBench_release_CC_BY_4_0": 3000
+      },
+      "requirement": "map each item to applicable upstream and release terms",
+      "evidence": "source_registry.json; run002/asset_audit.jsonl",
+      "repair": "recover original item/source terms; release license does not replace upstream rights"
+    },
+    {
+      "criterion": "current_candidate_ancestor_disjointness",
+      "scope": "split",
+      "status": "FAIL",
+      "observed": {
+        "declared_parent_edges": 4769,
+        "receipt_conflicts": 31,
+        "archived_parent_links_match": true,
+        "duplicate_groups": 400,
+        "known_link_components": 7463,
+        "known_link_components_are_independent_ancestors": false,
+        "verified_independent_ancestors": null,
+        "conservative_components": 6264,
+        "source_id_candidates_clean": 2437,
+        "source_candidate_cross_role_groups": 211,
+        "source_candidate_cross_original_split_groups": 205,
+        "source_candidate_fit_to_audit_groups": 113,
+        "source_candidate_fit_calibration_groups": 116,
+        "cross_bundle_candidate_groups": 0,
+        "upstream_candidate_overlaps": {
+          "train": 202,
+          "val": 56
+        },
+        "aegis_mapping_rows": 436,
+        "aegis_mapping_matches": 436,
+        "metadata_hashes": {
+          "/srv/video_evidence_v1/provenance_20261008/build_v1_manifest.py": "7450f5ea9f703ce8578508ec528c357aa86ab93a6f472e002845645db1aa7f98",
+          "/srv/video_evidence_v1/provenance_20261008/core_package.md": "b4e9c3568da9f02aa07ea76a32cbe5748a92d40a7a276a72df2454dbee0b6d4f",
+          "/srv/video_evidence_v1/provenance_20261008/degraded_manifest.csv": "41501bf5a15e3e4f3fd14cf564db074683896b1e6fcb45265198b69f5fda06bc",
+          "/srv/video_evidence_v1/provenance_20261008/ffmpeg_profiles.json": "590599c814f58721dd36b39be1487e4dff5127d6619464583b412567208d92d0",
+          "/srv/video_evidence_v1/provenance_20261008/protocol.md": "24458f1e373387e4dcb6c024e2c313cf410e31dbca682d8d9b9ae0f9cf3cbc55",
+          "/srv/video_evidence_v1/provenance_20261008/real_manifest_v02_random.jsonl": "96041261748c19501f8319d9d05dfed76fa6049b71db9ebca8504119b6578d5d",
+          "/srv/video_evidence_v1/provenance_20261008/split_manifest.csv": "ec2add386560a4d99b04ec4c0905d84332bfa7329dbbaafaef95e0403c3f4b69",
+          "/srv/video_evidence_v1/provenance_20261008/wechat_osn_manifest.csv": "919e237c9aa9d1ce4369e699058c727c8c5ba6b1ec5eb5e6b87a6de88c5dacb2",
+          "/srv/video_evidence_v1/provenance_20261008/whatsapp_osn_manifest.csv": "78da37a9f7effe3337dfb09871fa8838c4e0b67149819dde0bf4838c19dc7381",
+          "/root/autodl-tmp/cvpr27/data/video_evidence_expansion_20261008/sources/AIGVDBench/Split_train.jsonl": "46fcf59f24b742af7c6c3e9d4907b9c9dba451c6c8ca1dcd7016949202d07012",
+          "/root/autodl-tmp/cvpr27/data/video_evidence_expansion_20261008/sources/AIGVDBench/Split_val.jsonl": "2f9cba82d02f97c1c26a2f59694c24151683c29eae12f2e6c739574005e5f84f",
+          "/root/autodl-tmp/cvpr27/data/video_evidence_expansion_20261008/sources/AIGVDBench/Split_test.jsonl": "bab0fbe4e482b92d841ade12e3b45c81843a84bcd8d8716e0ca8e8ddcfac95a7",
+          "/srv/video_evidence_v1/external_datasets/AEGIS/data/mapping_test_data.csv": "ce01ab34557a11bfc702c4939b0a48cbb4e38759e6eaba449620558406bf3173"
+        }
+      },
+      "requirement": "no candidate source-video closure across fit/calibration/audit",
+      "evidence": "lineage_findings.jsonl",
+      "repair": "freeze replacement grouped development split, refit; keep prior results exposed/diagnostic"
+    },
+    {
+      "criterion": "formal_ancestor_closure",
+      "scope": "mechanism_data",
+      "status": "UNKNOWN",
+      "observed": {
+        "known_link_components": 7463,
+        "conservative_components": 6264,
+        "verified_independent_ancestors": null
+      },
+      "requirement": "actual common prompt/image/source ancestor closure",
+      "evidence": "parent_edges.jsonl; lineage_findings.jsonl",
+      "repair": "recover conditioning hashes and source mappings; human check near duplicates; conservative regroup cannot certify independence"
+    },
+    {
+      "criterion": "strict_generator_holdout",
+      "scope": "split",
+      "status": "UNKNOWN",
+      "observed": {
+        "proposed_holdout": [
+          "Sora",
+          "Kling",
+          "Luma",
+          "Pika",
+          "Vidu"
+        ],
+        "label_overlap_fit_holdout": []
+      },
+      "requirement": "entire generator versions/derivatives plus prompt/image closure held out",
+      "evidence": "split_proposal.json",
+      "repair": "C independent contract review and upstream family/conditioning evidence"
+    },
+    {
+      "criterion": "old_processing_replay_contract",
+      "scope": "processing_data",
+      "status": "FAIL",
+      "observed": {
+        "derived_files": 4800,
+        "summary_present": 4707,
+        "summary_missing": 93,
+        "full_command_present": 0,
+        "ffmpeg_version_present": 0,
+        "frame_mapping_present": 0,
+        "parent_and_output_sha_in_sidecar": 0,
+        "osn_config_counts": {
+          "E:\\AAGenvid\\main\\OSN\\configs\\video_whatsapp.json": 4000
+        },
+        "real_platform_receipts_observed": 0,
+        "old_conflict_count": 31,
+        "B_independent_replay": "PENDING_new_package_then_A_review"
+      },
+      "requirement": "parent/output SHA, exact commands/config/version/order and native frame mapping for all included derivatives",
+      "evidence": "processing_chain_audit.jsonl; propagation_conflicts.jsonl",
+      "repair": "B new frozen development package; independent A replay; preserve all old failed receipts"
+    },
+    {
+      "criterion": "real_fake_matched_physical_time_processing",
+      "scope": "mechanism_data",
+      "status": "FAIL",
+      "observed": {
+        "current_native_rates": "OpenSora8fps; T2V-Zero4fps; real rates/sizes differ",
+        "B_review": "PASS_limited_B_v2_pipeline_only"
+      },
+      "requirement": "same registered processing table and common physical-time supports",
+      "evidence": "processing_chain_audit.jsonl; prior metadata_cells.json",
+      "repair": "B small-package proof followed by source-qualified expansion only"
+    },
+    {
+      "criterion": "near_duplicate_screen",
+      "scope": "candidate_discovery",
+      "status": "PASS",
+      "observed": {
+        "files": 37,
+        "comparisons": 666,
+        "hits": 0
+      },
+      "requirement": "run frozen bounded CPU screen and preserve limits",
+      "evidence": "near_duplicate_fingerprints.jsonl",
+      "repair": "no-hit result leaves whole-pool ancestry UNKNOWN; broad screen and manual review remain pending"
+    },
+    {
+      "criterion": "split_independent_review",
+      "scope": "metadata_native_descriptive_contract_only",
+      "status": "PASS",
+      "observed": {
+        "reviewer": "C",
+        "status": "CONDITIONAL_NATIVE_DESCRIPTIVE_ONLY",
+        "rows": 12236,
+        "candidate_components": 6264,
+        "reviewed_proposal_sha256": "1040c1651681d91ca5b68e607f75191a821e7f152b0b6d8dfb82222b6d2ba12b"
+      },
+      "requirement": "distinct reviewer audits A proposed assignment and contracts",
+      "evidence": "INDEPENDENT_SPLIT_REVIEW_C.json",
+      "repair": "Freeze method/preprocessing/exposure contract and obtain coordinator resource release before scores; strict mechanism data remains FAIL"
+    }
+  ],
+  "overall": {
+    "software_audit": "PASS",
+    "limited_descriptive_black_box_benchmark": "CONDITIONAL_NATIVE_DESCRIPTIVE_ONLY_pending_method_preprocessing_exposure_resource_lock",
+    "current_independent_ancestor_benchmark": "FAIL",
+    "mechanism_data_gate": "FAIL",
+    "scientific_mechanism_gate": "NOT_EVALUATED",
+    "final_confirmation_data_ready": false,
+    "gpu_release": false
+  },
+  "denominators": {
+    "media_files": 12236,
+    "unique_file_sha256": 11836,
+    "native_clean_files": 7436,
+    "native_clean_QC_eligible": 7424,
+    "candidate_source_video_IDs_real_clean": 2437,
+    "known_link_components": 7463,
+    "conservative_components": 6264,
+    "verified_independent_source_videos_or_ancestors": null,
+    "per_cell_counts": "source_mode_coverage.csv"
+  },
+  "source_registry_sha256": "5bb7d92b12d98cf9efb0d1a7c2567383d03b3df156334d15ce6fe31a04c6b3aa",
+  "independent_B_v2_review": {
+    "result": "PASS",
+    "parents": 48,
+    "outputs": 336,
+    "recipe_replays": 18,
+    "B_locks": {
+      "build_receipt.json": "9f2d7d2df72f4929079be4b464d804078f039ae4529cee9a45a027faa4f120b1",
+      "protocol.json": "e54dc5c78051d21638f8d51c039feb0eda63193059470139df27985e570f8b0d",
+      "selection.json": "ca61f27b17c8a1f10724e809e3df861b0c1e7700a4786748ce93f6e3dc3c5cb6",
+      "manifest.jsonl": "2b41b51ee9d5d01ffa1efa5559ffb92be7fe995fa7e253ffb62e8b88e2e9881b"
+    },
+    "local_evidence_sha256": "772039596c63169cc0c8fcbebd5a8940bf3a81b34e9a3317db0a5db496a46380",
+    "full_mechanism_pool_matched_processing": false
+  },
+  "proposal_sha256": "f2707da754c0397a8b0e53381da1e84a326e0b67a28a8dc7ceab406328ae9efe",
+  "independent_C_review_sha256": "1d58286b02cdecf3a32930d1b38e88ce18f732079d5f0d1f7444f8b81568cea6"
+}

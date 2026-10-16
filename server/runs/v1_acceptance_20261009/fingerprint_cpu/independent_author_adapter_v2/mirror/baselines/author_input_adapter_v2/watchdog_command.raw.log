@@ -1,0 +1,1 @@
+{"exit_code": 0, "wall_seconds": 48.3068428710103, "group_ID": 43410, "peak_observed_group_RSS_bytes": 2208980992, "guard_violation": null, "RAM_guard": "groupRSS observed50ms; not claiming exact cgrouppeak", "CPU_affinity": [0, 1], "combined_namespace_bytes": 7082636, "GPU_started": false, "other_groups_interrupted": false}

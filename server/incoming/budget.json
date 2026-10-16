@@ -1,0 +1,23 @@
+{
+  "cap_cny": 3000,
+  "gpu_hour_cap": 180,
+  "category_caps": {
+    "storage": 500,
+    "profile": 200,
+    "mechanism": 1000,
+    "method": 1000,
+    "recovery": 300
+  },
+  "entries": [
+    {
+      "id": "server-profile-20260910",
+      "category": "profile",
+      "reserved_cny": 7.52,
+      "reserved_gpu_hours": 4.0,
+      "rate_cny_per_hour": 1.88,
+      "quote_reference": "user-confirmed-instance-price-20260910",
+      "status": "reserved",
+      "created": "2026-09-09T18:38:37.379474+00:00"
+    }
+  ]
+}

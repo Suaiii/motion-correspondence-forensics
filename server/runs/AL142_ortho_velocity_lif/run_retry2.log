@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/AL142_ortho_velocity_lif/AL142_ortho_velocity_lif_retry2.py", line 141, in <module>
+    ap=argparse.ArgumentParser(); ap.add_argument("--run-dir",type=Path,required=True); ap.add_argument("--device",default="cuda:0"); args=ap.parse_args(); run(args)
+                                                                                                                                                            ^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL142_ortho_velocity_lif/AL142_ortho_velocity_lif_retry2.py", line 100, in run
+    args.run_dir.mkdir(parents=True,exist_ok=False); start=time.time()
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/pathlib.py", line 1311, in mkdir
+    os.mkdir(self, mode)
+FileExistsError: [Errno 17] File exists: 'output_retry2'

@@ -1,0 +1,35 @@
+{
+  "status": "prospective_targets_not_acquired_samples",
+  "mechanism_clips": 18000,
+  "training_ladder": [
+    24000,
+    48000,
+    96000
+  ],
+  "default_training_target": 48000,
+  "calibration_target": 6000,
+  "ood_development_target": 6000,
+  "final_confirmation_target": 20000,
+  "final_min_real": 8000,
+  "final_min_fake_generators": 6,
+  "final_min_fake_per_generator": 2000,
+  "minimum_training_real_sources": 2,
+  "final_unseen_real_sources": 1,
+  "seeds": [
+    17,
+    29,
+    43,
+    59,
+    71
+  ],
+  "bootstrap_replicates": 5000,
+  "backbone_main": "dinov2_vitb14",
+  "backbone_capacity_check": "dinov2_vitl14",
+  "rules": [
+    "Counts must follow ancestry/quality audit; no duplication to meet quotas",
+    "96000 training tier requires an additional independently sourced real pool; never take the final real pool into training",
+    "Legacy local T2VZ was entirely ineligible at 8 fps; public releases must be audited separately",
+    "Keep task types separate and final identities closed until method freeze",
+    "Expanded monetary/GPU-hour ceiling is awaiting the user; existing limits remain effective for now"
+  ]
+}

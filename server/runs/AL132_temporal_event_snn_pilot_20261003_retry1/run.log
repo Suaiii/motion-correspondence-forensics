@@ -1,0 +1,33 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 57, in _wrapfunc
+    return bound(*args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^
+TypeError: repeat() got an unexpected keyword argument 'axis'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003_retry1/AL132_temporal_event_snn.py", line 311, in <module>
+    main()
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003_retry1/AL132_temporal_event_snn.py", line 297, in main
+    result = fit_eval(x, rows, args.device if torch.cuda.is_available() else "cpu", args.run_dir / "results.json")
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003_retry1/AL132_temporal_event_snn.py", line 229, in fit_eval
+    transformed = np.stack([transform(x[i], kind, seed + i) for i in test], axis=0)
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/AL132_temporal_event_snn_pilot_20261003_retry1/AL132_temporal_event_snn.py", line 172, in transform
+    return np.repeat(x[:1], x.shape[0], axis=0)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 506, in repeat
+    return _wrapfunc(a, 'repeat', repeats, axis=axis)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 66, in _wrapfunc
+    return _wrapit(obj, method, *args, **kwds)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/numpy/_core/fromnumeric.py", line 42, in _wrapit
+    conv = _array_converter(obj)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/site-packages/torch/_tensor.py", line 1226, in __array__
+    return self.numpy()
+           ^^^^^^^^^^^^
+TypeError: can't convert cuda:0 device type tensor to numpy. Use Tensor.cpu() to copy the tensor to host memory first.

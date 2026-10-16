@@ -1,0 +1,11 @@
+members 10 / 100
+members 20 / 100
+members 30 / 100
+members 40 / 100
+members 50 / 100
+members 60 / 100
+members 70 / 100
+members 80 / 100
+members 90 / 100
+members 100 / 100
+{"complete": true, "requested": 100, "download_statuses": {"ok": 100}, "strict_2s_statuses": {"ok": 98, "not_eligible_or_error": 2}, "native16_statuses": {"ok": 99, "not_eligible_or_error": 1}, "classification_metrics_computed": false}

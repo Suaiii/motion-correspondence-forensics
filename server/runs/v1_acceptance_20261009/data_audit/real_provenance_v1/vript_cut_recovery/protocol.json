@@ -1,0 +1,24 @@
+{
+  "revision": "acc278efb0ee249d646eef8a6b023595ca7efb93",
+  "archive_directory_count": 1095,
+  "selected_real_assets": 2000,
+  "selected_source_ids": 828,
+  "order": "ascending numeric creator archive ID; all1095 bounded directories; no speculative mapping or model scores",
+  "requested_payload_kinds": [
+    "ZIP_EOCD_and_directory",
+    "JSON_member_header",
+    "cut_meta_JSON_only"
+  ],
+  "no_video_member_payload": true,
+  "existing_video_CRC_reads": true,
+  "remote_metadata_cap_bytes": 536870912,
+  "memory_cap_bytes": 4294967296,
+  "CPU_affinity": [
+    0,
+    1
+  ],
+  "network_parallelism": 2,
+  "archive_tree_sha256": "356d602ce908fc54f0b3633d345f5531a121eea9c909213b0c238fddf0a329df",
+  "code_sha256": "551206dddb3eb36c3fdc7ff8230f6e6efb19bde610fffc112e0d0398cafc861f",
+  "range_reader_sha256": "40dd4ae19b3db6cdfa41a997b7ae27da703736ce2ebd001461ef98bee929c490"
+}

@@ -1,0 +1,130 @@
+{
+  "dispatch_id": "v1-acceptance-20261009",
+  "window": "B",
+  "version": "propagation-v1",
+  "frozen_at": "2026-10-09T01:19:23.421083+08:00",
+  "scope": "fit-only processing chain construction; no scientific acceptance",
+  "input_manifest_sha256": "0687ca7b63d95776d341a3702a13ec96594fa9f323ca41c1714fd7d57f557d47",
+  "input_selection_sha256": "c58634da5e9fa6bfe9f26aa1e66fbfc05b20d2c69a00d0b694a81005b0ccc9c3",
+  "selection_rule": "release metadata eligibility, fixed SHA ordering, quotas real24/OpenSora12/T2V-Zero12; no scores; no replacement after freeze",
+  "ancestor_evidence_status": "candidate roots only; shared prompt/image/global ancestors unverified",
+  "physical_time": {
+    "origin": "first native PTS * rational stream time_base",
+    "target_seconds": [
+      "0",
+      "1/4",
+      "1/2",
+      "3/4",
+      "1",
+      "5/4",
+      "3/2"
+    ],
+    "max_acquisition_error_seconds": "1/8",
+    "tie_break": "earlier index",
+    "no_frame_repetition": true,
+    "native_window": "frames 0 through nearest native frame to 3/2 seconds inclusive; endpoint jitter recorded",
+    "resampled_output": "seven distinct source frames retimed to exact targets; no interpolation or duplication",
+    "identity_view": "unchanged full file, consumer must use frozen window/grid mapping"
+  },
+  "variants": [
+    {
+      "id": "identity_native",
+      "identity": true,
+      "crf": null,
+      "spatial": "native",
+      "temporal": "native_full"
+    },
+    {
+      "id": "native_crf18",
+      "identity": false,
+      "crf": 18,
+      "spatial": "native",
+      "temporal": "native_window"
+    },
+    {
+      "id": "native_crf32",
+      "identity": false,
+      "crf": 32,
+      "spatial": "native",
+      "temporal": "native_window"
+    },
+    {
+      "id": "resolution384_crf18",
+      "identity": false,
+      "crf": 18,
+      "spatial": "letterbox384",
+      "temporal": "native_window"
+    },
+    {
+      "id": "time4_crf18",
+      "identity": false,
+      "crf": 18,
+      "spatial": "native",
+      "temporal": "nearest4Hz"
+    },
+    {
+      "id": "matched384_time4_crf18",
+      "identity": false,
+      "crf": 18,
+      "spatial": "letterbox384",
+      "temporal": "nearest4Hz"
+    },
+    {
+      "id": "matched384_time4_crf32",
+      "identity": false,
+      "crf": 32,
+      "spatial": "letterbox384",
+      "temporal": "nearest4Hz"
+    }
+  ],
+  "encoder": {
+    "codec": "libx264",
+    "preset": "medium",
+    "pixel_format": "yuv420p",
+    "gop": 48,
+    "keyint_min": 48,
+    "scenecut": 0,
+    "bframes": 0,
+    "rate_cap": "12M",
+    "buffer": "24M",
+    "encoder_time_base": "1/60000",
+    "mp4_track_timescale": 60000,
+    "metadata": "removed",
+    "audio": "removed except unchanged identity"
+  },
+  "spatial": {
+    "output": [
+      384,
+      384
+    ],
+    "resize": "aspect preserving lanczos, even inner dimensions, black padding",
+    "sample_aspect_ratio": "1:1",
+    "native_tracks": "retain source encoded raster; never force native baseline to384"
+  },
+  "mapping_validation": "pre-retime showinfo integer PTS equal selected native PTS; output integer PTS/count validated with ffprobe; decoded frame MD5 retained",
+  "limits": {
+    "max_cpu_affinity": 6,
+    "concurrent_jobs": 1,
+    "decode_threads": 1,
+    "filter_threads": 1,
+    "encode_threads": 1,
+    "x264_lookahead_threads": 1,
+    "max_added_media_bytes": 4294967296,
+    "min_disk_free_bytes": 21474836480,
+    "per_encode_size_guard_bytes": 8388608
+  },
+  "preflight": {
+    "identity_bytes": 59088684,
+    "worst_case_reserved_media_bytes": 2595331884,
+    "media_bytes": 0,
+    "free_bytes": 34386329600,
+    "reservation_bytes": 2595331884
+  },
+  "platform_status": "local simulated transformations on cloud CPU; no real platform upload/download",
+  "scientific_gate_passed": false,
+  "independent_review": "pending different executor A",
+  "reference_documentation": [
+    "https://ffmpeg.org/ffmpeg.html",
+    "https://ffmpeg.org/ffmpeg-filters.html"
+  ]
+}

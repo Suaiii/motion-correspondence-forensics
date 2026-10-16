@@ -1,0 +1,6 @@
+{
+  "requested_utc": "2026-09-10T02:40:40.848267+00:00",
+  "reason": "User requested stop compute billing; original 06:00 deadline already passed; closeout backed up locally",
+  "command": "/usr/bin/shutdown",
+  "preserve_data_disk": true
+}

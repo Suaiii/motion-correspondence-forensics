@@ -1,0 +1,14 @@
+{
+  "selection_sha256": "93087f10f365ae1e216ac0bef1b7915eaba2f77f66906f9f9bb7ee8939abc6b0",
+  "script_sha256": "932ceafcf23fc56846474a310d2c4584054d88ba8528f959dc178ebf01841112",
+  "sampling": {
+    "frames": 16,
+    "fps": 8,
+    "window_sec": 2,
+    "size": 224
+  },
+  "workers": 12,
+  "deadline": "2026-09-11T10:00:00+08:00",
+  "classification_metrics_computed": false,
+  "scope": "two generated sources; no real/fake accuracy or generalization conclusion"
+}

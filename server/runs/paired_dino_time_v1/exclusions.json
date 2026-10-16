@@ -1,0 +1,308 @@
+[
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/gpu_dino_v1/records/629a3f0dbebc17d7a79dd429b152a26ee3af40d2a3c7dbcb56504ba04872e742.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/gpu_dino_v1/records/6f0355c03cfd182726099c811ca5e47b113627de185c20d35e99cf6e1fdc7a34.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/05809cc97062e4d8491c058bd939c9b9f2e5fd2a1d3749fe3efd38b7f6b063fc.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/07dc15c0765c0c390b3d95107f826d88e3444c3fa463c41393d791a294fdd6e4.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/0acc4a60afd876f0284480032a626a90d2d6117942d99741feb1df230ec18645.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/0c2bbb7dfc79ae152b04fcbb6faa93f94a7a791cf3a34cfb2d0bd78481b212c7.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/10329474d16188944b0e7ba47fec6f11871b9575704672be986f492e5f4b79d8.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/12b46985a02e255a67beb33809e781c3c82a67d54d11f27d730f64a239b982f3.json",
+    "reason": "time_cache_excluded",
+    "detail": "ValueError('shorter_than_one_second')"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/1322c5351461ade4752367c018329d95b356d59c7b0742d5f33dba822e3f6c64.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/14681b09f57106b0c07a067ae882830585cc2dde6a7cbc7d2c1b4a7ba5f3cd67.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/16283b0e31a06c89cf45c64fe6101d3a87412aaca7c6d869c7b5178fcbc7e95a.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/175119a0417cf59f9bbbf29b581f10fd2b1932aba77bfc90bf8fb15080864152.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/1b8fc781d4fc15d59d4c2e9ffd6de213d74ad856c6f6bc0eb6699b914bac56dc.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/26305636b326477ff486ac9711f3463881dca84c06acb9035daf53eda4980af5.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/2c741c41e60b6243b32efce1da463ecf4b98e9cb71c0ca4d3eb0e072993c01b0.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/2dba98c9cff36e65ad74bdaef0590666753bcd85b288fa04e3818abbcc97ee1e.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/2de1819ff8958ccd907d5e629cce34c7fe039afce4404aad74a07dec6ce52656.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/2e211594b1909a2e23c4dd7ae3bd14af83b65f198079026f6e5e3acb5e8146ae.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/35c3117016fd237c23621e9648b59c552f3521397e04130e448117289abc81c6.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/36e663de30dddcd9fa6764cb0d2fdaddb8ea9974e54a56cb5f37d46472e04422.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/379d142bc8e823a34f33245184498612741fc9955859f18987ab1f539ed4fdc3.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/391eaa69073b27c34ecfa720b3e885af77c9e1563e2836a1855b23cfbff15cca.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/3d0a4cc4d8f1184bc2fdd9c7d57c5172d586e01488890bc4f6cfb0049815e08b.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/3d7cd6c8539568baabf3a064bfb3b3ade2a7ef4d01e9fa6fcc48dbac9f98620b.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/42787376c22ff534c0f610810371db2ef52b5b5ba125fddca5e8a7c376618cf4.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/4c1fcd76a34a33bb72025aa741ed3dacc6e2bd980a36b4f20450cac643ae581d.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/513323a46fe449b95d5f9ae6ef3cd0161e71c2a0859482c35b6e63398ee70d35.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/53b97c3c56db6791f0859a934f988e2bad6eb6130900c07012d88032c96dcbc2.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/565119c6c08bc637280f781dbf55b14546b22a123d4255725eef1c2c9fdb0519.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/5b9575f6c162472834acb8d57c46973fb803a75d12d521306631ca52919e9d13.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/5cf6969318e82fbe978d1712b34698404965747022a2757feb7834662fdd64a8.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/601e8a6e4a2bc870b3702b5054c34cf725e749217aa8926c655ca5e1f67812cd.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/664997013805fa08f1b095f829ba378d2e3c76ddfd102776fcf8c1343bfbfab4.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/670801741cada241ed97bfef65303f4f451b9b4dd41ebb7bb287e82202e75aaa.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/6784fa83a9f10d68636b18630c52b588e8a36781e109b2ea01895500d867b081.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/692c79f69540a0cd4cfb43716098e7a9918becd863afcb7a64570204181c7e91.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/6cb54a0c8d66f3e85a28983b3303117cf76948d611417300f6cc060ed3296979.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/723908a5832eef45ebbb59b434a7f52daf7c73bc2a6e19a4a03dae1a5e12ba92.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/752a4f67ef97f06b412c327f9d16e2caaab108744c5594af52caf30a4f1e87fe.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/77e7ef3057b97a3b41fe95d28be4e0d9994c2d77b8f7b2a75deaccb6be2160fa.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/7f41578d8eeaaf0f5275b349104d848d123d5b76bcdcf28b75a4d17039572443.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/8904d0dbdd3e6404113dc334369de8f081cf58e86c68fbcd2f72d95945559307.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/8c8186da5c98755c369fa7c466ad27ad267d7a52c33fabdbf265f6b8336bbae3.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/8c93884f059570c38494e7222924021077c0b4949197ad5f208d132e284ea17f.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/92df09b5844cfe7a975eb08db03a24cda3402bfd3dfaa8fe0bf98cf720308c87.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/9b9ef7ddc83ffdb70de08b6398e33e0d33f8c6b6fd78867f71190518d66b660a.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/9ca13bb528596213d792399977b3061b8dd062992f5ccf154b4d0f74d92a3bce.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/9f6df35c43979a7f26b128092329d9f98dc61e5e86fdc5f7abaf5a911258a12b.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/a2fbe905123921f9e7025aee5682e3da8a0ba24601c54db29073b73c60b5b999.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/afbd481770f02c05c71dce7c662716db8fd0e4b62f2b27ff1a2f42a7fe33c3f9.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/b62e48573e305c5970f393b9a779c25763f937556a0991a5c58623974a7315e1.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/bb1bd411e53d941153afd43505de81a7b8014b5878fabf0794f835830c917fd5.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/bee6748558f9f56645fdfbbdd5a0c14c45baab368c54d74ecb28a524e2997bfe.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/c77718d93c70e4ebcc1594ec5f21e92fdc8f91de958c22f0c1c5ef7d0337ae6e.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/c9e0df6df29f1b4b3f58041df5755868abd12a84983247b42e1cd80c2ab7027c.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/ce085756c6fbbc36f32c12d766b4c898ad46d07ee491233a07113437affd8aba.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/ce934b63a62ff3a801ed34ccb488d4c6e7712afae70b1439322152ee177832f1.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/d2eae2ca280a710099cd8b76dcfd7d3444102e756a8c52682b67df4ecd0f5b99.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/d4232e1da506080571e52bff44947ed2d34443e7948967c055ab9ed00c7ae5fc.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/d42fc497bfb7c907d822c4e53a1e922f127289a04fe28a802b77d4a01ae71e80.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/d83f6c29d8250ce5a24330960c1430ff2b48b6f81b7fb228c7fe94bb641b64d8.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/d920fb24447903fbac416e31e0a2f4af4ade1dce920bf68f091fa22e6324e605.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/dfec4bfcaf8d1e7988400b1b3ffdf57da0ed0d5163096306c0cff849115ff3fd.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/e20fb9652a9ffda9ddc2e8500a5c7baf2af7d78427844a6742a857f797228ab1.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/e2d7dffdd544a37bb0f03c14e78d81f1e4196e9bb541427036c3d1bb0d1ded89.json",
+    "reason": "time_cache_excluded",
+    "detail": "ValueError('shorter_than_one_second')"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/e30a0d45838f571e7a77bc6929b4b5ce05dbe950ba911057927125d88cadb491.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/e4aa3d9c1655bd9f322ede56102d256bcd9dcef57c75b09d9acd68d894fa899c.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/e5872768d6f18bdee2d25c404e57f83b7b4dbbdd0bb85ff58f70fd57b1870f0a.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/ea160adc69122af312b3a31406efaa13045d7263b9b194d63ce1d351257ff5dc.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/ebd5c28cc95171be20af4af4320f59c91c49316956c40eb7572ad23fe8361233.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/ec0b134477ca4f94aa4e037031965eb28e2e89ffd3f52dfbc1df29ea3aa54eb5.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/f6b18cf7f358fafa89a23cc5223c9c636070a226181a6fa50ae9adb5360aa10e.json",
+    "reason": "QualityExclusion: fewer_than_16_native_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/f85fcf3ef532800d5712b4c933799abc98feadf328977ae3a32483a645f2aacd.json",
+    "reason": "historical_exact_hash"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/f9203ce5bd5a027357c24b0ee3b90567490f5c38cfb5cb238b7c3b892aee1ba9.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/fa19b6722e371efafaf7a89cc8d15ca5f0edd71b5e2a25a352d9f0daefef2eaa.json",
+    "reason": "QualityExclusion: black_frames"
+  },
+  {
+    "record": "/root/autodl-tmp/cvpr27/runs/overnight_20260911/vript_dino_group1746_v1/records/fdfa489e26a0ee0aba756ec9c704145c285ff9cd576ecfcff550db4950d6d8a1.json",
+    "reason": "QualityExclusion: black_frames"
+  }
+]

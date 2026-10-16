@@ -1,0 +1,28 @@
+{
+  "scope": "external-development prefix transfer; no final confirmation",
+  "script_sha256": "9cdc0c6e99a8ee9fd99c65ee94dd09e8a4181f86eb7d3a247f923b14de0232e7",
+  "audit_manifest_sha256": "d78095cd936905333ff57f494436bcb5979abfe0ccb1fb3098fc6e65c96e7b9f",
+  "frozen_parent_protocol_sha256": "e5f313628f9993fcf590d084be976d729b0bd9c84443cc201d45847afffbcbd4",
+  "frozen_parent_report_sha256": "6b70dcf3a81f07fb314c2e954881e1bcf7f3bd3f120a7b9dd295125f641c5b16",
+  "decoder_sha256": "7a87b2aac2f92d5121d0b9c6d6cf50e975e428b3b0c295d74acfdd813b1d7ce0",
+  "weights_sha256": "0b8b82f85de91b424aded121c7e1dcc2b7bc6d0adeea651bf73a13307fad8c73",
+  "model_revision": "7764ea0f912e53c92e82eb78a2a1631e92725fc8",
+  "sampling": "center 1 second, 8 nearest unique native frames at 8Hz, tie earlier, no pixel interpolation",
+  "precision": "float32 features from bfloat16 autocast; same as original cache",
+  "workers": 12,
+  "video_batch": 32,
+  "reuse_cache": "/root/autodl-tmp/cvpr27/runs/pair2_frozen_transfer_v1",
+  "probe_timeout_seconds": null,
+  "fit_performed": false,
+  "requested": 196,
+  "final_access": false,
+  "walltime_cap": null,
+  "selection": "all eligible prefix candidates after author metadata, ancestry-ID and exact-hash exclusions",
+  "bootstrap": "resample complete YouTube-origin groups jointly across real/generated labels; 2000 draws",
+  "limits": [
+    "Archive prefix, not random sampling; author provenance, not independent content proof.",
+    "No recalibration, threshold tuning or best-seed selection on this new cohort.",
+    "Intervals condition on frozen heads and candidate source groups.",
+    "Nearest-frame timing cues and only 100 requested clips per new source remain limitations."
+  ]
+}

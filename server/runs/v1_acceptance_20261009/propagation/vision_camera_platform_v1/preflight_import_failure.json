@@ -1,0 +1,5 @@
+{
+  "first_inline_import_error": "ModuleNotFoundError vision_common because remote stdin CWD was/root",
+  "fix": "explicit B5namespace sys.path before resource-only read",
+  "selection_or_media_restarted": false
+}

@@ -1,0 +1,36 @@
+{
+  "version": "video_evidence_v1",
+  "created_at_local": "2026-10-04T23:12:14+0800",
+  "elapsed_sec": 470.02126240730286,
+  "row_count": 9236,
+  "ok_count": 9236,
+  "error_count": 0,
+  "native_pts_incomplete_count": 0,
+  "packages": {
+    "AAGenvid_RoboVidSM_v02": 8800,
+    "AEGIS_HardTest": 436
+  },
+  "scope": "stable data inventory and propagation benchmark candidate; not formal mechanism acceptance",
+  "formal_gate": false,
+  "manifest_sha256": "0687ca7b63d95776d341a3702a13ec96594fa9f323ca41c1714fd7d57f557d47",
+  "inputs": {
+    "random_manifest_sha256": "96041261748c19501f8319d9d05dfed76fa6049b71db9ebca8504119b6578d5d",
+    "split_manifest_sha256": "ec2add386560a4d99b04ec4c0905d84332bfa7329dbbaafaef95e0403c3f4b69",
+    "aegis_readme_sha256": "301f18bd313c1d856973ded2f4c68e3ca56bbd129629659bb04f83998b25e25f",
+    "aegis_mapping_sha256": "ce01ab34557a11bfc702c4939b0a48cbb4e38759e6eaba449620558406bf3173",
+    "aegis_tar_sha256": "e59609bb6c676523e50170a31a213b209f8c4766755c624dd44e00edefc8a3c2"
+  },
+  "generator_label_repair": {
+    "matched_openai_sora_stems": [
+      "Aquarium NYC",
+      "Birds over river",
+      "Cloud man",
+      "Dancing kangaroo",
+      "Grandma birthday",
+      "Happy cat",
+      "Puppy cloning"
+    ],
+    "old_manifest_sha256": "60460c19bbf186f1ae5c575efa1be2d1aab65de285c1e3b6963759b2d3f17ec8",
+    "repaired_at_local": "2026-10-04T23:13:57+0800"
+  }
+}

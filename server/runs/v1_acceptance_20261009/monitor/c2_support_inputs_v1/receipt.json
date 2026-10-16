@@ -1,0 +1,35 @@
+{
+  "completed_at": "2026-10-08T18:48:29.527764+00:00",
+  "status": "pass",
+  "scope": "Exact frozen C2 text metadata, losslessly compressed; no scores or model execution",
+  "scientific_gate_passed": false,
+  "input_acceptance": "C2 input-qualification evidence only; actual benchmark support requires separate explicit acceptance",
+  "files": [
+    {
+      "source_path": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/sample_eligibility.jsonl",
+      "source_bytes": 54602937,
+      "source_sha256": "bf8c1c4bdc369753180cccde282a6958f8346a0a11ca16de3c637e858bed8a8a",
+      "jsonl_rows": 77720,
+      "compressed_path": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/monitor/c2_support_inputs_v1/sample_eligibility.jsonl.gz",
+      "compressed_bytes": 4139223,
+      "compressed_sha256": "6476cd4ec0df10cc400984aaed179b8f60059c7a90b8215972d83b385998d93a"
+    },
+    {
+      "source_path": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/frame_plans.jsonl",
+      "source_bytes": 124704548,
+      "source_sha256": "19584f82a1ead852388b7eadb2c38c33ff386981271d71038be78d7a00b273c9",
+      "jsonl_rows": 77720,
+      "compressed_path": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/monitor/c2_support_inputs_v1/frame_plans.jsonl.gz",
+      "compressed_bytes": 5240209,
+      "compressed_sha256": "70660a1c8f5ee276985432251314b4e1a90006382be87a43580f89cf3d14edfb"
+    }
+  ],
+  "media_opened": 0,
+  "gpu_jobs": 0,
+  "cpu_affinity": [
+    0,
+    1
+  ],
+  "elapsed_seconds": 2.7663005962967873,
+  "free_bytes": 32875069440
+}

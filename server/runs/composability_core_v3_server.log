@@ -1,0 +1,46 @@
+nohup: ignoring input
+{
+  "status": "pass",
+  "unit_tests": 11,
+  "seconds": 3.7105349972844124,
+  "gpu": {
+    "device": "NVIDIA GeForce RTX 4090 D",
+    "torch": "2.8.0+cu128",
+    "peak_allocated_gib": 0.017102718353271484,
+    "replay": [
+      {
+        "interior_control": false,
+        "max_absolute_errors": {
+          "responses": 9.073031242978757e-08,
+          "direct_js": 2.1304873842886707e-07,
+          "correspondence_entropies": 2.0762507073612824e-06,
+          "middle_probability_mass": 2.384185791015625e-07
+        },
+        "cuda_wall_ms_including_validation_sync": 470.4609069824219
+      },
+      {
+        "interior_control": true,
+        "max_absolute_errors": {
+          "responses": 9.79590140115505e-08,
+          "direct_js": 2.484282184411768e-07,
+          "correspondence_entropies": 2.0762507073612824e-06,
+          "middle_probability_mass": 3.3440766367132113e-07
+        },
+        "cuda_wall_ms_including_validation_sync": 21.307392120361328
+      }
+    ],
+    "scope": "synthetic operator check; no DINO, video decode, training or end-to-end profile",
+    "head_interface_checks": {
+      "logit_shape": [
+        2
+      ],
+      "backbone_inputs_detached": true,
+      "head_gradients_finite": true,
+      "unordered_triplet_readout": true,
+      "direct_js_diagnostic_only": true,
+      "empty_support_semantic_fallback": true,
+      "production_parameter_count": 217057,
+      "trained_on_real_data": false
+    }
+  }
+}

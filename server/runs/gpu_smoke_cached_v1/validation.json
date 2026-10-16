@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "scope": "synthetic software validation only",
+  "videos": 18,
+  "full_video_h264_before_sampling": true,
+  "epochs": 2,
+  "resume_model_bitwise_equal": true,
+  "resume_predictions_equal": true,
+  "metric_groups": 2,
+  "final_release_required": true,
+  "parallel_materialized_inputs_bitwise_equal": true,
+  "derived_cache_purge_preserves_original_inputs": true
+}

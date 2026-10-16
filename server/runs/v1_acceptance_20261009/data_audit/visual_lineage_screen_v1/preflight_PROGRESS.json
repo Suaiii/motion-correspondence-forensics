@@ -1,0 +1,17 @@
+{
+  "mode": "preflight",
+  "batch": "batch_1791496231",
+  "done_this_batch": 52,
+  "completed_total": 52,
+  "target": 52,
+  "wall_seconds": 12.75368171185255,
+  "resource": {
+    "allocated": 34889728,
+    "logical": 34638411,
+    "free": 26890346496,
+    "peak_parent_RSS_KiB": 132956,
+    "peak_child_RSS_KiB": 132956
+  },
+  "pid": 51704,
+  "state": "complete"
+}

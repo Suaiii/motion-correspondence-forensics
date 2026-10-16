@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/al132_pilot.py", line 128, in <module>
+    if __name__=='__main__': main()
+                             ^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/al132_pilot.py", line 87, in main
+    rows=read_rows(args.manifest); hold=read_rows(args.holdout)
+         ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/al132_pilot.py", line 24, in read_rows
+    def read_rows(path): return [json.loads(x) for x in open(path,encoding='utf-8')]
+                                 ^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/json/__init__.py", line 346, in loads
+    return _default_decoder.decode(s)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/miniconda3/lib/python3.12/json/decoder.py", line 340, in decode
+    raise JSONDecodeError("Extra data", s, end)
+json.decoder.JSONDecodeError: Extra data: line 1 column 527 (char 526)

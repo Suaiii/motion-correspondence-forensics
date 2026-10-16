@@ -1,0 +1,18 @@
+nohup: ignoring input
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/releases/v0.1.3/cvpr27-server/run.py", line 4, in <module>
+    raise SystemExit(main())
+                     ^^^^^^
+  File "/root/autodl-tmp/cvpr27/releases/v0.1.3/cvpr27-server/forensics/cli.py", line 130, in main
+    elif a.command=='profile':profile(a)
+                              ^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/releases/v0.1.3/cvpr27-server/forensics/cli.py", line 57, in profile
+    bgr,q=load_condition(source,'clean',cfg['sampling'],Path(args.cache_root)/'scratch');decoded=time.monotonic()
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/releases/v0.1.3/cvpr27-server/forensics/video.py", line 57, in load_condition
+    if condition=='clean':return decode(path,cfg)
+                                 ^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/releases/v0.1.3/cvpr27-server/forensics/video.py", line 25, in decode
+    if duration+1e-6<cfg['window_sec']:raise QualityExclusion('short_video')
+                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+forensics.video.QualityExclusion: short_video
