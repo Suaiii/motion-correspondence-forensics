@@ -1,0 +1,20 @@
+{
+  "execution_manifest": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/meta/d3_execution.json",
+  "manifest_sha256": "c13d6b5dc6951d5dfd5976fd396f9687e06f89df5b9ff7a974e85ab513b74b6e",
+  "asset_lock": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/typed/asset_lock.json",
+  "asset_lock_sha256": "3239e413748e15def993458f8378ede6c7ab6d41dfd3dbcb97d89f98bf486230",
+  "asset_dir": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/inference_assets_ready_v1/assets/xclip16",
+  "prepared_root": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1",
+  "output": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/run_output_v3",
+  "dependency_paths": [
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1/dependencies/site",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/cpu_deps"
+  ],
+  "CPU_affinity": [
+    4,
+    5
+  ],
+  "max_output_bytes": 33554432,
+  "checkpoint_every": 1,
+  "retry_failed": false
+}

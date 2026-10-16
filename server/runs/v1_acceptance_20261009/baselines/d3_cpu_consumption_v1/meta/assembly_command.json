@@ -1,0 +1,33 @@
+{
+  "argv": [
+    "/root/miniconda3/bin/python",
+    "-B",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/b8_source/assemble_manifest.py",
+    "--selection",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/typed/selection.jsonl",
+    "--selection-sha256",
+    "c16adbdbb82a5a116b3f875dddbe787297e2f8b0721ae822119d26992617e091",
+    "--prepared-index",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/typed/prepared_index.jsonl",
+    "--prepared-index-sha256",
+    "24135b0dca0a328d02a63b765dd126876bf9003b38757fa9e8b2a5ff1dd64b46",
+    "--input-records",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/typed/input_records.jsonl",
+    "--input-records-sha256",
+    "4c5ee6966d1726d02231f1cccac545252d105cd89d877d086ed56ff61c9fd5d9",
+    "--environment",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/meta/d3_environment.json",
+    "--environment-sha256",
+    "6a1d4e68722f435020bcc0f890e402c8b8c870889b2804be851bc16b0db47c2c",
+    "--identity",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/typed/identity.json",
+    "--identity-sha256",
+    "c2ed590e7dd1196cb316af1a66b1f2efe56c4132319c1ddf16baef65dd9aa17e",
+    "--output",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/meta/d3_execution.json"
+  ],
+  "exit_code": 0,
+  "stdout": "{\"execution_manifest\": \"/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/meta/d3_execution.json\", \"sha256\": \"c13d6b5dc6951d5dfd5976fd396f9687e06f89df5b9ff7a974e85ab513b74b6e\", \"requested_members\": 12, \"public_approved\": 12, \"public_excluded_retained\": 0, \"new_scores_or_models\": 0}\n",
+  "stderr": "",
+  "wall_seconds": null
+}

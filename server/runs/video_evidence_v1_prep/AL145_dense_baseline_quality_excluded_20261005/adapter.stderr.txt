@@ -1,0 +1,21 @@
+/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/sklearn/metrics/_ranking.py:424: UndefinedMetricWarning: Only one class is present in y_true. ROC AUC score is not defined in that case.
+  warnings.warn(
+Traceback (most recent call last):
+  File "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/video_evidence_dense_adapter.py", line 274, in <module>
+    if __name__ == "__main__": main()
+                               ^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/video_evidence_dense_adapter.py", line 271, in main
+    args = ap.parse_args(); args.func(args)
+                            ^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/runs/video_evidence_v1_prep/video_evidence_dense_adapter.py", line 258, in cmd_train
+    "bce": float(log_loss(y[mask], prob[mask])) if mask.sum() else None}
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/sklearn/utils/_param_validation.py", line 218, in wrapper
+    return func(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 3240, in log_loss
+    transformed_labels, y_pred = _validate_multiclass_probabilistic_prediction(
+                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/root/autodl-tmp/cvpr27/environment/venv/lib/python3.12/site-packages/sklearn/metrics/_classification.py", line 229, in _validate_multiclass_probabilistic_prediction
+    raise ValueError(
+ValueError: y_true contains only one label (1). Please provide the list of all expected class labels explicitly through the labels argument.

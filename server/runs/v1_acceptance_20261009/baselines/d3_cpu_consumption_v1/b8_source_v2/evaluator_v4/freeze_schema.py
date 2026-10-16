@@ -1,0 +1,11 @@
+import hashlib,json
+from pathlib import Path
+ROOT=Path(__file__).resolve().parent
+p=ROOT/'prediction_schema_v2.json';s=json.loads(p.read_text());s['title']='C5 admission v3 staged reference policy; recordversion1.0'
+policy=s['properties']['reference_frame_policy'];policy['properties']['strategy']['enum']+=['staged_author_input','explicit_time_control']
+policy['properties']['control_processing_id']={'type':'string','minLength':1}
+stage={'type':'object','required':['operation','input_slots','output_to_input_slots','evidence_status'],'properties':{'operation':{'enum':['native_selection','author_fps_resampling','display_interval_sampling','repeat_last_padding','processor_temporal_tail_padding','explicit_temporal_order_control']},'input_slots':{'type':'integer','minimum':1},'output_to_input_slots':{'type':'array','minItems':1,'items':{'type':'integer','minimum':0}},'evidence_status':{'enum':['observed','unverified']},'evidence_sha256':{'type':'string','pattern':'^[0-9a-f]{64}$'},'temporal_patch_size':{'type':'integer','minimum':1},'interval_start_seconds':{'type':'array','items':{'type':'number'}},'interval_duration_seconds':{'type':'array','items':{'type':'number'}},'target_seconds':{'type':'array','items':{'type':'number'}}},'additionalProperties':False}
+policy['properties']['chain']={'type':'object','required':['base_frame_indices','base_selected_pts','stages'],'properties':{'base_frame_indices':{'type':'array','minItems':1,'items':{'type':'integer','minimum':0}},'base_selected_pts':{'type':'array','minItems':1,'items':{'type':'integer'}},'stages':{'type':'array','minItems':1,'items':stage}},'additionalProperties':False}
+s['$comment']='Admission v3 verifies known policy semantics bystage. Staged mapping must hashmatch; FPS anddisplay interval can repeat internally, tailpadding maps onlylast inputslot. Explicit ordercontrol requires distinct processingidentity. Arithmetic/denominator contract unchanged.'
+p.write_text(json.dumps(s,indent=2)+'\n');lock={n:hashlib.sha256((ROOT/n).read_bytes()).hexdigest() for n in ['prediction_schema_v2.json','support_schema_v2.json']};(ROOT/'schema_fingerprints.py').write_text('SCHEMA_SHA256 = '+repr(lock)+'\n')
+print(json.dumps(lock))

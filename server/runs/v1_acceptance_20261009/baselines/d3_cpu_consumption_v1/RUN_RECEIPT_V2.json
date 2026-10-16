@@ -1,0 +1,16 @@
+{
+  "PID": 857107,
+  "create_time": 1792152690.99,
+  "start_unix": 1792152691.167042,
+  "end_unix": 1792152700.0949972,
+  "exit_code": 2,
+  "peak_group_RSS_bytes": 1366495232,
+  "violation": null,
+  "worker_stdout": "worker_v2.stdout.log",
+  "worker_stderr": "worker_v2.stderr.log",
+  "worker_stdout_SHA256": "7c89d8fc39348cccdd40168da76acd53931c463a3eda5c24db8bc55b8406a3fb",
+  "worker_stderr_SHA256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "automatic_restart": false,
+  "model_GPU_media_download": false,
+  "final_output_bytes": 1777417
+}

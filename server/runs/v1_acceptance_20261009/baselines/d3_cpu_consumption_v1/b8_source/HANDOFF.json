@@ -1,0 +1,35 @@
+{
+  "dispatch_id": "v1-monitor-20261009-B8-d3-inference-runner",
+  "status": "completed_finite_code_delivery",
+  "entry": "runner.py plan/run",
+  "metadata_join": "assemble_manifest.py",
+  "environment_metadata": "environment_lock.py",
+  "method": "D3 XCLIP-16/l2 frozen forward float32/sample_std, score_fake=-raw",
+  "author_forward_reader_AST_unchanged": true,
+  "evaluator_v4_byte_identical_files": 13,
+  "old_A7_wrapper_or_27_media_replay": false,
+  "selection": "all requested manifest members ordered; no per-class1000 cap; failed/pending remain denominator",
+  "resume": "identical lock+eventchecksum+prediction identity; explicit failed retry; interruption bytes preserved",
+  "cv2_distribution_compatibility": "explicit opencv-python-headless=4.12.0.88 with source andnative extension lock; no alias version or install",
+  "first12": "original/current fit stays fit; overlay A10 conservativepublic exclusions before encoder; no audit metrics for fit",
+  "A11_full_source_role_producer": "separate assignment, not claimed supported or expanded byB8",
+  "validation": "syntax andno side-effect import/help/plan only; heavy dependency imports0",
+  "real_or_fixture_predictions": 0,
+  "models_media_cloud_GPU_calls": 0,
+  "remaining_runtime_checks": [
+    "actual visual checkpoint keys/shapes/load",
+    "actual encoderHW/score",
+    "resume andRSS/output enforcement underreal CPU call"
+  ],
+  "remaining_coordinated_inputs": [
+    "typed A10-approved complete execution manifest andexternal SHA",
+    "C9 asset-lock/config/payload exactidentities",
+    "prepared JPEG index hashes",
+    "target cv2/whole dependency source descriptor"
+  ],
+  "coordination_status_as_reported": "C9 completed verified128local/39cloud members; C10 hasfirst12/199JPEG/12native probes and128MiB reservation; B8 didnotcallcloud",
+  "next_commands": "NEXT_RUN.md",
+  "source_packets_main_PLAN_DAG_DEVLOG_written": false,
+  "new_branches_windows_agents": 0,
+  "science_gate_passed": false
+}

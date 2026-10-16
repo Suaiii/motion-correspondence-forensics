@@ -1,0 +1,26 @@
+{
+  "version": "C10_observed_prepared_support/1.0",
+  "fixture": false,
+  "source_role": "fit",
+  "supported_sample_ids": [
+    "v1:Dataset/RoboVid-SM/v02/splits/train/real/-ess9yiXH1g-Scene-070.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/real/-Hpg214Kk_U-Scene-035.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/real/-hLEU0tDmxw-Scene-080.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/real/-F5DQA7iiKM-Scene-074.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/OpenSoraL_109233.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/OpenSoraL_110920.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/OpenSoraL_110265.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/OpenSoraL_10679.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/t2vz-ec035ada-5238-5f32-b473-270ce22e32e4.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/t2vz-cd7f7a32-a001-53cb-b7d7-2b400b41812b.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/t2vz-21916a65-5d66-5a7c-9aca-28a974cf5457.mp4",
+    "v1:Dataset/RoboVid-SM/v02/splits/train/fake/t2vz-d0caece1-aac3-5539-865a-f352e5ba635f.mp4"
+  ],
+  "source_prepared_check_SHA256": "ff32edd12de4180f3e6d3f3287c4f3966afb0577b661933a6305ea7d75ea263c",
+  "source_candidate_facts_SHA256": "37bab685803b5d2021212fc608d4a12c03c4f5a7446a215b8487d640d9d0da44",
+  "A7_record_SHA256": "4c5ee6966d1726d02231f1cccac545252d105cd89d877d086ed56ff61c9fd5d9",
+  "source_support_scope": "12 actual author input records and211 cloud file hashes; no wholebenchmark qualification",
+  "source_binding": "actual_current_backend_observation",
+  "ancestry_verified": false,
+  "encoder_called": false
+}

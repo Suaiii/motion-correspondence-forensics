@@ -1,0 +1,43 @@
+{
+  "version": "C10_typed_input_preparation/1.0",
+  "status": "frozen_metadata_for_future_B8_assembly",
+  "models_or_GPU_called": 0,
+  "expected_samples": 12,
+  "prepared_JPEG_file_count": 199,
+  "source_records_original_bytes": true,
+  "runtime_environment_descriptor": "pending final B8 cloud metadata-only describe",
+  "files": {
+    "A7_input_records.original.jsonl": {
+      "sha256": "4c5ee6966d1726d02231f1cccac545252d105cd89d877d086ed56ff61c9fd5d9",
+      "bytes": 76545
+    },
+    "asset_lock.json": {
+      "sha256": "3239e413748e15def993458f8378ede6c7ab6d41dfd3dbcb97d89f98bf486230",
+      "bytes": 579
+    },
+    "identity.json": {
+      "sha256": "c2ed590e7dd1196cb316af1a66b1f2efe56c4132319c1ddf16baef65dd9aa17e",
+      "bytes": 581
+    },
+    "prepared_index.jsonl": {
+      "sha256": "24135b0dca0a328d02a63b765dd126876bf9003b38757fa9e8b2a5ff1dd64b46",
+      "bytes": 25637
+    },
+    "protocol.json": {
+      "sha256": "d404a42402aea699a705f6a33cdadd2e3b84b5644f495c34d4c569264ad1cbaa",
+      "bytes": 1493
+    },
+    "selection.jsonl": {
+      "sha256": "c16adbdbb82a5a116b3f875dddbe787297e2f8b0721ae822119d26992617e091",
+      "bytes": 9008
+    },
+    "split.json": {
+      "sha256": "81b5c3c6ec2da4d31128e94818dd26863a321ecb5d444bcbeea9411b087a445a",
+      "bytes": 5270
+    },
+    "support_lock.json": {
+      "sha256": "fe0f75d80907fbdaf4a100658ff65c05f06b4eca9f83fe1c6d8f5db882ce53c2",
+      "bytes": 1666
+    }
+  }
+}

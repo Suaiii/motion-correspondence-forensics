@@ -1,0 +1,12 @@
+{
+  "version": "d3_asset_lock/1.0",
+  "status": "draft_unfilled_metadata_example_not_execution",
+  "repository": "microsoft/xclip-base-patch16",
+  "revision": "d6184e3fd8780d04c85d0f1eabe5f94bf44d98f6",
+  "checkpoint_path": "model.safetensors",
+  "checkpoint_sha256": null,
+  "checkpoint_bytes": null,
+  "config_path": "config.json",
+  "config_sha256": null,
+  "C9_delivery_sha256": null
+}

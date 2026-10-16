@@ -1,0 +1,423 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5 admission v3 staged reference policy; recordversion1.0",
+  "type": "object",
+  "required": [
+    "schema_version",
+    "sample_id",
+    "ancestor_id",
+    "ancestry_status",
+    "input_sha256",
+    "source_family",
+    "generator_family",
+    "label_fake",
+    "role",
+    "evaluation_unit",
+    "method_id",
+    "method_revision",
+    "checkpoint_sha256",
+    "preprocessing_sha256",
+    "split_sha256",
+    "track",
+    "processing_id",
+    "seed",
+    "score_raw",
+    "score_fake",
+    "score_transform",
+    "fixture",
+    "frame_indices",
+    "native_time",
+    "compute_budget"
+  ],
+  "properties": {
+    "schema_version": {
+      "const": "v1_baseline_prediction/1.0"
+    },
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ancestor_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "ancestry_status": {
+      "enum": [
+        "verified",
+        "unknown",
+        "fixture"
+      ]
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "generator_family": {
+      "type": "string",
+      "minLength": 1
+    },
+    "label_fake": {
+      "enum": [
+        0,
+        1
+      ]
+    },
+    "role": {
+      "enum": [
+        "fit",
+        "calibration",
+        "development_audit",
+        "held_generator_audit",
+        "external_audit",
+        "final_confirmation"
+      ]
+    },
+    "evaluation_unit": {
+      "const": "video"
+    },
+    "method_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method_revision": {
+      "type": "string",
+      "minLength": 1
+    },
+    "checkpoint_sha256": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "weight_free": {
+      "type": "boolean"
+    },
+    "preprocessing_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "split_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "track": {
+      "enum": [
+        "native_reference",
+        "matched_processing"
+      ]
+    },
+    "processing_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "seed": {
+      "type": [
+        "integer",
+        "null"
+      ]
+    },
+    "score_raw": {
+      "type": "number"
+    },
+    "score_fake": {
+      "type": "number"
+    },
+    "score_transform": {
+      "enum": [
+        "identity",
+        "negate",
+        "one_minus"
+      ]
+    },
+    "fixture": {
+      "type": "boolean"
+    },
+    "frame_indices": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 1
+    },
+    "native_time": {
+      "type": "object",
+      "required": [
+        "pts_field",
+        "time_base",
+        "selected_pts"
+      ],
+      "properties": {
+        "pts_field": {
+          "enum": [
+            "pts",
+            "pkt_pts"
+          ]
+        },
+        "time_base": {
+          "type": "string",
+          "pattern": "^[1-9][0-9]*/[1-9][0-9]*$"
+        },
+        "selected_pts": {
+          "type": "array",
+          "items": {
+            "type": "integer"
+          },
+          "minItems": 1
+        }
+      }
+    },
+    "compute_budget": {
+      "type": "object",
+      "required": [
+        "decode_wall_seconds",
+        "encoder_wall_seconds",
+        "head_wall_seconds",
+        "peak_memory_bytes",
+        "n_frames",
+        "input_hw"
+      ],
+      "properties": {
+        "decode_wall_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "encoder_wall_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "head_wall_seconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "peak_memory_bytes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "n_frames": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "input_hw": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "n_unique_native_frames": {
+          "type": "integer",
+          "minimum": 1
+        }
+      }
+    },
+    "protocol_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "cohort_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "reference_frame_policy": {
+      "type": "object",
+      "required": [
+        "strategy",
+        "policy_sha256"
+      ],
+      "properties": {
+        "strategy": {
+          "enum": [
+            "none",
+            "author_repeat_last",
+            "author_fps_resampling",
+            "staged_author_input",
+            "explicit_time_control"
+          ]
+        },
+        "policy_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_ref": {
+          "type": "string"
+        },
+        "control_processing_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "chain": {
+          "type": "object",
+          "required": [
+            "base_frame_indices",
+            "base_selected_pts",
+            "stages"
+          ],
+          "properties": {
+            "base_frame_indices": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "base_selected_pts": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer"
+              }
+            },
+            "stages": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "operation",
+                  "input_slots",
+                  "output_to_input_slots",
+                  "evidence_status"
+                ],
+                "properties": {
+                  "operation": {
+                    "enum": [
+                      "native_selection",
+                      "author_fps_resampling",
+                      "display_interval_sampling",
+                      "repeat_last_padding",
+                      "processor_temporal_tail_padding",
+                      "explicit_temporal_order_control"
+                    ]
+                  },
+                  "input_slots": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "output_to_input_slots": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  },
+                  "evidence_status": {
+                    "enum": [
+                      "observed",
+                      "unverified"
+                    ]
+                  },
+                  "evidence_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "temporal_patch_size": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "interval_start_seconds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "interval_duration_seconds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "target_seconds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "track": {
+            "const": "matched_processing"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "frame_indices": {
+            "uniqueItems": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "checkpoint_sha256": {
+            "type": "null"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "weight_free"
+        ],
+        "properties": {
+          "weight_free": {
+            "const": true
+          }
+        }
+      }
+    },
+    {
+      "if": {
+        "properties": {
+          "ancestry_status": {
+            "const": "fixture"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "fixture": {
+            "const": true
+          }
+        }
+      }
+    }
+  ],
+  "additionalProperties": true,
+  "$comment": "Admission v3 verifies known policy semantics bystage. Staged mapping must hashmatch; FPS anddisplay interval can repeat internally, tailpadding maps onlylast inputslot. Explicit ordercontrol requires distinct processingidentity. Arithmetic/denominator contract unchanged."
+}

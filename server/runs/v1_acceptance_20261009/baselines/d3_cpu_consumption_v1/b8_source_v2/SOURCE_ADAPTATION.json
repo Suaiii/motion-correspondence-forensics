@@ -1,0 +1,90 @@
+{
+  "author_forward_AST_unchanged": true,
+  "author_reader_four_functions_AST_unchanged": true,
+  "model_constructor": "same author XCLIPVisionModel.from_pretrained local directory; local_files_only=True andfloat32, no hub fallback, complete visual keys/shapes required before prediction",
+  "selection_loop": "ordered frozen execution manifest replaces author two CSV head1000; no per-class cap",
+  "A7_adapter_entry_called": false,
+  "A7_preparation_or_old27_replayed": false,
+  "prepared_inputs": "reuse frozen JPEG folders and scoreless v4 input records; no new video sampler or metric implementation",
+  "evaluator_copies": [
+    {
+      "path": "evaluator_v4\\admission.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\admission.py",
+      "sha256": "32d8abb59acab9d0f0de73d3572fadd3fb7deea0a1edb49e35f6832df1f22515",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\arithmetic_v1.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\arithmetic_v1.py",
+      "sha256": "06a720ee7833b08898eb7a885181fc25ee7ff9b23376ff5d677ed160695dd3fd",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\build_input_record_schema.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\build_input_record_schema.py",
+      "sha256": "fff036122e44a7065d35d94e03c59122bbdab1ae6f1c59c080a8ccb69e83ecf1",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\evaluation.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\evaluation.py",
+      "sha256": "04ccf791681637209954a197e82ea90989abe6557dd5d6b5487d4c0d2d6090bb",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\freeze_schema.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\freeze_schema.py",
+      "sha256": "09cae885344bc14ff9cc1d2470375d770f54340dddcd0ad3086079f3427d55b1",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\input_record.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\input_record.py",
+      "sha256": "e24d4808a2644609b173fe1a351687b4e22caead3d47ce3318f5c9b889c4323a",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\input_record_schema_v2.json",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\input_record_schema_v2.json",
+      "sha256": "6d5299bdad1374249dd71a271c65b1b1e8c22e2af6bdc91ee45558746d4e15b6",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\prediction_schema_v2.json",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\prediction_schema_v2.json",
+      "sha256": "96c042cda2c0fc6bd0b280cd1d15bb7c19e37e4f22441cd224a28e16e45bf866",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\record_contract.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\record_contract.py",
+      "sha256": "5daf092d021e965f309cb96eecf84f4f613f80132aba9d0ef56f6f75a8075cde",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\reference_policy.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\reference_policy.py",
+      "sha256": "7f3668194b590fe2e38045a04e57a2ab46f8b0bb4ecd156d83ab8512c62c442e",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\schema_fingerprints.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\schema_fingerprints.py",
+      "sha256": "92e00c5060049a7f6d146aedc4b7544899e9f61a8e3d7e7d385fdbfd5b6dc80b",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\support.py",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\support.py",
+      "sha256": "2eb4ec1c9c867e70ff2f50b7bad40f5c2ed44479c910443bddb1019a7ed2fca8",
+      "diff": "byte_identical"
+    },
+    {
+      "path": "evaluator_v4\\support_schema_v2.json",
+      "source": "baselines\\input_contract_recovery_v1\\evaluator_v4\\support_schema_v2.json",
+      "sha256": "2770999296f78ac831e1c54bb27b55aa2641cded9eee28a92baea7437c9e6572",
+      "diff": "byte_identical"
+    }
+  ],
+  "original_namespaces_written": false
+}

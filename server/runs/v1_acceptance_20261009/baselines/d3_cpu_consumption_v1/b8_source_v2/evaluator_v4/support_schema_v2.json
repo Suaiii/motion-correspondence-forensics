@@ -1,0 +1,342 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C3 expected support lock v2",
+  "oneOf": [
+    {
+      "type": "object",
+      "required": [
+        "version",
+        "sha256",
+        "status",
+        "fixture",
+        "identity",
+        "cohort",
+        "cells",
+        "real_pools",
+        "sample_manifest",
+        "exclusions",
+        "inputs"
+      ],
+      "properties": {
+        "version": {
+          "const": "expected_support/2.0"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "status": {
+          "const": "frozen"
+        },
+        "fixture": {
+          "type": "boolean"
+        },
+        "identity": {
+          "type": "object",
+          "required": [
+            "method_id",
+            "method_revision",
+            "checkpoint_sha256",
+            "preprocessing_sha256",
+            "split_sha256",
+            "track",
+            "processing_id",
+            "seed",
+            "protocol_sha256"
+          ],
+          "properties": {
+            "method_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "method_revision": {
+              "type": "string",
+              "minLength": 1
+            },
+            "checkpoint_sha256": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "preprocessing_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "split_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "track": {
+              "enum": [
+                "native_reference",
+                "matched_processing"
+              ]
+            },
+            "processing_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "seed": {
+              "type": [
+                "integer",
+                "null"
+              ]
+            },
+            "protocol_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            }
+          },
+          "additionalProperties": false
+        },
+        "cohort": {
+          "type": "object",
+          "required": [
+            "cohort_id",
+            "role",
+            "evaluation_unit"
+          ],
+          "properties": {
+            "cohort_id": {
+              "type": "string",
+              "minLength": 1
+            },
+            "role": {
+              "enum": [
+                "fit",
+                "calibration",
+                "development_audit",
+                "held_generator_audit",
+                "external_audit",
+                "final_confirmation"
+              ]
+            },
+            "evaluation_unit": {
+              "const": "video"
+            }
+          },
+          "additionalProperties": false
+        },
+        "cells": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "cell_id",
+              "generator_family",
+              "source_family",
+              "fake_sample_ids",
+              "real_pool_id",
+              "inclusion_reason"
+            ],
+            "properties": {
+              "cell_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "generator_family": {
+                "type": "string",
+                "minLength": 1
+              },
+              "source_family": {
+                "type": "string",
+                "minLength": 1
+              },
+              "fake_sample_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              },
+              "real_pool_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "inclusion_reason": {
+                "type": "string",
+                "minLength": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "real_pools": {
+          "type": "object",
+          "minProperties": 1,
+          "additionalProperties": {
+            "type": "object",
+            "required": [
+              "source_family",
+              "sample_ids"
+            ],
+            "properties": {
+              "source_family": {
+                "type": "string",
+                "minLength": 1
+              },
+              "sample_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "uniqueItems": true,
+                "minItems": 1
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "sample_manifest": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "object",
+            "required": [
+              "sample_id",
+              "input_sha256",
+              "ancestor_id",
+              "ancestry_status",
+              "fixture",
+              "source_family",
+              "generator_family",
+              "label_fake"
+            ],
+            "properties": {
+              "sample_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "input_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              },
+              "ancestor_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "ancestry_status": {
+                "enum": [
+                  "verified",
+                  "unknown",
+                  "fixture"
+                ]
+              },
+              "fixture": {
+                "type": "boolean"
+              },
+              "source_family": {
+                "type": "string",
+                "minLength": 1
+              },
+              "generator_family": {
+                "type": "string",
+                "minLength": 1
+              },
+              "label_fake": {
+                "enum": [
+                  0,
+                  1
+                ]
+              },
+              "frame_plan_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "exclusions": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "sample_id",
+              "reason"
+            ],
+            "properties": {
+              "sample_id": {
+                "type": "string",
+                "minLength": 1
+              },
+              "reason": {
+                "type": "string",
+                "minLength": 1
+              },
+              "qualification_sha256": {
+                "type": "string",
+                "pattern": "^[0-9a-f]{64}$"
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "inputs": {
+          "type": "object",
+          "required": [
+            "score_blind",
+            "declaration_sha256"
+          ],
+          "properties": {
+            "score_blind": {
+              "const": true
+            },
+            "declaration_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "qualifier_sha256": {
+              "type": "string",
+              "pattern": "^[0-9a-f]{64}$"
+            },
+            "note": {
+              "type": "string"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    {
+      "type": "object",
+      "required": [
+        "version",
+        "sha256",
+        "status",
+        "fixture",
+        "blocking_gaps"
+      ],
+      "properties": {
+        "version": {
+          "const": "expected_support/2.0"
+        },
+        "sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "status": {
+          "const": "draft"
+        },
+        "fixture": {
+          "type": "boolean"
+        },
+        "blocking_gaps": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  ]
+}

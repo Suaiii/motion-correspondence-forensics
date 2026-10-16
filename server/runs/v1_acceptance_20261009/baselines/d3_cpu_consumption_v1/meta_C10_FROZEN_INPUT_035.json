@@ -1,0 +1,238 @@
+{
+  "dispatch_id": "v1-monitor-20261009-C10-d3-cpu-consumption",
+  "status": "frozen_ready_for_explicit_dispatch",
+  "frozen_at_UTC": "2026-10-08T20:41:29.950147+00:00",
+  "local_base_root": "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\V1_ACCEPTANCE_20261009",
+  "cloud_base_root": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009",
+  "workorder": "monitor/WORKORDER_C10_D3_CPU_CONSUMPTION_20261009.md",
+  "typed_input_directory": "monitor/C10_TYPED_INPUTS_035",
+  "pins": {
+    "baselines/d3_inference_runner_v1/DELIVERY.json": {
+      "sha256": "f6bb9264615f49b113e98688b523f356cd4608a071b7712b27e813306869aafe",
+      "bytes": 1352
+    },
+    "baselines/d3_inference_runner_v1/SHA_MANIFEST.json": {
+      "sha256": "4fddee23e57d43a331719cfc90bc7b2786d2fff91aed394a0d438f5c7756f630",
+      "bytes": 8023
+    },
+    "baselines/d3_inference_runner_v1/CODE_LOCK.json": {
+      "sha256": "037a6f72ee7cf9bc8c1794a97e152e51bf4c2f06463f5b23b7bb7313c6b5e234",
+      "bytes": 2619
+    },
+    "baselines/d3_inference_runner_v1/NEXT_RUN.md": {
+      "sha256": "83705586a1ed2ab3fa218f6827dd89659d3d3e014d8a2fcbc7a901a67b99436b",
+      "bytes": 6652
+    },
+    "baselines/d3_inference_runner_v1/SOFTWARE_VERIFICATION.json": {
+      "sha256": "4556a23d72c2c30d9214f1b25c237e2d92273a6845d5d0395788f04b74ba2a6b",
+      "bytes": 9696
+    },
+    "data_audit/public_benchmark_release_v1/DELIVERY.json": {
+      "sha256": "6bb93b592aadc59de7d5c71312bb7364c32e07cffa63b1ab2e6854d1ad0581d9",
+      "bytes": 980
+    },
+    "data_audit/public_benchmark_release_v1/public_release.sqlite": {
+      "sha256": "d30ec3ab4757fac3d62be4aba6ddd3290840e91b09290c8c9f76015cd3f9c3fc",
+      "bytes": 9314304
+    },
+    "baselines/inference_assets_ready_v1/DELIVERY.json": {
+      "sha256": "3ab5caae83353c4410204837ab925d74e9f52a48c6f34566cc8347f1b7bce412",
+      "bytes": 1624
+    },
+    "baselines/inference_assets_ready_v1/ASSET_LOCK.json": {
+      "sha256": "1c5f773e08585397136d7f1a041732e40fbaed3aaac4b62cf6118b79787a56ab",
+      "bytes": 2917
+    },
+    "fingerprint_cpu/author_input_parity_v1/remote_evidence_manifest.json": {
+      "sha256": "ff78bc0b7d138207d48e8df576a86004ca445a90afbc09f05be56b9dc6b16d5c",
+      "bytes": 86548
+    },
+    "fingerprint_cpu/author_input_parity_v1/author_environment_lock.json": {
+      "sha256": "0674c2fbf7dd9fcb2a20b8d0fae53ec486e4a6665259bf3f3ce67794044656a7",
+      "bytes": 4497
+    },
+    "baselines/input_contract_recovery_v1/inherited/input_records.jsonl": {
+      "sha256": "4c5ee6966d1726d02231f1cccac545252d105cd89d877d086ed56ff61c9fd5d9",
+      "bytes": 76545
+    },
+    "monitor/D3_FIXED_INPUT_CANDIDATES_032.json": {
+      "sha256": "37bab685803b5d2021212fc608d4a12c03c4f5a7446a215b8487d640d9d0da44",
+      "bytes": 148431
+    },
+    "monitor/D3_PREPARED_INPUT_REMOTE_CHECK_032.json": {
+      "sha256": "ff32edd12de4180f3e6d3f3287c4f3966afb0577b661933a6305ea7d75ea263c",
+      "bytes": 9728
+    },
+    "monitor/B8_BOUNDED_SOURCE_CHECK_035.json": {
+      "sha256": "aa26066f3889d70fed1a4f8489378c61f1f4373e04fdd3ecd0fa259786b1a007",
+      "bytes": 2791
+    },
+    "monitor/C9_LOCAL_DELIVERY_CHECK_033.json": {
+      "sha256": "97a18e36dbde2bb61b8bcd6ce839af3511f713dc7d7260b73588c53eed21f63c",
+      "bytes": 815
+    },
+    "monitor/C9_REMOTE_DELIVERY_CHECK_033.json": {
+      "sha256": "c0f04924d00985dd231e0ed105e13cd44421c4e2d1f0bba81f45282a43cb5f17",
+      "bytes": 415
+    },
+    "monitor/RESOURCE_LEDGER_033.json": {
+      "sha256": "001da0f261461df9dc4b52096aa105be3a0d8124ec1b9d0f45db6240558d7894",
+      "bytes": 1222
+    },
+    "monitor/RESOURCE_CPU_NOTE_033.json": {
+      "sha256": "df5abb5aff0d445d85fe9739bf310d591e4ebfd8fb6b7678064fbcdebb539bd0",
+      "bytes": 3653
+    },
+    "monitor/WORKORDER_C10_D3_CPU_CONSUMPTION_20261009.md": {
+      "sha256": "a2f43d5a2fef9bdb4c5d6f8ca526afaa10c269a1837b3462bafab4176772944d",
+      "bytes": 4916
+    },
+    "monitor/C10_TYPED_INPUTS_035/A7_input_records.original.jsonl": {
+      "sha256": "4c5ee6966d1726d02231f1cccac545252d105cd89d877d086ed56ff61c9fd5d9",
+      "bytes": 76545
+    },
+    "monitor/C10_TYPED_INPUTS_035/asset_lock.json": {
+      "sha256": "3239e413748e15def993458f8378ede6c7ab6d41dfd3dbcb97d89f98bf486230",
+      "bytes": 579
+    },
+    "monitor/C10_TYPED_INPUTS_035/identity.json": {
+      "sha256": "c2ed590e7dd1196cb316af1a66b1f2efe56c4132319c1ddf16baef65dd9aa17e",
+      "bytes": 581
+    },
+    "monitor/C10_TYPED_INPUTS_035/prepared_index.jsonl": {
+      "sha256": "24135b0dca0a328d02a63b765dd126876bf9003b38757fa9e8b2a5ff1dd64b46",
+      "bytes": 25637
+    },
+    "monitor/C10_TYPED_INPUTS_035/protocol.json": {
+      "sha256": "d404a42402aea699a705f6a33cdadd2e3b84b5644f495c34d4c569264ad1cbaa",
+      "bytes": 1493
+    },
+    "monitor/C10_TYPED_INPUTS_035/selection.jsonl": {
+      "sha256": "c16adbdbb82a5a116b3f875dddbe787297e2f8b0721ae822119d26992617e091",
+      "bytes": 9008
+    },
+    "monitor/C10_TYPED_INPUTS_035/split.json": {
+      "sha256": "81b5c3c6ec2da4d31128e94818dd26863a321ecb5d444bcbeea9411b087a445a",
+      "bytes": 5270
+    },
+    "monitor/C10_TYPED_INPUTS_035/support_lock.json": {
+      "sha256": "fe0f75d80907fbdaf4a100658ff65c05f06b4eca9f83fe1c6d8f5db882ce53c2",
+      "bytes": 1666
+    },
+    "monitor/C10_TYPED_INPUTS_035/MANIFEST.json": {
+      "sha256": "7ecafd1560c6c53fd99f7f157859a8d9b7f2577f7b66d08a6e201d19b7e76379",
+      "bytes": 1483
+    },
+    "baselines/d3_inference_runner_v1/contract.py": {
+      "sha256": "c0d08f87ea69c1bd4df237a6713bcf082597f526231cde80dd2c101ce079af4c",
+      "bytes": 8794
+    },
+    "baselines/d3_inference_runner_v1/author_definitions.py": {
+      "sha256": "249e1539010820fb2a4219f0e23cc9188d8f3033e160fe94fa0fc576c50cdb08",
+      "bytes": 3121
+    },
+    "baselines/d3_inference_runner_v1/backend.py": {
+      "sha256": "3fe1bfe4a8c9c1084b52be61bb1d4bf15f344143e99aa890cf05898850384cbb",
+      "bytes": 7471
+    },
+    "baselines/d3_inference_runner_v1/run_state.py": {
+      "sha256": "2b9159b65173c5cd16c889070e30c02cbf82968c099100d0272c1d851e66ffff",
+      "bytes": 4809
+    },
+    "baselines/d3_inference_runner_v1/worker.py": {
+      "sha256": "fdbae270816320fe67730f6907fad341af3057fa541e2cb4e2b54b09cd4265a7",
+      "bytes": 9643
+    },
+    "baselines/d3_inference_runner_v1/runner.py": {
+      "sha256": "ab87d09c5131eb507d45e85c14c3b1bd08a20e93efbfd988b9f75d3e19293ae1",
+      "bytes": 10952
+    },
+    "baselines/d3_inference_runner_v1/environment_lock.py": {
+      "sha256": "08e957ac8f6ec36d12cb322e9b53ff6300f02e5ce4e65315e790513dbb8ece3c",
+      "bytes": 2766
+    },
+    "baselines/d3_inference_runner_v1/assemble_manifest.py": {
+      "sha256": "b9a3817079f0865c1501b1aa645b2234230d7e4233413d46b3dc706ca13265e0",
+      "bytes": 3604
+    },
+    "baselines/d3_inference_runner_v1/METHOD_IDENTITY.json": {
+      "sha256": "aa4f06a30cdc845c18458a4921e7be9061944f6c6817a037c70d3153b10fbed1",
+      "bytes": 518
+    },
+    "baselines/d3_inference_runner_v1/PREPROCESS_IDENTITY.json": {
+      "sha256": "b0ba58ca892289911725e34b8b8a3b8922a981279a7179872108500548b0a245",
+      "bytes": 744
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/admission.py": {
+      "sha256": "32d8abb59acab9d0f0de73d3572fadd3fb7deea0a1edb49e35f6832df1f22515",
+      "bytes": 5186
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/arithmetic_v1.py": {
+      "sha256": "06a720ee7833b08898eb7a885181fc25ee7ff9b23376ff5d677ed160695dd3fd",
+      "bytes": 5666
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/build_input_record_schema.py": {
+      "sha256": "fff036122e44a7065d35d94e03c59122bbdab1ae6f1c59c080a8ccb69e83ecf1",
+      "bytes": 1903
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/evaluation.py": {
+      "sha256": "04ccf791681637209954a197e82ea90989abe6557dd5d6b5487d4c0d2d6090bb",
+      "bytes": 9310
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/freeze_schema.py": {
+      "sha256": "09cae885344bc14ff9cc1d2470375d770f54340dddcd0ad3086079f3427d55b1",
+      "bytes": 2203
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/input_record.py": {
+      "sha256": "e24d4808a2644609b173fe1a351687b4e22caead3d47ce3318f5c9b889c4323a",
+      "bytes": 2523
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/input_record_schema_v2.json": {
+      "sha256": "6d5299bdad1374249dd71a271c65b1b1e8c22e2af6bdc91ee45558746d4e15b6",
+      "bytes": 6918
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/prediction_schema_v2.json": {
+      "sha256": "96c042cda2c0fc6bd0b280cd1d15bb7c19e37e4f22441cd224a28e16e45bf866",
+      "bytes": 9971
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/record_contract.py": {
+      "sha256": "5daf092d021e965f309cb96eecf84f4f613f80132aba9d0ef56f6f75a8075cde",
+      "bytes": 6346
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/reference_policy.py": {
+      "sha256": "7f3668194b590fe2e38045a04e57a2ab46f8b0bb4ecd156d83ab8512c62c442e",
+      "bytes": 6039
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/schema_fingerprints.py": {
+      "sha256": "92e00c5060049a7f6d146aedc4b7544899e9f61a8e3d7e7d385fdbfd5b6dc80b",
+      "bytes": 209
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/support.py": {
+      "sha256": "2eb4ec1c9c867e70ff2f50b7bad40f5c2ed44479c910443bddb1019a7ed2fca8",
+      "bytes": 7762
+    },
+    "baselines/d3_inference_runner_v1/evaluator_v4/support_schema_v2.json": {
+      "sha256": "2770999296f78ac831e1c54bb27b55aa2641cded9eee28a92baea7437c9e6572",
+      "bytes": 8989
+    }
+  },
+  "B8_packet_expected_members": 48,
+  "original_D3_expected_samples": 12,
+  "original_source_role": "fit",
+  "seed": 0,
+  "resource_ledger": "monitor/RESOURCE_LEDGER_033.json",
+  "CPU_affinity": [
+    4,
+    5
+  ],
+  "RAM_cap_bytes": 4294967296,
+  "cloud_namespace_cap_bytes": 134217728,
+  "local_namespace_cap_bytes": 33554432,
+  "runtime_output_cap_bytes": 33554432,
+  "GPU_authorized": false,
+  "runtime_environment_lock": "generate with sealed B8 environment_lock.py using both D4site and C2cpu_deps, then freeze before firstmodel",
+  "first_model_run_requires_live_capacity_recheck": true,
+  "new_media_decoding_authorized": false,
+  "new_package_install_authorized": false,
+  "code_metadata_note": "B8 pooler_output_shape describes returned [B,T,D] features; no extra inference solely to relabel it"
+}

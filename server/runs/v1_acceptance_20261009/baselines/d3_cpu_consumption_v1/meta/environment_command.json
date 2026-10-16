@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "/root/miniconda3/bin/python",
+    "-B",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/b8_source/environment_lock.py",
+    "--cv2-distribution",
+    "opencv-python-headless",
+    "--dependency-path",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1/dependencies/site",
+    "--dependency-path",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/cpu_deps"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"dependency_versions\": {\n    \"torch\": \"2.8.0+cu128\",\n    \"torchvision\": \"0.23.0+cu128\",\n    \"transformers\": \"4.57.6\",\n    \"numpy\": \"2.3.2\",\n    \"albumentations\": \"2.0.8\",\n    \"safetensors\": \"0.6.2\",\n    \"jsonschema\": \"4.25.0\",\n    \"psutil\": \"7.0.0\",\n    \"opencv-python-headless\": \"4.12.0.88\"\n  },\n  \"cv2_provider\": {\n    \"distribution\": \"opencv-python-headless\",\n    \"version\": \"4.12.0.88\",\n    \"module_relative_path\": \"cv2/__init__.py\",\n    \"module_source_sha256\": \"936bd94c5a5debf0212fc751af79d3a163652f3e850259df2159db6aa3ed8ad8\",\n    \"distribution_record_sha256\": \"4961fb638b955fb130048bd098256f6916849246b0b0913930ea0cadef4c194a\",\n    \"native_extensions\": {\n      \"cv2/cv2.abi3.so\": \"992ae98dec8d23f1ccf8352d1e8ce60d5ee49526ef2dded1fd8c071aca7cffd7\"\n    }\n  },\n  \"source_location_description\": \"/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/cpu_deps/cv2/__init__.py\",\n  \"cv2_imported\": false,\n  \"torch_or_model_imported\": false,\n  \"use\": \"copy dependency_versions and cv2_provider into coordinated frozen execution manifest; current descriptor is not a model test\"\n}\n",
+  "stderr": "",
+  "wall_seconds": null
+}

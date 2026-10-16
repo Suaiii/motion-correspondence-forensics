@@ -1,0 +1,30 @@
+{
+  "method": "d3",
+  "reader_source_SHA": "b7a58fbb5da2525ebe3e3b3859bdea1e13ed2d37b28a40b71af7da00e329c7ea",
+  "profile": "frozen author prepared JPEG prefix8or16",
+  "color": "cv2 BGR retained",
+  "crop": "0.1 from both sides of longer raster axis, integer author rounding",
+  "resize": [
+    224,
+    224
+  ],
+  "normalize_mean": [
+    0.485,
+    0.456,
+    0.406
+  ],
+  "normalize_std": [
+    0.229,
+    0.224,
+    0.225
+  ],
+  "max_pixel_value": 255,
+  "augmentation": [
+    null,
+    null
+  ],
+  "prepared_frame_clock": "provided frozen input record, not nearest-index substitute",
+  "sampling_reimplemented": false,
+  "native_reference_only": true,
+  "historical_dependency_equivalence": "not_certified"
+}

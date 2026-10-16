@@ -1,0 +1,1 @@
+SCHEMA_SHA256 = {'prediction_schema_v2.json': '96c042cda2c0fc6bd0b280cd1d15bb7c19e37e4f22441cd224a28e16e45bf866', 'support_schema_v2.json': '2770999296f78ac831e1c54bb27b55aa2641cded9eee28a92baea7437c9e6572'}

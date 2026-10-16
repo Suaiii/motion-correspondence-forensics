@@ -1,0 +1,12 @@
+{
+  "dispatch_id": "v1-monitor-20261009-B8-d3-inference-runner",
+  "stage": "finite_code_packet_complete_stopped",
+  "source_SHA_checks": 18,
+  "runtime_syntax_modules": 18,
+  "safe_import_help_plan_stages": 6,
+  "encoder_model_media_cloud_GPU_calls": 0,
+  "ready_scope": "executable_offline_entry_not_model_runtime_validation",
+  "cv2": "actual provider headless4.12 supported, source/distribution/native hashes explicit",
+  "A11_full_producer_role_compatibility": "separate followup, not extended here",
+  "observed_local_unix": 1791491824.8893945
+}

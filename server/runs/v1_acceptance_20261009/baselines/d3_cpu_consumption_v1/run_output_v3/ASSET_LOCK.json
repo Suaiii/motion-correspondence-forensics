@@ -1,0 +1,13 @@
+{
+  "version": "d3_asset_lock/1.0",
+  "status": "frozen",
+  "repository": "microsoft/xclip-base-patch16",
+  "revision": "d6184e3fd8780d04c85d0f1eabe5f94bf44d98f6",
+  "checkpoint_path": "model.safetensors",
+  "checkpoint_sha256": "b5db836d57b7e22001cb2bab581719e910b4c571d926fe839b5d07bc0ba2d03e",
+  "checkpoint_bytes": 779789644,
+  "config_path": "config.json",
+  "config_sha256": "43d49d757dc8a3ef3dfd242d7ebe0c2effcfa0404f9343864e50c45245f99d3a",
+  "config_bytes": 8897,
+  "C9_delivery_sha256": "3ab5caae83353c4410204837ab925d74e9f52a48c6f34566cc8347f1b7bce412"
+}

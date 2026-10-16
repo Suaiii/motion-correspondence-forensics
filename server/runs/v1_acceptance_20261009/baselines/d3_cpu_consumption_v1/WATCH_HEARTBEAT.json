@@ -1,0 +1,1 @@
+{"server_unix": 1791522150.1765678, "PID": 106023, "rss": 24244224, "peak": 766042112, "owned_bytes": 1336687, "charged_bytes": 1556480, "logical_bytes": 1336687, "allocated_bytes": 1556480, "free_bytes": 22419877888, "members": {"106023": {"rss": 24244224, "create_time": 1791522141.87}, "106024": {"rss": 0, "create_time": 1791522142.0}}, "violation": null}

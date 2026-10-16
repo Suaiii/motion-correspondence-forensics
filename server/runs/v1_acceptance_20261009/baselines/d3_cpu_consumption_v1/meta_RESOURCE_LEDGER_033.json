@@ -1,0 +1,42 @@
+{
+  "version": "v1-resource-ledger-033",
+  "cloud_root": "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009",
+  "floor_bytes": 21474836480,
+  "accounting": "logical=sum(st_size); allocated=sum(st_blocks*512); charged=sum(max(st_size,st_blocks*512)); remaining=max(cap-charged,0)",
+  "reservations": {
+    "C10_prepared": {
+      "namespace": "baselines/d3_cpu_consumption_v1",
+      "cap": 134217728,
+      "used": 0,
+      "remaining": 134217728,
+      "over_cap": false
+    }
+  },
+  "released_completed_growth": [
+    "A10",
+    "C9"
+  ],
+  "release_evidence": [
+    "ABC_PROGRESS_OBSERVATION_032.json",
+    "C9_REMOTE_DELIVERY_CHECK_033.json",
+    "C9_DELIVERY_PREFLIGHT_TRANSPORT_033.json"
+  ],
+  "all_existing_files_preserved": true,
+  "CPU_affinity": {
+    "C10": [
+      4,
+      5
+    ]
+  },
+  "per_worker_RSS_bytes": 4294967296,
+  "local_caps": {
+    "C10": 33554432,
+    "B8": 33554432,
+    "D12": 33554432
+  },
+  "GPU_authorized": false,
+  "preflight_SHA256": "346f4150caa8eccc91093dbedbba97ac1b7fa333cf2ddca153483b003df7ee7e",
+  "preflight_server_unix": 1791519507.8716996,
+  "margin_bytes_at_preflight": 812531712,
+  "execution_authorized_by_ledger_alone": false
+}

@@ -1,0 +1,30 @@
+{
+  "argv": [
+    "/root/miniconda3/bin/python",
+    "-B",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/b8_source/runner.py",
+    "plan",
+    "--execution-manifest",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/meta/d3_execution.json",
+    "--manifest-sha256",
+    "c13d6b5dc6951d5dfd5976fd396f9687e06f89df5b9ff7a974e85ab513b74b6e",
+    "--asset-lock",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/typed/asset_lock.json",
+    "--asset-lock-sha256",
+    "3239e413748e15def993458f8378ede6c7ab6d41dfd3dbcb97d89f98bf486230",
+    "--asset-dir",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/inference_assets_ready_v1/assets/xclip16",
+    "--prepared-root",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1/runs/run_002",
+    "--dependency-path",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1/dependencies/site",
+    "--dependency-path",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/cpu_deps",
+    "--output",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/run_output"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"mode\": \"plan\",\n  \"model_initializations\": 0,\n  \"encoder_calls\": 0,\n  \"media_bytes_read\": 0,\n  \"GPU_calls\": 0,\n  \"network_calls\": 0,\n  \"writes\": 0,\n  \"dependency_paths\": [\n    \"/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1/dependencies/site\",\n    \"/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/cpu_deps\"\n  ],\n  \"missing_future_inputs\": [],\n  \"status\": \"metadata_plan_valid_not_model_validated\",\n  \"method\": \"D3 XCLIP-16/l2\",\n  \"batch_size\": 1,\n  \"track\": \"prepared_author_native_reference\",\n  \"logical_frame_prefix\": \"8 if prepared<16 else16\",\n  \"score_direction\": \"raw sample_std large=real; score_fake=-raw\",\n  \"scope\": \"metadata only; no fixture predictions\",\n  \"runtime_dependencies\": [\n    \"torch\",\n    \"torchvision\",\n    \"transformers\",\n    \"numpy\",\n    \"albumentations\",\n    \"safetensors\",\n    \"jsonschema\",\n    \"psutil\"\n  ],\n  \"cv2_distribution_must_be_explicitly_locked\": [\n    \"opencv-python\",\n    \"opencv-python-headless\"\n  ],\n  \"local_distribution_metadata\": {\n    \"torch\": \"2.8.0+cu128\",\n    \"torchvision\": \"0.23.0+cu128\",\n    \"transformers\": null,\n    \"numpy\": \"2.3.2\",\n    \"albumentations\": null,\n    \"safetensors\": null,\n    \"jsonschema\": \"4.25.0\",\n    \"psutil\": \"7.0.0\",\n    \"opencv-python\": null,\n    \"opencv-python-headless\": null\n  },\n  \"members\": 12,\n  \"expected_members\": 12,\n  \"class_counts\": {\n    \"real\": 4,\n    \"fake\": 8\n  },\n  \"A10_public_approved\": 12,\n  \"A10_excluded_retained\": 0,\n  \"no_per_class1000_cap\": true,\n  \"selection_sha256\": \"c16adbdbb82a5a116b3f875dddbe787297e2f8b0721ae822119d26992617e091\",\n  \"asset_checkpoint_sha256\": \"b5db836d57b7e22001cb2bab581719e910b4c571d926fe839b5d07bc0ba2d03e\",\n  \"runner_code_identity\": \"4943e89ff57ffd90f1d2dfcac70cebc22a8ac02fff59e7d4abc9802d66702d41\",\n  \"asset_and_JPEG_payloads_not_read\": true,\n  \"asset_load_and_real_score_review\": \"pending_future_explicit_encoder_command\"\n}\n",
+  "stderr": "",
+  "wall_seconds": null
+}

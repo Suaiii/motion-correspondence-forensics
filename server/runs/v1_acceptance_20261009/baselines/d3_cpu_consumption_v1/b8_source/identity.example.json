@@ -1,0 +1,11 @@
+{
+  "status": "draft_unfilled_metadata_example_not_execution",
+  "cohort_id": "TO_BE_FROZEN_BY_COORDINATOR",
+  "seed": 42,
+  "split_sha256": null,
+  "protocol_sha256": null,
+  "support_lock_sha256": null,
+  "A10_delivery_sha256": null,
+  "public_gate_overlay_sha256": null,
+  "scores_or_model_outputs": "none"
+}

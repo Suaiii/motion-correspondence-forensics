@@ -1,0 +1,13 @@
+{
+  "method_id": "d3",
+  "author_repository": "Zig-HS/D3",
+  "author_commit": "c798fbc57fe0c4198d63a73732c2c0f9e4b4816c",
+  "encoder_type": "XCLIP-16",
+  "model_repository": "microsoft/xclip-base-patch16",
+  "model_revision": "d6184e3fd8780d04c85d0f1eabe5f94bf44d98f6",
+  "loss_type": "l2",
+  "raw": "torch.std(adjacent_L2_distances_first_difference,dim=1), correction1",
+  "score_fake": "-score_raw",
+  "first_runner_scope": "prepared_author_native_reference_only",
+  "encoder_actual_run_in_B8": false
+}

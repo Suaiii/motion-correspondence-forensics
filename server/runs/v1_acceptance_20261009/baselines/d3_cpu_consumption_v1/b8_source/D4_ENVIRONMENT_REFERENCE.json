@@ -1,0 +1,27 @@
+{
+  "source_path": "research-runs\\V1_ACCEPTANCE_20261009\\fingerprint_cpu\\author_input_parity_v1\\author_environment_lock.json",
+  "source_sha256": "0674c2fbf7dd9fcb2a20b8d0fae53ec486e4a6665259bf3f3ce67794044656a7",
+  "actual_declared_versions": {
+    "torch": "2.8.0+cu128",
+    "torchvision": "0.23.0+cu128",
+    "numpy": "2.3.2",
+    "Pillow": "11.3.0",
+    "opencv-python-headless": "4.12.0.88",
+    "torchcodec": "0.7.0",
+    "transformers": "4.57.6",
+    "albumentations": "2.0.8",
+    "albucore": "0.0.24",
+    "moviepy": "1.0.3",
+    "imageio": "2.33.1",
+    "imageio-ffmpeg": "0.5.1",
+    "decord": "0.6.0",
+    "scipy": "1.16.3",
+    "huggingface-hub": "0.36.0",
+    "tokenizers": "0.22.2",
+    "pydantic": "2.12.5"
+  },
+  "cv2_provider": "opencv-python-headless",
+  "version": "4.12.0.88",
+  "module_source_and_native_extension_identity": "future environment_lock.py binds actual targetdistribution RECORD and source bytes; no fabricated opencv-python alias",
+  "current_B8_models_or_cloud_called": false
+}

@@ -1,0 +1,258 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "C5 observed scoreless author input record",
+  "type": "object",
+  "required": [
+    "version",
+    "sample_id",
+    "method",
+    "input_sha256",
+    "source_role",
+    "previous_exposure_role",
+    "source_raster_HW",
+    "observed_preprocessed_HW",
+    "model_consumed_HW",
+    "frame_indices",
+    "selected_native_integer_PTS",
+    "native_time_base",
+    "loader_or_decoder_slots",
+    "actual_input_slots",
+    "unique_native_frames",
+    "added_native_frames",
+    "reference_frame_policy",
+    "source_binding",
+    "raw_author_trace_sha256",
+    "historical_reference_certified",
+    "data_or_scientific_gate_passed",
+    "encoder_head_calls",
+    "GPU_started"
+  ],
+  "properties": {
+    "version": {
+      "const": "author_input_record/2.0"
+    },
+    "sample_id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "method": {
+      "enum": [
+        "d3",
+        "restrav",
+        "native_scale"
+      ]
+    },
+    "input_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "source_role": {
+      "const": "fit"
+    },
+    "previous_exposure_role": {
+      "const": "fit"
+    },
+    "source_raster_HW": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "observed_preprocessed_HW": {
+      "type": "array",
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      }
+    },
+    "model_consumed_HW": {
+      "type": "null"
+    },
+    "frame_indices": {
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 0
+      },
+      "minItems": 1
+    },
+    "selected_native_integer_PTS": {
+      "type": "array",
+      "items": {
+        "type": "integer"
+      },
+      "minItems": 1
+    },
+    "native_time_base": {
+      "type": "string",
+      "pattern": "^[1-9][0-9]*/[1-9][0-9]*$"
+    },
+    "loader_or_decoder_slots": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "actual_input_slots": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "unique_native_frames": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "added_native_frames": {
+      "const": 0
+    },
+    "reference_frame_policy": {
+      "type": "object",
+      "required": [
+        "strategy",
+        "policy_sha256"
+      ],
+      "properties": {
+        "strategy": {
+          "enum": [
+            "none",
+            "author_repeat_last",
+            "author_fps_resampling",
+            "staged_author_input",
+            "explicit_time_control"
+          ]
+        },
+        "policy_sha256": {
+          "type": "string",
+          "pattern": "^[0-9a-f]{64}$"
+        },
+        "source_ref": {
+          "type": "string"
+        },
+        "control_processing_id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "chain": {
+          "type": "object",
+          "required": [
+            "base_frame_indices",
+            "base_selected_pts",
+            "stages"
+          ],
+          "properties": {
+            "base_frame_indices": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer",
+                "minimum": 0
+              }
+            },
+            "base_selected_pts": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "integer"
+              }
+            },
+            "stages": {
+              "type": "array",
+              "minItems": 1,
+              "items": {
+                "type": "object",
+                "required": [
+                  "operation",
+                  "input_slots",
+                  "output_to_input_slots",
+                  "evidence_status"
+                ],
+                "properties": {
+                  "operation": {
+                    "enum": [
+                      "native_selection",
+                      "author_fps_resampling",
+                      "display_interval_sampling",
+                      "repeat_last_padding",
+                      "processor_temporal_tail_padding",
+                      "explicit_temporal_order_control"
+                    ]
+                  },
+                  "input_slots": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "output_to_input_slots": {
+                    "type": "array",
+                    "minItems": 1,
+                    "items": {
+                      "type": "integer",
+                      "minimum": 0
+                    }
+                  },
+                  "evidence_status": {
+                    "enum": [
+                      "observed",
+                      "unverified"
+                    ]
+                  },
+                  "evidence_sha256": {
+                    "type": "string",
+                    "pattern": "^[0-9a-f]{64}$"
+                  },
+                  "temporal_patch_size": {
+                    "type": "integer",
+                    "minimum": 1
+                  },
+                  "interval_start_seconds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "interval_duration_seconds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  },
+                  "target_seconds": {
+                    "type": "array",
+                    "items": {
+                      "type": "number"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "source_binding": {
+      "const": "actual_current_backend_observation"
+    },
+    "raw_author_trace_sha256": {
+      "type": "string",
+      "pattern": "^[0-9a-f]{64}$"
+    },
+    "historical_reference_certified": {
+      "const": false
+    },
+    "data_or_scientific_gate_passed": {
+      "const": false
+    },
+    "encoder_head_calls": {
+      "const": 0
+    },
+    "GPU_started": {
+      "const": false
+    }
+  },
+  "additionalProperties": true,
+  "$comment": "No scores or labels are synthesized. Observed processor raster is distinct from actual model-consumed HW, which remainsnull. Ambiguous source mapping uses a separate explicitlyunverified record and cannot use this observed schema."
+}

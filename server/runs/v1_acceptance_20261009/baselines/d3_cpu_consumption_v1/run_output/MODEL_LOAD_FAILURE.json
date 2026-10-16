@@ -1,0 +1,5 @@
+{
+  "error_type": "ValueError",
+  "error": "XCLIP_config_model_type_required",
+  "random_missing_visual_weights_accepted": false
+}

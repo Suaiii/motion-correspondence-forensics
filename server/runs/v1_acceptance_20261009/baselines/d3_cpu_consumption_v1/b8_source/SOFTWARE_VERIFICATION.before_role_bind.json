@@ -1,0 +1,123 @@
+{
+  "status": "syntax_and_no_side_effect_import_help_plan_pass",
+  "syntax_modules": [
+    "contract.py",
+    "author_definitions.py",
+    "backend.py",
+    "run_state.py",
+    "worker.py",
+    "runner.py",
+    "environment_lock.py",
+    "assemble_manifest.py",
+    "evaluator_v4/admission.py",
+    "evaluator_v4/arithmetic_v1.py",
+    "evaluator_v4/build_input_record_schema.py",
+    "evaluator_v4/evaluation.py",
+    "evaluator_v4/freeze_schema.py",
+    "evaluator_v4/input_record.py",
+    "evaluator_v4/record_contract.py",
+    "evaluator_v4/reference_policy.py",
+    "evaluator_v4/schema_fingerprints.py",
+    "evaluator_v4/support.py"
+  ],
+  "stages": [
+    {
+      "stage": "help",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\d3_inference_runner_v1\\runner.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "filesystem_changes": 0,
+      "stdout": "usage: runner.py [-h] {plan,run} ...\r\n\r\nD3 offline XCLIP-16/l2, frozen prepared JPEG native-reference runner\r\n\r\npositional arguments:\r\n  {plan,run}\r\n\r\noptions:\r\n  -h, --help  show this help message and exit\r\n",
+      "stderr": "",
+      "wall_seconds_bound": 30
+    },
+    {
+      "stage": "run_help",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\d3_inference_runner_v1\\runner.py",
+        "run",
+        "--help"
+      ],
+      "exit_code": 0,
+      "filesystem_changes": 0,
+      "stdout": "usage: runner.py run [-h] [--execution-manifest EXECUTION_MANIFEST]\r\n                     [--manifest-sha256 MANIFEST_SHA256]\r\n                     [--asset-lock ASSET_LOCK]\r\n                     [--asset-lock-sha256 ASSET_LOCK_SHA256]\r\n                     [--asset-dir ASSET_DIR] [--prepared-root PREPARED_ROOT]\r\n                     [--output OUTPUT] [--dependency-path DEPENDENCY_PATH]\r\n                     [--cpu-affinity CPU_AFFINITY]\r\n                     [--max-output-mib MAX_OUTPUT_MIB]\r\n                     [--checkpoint-every CHECKPOINT_EVERY] [--retry-failed]\r\n\r\noptions:\r\n  -h, --help            show this help message and exit\r\n  --execution-manifest EXECUTION_MANIFEST\r\n  --manifest-sha256 MANIFEST_SHA256\r\n  --asset-lock ASSET_LOCK\r\n  --asset-lock-sha256 ASSET_LOCK_SHA256\r\n  --asset-dir ASSET_DIR\r\n  --prepared-root PREPARED_ROOT\r\n  --output OUTPUT\r\n  --dependency-path DEPENDENCY_PATH\r\n  --cpu-affinity CPU_AFFINITY\r\n                        comma separated at most2 allowed CPU ids; default\r\n                        first2 available\r\n  --max-output-mib MAX_OUTPUT_MIB\r\n  --checkpoint-every CHECKPOINT_EVERY\r\n  --retry-failed        explicit retry of failed members under same complete\r\n                        locks, old failures retained\r\n",
+      "stderr": "",
+      "wall_seconds_bound": 30
+    },
+    {
+      "stage": "plan",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\d3_inference_runner_v1\\runner.py",
+        "plan"
+      ],
+      "exit_code": 0,
+      "filesystem_changes": 0,
+      "stdout": "{\r\n  \"mode\": \"plan\",\r\n  \"model_initializations\": 0,\r\n  \"encoder_calls\": 0,\r\n  \"media_bytes_read\": 0,\r\n  \"GPU_calls\": 0,\r\n  \"network_calls\": 0,\r\n  \"writes\": 0,\r\n  \"dependency_paths\": [],\r\n  \"missing_future_inputs\": [\r\n    \"execution_manifest\",\r\n    \"manifest_sha256\",\r\n    \"asset_lock\",\r\n    \"asset_lock_sha256\",\r\n    \"asset_dir\",\r\n    \"prepared_root\",\r\n    \"output\"\r\n  ],\r\n  \"status\": \"awaiting_C9_A10_frozen_execution_and_asset_locks\",\r\n  \"method\": \"D3 XCLIP-16/l2\",\r\n  \"batch_size\": 1,\r\n  \"track\": \"prepared_author_native_reference\",\r\n  \"logical_frame_prefix\": \"8 if prepared<16 else16\",\r\n  \"score_direction\": \"raw sample_std large=real; score_fake=-raw\",\r\n  \"scope\": \"metadata only; no fixture predictions\",\r\n  \"runtime_dependencies\": [\r\n    \"torch\",\r\n    \"torchvision\",\r\n    \"transformers\",\r\n    \"numpy\",\r\n    \"albumentations\",\r\n    \"safetensors\",\r\n    \"jsonschema\",\r\n    \"psutil\"\r\n  ],\r\n  \"cv2_distribution_must_be_explicitly_locked\": [\r\n    \"opencv-python\",\r\n    \"opencv-python-headless\"\r\n  ],\r\n  \"local_distribution_metadata\": {\r\n    \"torch\": \"2.5.1\",\r\n    \"torchvision\": \"0.20.1\",\r\n    \"transformers\": null,\r\n    \"numpy\": \"1.26.4\",\r\n    \"albumentations\": null,\r\n    \"safetensors\": null,\r\n    \"jsonschema\": \"4.23.0\",\r\n    \"psutil\": \"5.9.0\",\r\n    \"opencv-python\": \"4.8.1.78\",\r\n    \"opencv-python-headless\": null\r\n  }\r\n}\r\n",
+      "stderr": "",
+      "wall_seconds_bound": 30
+    },
+    {
+      "stage": "environment_help",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\d3_inference_runner_v1\\environment_lock.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "filesystem_changes": 0,
+      "stdout": "usage: environment_lock.py [-h] --cv2-distribution\r\n                           {opencv-python,opencv-python-headless}\r\n                           [--dependency-path DEPENDENCY_PATH]\r\n\r\noptions:\r\n  -h, --help            show this help message and exit\r\n  --cv2-distribution {opencv-python,opencv-python-headless}\r\n  --dependency-path DEPENDENCY_PATH\r\n",
+      "stderr": "",
+      "wall_seconds_bound": 30
+    },
+    {
+      "stage": "assembler_help",
+      "argv": [
+        "E:\\anaconda\\python.exe",
+        "-X",
+        "utf8",
+        "-B",
+        "E:\\aNB\\TECH\\脉冲神经网络\\research-runs\\V1_ACCEPTANCE_20261009\\baselines\\d3_inference_runner_v1\\assemble_manifest.py",
+        "--help"
+      ],
+      "exit_code": 0,
+      "filesystem_changes": 0,
+      "stdout": "usage: assemble_manifest.py [-h] --selection SELECTION --selection-sha256\r\n                            SELECTION_SHA256 --prepared-index PREPARED_INDEX\r\n                            --prepared-index-sha256 PREPARED_INDEX_SHA256\r\n                            --input-records INPUT_RECORDS\r\n                            --input-records-sha256 INPUT_RECORDS_SHA256\r\n                            --environment ENVIRONMENT --environment-sha256\r\n                            ENVIRONMENT_SHA256 --identity IDENTITY\r\n                            --identity-sha256 IDENTITY_SHA256 --output OUTPUT\r\n\r\nJoin coordinated typed selection, prepared index and frozen A7-style input\r\nrecords\r\n\r\noptions:\r\n  -h, --help            show this help message and exit\r\n  --selection SELECTION\r\n  --selection-sha256 SELECTION_SHA256\r\n  --prepared-index PREPARED_INDEX\r\n  --prepared-index-sha256 PREPARED_INDEX_SHA256\r\n  --input-records INPUT_RECORDS\r\n  --input-records-sha256 INPUT_RECORDS_SHA256\r\n  --environment ENVIRONMENT\r\n  --environment-sha256 ENVIRONMENT_SHA256\r\n  --identity IDENTITY\r\n  --identity-sha256 IDENTITY_SHA256\r\n  --output OUTPUT\r\n",
+      "stderr": "",
+      "wall_seconds_bound": 30
+    },
+    {
+      "stage": "blocked_heavy_import_and_plan",
+      "exit_code": 0,
+      "stdout": "{\r\n  \"mode\": \"plan\",\r\n  \"model_initializations\": 0,\r\n  \"encoder_calls\": 0,\r\n  \"media_bytes_read\": 0,\r\n  \"GPU_calls\": 0,\r\n  \"network_calls\": 0,\r\n  \"writes\": 0,\r\n  \"dependency_paths\": [],\r\n  \"missing_future_inputs\": [\r\n    \"execution_manifest\",\r\n    \"manifest_sha256\",\r\n    \"asset_lock\",\r\n    \"asset_lock_sha256\",\r\n    \"asset_dir\",\r\n    \"prepared_root\",\r\n    \"output\"\r\n  ],\r\n  \"status\": \"awaiting_C9_A10_frozen_execution_and_asset_locks\",\r\n  \"method\": \"D3 XCLIP-16/l2\",\r\n  \"batch_size\": 1,\r\n  \"track\": \"prepared_author_native_reference\",\r\n  \"logical_frame_prefix\": \"8 if prepared<16 else16\",\r\n  \"score_direction\": \"raw sample_std large=real; score_fake=-raw\",\r\n  \"scope\": \"metadata only; no fixture predictions\",\r\n  \"runtime_dependencies\": [\r\n    \"torch\",\r\n    \"torchvision\",\r\n    \"transformers\",\r\n    \"numpy\",\r\n    \"albumentations\",\r\n    \"safetensors\",\r\n    \"jsonschema\",\r\n    \"psutil\"\r\n  ],\r\n  \"cv2_distribution_must_be_explicitly_locked\": [\r\n    \"opencv-python\",\r\n    \"opencv-python-headless\"\r\n  ],\r\n  \"local_distribution_metadata\": {\r\n    \"torch\": \"2.5.1\",\r\n    \"torchvision\": \"0.20.1\",\r\n    \"transformers\": null,\r\n    \"numpy\": \"1.26.4\",\r\n    \"albumentations\": null,\r\n    \"safetensors\": null,\r\n    \"jsonschema\": \"4.23.0\",\r\n    \"psutil\": \"5.9.0\",\r\n    \"opencv-python\": \"4.8.1.78\",\r\n    \"opencv-python-headless\": null\r\n  }\r\n}\r\n{\"side_effect_import_and_plan\": \"pass\", \"heavy_dependencies_imported\": 0, \"real_scores_generated\": 0}\r\n",
+      "stderr": "",
+      "filesystem_changes": 0
+    }
+  ],
+  "frozen_input_SHA_recheck_count": 18,
+  "model_initializations": 0,
+  "encoder_calls": 0,
+  "GPU_calls": 0,
+  "cloud_calls": 0,
+  "media_decode_or_read": 0,
+  "real_or_fixture_prediction_rows": 0,
+  "old27_media_or_full_contract_suite_replayed": false,
+  "tested_runtime_model_loading_or_resume": false,
+  "observed_local_unix": 1791491059.6522675
+}

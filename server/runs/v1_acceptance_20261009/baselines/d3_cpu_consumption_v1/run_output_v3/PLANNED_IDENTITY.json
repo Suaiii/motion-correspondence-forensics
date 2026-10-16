@@ -1,0 +1,18 @@
+{
+  "sha256": "092b6abe6d873aafcdbbe5301f315dc68f75fe5322724f09909df43327aae6ec",
+  "identity": {
+    "manifest_SHA": "c13d6b5dc6951d5dfd5976fd396f9687e06f89df5b9ff7a974e85ab513b74b6e",
+    "asset_lock_SHA": "3239e413748e15def993458f8378ede6c7ab6d41dfd3dbcb97d89f98bf486230",
+    "runner_code_identity": "9d4fcd65ddf22923146d5d00d4ff23c950e040472d36e80b96ae0141320e98ff",
+    "dependency_paths": [
+      "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/fingerprint_cpu/author_input_parity_v1/dependencies/site",
+      "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/input_qualification_v1/cpu_deps"
+    ],
+    "CPU_affinity": [
+      4,
+      5
+    ],
+    "output_cap": 33554432
+  },
+  "no_model_or_scores_yet": true
+}

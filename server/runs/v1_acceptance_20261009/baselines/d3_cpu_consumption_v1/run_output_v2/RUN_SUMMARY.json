@@ -1,0 +1,14 @@
+{
+  "expected_members": 12,
+  "successful": 0,
+  "failed": 12,
+  "pending": 0,
+  "ordered_full_denominator_ledger": true,
+  "predictions_contain_true_successes_only": true,
+  "all_failed_or_pending_remain_in_expected_support": true,
+  "run_identity_sha256": "40670399acc4e2277b13528f08ae6b5edf84e29bfa3e1f7af43ea5a92784db7b",
+  "scientific_gate_passed": false,
+  "resume_skips_only_locked_successes": true,
+  "failure_retry_requires_explicit_flag": true,
+  "updated_unix": 1792152700.050998
+}

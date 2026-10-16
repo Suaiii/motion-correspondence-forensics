@@ -475,3 +475,35 @@ No optimizer, old readout, filter, probe or AE calls;12 fixed objective evaluati
 2 native threads, largest array1152B; no real data/model/media/training/server/GPU.
 Actual AE bounds unknown. Limited software integration only, no scientific gain.
 Evidence/report/handoff: research-runs/algorithm_search_20260918/AL32_*.
+
+## 2026-10-16 instance restart audit; C10 D3 v3 and AL145 retry2
+
+AutoDL instance had restarted (~1h38m uptime, GPU idle). Last real artifact
+write was 2026-10-09 13:16; AL136/138/140/142 had all completed (no_go), so no
+run was interrupted by the restart. Two pre-existing failures were rerun with
+explicit user authorization; every earlier failure remains preserved.
+
+C10 D3 XCLIP-16 CPU (baselines/d3_cpu_consumption_v1): original run failed
+12/12 at model init (config model_type is `xclip`, check expected `x-clip`).
+make_v2_remote.py had died at its sha() sentinel bug before writing a plan;
+make_v2_continue.py finished it. v2 loaded all 343 visual keys strictly but
+failed 12/12 at the JPEG reader because --prepared-root doubled runs/run_002.
+v3 (same b8_source_v2 code, prepared-root only) succeeded 12/12: 42 s wall,
+peak group RSS 1.83 GB, no guard violation. run_identity is identical for v2
+and v3 because prepared-root is not hashed; distinguish them by
+RUN_COMMAND_V2/V3.json. The 12 inputs are exposed fit rows: interface
+evidence only, no performance claim.
+
+AL145 dense DINO baseline: retry1 failed in the metric harness (log_loss on the
+all-fake 7-row OpenAI-Sora cohort). video_evidence_dense_adapter_v2.py changes
+only metrics (single-class AUC=null, labels=[0,1], n_fake, mean_prob_fake);
+fitting, C grid, features and selection unchanged. Retry2 completed
+(results.json SHA 7dc21233...). In-domain/AEGIS AUC: semantic 0.954/0.741,
+semantic_delta 0.985/0.720, semantic_velocity 1.000/0.799. Velocity is suspect:
+calibration BCE 0.0008, AEGIS mean p_fake 0.004, Sora p_fake 0.00; dividing by
+native dt likely exposes a source frame-rate shortcut. Needs a dt/fps control
+before it can serve as the strong baseline. AEGIS is now opened and may not be
+used for any selection. formal_gate_passed=false.
+
+Repository: server-snapshot merged into master under server/; obsolete local
+codex/* branches (content already in master) deleted.

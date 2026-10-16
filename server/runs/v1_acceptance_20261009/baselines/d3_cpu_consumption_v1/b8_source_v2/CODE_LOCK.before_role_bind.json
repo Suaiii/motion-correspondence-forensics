@@ -1,0 +1,32 @@
+{
+  "version": "B8-D3-runner/1.1_headless_cv2_and_A10_public_gate",
+  "runtime_files": {
+    "contract.py": "3b06128c7bae485675556c075b4ede7f13ea7d700b9ed9de67a4325e78d57fcd",
+    "author_definitions.py": "249e1539010820fb2a4219f0e23cc9188d8f3033e160fe94fa0fc576c50cdb08",
+    "backend.py": "3fe1bfe4a8c9c1084b52be61bb1d4bf15f344143e99aa890cf05898850384cbb",
+    "run_state.py": "2b9159b65173c5cd16c889070e30c02cbf82968c099100d0272c1d851e66ffff",
+    "worker.py": "fdbae270816320fe67730f6907fad341af3057fa541e2cb4e2b54b09cd4265a7",
+    "runner.py": "9109fce87d9eb220b9b2d3efef493ec18fdf279a94300749516cbe19c354b80f",
+    "environment_lock.py": "08e957ac8f6ec36d12cb322e9b53ff6300f02e5ce4e65315e790513dbb8ece3c",
+    "assemble_manifest.py": "b9a3817079f0865c1501b1aa645b2234230d7e4233413d46b3dc706ca13265e0",
+    "METHOD_IDENTITY.json": "aa4f06a30cdc845c18458a4921e7be9061944f6c6817a037c70d3153b10fbed1",
+    "PREPROCESS_IDENTITY.json": "b0ba58ca892289911725e34b8b8a3b8922a981279a7179872108500548b0a245",
+    "evaluator_v4/admission.py": "32d8abb59acab9d0f0de73d3572fadd3fb7deea0a1edb49e35f6832df1f22515",
+    "evaluator_v4/arithmetic_v1.py": "06a720ee7833b08898eb7a885181fc25ee7ff9b23376ff5d677ed160695dd3fd",
+    "evaluator_v4/build_input_record_schema.py": "fff036122e44a7065d35d94e03c59122bbdab1ae6f1c59c080a8ccb69e83ecf1",
+    "evaluator_v4/evaluation.py": "04ccf791681637209954a197e82ea90989abe6557dd5d6b5487d4c0d2d6090bb",
+    "evaluator_v4/freeze_schema.py": "09cae885344bc14ff9cc1d2470375d770f54340dddcd0ad3086079f3427d55b1",
+    "evaluator_v4/input_record.py": "e24d4808a2644609b173fe1a351687b4e22caead3d47ce3318f5c9b889c4323a",
+    "evaluator_v4/input_record_schema_v2.json": "6d5299bdad1374249dd71a271c65b1b1e8c22e2af6bdc91ee45558746d4e15b6",
+    "evaluator_v4/prediction_schema_v2.json": "96c042cda2c0fc6bd0b280cd1d15bb7c19e37e4f22441cd224a28e16e45bf866",
+    "evaluator_v4/record_contract.py": "5daf092d021e965f309cb96eecf84f4f613f80132aba9d0ef56f6f75a8075cde",
+    "evaluator_v4/reference_policy.py": "7f3668194b590fe2e38045a04e57a2ab46f8b0bb4ecd156d83ab8512c62c442e",
+    "evaluator_v4/schema_fingerprints.py": "92e00c5060049a7f6d146aedc4b7544899e9f61a8e3d7e7d385fdbfd5b6dc80b",
+    "evaluator_v4/support.py": "2eb4ec1c9c867e70ff2f50b7bad40f5c2ed44479c910443bddb1019a7ed2fca8",
+    "evaluator_v4/support_schema_v2.json": "2770999296f78ac831e1c54bb27b55aa2641cded9eee28a92baea7437c9e6572"
+  },
+  "author_forward_and_reader_AST_unchanged": true,
+  "evaluator_v4_bytes_unchanged": true,
+  "model_asset_payloads_not_in_package": true,
+  "before_limited_plan_validation": true
+}

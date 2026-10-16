@@ -1,0 +1,11 @@
+{
+  "worker_exit_code": 2,
+  "guard_failure": null,
+  "peak_group_RSS": 766042112,
+  "wall_seconds": 7.472234793007374,
+  "stdout_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "stderr_SHA": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "fixed_manifest_denominator": 12,
+  "new_environment_installed": false,
+  "scientific_gate_passed": false
+}

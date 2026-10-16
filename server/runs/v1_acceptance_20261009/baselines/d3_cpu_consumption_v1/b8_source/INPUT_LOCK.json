@@ -1,0 +1,125 @@
+{
+  "B8_frozen_input_SHA": "b67c2bdfb87ad238baeabe7acc400004d4f358969d53260dfd7e330417b48a2c",
+  "frozen_inputs": [
+    {
+      "path": "baselines/sources/d3/commit.json",
+      "sha256": "eb1c2c748534b74da28e6b67db75aa17e15c5fc74e1d11008f6c6decbbe69bef",
+      "bytes": 4986
+    },
+    {
+      "path": "baselines/sources/d3/models/D3_model.py",
+      "sha256": "017b68db492ab34f5e45320f14d5f70406355a9da2eb6bc2718499a46d8afc3d",
+      "bytes": 3098
+    },
+    {
+      "path": "baselines/sources/d3/data/datasets.py",
+      "sha256": "b7a58fbb5da2525ebe3e3b3859bdea1e13ed2d37b28a40b71af7da00e329c7ea",
+      "bytes": 2959
+    },
+    {
+      "path": "baselines/sources/d3/eval.py",
+      "sha256": "357af88e576be756a6e3861576806fb6663d4a2e353dd639e5a6e51292763ada",
+      "bytes": 3528
+    },
+    {
+      "path": "baselines/sources/d3/utils/video2frame.py",
+      "sha256": "f5d86d93cb06a8d96d9cd94773e9ee3599c66f4c61eb255627f3cd322b17c9ad",
+      "bytes": 2254
+    },
+    {
+      "path": "baselines/input_contract_recovery_v1/DELIVERY.json",
+      "sha256": "e9dc26cfed32deba3cd13f6a41709a15a6c1d1871bb0f3c3e1618d935fdb9952",
+      "bytes": 919
+    },
+    {
+      "path": "baselines/input_contract_recovery_v1/packet_manifest.json",
+      "sha256": "26335fe0af7ae29b100acac027c30ea1b02ed7f5ce0736cd94ef49cb6bd7de27",
+      "bytes": 19266
+    },
+    {
+      "path": "baselines/input_contract_recovery_v1/adapter_entry.py",
+      "sha256": "02be4a26e74cbc57de95829d66d49bd766508ade102b7e7658b9d14056843cdd",
+      "bytes": 4001
+    },
+    {
+      "path": "baselines/input_contract_recovery_v1/VERSION_LOCK.json",
+      "sha256": "c07617c983a849b5b040205a587eb4986da8dd74f28b93e070d582741ea1beac",
+      "bytes": 3175
+    },
+    {
+      "path": "baselines/input_contract_recovery_v1/evaluator_v4/prediction_schema_v2.json",
+      "sha256": "96c042cda2c0fc6bd0b280cd1d15bb7c19e37e4f22441cd224a28e16e45bf866",
+      "bytes": 9971
+    },
+    {
+      "path": "baselines/input_contract_recovery_v1/evaluator_v4/evaluation.py",
+      "sha256": "04ccf791681637209954a197e82ea90989abe6557dd5d6b5487d4c0d2d6090bb",
+      "bytes": 9310
+    },
+    {
+      "path": "baselines/inference_assets_v1/DELIVERY.json",
+      "sha256": "580ce43f32c22f609ce83e9af5624ed903bfb9648c1a753440b64c9ae9d9f96b",
+      "bytes": 1181
+    },
+    {
+      "path": "baselines/inference_assets_v1/packet_manifest.json",
+      "sha256": "264f8fa9ce6474b19aa84437f6fc2616ba6f6ce0ecac2649671725927e733266",
+      "bytes": 14284
+    },
+    {
+      "path": "baselines/inference_assets_v1/ASSET_MATRIX.json",
+      "sha256": "80c4659b57565ddf7fbd3f3fe767cfbf78dfa86b77382d42e4d3359181219533",
+      "bytes": 55189
+    },
+    {
+      "path": "baselines/inference_assets_v1/NEXT_RUN.md",
+      "sha256": "fbdb85474466843f1191d35449065042a243aae45ef1565107c2173769fe697c",
+      "bytes": 7854
+    },
+    {
+      "path": "propagation/independent_unified_release_v1/DELIVERY.json",
+      "sha256": "11573ee6bc78c4fdfd1430aa348abf1eba98698d71e05cd9f125c96e42e87a00",
+      "bytes": 1877
+    },
+    {
+      "path": "propagation/independent_unified_release_v1/READINESS_OVERLAY.json",
+      "sha256": "fc13520c2610ed3a47818bd7d9c6adb4a9524fc20e39aaafbfac3c3fb0ed3271",
+      "bytes": 969
+    },
+    {
+      "path": "propagation/independent_unified_release_v1/HANDOFF.json",
+      "sha256": "91a35d8d792397fbe98578dc2eec72086f143e01ebd099c9e43c38af50aad60c",
+      "bytes": 1046
+    }
+  ],
+  "scope": {
+    "dispatch_id": "v1-monitor-20261009-B8-d3-inference-runner",
+    "frozen_at_local_UTC": "2026-10-08T19:42:00.304401+00:00",
+    "input_SHA256": {
+      "baselines/sources/d3/commit.json": "eb1c2c748534b74da28e6b67db75aa17e15c5fc74e1d11008f6c6decbbe69bef",
+      "baselines/sources/d3/models/D3_model.py": "017b68db492ab34f5e45320f14d5f70406355a9da2eb6bc2718499a46d8afc3d",
+      "baselines/sources/d3/data/datasets.py": "b7a58fbb5da2525ebe3e3b3859bdea1e13ed2d37b28a40b71af7da00e329c7ea",
+      "baselines/sources/d3/eval.py": "357af88e576be756a6e3861576806fb6663d4a2e353dd639e5a6e51292763ada",
+      "baselines/sources/d3/utils/video2frame.py": "f5d86d93cb06a8d96d9cd94773e9ee3599c66f4c61eb255627f3cd322b17c9ad",
+      "baselines/input_contract_recovery_v1/DELIVERY.json": "e9dc26cfed32deba3cd13f6a41709a15a6c1d1871bb0f3c3e1618d935fdb9952",
+      "baselines/input_contract_recovery_v1/packet_manifest.json": "26335fe0af7ae29b100acac027c30ea1b02ed7f5ce0736cd94ef49cb6bd7de27",
+      "baselines/input_contract_recovery_v1/adapter_entry.py": "02be4a26e74cbc57de95829d66d49bd766508ade102b7e7658b9d14056843cdd",
+      "baselines/input_contract_recovery_v1/VERSION_LOCK.json": "c07617c983a849b5b040205a587eb4986da8dd74f28b93e070d582741ea1beac",
+      "baselines/input_contract_recovery_v1/evaluator_v4/prediction_schema_v2.json": "96c042cda2c0fc6bd0b280cd1d15bb7c19e37e4f22441cd224a28e16e45bf866",
+      "baselines/input_contract_recovery_v1/evaluator_v4/evaluation.py": "04ccf791681637209954a197e82ea90989abe6557dd5d6b5487d4c0d2d6090bb",
+      "baselines/inference_assets_v1/DELIVERY.json": "580ce43f32c22f609ce83e9af5624ed903bfb9648c1a753440b64c9ae9d9f96b",
+      "baselines/inference_assets_v1/packet_manifest.json": "264f8fa9ce6474b19aa84437f6fc2616ba6f6ce0ecac2649671725927e733266",
+      "baselines/inference_assets_v1/ASSET_MATRIX.json": "80c4659b57565ddf7fbd3f3fe767cfbf78dfa86b77382d42e4d3359181219533",
+      "baselines/inference_assets_v1/NEXT_RUN.md": "fbdb85474466843f1191d35449065042a243aae45ef1565107c2173769fe697c",
+      "propagation/independent_unified_release_v1/DELIVERY.json": "11573ee6bc78c4fdfd1430aa348abf1eba98698d71e05cd9f125c96e42e87a00",
+      "propagation/independent_unified_release_v1/READINESS_OVERLAY.json": "fc13520c2610ed3a47818bd7d9c6adb4a9524fc20e39aaafbfac3c3fb0ed3271",
+      "propagation/independent_unified_release_v1/HANDOFF.json": "91a35d8d792397fbe98578dc2eec72086f143e01ebd099c9e43c38af50aad60c"
+    },
+    "workorder": "WORKORDER_B8_D3_INFERENCE_RUNNER_20261009.md",
+    "workorder_SHA256": "a4b9e4e5142c455df293c44df4f01a7ba6f45e5ed2d3efdfd9ce76b9225915b4",
+    "cloud_media_model_GPU": false,
+    "local_cap_bytes": 33554432,
+    "C9_A10": "active_dependencies_not_frozen_inputs_for_B8"
+  },
+  "source_bytes_checked": true
+}

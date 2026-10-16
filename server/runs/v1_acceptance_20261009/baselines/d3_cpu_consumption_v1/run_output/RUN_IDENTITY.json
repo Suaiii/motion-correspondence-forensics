@@ -1,0 +1,44 @@
+{
+  "sha256": "54956d231d40ae42a6b2828aa9e855bb5feb168d1b145ac7e0d7ae3198aef270",
+  "identity": {
+    "execution_manifest_SHA": "c13d6b5dc6951d5dfd5976fd396f9687e06f89df5b9ff7a974e85ab513b74b6e",
+    "asset_lock_SHA": "3239e413748e15def993458f8378ede6c7ab6d41dfd3dbcb97d89f98bf486230",
+    "checkpoint_SHA": "b5db836d57b7e22001cb2bab581719e910b4c571d926fe839b5d07bc0ba2d03e",
+    "config_SHA": "43d49d757dc8a3ef3dfd242d7ebe0c2effcfa0404f9343864e50c45245f99d3a",
+    "runner_code_SHA": "4943e89ff57ffd90f1d2dfcac70cebc22a8ac02fff59e7d4abc9802d66702d41",
+    "dependency_versions": {
+      "torch": "2.8.0+cu128",
+      "torchvision": "0.23.0+cu128",
+      "transformers": "4.57.6",
+      "numpy": "2.3.2",
+      "albumentations": "2.0.8",
+      "safetensors": "0.6.2",
+      "jsonschema": "4.25.0",
+      "psutil": "7.0.0",
+      "opencv-python-headless": "4.12.0.88"
+    },
+    "cv2_provider": {
+      "distribution": "opencv-python-headless",
+      "version": "4.12.0.88",
+      "module_relative_path": "cv2/__init__.py",
+      "module_source_sha256": "936bd94c5a5debf0212fc751af79d3a163652f3e850259df2159db6aa3ed8ad8",
+      "distribution_record_sha256": "4961fb638b955fb130048bd098256f6916849246b0b0913930ea0cadef4c194a",
+      "native_extensions": {
+        "cv2/cv2.abi3.so": "992ae98dec8d23f1ccf8352d1e8ce60d5ee49526ef2dded1fd8c071aca7cffd7"
+      }
+    },
+    "python_version": "3.12.3 | packaged by Anaconda, Inc. | (main, May  6 2024, 19:46:43) [GCC 11.2.0]",
+    "device": "cpu",
+    "dtype": "float32",
+    "batch_size": 1,
+    "threads": 2,
+    "CPU_affinity": [
+      4,
+      5
+    ],
+    "group_RSS_cap": 4294967296,
+    "output_cap_bytes": 33554432,
+    "manifest_order_preserved": true,
+    "support_lock_SHA": "fe0f75d80907fbdaf4a100658ff65c05f06b4eca9f83fe1c6d8f5db882ce53c2"
+  }
+}

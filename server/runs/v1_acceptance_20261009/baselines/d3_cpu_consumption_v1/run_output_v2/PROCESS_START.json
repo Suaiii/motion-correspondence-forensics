@@ -1,0 +1,14 @@
+{
+  "PID": 857108,
+  "create_time": 1792152691.12,
+  "parent_PID": 857107,
+  "worker_code_SHA": "fdbae270816320fe67730f6907fad341af3057fa541e2cb4e2b54b09cd4265a7",
+  "stdin": "DEVNULL",
+  "stdout": "worker.1792152691300082129.stdout.log",
+  "stderr": "worker.1792152691300082129.stderr.log",
+  "group_RSS_cap": 4294967296,
+  "CPU_affinity": [
+    4,
+    5
+  ]
+}

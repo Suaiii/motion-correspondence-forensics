@@ -1,0 +1,13 @@
+{
+  "PID": 857252,
+  "start_ticks": "4753682171",
+  "server_unix": 1792152853.888543,
+  "argv": [
+    "/root/miniconda3/bin/python",
+    "-I",
+    "-B",
+    "/root/autodl-tmp/cvpr27/runs/v1_acceptance_20261009/baselines/d3_cpu_consumption_v1/watch_run_v3.py"
+  ],
+  "SSH_lifecycle_independent": true,
+  "automatic_restart": false
+}

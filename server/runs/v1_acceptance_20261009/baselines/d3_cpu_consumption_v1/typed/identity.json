@@ -1,0 +1,10 @@
+{
+  "status": "frozen_metadata",
+  "cohort_id": "RoboVid_first12_original_fit_CPU_consumption",
+  "seed": 0,
+  "split_sha256": "81b5c3c6ec2da4d31128e94818dd26863a321ecb5d444bcbeea9411b087a445a",
+  "protocol_sha256": "d404a42402aea699a705f6a33cdadd2e3b84b5644f495c34d4c569264ad1cbaa",
+  "support_lock_sha256": "fe0f75d80907fbdaf4a100658ff65c05f06b4eca9f83fe1c6d8f5db882ce53c2",
+  "A10_delivery_sha256": "6bb93b592aadc59de7d5c71312bb7364c32e07cffa63b1ab2e6854d1ad0581d9",
+  "public_gate_overlay_sha256": "fc13520c2610ed3a47818bd7d9c6adb4a9524fc20e39aaafbfac3c3fb0ed3271"
+}
