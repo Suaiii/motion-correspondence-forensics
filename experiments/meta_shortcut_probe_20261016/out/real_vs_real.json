@@ -1,0 +1,47 @@
+{
+ "robovid_real_native720_vs_other": {
+  "n": 1989,
+  "n_pos": 1936,
+  "n_groups": 825,
+  "auc_mean_sd_3seeds": [
+   0.5379,
+   0.0446
+  ]
+ },
+ "robovid_real_fps_ge29_vs_le25.5": {
+  "n": 1980,
+  "n_pos": 1139,
+  "n_groups": 822,
+  "auc_mean_sd_3seeds": [
+   0.6124,
+   0.0024
+  ]
+ },
+ "aegis_real_dvf_vs_youtube": {
+  "n": 218,
+  "n_pos": 109,
+  "n_groups": 218,
+  "auc_mean_sd_3seeds": [
+   0.9849,
+   0.0014
+  ]
+ },
+ "aegis_fake_kling_vs_sora": {
+  "n": 218,
+  "n_pos": 111,
+  "n_groups": 206,
+  "auc_mean_sd_3seeds": [
+   0.753,
+   0.0138
+  ]
+ },
+ "aegis_real_vs_fake_within_pool_cv": {
+  "n": 436,
+  "n_pos": 218,
+  "n_groups": 424,
+  "auc_mean_sd_3seeds": [
+   0.9579,
+   0.0017
+  ]
+ }
+}
